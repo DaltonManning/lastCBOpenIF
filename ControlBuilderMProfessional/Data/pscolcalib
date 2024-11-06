@@ -1,0 +1,129 @@
+%!PS-Adobe-2.0 EPSF-1.2
+%%Title: SattLine colour PostScript printer calibration picture
+%%Creator: Peter Lerup, SattControl AB
+%%DocumentFonts: Helvetica Times-BoldItalic
+%%Pages: 1
+%%BoundingBox: 0 0 595 842
+%%CreationDate: 1993-05-13
+%%EndComments
+
+%---------------------------------------------------------------------
+%	Copyright (C) SattControl AB, Malmoe, Sweden, 1993
+%	This file contains Proprietary Information of
+%	SattControl AB and should be treated as Confidential.
+% 
+%	showcol.ps
+%
+%	This PostScript file can be used to display colour definitions
+%	on PostScript printers. Five colour circles will be drawn with
+%	different value for hue saturation and brightness
+%
+%	Author: Peter Lerup
+%	Date: 93-05-13
+%---------------------------------------------------------------------
+
+% Circle constants
+/textfont /Helvetica def
+/textfontsize 7 def
+
+/hueinc 10  def
+/satinc 0.2 def
+/valinc 0.2 def
+
+/rad 105 def
+/left rad 1.5 mul 20 add def
+/bot rad 1.4 mul def
+/right left rad 2.5 mul add def
+/top bot rad 4.5 mul add def
+/xcenter right left add 2 div def
+/ycenter top bot add 2 div def
+
+% Header constants
+/headfont /Times-BoldItalic def
+/headfontsize 15 def
+headfont findfont headfontsize scalefont setfont
+/headstr (SattLine colour printer calibration picture) def
+/headxpos xcenter headstr stringwidth pop 2 div sub def
+/headypos top rad 1.5 mul add def
+
+% Temporary storage
+/str 25 string def
+
+/xdef { exch def } def
+
+% Draw one circle with specified saturation
+/SaturationCircle {
+  /sat xdef
+  0 hueinc 360 hueinc sub {
+    /hue xdef
+    newpath
+    0 0 moveto
+    0 0 rad sat mul hue hue hueinc add arc
+    closepath
+    hue 360 div sat val sethsbcolor
+    fill
+  } for
+} def
+
+% Draw hue values
+/AngleValCirc {
+  0 setgray
+  0 hueinc 360 hueinc sub {
+    rad 1.05 mul 0 moveto
+    10 str cvrs show
+    hueinc rotate
+  } for
+} def
+
+% Draw one circle with serveral saturation values and one brightnes value
+/HSVCircle {
+  /yc xdef
+  /xc xdef
+  /val xdef
+  save
+  xc yc translate
+	
+  1.0 satinc neg satinc { SaturationCircle } for
+  AngleValCirc
+
+  0 rad 1.2 mul moveto
+  (Value = ) 
+  val 10 str cvrs
+  2 copy
+  stringwidth pop exch
+  stringwidth pop add
+  2 div neg 0 rmoveto exch show show
+
+  restore
+} def
+
+/showtype {
+  /xpos right rad 4 div add def
+  xpos ycenter moveto
+  (Device: ) show statusdict /product get show
+} def
+
+% Draw header
+0 setgray
+headxpos headypos moveto headstr show
+
+% Draw all the circles
+textfont findfont textfontsize scalefont setfont
+0.6 left bot HSVCircle
+0.7 right bot HSVCircle
+0.8 left top HSVCircle
+0.9 right top HSVCircle
+1.0 xcenter ycenter HSVCircle
+
+% Draw info
+40 ycenter moveto
+(Saturation increment = ) show satinc 10 str cvrs show
+40 ycenter textfontsize 1.2 mul add moveto
+(Hue increment = ) show hueinc 10 str cvrs show
+showtype
+
+% Guess who made this possible
+headfont findfont 5 scalefont setfont
+520 30 moveto (PTL 1993-05-13) show
+
+showpage

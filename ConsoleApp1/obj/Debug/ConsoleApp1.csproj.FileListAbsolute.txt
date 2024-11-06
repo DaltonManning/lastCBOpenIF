@@ -1,0 +1,4 @@
+C:\Users\DM\Desktop\CBOpenIf1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\DM\Desktop\CBOpenIf1\ConsoleApp1\obj\Debug\Interop.CBOpenIFHelper.dll
+C:\Users\DM\Desktop\CBOpenIf1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.ResolveComReference.cache
+C:\Users\DM\Desktop\CBOpenIf1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache

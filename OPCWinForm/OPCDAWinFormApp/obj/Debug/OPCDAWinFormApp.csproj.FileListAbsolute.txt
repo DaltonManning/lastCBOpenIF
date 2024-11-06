@@ -1,0 +1,4 @@
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\OPCWinForm\OPCDAWinFormApp\obj\Debug\OPCDAWinFormApp.csproj.AssemblyReference.cache
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\OPCWinForm\OPCDAWinFormApp\obj\Debug\OPCDAWinFormApp.Properties.Resources.resources
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\OPCWinForm\OPCDAWinFormApp\obj\Debug\OPCDAWinFormApp.csproj.GenerateResource.cache
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\OPCWinForm\OPCDAWinFormApp\obj\Debug\OPCDAWinFormApp.csproj.CoreCompileInputs.cache

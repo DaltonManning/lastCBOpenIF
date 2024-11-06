@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by Henry Kulzer (Siemens AG) -->
+<xsd:schema targetNamespace="http://www.profibus.com/Common/2003/11/Primitives" xmlns="http://www.profibus.com/Common/2003/11/Primitives" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.00">
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+	<xsd:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>This is the root schema for XML-Schemas according to the XML@PROFIBUS guidelines.</xsd:documentation>
+		<xsd:appinfo>
+			<schemainfo versiondate="20031130"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<!-- SIMPLE TYPES -->
+	<xsd:simpleType name="VersionT">
+		<xsd:annotation>
+			<xsd:documentation>Type holding an instance or schema Version</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d+(\.\d+)*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="IdT">
+		<xsd:annotation>
+			<xsd:documentation>Base Type for XML@PROFIBUS Object identifiers</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="RefIdT">
+		<xsd:annotation>
+			<xsd:documentation>Base Type forXML@PROFIBUS Object and Feature References</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="ARGBColorT">
+		<xsd:annotation>
+			<xsd:documentation>Holds RGB colors with optional Alpha channel in Hex (AARRGGBB)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:hexBinary">
+			<xsd:minLength value="3"/>
+			<xsd:maxLength value="4"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="GuidT">
+		<xsd:annotation>
+			<xsd:documentation>GUID</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}"/>
+			<xsd:pattern value="[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="LanguageCodeT">
+		<xsd:annotation>
+			<xsd:documentation>
+   This follows the RFC 1766 standard in the format
+"&lt;languagecode2&gt;-&lt;country/regioncode2&gt;", where
+&lt;languagecode2&gt; is a lowercase two-letter code derived from ISO 639-1
+and &lt;country/regioncode2&gt; is an uppercase two-letter code derived from
+ISO 3166. For example, the name for the specific culture U.S. English is
+"en-US".
+If the culture is a neutral culture, its name is in the format
+"&lt;languagecode2&gt;". For example, the name for the neutral culture
+English is "en".
+   </xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[a-z]{2}"/>
+			<xsd:pattern value="[a-z]{2}\-[A-Z]{2}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- _____________________________________________________-->
+	<!-- COMPLEX TYPES -->
+	<!-- Main Types -->
+	<xsd:complexType name="DocumentT">
+		<xsd:annotation>
+			<xsd:documentation>Type for all top level elements of XML@PROFIBUS Documents</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="DocumentInfo" type="DocumentInfoT" minOccurs="0"/>
+			<xsd:element ref="Object" maxOccurs="unbounded"/>
+			<xsd:element ref="Hierarchies" minOccurs="0"/>
+			<xsd:element ref="ExternalTextList" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="DocumentId" type="xsd:string" use="optional"/>
+		<xsd:attribute name="Parent" type="xsd:anyURI"/>
+		<xsd:attribute name="Root" type="xsd:anyURI"/>
+		<xsd:attribute name="DefaultLanguage" type="xsd:language"/>
+		<xsd:attribute name="Localization" type="xsd:anyURI" use="optional"/>
+		<xsd:attribute name="LocalizationPath" type="xsd:anyURI" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="DocumentInfoT">
+		<xsd:sequence>
+			<xsd:element name="Created" type="CreationChangeInfoT" minOccurs="0"/>
+			<xsd:element name="LastModified" type="CreationChangeInfoT" minOccurs="0"/>
+			<xsd:element ref="ds:Signature" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="Version" type="VersionT" use="required"/>
+	</xsd:complexType>
+	<!--Global object hierarchy in an XML@PROFIBUS document-->
+	<xsd:complexType name="HierarchiesT">
+		<xsd:annotation>
+			<xsd:documentation>Type for explicitely specifying object hierarchies in XML@PROFIBUS documents</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Hierarchy" type="GlobalHierarchyFeatureT" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>Specify the name of the hierarchy in the 'Name' attribute inherited from FeatureT</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="HierarchyReferenceT">
+		<xsd:annotation>
+			<xsd:documentation>Reference type that can be nested</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ReferenceT">
+				<xsd:sequence>
+					<xsd:element name="Reference" type="HierarchyReferenceT" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="GlobalHierarchyFeatureT">
+		<xsd:annotation>
+			<xsd:documentation>Feature type to specify the data (name and root(s)) for a particular hierarchy.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="FeatureT">
+				<xsd:sequence>
+					<xsd:element name="Reference" type="HierarchyReferenceT" minOccurs="0" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:documentation>Use this element if you want to store the hierarchy outside the individual objects. The hierarchy is described using nested XML elements.</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="Root" type="ReferenceT" minOccurs="0" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:documentation>Use this element if you want to store the hierarchy in HierarchySpec Features at the objects</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="AddInfo" type="LaxAnyT" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>Additional data describing the hierarchy</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LaxAnyT">
+		<xsd:sequence>
+			<xsd:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--Hierarchy information for XML@PROFIBUS objects (stored at each object)-->
+	<xsd:complexType name="ObjectHierarchyFeatureT">
+		<xsd:annotation>
+			<xsd:documentation>Feature type for specifiying the hierarchies that a particular object is part of</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="FeatureT">
+				<xsd:sequence>
+					<xsd:element name="Parent" type="ReferenceT" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element name="Child" type="ReferenceT" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element name="Data" type="LaxAnyT" minOccurs="0">
+						<xsd:annotation>
+							<xsd:documentation>Additional data describing the object in the hierarchy</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- ELEMENT DECLARATIONS -->
+	<xsd:element name="Hierarchies" type="HierarchiesT">
+		<xsd:annotation>
+			<xsd:documentation>Global list of hierarchies in an XML@PROFIBUS document.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Hierarchy" type="ObjectHierarchyFeatureT" substitutionGroup="Feature">
+		<xsd:annotation>
+			<xsd:documentation>Feature that groups the data for one particular hierarchy in a HierarchyFeature</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- _____________________________________________________-->
+	<!-- Text Definition Types-->
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en">Base of all enhancements regarding language dependent text definitions is the LocalizableTextParameterT type, defined above.  Although this type allows to define inline texts and external text references (with the TextId attribute) at the same time, the recommendation is to use either inline or external text definitions and not to mix them.  This is to keep the reading tools simple.  If this type is used, a migration of inline texts towards external texts and vice versa is possible without changing the schema definition.</xsd:documentation>
+	</xsd:annotation>
+	<xsd:complexType name="ExternalTextDocumentT">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">This type defines the structure of the file that contains external language dependent text definitions.  One file can contain texts of only one language.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="DocumentInfo" type="DocumentInfoT" minOccurs="0"/>
+			<xsd:element name="Text" type="ExternalTextT" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="Parent" type="xsd:anyURI" use="optional">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">Points to the parent XML@PROFIBUS file  this text document belongs to </xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Root" type="xsd:anyURI" use="optional">
+			<xsd:annotation>
+				<xsd:documentation xml:lang="en">Points to the main document's root XML@PROFIBUS file.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute ref="xml:lang" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="ExternalTextListT">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">This type is used in XML@PROFIBUS documents to create an area for language dependent text definitions.  All texts can be placed in this area to avoid inline definition and to avoid separate files with external text definitions.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="PrimaryLanguage" type="LanguageGroupT"/>
+			<xsd:element name="Language" type="LanguageGroupT" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation xml:lang="en">Groups text definitions of a language.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- -->
+	<xsd:complexType name="LanguageGroupT">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">This type groups text definitions of one language.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Text" type="ExternalTextT" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute ref="xml:lang"/>
+	</xsd:complexType>
+	<xsd:complexType name="ExternalTextT">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">This type is used to define texts referenced by a TextId.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Value" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="TextId" type="xsd:string" use="required"/>
+		<xsd:attribute name="Value" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+	<!-- _____________________________________________________-->
+	<!-- Text Definition Elements-->
+	<xsd:element name="ExternalTextList" type="ExternalTextListT">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">Within an XML@PROFIBUS document, all language dependent text definitions can be placed inside this element.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ExternalTextDocument" type="ExternalTextDocumentT">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">This defines the root element of the file that contains external text definitions.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="ObjectInfoT">
+		<xsd:annotation>
+			<xsd:documentation>Versioning and Timestamps</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Created" type="CreationChangeInfoT" minOccurs="0"/>
+			<xsd:element name="LastModified" type="CreationChangeInfoT" minOccurs="0"/>
+			<xsd:element ref="ds:Signature" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ObjectT">
+		<xsd:annotation>
+			<xsd:documentation>Base type for all XML@PROFIBUS objects</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="AppId" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element ref="ObjectInfo" minOccurs="0"/>
+			<xsd:element name="ExtraFeatures" type="ExtraFeaturesT" minOccurs="0"/>
+		</xsd:sequence>
+		<xsd:attribute name="ID" type="IdT" use="required"/>
+		<xsd:attribute name="Name" type="xsd:string" use="optional"/>
+		<xsd:attribute name="Version" type="VersionT" use="optional"/>
+		<xsd:attribute name="Type" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>Type is an application/domain defined type, NOT an xsd datatype.</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Deleted" type="xsd:boolean" use="optional" default="false"/>
+	</xsd:complexType>
+	<xsd:complexType name="ObjectSurrogateT">
+		<xsd:annotation>
+			<xsd:documentation>Stand-In for an XML@PROFIBUS object (used for exporting features to other files)</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="ObjectT">
+				<xsd:sequence>
+					<xsd:element ref="Feature" maxOccurs="unbounded"/>
+				</xsd:sequence>
+				<xsd:attribute name="Source" type="RefIdT" use="optional"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="FeatureT">
+		<xsd:annotation>
+			<xsd:documentation>Base type for all XML@PROFIBUS features</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="Name" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="FeatureReferenceT">
+		<xsd:complexContent>
+			<xsd:extension base="FeatureT">
+				<xsd:attribute name="Target" type="RefIdT" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ParameterT" mixed="true">
+		<xsd:annotation>
+			<xsd:documentation>Base type for all XML@PROFIBUS parameters that are used within features of objects.
+			
+			 The optional attribute "Unit" can be used to assign a physical unit to the parameter value. The admissable values for the "Unit"-attribute are the strings that can be built by  the International System of Units (SI), ISO 1000 (see http://physics.nist.gov/cuu/Units) and the additional XML@PROFIBUS time units. SI is a system based on seven base dimensions to describe physical dimensions. Each unit is composed of these base dimensions. Each unit value is given by a unit and a prefix, describing a quantity. E.g. m (meter) is a unit (even a base dimension)  and k is a prefix. Therefore km means 1 kilometer. The seven base dimensions are:
+ length	meter	m
+ mass kilogram       kg 
+ time second s 
+ electric current ampere A 
+ thermodynamic temperature       kelvin K 
+ amount of substance mole mol 
+ luminous intensity candela cd 
+ 
+ The most important prefixes are:
+ 10**3 kilo k 
+ 10**6 mega M 
+ 10**9 giga G 
+ 10**-3 milli m 
+ 10**-6 micro µ 
+ 10**-9 nano n 
+ (** = to the power of)
+ 
+ So valid samples for values of the attribte "Unit" are
+ kkg (1000 kg)
+ mm (millimeter)
+ µs (micro seconds)
+ Ms (million seconds)
+ 
+ For a complete description see the above mentioned references.
+ 
+ Unfortunately, time units like minutes, hours, etc are not directly supported by the SI Unit System.
+ Therefore there is a definition of additional XML@PROFIBUS  time units:
+ minute min                   (min, not m to avoid the conflict with meter)
+ hour H					(upper case to avoid the conflict with a prefix of SI)
+ day D					(upper case to avoid the conflict with a prefix of SI)
+ year y
+  </xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="MustUnderstand" type="xsd:boolean" use="optional" default="false"/>
+		<xsd:attribute name="Name" type="xsd:string" use="optional"/>
+		<xsd:attribute name="Type" type="xsd:string" use="optional"/>
+		<xsd:attribute name="Unit" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="ReferenceT">
+		<xsd:annotation>
+			<xsd:documentation>Base type for all XML@PROFIBUS references to objects. Name specifies a general name for the Reference</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="RefName" type="xsd:string" use="optional"/>
+		<xsd:attribute name="ID" type="IdT" use="optional"/>
+		<xsd:attribute name="Name" type="xsd:string" use="optional"/>
+		<xsd:attribute name="Target" type="RefIdT" use="required"/>
+		<xsd:attribute name="RefType" type="ReferenceTypeEnumT" use="optional" default="Ref"/>
+	</xsd:complexType>
+	<xsd:complexType name="ReferencePartOfT">
+		<xsd:complexContent>
+			<xsd:restriction base="ReferenceT">
+				<xsd:attribute name="ID" type="IdT" use="required"/>
+				<xsd:attribute name="Name" type="xsd:string" use="required"/>
+				<xsd:attribute name="RefType" type="ReferenceTypeEnumT" use="optional" fixed="PartOf"/>
+			</xsd:restriction>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ConnectorT">
+		<xsd:sequence/>
+		<xsd:attribute name="Name" type="xsd:string" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="ConnectionT">
+		<xsd:attribute name="Name" type="xsd:string" use="optional"/>
+		<xsd:attribute name="From" type="xsd:string" use="required"/>
+		<xsd:attribute name="To" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	<!-- _____________________________________________________-->
+	<!--Specialized Parameters-->
+	<xsd:complexType name="StringParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="xsd:string" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="TextParameterT" mixed="true">
+		<xsd:annotation>
+			<xsd:documentation>Note that attributes may be restricted to a length limit of 256 characters. Therefore, if larger strings have to be expected, it is recommended to use TextParameter. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent mixed="true">
+			<xsd:extension base="ParameterT">
+				<xsd:sequence>
+					<xsd:element name="Value" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="BoolParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="xsd:boolean" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="IntegerParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="xsd:integer" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="HexParameterT" mixed="true">
+		<xsd:complexContent mixed="true">
+			<xsd:extension base="ParameterT">
+				<xsd:sequence>
+					<xsd:element name="Value" type="xsd:hexBinary"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="AnyURIParameterT" mixed="true">
+		<xsd:complexContent mixed="true">
+			<xsd:extension base="ParameterT">
+				<xsd:sequence>
+					<xsd:element name="URI" type="xsd:anyURI"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PositiveIntegerParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="xsd:positiveInteger" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DecimalParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="xsd:decimal" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="IntParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="xsd:int" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DoubleParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="xsd:double" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="TimestampParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="xsd:dateTime" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ARGBColorParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="ARGBColorT" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="GuidParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="GuidT" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PointParameterT" mixed="true">
+		<xsd:complexContent mixed="true">
+			<xsd:extension base="ParameterT">
+				<xsd:sequence>
+					<xsd:element name="Value" type="PointT"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LanguageCodeParameterT">
+		<xsd:complexContent>
+			<xsd:extension base="ParameterT">
+				<xsd:attribute name="Value" type="LanguageCodeT" use="required"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LocalizableTextParameterT" mixed="true">
+		<xsd:annotation>
+			<xsd:documentation>Remark on the attributes: the attributes Value and TextId are both optional. But it is requried that at least one of these attributes is present. The attribute xml:lang refers to the attribute Value and makes sense only if the attribute Value ist present.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent mixed="true">
+			<xsd:extension base="ParameterT">
+				<xsd:sequence>
+					<xsd:element name="Value" type="xsd:string" minOccurs="0"/>
+				</xsd:sequence>
+				<xsd:attribute ref="xml:lang" use="optional"/>
+				<xsd:attribute name="Value" type="xsd:string" use="optional"/>
+				<xsd:attribute name="TextId" type="RefIdT" use="optional"/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- _____________________________________________________-->
+	<!-- Auxiliary Types -->
+	<!-- _____________________________________________________-->
+	<xsd:complexType name="PointT">
+		<xsd:annotation>
+			<xsd:documentation>2 or 3 dimensional point type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="x" type="xsd:decimal"/>
+			<xsd:element name="y" type="xsd:decimal"/>
+			<xsd:element name="z" type="xsd:decimal" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CreationChangeInfoT">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute name="Tool" type="xsd:string" use="optional"/>
+				<xsd:attribute name="User" type="xsd:string" use="optional"/>
+				<xsd:attribute name="Timestamp" type="xsd:dateTime" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:complexType name="ApplicationSpecificIdT">
+		<xsd:annotation>
+			<xsd:documentation>Type for application specific identifiers</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="AppName" type="xsd:string" use="required"/>
+		<xsd:attribute name="Value" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	<xsd:complexType name="ExtraFeaturesT">
+		<xsd:sequence>
+			<xsd:element ref="Feature" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="ReferenceTypeEnumT">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="PartOf"/>
+			<xsd:enumeration value="Ref"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="CollectionT" abstract="false">
+		<xsd:sequence/>
+		<xsd:attribute name="ElementType" type="xsd:QName" use="optional"/>
+		<xsd:attribute name="Name" type="xsd:QName" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="ReferenceListT">
+		<xsd:complexContent>
+			<xsd:extension base="CollectionT">
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element ref="Reference"/>
+					<xsd:element ref="References"/>
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ObjectListT">
+		<xsd:complexContent>
+			<xsd:extension base="CollectionT">
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element ref="Object"/>
+					<xsd:element ref="Objects"/>
+					<xsd:element ref="ReferencePartOf"/>
+				</xsd:choice>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- ELEMENT DECLARATIONS -->
+	<xsd:element name="Document" type="DocumentT">
+		<xsd:unique name="OBJ-ID">
+			<xsd:selector xpath=".//*"/>
+			<xsd:field xpath="@ID"/>
+		</xsd:unique>
+	</xsd:element>
+	<xsd:element name="Object" type="ObjectT"/>
+	<xsd:element name="ObjectSurrogate" type="ObjectSurrogateT" substitutionGroup="Object"/>
+	<xsd:element name="Reference" type="ReferenceT"/>
+	<xsd:element name="ReferencePartOf" type="ReferencePartOfT"/>
+	<xsd:element name="Parameter" type="ParameterT"/>
+	<xsd:element name="StringParameter" type="StringParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="TextParameter" type="TextParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="IntegerParameter" type="IntegerParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="PositiveIntegerParameter" type="PositiveIntegerParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="DecimalParameter" type="DecimalParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="AnyURIParameter" type="AnyURIParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="BoolParameter" type="BoolParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="HexParameter" type="HexParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="TimestampParameter" type="TimestampParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="ARGBColorParameter" type="ARGBColorParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="PointParameter" type="PointParameterT" substitutionGroup="Parameter"/>
+	<xsd:element name="LocalizableTextParameter" type="LocalizableTextParameterT"/>
+	<xsd:element name="Feature" type="FeatureT"/>
+	<xsd:element name="FeatureReference" type="FeatureReferenceT"/>
+	<xsd:element name="Connector" type="ConnectorT"/>
+	<xsd:element name="Connection" type="ConnectionT"/>
+	<xsd:element name="Collection" type="CollectionT" abstract="true"/>
+	<xsd:element name="ObjectList" type="ObjectListT" substitutionGroup="Collection"/>
+	<xsd:element name="Objects" type="ObjectListT"/>
+	<xsd:element name="ReferenceList" type="ReferenceListT" substitutionGroup="Collection"/>
+	<xsd:element name="References" type="ReferenceListT"/>
+	<xsd:element name="AppId" type="ApplicationSpecificIdT"/>
+	<xsd:element name="ObjectInfo" type="ObjectInfoT"/>
+</xsd:schema>

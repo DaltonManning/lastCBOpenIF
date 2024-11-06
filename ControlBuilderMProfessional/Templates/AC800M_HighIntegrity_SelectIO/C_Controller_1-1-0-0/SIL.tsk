@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task xmlns="CBSourceCodeSchema3_0" Name="SIL" IntervalTime="1000" Priority="2" Offset="10" OutputUpdate="last" LatencySupervision="1" LatencyPercentage="100" TaskSILLevel="SIL2" Guid="8834A124-EC72-44AD-BE16-1730EE1A518E" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:04.512" ChangeTime="2018-08-23-07:17:02.154" CodePage="1252" Type="Normal">
+  <CheckSum Value="26555"/>
+</Task>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Diagram xmlns="CBSourceCodeSchema3_0" Name="Diagram1" TaskConnection="" TypeGuid="217ac258-0be5-4f05-9b4a-534d234af9bd" InstGuid="fdefefd7-518f-4a64-983f-af90f89d7ef4" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" InternalChangeTime="2012-07-12-21:39:12.869" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:07.564" CodePage="1252" AccessLevel="Read Only" SafetyType="None">
+  <Variables>
+    <Variable Name="FirstScanAfterApplStart" Type="bool" TypeGuid="fcc571cc-3a50-4ec6-9241-0726a148299b" AccessLevel="Read Only" SafetyType="None" Attribute="retain" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None"/>
+  </Variables>
+  <CommVariables/>
+  <Signals/>
+  <FunctionBlocks/>
+  <ControlModules/>
+  <DiagramInstances/>
+  <InitValues/>
+  <CodeBlocks>
+    <FDCodeBlock Name="Code"><FunctionDiagram><Pages><Layout FormatName="A4" Orientation="Landscape" Unit="0.01 mm" Width="21000" Height="29700" Top="1500" Bottom="1500" Left="1500" Right="1500"/><Page PageNo="1" PageName=""><Blocks><Invocation Name="FirstScanAfterApplicationStart(1)" DataFlowOrder="1" ENPort="false" Id="d3121234-3880-4dc2-9636-05d1f55e1351"><Description>A SIL application needs to have some executing code.</Description><Layout X="1863" Y="1524" Width="3556" Height="847"><Ports><Port Name="" Visible="true"/></Ports></Layout></Invocation><DataRef Name="FirstScanAfterApplStart(1)" Id="719f8a07-774f-424f-8229-2392f77aa998"><Layout X="7112" Y="1863" Width="847" Height="339"></Layout></DataRef></Blocks><DataConnections><DataConnection Src="FirstScanAfterApplicationStart(1)" Dest="FirstScanAfterApplStart(1)" Id="e52dbe03-423a-4f0f-bdc7-f1e00715c478"><Layout><SrcPos X="5630" Y="2032"/><DestPos X="6900" Y="2032"/></Layout></DataConnection></DataConnections></Page></Pages></FunctionDiagram></FDCodeBlock>
+  </CodeBlocks>
+  <Description/>
+  <CheckSum Value="8932"/>
+</Diagram>

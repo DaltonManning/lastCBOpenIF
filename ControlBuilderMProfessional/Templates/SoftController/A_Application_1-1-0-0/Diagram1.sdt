@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Diagram xmlns="CBSourceCodeSchema3_0" Name="Diagram1" TaskConnection="Controller_1.Fast" TypeGuid="e785420f-2a12-4ed8-86fa-0023b73b12c9" InstGuid="ca2c65aa-da6c-47a9-9901-3406f82d43d9" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" InternalChangeTime="2012-07-12-20:57:00.765" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:14.535" CodePage="1252" AccessLevel="Read Only" SafetyType="None">
+  <Variables/>
+  <CommVariables/>
+  <Signals/>
+  <FunctionBlocks/>
+  <ControlModules/>
+  <DiagramInstances/>
+  <InitValues/>
+  <CodeBlocks>
+    <FDCodeBlock Name="Code"><FunctionDiagram><Pages><Layout FormatName="A4" Orientation="Landscape" Unit="0.01 mm" Width="21000" Height="29700" Top="1500" Bottom="1500" Left="1500" Right="1500"/><Page PageNo="1" PageName=""><Blocks></Blocks><DataConnections></DataConnections></Page></Pages></FunctionDiagram></FDCodeBlock>
+  </CodeBlocks>
+  <Description/>
+  <CheckSum Value="19829"/>
+</Diagram>

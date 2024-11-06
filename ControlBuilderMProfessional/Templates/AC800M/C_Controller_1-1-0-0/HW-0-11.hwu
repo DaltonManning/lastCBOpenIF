@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="11" TypeID="21495809" TypeDescription="ModuleBus" Guid="F84504AD-F82C-49EF-BAFD-D769B31E2DA2" TypeGuid="8E70D76D-E3B5-411E-8DB7-C7B2FBA174AC" TypeTimeStamp="2016-06-23-02:02:30.535" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:01.898" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2014-10-09-07:05:52.561" HWSettingsTS="2006-08-14-11:47:18.231" InstanceName="">
+  <ParameterSettings>
+    <ParameterSetting Name="POWER_SUP" Value="1" Description="External power supervision"/>
+    <ParameterSetting Name="SCAN_CYCLE_TIME" Value="100" Description="Scan Cycle Time"/>
+  </ParameterSettings>
+  <HWChannels/>
+  <HardwareUnits/>
+  <CheckSum Value="57857"/>
+</HWUnit>

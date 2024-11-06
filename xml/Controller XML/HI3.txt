@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBOpenIFSchema3_0" Path="Cont_HI3" TypeID="256901120" TypeDescription="AC 800M HI" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+  <ParameterSettings>
+    <ParameterSetting Name="BACKGROUNDCOPY" Value="None" Description="Copy unconnected channels"/>
+    <ParameterSetting Name="LATCHEDHWSTATE" Value="Disabled" Description="Latched hardware state"/>
+    <ParameterSetting Name="ENABLESYSTEMALARMS" Value="Enabled" Description="System alarms on hardware units"/>
+    <ParameterSetting Name="ENABLESIMPLEEVENTS" Value="Enabled" Description="Simple events on hardware units"/>
+    <ParameterSetting Name="ALARMFILTER" Value="Over- and underflow" Description="Filter out system alarms from hardware units"/>
+    <ParameterSetting Name="HWBACKGROUNDCYCLETIME" Value="1000" Description="HwStatus update cycle time"/>
+    <ParameterSetting Name="CLAMPANALOGINVALUES" Value="1" Description="Clamp Analog in values"/>
+    <ParameterSetting Name="CLAMPANALOGOUTVALUES" Value="1" Description="Clamp Analog out values"/>
+    <ParameterSetting Name="IAC_HWADDRESS" Value="0.5.1" Description="IAC Active HW"/>
+  </ParameterSettings>
+  <HWChannels>
+    <HWChannel Address="IW0" Name="AllUnitStatus" ChannelType="status_in">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HWUnits>
+    <HWUnit Path="Cont_HI3.0" TypeID="37761802" TypeDescription="PM867 HI/ TP830" RedundantPos="13" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+      <ParameterSettings>
+        <ParameterSetting Name="EnableSattbusTCPIP" Value="0" Description="Enable SattBus on TCP/IP"/>
+        <ParameterSetting Name="ROUTINGTYPE" Value="rnrp" Description="Routing method"/>
+        <ParameterSetting Name="DEFGATEWID" Value="" Description="Default gateway"/>
+        <ParameterSetting Name="SYSTEMAECLASS" Value="9994" Description="AE System AE class"/>
+        <ParameterSetting Name="SYSTEMAELOWSEVERITY" Value="200" Description="AE System AE low severity"/>
+        <ParameterSetting Name="SYSTEMAEMEDIUMSEVERITY" Value="400" Description="AE System AE medium severity"/>
+        <ParameterSetting Name="SYSTEMAEHIGHSEVERITY" Value="600" Description="AE System AE high severity"/>
+        <ParameterSetting Name="SYSTEMAECRITICALSEVERITY" Value="800" Description="AE System AE critical severity"/>
+        <ParameterSetting Name="SYSTEMAEFATALSEVERITY" Value="1000" Description="AE System AE fatal severity"/>
+        <ParameterSetting Name="SYSTEMEVENTSTOSESSIONLOG" Value="Medium Severity" Description="AE System events to controller log"/>
+        <ParameterSetting Name="EVENTQUEUESIZE" Value="300" Description="AE Local printer event queue size"/>
+        <ParameterSetting Name="MAXNOOFEVENTQUEUES" Value="0" Description="AE Max no of local printer event queues"/>
+        <ParameterSetting Name="EVENTENROLLMENTQUEUESIZE" Value="300" Description="AE Event subscription queue size"/>
+        <ParameterSetting Name="MAXNOOFENROLLMENTS" Value="2" Description="AE Max number of event subscriptions"/>
+        <ParameterSetting Name="EVENTENROLLMENTTIMEOUT" Value="360" Description="AE Event subscription time out"/>
+        <ParameterSetting Name="LOWLEVELEVENTBUFFERSIZE" Value="2" Description="AE Buffer size of low level event"/>
+        <ParameterSetting Name="MAXNOOFNAMEDVALUEITEMS" Value="3000" Description="AE Max no of Named Value items"/>
+        <ParameterSetting Name="MAXPERCOFLOGSTRINGS" Value="10" Description="AE Max percent of log strings"/>
+        <ParameterSetting Name="ALARMAUTODISABLELIMIT" Value="3" Description="AE Limit auto disable"/>
+        <ParameterSetting Name="DEFNETWID" Value="172.16.0.0" Description="RNRP Default network ID"/>
+        <ParameterSetting Name="NUMOWNAREAS" Value="2" Description="RNRP Number of own areas"/>
+        <ParameterSetting Name="NUMREMOTEAREAS" Value="4" Description="RNRP Number of remote areas"/>
+        <ParameterSetting Name="MAXLOSTMSG" Value="3" Description="RNRP Max Lost Messages"/>
+        <ParameterSetting Name="SENDPERIOD" Value="1" Description="RNRP Send Period"/>
+        <ParameterSetting Name="MAXDIAMETER" Value="3" Description="RNRP Max no of hops"/>
+        <ParameterSetting Name="EXTNETW" Value="" Description="RNRP Ext network"/>
+        <ParameterSetting Name="EXTNETWMASK" Value="" Description="RNRP Ext netw mask"/>
+        <ParameterSetting Name="EXTROUTER1" Value="" Description="RNRP Ext router1 addr"/>
+        <ParameterSetting Name="EXTROUTER2" Value="" Description="RNRP Ext router2 addr"/>
+        <ParameterSetting Name="TOOLROUTING" Value="Disabled" Description="Tool Routing"/>
+        <ParameterSetting Name="TOOLROUTINGNBRCON" Value="20" Description="Tool Routing max no of connections"/>
+        <ParameterSetting Name="CLOCKMASTERORDERNO" Value="0" Description="CS CNCP ClockMaster Order No"/>
+        <ParameterSetting Name="CSPROTTYPE" Value="CNCP" Description="CS Protocol Type"/>
+        <ParameterSetting Name="CSTIMESETENABLE" Value="False" Description="CS Time Set Enabled"/>
+        <ParameterSetting Name="CLOCKSYNCHINTERVAL" Value="20" Description="CS Synch Interval"/>
+        <ParameterSetting Name="SNTPSERVERADDR1" Value="" Description="CS SNTP ServerAddr 1"/>
+        <ParameterSetting Name="SNTPSERVERADDR2" Value="" Description="CS SNTP ServerAddr 2"/>
+      </ParameterSettings>
+      <HWChannels>
+        <HWChannel Address="IW0.0" Name="UnitStatus" ChannelType="status_in">
+          <ConVariable Signal="0">CopCont_HI3DiagAppl.CopCont_HI3Diag_Diag.Cont_HI3_Status</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+      </HWChannels>
+      <HWUnits>
+        <HWUnit Path="Cont_HI3.0.1" TypeID="50331680" TypeDescription="Ethernet" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+          <ParameterSettings>
+            <ParameterSetting Name="IPADDRESS" Value="172.19.132.44" Description="IP address"/>
+            <ParameterSetting Name="IPSUBNETMASK" Value="255.255.255.224" Description="IP subnet mask"/>
+            <ParameterSetting Name="NETAREA" Value="1" Description="Network Area"/>
+            <ParameterSetting Name="PATHNO" Value="0" Description="Path Number"/>
+            <ParameterSetting Name="NODENO" Value="12" Description="Node Number"/>
+            <ParameterSetting Name="LOCAL" Value="0" Description="Network Area Local"/>
+            <ParameterSetting Name="SENDPERIOD" Value="1" Description="Send Period"/>
+            <ParameterSetting Name="MAXLOSTMSG" Value="3" Description="Max Lost Messages"/>
+            <ParameterSetting Name="PROXYROUTER" Value="0.0.0.0" Description="Proxy router"/>
+            <ParameterSetting Name="TARGETADDRESS" Value="0.0.0.0" Description="Target address"/>
+          </ParameterSettings>
+          <HWChannels>
+            <HWChannel Address="IW0.1.0" Name="UnitStatus" ChannelType="status_in">
+              <ConVariable></ConVariable>
+              <IODescription></IODescription>
+            </HWChannel>
+          </HWChannels>
+          <HWUnits/>
+        </HWUnit>
+        <HWUnit Path="Cont_HI3.0.2" TypeID="50331684" TypeDescription="Ethernet" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+          <ParameterSettings>
+            <ParameterSetting Name="IPADDRESS" Value="172.19.135.44" Description="IP address"/>
+            <ParameterSetting Name="IPSUBNETMASK" Value="255.255.255.224" Description="IP subnet mask"/>
+            <ParameterSetting Name="NETAREA" Value="1" Description="Network Area"/>
+            <ParameterSetting Name="PATHNO" Value="1" Description="Path Number"/>
+            <ParameterSetting Name="NODENO" Value="12" Description="Node Number"/>
+            <ParameterSetting Name="LOCAL" Value="0" Description="Network Area Local"/>
+            <ParameterSetting Name="SENDPERIOD" Value="1" Description="Send Period"/>
+            <ParameterSetting Name="MAXLOSTMSG" Value="3" Description="Max Lost Messages"/>
+            <ParameterSetting Name="PROXYROUTER" Value="0.0.0.0" Description="Proxy router"/>
+            <ParameterSetting Name="TARGETADDRESS" Value="0.0.0.0" Description="Target address"/>
+            <ParameterSetting Name="EnableChannel" Value="1" Description="Enable Ethernet channel"/>
+          </ParameterSettings>
+          <HWChannels>
+            <HWChannel Address="IW0.2.0" Name="UnitStatus" ChannelType="status_in">
+              <ConVariable></ConVariable>
+              <IODescription></IODescription>
+            </HWChannel>
+          </HWChannels>
+          <HWUnits/>
+        </HWUnit>
+        <HWUnit Path="Cont_HI3.0.3" TypeID="50331649" TypeDescription="Com" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+          <ParameterSettings>
+            <ParameterSetting Name="BAUDRATE" Value="9.6" Description="Baudrate"/>
+            <ParameterSetting Name="PARITY" Value="none" Description="Parity"/>
+            <ParameterSetting Name="DATABITS" Value="8" Description="Databits"/>
+            <ParameterSetting Name="STOPBITS" Value="1" Description="Stopbits"/>
+            <ParameterSetting Name="HANDSHAKE" Value="None" Description="Flow control"/>
+            <ParameterSetting Name="RTSDELAY" Value="0" Description="Delay of the RTS-signal"/>
+          </ParameterSettings>
+          <HWChannels/>
+          <HWUnits/>
+        </HWUnit>
+        <HWUnit Path="Cont_HI3.0.4" TypeID="50331660" TypeDescription="Com" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+          <ParameterSettings/>
+          <HWChannels/>
+          <HWUnits>
+            <HWUnit Path="Cont_HI3.0.4.0" TypeID="50331661" TypeDescription="PPP" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+              <ParameterSettings>
+                <ParameterSetting Name="IPADDRESS" Value="192.168.255.254" Description="IP address"/>
+                <ParameterSetting Name="IPSUBNETMASK" Value="255.255.255.0" Description="IP subnet mask"/>
+                <ParameterSetting Name="NETAREA" Value="0" Description="Network Area"/>
+                <ParameterSetting Name="PATHNO" Value="0" Description="Path Number"/>
+                <ParameterSetting Name="NODENO" Value="0" Description="Node Number"/>
+                <ParameterSetting Name="LOCAL" Value="0" Description="Network Area Local"/>
+                <ParameterSetting Name="SENDPERIOD" Value="5" Description="Send Period"/>
+                <ParameterSetting Name="MAXLOSTMSG" Value="3" Description="Max Lost Messages"/>
+                <ParameterSetting Name="PROXYROUTER" Value="0.0.0.0" Description="Proxy router"/>
+                <ParameterSetting Name="TARGETADDRESS" Value="0.0.0.0" Description="Target address"/>
+                <ParameterSetting Name="PTPIPADDRESS" Value="192.168.255.253" Description="Remote IP address"/>
+              </ParameterSettings>
+              <HWChannels>
+                <HWChannel Address="IW0.4.0.0" Name="UnitStatus" ChannelType="status_in">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+              </HWChannels>
+              <HWUnits/>
+            </HWUnit>
+          </HWUnits>
+        </HWUnit>
+        <HWUnit Path="Cont_HI3.0.5" TypeID="CC4BA612-99AC-491C-8A5B-17DB0B4F3EFA" TypeDescription="IP" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+          <ParameterSettings/>
+          <HWChannels/>
+          <HWUnits>
+            <HWUnit Path="Cont_HI3.0.5.1" TypeID="DDE44EAC-9263-476A-8E2A-7403995C126C" TypeDescription="IAC MMS" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+              <ParameterSettings>
+                <ParameterSetting Name="COMM_RATE_VERY_SLOW" Value="8000" Description="Interval Time VerySlow"/>
+                <ParameterSetting Name="COMM_RATE_SLOW" Value="4000" Description="Interval Time Slow"/>
+                <ParameterSetting Name="COMM_RATE_NORMAL" Value="2000" Description="Interval Time Normal"/>
+                <ParameterSetting Name="COMM_RATE_FAST" Value="1000" Description="Interval Time Fast"/>
+                <ParameterSetting Name="COMM_RATE_VERY_FAST" Value="500" Description="Interval Time VeryFast"/>
+                <ParameterSetting Name="IAC_COMM_RATE_VERY_SLOW_TIMEOUT" Value="24000" Description="Timeout VerySlow"/>
+                <ParameterSetting Name="IAC_COMM_RATE_SLOW_TIMEOUT" Value="12000" Description="Timeout Slow"/>
+                <ParameterSetting Name="IAC_COMM_RATE_NORMAL_TIMEOUT" Value="6000" Description="Timeout Normal"/>
+                <ParameterSetting Name="IAC_COMM_RATE_FAST_TIMEOUT" Value="3000" Description="Timeout Fast"/>
+                <ParameterSetting Name="IAC_COMM_RATE_VERY_FAST_TIMEOUT" Value="1500" Description="Timeout VeryFast"/>
+                <ParameterSetting Name="IAC_PROTOCOL_NAME" Value="MMS" Description="Protocol"/>
+                <ParameterSetting Name="ENABLE_IAC_CLIENT" Value="1" Description="Enable IAC Client"/>
+                <ParameterSetting Name="ENABLE_IAC_SERVER" Value="1" Description="Enable IAC Server"/>
+              </ParameterSettings>
+              <HWChannels>
+                <HWChannel Address="IW0.5.1.0" Name="UnitStatus" ChannelType="status_in">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+              </HWChannels>
+              <HWUnits/>
+            </HWUnit>
+          </HWUnits>
+        </HWUnit>
+        <HWUnit Path="Cont_HI3.0.11" TypeID="21495812" TypeDescription="ModuleBus" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+          <ParameterSettings>
+            <ParameterSetting Name="POWER_SUP" Value="1" Description="External power supervision"/>
+            <ParameterSetting Name="SCAN_CYCLE_TIME" Value="100" Description="Scan Cycle Time"/>
+          </ParameterSettings>
+          <HWChannels/>
+          <HWUnits>
+            <HWUnit Path="Cont_HI3.0.11.101" TypeID="54DE288A-FC7E-4A3C-83CB-3AC4924CF960" TypeDescription="DO880" RedundantPos="901" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+              <ParameterSettings>
+                <ParameterSetting Name="OPMODE" Value="Redundant" Description="Operation Mode"/>
+                <ParameterSetting Name="TMOUT" Value=" 512" Description="Modulebus timeout"/>
+                <ParameterSetting Name="ACTIVATE1" Value="1" Description="Activate channel 1"/>
+                <ParameterSetting Name="ACTIVATE2" Value="1" Description="Activate channel 2"/>
+                <ParameterSetting Name="ACTIVATE3" Value="1" Description="Activate channel 3"/>
+                <ParameterSetting Name="ACTIVATE4" Value="1" Description="Activate channel 4"/>
+                <ParameterSetting Name="ACTIVATE5" Value="1" Description="Activate channel 5"/>
+                <ParameterSetting Name="ACTIVATE6" Value="1" Description="Activate channel 6"/>
+                <ParameterSetting Name="ACTIVATE7" Value="1" Description="Activate channel 7"/>
+                <ParameterSetting Name="ACTIVATE8" Value="1" Description="Activate channel 8"/>
+                <ParameterSetting Name="ACTIVATE9" Value="1" Description="Activate channel 9"/>
+                <ParameterSetting Name="ACTIVATE10" Value="1" Description="Activate channel 10"/>
+                <ParameterSetting Name="ACTIVATE11" Value="0" Description="Activate channel 11"/>
+                <ParameterSetting Name="ACTIVATE12" Value="0" Description="Activate channel 12"/>
+                <ParameterSetting Name="ACTIVATE13" Value="0" Description="Activate channel 13"/>
+                <ParameterSetting Name="ACTIVATE14" Value="0" Description="Activate channel 14"/>
+                <ParameterSetting Name="ACTIVATE15" Value="0" Description="Activate channel 15"/>
+                <ParameterSetting Name="ACTIVATE16" Value="0" Description="Activate channel 16"/>
+                <ParameterSetting Name="SHORT1" Value="Automatic reset mode" Description="Output mode channel 1"/>
+                <ParameterSetting Name="SHORT2" Value="Automatic reset mode" Description="Output mode channel 2"/>
+                <ParameterSetting Name="SHORT3" Value="Automatic reset mode" Description="Output mode channel 3"/>
+                <ParameterSetting Name="SHORT4" Value="Automatic reset mode" Description="Output mode channel 4"/>
+                <ParameterSetting Name="SHORT5" Value="Automatic reset mode" Description="Output mode channel 5"/>
+                <ParameterSetting Name="SHORT6" Value="Automatic reset mode" Description="Output mode channel 6"/>
+                <ParameterSetting Name="SHORT7" Value="Automatic reset mode" Description="Output mode channel 7"/>
+                <ParameterSetting Name="SHORT8" Value="Automatic reset mode" Description="Output mode channel 8"/>
+                <ParameterSetting Name="SHORT9" Value="Automatic reset mode" Description="Output mode channel 9"/>
+                <ParameterSetting Name="SHORT10" Value="Automatic reset mode" Description="Output mode channel 10"/>
+                <ParameterSetting Name="SHORT11" Value="Automatic reset mode" Description="Output mode channel 11"/>
+                <ParameterSetting Name="SHORT12" Value="Automatic reset mode" Description="Output mode channel 12"/>
+                <ParameterSetting Name="SHORT13" Value="Automatic reset mode" Description="Output mode channel 13"/>
+                <ParameterSetting Name="SHORT14" Value="Automatic reset mode" Description="Output mode channel 14"/>
+                <ParameterSetting Name="SHORT15" Value="Automatic reset mode" Description="Output mode channel 15"/>
+                <ParameterSetting Name="SHORT16" Value="Automatic reset mode" Description="Output mode channel 16"/>
+                <ParameterSetting Name="CHMODE1" Value="Normally energized      (NE)" Description="Normal State channel 1"/>
+                <ParameterSetting Name="CHMODE2" Value="Normally energized      (NE)" Description="Normal State channel 2"/>
+                <ParameterSetting Name="CHMODE3" Value="Normally energized      (NE)" Description="Normal State channel 3"/>
+                <ParameterSetting Name="CHMODE4" Value="Normally energized      (NE)" Description="Normal State channel 4"/>
+                <ParameterSetting Name="CHMODE5" Value="Normally energized      (NE)" Description="Normal State channel 5"/>
+                <ParameterSetting Name="CHMODE6" Value="Normally energized      (NE)" Description="Normal State channel 6"/>
+                <ParameterSetting Name="CHMODE7" Value="Normally energized      (NE)" Description="Normal State channel 7"/>
+                <ParameterSetting Name="CHMODE8" Value="Normally energized      (NE)" Description="Normal State channel 8"/>
+                <ParameterSetting Name="CHMODE9" Value="Normally energized      (NE)" Description="Normal State channel 9"/>
+                <ParameterSetting Name="CHMODE10" Value="Normally energized      (NE)" Description="Normal State channel 10"/>
+                <ParameterSetting Name="CHMODE11" Value="Normally energized      (NE)" Description="Normal State channel 11"/>
+                <ParameterSetting Name="CHMODE12" Value="Normally energized      (NE)" Description="Normal State channel 12"/>
+                <ParameterSetting Name="CHMODE13" Value="Normally energized      (NE)" Description="Normal State channel 13"/>
+                <ParameterSetting Name="CHMODE14" Value="Normally energized      (NE)" Description="Normal State channel 14"/>
+                <ParameterSetting Name="CHMODE15" Value="Normally energized      (NE)" Description="Normal State channel 15"/>
+                <ParameterSetting Name="CHMODE16" Value="Normally energized      (NE)" Description="Normal State channel 16"/>
+                <ParameterSetting Name="EOPEN1" Value="  5" Description="Trig limit open energized channel 1"/>
+                <ParameterSetting Name="EOPEN2" Value="  5" Description="Trig limit open energized channel 2"/>
+                <ParameterSetting Name="EOPEN3" Value="  5" Description="Trig limit open energized channel 3"/>
+                <ParameterSetting Name="EOPEN4" Value="  5" Description="Trig limit open energized channel 4"/>
+                <ParameterSetting Name="EOPEN5" Value="  5" Description="Trig limit open energized channel 5"/>
+                <ParameterSetting Name="EOPEN6" Value="  5" Description="Trig limit open energized channel 6"/>
+                <ParameterSetting Name="EOPEN7" Value="  5" Description="Trig limit open energized channel 7"/>
+                <ParameterSetting Name="EOPEN8" Value="  5" Description="Trig limit open energized channel 8"/>
+                <ParameterSetting Name="EOPEN9" Value="  5" Description="Trig limit open energized channel 9"/>
+                <ParameterSetting Name="EOPEN10" Value="  5" Description="Trig limit open energized channel 10"/>
+                <ParameterSetting Name="EOPEN11" Value="  5" Description="Trig limit open energized channel 11"/>
+                <ParameterSetting Name="EOPEN12" Value="  5" Description="Trig limit open energized channel 12"/>
+                <ParameterSetting Name="EOPEN13" Value="  5" Description="Trig limit open energized channel 13"/>
+                <ParameterSetting Name="EOPEN14" Value="  5" Description="Trig limit open energized channel 14"/>
+                <ParameterSetting Name="EOPEN15" Value="  5" Description="Trig limit open energized channel 15"/>
+                <ParameterSetting Name="EOPEN16" Value="  5" Description="Trig limit open energized channel 16"/>
+                <ParameterSetting Name="ESHORT1" Value=" 600" Description="Trig limit short energized channel 1"/>
+                <ParameterSetting Name="ESHORT2" Value=" 600" Description="Trig limit short energized channel 2"/>
+                <ParameterSetting Name="ESHORT3" Value=" 600" Description="Trig limit short energized channel 3"/>
+                <ParameterSetting Name="ESHORT4" Value=" 600" Description="Trig limit short energized channel 4"/>
+                <ParameterSetting Name="ESHORT5" Value=" 600" Description="Trig limit short energized channel 5"/>
+                <ParameterSetting Name="ESHORT6" Value=" 600" Description="Trig limit short energized channel 6"/>
+                <ParameterSetting Name="ESHORT7" Value=" 600" Description="Trig limit short energized channel 7"/>
+                <ParameterSetting Name="ESHORT8" Value=" 600" Description="Trig limit short energized channel 8"/>
+                <ParameterSetting Name="ESHORT9" Value=" 600" Description="Trig limit short energized channel 9"/>
+                <ParameterSetting Name="ESHORT10" Value=" 600" Description="Trig limit short energized channel 10"/>
+                <ParameterSetting Name="ESHORT11" Value=" 600" Description="Trig limit short energized channel 11"/>
+                <ParameterSetting Name="ESHORT12" Value=" 600" Description="Trig limit short energized channel 12"/>
+                <ParameterSetting Name="ESHORT13" Value=" 600" Description="Trig limit short energized channel 13"/>
+                <ParameterSetting Name="ESHORT14" Value=" 600" Description="Trig limit short energized channel 14"/>
+                <ParameterSetting Name="ESHORT15" Value=" 600" Description="Trig limit short energized channel 15"/>
+                <ParameterSetting Name="ESHORT16" Value=" 600" Description="Trig limit short energized channel 16"/>
+                <ParameterSetting Name="DOPEN1" Value=" 1300" Description="Trig limit open de-energized channel 1"/>
+                <ParameterSetting Name="DOPEN2" Value=" 1300" Description="Trig limit open de-energized channel 2"/>
+                <ParameterSetting Name="DOPEN3" Value=" 1300" Description="Trig limit open de-energized channel 3"/>
+                <ParameterSetting Name="DOPEN4" Value=" 1300" Description="Trig limit open de-energized channel 4"/>
+                <ParameterSetting Name="DOPEN5" Value=" 1300" Description="Trig limit open de-energized channel 5"/>
+                <ParameterSetting Name="DOPEN6" Value=" 1300" Description="Trig limit open de-energized channel 6"/>
+                <ParameterSetting Name="DOPEN7" Value=" 1300" Description="Trig limit open de-energized channel 7"/>
+                <ParameterSetting Name="DOPEN8" Value=" 1300" Description="Trig limit open de-energized channel 8"/>
+                <ParameterSetting Name="DOPEN9" Value=" 1300" Description="Trig limit open de-energized channel 9"/>
+                <ParameterSetting Name="DOPEN10" Value=" 1300" Description="Trig limit open de-energized channel 10"/>
+                <ParameterSetting Name="DOPEN11" Value=" 1300" Description="Trig limit open de-energized channel 11"/>
+                <ParameterSetting Name="DOPEN12" Value=" 1300" Description="Trig limit open de-energized channel 12"/>
+                <ParameterSetting Name="DOPEN13" Value=" 1300" Description="Trig limit open de-energized channel 13"/>
+                <ParameterSetting Name="DOPEN14" Value=" 1300" Description="Trig limit open de-energized channel 14"/>
+                <ParameterSetting Name="DOPEN15" Value=" 1300" Description="Trig limit open de-energized channel 15"/>
+                <ParameterSetting Name="DOPEN16" Value=" 1300" Description="Trig limit open de-energized channel 16"/>
+                <ParameterSetting Name="DSHORT1" Value="  40" Description="Trig limit short de-energized channel 1"/>
+                <ParameterSetting Name="DSHORT2" Value="  40" Description="Trig limit short de-energized channel 2"/>
+                <ParameterSetting Name="DSHORT3" Value="  40" Description="Trig limit short de-energized channel 3"/>
+                <ParameterSetting Name="DSHORT4" Value="  40" Description="Trig limit short de-energized channel 4"/>
+                <ParameterSetting Name="DSHORT5" Value="  40" Description="Trig limit short de-energized channel 5"/>
+                <ParameterSetting Name="DSHORT6" Value="  40" Description="Trig limit short de-energized channel 6"/>
+                <ParameterSetting Name="DSHORT7" Value="  40" Description="Trig limit short de-energized channel 7"/>
+                <ParameterSetting Name="DSHORT8" Value="  40" Description="Trig limit short de-energized channel 8"/>
+                <ParameterSetting Name="DSHORT9" Value="  40" Description="Trig limit short de-energized channel 9"/>
+                <ParameterSetting Name="DSHORT10" Value="  40" Description="Trig limit short de-energized channel 10"/>
+                <ParameterSetting Name="DSHORT11" Value="  40" Description="Trig limit short de-energized channel 11"/>
+                <ParameterSetting Name="DSHORT12" Value="  40" Description="Trig limit short de-energized channel 12"/>
+                <ParameterSetting Name="DSHORT13" Value="  40" Description="Trig limit short de-energized channel 13"/>
+                <ParameterSetting Name="DSHORT14" Value="  40" Description="Trig limit short de-energized channel 14"/>
+                <ParameterSetting Name="DSHORT15" Value="  40" Description="Trig limit short de-energized channel 15"/>
+                <ParameterSetting Name="DSHORT16" Value="  40" Description="Trig limit short de-energized channel 16"/>
+              </ParameterSettings>
+              <HWChannels>
+                <HWChannel Address="QX0.11.101.1" Name="Output 1" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PilotBleedIO</ConVariable>
+                  <IODescription>DO(704)    BPCS Close Pilot Line Vent Valve **CRITICAL INSTRUMENT **</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.2" Name="Output 2" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.MainBleedIO</ConVariable>
+                  <IODescription>DO(705)    CLOSE MAIN GAS LINE VENT VALVE **CRITICAL INSTRUMENT**</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.3" Name="Output 3" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.VentBleedIO</ConVariable>
+                  <IODescription>DO(707)    CLOSE COMBINED VENT HEADER VENT VALVE **CRIT. INSTR.**</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.4" Name="Output 4" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PilotInletIO</ConVariable>
+                  <IODescription>DO(714)    SIL2 PILOT FUEL GAS UPSTREAM VALVE [OPEN,CLOSE]</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.5" Name="Output 5" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.MainInletIO</ConVariable>
+                  <IODescription>DO(715)    SIL2 MAIN FUEL GAS UPSTREAM VALVE  [OPEN,CLOSE]</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.6" Name="Output 6" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.VentInletIO</ConVariable>
+                  <IODescription>DO(717)    SIL2 OPEN COMBINED VENT HEADER UPSTREAM VALVE</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.7" Name="Output 7" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.EV91321</ConVariable>
+                  <IODescription>DO(706)    719 DRYER ATMOSPHERE VALVE</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.8" Name="Output 8" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.EV91620</ConVariable>
+                  <IODescription>TOX Gas Block Valve - top</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.9" Name="Output 9" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.EV90035</ConVariable>
+                  <IODescription>DO(726)    719 'C'DRYER HDR UPSTREAM BLOCK VALVE      [OPEN,CLOSE]</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.10" Name="Output 10" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.EV90029</ConVariable>
+                  <IODescription>DO(735)    719 'B'DRYER HDR UPSTREAM BLOCK VALVE      [OPEN,CLOSE]</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.11" Name="Output 11" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.12" Name="Output 12" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.13" Name="Output 13" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.14" Name="Output 14" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.15" Name="Output 15" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.101.16" Name="Output 16" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.101.17" Name="UnitStatus" ChannelType="status_in">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+              </HWChannels>
+              <HWUnits/>
+            </HWUnit>
+            <HWUnit Path="Cont_HI3.0.11.102" TypeID="54DE288A-FC7E-4A3C-83CB-3AC4924CF960" TypeDescription="DO880" RedundantPos="902" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+              <ParameterSettings>
+                <ParameterSetting Name="OPMODE" Value="Redundant" Description="Operation Mode"/>
+                <ParameterSetting Name="TMOUT" Value=" 512" Description="Modulebus timeout"/>
+                <ParameterSetting Name="ACTIVATE1" Value="1" Description="Activate channel 1"/>
+                <ParameterSetting Name="ACTIVATE2" Value="1" Description="Activate channel 2"/>
+                <ParameterSetting Name="ACTIVATE3" Value="1" Description="Activate channel 3"/>
+                <ParameterSetting Name="ACTIVATE4" Value="1" Description="Activate channel 4"/>
+                <ParameterSetting Name="ACTIVATE5" Value="1" Description="Activate channel 5"/>
+                <ParameterSetting Name="ACTIVATE6" Value="0" Description="Activate channel 6"/>
+                <ParameterSetting Name="ACTIVATE7" Value="0" Description="Activate channel 7"/>
+                <ParameterSetting Name="ACTIVATE8" Value="0" Description="Activate channel 8"/>
+                <ParameterSetting Name="ACTIVATE9" Value="0" Description="Activate channel 9"/>
+                <ParameterSetting Name="ACTIVATE10" Value="0" Description="Activate channel 10"/>
+                <ParameterSetting Name="ACTIVATE11" Value="0" Description="Activate channel 11"/>
+                <ParameterSetting Name="ACTIVATE12" Value="0" Description="Activate channel 12"/>
+                <ParameterSetting Name="ACTIVATE13" Value="0" Description="Activate channel 13"/>
+                <ParameterSetting Name="ACTIVATE14" Value="0" Description="Activate channel 14"/>
+                <ParameterSetting Name="ACTIVATE15" Value="0" Description="Activate channel 15"/>
+                <ParameterSetting Name="ACTIVATE16" Value="1" Description="Activate channel 16"/>
+                <ParameterSetting Name="SHORT1" Value="Automatic reset mode" Description="Output mode channel 1"/>
+                <ParameterSetting Name="SHORT2" Value="Automatic reset mode" Description="Output mode channel 2"/>
+                <ParameterSetting Name="SHORT3" Value="Automatic reset mode" Description="Output mode channel 3"/>
+                <ParameterSetting Name="SHORT4" Value="Automatic reset mode" Description="Output mode channel 4"/>
+                <ParameterSetting Name="SHORT5" Value="Automatic reset mode" Description="Output mode channel 5"/>
+                <ParameterSetting Name="SHORT6" Value="Automatic reset mode" Description="Output mode channel 6"/>
+                <ParameterSetting Name="SHORT7" Value="Automatic reset mode" Description="Output mode channel 7"/>
+                <ParameterSetting Name="SHORT8" Value="Automatic reset mode" Description="Output mode channel 8"/>
+                <ParameterSetting Name="SHORT9" Value="Automatic reset mode" Description="Output mode channel 9"/>
+                <ParameterSetting Name="SHORT10" Value="Automatic reset mode" Description="Output mode channel 10"/>
+                <ParameterSetting Name="SHORT11" Value="Automatic reset mode" Description="Output mode channel 11"/>
+                <ParameterSetting Name="SHORT12" Value="Automatic reset mode" Description="Output mode channel 12"/>
+                <ParameterSetting Name="SHORT13" Value="Automatic reset mode" Description="Output mode channel 13"/>
+                <ParameterSetting Name="SHORT14" Value="Automatic reset mode" Description="Output mode channel 14"/>
+                <ParameterSetting Name="SHORT15" Value="Automatic reset mode" Description="Output mode channel 15"/>
+                <ParameterSetting Name="SHORT16" Value="Automatic reset mode" Description="Output mode channel 16"/>
+                <ParameterSetting Name="CHMODE1" Value="Normally energized      (NE)" Description="Normal State channel 1"/>
+                <ParameterSetting Name="CHMODE2" Value="Normally energized      (NE)" Description="Normal State channel 2"/>
+                <ParameterSetting Name="CHMODE3" Value="Normally energized      (NE)" Description="Normal State channel 3"/>
+                <ParameterSetting Name="CHMODE4" Value="Normally energized      (NE)" Description="Normal State channel 4"/>
+                <ParameterSetting Name="CHMODE5" Value="Normally energized      (NE)" Description="Normal State channel 5"/>
+                <ParameterSetting Name="CHMODE6" Value="Normally energized      (NE)" Description="Normal State channel 6"/>
+                <ParameterSetting Name="CHMODE7" Value="Normally energized      (NE)" Description="Normal State channel 7"/>
+                <ParameterSetting Name="CHMODE8" Value="Normally energized      (NE)" Description="Normal State channel 8"/>
+                <ParameterSetting Name="CHMODE9" Value="Normally energized      (NE)" Description="Normal State channel 9"/>
+                <ParameterSetting Name="CHMODE10" Value="Normally energized      (NE)" Description="Normal State channel 10"/>
+                <ParameterSetting Name="CHMODE11" Value="Normally energized      (NE)" Description="Normal State channel 11"/>
+                <ParameterSetting Name="CHMODE12" Value="Normally energized      (NE)" Description="Normal State channel 12"/>
+                <ParameterSetting Name="CHMODE13" Value="Normally energized      (NE)" Description="Normal State channel 13"/>
+                <ParameterSetting Name="CHMODE14" Value="Normally energized      (NE)" Description="Normal State channel 14"/>
+                <ParameterSetting Name="CHMODE15" Value="Normally energized      (NE)" Description="Normal State channel 15"/>
+                <ParameterSetting Name="CHMODE16" Value="Normally energized      (NE)" Description="Normal State channel 16"/>
+                <ParameterSetting Name="EOPEN1" Value="  5" Description="Trig limit open energized channel 1"/>
+                <ParameterSetting Name="EOPEN2" Value="  5" Description="Trig limit open energized channel 2"/>
+                <ParameterSetting Name="EOPEN3" Value="  5" Description="Trig limit open energized channel 3"/>
+                <ParameterSetting Name="EOPEN4" Value="  5" Description="Trig limit open energized channel 4"/>
+                <ParameterSetting Name="EOPEN5" Value="  5" Description="Trig limit open energized channel 5"/>
+                <ParameterSetting Name="EOPEN6" Value="  5" Description="Trig limit open energized channel 6"/>
+                <ParameterSetting Name="EOPEN7" Value="  5" Description="Trig limit open energized channel 7"/>
+                <ParameterSetting Name="EOPEN8" Value="  5" Description="Trig limit open energized channel 8"/>
+                <ParameterSetting Name="EOPEN9" Value="  5" Description="Trig limit open energized channel 9"/>
+                <ParameterSetting Name="EOPEN10" Value="  5" Description="Trig limit open energized channel 10"/>
+                <ParameterSetting Name="EOPEN11" Value="  5" Description="Trig limit open energized channel 11"/>
+                <ParameterSetting Name="EOPEN12" Value="  5" Description="Trig limit open energized channel 12"/>
+                <ParameterSetting Name="EOPEN13" Value="  5" Description="Trig limit open energized channel 13"/>
+                <ParameterSetting Name="EOPEN14" Value="  5" Description="Trig limit open energized channel 14"/>
+                <ParameterSetting Name="EOPEN15" Value="  5" Description="Trig limit open energized channel 15"/>
+                <ParameterSetting Name="EOPEN16" Value="  5" Description="Trig limit open energized channel 16"/>
+                <ParameterSetting Name="ESHORT1" Value=" 600" Description="Trig limit short energized channel 1"/>
+                <ParameterSetting Name="ESHORT2" Value=" 600" Description="Trig limit short energized channel 2"/>
+                <ParameterSetting Name="ESHORT3" Value=" 600" Description="Trig limit short energized channel 3"/>
+                <ParameterSetting Name="ESHORT4" Value=" 600" Description="Trig limit short energized channel 4"/>
+                <ParameterSetting Name="ESHORT5" Value=" 600" Description="Trig limit short energized channel 5"/>
+                <ParameterSetting Name="ESHORT6" Value=" 600" Description="Trig limit short energized channel 6"/>
+                <ParameterSetting Name="ESHORT7" Value=" 600" Description="Trig limit short energized channel 7"/>
+                <ParameterSetting Name="ESHORT8" Value=" 600" Description="Trig limit short energized channel 8"/>
+                <ParameterSetting Name="ESHORT9" Value=" 600" Description="Trig limit short energized channel 9"/>
+                <ParameterSetting Name="ESHORT10" Value=" 600" Description="Trig limit short energized channel 10"/>
+                <ParameterSetting Name="ESHORT11" Value=" 600" Description="Trig limit short energized channel 11"/>
+                <ParameterSetting Name="ESHORT12" Value=" 600" Description="Trig limit short energized channel 12"/>
+                <ParameterSetting Name="ESHORT13" Value=" 600" Description="Trig limit short energized channel 13"/>
+                <ParameterSetting Name="ESHORT14" Value=" 600" Description="Trig limit short energized channel 14"/>
+                <ParameterSetting Name="ESHORT15" Value=" 600" Description="Trig limit short energized channel 15"/>
+                <ParameterSetting Name="ESHORT16" Value=" 600" Description="Trig limit short energized channel 16"/>
+                <ParameterSetting Name="DOPEN1" Value=" 1300" Description="Trig limit open de-energized channel 1"/>
+                <ParameterSetting Name="DOPEN2" Value=" 1300" Description="Trig limit open de-energized channel 2"/>
+                <ParameterSetting Name="DOPEN3" Value=" 1300" Description="Trig limit open de-energized channel 3"/>
+                <ParameterSetting Name="DOPEN4" Value=" 1300" Description="Trig limit open de-energized channel 4"/>
+                <ParameterSetting Name="DOPEN5" Value=" 1300" Description="Trig limit open de-energized channel 5"/>
+                <ParameterSetting Name="DOPEN6" Value=" 1300" Description="Trig limit open de-energized channel 6"/>
+                <ParameterSetting Name="DOPEN7" Value=" 1300" Description="Trig limit open de-energized channel 7"/>
+                <ParameterSetting Name="DOPEN8" Value=" 1300" Description="Trig limit open de-energized channel 8"/>
+                <ParameterSetting Name="DOPEN9" Value=" 1300" Description="Trig limit open de-energized channel 9"/>
+                <ParameterSetting Name="DOPEN10" Value=" 1300" Description="Trig limit open de-energized channel 10"/>
+                <ParameterSetting Name="DOPEN11" Value=" 1300" Description="Trig limit open de-energized channel 11"/>
+                <ParameterSetting Name="DOPEN12" Value=" 1300" Description="Trig limit open de-energized channel 12"/>
+                <ParameterSetting Name="DOPEN13" Value=" 1300" Description="Trig limit open de-energized channel 13"/>
+                <ParameterSetting Name="DOPEN14" Value=" 1300" Description="Trig limit open de-energized channel 14"/>
+                <ParameterSetting Name="DOPEN15" Value=" 1300" Description="Trig limit open de-energized channel 15"/>
+                <ParameterSetting Name="DOPEN16" Value="&gt;2000" Description="Trig limit open de-energized channel 16"/>
+                <ParameterSetting Name="DSHORT1" Value="  40" Description="Trig limit short de-energized channel 1"/>
+                <ParameterSetting Name="DSHORT2" Value="  40" Description="Trig limit short de-energized channel 2"/>
+                <ParameterSetting Name="DSHORT3" Value="  40" Description="Trig limit short de-energized channel 3"/>
+                <ParameterSetting Name="DSHORT4" Value="  40" Description="Trig limit short de-energized channel 4"/>
+                <ParameterSetting Name="DSHORT5" Value="  40" Description="Trig limit short de-energized channel 5"/>
+                <ParameterSetting Name="DSHORT6" Value="  40" Description="Trig limit short de-energized channel 6"/>
+                <ParameterSetting Name="DSHORT7" Value="  40" Description="Trig limit short de-energized channel 7"/>
+                <ParameterSetting Name="DSHORT8" Value="  40" Description="Trig limit short de-energized channel 8"/>
+                <ParameterSetting Name="DSHORT9" Value="  40" Description="Trig limit short de-energized channel 9"/>
+                <ParameterSetting Name="DSHORT10" Value="  40" Description="Trig limit short de-energized channel 10"/>
+                <ParameterSetting Name="DSHORT11" Value="  40" Description="Trig limit short de-energized channel 11"/>
+                <ParameterSetting Name="DSHORT12" Value="  40" Description="Trig limit short de-energized channel 12"/>
+                <ParameterSetting Name="DSHORT13" Value="  40" Description="Trig limit short de-energized channel 13"/>
+                <ParameterSetting Name="DSHORT14" Value="  40" Description="Trig limit short de-energized channel 14"/>
+                <ParameterSetting Name="DSHORT15" Value="  40" Description="Trig limit short de-energized channel 15"/>
+                <ParameterSetting Name="DSHORT16" Value="  40" Description="Trig limit short de-energized channel 16"/>
+              </ParameterSettings>
+              <HWChannels>
+                <HWChannel Address="QX0.11.102.1" Name="Output 1" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PilotOutletIO</ConVariable>
+                  <IODescription>DO(724)    SIL2 Pilot Fuel Downstream VLV **Crit. Inst** [OPEN,CLOSE]</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.2" Name="Output 2" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.MainOutletIO</ConVariable>
+                  <IODescription>DO(725)    SIL2 Main Fuel Downstream VLV **Crit. Inst** [OPEN,CLOSE]</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.3" Name="Output 3" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.VentOutletIO</ConVariable>
+                  <IODescription>DO(727)    SIL2 Combined Vent Header Downstream Valve [OPEN,CLOSE]</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.4" Name="Output 4" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.EV91322</ConVariable>
+                  <IODescription>DO(716)    719 DRYER HEADER DOWNSTREAM BLOCK VALVE</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.5" Name="Output 5" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.EV91621</ConVariable>
+                  <IODescription>TOX Gas Block Valve - bottom</IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.6" Name="Output 6" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.7" Name="Output 7" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.8" Name="Output 8" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.9" Name="Output 9" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.10" Name="Output 10" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.11" Name="Output 11" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.12" Name="Output 12" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.13" Name="Output 13" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.14" Name="Output 14" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.15" Name="Output 15" ChannelType="bool_out" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="QX0.11.102.16" Name="Output 16" ChannelType="bool_out" Reversed="0">
+                  <ConVariable Signal="0">CopCont_HI3DiagAppl.AlarmHorn.AlarmHornIO</ConVariable>
+                  <IODescription>TOX Alarm Horn</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.102.17" Name="UnitStatus" ChannelType="status_in">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+              </HWChannels>
+              <HWUnits/>
+            </HWUnit>
+            <HWUnit Path="Cont_HI3.0.11.103" TypeID="B1439993-AACD-4756-AB75-0BC72BB17705" TypeDescription="DI880" RedundantPos="903" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+              <ParameterSettings>
+                <ParameterSetting Name="OPMODE" Value="Redundant" Description="Operation Mode"/>
+                <ParameterSetting Name="TMOUT" Value=" 512" Description="Modulebus timeout"/>
+                <ParameterSetting Name="ACTIVATE1" Value="1" Description="Activate channel 1"/>
+                <ParameterSetting Name="ACTIVATE2" Value="1" Description="Activate channel 2"/>
+                <ParameterSetting Name="ACTIVATE3" Value="1" Description="Activate channel 3"/>
+                <ParameterSetting Name="ACTIVATE4" Value="1" Description="Activate channel 4"/>
+                <ParameterSetting Name="ACTIVATE5" Value="1" Description="Activate channel 5"/>
+                <ParameterSetting Name="ACTIVATE6" Value="1" Description="Activate channel 6"/>
+                <ParameterSetting Name="ACTIVATE7" Value="1" Description="Activate channel 7"/>
+                <ParameterSetting Name="ACTIVATE8" Value="1" Description="Activate channel 8"/>
+                <ParameterSetting Name="ACTIVATE9" Value="1" Description="Activate channel 9"/>
+                <ParameterSetting Name="ACTIVATE10" Value="1" Description="Activate channel 10"/>
+                <ParameterSetting Name="ACTIVATE11" Value="0" Description="Activate channel 11"/>
+                <ParameterSetting Name="ACTIVATE12" Value="1" Description="Activate channel 12"/>
+                <ParameterSetting Name="ACTIVATE13" Value="1" Description="Activate channel 13"/>
+                <ParameterSetting Name="ACTIVATE14" Value="1" Description="Activate channel 14"/>
+                <ParameterSetting Name="ACTIVATE15" Value="1" Description="Activate channel 15"/>
+                <ParameterSetting Name="ACTIVATE16" Value="1" Description="Activate channel 16"/>
+                <ParameterSetting Name="SOE1" Value="DI" Description="Operation mode channel 1"/>
+                <ParameterSetting Name="SOE2" Value="DI" Description="Operation mode channel 2"/>
+                <ParameterSetting Name="SOE3" Value="DI" Description="Operation mode channel 3"/>
+                <ParameterSetting Name="SOE4" Value="DI" Description="Operation mode channel 4"/>
+                <ParameterSetting Name="SOE5" Value="DI" Description="Operation mode channel 5"/>
+                <ParameterSetting Name="SOE6" Value="DI" Description="Operation mode channel 6"/>
+                <ParameterSetting Name="SOE7" Value="DI" Description="Operation mode channel 7"/>
+                <ParameterSetting Name="SOE8" Value="DI" Description="Operation mode channel 8"/>
+                <ParameterSetting Name="SOE9" Value="DI" Description="Operation mode channel 9"/>
+                <ParameterSetting Name="SOE10" Value="DI" Description="Operation mode channel 10"/>
+                <ParameterSetting Name="SOE11" Value="DI" Description="Operation mode channel 11"/>
+                <ParameterSetting Name="SOE12" Value="DI" Description="Operation mode channel 12"/>
+                <ParameterSetting Name="SOE13" Value="DI" Description="Operation mode channel 13"/>
+                <ParameterSetting Name="SOE14" Value="DI" Description="Operation mode channel 14"/>
+                <ParameterSetting Name="SOE15" Value="DI" Description="Operation mode channel 15"/>
+                <ParameterSetting Name="SOE16" Value="DI" Description="Operation mode channel 16"/>
+                <ParameterSetting Name="FILTCH1" Value="50" Description="Filter time channel 1"/>
+                <ParameterSetting Name="FILTCH2" Value="50" Description="Filter time channel 2"/>
+                <ParameterSetting Name="FILTCH3" Value="50" Description="Filter time channel 3"/>
+                <ParameterSetting Name="FILTCH4" Value="50" Description="Filter time channel 4"/>
+                <ParameterSetting Name="FILTCH5" Value="50" Description="Filter time channel 5"/>
+                <ParameterSetting Name="FILTCH6" Value="50" Description="Filter time channel 6"/>
+                <ParameterSetting Name="FILTCH7" Value="50" Description="Filter time channel 7"/>
+                <ParameterSetting Name="FILTCH8" Value="50" Description="Filter time channel 8"/>
+                <ParameterSetting Name="FILTCH9" Value="50" Description="Filter time channel 9"/>
+                <ParameterSetting Name="FILTCH10" Value="50" Description="Filter time channel 10"/>
+                <ParameterSetting Name="FILTCH11" Value="50" Description="Filter time channel 11"/>
+                <ParameterSetting Name="FILTCH12" Value="50" Description="Filter time channel 12"/>
+                <ParameterSetting Name="FILTCH13" Value="50" Description="Filter time channel 13"/>
+                <ParameterSetting Name="FILTCH14" Value="50" Description="Filter time channel 14"/>
+                <ParameterSetting Name="FILTCH15" Value="50" Description="Filter time channel 15"/>
+                <ParameterSetting Name="FILTCH16" Value="50" Description="Filter time channel 16"/>
+                <ParameterSetting Name="NORMST1" Value="1" Description="Normal position channel 1"/>
+                <ParameterSetting Name="NORMST2" Value="1" Description="Normal position channel 2"/>
+                <ParameterSetting Name="NORMST3" Value="1" Description="Normal position channel 3"/>
+                <ParameterSetting Name="NORMST4" Value="1" Description="Normal position channel 4"/>
+                <ParameterSetting Name="NORMST5" Value="1" Description="Normal position channel 5"/>
+                <ParameterSetting Name="NORMST6" Value="1" Description="Normal position channel 6"/>
+                <ParameterSetting Name="NORMST7" Value="1" Description="Normal position channel 7"/>
+                <ParameterSetting Name="NORMST8" Value="1" Description="Normal position channel 8"/>
+                <ParameterSetting Name="NORMST9" Value="1" Description="Normal position channel 9"/>
+                <ParameterSetting Name="NORMST10" Value="1" Description="Normal position channel 10"/>
+                <ParameterSetting Name="NORMST11" Value="1" Description="Normal position channel 11"/>
+                <ParameterSetting Name="NORMST12" Value="1" Description="Normal position channel 12"/>
+                <ParameterSetting Name="NORMST13" Value="1" Description="Normal position channel 13"/>
+                <ParameterSetting Name="NORMST14" Value="1" Description="Normal position channel 14"/>
+                <ParameterSetting Name="NORMST15" Value="1" Description="Normal position channel 15"/>
+                <ParameterSetting Name="NORMST16" Value="1" Description="Normal position channel 16"/>
+                <ParameterSetting Name="EVBLOCK1" Value="0" Description="Event block channel 1"/>
+                <ParameterSetting Name="EVBLOCK2" Value="0" Description="Event block channel 2"/>
+                <ParameterSetting Name="EVBLOCK3" Value="0" Description="Event block channel 3"/>
+                <ParameterSetting Name="EVBLOCK4" Value="0" Description="Event block channel 4"/>
+                <ParameterSetting Name="EVBLOCK5" Value="0" Description="Event block channel 5"/>
+                <ParameterSetting Name="EVBLOCK6" Value="0" Description="Event block channel 6"/>
+                <ParameterSetting Name="EVBLOCK7" Value="0" Description="Event block channel 7"/>
+                <ParameterSetting Name="EVBLOCK8" Value="0" Description="Event block channel 8"/>
+                <ParameterSetting Name="EVBLOCK9" Value="0" Description="Event block channel 9"/>
+                <ParameterSetting Name="EVBLOCK10" Value="0" Description="Event block channel 10"/>
+                <ParameterSetting Name="EVBLOCK11" Value="0" Description="Event block channel 11"/>
+                <ParameterSetting Name="EVBLOCK12" Value="0" Description="Event block channel 12"/>
+                <ParameterSetting Name="EVBLOCK13" Value="0" Description="Event block channel 13"/>
+                <ParameterSetting Name="EVBLOCK14" Value="0" Description="Event block channel 14"/>
+                <ParameterSetting Name="EVBLOCK15" Value="0" Description="Event block channel 15"/>
+                <ParameterSetting Name="EVBLOCK16" Value="0" Description="Event block channel 16"/>
+                <ParameterSetting Name="SHTRIG1" Value="4" Description="Shutter filter nof ch 1"/>
+                <ParameterSetting Name="SHTRIG2" Value="4" Description="Shutter filter nof ch 2"/>
+                <ParameterSetting Name="SHTRIG3" Value="4" Description="Shutter filter nof ch 3"/>
+                <ParameterSetting Name="SHTRIG4" Value="4" Description="Shutter filter nof ch 4"/>
+                <ParameterSetting Name="SHTRIG5" Value="4" Description="Shutter filter nof ch 5"/>
+                <ParameterSetting Name="SHTRIG6" Value="4" Description="Shutter filter nof ch 6"/>
+                <ParameterSetting Name="SHTRIG7" Value="4" Description="Shutter filter nof ch 7"/>
+                <ParameterSetting Name="SHTRIG8" Value="4" Description="Shutter filter nof ch 8"/>
+                <ParameterSetting Name="SHTRIG9" Value="4" Description="Shutter filter nof ch 9"/>
+                <ParameterSetting Name="SHTRIG10" Value="4" Description="Shutter filter nof ch 10"/>
+                <ParameterSetting Name="SHTRIG11" Value="4" Description="Shutter filter nof ch 11"/>
+                <ParameterSetting Name="SHTRIG12" Value="4" Description="Shutter filter nof ch 12"/>
+                <ParameterSetting Name="SHTRIG13" Value="4" Description="Shutter filter nof ch 13"/>
+                <ParameterSetting Name="SHTRIG14" Value="4" Description="Shutter filter nof ch 14"/>
+                <ParameterSetting Name="SHTRIG15" Value="4" Description="Shutter filter nof ch 15"/>
+                <ParameterSetting Name="SHTRIG16" Value="4" Description="Shutter filter nof ch 16"/>
+                <ParameterSetting Name="SHPERI1" Value="2" Description="Shutter filter period time ch 1"/>
+                <ParameterSetting Name="SHPERI2" Value="2" Description="Shutter filter period time ch 2"/>
+                <ParameterSetting Name="SHPERI3" Value="2" Description="Shutter filter period time ch 3"/>
+                <ParameterSetting Name="SHPERI4" Value="2" Description="Shutter filter period time ch 4"/>
+                <ParameterSetting Name="SHPERI5" Value="2" Description="Shutter filter period time ch 5"/>
+                <ParameterSetting Name="SHPERI6" Value="2" Description="Shutter filter period time ch 6"/>
+                <ParameterSetting Name="SHPERI7" Value="2" Description="Shutter filter period time ch 7"/>
+                <ParameterSetting Name="SHPERI8" Value="2" Description="Shutter filter period time ch 8"/>
+                <ParameterSetting Name="SHPERI9" Value="2" Description="Shutter filter period time ch 9"/>
+                <ParameterSetting Name="SHPERI10" Value="2" Description="Shutter filter period time ch 10"/>
+                <ParameterSetting Name="SHPERI11" Value="2" Description="Shutter filter period time ch 11"/>
+                <ParameterSetting Name="SHPERI12" Value="2" Description="Shutter filter period time ch 12"/>
+                <ParameterSetting Name="SHPERI13" Value="2" Description="Shutter filter period time ch 13"/>
+                <ParameterSetting Name="SHPERI14" Value="2" Description="Shutter filter period time ch 14"/>
+                <ParameterSetting Name="SHPERI15" Value="2" Description="Shutter filter period time ch 15"/>
+                <ParameterSetting Name="SHPERI16" Value="2" Description="Shutter filter period time ch 16"/>
+                <ParameterSetting Name="SHREC1" Value="0" Description="Shutter filter rec. time ch 1"/>
+                <ParameterSetting Name="SHREC2" Value="0" Description="Shutter filter rec. time ch 2"/>
+                <ParameterSetting Name="SHREC3" Value="0" Description="Shutter filter rec. time ch 3"/>
+                <ParameterSetting Name="SHREC4" Value="0" Description="Shutter filter rec. time ch 4"/>
+                <ParameterSetting Name="SHREC5" Value="0" Description="Shutter filter rec. time ch 5"/>
+                <ParameterSetting Name="SHREC6" Value="0" Description="Shutter filter rec. time ch 6"/>
+                <ParameterSetting Name="SHREC7" Value="0" Description="Shutter filter rec. time ch 7"/>
+                <ParameterSetting Name="SHREC8" Value="0" Description="Shutter filter rec. time ch 8"/>
+                <ParameterSetting Name="SHREC9" Value="0" Description="Shutter filter rec. time ch 9"/>
+                <ParameterSetting Name="SHREC10" Value="0" Description="Shutter filter rec. time ch 10"/>
+                <ParameterSetting Name="SHREC11" Value="0" Description="Shutter filter rec. time ch 11"/>
+                <ParameterSetting Name="SHREC12" Value="0" Description="Shutter filter rec. time ch 12"/>
+                <ParameterSetting Name="SHREC13" Value="0" Description="Shutter filter rec. time ch 13"/>
+                <ParameterSetting Name="SHREC14" Value="0" Description="Shutter filter rec. time ch 14"/>
+                <ParameterSetting Name="SHREC15" Value="0" Description="Shutter filter rec. time ch 15"/>
+                <ParameterSetting Name="SHREC16" Value="0" Description="Shutter filter rec. time ch 16"/>
+                <ParameterSetting Name="ISPControl1" Value="Keep current value" Description="ISP Control channel 1"/>
+                <ParameterSetting Name="ISPControl2" Value="Keep current value" Description="ISP Control channel 2"/>
+                <ParameterSetting Name="ISPControl3" Value="Keep current value" Description="ISP Control channel 3"/>
+                <ParameterSetting Name="ISPControl4" Value="Keep current value" Description="ISP Control channel 4"/>
+                <ParameterSetting Name="ISPControl5" Value="Keep current value" Description="ISP Control channel 5"/>
+                <ParameterSetting Name="ISPControl6" Value="Keep current value" Description="ISP Control channel 6"/>
+                <ParameterSetting Name="ISPControl7" Value="Keep current value" Description="ISP Control channel 7"/>
+                <ParameterSetting Name="ISPControl8" Value="Keep current value" Description="ISP Control channel 8"/>
+                <ParameterSetting Name="ISPControl9" Value="Keep current value" Description="ISP Control channel 9"/>
+                <ParameterSetting Name="ISPControl10" Value="Keep current value" Description="ISP Control channel 10"/>
+                <ParameterSetting Name="ISPControl11" Value="Keep current value" Description="ISP Control channel 11"/>
+                <ParameterSetting Name="ISPControl12" Value="Keep current value" Description="ISP Control channel 12"/>
+                <ParameterSetting Name="ISPControl13" Value="Keep current value" Description="ISP Control channel 13"/>
+                <ParameterSetting Name="ISPControl14" Value="Keep current value" Description="ISP Control channel 14"/>
+                <ParameterSetting Name="ISPControl15" Value="Keep current value" Description="ISP Control channel 15"/>
+                <ParameterSetting Name="ISPControl16" Value="Keep current value" Description="ISP Control channel 16"/>
+                <ParameterSetting Name="ISPValue1" Value="0" Description="ISP Value channel 1"/>
+                <ParameterSetting Name="ISPValue2" Value="0" Description="ISP Value channel 2"/>
+                <ParameterSetting Name="ISPValue3" Value="0" Description="ISP Value channel 3"/>
+                <ParameterSetting Name="ISPValue4" Value="0" Description="ISP Value channel 4"/>
+                <ParameterSetting Name="ISPValue5" Value="0" Description="ISP Value channel 5"/>
+                <ParameterSetting Name="ISPValue6" Value="0" Description="ISP Value channel 6"/>
+                <ParameterSetting Name="ISPValue7" Value="0" Description="ISP Value channel 7"/>
+                <ParameterSetting Name="ISPValue8" Value="0" Description="ISP Value channel 8"/>
+                <ParameterSetting Name="ISPValue9" Value="0" Description="ISP Value channel 9"/>
+                <ParameterSetting Name="ISPValue10" Value="0" Description="ISP Value channel 10"/>
+                <ParameterSetting Name="ISPValue11" Value="0" Description="ISP Value channel 11"/>
+                <ParameterSetting Name="ISPValue12" Value="0" Description="ISP Value channel 12"/>
+                <ParameterSetting Name="ISPValue13" Value="0" Description="ISP Value channel 13"/>
+                <ParameterSetting Name="ISPValue14" Value="0" Description="ISP Value channel 14"/>
+                <ParameterSetting Name="ISPValue15" Value="0" Description="ISP Value channel 15"/>
+                <ParameterSetting Name="ISPValue16" Value="0" Description="ISP Value channel 16"/>
+              </ParameterSettings>
+              <HWChannels>
+                <HWChannel Address="IX0.11.103.1" Name="Input 1" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PilotBleedFBOpenIO</ConVariable>
+                  <IODescription>DI(704)    PILOT LINE VENT VALVE IS OPEN **CRITICAL INSTR**[OPEN,CLOSED]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.2" Name="Input 2" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.MainBleedFBOpenIO</ConVariable>
+                  <IODescription>DI(705)    MAIN GAS LINE VENT VALVE IS OPEN **CRITICAL INSTR**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.3" Name="Input 3" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.VentBleedFBOpenIO</ConVariable>
+                  <IODescription>DI(707)    COMBINED VENT HEADER VENT VALVE IS OPEN **CRIT. INSTR.**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.4" Name="Input 4" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PilotInletFBCloseIO</ConVariable>
+                  <IODescription>DI(714)    PILOT FUEL LINE UPSTREAM VALVE IS CLOSED **CRITICAL INSTRUMEN</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.5" Name="Input 5" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.MainInletFBCloseIO</ConVariable>
+                  <IODescription>DI(715)    MAIN FUEL LINE UPSTREAM VALVE IS CLOSED **CRITICAL INSTRUMENT</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.6" Name="Input 6" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.VentInletFBCloseIO</ConVariable>
+                  <IODescription>DI(717)    COMBINED VENT HEADER UPSTREAM VALVE IS CLOSED **CRITICAL INST</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.7" Name="Input 7" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZSO91321</ConVariable>
+                  <IODescription>DI(706)    719 DRYER HEADER VENT VALVE  [CLOSED,OPEN]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.8" Name="Input 8" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZSC91620</ConVariable>
+                  <IODescription>TOX Block Valve - top</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.9" Name="Input 9" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZSC90035</ConVariable>
+                  <IODescription>DI(726)    719 'C'DRYER HDR UPSTREAM BLOCK VALVE</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.10" Name="Input 10" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZSC90029</ConVariable>
+                  <IODescription>DI(735)    719 'B'DRYER HDR UPSTREAM BLOCK VALVE</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.11" Name="Input 11" ChannelType="bool_in" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.12" Name="Input 12" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZS91338A</ConVariable>
+                  <IODescription>DI(657)    BLOWER ROOM EMERGENCY SHUTDOWN BUTTON A **CRITICAL INSTRUMENT</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.13" Name="Input 13" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZS91615A</ConVariable>
+                  <IODescription>DI(658)    TOx NORTH EMERGENCY SHUTDOWN BUTTON A **CRITICAL INSTRUMENT**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.14" Name="Input 14" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZS91614A</ConVariable>
+                  <IODescription>DI(659)    TOx SOUTH EMERGENCY SHUTDOWN BUTTON A **CRITICAL INSTRUMENT**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.15" Name="Input 15" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.BE91675A</ConVariable>
+                  <IODescription>DI(790)    SIL2 Main &amp; Pilot Fire Eye, 1st DI [1=FLAME,0=NO] *Crit I*</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.103.16" Name="Input 16" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.BE91622</ConVariable>
+                  <IODescription>TOX Flame Detector - top</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.103.19" Name="UnitStatus" ChannelType="status_in">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+              </HWChannels>
+              <HWUnits/>
+            </HWUnit>
+            <HWUnit Path="Cont_HI3.0.11.104" TypeID="B1439993-AACD-4756-AB75-0BC72BB17705" TypeDescription="DI880" RedundantPos="904" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+              <ParameterSettings>
+                <ParameterSetting Name="OPMODE" Value="Redundant" Description="Operation Mode"/>
+                <ParameterSetting Name="TMOUT" Value=" 512" Description="Modulebus timeout"/>
+                <ParameterSetting Name="ACTIVATE1" Value="1" Description="Activate channel 1"/>
+                <ParameterSetting Name="ACTIVATE2" Value="1" Description="Activate channel 2"/>
+                <ParameterSetting Name="ACTIVATE3" Value="1" Description="Activate channel 3"/>
+                <ParameterSetting Name="ACTIVATE4" Value="1" Description="Activate channel 4"/>
+                <ParameterSetting Name="ACTIVATE5" Value="1" Description="Activate channel 5"/>
+                <ParameterSetting Name="ACTIVATE6" Value="1" Description="Activate channel 6"/>
+                <ParameterSetting Name="ACTIVATE7" Value="1" Description="Activate channel 7"/>
+                <ParameterSetting Name="ACTIVATE8" Value="1" Description="Activate channel 8"/>
+                <ParameterSetting Name="ACTIVATE9" Value="1" Description="Activate channel 9"/>
+                <ParameterSetting Name="ACTIVATE10" Value="1" Description="Activate channel 10"/>
+                <ParameterSetting Name="ACTIVATE11" Value="1" Description="Activate channel 11"/>
+                <ParameterSetting Name="ACTIVATE12" Value="1" Description="Activate channel 12"/>
+                <ParameterSetting Name="ACTIVATE13" Value="1" Description="Activate channel 13"/>
+                <ParameterSetting Name="ACTIVATE14" Value="0" Description="Activate channel 14"/>
+                <ParameterSetting Name="ACTIVATE15" Value="0" Description="Activate channel 15"/>
+                <ParameterSetting Name="ACTIVATE16" Value="0" Description="Activate channel 16"/>
+                <ParameterSetting Name="SOE1" Value="DI" Description="Operation mode channel 1"/>
+                <ParameterSetting Name="SOE2" Value="DI" Description="Operation mode channel 2"/>
+                <ParameterSetting Name="SOE3" Value="DI" Description="Operation mode channel 3"/>
+                <ParameterSetting Name="SOE4" Value="DI" Description="Operation mode channel 4"/>
+                <ParameterSetting Name="SOE5" Value="DI" Description="Operation mode channel 5"/>
+                <ParameterSetting Name="SOE6" Value="DI" Description="Operation mode channel 6"/>
+                <ParameterSetting Name="SOE7" Value="DI" Description="Operation mode channel 7"/>
+                <ParameterSetting Name="SOE8" Value="DI" Description="Operation mode channel 8"/>
+                <ParameterSetting Name="SOE9" Value="DI" Description="Operation mode channel 9"/>
+                <ParameterSetting Name="SOE10" Value="DI" Description="Operation mode channel 10"/>
+                <ParameterSetting Name="SOE11" Value="DI" Description="Operation mode channel 11"/>
+                <ParameterSetting Name="SOE12" Value="DI" Description="Operation mode channel 12"/>
+                <ParameterSetting Name="SOE13" Value="DI" Description="Operation mode channel 13"/>
+                <ParameterSetting Name="SOE14" Value="DI" Description="Operation mode channel 14"/>
+                <ParameterSetting Name="SOE15" Value="DI" Description="Operation mode channel 15"/>
+                <ParameterSetting Name="SOE16" Value="DI" Description="Operation mode channel 16"/>
+                <ParameterSetting Name="FILTCH1" Value="50" Description="Filter time channel 1"/>
+                <ParameterSetting Name="FILTCH2" Value="50" Description="Filter time channel 2"/>
+                <ParameterSetting Name="FILTCH3" Value="50" Description="Filter time channel 3"/>
+                <ParameterSetting Name="FILTCH4" Value="50" Description="Filter time channel 4"/>
+                <ParameterSetting Name="FILTCH5" Value="50" Description="Filter time channel 5"/>
+                <ParameterSetting Name="FILTCH6" Value="50" Description="Filter time channel 6"/>
+                <ParameterSetting Name="FILTCH7" Value="50" Description="Filter time channel 7"/>
+                <ParameterSetting Name="FILTCH8" Value="50" Description="Filter time channel 8"/>
+                <ParameterSetting Name="FILTCH9" Value="50" Description="Filter time channel 9"/>
+                <ParameterSetting Name="FILTCH10" Value="50" Description="Filter time channel 10"/>
+                <ParameterSetting Name="FILTCH11" Value="50" Description="Filter time channel 11"/>
+                <ParameterSetting Name="FILTCH12" Value="50" Description="Filter time channel 12"/>
+                <ParameterSetting Name="FILTCH13" Value="50" Description="Filter time channel 13"/>
+                <ParameterSetting Name="FILTCH14" Value="50" Description="Filter time channel 14"/>
+                <ParameterSetting Name="FILTCH15" Value="50" Description="Filter time channel 15"/>
+                <ParameterSetting Name="FILTCH16" Value="50" Description="Filter time channel 16"/>
+                <ParameterSetting Name="NORMST1" Value="1" Description="Normal position channel 1"/>
+                <ParameterSetting Name="NORMST2" Value="1" Description="Normal position channel 2"/>
+                <ParameterSetting Name="NORMST3" Value="1" Description="Normal position channel 3"/>
+                <ParameterSetting Name="NORMST4" Value="1" Description="Normal position channel 4"/>
+                <ParameterSetting Name="NORMST5" Value="1" Description="Normal position channel 5"/>
+                <ParameterSetting Name="NORMST6" Value="1" Description="Normal position channel 6"/>
+                <ParameterSetting Name="NORMST7" Value="1" Description="Normal position channel 7"/>
+                <ParameterSetting Name="NORMST8" Value="1" Description="Normal position channel 8"/>
+                <ParameterSetting Name="NORMST9" Value="1" Description="Normal position channel 9"/>
+                <ParameterSetting Name="NORMST10" Value="1" Description="Normal position channel 10"/>
+                <ParameterSetting Name="NORMST11" Value="1" Description="Normal position channel 11"/>
+                <ParameterSetting Name="NORMST12" Value="1" Description="Normal position channel 12"/>
+                <ParameterSetting Name="NORMST13" Value="1" Description="Normal position channel 13"/>
+                <ParameterSetting Name="NORMST14" Value="1" Description="Normal position channel 14"/>
+                <ParameterSetting Name="NORMST15" Value="1" Description="Normal position channel 15"/>
+                <ParameterSetting Name="NORMST16" Value="1" Description="Normal position channel 16"/>
+                <ParameterSetting Name="EVBLOCK1" Value="0" Description="Event block channel 1"/>
+                <ParameterSetting Name="EVBLOCK2" Value="0" Description="Event block channel 2"/>
+                <ParameterSetting Name="EVBLOCK3" Value="0" Description="Event block channel 3"/>
+                <ParameterSetting Name="EVBLOCK4" Value="0" Description="Event block channel 4"/>
+                <ParameterSetting Name="EVBLOCK5" Value="0" Description="Event block channel 5"/>
+                <ParameterSetting Name="EVBLOCK6" Value="0" Description="Event block channel 6"/>
+                <ParameterSetting Name="EVBLOCK7" Value="0" Description="Event block channel 7"/>
+                <ParameterSetting Name="EVBLOCK8" Value="0" Description="Event block channel 8"/>
+                <ParameterSetting Name="EVBLOCK9" Value="0" Description="Event block channel 9"/>
+                <ParameterSetting Name="EVBLOCK10" Value="0" Description="Event block channel 10"/>
+                <ParameterSetting Name="EVBLOCK11" Value="0" Description="Event block channel 11"/>
+                <ParameterSetting Name="EVBLOCK12" Value="0" Description="Event block channel 12"/>
+                <ParameterSetting Name="EVBLOCK13" Value="0" Description="Event block channel 13"/>
+                <ParameterSetting Name="EVBLOCK14" Value="0" Description="Event block channel 14"/>
+                <ParameterSetting Name="EVBLOCK15" Value="0" Description="Event block channel 15"/>
+                <ParameterSetting Name="EVBLOCK16" Value="0" Description="Event block channel 16"/>
+                <ParameterSetting Name="SHTRIG1" Value="4" Description="Shutter filter nof ch 1"/>
+                <ParameterSetting Name="SHTRIG2" Value="4" Description="Shutter filter nof ch 2"/>
+                <ParameterSetting Name="SHTRIG3" Value="4" Description="Shutter filter nof ch 3"/>
+                <ParameterSetting Name="SHTRIG4" Value="4" Description="Shutter filter nof ch 4"/>
+                <ParameterSetting Name="SHTRIG5" Value="4" Description="Shutter filter nof ch 5"/>
+                <ParameterSetting Name="SHTRIG6" Value="4" Description="Shutter filter nof ch 6"/>
+                <ParameterSetting Name="SHTRIG7" Value="4" Description="Shutter filter nof ch 7"/>
+                <ParameterSetting Name="SHTRIG8" Value="4" Description="Shutter filter nof ch 8"/>
+                <ParameterSetting Name="SHTRIG9" Value="4" Description="Shutter filter nof ch 9"/>
+                <ParameterSetting Name="SHTRIG10" Value="4" Description="Shutter filter nof ch 10"/>
+                <ParameterSetting Name="SHTRIG11" Value="4" Description="Shutter filter nof ch 11"/>
+                <ParameterSetting Name="SHTRIG12" Value="4" Description="Shutter filter nof ch 12"/>
+                <ParameterSetting Name="SHTRIG13" Value="4" Description="Shutter filter nof ch 13"/>
+                <ParameterSetting Name="SHTRIG14" Value="4" Description="Shutter filter nof ch 14"/>
+                <ParameterSetting Name="SHTRIG15" Value="4" Description="Shutter filter nof ch 15"/>
+                <ParameterSetting Name="SHTRIG16" Value="4" Description="Shutter filter nof ch 16"/>
+                <ParameterSetting Name="SHPERI1" Value="2" Description="Shutter filter period time ch 1"/>
+                <ParameterSetting Name="SHPERI2" Value="2" Description="Shutter filter period time ch 2"/>
+                <ParameterSetting Name="SHPERI3" Value="2" Description="Shutter filter period time ch 3"/>
+                <ParameterSetting Name="SHPERI4" Value="2" Description="Shutter filter period time ch 4"/>
+                <ParameterSetting Name="SHPERI5" Value="2" Description="Shutter filter period time ch 5"/>
+                <ParameterSetting Name="SHPERI6" Value="2" Description="Shutter filter period time ch 6"/>
+                <ParameterSetting Name="SHPERI7" Value="2" Description="Shutter filter period time ch 7"/>
+                <ParameterSetting Name="SHPERI8" Value="2" Description="Shutter filter period time ch 8"/>
+                <ParameterSetting Name="SHPERI9" Value="2" Description="Shutter filter period time ch 9"/>
+                <ParameterSetting Name="SHPERI10" Value="2" Description="Shutter filter period time ch 10"/>
+                <ParameterSetting Name="SHPERI11" Value="2" Description="Shutter filter period time ch 11"/>
+                <ParameterSetting Name="SHPERI12" Value="2" Description="Shutter filter period time ch 12"/>
+                <ParameterSetting Name="SHPERI13" Value="2" Description="Shutter filter period time ch 13"/>
+                <ParameterSetting Name="SHPERI14" Value="2" Description="Shutter filter period time ch 14"/>
+                <ParameterSetting Name="SHPERI15" Value="2" Description="Shutter filter period time ch 15"/>
+                <ParameterSetting Name="SHPERI16" Value="2" Description="Shutter filter period time ch 16"/>
+                <ParameterSetting Name="SHREC1" Value="0" Description="Shutter filter rec. time ch 1"/>
+                <ParameterSetting Name="SHREC2" Value="0" Description="Shutter filter rec. time ch 2"/>
+                <ParameterSetting Name="SHREC3" Value="0" Description="Shutter filter rec. time ch 3"/>
+                <ParameterSetting Name="SHREC4" Value="0" Description="Shutter filter rec. time ch 4"/>
+                <ParameterSetting Name="SHREC5" Value="0" Description="Shutter filter rec. time ch 5"/>
+                <ParameterSetting Name="SHREC6" Value="0" Description="Shutter filter rec. time ch 6"/>
+                <ParameterSetting Name="SHREC7" Value="0" Description="Shutter filter rec. time ch 7"/>
+                <ParameterSetting Name="SHREC8" Value="0" Description="Shutter filter rec. time ch 8"/>
+                <ParameterSetting Name="SHREC9" Value="0" Description="Shutter filter rec. time ch 9"/>
+                <ParameterSetting Name="SHREC10" Value="0" Description="Shutter filter rec. time ch 10"/>
+                <ParameterSetting Name="SHREC11" Value="0" Description="Shutter filter rec. time ch 11"/>
+                <ParameterSetting Name="SHREC12" Value="0" Description="Shutter filter rec. time ch 12"/>
+                <ParameterSetting Name="SHREC13" Value="0" Description="Shutter filter rec. time ch 13"/>
+                <ParameterSetting Name="SHREC14" Value="0" Description="Shutter filter rec. time ch 14"/>
+                <ParameterSetting Name="SHREC15" Value="0" Description="Shutter filter rec. time ch 15"/>
+                <ParameterSetting Name="SHREC16" Value="0" Description="Shutter filter rec. time ch 16"/>
+                <ParameterSetting Name="ISPControl1" Value="Keep current value" Description="ISP Control channel 1"/>
+                <ParameterSetting Name="ISPControl2" Value="Keep current value" Description="ISP Control channel 2"/>
+                <ParameterSetting Name="ISPControl3" Value="Keep current value" Description="ISP Control channel 3"/>
+                <ParameterSetting Name="ISPControl4" Value="Keep current value" Description="ISP Control channel 4"/>
+                <ParameterSetting Name="ISPControl5" Value="Keep current value" Description="ISP Control channel 5"/>
+                <ParameterSetting Name="ISPControl6" Value="Keep current value" Description="ISP Control channel 6"/>
+                <ParameterSetting Name="ISPControl7" Value="Keep current value" Description="ISP Control channel 7"/>
+                <ParameterSetting Name="ISPControl8" Value="Keep current value" Description="ISP Control channel 8"/>
+                <ParameterSetting Name="ISPControl9" Value="Keep current value" Description="ISP Control channel 9"/>
+                <ParameterSetting Name="ISPControl10" Value="Keep current value" Description="ISP Control channel 10"/>
+                <ParameterSetting Name="ISPControl11" Value="Keep current value" Description="ISP Control channel 11"/>
+                <ParameterSetting Name="ISPControl12" Value="Keep current value" Description="ISP Control channel 12"/>
+                <ParameterSetting Name="ISPControl13" Value="Keep current value" Description="ISP Control channel 13"/>
+                <ParameterSetting Name="ISPControl14" Value="Keep current value" Description="ISP Control channel 14"/>
+                <ParameterSetting Name="ISPControl15" Value="Keep current value" Description="ISP Control channel 15"/>
+                <ParameterSetting Name="ISPControl16" Value="Keep current value" Description="ISP Control channel 16"/>
+                <ParameterSetting Name="ISPValue1" Value="0" Description="ISP Value channel 1"/>
+                <ParameterSetting Name="ISPValue2" Value="0" Description="ISP Value channel 2"/>
+                <ParameterSetting Name="ISPValue3" Value="0" Description="ISP Value channel 3"/>
+                <ParameterSetting Name="ISPValue4" Value="0" Description="ISP Value channel 4"/>
+                <ParameterSetting Name="ISPValue5" Value="0" Description="ISP Value channel 5"/>
+                <ParameterSetting Name="ISPValue6" Value="0" Description="ISP Value channel 6"/>
+                <ParameterSetting Name="ISPValue7" Value="0" Description="ISP Value channel 7"/>
+                <ParameterSetting Name="ISPValue8" Value="0" Description="ISP Value channel 8"/>
+                <ParameterSetting Name="ISPValue9" Value="0" Description="ISP Value channel 9"/>
+                <ParameterSetting Name="ISPValue10" Value="0" Description="ISP Value channel 10"/>
+                <ParameterSetting Name="ISPValue11" Value="0" Description="ISP Value channel 11"/>
+                <ParameterSetting Name="ISPValue12" Value="0" Description="ISP Value channel 12"/>
+                <ParameterSetting Name="ISPValue13" Value="0" Description="ISP Value channel 13"/>
+                <ParameterSetting Name="ISPValue14" Value="0" Description="ISP Value channel 14"/>
+                <ParameterSetting Name="ISPValue15" Value="0" Description="ISP Value channel 15"/>
+                <ParameterSetting Name="ISPValue16" Value="0" Description="ISP Value channel 16"/>
+              </ParameterSettings>
+              <HWChannels>
+                <HWChannel Address="IX0.11.104.1" Name="Input 1" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PilotOutletFBCloseIO</ConVariable>
+                  <IODescription>DI(724)    PILOT FUEL LINE DOWNSTREAM VALVE IS CLOSED **CRITICAL INSTR.*</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.2" Name="Input 2" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.MainOutletFBCloseIO</ConVariable>
+                  <IODescription>DI(725)    MAIN FUEL LINE DOWNSTREAM VALVE IS CLOSED **CRITICAL INSTR.**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.3" Name="Input 3" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.VentOutletFBCloseIO</ConVariable>
+                  <IODescription>DI(727)    COMBINED VENT HEADER DOWNSTREAM VALVE IS CLOSED **CRIT. INSTR</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.4" Name="Input 4" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZSC91322</ConVariable>
+                  <IODescription>DI(716)    719 DRYER HDR. DOWSTREAM BLOCK VALVE[CLOSE,OPEN]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.5" Name="Input 5" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZSC91621</ConVariable>
+                  <IODescription>TOX Block Valve - bottom</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.6" Name="Input 6" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZS91338B</ConVariable>
+                  <IODescription>DI(757)    BLOWER ROOM EMERGENCY SHUTDOWN BUTTON B **CRITICAL INSTRUMENT</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.7" Name="Input 7" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZS91615B</ConVariable>
+                  <IODescription>DI(758)    TOx NORTH EMERGENCY SHUTDOWN BUTTON B **CRITICAL INSTRUMENT**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.8" Name="Input 8" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZS91614B</ConVariable>
+                  <IODescription>DI(759)    TOx SOUTH EMERGENCY SHUTDOWN BUTTON B **CRITICAL INSTRUMENT**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.9" Name="Input 9" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.BE91655A</ConVariable>
+                  <IODescription>DI(791)    SIL2 Main Flame Fire Eye, 1st DI [1=FLAME,0=NO] *Crit I*</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.10" Name="Input 10" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.BE91623</ConVariable>
+                  <IODescription>TOX Flame Detector - bottom</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.11" Name="Input 11" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PilotBleedFBCloseIO</ConVariable>
+                  <IODescription>DI(784)    PILOT FUEL LINE VENT VALVE CLOSED **CRITICAL INSTRUMENT**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.12" Name="Input 12" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.MainBleedFBCloseIO</ConVariable>
+                  <IODescription>DI(785)    MAIN FUEL LINE VENT VALVE CLOSED  **CRITICAL INSTRUMENT**</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.13" Name="Input 13" ChannelType="bool_in" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.VentBleedFBCloseIO</ConVariable>
+                  <IODescription>DI(787)    COMBINED VENT HDR. K.O.TK. MANUAL VALVE OPEN</IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.14" Name="Input 14" ChannelType="bool_in" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.15" Name="Input 15" ChannelType="bool_in" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IX0.11.104.16" Name="Input 16" ChannelType="bool_in" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.104.19" Name="UnitStatus" ChannelType="status_in">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+              </HWChannels>
+              <HWUnits/>
+            </HWUnit>
+            <HWUnit Path="Cont_HI3.0.11.105" TypeID="C5DB5CD4-313E-439C-A86D-FBDE43317D0C" TypeDescription="AI880" RedundantPos="905" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+              <ParameterSettings>
+                <ParameterSetting Name="OPMODE" Value="Redundant" Description="Operation Mode"/>
+                <ParameterSetting Name="ACCURACY" Value="1.9" Description="Safety Accuracy"/>
+                <ParameterSetting Name="HART" Value="Read Only" Description="HART Mode"/>
+                <ParameterSetting Name="TMOUT" Value=" 512" Description="Modulebus timeout"/>
+                <ParameterSetting Name="ACTIVATE1" Value="1" Description="Activate channel 1"/>
+                <ParameterSetting Name="ACTIVATE2" Value="1" Description="Activate channel 2"/>
+                <ParameterSetting Name="ACTIVATE3" Value="1" Description="Activate channel 3"/>
+                <ParameterSetting Name="ACTIVATE4" Value="1" Description="Activate channel 4"/>
+                <ParameterSetting Name="ACTIVATE5" Value="0" Description="Activate channel 5"/>
+                <ParameterSetting Name="ACTIVATE6" Value="0" Description="Activate channel 6"/>
+                <ParameterSetting Name="ACTIVATE7" Value="0" Description="Activate channel 7"/>
+                <ParameterSetting Name="ACTIVATE8" Value="0" Description="Activate channel 8"/>
+                <ParameterSetting Name="FILT_1" Value="No filtering" Description="Filter time channel 1"/>
+                <ParameterSetting Name="FILT_2" Value="No filtering" Description="Filter time channel 2"/>
+                <ParameterSetting Name="FILT_3" Value="No filtering" Description="Filter time channel 3"/>
+                <ParameterSetting Name="FILT_4" Value="No filtering" Description="Filter time channel 4"/>
+                <ParameterSetting Name="FILT_5" Value="No filtering" Description="Filter time channel 5"/>
+                <ParameterSetting Name="FILT_6" Value="No filtering" Description="Filter time channel 6"/>
+                <ParameterSetting Name="FILT_7" Value="No filtering" Description="Filter time channel 7"/>
+                <ParameterSetting Name="FILT_8" Value="No filtering" Description="Filter time channel 8"/>
+                <ParameterSetting Name="SignalRange_1" Value="4-20mA" Description="Signal range channel 1"/>
+                <ParameterSetting Name="SignalRange_2" Value="4-20mA" Description="Signal range channel 2"/>
+                <ParameterSetting Name="SignalRange_3" Value="4-20mA" Description="Signal range channel 3"/>
+                <ParameterSetting Name="SignalRange_4" Value="4-20mA" Description="Signal range channel 4"/>
+                <ParameterSetting Name="SignalRange_5" Value="4-20mA" Description="Signal range channel 5"/>
+                <ParameterSetting Name="SignalRange_6" Value="4-20mA" Description="Signal range channel 6"/>
+                <ParameterSetting Name="SignalRange_7" Value="4-20mA" Description="Signal range channel 7"/>
+                <ParameterSetting Name="SignalRange_8" Value="4-20mA" Description="Signal range channel 8"/>
+                <ParameterSetting Name="TrigLev_1" Value="18.5" Description="Field Power Output Trigger Level ch 1"/>
+                <ParameterSetting Name="TrigLev_2" Value="18.5" Description="Field Power Output Trigger Level ch 2"/>
+                <ParameterSetting Name="TrigLev_3" Value="18.5" Description="Field Power Output Trigger Level ch 3"/>
+                <ParameterSetting Name="TrigLev_4" Value="18.5" Description="Field Power Output Trigger Level ch 4"/>
+                <ParameterSetting Name="TrigLev_5" Value="18.5" Description="Field Power Output Trigger Level ch 5"/>
+                <ParameterSetting Name="TrigLev_6" Value="18.5" Description="Field Power Output Trigger Level ch 6"/>
+                <ParameterSetting Name="TrigLev_7" Value="18.5" Description="Field Power Output Trigger Level ch 7"/>
+                <ParameterSetting Name="TrigLev_8" Value="18.5" Description="Field Power Output Trigger Level ch 8"/>
+                <ParameterSetting Name="NAMUR1" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 1"/>
+                <ParameterSetting Name="NAMUR2" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 2"/>
+                <ParameterSetting Name="NAMUR3" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 3"/>
+                <ParameterSetting Name="NAMUR4" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 4"/>
+                <ParameterSetting Name="NAMUR5" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 5"/>
+                <ParameterSetting Name="NAMUR6" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 6"/>
+                <ParameterSetting Name="NAMUR7" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 7"/>
+                <ParameterSetting Name="NAMUR8" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 8"/>
+                <ParameterSetting Name="UR2_1" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  1"/>
+                <ParameterSetting Name="UR2_2" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  2"/>
+                <ParameterSetting Name="UR2_3" Value="3,84 mA/0,96 V" Description="Device malfunction low (NAMUR=false) ch  3"/>
+                <ParameterSetting Name="UR2_4" Value="3,84 mA/0,96 V" Description="Device malfunction low (NAMUR=false) ch  4"/>
+                <ParameterSetting Name="UR2_5" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  5"/>
+                <ParameterSetting Name="UR2_6" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  6"/>
+                <ParameterSetting Name="UR2_7" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  7"/>
+                <ParameterSetting Name="UR2_8" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  8"/>
+                <ParameterSetting Name="UR1_1" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  1"/>
+                <ParameterSetting Name="UR1_2" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  2"/>
+                <ParameterSetting Name="UR1_3" Value="3,84 mA/0,96 V" Description="Underrange (NAMUR=false) ch  3"/>
+                <ParameterSetting Name="UR1_4" Value="3,84 mA/0,96 V" Description="Underrange (NAMUR=false) ch  4"/>
+                <ParameterSetting Name="UR1_5" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  5"/>
+                <ParameterSetting Name="UR1_6" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  6"/>
+                <ParameterSetting Name="UR1_7" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  7"/>
+                <ParameterSetting Name="UR1_8" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  8"/>
+                <ParameterSetting Name="OR1_1" Value="21,75 mA/5,44 V" Description="Overrange (NAMUR=false) ch 1"/>
+                <ParameterSetting Name="OR1_2" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  2"/>
+                <ParameterSetting Name="OR1_3" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  3"/>
+                <ParameterSetting Name="OR1_4" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  4"/>
+                <ParameterSetting Name="OR1_5" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  5"/>
+                <ParameterSetting Name="OR1_6" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  6"/>
+                <ParameterSetting Name="OR1_7" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  7"/>
+                <ParameterSetting Name="OR1_8" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  8"/>
+                <ParameterSetting Name="OR2_1" Value="21,75 mA/5,44 V" Description="Device malfunction high (NAMUR=false) ch 1"/>
+                <ParameterSetting Name="OR2_2" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 2"/>
+                <ParameterSetting Name="OR2_3" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 3"/>
+                <ParameterSetting Name="OR2_4" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 4"/>
+                <ParameterSetting Name="OR2_5" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 5"/>
+                <ParameterSetting Name="OR2_6" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 6"/>
+                <ParameterSetting Name="OR2_7" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 7"/>
+                <ParameterSetting Name="OR2_8" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 8"/>
+                <ParameterSetting Name="ISPControl1" Value="Keep current value" Description="ISP Control channel 1"/>
+                <ParameterSetting Name="ISPControl2" Value="Keep current value" Description="ISP Control channel 2"/>
+                <ParameterSetting Name="ISPControl3" Value="Keep current value" Description="ISP Control channel 3"/>
+                <ParameterSetting Name="ISPControl4" Value="Keep current value" Description="ISP Control channel 4"/>
+                <ParameterSetting Name="ISPControl5" Value="Keep current value" Description="ISP Control channel 5"/>
+                <ParameterSetting Name="ISPControl6" Value="Keep current value" Description="ISP Control channel 6"/>
+                <ParameterSetting Name="ISPControl7" Value="Keep current value" Description="ISP Control channel 7"/>
+                <ParameterSetting Name="ISPControl8" Value="Keep current value" Description="ISP Control channel 8"/>
+                <ParameterSetting Name="ISPValue1" Value="0.0" Description="ISP Value channel 1"/>
+                <ParameterSetting Name="ISPValue2" Value="0.0" Description="ISP Value channel 2"/>
+                <ParameterSetting Name="ISPValue3" Value="0.0" Description="ISP Value channel 3"/>
+                <ParameterSetting Name="ISPValue4" Value="0.0" Description="ISP Value channel 4"/>
+                <ParameterSetting Name="ISPValue5" Value="0.0" Description="ISP Value channel 5"/>
+                <ParameterSetting Name="ISPValue6" Value="0.0" Description="ISP Value channel 6"/>
+                <ParameterSetting Name="ISPValue7" Value="0.0" Description="ISP Value channel 7"/>
+                <ParameterSetting Name="ISPValue8" Value="0.0" Description="ISP Value channel 8"/>
+              </ParameterSettings>
+              <HWChannels>
+                <HWChannel Address="IW0.11.105.1" Name="Input 1" ChannelType="real_in" Min="0.0" Max="1200.0" Unit="DEG C" Fraction="1" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.TT91687</ConVariable>
+                  <IODescription>AI(719)    BPCS TOx Temp A (Type K Thermocouple) **CRIT INST** [Deg C]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.105.2" Name="Input 2" ChannelType="real_in" Min="0.0" Max="400.0" Unit="DEG C" Fraction="1" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.TT91641</ConVariable>
+                  <IODescription>AI(727)    TOx COMB.FEED HDR. TEMPERATURE #1  (TYPE K THERMOCOUPLE)</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.105.3" Name="Input 3" ChannelType="real_in" Min="0.0" Max="20.0" Unit="PSI" Fraction="1" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PT91626</ConVariable>
+                  <IODescription>AI(735)    NATURAL GAS PRESSURE AFTER TEMP CONTROL VALVE  [PSIG]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.105.4" Name="Input 4" ChannelType="real_in" Min="0.0" Max="5.0" Unit="PSI" Fraction="1" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PT91438</ConVariable>
+                  <IODescription>AI(755)    SIL1 TOx Natural Gas PRESSURE #1 **Critical Inst** [PSIG]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.105.5" Name="Input 5" ChannelType="real_in" Min="0.0" Max="100.0" Unit="" Fraction="1" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.105.6" Name="Input 6" ChannelType="real_in" Min="0.0" Max="100.0" Unit="" Fraction="1" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.105.7" Name="Input 7" ChannelType="real_in" Min="0.0" Max="100.0" Unit="" Fraction="1" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.105.8" Name="Input 8" ChannelType="real_in" Min="0.0" Max="100.0" Unit="" Fraction="1" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.105.9" Name="UnitStatus" ChannelType="status_in">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+              </HWChannels>
+              <HWUnits/>
+            </HWUnit>
+            <HWUnit Path="Cont_HI3.0.11.106" TypeID="C5DB5CD4-313E-439C-A86D-FBDE43317D0C" TypeDescription="AI880" RedundantPos="906" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+              <ParameterSettings>
+                <ParameterSetting Name="OPMODE" Value="Redundant" Description="Operation Mode"/>
+                <ParameterSetting Name="ACCURACY" Value="1.9" Description="Safety Accuracy"/>
+                <ParameterSetting Name="HART" Value="Read Only" Description="HART Mode"/>
+                <ParameterSetting Name="TMOUT" Value=" 512" Description="Modulebus timeout"/>
+                <ParameterSetting Name="ACTIVATE1" Value="1" Description="Activate channel 1"/>
+                <ParameterSetting Name="ACTIVATE2" Value="1" Description="Activate channel 2"/>
+                <ParameterSetting Name="ACTIVATE3" Value="1" Description="Activate channel 3"/>
+                <ParameterSetting Name="ACTIVATE4" Value="1" Description="Activate channel 4"/>
+                <ParameterSetting Name="ACTIVATE5" Value="0" Description="Activate channel 5"/>
+                <ParameterSetting Name="ACTIVATE6" Value="0" Description="Activate channel 6"/>
+                <ParameterSetting Name="ACTIVATE7" Value="0" Description="Activate channel 7"/>
+                <ParameterSetting Name="ACTIVATE8" Value="0" Description="Activate channel 8"/>
+                <ParameterSetting Name="FILT_1" Value="No filtering" Description="Filter time channel 1"/>
+                <ParameterSetting Name="FILT_2" Value="No filtering" Description="Filter time channel 2"/>
+                <ParameterSetting Name="FILT_3" Value="No filtering" Description="Filter time channel 3"/>
+                <ParameterSetting Name="FILT_4" Value="No filtering" Description="Filter time channel 4"/>
+                <ParameterSetting Name="FILT_5" Value="No filtering" Description="Filter time channel 5"/>
+                <ParameterSetting Name="FILT_6" Value="No filtering" Description="Filter time channel 6"/>
+                <ParameterSetting Name="FILT_7" Value="No filtering" Description="Filter time channel 7"/>
+                <ParameterSetting Name="FILT_8" Value="No filtering" Description="Filter time channel 8"/>
+                <ParameterSetting Name="SignalRange_1" Value="4-20mA" Description="Signal range channel 1"/>
+                <ParameterSetting Name="SignalRange_2" Value="4-20mA" Description="Signal range channel 2"/>
+                <ParameterSetting Name="SignalRange_3" Value="4-20mA" Description="Signal range channel 3"/>
+                <ParameterSetting Name="SignalRange_4" Value="4-20mA" Description="Signal range channel 4"/>
+                <ParameterSetting Name="SignalRange_5" Value="4-20mA" Description="Signal range channel 5"/>
+                <ParameterSetting Name="SignalRange_6" Value="4-20mA" Description="Signal range channel 6"/>
+                <ParameterSetting Name="SignalRange_7" Value="4-20mA" Description="Signal range channel 7"/>
+                <ParameterSetting Name="SignalRange_8" Value="4-20mA" Description="Signal range channel 8"/>
+                <ParameterSetting Name="TrigLev_1" Value="18.5" Description="Field Power Output Trigger Level ch 1"/>
+                <ParameterSetting Name="TrigLev_2" Value="18.5" Description="Field Power Output Trigger Level ch 2"/>
+                <ParameterSetting Name="TrigLev_3" Value="18.5" Description="Field Power Output Trigger Level ch 3"/>
+                <ParameterSetting Name="TrigLev_4" Value="18.5" Description="Field Power Output Trigger Level ch 4"/>
+                <ParameterSetting Name="TrigLev_5" Value="18.5" Description="Field Power Output Trigger Level ch 5"/>
+                <ParameterSetting Name="TrigLev_6" Value="18.5" Description="Field Power Output Trigger Level ch 6"/>
+                <ParameterSetting Name="TrigLev_7" Value="18.5" Description="Field Power Output Trigger Level ch 7"/>
+                <ParameterSetting Name="TrigLev_8" Value="18.5" Description="Field Power Output Trigger Level ch 8"/>
+                <ParameterSetting Name="NAMUR1" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 1"/>
+                <ParameterSetting Name="NAMUR2" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 2"/>
+                <ParameterSetting Name="NAMUR3" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 3"/>
+                <ParameterSetting Name="NAMUR4" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 4"/>
+                <ParameterSetting Name="NAMUR5" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 5"/>
+                <ParameterSetting Name="NAMUR6" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 6"/>
+                <ParameterSetting Name="NAMUR7" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 7"/>
+                <ParameterSetting Name="NAMUR8" Value="0" Description="Set NAMUR range 3.6,3.8-20.5,21.0 mA ch 8"/>
+                <ParameterSetting Name="UR2_1" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  1"/>
+                <ParameterSetting Name="UR2_2" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  2"/>
+                <ParameterSetting Name="UR2_3" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  3"/>
+                <ParameterSetting Name="UR2_4" Value="3,84 mA/0,96 V" Description="Device malfunction low (NAMUR=false) ch  4"/>
+                <ParameterSetting Name="UR2_5" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  5"/>
+                <ParameterSetting Name="UR2_6" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  6"/>
+                <ParameterSetting Name="UR2_7" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  7"/>
+                <ParameterSetting Name="UR2_8" Value="3,64 mA/0,91 V" Description="Device malfunction low (NAMUR=false) ch  8"/>
+                <ParameterSetting Name="UR1_1" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  1"/>
+                <ParameterSetting Name="UR1_2" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  2"/>
+                <ParameterSetting Name="UR1_3" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  3"/>
+                <ParameterSetting Name="UR1_4" Value="3,84 mA/0,96 V" Description="Underrange (NAMUR=false) ch  4"/>
+                <ParameterSetting Name="UR1_5" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  5"/>
+                <ParameterSetting Name="UR1_6" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  6"/>
+                <ParameterSetting Name="UR1_7" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  7"/>
+                <ParameterSetting Name="UR1_8" Value="3,64 mA/0,91 V" Description="Underrange (NAMUR=false) ch  8"/>
+                <ParameterSetting Name="OR1_1" Value="21,75 mA/5,44 V" Description="Overrange (NAMUR=false) ch 1"/>
+                <ParameterSetting Name="OR1_2" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  2"/>
+                <ParameterSetting Name="OR1_3" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  3"/>
+                <ParameterSetting Name="OR1_4" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  4"/>
+                <ParameterSetting Name="OR1_5" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  5"/>
+                <ParameterSetting Name="OR1_6" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  6"/>
+                <ParameterSetting Name="OR1_7" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  7"/>
+                <ParameterSetting Name="OR1_8" Value="20,95 mA/5,24 V" Description="Overrange (NAMUR=false) ch  8"/>
+                <ParameterSetting Name="OR2_1" Value="21,75 mA/5,44 V" Description="Device malfunction high (NAMUR=false) ch 1"/>
+                <ParameterSetting Name="OR2_2" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 2"/>
+                <ParameterSetting Name="OR2_3" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 3"/>
+                <ParameterSetting Name="OR2_4" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 4"/>
+                <ParameterSetting Name="OR2_5" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 5"/>
+                <ParameterSetting Name="OR2_6" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 6"/>
+                <ParameterSetting Name="OR2_7" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 7"/>
+                <ParameterSetting Name="OR2_8" Value="20,95 mA/5,24 V" Description="Device malfunction high (NAMUR=false) ch 8"/>
+                <ParameterSetting Name="ISPControl1" Value="Keep current value" Description="ISP Control channel 1"/>
+                <ParameterSetting Name="ISPControl2" Value="Keep current value" Description="ISP Control channel 2"/>
+                <ParameterSetting Name="ISPControl3" Value="Keep current value" Description="ISP Control channel 3"/>
+                <ParameterSetting Name="ISPControl4" Value="Keep current value" Description="ISP Control channel 4"/>
+                <ParameterSetting Name="ISPControl5" Value="Keep current value" Description="ISP Control channel 5"/>
+                <ParameterSetting Name="ISPControl6" Value="Keep current value" Description="ISP Control channel 6"/>
+                <ParameterSetting Name="ISPControl7" Value="Keep current value" Description="ISP Control channel 7"/>
+                <ParameterSetting Name="ISPControl8" Value="Keep current value" Description="ISP Control channel 8"/>
+                <ParameterSetting Name="ISPValue1" Value="0.0" Description="ISP Value channel 1"/>
+                <ParameterSetting Name="ISPValue2" Value="0.0" Description="ISP Value channel 2"/>
+                <ParameterSetting Name="ISPValue3" Value="0.0" Description="ISP Value channel 3"/>
+                <ParameterSetting Name="ISPValue4" Value="0.0" Description="ISP Value channel 4"/>
+                <ParameterSetting Name="ISPValue5" Value="0.0" Description="ISP Value channel 5"/>
+                <ParameterSetting Name="ISPValue6" Value="0.0" Description="ISP Value channel 6"/>
+                <ParameterSetting Name="ISPValue7" Value="0.0" Description="ISP Value channel 7"/>
+                <ParameterSetting Name="ISPValue8" Value="0.0" Description="ISP Value channel 8"/>
+              </ParameterSettings>
+              <HWChannels>
+                <HWChannel Address="IW0.11.106.1" Name="Input 1" ChannelType="real_in" Min="0.0" Max="1200.0" Unit="DEG C" Fraction="1" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.TT91695</ConVariable>
+                  <IODescription>AI(729)    BPCS TOx Temp B (Type K Thermocouple) **CRIT INST** [Deg C]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.106.2" Name="Input 2" ChannelType="real_in" Min="0.0" Max="400.0" Unit="DEG C" Fraction="1" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.TT91643</ConVariable>
+                  <IODescription>AI(737)    TOx COMB.FEED HDR. TEMPERATURE #2  (TYPE K THERMOCOUPLE)</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.106.3" Name="Input 3" ChannelType="real_in" Min="0.0" Max="100.0" Unit="%" Fraction="1" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.ZT91485</ConVariable>
+                  <IODescription>AI(745)    BPCS Natural Gas Control Valve Position [% open]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.106.4" Name="Input 4" ChannelType="real_in" Min="0.0" Max="5.0" Unit="PSI" Fraction="1" Reversed="0">
+                  <ConVariable Signal="0">CopSysESISTOXAppl.SIF_LOGIC.SysTOX_IO.PT91439</ConVariable>
+                  <IODescription>AI(765)    SIL1 TOx Natural Gas PRESSURE #2 **Critical Inst** [PSIG]</IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.106.5" Name="Input 5" ChannelType="real_in" Min="0.0" Max="100.0" Unit="" Fraction="1" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.106.6" Name="Input 6" ChannelType="real_in" Min="0.0" Max="100.0" Unit="" Fraction="1" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.106.7" Name="Input 7" ChannelType="real_in" Min="0.0" Max="100.0" Unit="" Fraction="1" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.106.8" Name="Input 8" ChannelType="real_in" Min="0.0" Max="100.0" Unit="" Fraction="1" Reversed="0">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+                <HWChannel Address="IW0.11.106.9" Name="UnitStatus" ChannelType="status_in">
+                  <ConVariable></ConVariable>
+                  <IODescription></IODescription>
+                </HWChannel>
+              </HWChannels>
+              <HWUnits/>
+            </HWUnit>
+          </HWUnits>
+        </HWUnit>
+      </HWUnits>
+    </HWUnit>
+    <HWUnit Path="Cont_HI3.1" TypeID="37750802" TypeDescription="SM812" RedundantPos="7" HWSimulation="0" HWSimulationSupported="1" InstanceName="" ReservationState="NotReserved">
+      <ParameterSettings/>
+      <HWChannels>
+        <HWChannel Address="IW1.1" Name="In dint Steps" ChannelType="int_in">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintSteps</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.2" Name="In dint 1" ChannelType="int_in">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dint1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.3" Name="In dint 2" ChannelType="int_in">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dint2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.4" Name="In RealIO 1" ChannelType="real_in" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.realio1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.5" Name="In RealIO 2" ChannelType="real_in" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.realio2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.6" Name="In real 1" ChannelType="real_in" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.real1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.7" Name="In real 2" ChannelType="real_in" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.real2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.8" Name="In real 3" ChannelType="real_in" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.real3</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IX1.9" Name="In bool 1" ChannelType="bool_in" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.bool1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IX1.10" Name="In bool 2" ChannelType="bool_in" Reversed="1">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.bool2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IX1.11" Name="In bool 3" ChannelType="bool_in" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.bool3</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.12" Name="In dword 1" ChannelType="dword_in">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dword1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.13" Name="In dword 2" ChannelType="dword_in">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dword2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.14" Name="Out dint 1" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.15" Name="Out dint 2" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.16" Name="Out dint 3" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes3</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.17" Name="Out dint 4" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes4</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.18" Name="Out dint 5" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes5</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.19" Name="Out dint 6" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes6</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.20" Name="Out dint 7" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes7</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.21" Name="Out dint 8" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes8</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.22" Name="Out dint 9" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes9</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.23" Name="Out dint 10" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes10</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.24" Name="Out dint 11" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes11</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.25" Name="Out dint 12" ChannelType="int_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dintRes12</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.26" Name="Out RealIO 1" ChannelType="real_out" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.realioRes1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.27" Name="Out real 1" ChannelType="real_out" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.realRes1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.28" Name="Out real 2" ChannelType="real_out" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.realRes2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.29" Name="Out real 3" ChannelType="real_out" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.realRes3</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QX1.30" Name="Out bool 1" ChannelType="bool_out" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.boolRes1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QX1.31" Name="Out bool 2" ChannelType="bool_out" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.boolRes2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QX1.32" Name="Out bool 3" ChannelType="bool_out" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.boolRes3</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QX1.33" Name="Out bool 4" ChannelType="bool_out" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.boolRes4</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QX1.34" Name="Out bool 5" ChannelType="bool_out" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.boolRes5</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QX1.35" Name="Out bool 6" ChannelType="bool_out" Reversed="1">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.boolRes6</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QX1.36" Name="Out bool 7" ChannelType="bool_out" Reversed="0">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.boolRes7</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QX1.37" Name="Out bool 8" ChannelType="bool_out" Reversed="1">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.boolRes8</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.38" Name="Out dword 1" ChannelType="dword_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dwordRes1</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.39" Name="Out dword 2" ChannelType="dword_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dwordRes2</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.40" Name="Out dword 3" ChannelType="dword_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dwordRes3</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.41" Name="Out dword 4" ChannelType="dword_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dwordRes4</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.42" Name="Out dword 5" ChannelType="dword_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dwordRes5</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.43" Name="Out dword 6" ChannelType="dword_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dwordRes6</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.44" Name="Out dword 7" ChannelType="dword_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dwordRes7</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="QW1.45" Name="Out dword 8" ChannelType="dword_out">
+          <ConVariable Signal="0">VMT_Cont_HI3.Program1.dwordRes8</ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+        <HWChannel Address="IW1.46" Name="UnitStatus" ChannelType="status_in">
+          <ConVariable></ConVariable>
+          <IODescription></IODescription>
+        </HWChannel>
+      </HWChannels>
+      <HWUnits/>
+    </HWUnit>
+  </HWUnits>
+</HWUnit>
+

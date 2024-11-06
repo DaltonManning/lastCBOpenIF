@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="5" TypeID="CC4BA612-99AC-491C-8A5B-17DB0B4F3EFA" TypeDescription="IP" Guid="2069493A-FBA8-4A97-B338-1BEFA159033D" TypeGuid="90349CA3-FC34-4408-A9BC-66B9A65FAD4A" TypeTimeStamp="2016-02-09-02:23:58.330" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:06.077" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2015-12-16-07:31:34.284" HWSettingsTS="2006-03-13-10:03:41.051" InstanceName="">
+  <ParameterSettings/>
+  <HWChannels/>
+  <HardwareUnits>
+    <HWUnitRef Position="1" Guid="E010B9AA-8976-4B05-9248-4C89922E6D67"/>
+  </HardwareUnits>
+  <CheckSum Value="16728"/>
+</HWUnit>

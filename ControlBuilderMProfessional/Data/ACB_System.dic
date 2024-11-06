@@ -1,0 +1,27 @@
+!-----------------------------------------------------------------------------
+! 
+!  ACB_System.dic (5.0)
+!
+!  This file contains only the supported languages
+!
+!-----------------------------------------------------------------------------
+
+
+! Language identifier. This section is used by the Setup Wizard
+
+$_LANG_NAME
+XXX: Use computer settings
+ENU: English
+SVE: Swedish
+CHS: Chinese (Simplified)
+
+!ENU: English
+!SVE: Svenska
+!CHS: Chinese (Simplified)
+!NOR: Norsk
+!DAN: Dansk
+!GER: Deutsch
+!FRA: Français
+!INT: Interlingua
+!CHT: Chinese (Traditional)
+!JPN: Japanese

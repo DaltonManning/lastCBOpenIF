@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="0" TypeID="35661572" TypeDescription="CPU Loop Check" Guid="2837B6BE-F90F-4834-AA15-0F3105CE667E" TypeGuid="98A5693B-BCBA-48EF-8FD6-FFD65566297C" TypeTimeStamp="2018-04-19-09:01:05.954" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:13.112" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2018-01-10-08:31:43.897" HWSettingsTS="1979-12-31-00:00:00.000" InstanceName="">
+  <ParameterSettings/>
+  <HWChannels>
+    <HWChannel Address="IW0.0" Name="UnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits/>
+  <CheckSum Value="43262"/>
+</HWUnit>

@@ -1,0 +1,884 @@
+<?xml version="1.0"?>
+<LNs>
+<LN0>
+	<LN0 inst="" lnClass="LLN0" lnType="CI868@IEC61850@@@LLN0@">
+		<DataSet name="send_ds">
+		</DataSet>
+		<DOI name="Mod" desc="Mode">
+			<DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/1131ApplMod,12,26"/>
+			<DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+			<DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+			<DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+		</DOI>
+		<DOI name="Beh" desc="Behaviour">
+			<DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+			<DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+			<DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+		</DOI>
+		<DOI name="Health" desc="Health">
+			<DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+			<DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+			<DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+		</DOI>
+		<DOI name="NamPlt" desc="Name plate">
+			<DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+			<DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+			<DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+			<DAI name="configRev" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1">
+				<Val>08.11.2011 16:23:52</Val>
+			</DAI>
+			<DAI name="ldNs" sAddr="/LPL/EX/VisString255/+/none/+/-1,-1,-1"/>
+		</DOI>
+		<GSEControl name="new_gcb" datSet="send_ds" confRev="1" appID="send_ds">
+		</GSEControl>
+	</LN0>	 
+</LN0>
+<LPHD>
+	<LN inst="" lnClass="LPHD" lnType="CI868@IEC61850@@@Physical Device@">
+		<DOI name="PhyHealth" desc="Physical device health">
+			<DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus2,12,26"/>
+			<DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus2,12,100"/>
+			<DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus2,12,200"/>
+		</DOI>
+		<DOI name="PhyNam" desc="Physical  device name">
+			<DAI name="vendor" sAddr="/DPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+			<DAI name="hwRev" sAddr="/DPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+			<DAI name="swRev" sAddr="/DPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+		</DOI>
+		<DOI name="Proxy" desc="Device is proxy">
+			<DAI name="stVal" sAddr="/SPS/ST/BOOLEAN/+/none/+/-1,-1,-1"/>
+			<DAI name="q" sAddr="/SPS/ST/Quality/+/qchg/+/-1,-1,-1"/>
+			<DAI name="t" sAddr="/SPS/ST/Timestamp/+/none/+/-1,1,200"/>
+		</DOI>
+	</LN>
+</LPHD>
+<BBGAPC>
+	<LN inst="" lnClass="GAPC" lnType="CI868@IEC61850@@BB@Busbar Change@" prefix="BB">
+	<DOI name="Mod" desc="Mode">
+		<DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+		<DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+		<DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+		<DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="Beh" desc="Behaviour">
+		<DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+		<DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+		<DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+	</DOI>
+	<DOI name="Health" desc="Health">
+		<DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+		<DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+		<DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+	</DOI>
+	<DOI name="NamPlt" desc="Name plate">
+		<DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+		<DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+		<DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+	</DOI>
+	<DOI name="Str" desc="Start of Operation">
+		<DAI name="general" sAddr="/ACD/ST/BOOLEAN/+/dchg/+/BBGAPCStr,1,13"/>
+		<DAI name="dirGeneral" sAddr="/ACD/ST/Enum/+/dchg/dir/-1,-1,-1"/>
+		<DAI name="q" sAddr="/ACD/ST/Quality/+/qchg/+/BBGAPCStr,1,100"/>
+		<DAI name="t" sAddr="/ACD/ST/Timestamp/+/none/+/BBGAPCStr,1,200"/>
+	</DOI>
+	<DOI name="Op" desc="Operation of Function">
+		<DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/BBGAPCOp,1,13"/>
+		<DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/BBGAPCOp,1,100"/>
+		<DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/BBGAPCOp,1,200"/>
+	</DOI>
+	<DOI name="SPCSO1" desc="Bay Command Information - 1">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO1,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO1,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO1,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO2" desc="Bay Command Information - 2">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO2,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO2,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO2,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO3" desc="Bay Command Information - 3">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO3,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO3,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO3,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO4" desc="Bay Command Information - 4">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO4,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO4,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO4,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO5" desc="Bay Command Information - 5">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO5,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO5,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO5,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO6" desc="Bay Command Information - 6">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO6,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO6,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO6,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO7" desc="Bay Command Information - 7">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO7,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO7,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO7,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO8" desc="Bay Command Information - 8">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO8,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO8,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO8,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO9" desc="Bay Command Information - 9">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO9,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO9,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO9,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="SPCSO10" desc="Bay Command Information - 10">
+		<DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/BBGAPCSPCSO10,1,13"/>
+		<DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/BBGAPCSPCSO10,1,100"/>
+		<DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/BBGAPCSPCSO10,1,200"/>
+		<DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+</LN>
+</BBGAPC>
+<GFGGIO>
+<LN inst="" lnClass="GGIO" lnType="CI868@IEC61850@@GF@Generic Functions@" prefix="GF">
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO1" desc="Single Point Command Information 1">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/GFGGIOSPCSO1,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/GFGGIOSPCSO1,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/GFGGIOSPCSO1,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO2" desc="Single Point Command Information 2">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/GFGGIOSPCSO2,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/GFGGIOSPCSO2,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/GFGGIOSPCSO2,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO3" desc="Single Point Command Information 3">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/GFGGIOSPCSO3,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/GFGGIOSPCSO3,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/GFGGIOSPCSO3,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO4" desc="Single Point Command Information 4">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/GFGGIOSPCSO4,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/GFGGIOSPCSO4,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/GFGGIOSPCSO4,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO5" desc="Single Point Command Information 5">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/GFGGIOSPCSO5,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/GFGGIOSPCSO5,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/GFGGIOSPCSO5,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="DPCSO1" desc="Double Point Command Information 1">
+              <DAI name="stVal" sAddr="/DPC/ST/Dbpos/+/dchg/+/GFGGIODPCSO1,3,12"/>
+              <DAI name="q" sAddr="/DPC/ST/Quality/+/qchg/+/GFGGIODPCSO1,3,100"/>
+              <DAI name="t" sAddr="/DPC/ST/Timestamp/+/none/+/GFGGIODPCSO1,3,200"/>
+              <DAI name="ctlModel" sAddr="/DPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="DPCSO2" desc="Double Point Command Information 2">
+              <DAI name="stVal" sAddr="/DPC/ST/Dbpos/+/dchg/+/GFGGIODPCSO2,3,12"/>
+              <DAI name="q" sAddr="/DPC/ST/Quality/+/qchg/+/GFGGIODPCSO2,3,100"/>
+              <DAI name="t" sAddr="/DPC/ST/Timestamp/+/none/+/GFGGIODPCSO2,3,200"/>
+              <DAI name="ctlModel" sAddr="/DPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="DPCSO3" desc="Double Point Command Information 3">
+              <DAI name="stVal" sAddr="/DPC/ST/Dbpos/+/dchg/+/GFGGIODPCSO3,3,12"/>
+              <DAI name="q" sAddr="/DPC/ST/Quality/+/qchg/+/GFGGIODPCSO3,3,100"/>
+              <DAI name="t" sAddr="/DPC/ST/Timestamp/+/none/+/GFGGIODPCSO3,3,200"/>
+              <DAI name="ctlModel" sAddr="/DPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="DPCSO4" desc="Double Point Command Information 4">
+              <DAI name="stVal" sAddr="/DPC/ST/Dbpos/+/dchg/+/GFGGIODPCSO4,3,12"/>
+              <DAI name="q" sAddr="/DPC/ST/Quality/+/qchg/+/GFGGIODPCSO4,3,100"/>
+              <DAI name="t" sAddr="/DPC/ST/Timestamp/+/none/+/GFGGIODPCSO4,3,200"/>
+              <DAI name="ctlModel" sAddr="/DPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="DPCSO5" desc="Double Point Command Information 5">
+              <DAI name="stVal" sAddr="/DPC/ST/Dbpos/+/dchg/+/GFGGIODPCSO5,3,12"/>
+              <DAI name="q" sAddr="/DPC/ST/Quality/+/qchg/+/GFGGIODPCSO5,3,100"/>
+              <DAI name="t" sAddr="/DPC/ST/Timestamp/+/none/+/GFGGIODPCSO5,3,200"/>
+              <DAI name="ctlModel" sAddr="/DPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="ISCSO1" desc="Integer Value Set Point Command Information 1">
+              <DAI name="stVal" sAddr="/INC/ST/INT32/+/dchg/+/GFGGIOISCSO1,12,26"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/GFGGIOISCSO1,12,100"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/GFGGIOISCSO1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="ISCSO2" desc="Integer Value Set Point Command Information 2">
+              <DAI name="stVal" sAddr="/INC/ST/INT32/+/dchg/+/GFGGIOISCSO2,12,26"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/GFGGIOISCSO2,12,100"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/GFGGIOISCSO2,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="ISCSO3" desc="Integer Value Set Point Command Information 3">
+              <DAI name="stVal" sAddr="/INC/ST/INT32/+/dchg/+/GFGGIOISCSO3,12,26"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/GFGGIOISCSO3,12,100"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/GFGGIOISCSO3,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="ISCSO4" desc="Integer Value Set Point Command Information 4">
+              <DAI name="stVal" sAddr="/INC/ST/INT32/+/dchg/+/GFGGIOISCSO4,12,26"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/GFGGIOISCSO4,12,100"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/GFGGIOISCSO4,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="ISCSO5" desc="Integer Value Set Point Command Information 5">
+              <DAI name="stVal" sAddr="/INC/ST/INT32/+/dchg/+/GFGGIOISCSO5,12,26"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/GFGGIOISCSO5,12,100"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/GFGGIOISCSO5,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="AnIn1" desc="Real Value Information 1">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/GFGGIOAV1,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/GFGGIOAV1,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/GFGGIOAV1,13,200"/>
+            </DOI>
+            <DOI name="AnIn2" desc="Real Value Information 2">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/GFGGIOAV2,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/GFGGIOAV2,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/GFGGIOAV2,13,200"/>
+            </DOI>
+            <DOI name="AnIn3" desc="Real Value Information 3">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/GFGGIOAV3,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/GFGGIOAV3,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/GFGGIOAV3,13,200"/>
+            </DOI>
+            <DOI name="AnIn4" desc="Real Value Information 4">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/GFGGIOAV4,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/GFGGIOAV4,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/GFGGIOAV4,13,200"/>
+            </DOI>
+            <DOI name="AnIn5" desc="Real Value Information 5">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/GFGGIOAV5,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/GFGGIOAV5,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/GFGGIOAV5,13,200"/>
+            </DOI>
+          </LN>
+</GFGGIO>
+<ITCI>
+<LN inst="" lnClass="ITCI" lnType="CI868@IEC61850@@MMS@Load Shedding@">
+	<DOI name="Mod" desc="Mode">
+		<DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+		<DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+		<DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+		<DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+	</DOI>
+	<DOI name="Beh" desc="Behaviour">
+		<DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+		<DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+		<DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+	</DOI>
+	<DOI name="Health" desc="Health">
+		<DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+		<DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+		<DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+	</DOI>
+	<DOI name="NamPlt" desc="Name Plate">
+		<DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+		<DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+		<DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+	</DOI>
+</LN>
+</ITCI>
+<LSGAPC>
+<LN inst="" lnClass="GAPC" lnType="CI868@IEC61850@@LS@Load Shedding@" prefix="LS">
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/PM86xHealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/PM86xHealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/PM86xHealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Str" desc="Start of Operation">
+              <DAI name="general" sAddr="/ACD/ST/BOOLEAN/+/none/+/LSGAPCStr,1,13"/>
+              <DAI name="dirGeneral" sAddr="/ACD/ST/Enum/+/dchg/dir/-1,-1,-1"/>
+              <DAI name="q" sAddr="/ACD/ST/Quality/+/qchg/+/LSGAPCStr,1,100"/>
+              <DAI name="t" sAddr="/ACD/ST/Timestamp/+/none/+/LSGAPCStr,1,200"/>
+            </DOI>
+            <DOI name="Op" desc="Operation of Function">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/none/+/LSGAPCOp,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSGAPCOp,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSGAPCOp,1,200"/>
+            </DOI>
+          </LN>
+</LSGAPC>
+<LSPTRC>
+<LN inst="" lnClass="PTRC" lnType="CI868@IEC61850@@LS@Load Shed Commands@" prefix="LS">
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Str" desc="Dummy">
+              <DAI name="general" sAddr="/ACD/ST/BOOLEAN/+/none/+/-1,-1,-1"/>
+              <DAI name="dirGeneral" sAddr="/ACD/ST/Enum/+/dchg/dir/-1,-1,-1"/>
+              <DAI name="q" sAddr="/ACD/ST/Quality/+/none/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/ACD/ST/Timestamp/+/none/+/-1,1,200"/>
+            </DOI>
+            <DOI name="Op" desc="Operation of Function">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSGAPCOp,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSGAPCOp,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSGAPCOp,1,200"/>
+            </DOI>
+            <DOI name="Tr1" desc="Trip Command Command Information - 1">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR1,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR1,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR1,1,200"/>
+            </DOI>
+            <DOI name="Tr2" desc="Trip Command Command Information - 2">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR2,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR2,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR2,1,200"/>
+            </DOI>
+            <DOI name="Tr3" desc="Trip Command Command Information - 3">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR3,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR3,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR3,1,200"/>
+            </DOI>
+            <DOI name="Tr4" desc="Trip Command Command Information - 4">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR4,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR4,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR4,1,200"/>
+            </DOI>
+            <DOI name="Tr5" desc="Trip Command Command Information - 5">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR5,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR5,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR5,1,200"/>
+            </DOI>
+            <DOI name="Tr6" desc="Trip Command Command Information - 6">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR6,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR6,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR6,1,200"/>
+            </DOI>
+            <DOI name="Tr7" desc="Trip Command Command Information - 7">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR7,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR7,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR7,1,200"/>
+            </DOI>
+            <DOI name="Tr8" desc="Trip Command Command Information - 8">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR8,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR8,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR8,1,200"/>
+            </DOI>
+            <DOI name="Tr9" desc="Trip Command Command Information - 9">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR9,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR9,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR9,1,200"/>
+            </DOI>
+            <DOI name="Tr10" desc="Trip Command Command Information - 10">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/LSPTRCTR10,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/LSPTRCTR10,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/LSPTRCTR10,1,200"/>
+            </DOI>
+          </LN>
+</LSPTRC>
+<PCGAPC>
+<LN inst="" lnClass="GAPC" lnType="CI868@IEC61850@@PC@Generator Real Power Control@" prefix="PC">
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Str" desc="Start of Operation">
+              <DAI name="general" sAddr="/ACD/ST/BOOLEAN/+/dchg/+/PCGAPCStr,1,13"/>
+              <DAI name="dirGeneral" sAddr="/ACD/ST/Enum/+/dchg/dir/-1,-1,-1"/>
+              <DAI name="q" sAddr="/ACD/ST/Quality/+/qchg/+/PCGAPCStr,1,100"/>
+              <DAI name="t" sAddr="/ACD/ST/Timestamp/+/none/+/PCGAPCStr,1,200"/>
+            </DOI>
+            <DOI name="Op" desc="Operation of Function">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/PCGAPCOp,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/PCGAPCOp,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/PCGAPCOp,1,200"/>
+            </DOI>
+            <DOI name="SPCSO1" desc="Frequency (Speed) Raise Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/PCGAPCSPCSO1,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/PCGAPCSPCSO1,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/PCGAPCSPCSO2,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO2" desc="Frequency (Speed) Lower Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/PCGAPCSPCSO2,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/PCGAPCSPCSO2,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/PCGAPCSPCSO2,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Watt" desc="Real Power Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/PCGAPCWatt,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/PCGAPCWatt,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/PCGAPCWatt,13,200"/>
+            </DOI>
+            <DOI name="Hz" desc="Frequency Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/PCGAPCHz,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/PCGAPCHz,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/PCGAPCHz,13,200"/>
+            </DOI>
+          </LN>
+</PCGAPC>
+<QC1ARCO>
+<LN inst="" lnClass="ARCO" lnType="CI868@IEC61850@@QC1@Generator Reactive Power Control@" prefix="QC1">
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Str" desc="Start of Operation">
+              <DAI name="general" sAddr="/ACD/ST/BOOLEAN/+/dchg/+/QC1ARCOStr,1,13"/>
+              <DAI name="dirGeneral" sAddr="/ACD/ST/Enum/+/dchg/dir/-1,-1,-1"/>
+              <DAI name="q" sAddr="/ACD/ST/Quality/+/qchg/+/QC1ARCOStr,1,100"/>
+              <DAI name="t" sAddr="/ACD/ST/Timestamp/+/none/+/QC1ARCOStr,1,200"/>
+            </DOI>
+            <DOI name="Op" desc="Operation of Function">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/QC1ARCOOp,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/QC1ARCOOp,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/QC1ARCOOp,1,200"/>
+            </DOI>
+            <DOI name="TapChg" desc="Change reactive power">
+				<SDI name="valWTr">
+					<DAI name="posVal" sAddr="/BSC/ST/INT32/+/dchg/+/-1,-1,-1"/>
+				</SDI>
+				<DAI name="q" sAddr="/BSC/ST/Quality/+/dchg/+/-1,-1,-1"/>
+				<DAI name="t" sAddr="/BSC/ST/Timestamp/+/dchg/+/-1,-1,-1"/>
+			</DOI>
+          	<DOI name="Vol" desc="Voltage Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/QC1ARCOVol,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/QC1ARCOVol,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/QC1ARCOVol,13,200"/>
+            </DOI>
+            <DOI name="VolAmpr" desc="Reactive Power Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/QC1ARCOVAr,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/QC1ARCOVAr,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/QC1ARCOVAr,13,200"/>
+            </DOI>
+            <DOI name="PwrFact" desc="Power Factor Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/QC1ARCOPF,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/QC1ARCOPF,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/QC1ARCOPF,13,200"/>
+            </DOI>
+            <DOI name="Loc" desc="Local operation">
+              <DAI name="stVal" sAddr="/SPS/ST/BOOLEAN/+/dchg/+/QC1ARCOLoc,1,13"/>
+              <DAI name="q" sAddr="/SPS/ST/Quality/+/qchg/+/QC1ARCOLoc,1,100"/>
+              <DAI name="t" sAddr="/SPS/ST/Timestamp/+/none/+/QC1ARCOLoc,1,200"/>
+            </DOI>
+          </LN>
+</QC1ARCO>
+<QCARCO>
+<LN inst="" lnClass="ARCO" lnType="CI868@IEC61850@@QC@Generator Reactive Power Control@" prefix="QC">
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Str" desc="Start of Operation">
+              <DAI name="general" sAddr="/ACD/ST/BOOLEAN/+/dchg/+/QCARCOStr,1,13"/>
+              <DAI name="dirGeneral" sAddr="/ACD/ST/Enum/+/dchg/dir/-1,-1,-1"/>
+              <DAI name="q" sAddr="/ACD/ST/Quality/+/qchg/+/QCARCOStr,1,100"/>
+              <DAI name="t" sAddr="/ACD/ST/Timestamp/+/none/+/QCARCOStr,1,200"/>
+            </DOI>
+            <DOI name="Op" desc="Operation of Function">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/QCARCOOp,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/QCARCOOp,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/QCARCOOp,1,200"/>
+            </DOI>
+            <DOI name="SPCSO1" desc="Voltage Raise Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/QCARCOSPCSO1,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/QCARCOSPCSO1,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/QCARCOSPCSO1,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO2" desc="Voltage Lower Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/QCARCOSPCSO2,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/QCARCOSPCSO2,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/QCARCOLoc,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Vol" desc="Voltage Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/QCARCOVol,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/QCARCOVol,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/QCARCOVol,13,200"/>
+            </DOI>
+            <DOI name="VolAmpr" desc="Reactive Power Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/QCARCOVAr,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/QCARCOVAr,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/QCARCOVAr,13,200"/>
+            </DOI>
+            <DOI name="PwrFact" desc="Power Factor Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/QCARCOPF,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/QCARCOPF,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/QCARCOPF,13,200"/>
+            </DOI>
+            <DOI name="Loc" desc="Local operation">
+              <DAI name="stVal" sAddr="/SPS/ST/BOOLEAN/+/dchg/+/QCARCOLoc,1,13"/>
+              <DAI name="q" sAddr="/SPS/ST/Quality/+/qchg/+/QCARCOLoc,1,100"/>
+              <DAI name="t" sAddr="/SPS/ST/Timestamp/+/none/+/QCARCOLoc,1,200"/>
+            </DOI>
+          </LN>
+</QCARCO>
+<TC1ATCC>
+<LN inst="" lnClass="ATCC" lnType="CI868@IEC61850@@TC1@Transformer Tap Control@" prefix="TC1">
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="Loc" desc="Local operation">
+              <DAI name="stVal" sAddr="/SPS/ST/BOOLEAN/+/dchg/+/TC1ATCCLoc,1,13"/>
+              <DAI name="q" sAddr="/SPS/ST/Quality/+/qchg/+/TC1ATCCLoc,1,100"/>
+              <DAI name="t" sAddr="/SPS/ST/Timestamp/+/none/+/TC1ATCCLoc,1,200"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="ParOp" desc="Parallel/Independent operation">
+              <DAI name="stVal" sAddr="/DPC/ST/Dbpos/+/dchg/+/TC1ATCCParOp,3,12"/>
+              <DAI name="q" sAddr="/DPC/ST/Quality/+/qchg/+/TC1ATCCParOp,3,100"/>
+              <DAI name="t" sAddr="/DPC/ST/Timestamp/+/none/+/TC1ATCCParOp,3,200"/>
+              <DAI name="ctlModel" sAddr="/DPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="CtlV" desc="Control Voltage">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/TC1ATCCVol,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/TC1ATCCVOL,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/TC1ATCCVol,13,200"/>
+            </DOI>
+            <DOI name="SPCSO1" desc="Tap Raise Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/TC1ATCCSPCSO1,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/TC1ATCCSPCSO1,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/TC1ATCCSPCSO1,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO2" desc="Tap Lower Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/TC1ATCCSPCSO2,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/TC1ATCCSPCSO2,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/TC1ATCCSPCSO2,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO3" desc="Stop Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/TC1ATCCSPCSO3,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/TC1ATCCSPCSO3,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/TC1ATCCSPCSO3,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+          </LN>
+</TC1ATCC>
+<TC2ATCC>
+<LN inst="" lnClass="ATCC" lnType="CI868@IEC61850@@TC2@Transformer Tap Control@" prefix="TC2">
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Loc" desc="Local operation">
+              <DAI name="stVal" sAddr="/SPS/ST/BOOLEAN/+/dchg/+/TC2ATCCLoc,1,13"/>
+              <DAI name="q" sAddr="/SPS/ST/Quality/+/qchg/+/TC2ATCCLoc,1,100"/>
+              <DAI name="t" sAddr="/SPS/ST/Timestamp/+/none/+/TC2ATCCLoc,1,200"/>
+            </DOI>
+            <DOI name="ParOp" desc="Parallel/Independent operation">
+              <DAI name="stVal" sAddr="/DPC/ST/Dbpos/+/dchg/+/TC2ATCCParOp,3,12"/>
+              <DAI name="q" sAddr="/DPC/ST/Quality/+/qchg/+/TC2ATCCParOp,3,100"/>
+              <DAI name="t" sAddr="/DPC/ST/Timestamp/+/none/+/TC2ATCCParOp,3,200"/>
+              <DAI name="ctlModel" sAddr="/DPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="CtlV" desc="Control Voltage">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/TC2ATCCVol,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/TC2ATCCVOL,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/TC2ATCCVol,13,200"/>
+            </DOI>
+            <DOI name="ISCSO" desc="Tap Position Command Information">
+              <DAI name="stVal" sAddr="/INC/ST/INT32/+/dchg/+/TC2ATCCTapPos,12,26"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/TC2ATCCTapPos,12,100"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/TC2ATCCTapPos,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+          </LN>
+</TC2ATCC>
+<VC1AVCO>
+<LN inst="" lnClass="AVCO" lnType="CI868@IEC61850@@VC1@Busbar Voltage Control@" prefix="VC1">
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="Loc" desc="Local operation">
+              <DAI name="stVal" sAddr="/SPS/ST/BOOLEAN/+/dchg/+/VC1AVCOLoc,1,13"/>
+              <DAI name="q" sAddr="/SPS/ST/Quality/+/qchg/+/VC1AVCOLoc,1,100"/>
+              <DAI name="t" sAddr="/SPS/ST/Timestamp/+/none/+/VC1AVCOLoc,1,200"/>
+            </DOI>
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Str" desc="Start of Operation">
+              <DAI name="general" sAddr="ACD/ST/BOOLEAN/+/dchg/+/VC1AVCOStr,1,13"/>
+              <DAI name="dirGeneral" sAddr="/ACD/ST/Enum/+/dchg/dir/-1,-1,-1"/>
+              <DAI name="q" sAddr="/ACD/ST/Quality/+/qchg/+/VC1AVCOStr,1,100"/>
+              <DAI name="t" sAddr="/ACD/ST/Timestamp/+/none/+/VC1AVCOStr,1,200"/>
+            </DOI>
+            <DOI name="Op" desc="Operation of Function">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/VC1AVCOOp,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/VC1AVCOOp,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/VC1AVCOOp,1,200"/>
+            </DOI>
+        <DOI name="TapChg" desc="Change reactive power">
+			<SDI name="valWTr">
+				<DAI name="posVal" sAddr="/BSC/ST/INT32/+/dchg/+/-1,-1,-1"/>
+			</SDI>
+			<DAI name="q" sAddr="/BSC/ST/Quality/+/dchg/+/-1,-1,-1"/>
+			<DAI name="t" sAddr="/BSC/ST/Timestamp/+/dchg/+/-1,-1,-1"/>
+		</DOI>           
+            <DOI name="Vol" desc="Voltage Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/VC1AVCOVol,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/VC1AVCOVOL,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/VC1AVCOVol,13,200"/>
+            </DOI>
+          </LN>
+</VC1AVCO>
+<VCAVCO>
+<LN inst="" lnClass="AVCO" lnType="CI868@IEC61850@@VC@Busbar Voltage Control@" prefix="VC">
+            <DOI name="Beh" desc="Behaviour">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Beh/1131ApplMod,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/1131ApplMod,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/1131ApplMod,12,200"/>
+            </DOI>
+            <DOI name="Health" desc="Health">
+              <DAI name="stVal" sAddr="/INS/ST/Enum/+/dchg/Health/CI868HealthStatus1,12,26"/>
+              <DAI name="q" sAddr="/INS/ST/Quality/+/qchg/+/CI868HealthStatus1,12,100"/>
+              <DAI name="t" sAddr="/INS/ST/Timestamp/+/none/+/CI868HealthStatus1,12,200"/>
+            </DOI>
+            <DOI name="Loc" desc="Local operation">
+              <DAI name="stVal" sAddr="/SPS/ST/BOOLEAN/+/dchg/+/VCAVCOLoc,1,13"/>
+              <DAI name="q" sAddr="/SPS/ST/Quality/+/qchg/+/VCAVCOLoc,1,100"/>
+              <DAI name="t" sAddr="/SPS/ST/Timestamp/+/none/+/VCAVCOLoc,1,200"/>
+            </DOI>
+            <DOI name="Mod" desc="Mode">
+              <DAI name="stVal" sAddr="/INC/ST/Enum/+/none/Mod/-1,-1,-1"/>
+              <DAI name="q" sAddr="/INC/ST/Quality/+/qchg/+/-1,-1,-1"/>
+              <DAI name="t" sAddr="/INC/ST/Timestamp/+/none/+/-1,12,200"/>
+              <DAI name="ctlModel" sAddr="/INC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="NamPlt" desc="Name plate">
+              <DAI name="vendor" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="swRev" sAddr="/LPL/DC/VisString255/+/qchg/+/-1,-1,-1"/>
+              <DAI name="d" sAddr="/LPL/DC/VisString255/+/none/+/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Str" desc="Start of Operation">
+              <DAI name="general" sAddr="ACD/ST/BOOLEAN/+/dchg/+/VCAVCOStr,1,13"/>
+              <DAI name="dirGeneral" sAddr="/ACD/ST/Enum/+/dchg/dir/-1,-1,-1"/>
+              <DAI name="q" sAddr="/ACD/ST/Quality/+/qchg/+/VCAVCOStr,1,100"/>
+              <DAI name="t" sAddr="/ACD/ST/Timestamp/+/none/+/VCAVCOStr,1,200"/>
+            </DOI>
+            <DOI name="Op" desc="Operation of Function">
+              <DAI name="general" sAddr="/ACT/ST/BOOLEAN/+/dchg/+/VCAVCOOp,1,13"/>
+              <DAI name="q" sAddr="/ACT/ST/Quality/+/qchg/+/VCAVCOOp,1,100"/>
+              <DAI name="t" sAddr="/ACT/ST/Timestamp/+/none/+/VCAVCOOp,1,200"/>
+            </DOI>
+            <DOI name="SPCSO1" desc="Voltage Raise Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/VCAVCOSPCSO1,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/VCAVCOSPCSO1,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/VCAVCOSPCSO1,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO2" desc="Voltage Lower Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/VCAVCOSPCSO2,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/VCAVCOSPCSO2,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/VCAVCOSPCSO2,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="SPCSO3" desc="Stop Command Information">
+              <DAI name="stVal" sAddr="/SPC/ST/BOOLEAN/+/dchg/+/VCAVCOSPCSO3,1,13"/>
+              <DAI name="q" sAddr="/SPC/ST/Quality/+/qchg/+/VCAVCOSPCSO3,1,100"/>
+              <DAI name="t" sAddr="/SPC/ST/Timestamp/+/none/+/VCAVCOSPCSO3,1,200"/>
+              <DAI name="ctlModel" sAddr="/SPC/CF/Enum/+/none/ctlModel/-1,-1,-1"/>
+            </DOI>
+            <DOI name="Vol" desc="Voltage Set Point Information">
+              <SDI name="mag">
+                <DAI name="f" sAddr="/MV/MX/FLOAT32/+/dchg/+/VCAVCOVol,13,27"/>
+              </SDI>
+              <DAI name="q" sAddr="/MV/MX/Quality/+/qchg/+/VCAVCOVOL,13,100"/>
+              <DAI name="t" sAddr="/MV/MX/Timestamp/+/none/+/VCAVCOVol,13,200"/>
+            </DOI>
+          </LN>
+</VCAVCO>
+</LNs>

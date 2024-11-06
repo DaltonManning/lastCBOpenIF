@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HeaderInfo>
+  <Header Name="" ID="" Descr="" Help="" Icon="RackAdapterType" Attributes="AdapterUnit AutoAttach" />
+  <Interface 
+  Interface="CIGInterface"
+	CLSID_CB="D9720536-1BB9-4f74-A5CD-DCDDED2398CA" 
+	CLSID_CTRL="38CEFCC8-23D7-43f9-BE6D-4251F87BF421" 
+	HWConfig="Fail" />
+</HeaderInfo>

@@ -1,0 +1,51 @@
+0x2060/ppc   FW851              6.1.1000.77  2021-03-03   File=FW860-603ef67420.sbin   Update=cfup860.bin
+0x2070/ppc   FW856/860          6.1.1000.77  2021-03-03   File=FW860-603ef67420.sbin   Update=cfup860.bin
+0x2080/ppc   FW856/860          6.1.1000.77  2021-03-03   File=FW860-603ef67420.sbin   Update=cfup860.bin
+
+0x20bc/ppc   FW858              6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=cfup860.bin
+0x2090/ppc   FW861              6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=cfup860.bin
+0x20a0/ppc   FW862              6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=cfup860.bin
+0x20b0/ppc   FW864              6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=cfup860.bin
+0x20d0/ppc   FW866              6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=cfup860.bin
+0x20c0/ppc   FW865PA            6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=cfup860.bin
+
+
+0x2190/ppc   FW891               6.1.1000.77  2021-03-03   File=FW891-603ef07361.cbin    Update=cfup89x.bin
+
+-----------------------------------------------------------------------------------------------------
+
+This file is only a template to be used when creating Compact Flash or SD cards aimed 
+for firmware upgrade. The file is edited by the "Download FW To Removable Media" function 
+in Control Builder and does not need to be manually edited. If a Removable Media with FW 
+needs to be created without having any Control Builder installed, the instruction below 
+can be used. 
+
+--------------------------------------------------------------------------------------
+To create a valid Compact Flash card with FW for a PM86x, proceed as follows:
+
+1. Format the card with a FAT filesystem, FAT32 will NOT work.
+2. Copy Boot860.exe to the card, NOTE IMPORTANT only this file first.
+3. Rearrange the lines in the content.txt file (this file) in a way that
+   the desired firmware is described in the FIRST line. The rest of the
+   file will be ignored.
+4. Copy content.txt, cfup860.bin and the appropriate firmware-file to the card.
+
+After item 2. has been done, the files may be copied, changed or replaced
+directly on the card, however Boot860.exe MUST NOT be changed in any way.
+
+NOTE: The card may only contain exactly 1 (one) firmware-file.
+
+--------------------------------------------------------------------------------------
+To create a valid SD (Secure Digital) card with FW for a PM89x, proceed as follows:
+
+1. Ensure the SD card has been correctly formatted with FAT or FAT32.
+2. Copy the files Boot89x.exe, content.txt, cfup89x.bin and the appropriate
+   firmware file to the card.
+3. Rearrange the lines in the content.txt file (this file) in a way that the
+   desired firmware is described in the FIRST line. The rest of the file will
+   be ignored.
+
+NOTE: There is no need to re-format the SD card and files may be added or edited in
+      arbitrary order.
+
+-----------------------------------------------------------------------------------------------------

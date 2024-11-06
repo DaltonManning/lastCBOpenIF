@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "27mAhsBcP8E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DM\\Documents\\CBOPENPT99\\CBOPENPT99.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DM\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512",
+    "C:\\Users\\DM\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.7\\microsoft.netcore.app.runtime.win-x86.8.0.7.nupkg.sha512",
+    "C:\\Users\\DM\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.7\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.7.nupkg.sha512",
+    "C:\\Users\\DM\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.7\\microsoft.aspnetcore.app.runtime.win-x86.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

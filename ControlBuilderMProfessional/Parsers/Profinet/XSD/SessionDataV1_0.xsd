@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+  <xs:annotation>
+    <xs:documentation>Simple element types </xs:documentation>
+  </xs:annotation>
+  <!-- -->
+  <!-- General session data information -->
+  <!-- -->
+  <xs:simpleType name="HWDHeaderComment">
+    <xs:annotation>
+      <xs:documentation>Contains the modification time stamp. Example: "Modified : 2007-08-20 16:31"</xs:documentation>
+    </xs:annotation>
+    <xs:list itemType="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="SessionDataVersion">
+    <xs:annotation>
+      <xs:documentation>This is for taking the correct SessionData schema file version. It is a positive natural number, starting value: 1</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:positiveInteger" />
+  </xs:simpleType>
+  <xs:simpleType name="ImportLanguage">
+    <xs:annotation>
+      <xs:documentation>GSDML Language used for the import</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="DIW_BLOB_Version">
+    <xs:annotation>
+      <xs:documentation>This is used by the DIW, needs to be there, has value "1".</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:positiveInteger" />
+  </xs:simpleType>
+  <!-- -->
+  <!-- Diagnosis mapping related user made settings -->
+  <!-- -->
+  <xs:simpleType name="DiagClassEnum">
+    <xs:annotation>
+      <xs:documentation>Information whether it is an Error or a Warning</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GeneralError" />
+      <xs:enumeration value="GeneralWarning" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DiagInfoDatatypeEnum">
+    <xs:annotation>
+      <xs:documentation>for future use</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BOOL" />
+      <xs:enumeration value="ENUMDIAG" />
+      <xs:enumeration value="INT" />
+      <xs:enumeration value="REAL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DiagSeverityEnum">
+    <xs:annotation>
+      <xs:documentation>Informations about the severity of the diagnosis item</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Disabled" />
+      <xs:enumeration value="SeverityLow" />
+      <xs:enumeration value="SeverityMedium" />
+      <xs:enumeration value="SeverityHigh" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DiagStatusEnum">
+    <xs:annotation>
+      <xs:documentation>List of all currently possible Device specific and Extended Diagnostic bits in CIT</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NoAction" />
+      <xs:enumeration value="DeviceSpecific1" />
+      <xs:enumeration value="DeviceSpecific2" />
+      <xs:enumeration value="DeviceSpecific3" />
+      <xs:enumeration value="DeviceSpecific4" />
+      <xs:enumeration value="DeviceSpecific5" />
+      <xs:enumeration value="DeviceSpecific6" />
+      <xs:enumeration value="DeviceSpecific7" />
+      <xs:enumeration value="DeviceSpecific8" />
+      <xs:enumeration value="DeviceSpecific9" />
+      <xs:enumeration value="DeviceSpecific10" />
+      <xs:enumeration value="ExtendedStatus1" />
+      <xs:enumeration value="ExtendedStatus2" />
+      <xs:enumeration value="ExtendedStatus3" />
+      <xs:enumeration value="ExtendedStatus4" />
+      <xs:enumeration value="ExtendedStatus5" />
+      <xs:enumeration value="ExtendedStatus6" />
+      <xs:enumeration value="ExtendedStatus7" />
+      <xs:enumeration value="ExtendedStatus8" />
+      <xs:enumeration value="ExtendedStatus9" />
+      <xs:enumeration value="ExtendedStatus10" />
+      <xs:enumeration value="ExtendedStatus11" />
+      <xs:enumeration value="ExtendedStatus12" />
+      <xs:enumeration value="ExtendedStatus13" />
+      <xs:enumeration value="ExtendedStatus14" />
+      <xs:enumeration value="ExtendedStatus15" />
+      <xs:enumeration value="ExtendedStatus16" />
+      <xs:enumeration value="ExtendedStatus17" />
+      <xs:enumeration value="ExtendedStatus18" />
+      <xs:enumeration value="ExtendedStatus19" />
+      <xs:enumeration value="ExtendedStatus20" />
+      <xs:enumeration value="ExtendedStatus21" />
+      <xs:enumeration value="ExtendedStatus22" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DiagTriggerEnum">
+    <xs:annotation>
+      <xs:documentation>Information whether the diagnostic item should be an event or alarm or be disabled</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Disabled" />
+      <xs:enumeration value="TriggerEvent" />
+      <xs:enumeration value="TriggerAlarm" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- Element types used for storing GSDML related settings in a generic way =================== -->
+  <!-- -->
+  <xs:simpleType name="GsdmlAttributeType">
+    <xs:annotation>
+      <xs:documentation>value of the attribute; only necessary if it is an Overwrite or CreateNew action</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="GsdmlElementType">
+    <xs:annotation>
+      <xs:documentation>Content of the Element; only necessary if it is an Overwrite or CreateNew action</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="MergeActionEnum">
+    <xs:annotation>
+      <xs:documentation>Informs the action to be taken with the GSDML element or attribute</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CreateNew" />
+      <xs:enumeration value="Delete" />
+      <xs:enumeration value="Overwrite" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:annotation>
+    <xs:documentation>Complex element types </xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="HwdGlobalSettings">
+    <xs:annotation>
+      <xs:documentation>Contains Hwd constraints</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="1" maxOccurs="1" />
+    <xs:attribute name="MaxNumberSubUnits" use="optional" type="xs:int">
+      <xs:annotation>
+        <xs:documentation>Gives the maximum number of useable Subunits. This may be changed e.g. to reduce it further in order to reduce the HWD file size since every useable number is listed separately.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="DeviceIdentity">
+    <xs:annotation>
+      <xs:documentation>Contains the vendor and device ID for the Profinet device for identification purposes</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="0" maxOccurs="1" />
+    <xs:attribute name="VendorId" use="required" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>Contains the VendorId from the GSDML file</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="DeviceId" use="required" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>Contains the DeviceId from the GSDML file</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <!-- -->
+  <!-- Channel configuration related settings ===================================================== -->
+  <!-- -->
+  <xs:complexType name="Channels">
+    <xs:annotation>
+      <xs:documentation>Contains all informations for the Channels part of a Hardware Unit</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="InputArea" type="IOArea" maxOccurs="1" minOccurs="0"></xs:element>
+      <xs:element name="OutputArea" type="IOArea" maxOccurs="1" minOccurs="0"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="SynchronizeDataExchange" use="optional" type="xs:boolean" />
+  </xs:complexType>
+  <!-- -->
+  <!-- Diagnosis mapping related user made settings =============================================== -->
+  <!-- -->
+  <xs:complexType name="DiagInfo">
+    <xs:annotation>
+      <xs:documentation>Diag info element structure matches with data exchanged between parser and DIW</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+    </xs:sequence>
+    <xs:attribute name="Number" use="optional" type="xs:int" />
+    <xs:attribute name="Description" use="optional" type="xs:string" />
+    <xs:attribute name="Unit" use="optional" type="xs:string" />
+    <xs:attribute name="Hidden" use="optional" type="xs:boolean" />
+    <xs:attribute name="Datatype" use="optional" type="DiagInfoDatatypeEnum" />
+    <xs:attribute name="ValueIndex" use="optional" type="xs:int" />
+    <xs:attribute name="AreaOffset" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="EnumDiag">
+    <xs:sequence />
+    <xs:attribute name="Text" use="optional" type="xs:string" />
+    <xs:attribute name="Size" use="optional" type="xs:int" />
+    <xs:attribute name="Action" use="optional" type="DiagStatusEnum" />
+  </xs:complexType>
+  <xs:complexType name="DiagValue">
+    <xs:annotation>
+      <xs:documentation>for future use</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="EnumDiag" type="EnumDiag" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="Index" use="optional" type="xs:int" />
+    <xs:attribute name="Size" use="optional" type="xs:int" />
+  </xs:complexType>
+  <xs:complexType name="Severity">
+    <xs:annotation>
+      <xs:documentation>Informations about the UnitStatus</xs:documentation>
+    </xs:annotation>
+    <xs:sequence />
+    <xs:attribute name="Status" use="required" type="DiagStatusEnum" />
+    <xs:attribute name="Class" use="required" type="DiagClassEnum" />
+    <xs:attribute name="Trigger" use="required" type="DiagTriggerEnum" />
+    <xs:attribute name="Severity" use="required" type="DiagSeverityEnum" />
+  </xs:complexType>
+  <xs:complexType name="UnitStatusText">
+    <xs:annotation>
+      <xs:documentation>Associated text to the DiagStatusEnum entry, which will be displayed later on in CIT</xs:documentation>
+    </xs:annotation>
+    <xs:sequence />
+    <xs:attribute name="Status" use="required" type="DiagStatusEnum" />
+    <xs:attribute name="Text" use="required" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Diagnostics">
+    <xs:annotation>
+      <xs:documentation>contains all informations for the diagnostic part of a Hardware Unit</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="UnitStatusText" type="UnitStatusText" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Severity" type="Severity" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="DiagInfo" type="DiagInfo" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="DiagValue" type="DiagValue" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- Element types used for storing GSDML related settings in a generic way ===================== -->
+  <!-- -->
+  <xs:complexType name="GsdmlMergeAttributeType">
+    <xs:annotation>
+      <xs:documentation>Used for Delete or CreateNew or Overwrite an XML attribute within the GSDML document.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="0">
+      <xs:element name="GsdmlAttributeType" type="GsdmlAttributeType" />
+    </xs:sequence>
+    <xs:attribute name="xPathElement" use="required" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>xPath enables merge function retrieving the position of the element to which the attribute belongs inside traget document </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="AttributeName" use="required" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>Name of the Attribute for the merge action</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="OrgAttributeValue" use="optional" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>Original content of the value of the Attribute for restore action</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="MergeAction" use="required" type="MergeActionEnum">
+      <xs:annotation>
+        <xs:documentation>contains the complete XML string for the GSDML element substitution or the new GSDML element</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="GsdmlMergeElementType">
+    <xs:annotation>
+      <xs:documentation>
+        Used for Delete or CreateNew or Overwrite an XML element within the GSDML document.
+        If the action is "delete", all eventually contained GSDMLMergeAttributeTypes associated with that element will be ignored.
+        If the action is "CreateNew" or "Overwrite", all attributes associated with that element will be merged (the attributes have priority).
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="0">
+      <xs:element name="GsdmlElementType" type="GsdmlElementType" />
+    </xs:sequence>
+    <xs:attribute name="xPath" use="required" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>xPath enables merge function retrieving a position inside traget document </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="OrgElementContent" use="optional" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>Original content of the element for restore action</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="MergeAction" use="required" type="MergeActionEnum">
+      <xs:annotation>
+        <xs:documentation>contains the complete XML string for the GSDML element substitution or the new GSDML element</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <!-- -->
+  <!-- GSDML related hardware unit element selection ============================================== -->
+  <!-- -->
+  <xs:complexType name="SelectedDapId">
+    <xs:annotation>
+      <xs:documentation>Contains the ID of the selected DAP, used as Part of the reference to the list of the HardwareUnits during transformation.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SelectedModuleId" type="SelectedModuleId" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="DapId" use="optional" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="SelectedModuleId">
+    <xs:annotation>
+      <xs:documentation>Contains the ID of the selected not-fixed modules, used as Part of the reference to the list of the HardwareUnits during transformation.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="SelectedSubmoduleId" type="SelectedSubmoduleId" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="ModuleId" use="optional" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="SelectedSubmoduleId">
+    <xs:annotation>
+      <xs:documentation>Contains the ID of the selected not-fixed submodules, used as Part of the reference to the list of the HardwareUnits during transformation.</xs:documentation>
+    </xs:annotation>
+    <xs:sequence />
+    <xs:attribute name="SubmoduleId" use="optional" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="GsdmlMerge">
+    <xs:annotation>
+      <xs:documentation>Contains all GSDML related informations for Merge actions (delete or create or overwrite)</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="0" maxOccurs="1">
+      <xs:element name="GsdmlMergeElementType" type="GsdmlMergeElementType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="SelectedDapId" type="SelectedDapId" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="GsdmlMergeAttributeType" type="GsdmlMergeAttributeType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="GsdmlTextIdCounter" use="optional" type="xs:unsignedInt" />
+  </xs:complexType>
+  <xs:complexType name="HardwareUnit">
+    <xs:annotation>
+      <xs:documentation>Contains all informations around a single Hardware unit</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="0">
+      <xs:element name="Diagnostics" type="Diagnostics" minOccurs="0" />
+      <xs:element name="Channels" type="Channels" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="guid" use="required" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>UUID for a hardware unit</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="hwGsdmlUnitID" use="required" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>unique identifier for a HWD unit within the namespace of the complete GSDML</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="description" use="optional" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>contains the "Description" field of the HardwareUnit</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="information" use="optional" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>contains the "Information" field of the HardwareUnit</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="icon" use="optional" type="xs:string">
+      <xs:annotation>
+        <xs:documentation>contains the "Icon" field of the HardwareUnit</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="Hwd">
+    <xs:annotation>
+      <xs:documentation>This contains all HWD related SessionData content</xs:documentation>
+    </xs:annotation>
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="HardwareUnit" type="HardwareUnit" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="HwdGlobalSettings" type="HwdGlobalSettings" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DeviceImportWizard">
+    <xs:annotation>
+      <xs:documentation>Root Node for the Session Data</xs:documentation>
+    </xs:annotation>
+    <xs:all minOccurs="1" maxOccurs="1">
+      <xs:element name="GsdmlMerge" type="GsdmlMerge" minOccurs="0" />
+      <xs:element name="Hwd" type="Hwd" />
+      <xs:element name="HWDHeaderComment" type="HWDHeaderComment" minOccurs="0" />
+      <xs:element name="SessionDataVersion" type="SessionDataVersion" />
+      <xs:element name="ImportLanguage" type="ImportLanguage" minOccurs="0" default="" />
+      <xs:element name="DIW_BLOB_Version" type="DIW_BLOB_Version" />
+      <xs:element name="DeviceIdentity" type="DeviceIdentity" minOccurs="0" />
+    </xs:all>
+  </xs:complexType>
+  <xs:element name="DeviceImportWizard" type="DeviceImportWizard" />
+
+  <!-- Obsolete elements
+  <xs:element name="GsdmlMergeAttributeType" type="GsdmlMergeAttributeType" />
+  <xs:element name="Diagnostics" type="Diagnostics" />
+  <xs:element name="UnitStatusSeverity" type="UnitStatusSeverity" />
+  <xs:element name="UnitStatusText" type="UnitStatusText" />
+  <xs:element name="DiagValue" type="DiagValue" />
+  <xs:element name="DiagInfo" type="DiagInfo" />
+  <xs:element name="EnumDiag" type="EnumDiag" />
+  <xs:element name="GsdmlMerge" type="GsdmlMerge" />
+  <xs:element name="GsdmlMergeElementType" type="GsdmlMergeElementType" />
+  <xs:element name="HardwareUnit" type="HardwareUnit" />
+  <xs:element name="Hwd" type="Hwd" />
+  <xs:element name="SelectedDapId" type="SelectedDapId" />
+  <xs:element name="Channels" type="Channels" />
+  <xs:element name="SelectedSubmoduleId" type="SelectedSubmoduleId" />
+  <xs:element name="SelectedModuleId" type="SelectedModuleId" />
+  <xs:element name="HwdGlobalSettings" type="HwdGlobalSettings" />
+  -->
+
+  <xs:complexType name="IOArea">
+    <xs:sequence maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="Channel" type="Channel"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="AreaByteSize" type="xs:int"></xs:attribute>
+    <xs:attribute name="GSDMLHash" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Channel">
+    <xs:sequence>
+      <xs:element name="TypeParameter" type="ChannelTypeParameter" maxOccurs="unbounded" minOccurs="0"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string"></xs:attribute>
+    <xs:attribute name="StartBit" type="xs:int"></xs:attribute>
+    <xs:attribute name="EndBit" type="xs:int"></xs:attribute>
+    <xs:attribute name="Type" type="xs:string"></xs:attribute>
+  </xs:complexType>
+
+
+  <xs:complexType name="ChannelTypeParameter">
+    <xs:attribute name="Name" type="xs:string" use="required"></xs:attribute>
+    <xs:attribute name="Value" type="xs:string" use="required"></xs:attribute>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataTypeTemplates" targetNamespace="http://www.iec.ch/61850/2003/SCL" xmlns:mstns="http://www.iec.ch/61850/2003/SCL" xmlns="http://www.iec.ch/61850/2003/SCL" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://www.abb.ch/CommunicationConfigurationTool">
+  <xs:import namespace="http://www.abb.ch/CommunicationConfigurationTool" schemaLocation="ICDDataTypeTemplates_app1.xsd" />
+  <xs:element name="LNodeType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Private" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="DO" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="desc" type="xs:string" />
+            <xs:attribute name="type" type="xs:string" />
+            <xs:attribute name="transient" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" />
+      <xs:attribute name="desc" type="xs:string" />
+      <xs:attribute name="lnClass" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Private">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="app1:LogicalNodeType" />
+        <xs:element ref="app1:DataObjectType" />
+        <xs:element ref="app1:DataAttributeType" />
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DOType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Private" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="DA" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Val" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="fc" type="xs:string" />
+            <xs:attribute name="dchg" type="xs:string" />
+            <xs:attribute name="bType" type="xs:string" />
+            <xs:attribute name="type" type="xs:string" />
+            <xs:attribute name="qchg" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DAI" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" />
+      <xs:attribute name="cdc" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnumType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="EnumVal" nillable="true" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent msdata:ColumnName="EnumVal_Text" msdata:Ordinal="1">
+              <xs:extension base="xs:string">
+                <xs:attribute name="ord" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAType">
+    <xs:complexType>
+      <xs:sequence>
+      	  <xs:element name="BDA" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="bType" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+		<xs:element ref="Private" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataTypeTemplates" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="LNodeType" />
+        <xs:element ref="Private" />
+        <xs:element ref="DOType" />
+        <xs:element ref="EnumType" />
+        <xs:element ref="DAType" />
+        <xs:element name="LN0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LPHD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VCAVCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VC1AVCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DAType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QCARCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DAType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QC1ARCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DAType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCGAPC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DAType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GFGGIO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DAType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LSGAPC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LSPTRC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TC1ATCC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DAType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TC2ATCC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DAType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BBGAPC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITCI">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LNodeType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="DOType" minOccurs="0" maxOccurs="unbounded" />
+              <xs:element ref="EnumType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

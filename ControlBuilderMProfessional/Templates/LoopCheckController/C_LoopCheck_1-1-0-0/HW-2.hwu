@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="2" TypeID="F5887AC9-909A-4248-BDAD-94FE6E3F51EE" TypeDescription="CI871" Guid="83D32DD0-2572-4187-BCDB-AC14591A6125" TypeGuid="490B0972-30EF-4F36-B80C-242B41E03A9B" TypeTimeStamp="2018-07-09-11:57:24.275" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:13.117" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2018-08-27-07:55:26.174" HWSettingsTS="1979-12-31-00:00:00.000" InstanceName="">
+  <ParameterSettings>
+    <ParameterSetting Name="stationName" Value="ci871" Description="Station name"/>
+    <ParameterSetting Name="ipAddress" Value="192.168.1.2" Description="IP address"/>
+    <ParameterSetting Name="backupIpAddress" Value="192.168.1.3" Description="Backup IP address"/>
+    <ParameterSetting Name="subnetMask" Value="255.255.255.0" Description="Subnet mask"/>
+    <ParameterSetting Name="defaultGateway" Value="192.168.1.1" Description="Default gateway"/>
+    <ParameterSetting Name="portMode" Value="Auto negotiation" Description="Port mode"/>
+    <ParameterSetting Name="redEthernetRecoveryTime" Value="200" Description="Red. Ethernet recovery time"/>
+    <ParameterSetting Name="diagnosisAlarms" Value="enabled" Description="Diagnosis"/>
+    <ParameterSetting Name="soeSequenceOfEvents" Value="enabled" Description="Process alarms (SOE)"/>
+    <ParameterSetting Name="phaseValueCalculation" Value="Based on old values" Description="Phase value calculation"/>
+    <ParameterSetting Name="freezeInputsForS1" Value="deactivated" Description="Hold inputs for S1 devices"/>
+    <ParameterSetting Name="globalWatchdogFactor" Value="9" Description="Global watchdog factor (if not defined with the device)"/>
+    <ParameterSetting Name="allowedAcyclicTransactions" Value="10 [default]" Description="Additional acyclic transactions [reserved cycle time]"/>
+    <ParameterSetting Name="PS_Unique_Source" Value="0" Description="PS Unique Source"/>
+  </ParameterSettings>
+  <HWChannels>
+    <HWChannel Address="IW2.0" Name="UnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits/>
+  <CheckSum Value="20935"/>
+</HWUnit>

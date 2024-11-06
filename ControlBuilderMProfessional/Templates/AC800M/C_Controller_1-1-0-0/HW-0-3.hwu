@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="3" TypeID="50331649" TypeDescription="Com" Guid="BBFC8233-083C-4D11-BB38-35C1F6159ACC" TypeGuid="7CA4E19C-D1A7-4BE7-93DB-F47A704EF0B6" TypeTimeStamp="2016-02-09-02:23:40.503" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:01.889" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2014-10-09-07:05:52.561" HWSettingsTS="2006-08-14-11:47:18.231" InstanceName="">
+  <ParameterSettings>
+    <ParameterSetting Name="BAUDRATE" Value="9.6" Description="Baudrate"/>
+    <ParameterSetting Name="PARITY" Value="none" Description="Parity"/>
+    <ParameterSetting Name="DATABITS" Value="8" Description="Databits"/>
+    <ParameterSetting Name="STOPBITS" Value="1" Description="Stopbits"/>
+    <ParameterSetting Name="HANDSHAKE" Value="None" Description="Flow control"/>
+    <ParameterSetting Name="RTSDELAY" Value="0" Description="Delay of the RTS-signal"/>
+  </ParameterSettings>
+  <HWChannels/>
+  <HardwareUnits/>
+  <CheckSum Value="10824"/>
+</HWUnit>

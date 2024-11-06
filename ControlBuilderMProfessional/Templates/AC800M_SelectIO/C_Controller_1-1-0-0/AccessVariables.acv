@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Varaccess xmlns="CBSourceCodeSchema3_0" Guid="779478E2-6AD7-4EF6-A640-19FB8D3543BB" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:10.452" CodePage="1252">
+  <VANamedProtocol Name="MMS"/>
+  <VANamedProtocol Name="SattBus"/>
+  <VAAddressedProtocol Name="Address"/>
+  <CheckSum Value="2217"/>
+</Varaccess>

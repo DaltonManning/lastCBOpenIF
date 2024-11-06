@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="0" TypeID="37761800" TypeDescription="PM866 / TP830" Guid="5101AD50-60B0-49E3-8DF5-1BD22BC805D4" TypeGuid="EBB4E454-D029-4874-9C07-327B295CE6CA" TypeTimeStamp="2018-12-14-05:14:15.739" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:10.431" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2018-08-23-06:34:22.333" HWSettingsTS="1979-12-31-00:00:00.000" InstanceName="">
+  <ParameterSettings>
+    <ParameterSetting Name="EnableSattbusTCPIP" Value="0" Description="Enable SattBus on TCP/IP"/>
+    <ParameterSetting Name="ROUTINGTYPE" Value="rnrp" Description="Routing method"/>
+    <ParameterSetting Name="DEFGATEWID" Value="" Description="Default gateway"/>
+    <ParameterSetting Name="SYSTEMAECLASS" Value="9950" Description="AE System AE class"/>
+    <ParameterSetting Name="SYSTEMAELOWSEVERITY" Value="200" Description="AE System AE low severity"/>
+    <ParameterSetting Name="SYSTEMAEMEDIUMSEVERITY" Value="400" Description="AE System AE medium severity"/>
+    <ParameterSetting Name="SYSTEMAEHIGHSEVERITY" Value="600" Description="AE System AE high severity"/>
+    <ParameterSetting Name="SYSTEMAECRITICALSEVERITY" Value="800" Description="AE System AE critical severity"/>
+    <ParameterSetting Name="SYSTEMAEFATALSEVERITY" Value="1000" Description="AE System AE fatal severity"/>
+    <ParameterSetting Name="SYSTEMEVENTSTOSESSIONLOG" Value="Medium Severity" Description="AE System events to controller log"/>
+    <ParameterSetting Name="EVENTQUEUESIZE" Value="300" Description="AE Local printer event queue size"/>
+    <ParameterSetting Name="MAXNOOFEVENTQUEUES" Value="0" Description="AE Max no of local printer event queues"/>
+    <ParameterSetting Name="EVENTENROLLMENTQUEUESIZE" Value="300" Description="AE Event subscription queue size"/>
+    <ParameterSetting Name="MAXNOOFENROLLMENTS" Value="1" Description="AE Max number of event subscriptions"/>
+    <ParameterSetting Name="EVENTENROLLMENTTIMEOUT" Value="360" Description="AE Event subscription time out"/>
+    <ParameterSetting Name="LOWLEVELEVENTBUFFERSIZE" Value="2" Description="AE Buffer size of low level event"/>
+    <ParameterSetting Name="MAXNOOFNAMEDVALUEITEMS" Value="0" Description="AE Max no of Named Value items"/>
+    <ParameterSetting Name="MAXPERCOFLOGSTRINGS" Value="10" Description="AE Max percent of log strings"/>
+    <ParameterSetting Name="ALARMAUTODISABLELIMIT" Value="3" Description="AE Limit auto disable"/>
+    <ParameterSetting Name="DEFNETWID" Value="172.16.0.0" Description="RNRP Default network ID"/>
+    <ParameterSetting Name="NUMOWNAREAS" Value="2" Description="RNRP Number of own areas"/>
+    <ParameterSetting Name="NUMREMOTEAREAS" Value="4" Description="RNRP Number of remote areas"/>
+    <ParameterSetting Name="MAXLOSTMSG" Value="3" Description="RNRP Max Lost Messages"/>
+    <ParameterSetting Name="SENDPERIOD" Value="1" Description="RNRP Send Period"/>
+    <ParameterSetting Name="MAXDIAMETER" Value="3" Description="RNRP Max no of hops"/>
+    <ParameterSetting Name="EXTNETW" Value="" Description="RNRP Ext network"/>
+    <ParameterSetting Name="EXTNETWMASK" Value="" Description="RNRP Ext netw mask"/>
+    <ParameterSetting Name="EXTROUTER1" Value="" Description="RNRP Ext router1 addr"/>
+    <ParameterSetting Name="EXTROUTER2" Value="" Description="RNRP Ext router2 addr"/>
+    <ParameterSetting Name="TOOLROUTING" Value="Disabled" Description="Tool Routing"/>
+    <ParameterSetting Name="TOOLROUTINGNBRCON" Value="20" Description="Tool Routing max no of connections"/>
+    <ParameterSetting Name="CLOCKMASTERORDERNO" Value="0" Description="CS CNCP ClockMaster Order No"/>
+    <ParameterSetting Name="CSPROTTYPE" Value="CNCP" Description="CS Protocol Type"/>
+    <ParameterSetting Name="CSTIMESETENABLE" Value="False" Description="CS Time Set Enabled"/>
+    <ParameterSetting Name="CLOCKSYNCHINTERVAL" Value="20" Description="CS Synch Interval"/>
+    <ParameterSetting Name="SNTPSERVERADDR1" Value="" Description="CS SNTP ServerAddr 1"/>
+    <ParameterSetting Name="SNTPSERVERADDR2" Value="" Description="CS SNTP ServerAddr 2"/>
+  </ParameterSettings>
+  <HWChannels>
+    <HWChannel Address="IW0.0" Name="UnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits>
+    <HWUnitRef Position="0" Guid="050187B6-8BE0-42C0-BFBB-AC49B1643BB1"/>
+    <HWUnitRef Position="1" Guid="2C31B87D-6C5F-46AC-9B22-20E9243EA714"/>
+    <HWUnitRef Position="2" Guid="05DDA4FE-1138-4BA8-B432-93E4EB1CB31F"/>
+    <HWUnitRef Position="3" Guid="F762C34E-B424-4F8A-BFD6-B4EBD98ACDEF"/>
+    <HWUnitRef Position="4" Guid="3085FF3C-8191-45B7-BFAE-DF51A8631EC0"/>
+    <HWUnitRef Position="5" Guid="F5F8286E-2CD9-496F-AF36-D59EAB496912"/>
+    <HWUnitRef Position="11" Guid="CFB99CBD-7B0F-4C3F-BD92-74D30D24E0E3"/>
+  </HardwareUnits>
+  <CheckSum Value="26370"/>
+</HWUnit>

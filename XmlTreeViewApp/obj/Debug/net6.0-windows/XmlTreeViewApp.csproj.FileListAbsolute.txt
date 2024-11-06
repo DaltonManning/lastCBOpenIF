@@ -1,0 +1,16 @@
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.Form1.resources
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.csproj.GenerateResource.cache
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.AssemblyInfoInputs.cache
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.AssemblyInfo.cs
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.csproj.CoreCompileInputs.cache
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\bin\Debug\net6.0-windows\XmlTreeViewApp.exe
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\bin\Debug\net6.0-windows\XmlTreeViewApp.deps.json
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\bin\Debug\net6.0-windows\XmlTreeViewApp.runtimeconfig.json
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\bin\Debug\net6.0-windows\XmlTreeViewApp.dll
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\bin\Debug\net6.0-windows\XmlTreeViewApp.pdb
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.dll
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\refint\XmlTreeViewApp.dll
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.pdb
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\XmlTreeViewApp.genruntimeconfig.cache
+C:\Users\DM\OneDrive\Sort This Stuff\Documents\XmlTreeViewApp\obj\Debug\net6.0-windows\ref\XmlTreeViewApp.dll

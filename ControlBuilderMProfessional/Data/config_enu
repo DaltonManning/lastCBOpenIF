@@ -1,0 +1,5432 @@
+!------------------------------------------------------------
+.COLORS
+ 100
+ 0  0.0     0.0    0.0        
+ 1  0.0     0.20   0.0        
+ 2  0.0     0.37   0.0        
+ 3  0.0     0.52   0.0        
+ 4  0.0     0.65   0.0        
+ 5  0.0     0.76   0.0        
+ 6  0.0     0.85   0.0        
+ 7  0.0     0.92   0.0        
+ 8  0.0     0.97   0.0        
+ 9  0.0     1.0    0.0        
+ 10 0.0     0.3    1.0       
+ 11 0.0     0.4    1.0 
+ 12 0.0     0.5    1.0        
+ 13 0.0     0.7    1.0        
+ 14 0.0     0.8    1.0        
+ 15 0.0     0.42   0.18        
+ 16 0.0     0.54   0.16        
+ 17 0.0     0.67   0.23        
+ 18 0.0     0.80   0.37       
+ 19 0.0     0.90   0.75
+ 20 35.0    0.3    1.0        
+ 21 35.0    0.4    1.0        
+ 22 35.0    0.5    1.0        
+ 23 35.0    0.7    1.0       
+ 24 35.0    0.8    1.0       
+ 25 30.0    0.42   0.18        
+ 26 30.0    0.54   0.16        
+ 27 30.0    0.67   0.23        
+ 28 30.0    0.80   0.37       
+ 29 30.0    0.90   0.75       
+ 30 60.0    0.3    1.0        
+ 31 60.0    0.4    1.0        
+ 32 60.0    0.5    1.0        
+ 33 60.0    0.7    1.0       
+ 34 60.0    0.8    1.0       
+ 35 60.0    0.42   0.18        
+ 36 60.0    0.54   0.16        
+ 37 60.0    0.67   0.23        
+ 38 60.0    0.80   0.37       
+ 39 60.0    0.90   0.75       
+ 40 120.0   0.35   1.0        
+ 41 120.0   0.5    0.8        
+ 42 120.0   0.5    1.0        
+ 43 120.0   0.7    1.0       
+ 44 120.0   0.8    1.0       
+ 45 120.0   0.42   0.18        
+ 46 120.0   0.54   0.16        
+ 47 120.0   0.67   0.23        
+ 48 120.0   0.80   0.37       
+ 49 120.0   0.90   0.75       
+ 50 150.0   0.26   1.0        
+ 51 150.0   0.34   1.0        
+ 52 140.0   0.5    0.8        
+ 53 140.0   0.7    0.8       
+ 54 140.0   0.8    0.8       
+ 55 140.0   0.42   0.18        
+ 56 140.0   0.54   0.16        
+ 57 140.0   0.67   0.23        
+ 58 140.0   0.80   0.37       
+ 59 140.0   0.90   0.75       
+ 60 200.0   0.35   1.0        
+ 61 200.0   0.45   1.0        
+ 62 200.0   0.5    1.0        
+ 63 200.0   0.7    1.0       
+ 64 200.0   0.8    1.0       
+ 65 190.0   0.42   0.18        
+ 66 190.0   0.54   0.16        
+ 67 190.0   0.67   0.23        
+ 68 190.0   0.80   0.37       
+ 69 190.0   0.90   0.75       
+ 70 230.0   0.32   1.0        
+ 71 230.0   0.42   1.0        
+ 72 230.0   0.5    1.0        
+ 73 230.0   0.7    1.0       
+ 74 230.0   0.8    1.0       
+ 75 240.0   0.42   0.18        
+ 76 240.0   0.54   0.16        
+ 77 240.0   0.67   0.23        
+ 78 240.0   0.80   0.37       
+ 79 240.0   0.85   0.5
+ 80 300.0   0.3    1.0        
+ 81 300.0   0.4    1.0        
+ 82 300.0   0.5    0.8        
+ 83 300.0   0.7    1.0      
+ 84 300.0   0.8    1.0       
+ 85 300.0   0.42   0.18        
+ 86 300.0   0.54   0.16        
+ 87 300.0   0.67   0.23        
+ 88 300.0   0.80   0.37       
+ 89 300.0   0.90   0.75       
+ 90 60.0    0.96   0.65        
+ 91 30.0    0.95   0.80        
+ 92 60.0    0.95   0.80        
+ 93 120.0   0.95   0.80       
+ 94 200.0   0.95   0.80
+ 95 60.0    0.865  0.20        
+ 96 30.0    0.865  0.35        
+ 97 60.0    0.865  0.35        
+ 98 120.0   0.865  0.35       
+ 99 200.0   0.865  0.35
+!                
+!----------------------------------------------------------
+! Names of simple types, possibly followed by ';' and GUID
+.SIMPLENAMES
+ bool;          fcc571cc-3a50-4ec6-9241-0726a148299b
+ word;          8061d655-bc22-484e-ade6-85ed4be9c605
+ dword;         4211fe12-bfb8-4d1e-bb5a-c815e8f1b103
+ int;           9ada5277-002e-4cbc-8b34-c6fdda5091c3
+ dint;          d59be854-1395-4e4f-9cf6-6a4ba4ccdc98
+ uint;          c6ede554-4916-4c6c-a174-48b41cbf6d00
+ real;          d8f54d4b-661f-407a-ace8-721d1581061b
+ string;        49d3a1c9-a834-46c6-9f71-88a69e045a5d
+ task
+ tObject;       d07ca5b9-7c97-4b0c-abcf-699a0d8aa2d6
+ ArrayObject;   bf87963b-69f3-4130-b368-c5fefc5ea679
+ QueueObject;   ef2c6b06-ec0b-4eb5-9ea3-542ff993b68f
+ time;          20e24ed4-5954-4aa1-9a01-10874693f4a4
+ date_and_time; 2ea20529-63c4-4df0-a3ac-9eff5971977a
+ AnyType;       94d92390-9492-4e73-8023-b3040c7d6591
+ AnyBitType
+ AnyIntType
+ AnyRealType
+ AnyNumType
+!----------------------------------------------------------
+! Value out of range in Alert
+.VALOUTOFRANG
+ Value must be between %1 and %2.
+!------------------------------
+.LOOPMESSTR2
+ Not all loops are presented.
+.SORTLITERR
+ Literal written in POU %1 via parameter %2 in sub-control module %3
+.SORTCONSTERR
+ Constant or IN variable written in POU %1 via parameter %2 in sub-control module %3
+.LOCCONSTERR
+ Constant or IN variable %1 written in POU %2 via system procedure
+!-------------------------------------------------------------------------
+.PROMPTSAVECHANGESBOX
+ dialogbox Save editor modifications
+   body
+      text  0 The content of at least one editor has been modified.\nDo you want to save the changes to this editor?
+      space
+      group horizontal columns=2
+         label  0 Editor:
+         text   20
+      end group
+      space
+   end body
+
+   commands
+      button default 4 Yes
+      button         8 Yes To All
+      button         5 No
+      button cancel  2 Cancel
+   end commands
+ end dialogbox
+!-------------------------------------------------------------------------
+!-------------------------------------------------------------------------
+.WINDOWATRBOX
+ dialogbox Window Properties
+   body vertical
+     group horizontal
+       frame vertical 0 Functional Properties
+         checkbox 12 Zoomable
+         checkbox 21 Movable
+         checkbox 22 Resizable
+         checkbox 23 Maintain aspect ratio
+         checkbox 16 Always on top
+         checkbox 20 Owner of interaction windows
+       end frame
+       frame vertical 0 Window Component Properties
+         checkbox 10 Title bar
+         checkbox 13 Scroll bars
+         checkbox 14 Status bar
+         checkbox 15 Coordinates
+       end frame
+       frame vertical 0 Tool Bars
+         checkbox 25 Edit
+         checkbox 28 Zoom
+         checkbox 29 Graphics
+       end frame
+     end group
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+     button         3 Apply
+     button         4 Help
+   end commands
+ end dialogbox
+!-------------------------------------------------------------------------
+.RESOLVEIDENT
+ Resolving variable and control module identifiers
+!--------------------------------------------------------------
+.CHGNAMECCWRN
+ Warning! Application structures already exist for controller configuration units. Continue will append them to this application.
+!--------------------------------------------------------------
+.READINGCONFM
+! Activity message
+ Reading project %1
+!--------------------------------------------------------------
+.READSCUMSG
+! Activity messages
+ Reading application %1
+ Reading library %1
+ Reading controller %1
+!--------------------------------------------------------------
+.VERSIONDATE
+! Syntax version number and file date. (Not translated - used in s-file)
+ Syntax version %1, date: ####-##-##-##:##:##.### C
+!--------------------------------------------------------------
+.PASSWORDEDITBOX
+ dialogbox Set Password
+   body vertical
+     label     0 A password must be at least 8 characters long and shall contain characters from at least three of following groups:\n  - Lowercase characters\n  - Uppercase characters\n  - Digits\n  - Other printable characters:
+     label     0  
+     group horizontal columns = 2
+       label     0 Enter old password:
+       edit      minwidth=25 maxchars=100 5
+       label     0 Enter new Password:
+       edit      minwidth=25 maxchars=100 3
+       label     0 Verify new password:
+       edit      minwidth=25 maxchars=100 4
+     end group
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROMPTFORPASSWORDBOX
+ dialogbox PROTECTED_1
+   body
+     text maxwidth=55 4
+     space
+     group horizontal columns=2
+       label     0 Password:
+       edit      minwidth=25 maxchars=100 5
+     end group
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROTECTIONPROPERTIESBOX
+ dialogbox Protection Properties
+   body
+     frame 0 Protection 
+       group horizontal columns=2
+       button   20 Set Password
+       button   10 Clear Password
+       end group
+       space
+       checkbox maxwidth=50 30 Override protection for %1, that is, make protected objects unprotected, hidden objects visible, and allow modifications for this password protected unit.
+     end frame
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PASWDERRSHORT
+ Password is too short. Must consist of at least %1 characters.
+.PASWDERRVERIFY
+ Verification failed. Password was not changed.
+.PASWDERRNOTCORRECT
+ Incorrect password
+.PASWDERRNOTCORRECTLOCKED
+ Incorrect password. You have made too many attempts with an incorrect password. The library/application is now locked.
+.PASWDERRMUSTENTERPASSWORD
+ You must enter a password.
+.INVALIDCHARACTERINSTRING
+ Invalid character in string
+.PROTAPP
+ Protected application
+.PROTLIB
+ Protected library
+.THEAPPISPROT
+ The application %1 has a password protection. You must enter the correct password to continue the operation.
+.THELIBISPROT
+ The library %1 is password protected. You must enter the correct password to continue the operation.
+!--------------------------------------------------------------
+.PROCONNAMSTR
+ Name
+.PROCONVALSTR
+ Value
+.PROCONTYPSTR
+ Data Type
+.PROCONDEFVALSTR
+ Default value
+.PROCONTABNAM
+ Project constants
+!--------------------------------------------------------------
+.SELPROGUNBOX
+ dialogbox
+    body horizontal
+       listbox visiblerows=12 3
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SELPRGHEADER
+ Select a program unit
+ Select an application
+ Recompile application
+!--------------------------------------------------------------
+.ILLPATH
+ Invalid path
+!--------------------------------------------------------------
+.FAILCRPRJPTH
+! Error message when new project couldn't be created on specified path.
+ Could not create project at specified location. Either the drive or the path is not valid or the folder is password protected.
+!--------------------------------------------------------------
+.NODISCSPACE
+ Not enough disk space available or unavailable disk.
+!--------------------------------------------------------------
+.FILNOTFNDSTR
+! String for error message
+ File not found
+!--------------------------------------------------------------
+.FILNOTFNDPAR
+! String for error message
+ File %1 not found
+!--------------------------------------------------------------
+.APLNOTFNDPAR
+! String for error message
+ Application %1 not found
+!--------------------------------------------------------------
+.LIBNOTFNDPAR
+! String for error message
+ Library %1 not found
+!--------------------------------------------------------------
+.SAVEFOUASBOX
+ dialogbox Save %1 As
+   body
+      group horizontal columns=3
+         label    0 Name:
+         edit minwidth=30 maxchars=20 10
+         space
+         label    0 Location:
+         edit minwidth=30 maxwidth=40 11
+         button   4 Browse...
+      end group
+   end body
+   commands
+      button default 1 OK
+      button cancel  2 Cancel      
+   end commands
+ end dialogbox
+!---------------------------------------------------------------
+.ADDAPPLICBOX
+ dialogbox Connect Application
+    body
+       listbox extendedselection 3
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SETSYSIDDBOX
+ dialogbox System identity
+    body horizontal columns=2
+       label 0  System identity:
+       edit minwidth=30 maxchars=35 3
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROBOXLTAPP
+ dialogbox Source Code Properties
+    body 
+      frame vertical 0 Open file:
+        group horizontal columns=2
+          label 0  Name:
+          text 4
+          label 0 Type:
+          text 5
+          label 0 Location:
+          text 6
+        end group
+        space
+        group horizontal columns=2
+          label 0 Created:
+          text 9
+          label 0 Changed:
+          text 10
+        end group
+      end frame
+      space
+      frame vertical 0 Saved file:
+        group horizontal columns=2
+          label 0 Date:
+          text 11
+          label 0 Size:
+          text 12
+          text 13 
+        end group
+      end frame
+    end body
+    commands
+      button default cancel 1 Close
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.READONLYSTR 
+ File is read-only.
+!--------------------------------------------------------------
+! Strings used in PROMPTSAVBOX:
+.SAVEAPPTEMPL
+ Save application %1
+.SAVELIBTEMPL
+ Save library %1
+.SAVECOSTEMPL
+ Save Controller %1
+.SAVECONTEMPL
+ Save project %1
+.INSAPPSTR
+ Insert Application
+.INSCONSTR
+ Insert Controller
+!--------------------------------------------------------------
+.NAMESTR
+ Name:
+!--------------------------------------------------------------
+.LIBALREADYOP
+ Library already open.
+!--------------------------------------------------------------
+.APPLICATISTR
+ Application 
+!--------------------------------------------------------------
+.LIBRARYSTR
+ Library 
+!--------------------------------------------------------------
+.CONTROLSYSTR
+ Controller
+!--------------------------------------------------------------
+.PROJECEXISTS
+ There is already a project with this name.
+!--------------------------------------------------------------
+.APPLICEXISTS
+ There is already an application with this name.
+!--------------------------------------------------------------
+.LIBRAREXISTS
+ There is already a library with this name.
+!--------------------------------------------------------------
+.HWLIBEXISTS
+ There is already a library with this name.
+!--------------------------------------------------------------
+.STDLIBEXISTS
+ There is already a standard library with this name.
+!--------------------------------------------------------------
+.CONTSYEXISTS
+ There is already a controller with this name.
+!--------------------------------------------------------------
+.PRJFILEXISTS
+ There is already a project file with this name at the specified location.
+!--------------------------------------------------------------
+.APPFILEXISTS
+ There is already an application file with this name at the specified location.
+!--------------------------------------------------------------
+.LBRFILEXISTS
+ There is already a library file with this name at the specified location.
+!--------------------------------------------------------------
+.HWLIBFILEXTS
+ There is already a library file with this name at the specified location.
+!--------------------------------------------------------------
+.CONFILEXISTS
+ There is already a control system file with this name at the specified location.
+!--------------------------------------------------------------
+.COMMENTEMPTY
+ Comment cannot be empty.
+!--------------------------------------------------------------
+.COMERRSTR
+ The combination of the signs (* and *) are not allowed.
+!--------------------------------------------------------------
+.CLOSINGCONFM
+! Activity message
+ Closing project %1
+!--------------------------------------------------------------
+.SAVEASSTR
+ Save %1 As
+.SAVECOPYSTR
+ Save copy of %1 as
+.INVALNAMSTR
+ Name is not valid.
+.NAMETOLONG
+ Name is too long.
+.NOAPPLINPROJ
+ There are no more applications opened in the project.
+.MESSAGE
+ Message
+!--------------------------------------------------------------
+.CURRFOLDER
+ Current project folder
+!---------------------------------------------------------------
+.APPFILES
+ Application Files
+!---------------------------------------------------------------
+.RESBYMEINF
+ User %1 for client %2 (this workplace)
+.RESBYOTHINF
+ User %1 for client %2 (another workplace)
+.NOTRESINF
+ Not reserved
+!---------------------------------------------------------------
+.NEWAPPLICBOX
+ dialogbox  New Application
+   body
+     group horizontal columns=2
+       group vertical
+         label    0 Templates:
+         listbox visiblerows = 6 12
+       end group
+       group vertical
+         label    0 Name:
+         edit minwidth=30 maxchars=20 10
+         space
+         label    15 Location:
+         group horizontal columns=2
+           edit minwidth=30 11
+           button 4 Browse...
+         end group
+         space
+       end group
+     end group
+   end body
+
+   commands
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.NEWFOUBROWSEBOX
+ dialogbox  New Application
+   body
+     group horizontal columns=2
+       label    0 Name:
+       edit minwidth=30 maxchars=20 10
+       label   15 Location:
+       group horizontal columns=2
+         edit minwidth=30 maxwidth=40 11
+         button 4 Browse...
+       end group
+     end group
+   end body
+
+   commands
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.RENAMEFOUBOX
+ dialogbox Rename %1
+   body
+      group horizontal columns=3
+         label    0 Name:
+         edit minwidth=30 maxchars=20 11
+         space
+         label    15 Location:
+         edit minwidth=30 maxwidth=200 12
+!        button   4 Browse...
+      end group
+   end body
+
+   commands
+      button default 1 OK
+      button cancel  2 Cancel      
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INSPRCEXIST
+ This project constant already exists. Create a new project constant.
+.INVPRCSTR
+ Invalid project constant name. Set a new project constant.
+.INVPRCSTRLEN
+ The project constant name must consist of 1-%1 characters.\nSet a new project constant.
+.INVPRCSTRPATH
+ The project constant name will become part of a path consisting of\n%1 characters. A path may at most consist of %2 characters. Set a\nnew project constant with a shorter name or give other constants in\nthe path shorter names. Note that dots separating constants\nin a path are included in its length.
+.PRCNAMESTR
+ Name
+.RENPRCSTR
+ Rename Project Constant
+.INSPRCSTR
+ Insert Project Constant
+.VALTYPMISSTR
+ Value and type mismatch
+.OVRVALSTR
+ Override value
+.OVRVALMESSTR
+ New default value will override current actual value
+.PRCDEFTXTSTR
+ Default value :
+.STRTABLEDBOX
+ dialogbox Table
+    body vertical
+       group horizontal columns=2
+          label 6 Index Variable
+          edithelp 7
+       end group
+       frame 
+          frame horizontal columns=2 maxheight=13 verticalscroll 8
+             label 0 Index Value
+             label 9 String
+          end frame
+          group horizontal columns=3
+             button 3 New Line
+             button 4 Up
+             button 5 Down
+          end group
+       end frame
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.OTHERWISE
+ Otherwise
+.INDMULTIPLE
+ Multiple index declaration
+.ILLEGALINDEX
+ Invalid index.
+.GRIDPATTERN
+ 8      ! Line style for axis grid.
+.LIMITPATTERN
+ 7      ! Line style for LimitRulers.
+.READABLEFONT
+ 11     ! Height in pixels for smallest easilly readable system font.
+.NOFONT
+ 3      ! If textheight < NOFONT then draw no text.
+!--------------------------------------------------------------
+.PICTDISPDBOX
+ dialogbox Image Selector
+    body vertical
+       group horizontal columns=3
+          label                 0 Path/Filename
+          edithelp minwidth=32  9
+          button                10 Browse
+       end group
+       checkbox 11 Keep the shape of the image
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+       button         3 Advanced >>
+       button         4 Help
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PICDISP2DBOX
+ dialogbox Image Selector
+    body vertical
+       group horizontal columns=3
+          label maxheight=10    0 Path/Filename\n(Default value)
+          edithelp minwidth=32  9
+          button               10 Browse
+       end group
+       checkbox 11 Keep the shape of the image
+       frame 
+          group horizontal columns=2
+             label     0 Index Variable
+             edithelp 12
+          end group
+          frame horizontal columns=2 maxheight=13 verticalscroll 13
+             label  0 Index Value
+             label 14 Path/Filename
+          end frame
+          group horizontal columns=5
+             button 5 New Line
+             button 6 Up
+             button 7 Down
+             space minwidth=12
+             button 8 Browse
+          end group
+       end frame
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+       button 3 Advanced <<
+       button 4 Help
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INDMULTIPLE
+ Multiple index declaration
+.ILLEGALINDEX
+ Invalid index.
+.MORETHAN1000
+ Table contains more than 1000 items.\nThe dialog can only show the first 1000 table items.\nInformation about the rest of the items will be lost if the table is saved.
+!--------------------------------------------------------------
+.PICTINFOBOX
+ dialogbox Image Selector Information
+    body vertical
+      group horizontal columns=2
+        label 0 Memory occupied by images in view:
+        text  2 %1 kByte
+        label 0 Memory occupied by images out of view:
+        text  3 %2 kByte
+      end group
+      button 4 Update Images
+    end body
+    commands horizontal
+      button default cancel 1 OK
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.CHOOSEPICSTR
+ Choose image file
+!--------------------------------------------------------------
+.RANGEBOX
+ dialogbox Range
+    body horizontal columns = 2
+       label    0 Lower scale limit
+       edithelp 3
+       label    0 Upper scale limit
+       edithelp 4
+       space
+       checkbox 5 Fixed
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OPRANGEBOX
+ dialogbox Range
+    body horizontal columns = 2
+       label 0 Lower scale limit
+       edit  3
+       label 0 Upper scale limit
+       edit  4
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.COMMONSTRING
+ Upper limit must be greater than lower limit.
+ Position
+!------------------------------------------------------------
+!                     Default string in Otherwise entry
+!--------------------------------------------------------------
+.OTHERSTRING
+ Index not in table.
+.ZOOMINSTRING
+ Zoomable
+.ENABLESTRING
+ Enable
+!-----------------------------------------------------------
+!           Image selector information boxes
+!------------------------------------------------------------
+.PICTDISPINFO
+ dialogbox Image Selector Information
+   body
+      text 10 
+      text 11
+   end body
+   commands
+      button default cancel 1 OK
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+.PICDISINFOWC
+ dialogbox Image Selector Information
+   body
+      text 10 
+      text 11
+      text 0 Module path with evaluated wildcards:
+      text 12
+   end body
+   commands
+      button default cancel 1 OK
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PDERRINFOBOX
+ dialogbox Image Selector Information
+   body
+      text 10
+   end body
+   commands
+      button default cancel 1 OK
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+!              Image selector information strings
+!--------------------------------------------------------------
+.CURRPATHSTR
+ Current path:
+!--------------------------------------------------------------
+.CURMODPATSTR
+ Current module path:
+!--------------------------------------------------------------
+.MODPATERRSTR
+ Current module path cannot be followed. ### indicates where path was lost.
+!--------------------------------------------------------------
+.MEMERRORDSTR
+ The file %1 cannot be shown, since available memory is full.
+!--------------------------------------------------------------
+.FNOTEXISTSTR
+ The file '%1' does not exist.
+!--------------------------------------------------------------
+.SYNTAXERRSTR
+ File cannot be read.
+!--------------------------------------------------------------
+.VARINEDITSTR
+ ### Cannot evaluate variable in Edit mode ###
+!--------------------------------------------------------------
+.VARINRUNSTR
+ Variables are currently not correct.
+.TIMERANGEBOX
+ dialogbox Range
+    body vertical
+       group horizontal columns=2 0
+          label    11 Default range:
+          edithelp 12
+          label    21 Alternative range 1:
+          edithelp 22
+          label    31 Alternative range 2:
+          edithelp 32
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.CURVEBOX
+ dialogbox Curve Data
+    body vertical
+       frame horizontal columns=2 0
+          label    11 Number of Samples
+          edithelp 12
+          label    21 Fraction
+          edithelp 22
+          label    31 Sample Duration
+          edithelp 32
+       end frame
+
+       frame horizontal columns=2 3 Variable Connection
+          label    41 Variable name
+          edithelp 42
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.RANGESTRING
+ Select Range
+!------------------------------------------------------------
+.ACTRANGEBOX
+ dialogbox Time Range
+    body horizontal
+       frame horizontal columns=9 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 Range:
+          edit  width=10 12
+          label 21 d
+          edit  width=10 22
+          label 31 h
+          edit  width=10 32
+          label 41 m
+          edit  width=10 42
+          label 51 s
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+.HOPRANGEBOX
+ dialogbox Range
+    body vertical
+       frame horizontal columns=2 0 Fetch Range
+          label 6 Upper scale limit
+          text  4
+          label 5 Lower scale limit
+          text  3
+       end frame
+
+       frame vertical 0 Operate Range
+          radiobutton 101 Enable
+          group horizontal columns=2
+             label 16 Upper scale limit
+             edit  14
+             label 15 Lower scale limit
+             edit  13
+          end group
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.HRANGEBOX
+ dialogbox Range
+    body vertical
+       frame vertical 0 Range from variables
+          frame horizontal columns=2 0 Fetch Range
+             label    31 Upper scale limit
+             edithelp 32
+             label    21 Lower scale limit
+             edithelp 22
+          end frame
+
+          frame horizontal columns=2 0 Operate Range
+             label    61 Enable
+             edithelp 62
+             label    81 Upper scale limit
+             edithelp 82
+             label    71 Lower scale limit
+             edithelp 72
+          end frame
+
+          group horizontal columns=2
+             label    41 Unit
+             edithelp 42
+          end group
+       end frame
+
+       checkbox    51 Fixed
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OPTIMEBOX
+ dialogbox Start Time
+    body horizontal
+       frame horizontal columns=12 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 Start at:
+          edit  width=10 12
+          label 21 -
+          edit  width=10 22
+          label 31 -
+          edit  width=10 32
+          label 41 -
+          edit  width=10 42
+          label 51 :
+          edit  width=10 52
+          label 61 :
+          edit  width=10 62
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+.OPOFFSETBOX
+ dialogbox Time Offset
+    body horizontal
+       frame horizontal columns=11 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 Time Offset:
+          edit  width=10 12
+          label 21  
+          edit  width=10 22
+          label 31 d
+          edit  width=10 32
+          label 41 h
+          edit  width=10 42
+          label 51 m
+          edit  width=10 52
+          label 61 s
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+! Header strings for calls to EditGenVariable
+!------------------------------------------------------------
+.GENEDITHEAD
+ Relative Time
+ Grid lines default
+ Reset Graph
+ Upper limit must be greater than lower limit.
+!------------------------------------------------------------
+! History strings for "no access allowed"
+!------------------------------------------------------------
+.HISTNOACCESS
+ Access denied.
+.VARNAME
+ dialogbox
+    body vertical
+       group horizontal columns=2 0
+          label    11 Variable
+          edithelp 12
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.RESERRORDBOX
+ dialogbox
+   body vertical columns = 1
+   end body
+   commands horizontal
+     button default 1 Accept error
+     button cancel  2 Edit
+   end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.CONVDISERRST
+ Conversion of the attribute disable results in a string that is too long. The following data will be lost:
+!------------------------------------------------------------
+.DISABLEATTR
+ Disable:
+!------------------------------------------------------------
+! Header when attribute of graphical object etc found.
+.ATTRHEADSTR
+ Used as: 
+!------------------------------------------------------------
+! Names for attributes of graphical objects etc when searching.
+.ATTRNAMESTR
+! vNoGraphAttr
+ ?
+! vPosXAttr
+ Position X
+! vMaxPosXAttr
+ Max Position X
+! vMinPosXAttr
+ Min Position X
+! vPosYAttr
+ Position Y
+! vMaxPosYAttr
+ Max Position Y
+! vMinPosYAttr
+ Min Position Y
+! vScaleXAttr
+ Scale X
+! vMaxScaleXAttr
+ Max Scale X
+! vMinScaleXAttr
+ Min Scale X
+! vScaleYAttr
+ Scale Y
+! vMaxScaleYAttr
+ Max 4_SCALE Y
+! vMinScaleYAttr
+ Min Scale Y
+! vAngleAttr
+ Rotation
+! vEnableAttr
+ Enable
+! vZoomInAttr
+ Zoom In
+! vAreaCol1Attr
+ Area color
+! vAreaCol2Attr
+ Alternative area color
+! vAreaStyleAttr
+ Color mix
+! vLineCol1Attr
+ Line color
+! vLineCol2Attr
+ Alternative line color
+! vLineStyleAttr
+ Color mix
+! vLineThicknessAttr
+ Line Width
+! vOpSelectedAttr
+ Selected
+! vVariableAttr
+ Variable
+! vStepAttr
+ Step
+! vOpMaxAttr
+ Operator Max
+! vOpMinAttr
+ Operator Min
+! vRealVarAttr
+ Real variable
+! vDefaultRangeAttr
+ Default range
+! vAltRange1Attr
+ Alternative range 1
+! vAltRange2Attr
+ Alternative range 2
+! vRangeLowerLimitAttr
+ Range Lower limit
+! vRangeUpperLimitAttr
+ Range Upper limit
+! vLimitValueAttr
+ Presentation limiter Position
+! vIndexVarAttr
+ Index
+! vRefPosAttr
+ Reference position
+! vWidthAttr
+ Width
+! vFractionAttr
+ Fraction
+! vFormatAttr
+ Format
+! vHaxisStartTimeAttr
+ Start Time
+! vHaxisTimeOffsetAttr
+ Time Offset
+! vInViewAttr
+ In view
+! vValueChangedAttr
+ Changed
+! vTableItemAttr
+ Module path
+! vInteractLoggingAttr
+ Event Attributes
+! vDisableAttr
+ Disable
+! vCurveSamplesAttr
+ Number of samples in curve
+! vCurveFractionAttr
+ Number of decimals in curve value
+! vSampleDurationAttr
+ Sample duration for curve
+! vVaxisUnitAttr
+ Unit for range
+! vResetToDefaultAttr
+ Reset trend graph
+! vRelTimeAttr
+ Relative time for time axis
+! vEnableGridAttr
+ Enable grid lines
+! vCurveModeAttr
+ Curve presentation mode
+! vConRangeUpperLimitAttr
+ Range Upper limit
+! vConRangeLowerLimitAttr
+ Range Lower limit
+! vEnableControlRangeAttr
+ Enable Operate Range
+! vVisibleAttr
+ Visible
+! vTextAttr
+ Text
+! vAltTextAttr
+ Alternative text
+! vEnableDelayAttr
+ Activate OK/Cancel
+! vOKVariableAttr
+ OK-variable
+! vCancelVariableAttr
+ Cancel-variable
+! vComButSetValueAttr
+ Value
+! vValueAttr
+ Value
+! vNoOfDigitsAttr
+ Significant Digits
+! vDimAttr
+ Dim
+! vWindowTitleAttr
+ Title text
+! vWindowWidthAttr
+ Width
+! vWindowHeightAttr
+ Height
+! vWindowClassAttr
+ Window class
+! vWindowTimeoutAttr
+ Auto-close timeout
+! vWindowDisplayedAttr
+ Is the window displayed?
+! vWindowHRootAttr
+ Owner of interaction windows
+! vWindowVisibleTitleAttr
+ Visible title bar
+! vWindowResizableAttr
+ Resizable
+! vWindowMaintainRatioAttr
+ Maintain aspect ratio
+! vWindowZoomableAttr
+ Zoomable
+! vWindowVisibleScrollBarsAttr
+ Visible scroll bars
+! vPathAttr
+ Path
+! vFileNameAttr
+ File name
+! vRelativePosAttr
+ Relative position
+! vLastGraphAttr
+ ???
+! Dummy strings if application reads to many items...
+ ???
+ ???
+ ???
+ ???
+ ???
+!------------------------------------------------------------
+! Used as header when graphical expressions is shown in search dialog
+.EXPRHEADSTR
+ Expression:
+!--------------------------------------------------------------
+! Used when replace has result in a too long expression
+.EXPRLONGWARN
+ Unable to replace Expression is too long.
+!--------------------------------------------------------------
+.INTOBJTYPEDB
+ dialogbox Interaction Object
+   body
+      listbox visiblerows=6 3
+         listitem bool
+         listitem integer
+         listitem real
+         listitem string
+         listitem date_and_time
+         listitem time
+         listitem Window
+      end listbox
+   end body
+
+   commands
+      button default 1 OK
+      button cancel  2 Cancel
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+.FASTFACTOR
+! Factor between increment and fast increment for real interaction objects
+ 10.0
+.INTFASTFACT
+! Factor between increment and fast increment for integer interaction objects
+ 10
+!--------------------------------------------------------------
+.NOTEXECUTED
+ Interaction cannot be executed due to invalid variables.
+.NOTCHANGED
+ Interaction executed. "Changed" not written since the variable is invalid.
+.NOTSELECTED
+ Interaction executed. "Selected" not written since the variable is invalid.
+.INVALFORMAT
+ Invalid conversion format.
+!--------------------------------------------------------------
+! Interaction dialog box for bool simple
+.BOOLINTDBOX
+ dialogbox Interaction Object: bool
+    body vertical
+       frame horizontal
+          label    11 Variable
+          edithelp 12 
+       end frame
+
+       frame horizontal
+          radiobutton 21 On
+          radiobutton 22 Off
+          radiobutton 23 Toggle
+          radiobutton 24 Menu
+       end frame
+
+       frame horizontal columns=2
+          label    31 Enable
+          edithelp minwidth=30 32
+          label    39 Selected
+          edithelp 40
+          label    41 Changed
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for integer
+.INTINTDBOX
+ dialogbox Interaction Object: integer
+    body vertical
+       frame horizontal columns=2
+          label    11 Variable
+          edithelp 12 
+          label    13 Operator Min
+          edithelp 14 
+          label    15 Operator Max
+          edithelp 16 
+          label    17 Step
+          edithelp 18 
+       end frame
+
+       frame horizontal
+          radiobutton 21 Simple
+          radiobutton 24 Menu
+       end frame
+
+       frame horizontal columns=2
+          label    31 Enable
+          edithelp minwidth=30 32
+          label    39 Selected
+          edithelp 40
+          label    41 Changed
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for real
+.REALINTDBOX
+ dialogbox Interaction Object: real
+    body vertical
+       frame horizontal columns=2
+          label    11 Variable
+          edithelp 12 
+          label    13 Operator Min
+          edithelp 14 
+          label    15 Operator Max
+          edithelp 16 
+          label    17 Relative Step
+          edithelp 18 
+       end frame
+
+       frame horizontal
+          radiobutton 21 Simple
+          radiobutton 24 Menu
+       end frame
+
+       frame horizontal columns=2
+          label    31 Enable
+          edithelp minwidth=30 32
+          label    39 Selected
+          edithelp 40
+          label    41 Changed
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for string
+.STRINTDBOX
+ dialogbox Interaction Object: string
+    body vertical
+       frame horizontal
+          label    11 Variable
+          edithelp 12 
+       end frame
+
+       frame horizontal columns=2
+          label    31 Enable
+          edithelp minwidth=30 32
+          label    39 Selected
+          edithelp 40
+          label    41 Changed
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for date_and_time
+.TIMEINTDBOX
+ dialogbox Interaction Object: date_and_time
+    body vertical
+       frame horizontal columns=2
+          label    11 Variable
+          edithelp 12 
+          label    13 Format
+          edithelp 14 
+       end frame
+
+       frame horizontal columns=2
+          label    31 Enable
+          edithelp minwidth=30 32
+          label    39 Selected
+          edithelp 40
+          label    41 Changed
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for time
+.DURAINTDBOX
+ dialogbox Interaction Object: time
+    body vertical
+       frame horizontal columns=2
+          label    11 Variable
+          edithelp 12 
+          label    13 Format
+          edithelp 14 
+       end frame
+
+       frame horizontal columns=2
+          label    31 Enable
+          edithelp minwidth=30 32
+          label    39 Selected
+          edithelp 40
+          label    41 Changed
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for procedure interaction
+.PROCINTDBOX
+ dialogbox Interaction Object: Window
+    body horizontal
+       frame vertical
+         radiobutton 201 Create a new window
+         radiobutton 202 Create/Delete a window
+         radiobutton 203 Delete a window
+         radiobutton 204 Edit a file
+         group horizontal columns=2
+         label    205 Path
+         edithelp 206
+         label    0   Relative position
+         edithelp 207
+         label    0   X position
+         edithelp 208
+         label    0   Y position
+         edithelp 209
+         label    0   Window class
+         edithelp 210
+         end group
+       end frame
+
+       frame horizontal columns=2
+          label    31 Enable
+          edithelp minwidth=30 32
+          label    39 Selected
+          edithelp 40
+          label    41 Changed
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.INTSTR
+ Interaction Object 
+!--------------------------------------------------------------
+! Interaction dialog box for command button
+.COMBUTDBOX
+ dialogbox Interaction Object: Command Button
+    body horizontal columns=2
+
+       group vertical
+
+          frame horizontal
+             radiobutton 11 Boolean
+             radiobutton 12 Integer
+             radiobutton 13 Real
+          end frame
+
+          frame horizontal
+             radiobutton 21 On
+             radiobutton 22 Off
+             radiobutton 23 Toggle
+          end frame
+
+          frame horizontal
+             radiobutton 31 Step
+             radiobutton 32 Value
+          end frame
+
+          frame horizontal
+             checkbox 41 Indicate set value
+          end frame
+
+          frame horizontal columns=2
+             label    51 Variable
+             edithelp 52 
+             label    53 Value
+             edithelp 54 
+             label    55 Operator Min
+             edithelp 56
+             label    57 Operator Max
+             edithelp 58
+          end frame
+
+       end group
+
+       group vertical
+
+          frame horizontal columns=2
+             radiobutton 61 Absolute Step
+             edithelp    62
+             radiobutton 63 Relative Step
+             edithelp    64
+          end frame
+
+          frame horizontal columns=2
+             label    71 Text
+             edithelp 72
+             label    73 Alternative text
+             edithelp 74
+          end frame
+
+          frame vertical
+             checkbox 102 Activate OK/Cancel
+             group horizontal columns=2
+                label    103 OK-variable
+                edithelp 104
+                label    105 Cancel-variable
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 Visible
+             edithelp 82
+             label    83 Enable
+             edithelp 84
+             label    89 Changed
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for procedure command button
+.COMBUTPDBOX
+ dialogbox Interaction Object: Window
+    body vertical
+
+       frame vertical
+         radiobutton 201 Create a new window
+         radiobutton 202 Create/Delete a window
+         radiobutton 203 Delete a window
+         radiobutton 204 Edit a file
+         group horizontal columns=2
+           label    205 Path
+           edithelp 206
+           label    0   Relative position
+           edithelp 207
+           label    0   X position
+           edithelp 208
+           label    0   Y position
+           edithelp 209
+           label    0   Window class
+           edithelp 210
+           space
+           space
+           label    11 Button text
+           edithelp 12
+         end group
+       end frame
+
+      frame horizontal columns=2
+         label    81 Visible
+         edithelp 82
+         label    83 Enable
+         edithelp 84
+         label    89 Changed
+         edithelp 90
+       end frame
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for option button
+.OPTBUTDBOX
+ dialogbox Interaction Object: Option Button
+    body vertical
+
+       frame horizontal columns=2
+          label    11 Variable
+          edithelp 12
+          label    13 Value
+          edithelp 14
+       end frame
+
+       group vertical
+
+          frame horizontal columns=2
+             label    21 Text
+             edithelp 22
+          end frame
+
+          frame vertical
+             checkbox 102 Activate OK/Cancel
+             group horizontal columns=2
+                label    103 OK-variable
+                edithelp 104
+                label    105 Cancel-variable
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 Visible
+             edithelp 82
+             label    83 Enable
+             edithelp 84
+             label    89 Changed
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for check box
+.CHECKBOXDBOX
+ dialogbox Interaction Object: Check Box
+    body vertical
+
+       frame horizontal columns=2
+          label    11 Variable
+          edithelp 12 
+       end frame
+
+       group vertical
+
+          frame horizontal columns=2
+             label    21 Text
+             edithelp 22
+          end frame
+
+          frame vertical
+             checkbox 102 Activate OK/Cancel
+             group horizontal columns=2
+                label    103 OK-variable
+                edithelp 104
+                label    105 Cancel-variable
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 Visible
+             edithelp 82
+             label    83 Enable
+             edithelp 84
+             label    89 Changed
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for Text box
+.TEXTBOXDBOX
+ dialogbox Interaction Object: Input Field
+    body horizontal columns=2
+
+       group vertical
+
+          frame vertical
+             radiobutton 11 integer
+             radiobutton 12 real
+             radiobutton 13 string
+             radiobutton 14 date_and_time
+             radiobutton 15 time
+          end frame
+
+          frame horizontal columns=2
+                label    21 Variable
+                edithelp 22 
+          end frame
+
+          frame horizontal
+             radiobutton 31 Left
+             radiobutton 32 Center
+             radiobutton 33 Right
+          end frame
+
+          frame horizontal columns=2
+             label    41 Operator Min
+             edithelp 42 
+             label    43 Operator Max
+             edithelp 44 
+             label    45 Format
+             edithelp 46 
+          end frame
+
+       end group
+
+       group vertical
+
+          frame horizontal columns=2
+             radiobutton 51 Absolute Step
+             edithelp    52
+             radiobutton 53 Relative Step
+             edithelp    54
+          end frame
+
+          frame horizontal columns=2
+             radiobutton 61 Fraction
+             edithelp    62 
+             radiobutton 63 Significant Digits
+             edithelp    64 
+          end frame
+
+          frame vertical
+             checkbox 102 Activate OK/Cancel
+             group horizontal columns=2
+                label    103 OK-variable
+                edithelp 104
+                label    105 Cancel-variable
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 Visible
+             edithelp 82
+             label    83 Enable
+             edithelp 84
+             label    89 Changed
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Grid for open picture.
+.PICTUREGRID
+ 8
+!------------------------------------------------------------
+.OBJECTNAMES
+ Point
+ Multiple Objects
+ Control module type
+ Control Module
+ Interaction Object
+ Trend Graph
+ Time axis
+ Value axis
+ Curve
+ Presentation limiter
+ Time Ruler
+ Bar Graph
+ Value axis
+ Bar
+ Presentation limiter
+ String Selector
+ Image Selector
+ Line
+ Rectangle
+ Oval
+ Segment
+ Polygon
+ Graphical Connection
+ Text object
+ Node
+!
+!-------------------------------------------------
+.INPARSTRING
+ %1 in %2
+!-------------------------------------------------
+.LIBPICTSTR
+! String for error message
+ Control module type 
+!------------------------------------------------------------
+.LIBPICTNAME
+! String for creating new module type
+ Control module type name:
+!------------------------------------------------------------
+.MODTITLESTR
+ Create a Control Module
+!-------------------------------------------------------------
+.OPENMODSTR
+ Open Control Module
+!-------------------------------------------------------------
+.CLOSEMODSTR
+ Close Control Module
+!-------------------------------------------------------------
+.MAXMINERRSTR
+ Maximum size must be at least %1% greater than the minimum size.
+!-------------------------------------------------------------
+! Titles for Zooming and Size dialog boxes
+.ZOOMTYPETIT
+ Zooming and visibility for control module type %1
+.ZOOMSINGLTIT
+ Zooming and Visibility for Single Control Module %1
+.ZOOMINSTTIT
+ Zooming and Visibility for Control Module %1
+!-------------------------------------------------------------
+.PICTZOOMBOX
+ dialogbox Zooming and visibility for control module type %1
+   body vertical
+     group horizontal columns = 2
+       checkbox 11 Visible in the graphics of the surrounding control module
+       checkbox 10 Zoomable
+
+       frame horizontal columns=2 0 Visibility Limits
+         label 0 Maximum size
+         combobox dropdown 21
+           listitem 1000.0 (Default value)
+           listitem 0.0 (No limit)
+         end combobox
+         label 0 Minimum size
+         combobox dropdown 22
+           listitem 0.01 (Default value)
+         end combobox
+       end frame
+
+       frame horizontal columns=2 0 Layers
+         checkbox 30 Two layers
+         space
+         label 31 Size for layer shift
+         combobox dropdown 32
+           listitem 0.95 (Default value)
+         end combobox
+       end frame
+
+     end group
+
+     space
+
+     frame
+       text 40 The size 1.0 corresponds to a non-rotated control module filling up the whole window.\nThe current size of the control module is %1.
+     end frame
+   end body
+
+   commands horizontal
+      button default 1 OK
+      button cancel  2 Cancel
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.ZOOMABLESTR
+ Zoomable
+.NONZOOMSTR
+ Non-zoomable
+.VISIBLESTR
+ Visible
+.INVISIBLESTR
+ Invisible
+!-------------------------------------------------------------
+.IGNOREMAXSTR
+ Ignore maximum size
+.SYMBOLSTR
+ Comply with maximum size
+!-------------------------------------------------------------
+.PROMMODUNAME
+ Rename
+!-------------------------------------------------------------
+.REPLHEADSTR
+ Replace Control Module Type
+!-------------------------------------------------------------
+.PINVATTR1BOX
+ dialogbox Attributes
+    body horizontal
+       frame vertical columns=2 0
+          label 0 Enable
+          label 0 Dim
+          edithelp minwidth=30 7
+          edithelp minwidth=30 8
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+       button         3 More >>
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Attributes dialog box
+.PINVATTR2BOX
+ dialogbox Attributes
+    body vertical
+       group horizontal 
+          frame vertical columns=2 0
+             label 0 Enable
+             label 0 Dim
+             edithelp minwidth=30 7
+             edithelp minwidth=30 8
+          end frame
+          space
+       end group
+       frame horizontal columns=5 0
+          space
+          space
+          label 0 Variable
+          label 0 Min
+          label 0 Max
+
+          label 0 Position:
+          label 0 X:
+          edithelp maxwidth=20 20
+          edithelp maxwidth=20 21
+          edithelp maxwidth=20 22
+
+          space
+          label 0 Y:
+          edithelp maxwidth=20 23
+          edithelp maxwidth=20 24                   
+          edithelp maxwidth=20 25
+
+          label 0 Rotation:
+          space
+          edithelp maxwidth=20 26
+          edithelp maxwidth=20 27
+          edithelp maxwidth=20 28
+
+          space
+          space
+          space
+          label 0 Size 0%
+          label 0 Size 100%
+
+          label 0 Scale:
+          label 0 X:
+          edithelp maxwidth=20 29
+          edithelp maxwidth=20 30
+          edithelp maxwidth=20 31
+
+          space
+          label 0 Y:
+          edithelp maxwidth=20 32
+          edithelp maxwidth=20 33
+          edithelp maxwidth=20 34
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+       button         3 More >>
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.NEWMODTYPBOX
+ dialogbox New Control Module Type
+    body
+       frame horizontal columns = 2
+          radiobutton 11 Control module type
+          edit        12
+          radiobutton 13 Single control module
+       end frame
+       space
+       frame horizontal columns = 2          
+         label        0 Instance name:
+         edithelp     15
+       end frame    
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.NAMEINUSE
+ The name %1 is already in use or not valid.   
+!-------------------------------------------------------------
+.PICTINVZOOMB
+ dialogbox Zooming and Visibility for Control Module %1
+   body vertical
+     group horizontal
+       frame vertical 0 Visible in the graphics of the surrounding control module
+         radiobutton 10 Default value of the type (%1)
+         radiobutton 11 Visible
+         radiobutton 12 Invisible
+       end frame
+
+       frame vertical 0 Zoomable
+         radiobutton 20 Default value of the type (%1)
+         radiobutton 21 Zoomable
+         radiobutton 22 Non-zoomable
+       end frame
+     end group
+
+     frame vertical 0 Visibility Limits
+       group horizontal
+         group vertical
+           checkbox long 30 Use the visibility limits of the type
+           space
+           label 0 Maximum size
+           combobox dropdown 31
+             listitem 1000.0 (Default value)
+             listitem 0.0 (No limit)
+           end combobox
+           label 0 Minimum size
+           combobox dropdown 32
+             listitem 0.01 (Default value)
+           end combobox
+         end group
+
+         frame vertical 0 Relation to the surrounding control module
+           radiobutton 40 Default value of the type (%1)
+           radiobutton 42 Comply with maximum size
+           radiobutton 41 Ignore maximum size
+           radiobutton 43 Inverse visibility relation
+         end frame
+       end group
+
+       frame
+         text 50 The size 1.0 corresponds to a non-rotated control module filling up the whole window.\nThe current size of the control module is %1.
+       end frame
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.SINGLEZOOMB
+ dialogbox Zooming and Visibility for Single Control Module %1
+   body vertical
+     group horizontal
+       frame vertical 0 Visible in the graphics of the surrounding control module
+         radiobutton 11 Visible
+         radiobutton 12 Invisible
+       end frame
+
+       frame vertical 0 Zoomable
+         radiobutton 21 Zoomable
+         radiobutton 22 Non-zoomable
+       end frame
+     end group
+
+     frame vertical 0 Visibility Limits
+       group horizontal
+         group vertical
+           checkbox long 30 Use the visibility limits of the type
+           space
+           label 0 Maximum size
+           combobox dropdown 31
+             listitem 1000.0 (Default value)
+             listitem 0.0 (No limit)
+           end combobox
+           label 0 Minimum size
+           combobox dropdown 32
+             listitem 0.01 (Default value)
+           end combobox
+         end group
+
+         frame vertical 0 Relation to the surrounding control module
+           radiobutton 42 Comply with maximum size
+           radiobutton 41 Ignore maximum size
+           radiobutton 43 Inverse visibility relation
+         end frame
+       end group
+
+       frame
+         text 50 The size 1.0 corresponds to a non-rotated control module filling up the whole window.\nThe current size of the control module is %1.
+       end frame
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.PICTINVVISB
+ dialogbox Zooming and Visibility for Control Module %1
+   body horizontal
+     frame vertical 0 Visible in the graphics of the surrounding control module
+       radiobutton 10 Default value of the type (%1)
+       radiobutton 11 Visible
+       radiobutton 12 Invisible
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.SINGLEVISB
+ dialogbox Zooming and Visibility for Single Control Module %1
+   body vertical
+     frame vertical 0 Visible in the graphics of the surrounding control module
+       radiobutton 11 Visible
+       radiobutton 12 Invisible
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.LINEWIDTHBOX
+ dialogbox Line Width
+   body vertical
+      group horizontal
+         listbox dropdown visiblerows=10 minwidth=10 10
+            listitem 1
+            listitem 2
+            listitem 3
+            listitem 4
+            listitem 5
+            listitem 7
+            listitem 9
+            listitem 11
+            listitem 13
+            listitem 15
+         end listbox
+
+         edithelp 11
+      end group
+
+      checkbox 12 Save as default settings
+   end body
+
+   commands
+       button default 1 OK
+       button cancel  2 Cancel
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Attributes of graph objects
+.GRAPHATTRBOX
+ dialogbox Attributes
+    body horizontal columns=2
+       label    3 Enable
+       edithelp minwidth=30 4
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! TextDialogBox
+!-------------------------------------------------------------
+.TEXTALIGNBOX
+ dialogbox Text
+    body
+       frame vertical  0 Alignment
+          radiobutton 31 Left
+          radiobutton 32 Center
+          radiobutton 33 Right
+       end frame
+       checkbox 21 Save as default settings
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.TEXTVARDBOX
+ dialogbox Text
+    body
+       group horizontal
+          frame vertical  0 Alignment
+             radiobutton 31 Left
+             radiobutton 32 Center
+             radiobutton 33 Right
+          end frame
+
+          frame vertical 0 Mode
+             checkbox  5 Variable
+             group horizontal columns=2
+                label    41 Width
+                edithelp 42
+                label    51 Fraction
+                edithelp 52
+                label    61 Format
+                edithelp 62
+             end group
+          end frame
+       end group
+       checkbox 21 Save as default settings
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Point position dialog box
+.POINTPOSBOX
+ dialogbox Position
+    body horizontal
+       frame horizontal columns=2 0 X
+          label    11 Variable
+          edithelp maxwidth=30 12 
+          label    21 Min
+          edithelp maxwidth=30 22 
+          label    31 Max
+          edithelp maxwidth=30 32 
+       end frame
+
+       frame horizontal columns=2 0 Y
+          label    41 Variable
+          edithelp maxwidth=30 42 
+          label    51 Min
+          edithelp maxwidth=30 52 
+          label    61 Max
+          edithelp maxwidth=30 62 
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.MODIFYTEXT
+ dialogbox Modify text
+    body vertical
+       group horizontal columns=2 0
+          label    11 Text
+          edithelp 12
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.MODULETYPSTR
+ Control module type 
+!-------------------------------------------------
+! Change grid dialog box
+.CHGRIDBOX
+ dialogbox Grid
+    body vertical
+       frame vertical  0 System Grid Attributes
+          checkbox    11 Show grid
+          checkbox    12 Show sub-control module grid
+          group horizontal
+             label    13 Visible grid line factor:
+             edit minwidth=3 maxchars=2  14
+          end group
+       end frame
+
+       frame vertical columns=2   0 Control Module Grid Size
+          label 0 Coarser
+          space
+          label 0 Normal
+          space
+          label 0 Finer
+          space
+          radiobutton 21 0.2
+          radiobutton 22 0.04
+          radiobutton 23 0.02
+          radiobutton 24 0.01
+          radiobutton 25 0.005
+          radiobutton 26 Off
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.SMALLCOLBOX
+ dialogbox Color
+    body vertical
+       frame horizontal columns=2
+          label                  10 Line color
+          colorbutton minwidth=8 11
+          label                   1 Area color
+          colorbutton minwidth=8  2 
+       end frame
+
+       checkbox 19 Save as default settings
+    end body
+    commands horizontal
+       button default 20 OK
+       button cancel  21 Cancel
+       button         22 More >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.MEDIUMCOLBOX
+ dialogbox Color
+    body vertical
+       frame horizontal columns=3
+          label                  10 Line color
+          colorbutton minwidth=8 11
+          edithelp               12
+          label                   1 Area color
+          colorbutton minwidth=8  2 
+          edithelp                3
+       end frame
+
+       checkbox 19 Save as default settings
+    end body
+    commands horizontal
+       button default 20 OK
+       button cancel  21 Cancel
+       button         22 More >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.LARGECOLBOX
+ dialogbox Color
+    body vertical
+       frame horizontal columns=3
+          label                        10 
+          colorbutton       minwidth=8 11
+          edithelp                     12
+          label                        13 
+          colorbutton       minwidth=8 14 
+          edithelp                     15
+          label                        16
+          combobox dropdown minwidth=8 17
+          edithelp                     18
+
+          space
+          space
+          space
+
+          label                        1 Area color
+          colorbutton       minwidth=8 2 
+          edithelp                     3
+          label                        4 Alternative area color
+          colorbutton       minwidth=8 5
+          edithelp                     6
+          label                        7
+          combobox dropdown minwidth=8 8
+          edithelp                     9
+       end frame
+
+       checkbox 19 Save as default settings
+    end body
+    commands horizontal
+       button default 20 OK
+       button cancel  21 Cancel
+       button         22 More >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.LINCOLSTR
+ Line color
+.ALTLINCOLSTR
+ Alternative line color
+.ARECOLSTR
+ Area color
+.ALTARECOLSTR
+ Alternative area color
+.TEXCOLSTR
+ Text color
+.ALTTEXCOLSTR
+ Alternative text color
+.BGRCOLSTR
+ Background color
+.ALTBGRCOLSTR
+ Alternative background color
+.COLMIXSTR
+ Color mix
+.COLCHOICESTR
+ Color choice
+!-------------------------------------------------
+.INTWINDSMALL
+ dialogbox Interaction Window Properties for %1
+    body horizontal columns=3
+      text minwidth = 20 0 Properties
+      text      0 Variable/Value
+      text      0 Default value
+
+      label     0 Title text:
+      edithelp 10
+      text      0
+
+      label     0 Width:
+      edithelp 11
+      text      0 0.24
+
+      label     0 Height:
+      edithelp 12
+      text      0 0.0
+
+      label     0 Window class:
+      edithelp 13
+      text      0 0
+    end body
+    commands horizontal
+      button default 1 OK
+      button         2 Apply
+      button cancel  3 Close
+      button         4 More >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.INTWINDLARGE
+ dialogbox Interaction Window Properties for %1
+    body horizontal columns=3
+      text minwidth = 20 0 Properties
+      text      0 Variable/Value
+      text      0 Default value
+
+      label     0 Title text:
+      edithelp 10
+      text      0
+
+      label     0 Width:
+      edithelp 11
+      text      0 0.24
+
+      label     0 Height:
+      edithelp 12
+      text      0 0.0
+
+      label     0 Window class:
+      edithelp 13
+      text      0 0
+
+      label     0 Auto-close timeout:
+      edithelp 14
+      text      0 0 (seconds)
+
+      label     0 Is the window displayed?:
+      edithelp 15
+      text      0 <Out parameter>
+
+      label     0 Owner of interaction windows:
+      edithelp 16
+      text      0 false
+
+      label     0 Visible title bar:
+      edithelp 17
+      text      0 true
+
+      label     0 Resizable:
+      edithelp 18
+      text      0 false
+
+      label     0 Maintain aspect ratio:
+      edithelp 19
+      text      0 true
+
+      label     0 Always on top:
+      edithelp 20
+      text      0 false
+
+      label     0 Zoomable:
+      edithelp 21
+      text      0 false
+
+      label     0 Visible scroll bars:
+      edithelp 22
+      text      0 false
+    end body
+    commands horizontal
+      button default 1 OK
+      button         2 Apply
+      button cancel  3 Close
+      button         4 More >>
+    end commands
+ end dialogbox
+.WINDOWCOLBOX
+ dialogbox Window background
+    body horizontal columns = 2
+       label                  0 Application windows:
+       colorbutton minwidth=8 3
+       label                  0 Interaction windows:
+       colorbutton minwidth=8 4
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+!--------------------------------------------------------------
+.OKBOX
+ dialogbox
+    body
+       text minwidth=20 10
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKTITLE
+ Message
+!------------------------------------------------------------
+.OKCANCELBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKCANCLTITLE
+ Message
+!------------------------------------------------------------
+.OKMOREBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default cancel 1 OK
+       button                7 More information
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKMORETITLE
+ Message
+!------------------------------------------------------------
+.YESNOBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 4 Yes
+       button cancel  5 No
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.YESNOTITLE
+ Message
+!------------------------------------------------------------
+.YESNOCANCBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 4 Yes
+       button         5 No
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.YESNOCATITLE
+ Message
+!------------------------------------------------------------
+.CONTCANCEBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 3 Continue
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.CONTCANTITLE
+ Message
+!------------------------------------------------------------
+.INSCONCANBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button         6 Inspect
+       button default 3 Continue
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCOCANTITLE
+ Message
+!------------------------------------------------------------
+.INSCANBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 6 Inspect
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCANTITLE
+ Message
+!------------------------------------------------------------
+.PROMPTBOX
+ dialogbox
+    body horizontal
+       text 1
+       edit 2
+    end body
+
+    commands
+       button default 3 OK
+       button cancel  4 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.EDITNAMEBOX
+ dialogbox
+    body horizontal
+       label    0 Name: 
+       edithelp maxchars=32 3 
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROMPTTITLE
+ Set Value
+.PROMPTTEXT
+ Value
+.DEFEDITSTR
+ Edit String
+.DEFPROMPTSTR
+ String
+!------------------------------------------------------------
+! General strings
+.GENERALSTRS
+ <Unnamed>
+ String was truncated to %1 characters.
+  not found.
+  not valid.
+ Illegal value.
+ Invalid name
+!------------------------------------------------------------
+.ERRCOUNTSTR
+ %1 error<s> during compilation.
+ %1 warning<s> during compilation.
+ %1 error<s> and %2 warning<s> during compilation.
+ Application:
+ Controller:
+!--------------------------------------------------------------
+!                    Heap full error message
+!--------------------------------------------------------------
+.HEAPFULLMSG
+ Memory full. The Project is too big. Increase the heap size in the Setup Wizard.
+!--------------------------------------------------------------
+.CHNGRUNTSTR
+ New application version received. Operation was aborted.
+!--------------------------------------------------------------
+.PROGRESSSTAT
+ dialogbox Message
+   body vertical
+     frame horizontal 0
+       text width=100 height=2 2
+     end frame
+   end body
+   commands horizontal
+   button default cancel 1 Cancel
+   end commands
+ end dialogbox
+!-----------------------------------------------
+!-------------------------------------------------------------
+.STARTPROGREP
+!$$$ Move to dict later /jml
+!GoingSimulateStartProgress,
+ Going to test mode
+!GoingOnlineWithDownloadStartProgress,
+ Going online with download
+!GoingOnlineStartProgress,
+ Going online
+!GoingOfflineStartProgress,
+ Going offline
+!CancelGoingSimulateStartProgress,
+ Cancel going to test mode
+!CancelGoingOnlineWithDownloadStartProgress,
+ Cancel going online with download
+!CancelGoingOnlineStartProgress,
+ Cancel going online
+!CompileProjectStartProgress
+ Compiling application
+!CompileTypeStartProgress
+ Compiling POU type %1
+!CompileInstancesStartProgress
+ Compiling instances for %1
+!RestoreDeselectedApplicationsStartProgress
+ Restoring deselected applications
+!RestoreApplicationStartProgress
+ Restoring application %1
+!DownloadProjectStartProgress
+ Downloading project to controller %1
+!DownloadFinishStartProgress
+ Download to controller %1 complete
+!DownloadAbortStartProgress
+ Download to controller %1 aborted
+!SimulateStartedStartProgress
+ Test mode started
+!SimulateStoppedStartProgress
+ Test mode stopped
+!OnlineStartedStartProgress
+ You are now online!
+!OfflineStartedStartProgress
+ You are now offline!
+!CreateConfImageStartProgress
+ Creating configuration image for backup media
+!End
+!---------------------------------------------------------------
+.OWNERRORSTR
+   - Some control modules are not connected to any "ScanGroup".
+   - Incomplete connection of "GroupData" variables.
+   - Some GroupData variables are connected to more than one "ScanGroup".
+   - Variables are written by several systems.
+   - Variables are exported by PROG.
+ The following control modules are not connected to any "GroupData" variable:
+ The following "GroupData" variables are not connected to any "ScanGroup" control modules:
+ The following "GroupData" variables are connected to several "ScanGroup" control modules:
+ The following variables are written by several systems:
+ The following variables are exported by PROG:
+   - System names in some scan groups have changed.. \
+ System names should be declared as constants or application has to be initialized..
+ The following system names in scan groups have changed.. \
+ System names should be declared as constants or application has to be initialized.:
+   - System names in some scan groups are invalid..
+ The following system names in scan groups are invalid.:
+ Program execution
+ There are application errors of the following categories.:
+ There are no application errors..
+ There are application warnings of the following categories.:
+ There are no application warnings..
+!==============================================================================
+!                          KONFIGURATIONSF?????NSTER 
+!==============================================================================
+!-------------------------------------------------------------
+.ABOUTMENUSTR
+ About %1
+!-------------------------------------------------------------
+.PRINTCODEMSG
+ Writing application information to file
+.PRINTMEMMSG
+ Writing application memory to file
+.PRINTEXEDATAMSG
+ Writing execution data to file
+.PRINTIOMSG
+ Writing I/O lists to file
+.PRINTRUNTIMEMSG
+ Writing runtime structure to file
+
+!-------------------------------------------------------------
+.SETUPVARERR
+ Variable not found.
+!---------------------------------------------------------------
+.SETUPVALERR
+ Illegal value.
+!---------------------------------------------------------------
+.SETUPRANERR
+ Value must be between %1 and %2.
+!---------------------------------------------------------------
+.NOWRSYSSETUP
+ Warning! System setup cannot be saved to file.
+!---------------------------------------------------------------
+.GENERALBOX
+ dialogbox Setup - General
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Name
+          text 7 Value
+          text 8 Default value
+          text 9 Description
+
+          text 101 AlphabeticPresentationOfObjects
+          text 0 Present objects in the Project Explorer in alphabetic order.\nFalse means that the objects are shown in declaration order instead.
+          text 102 PromptSaveEditorChanges
+          text 0 Prompt before saving modifications of editors at, for example, transfer to online mode.\nFalse means that modifications are saved automatically.
+          text 103 ShowWarningOnInstanceEdit
+          text 0 Warning if a command affects an instance inside a library type declaration.
+          text 104 LibraryFilePath
+          text 0 Directory name for library.
+          text 105 CpuTimeQuota
+          text 0 Percentage of total CPU time used by Control Builder. (5-100)
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.GRAPHICSBOX
+ dialogbox Setup - Graphics
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Name
+          text 7 Value
+          text 8 Default value
+          text 9 Description
+
+          text 0 HistoryDrawPeriod
+          text 0 Updating period in seconds. (0-60)
+          text 0 UserInteractTimeout
+          text 0 Maximum time to complete an operation, for example a zooming operation. (0-3600)
+          text 0 InteractionWindowScaleFactor
+          text 0 Factor that modifies the given size of an interaction window. (0.1-10.0)
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROGRAMBOX
+ dialogbox Setup - Application
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Name
+          text 7 Value
+          text 8 Default value
+          text 9 Description
+
+          text 0 EnableColdRetain
+          text 0 Enable "ColdRetain"-function.
+          text 0 SaveColdRetainOnOfflineTransfer
+          text 0 Save "ColdRetain"-values on transfer from online to offline.
+          text 0 PromptBeforeSaveOnOfflineTrans
+          text 0 Dialog before saving "ColdRetain"-values on transfer from online to offline.
+          text 0 MaxNoOfLoopsShown
+          text 0 Maximal number of loops presented as text.
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROGRAMDLBOX
+ dialogbox Setup - Application Download
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 40 5
+          text 6 Name
+          text 7 Value
+          text 8 Default value
+          text 9 Description
+
+          text 0 DisableDownLoad
+          text 0 Disable download from this station.
+          text 0 ReauthenticateDL
+          text 0 The user has to make a new authentication at download.
+          text 0 SuppressOnlineSelectionDialog
+          text 0 Always download to all controllers in the project.
+          text 0 HWSimulationAllowed
+          text 0 Hardware simulation is allowed. WARNING: Only allowed to be used in development systems.
+          text 0 EnableTaskAnalysisTool
+          text 0 Enable the Task Analysis tool.
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.FILESBOX
+ dialogbox Setup - Files
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Name
+          text 7 Value
+          text 8 Default value
+          text 9 Description
+
+          text 0 RemoteWriteProtected
+          text 0 Disk protected against writing files from remote systems via MMS
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.TESTINSIMBOX
+ dialogbox Setup - Test Mode Switches
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Name
+          text 7 Value
+          text 8 Default value
+          text 9 Description
+
+          text 0 FiletransClientInTestMode
+          text 0 Enable file transfer client functions in test mode.
+          text 0 MMSVarClientInTestMode
+          text 0 Enable MMS variable client functions in test mode.
+          text 0 OpenCommClientInTestMode
+          text 0 Enable OpenComm variable client functions in test mode. MMSVarClientInTestMode must be activated.
+          text 0 COMLIMasterInTestMode
+          text 0 Enable COMLI master functions in test mode.
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCABOX
+ dialogbox Setup - Control Network
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Name
+          text 7 Value
+          text 8 Default value
+          text 9 Description
+
+          text 0 MMSProcessNumber
+          text 0 MMS process number for this application.
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.DOCCMDERR
+ Document reader not found.\n Please check Acrobat Reader installation.
+.MANUALSDONOTEXIST
+ Manuals not found.\n Please reinstall Control Builder Manuals.
+!------------------------------------------------------------
+.SELVMHEADER
+ Variable Memory
+!--------------------------------------------------------------
+.SELVCHEADER
+ Write Exported Variables
+!--------------------------------------------------------------
+.SELPINFHEAD
+ Application Information
+!--------------------------------------------------------------
+! Edit colours dialog box
+.EDITCOLDBOX
+ dialogbox Edit Colors
+    body horizontal columns=2
+       frame horizontal columns=6 verticalscroll height=11
+             1000 Colors
+          label 0 Color
+          label 0 Number
+          label 0 Hue
+          label 0 Lum
+          label 0 Sat
+          space
+       end frame
+
+       group vertical
+          space
+          space
+          button 10 New Line
+       end group
+
+       space
+       space
+
+       frame horizontal columns=7 verticalscroll height=4
+             2000 Blink Colors
+          label 0 Color
+          label 0 Number
+          label 0 On-color
+          label 0 Off-color
+          label 0 Period
+          label 0 Ratio
+          label 0 Phase
+       end frame
+
+       group vertical
+          space
+          space
+          button 20 New Line
+       end group
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+       button         3 Update Colors
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.DUPLCOLNRSTR
+ This color number has already been defined.
+!-------------------------------------------------------------
+.SELECTCOLBOX
+ dialogbox Colors
+    body vertical
+       frame vertical 80 System Colors
+          label 70 Basic colors
+          group horizontal columns=10 20 
+          end group
+
+          space
+
+          label 60 Background colors
+          group horizontal columns=10 30
+          end group
+
+          space
+
+          label 50 Special colors
+          group horizontal 
+             colorbutton 99 -1
+             label 51 Transparent
+             space
+             colorbutton 98 -2
+             label 52 Window background
+             space
+             colorbutton 97 -3
+             label 53 Foreground color
+          end group
+       end frame
+
+       frame horizontal columns=10 40 User Colors
+       end frame
+
+       checkbox 5 Show color index
+    end body
+
+    commands
+       button cancel   1 Cancel
+       button default 10 Edit Colors
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+!======================================================================
+!
+! Begin COMMONSTRINGS.C
+!
+!----------------------------------------------------------------------
+.TYPESTRS
+ Control module type
+ Diagram Type
+ Data Type
+ Function Block Type
+ Program Type
+ Function
+!----------------------------------------------------------------------
+.TYPECSTRS
+ Control module type:
+ Diagram Type:
+ Data Type:
+ Function Block Type:
+ Program Type:
+ Function:
+!----------------------------------------------------------------------
+.TYPESSTRS
+ Control module types
+ Diagram Types
+ Data types
+ Function block types
+ Program types
+ Functions
+!----------------------------------------------------------------------
+.TYPENOTFSTRS
+ Control module type %1 not found within the connected libraries.
+ Diagram %1 not found within the connected libraries.
+ Data type %1 not found within the connected libraries.
+ Function block type %1 not found within the connected libraries.
+ Program type %1 not found within the connected libraries.
+ Function %1 not found.
+!----------------------------------------------------------------------
+.INSTCSTRS
+ Variable:
+ Parameter:
+ Component:
+ Control Module:
+ Diagram:
+ Function Block:
+ Program:
+!----------------------------------------------------------------------
+.INST1CSTRS
+ Variable %1:
+ Parameter %1:
+ Component %1:
+ Control Module %1:
+ Diagram %1:
+ Function Block %1:
+ Program %1:
+!----------------------------------------------------------------------
+!
+! End COMMONSTRINGS.C
+!
+!======================================================================
+!
+! Begin UNDEFTYPE.C
+!
+!----------------------------------------------------------------------
+! 
+.UNDEFMODTYPE
+ Undefined type
+ !----------------------------------------------------------------------
+.RECURMODTYPE
+ Recursive type
+!----------------------------------------------------------------------
+!
+! End UNDEFTYPE.C
+!
+!======================================================================
+!
+! Begin SCANGROUP.C
+!
+!----------------------------------------------------------------------
+.SCANGRPPARID
+! Formal name for scan group parameter.
+ Scan_group
+!----------------------------------------------------------------------
+!
+! End SCANGROUP.C
+!
+!======================================================================
+!
+! Begin MODDIALOG.C
+!
+!----------------------------------------------------------------------
+.MODDIAERRMES
+ Invalid variable identifier or reserved word.
+ Variable already declared.
+ Type in use, cannot be deleted:
+ Type name declared in a library.
+ Type already declared.
+ Errors found in sequence blocks.
+!----------------------------------------------------------------------
+!
+! End MODDIALOG.C
+!
+!======================================================================
+.INVALIDTASK
+ Invalid task name.
+!======================================================================
+!
+! Begin SELECTTYPEDIALOG.C
+!
+!----------------------------------------------------------------------
+.SELTYPENBOX
+ dialogbox
+    body
+       group horizontal columns=2
+          label 3
+          label 0 Libraries/Application:
+          combobox sorted visiblerows=11 width=34 4 
+          listbox sorted visiblerows=13 5
+       end group
+       group horizontal columns=3
+          label 7 Instance name:
+          edithelp 6
+       end group
+       checkbox 8 Connect parameters
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INVALNAMSTR
+ Name %1 is not valid.
+!----------------------------------------------------------------------
+.SYSLIBNAMSTR
+ <System>
+! The <> are necesary in order to get it sorted correctly
+.NAMEERRTEMPL
+ The name %1 is already in use or not valid.
+.NAMEERRSTR
+ Invalid name
+!----------------------------------------------------------------------
+!
+! End SELECTTYPEDIALOG.C
+!
+!======================================================================
+!
+! Begin SELECTDIALOG.C
+!
+!----------------------------------------------------------------------
+! Variable access dialog boxes
+.VARACCDBOX
+ dialogbox
+    body vertical
+       frame horizontal
+          label 0 Data Type:
+          listbox dropdown  40
+       end frame
+
+       listbox visiblerows=12 width=40 21
+
+       frame horizontal
+         button 4 Expand
+         button 5 Collapse
+         space width=5
+         checkbox 6 Expand All
+       end frame
+
+       frame horizontal columns=2 verticalscroll height=3 30 
+          label 31 Name:
+          text  width=45 32
+          label 33 Data Type:
+          text  width=45 34
+          label 35 Description:
+          text  width=45 36
+       end frame
+    end body
+
+    commands
+       button default 1 Replace
+       button         3 Insert   
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.TOOLONGNASTR
+ Name is too long.
+.ALLTYPESSTR
+ All Types
+.VARIABLESTR
+ Variable Information
+!----------------------------------------------------------------------
+! Headers for variable access dialog boxes
+.VARACCHEADER
+ Available variables in %1
+ No variables of this data type available.
+!----------------------------------------------------------------------
+!
+! End SELECTDIALOG.C
+!
+!======================================================================
+!
+! Begin RESOLVEDIALOG.C
+!
+!----------------------------------------------------------------------
+.RESERRORHDR
+! vNoError
+ Check
+! vWarning
+ Warning
+! vError
+ Error
+!----------------------------------------------------------------------
+.RESERRORBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 2 Inspect
+       button         3 Next
+       button         4 Continue
+       button cancel  7 Cancel
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.CHKERRORBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 3 Next
+       button cancel  7 Cancel
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.CHKERRORBDCL
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 5 Declare
+       button         3 Next
+       button cancel  7 Cancel
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INTRESERRBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 1 Continue
+       button cancel  6 Edit
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INTRESERRDCL
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 5 Declare
+       button         1 OK
+       button cancel  6 Edit
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+!
+! End RESOLVEDIALOG.C
+!
+!======================================================================
+!
+! Begin MODSEARCH.C
+!
+!----------------------------------------------------------------------
+.FOUNDPARSTR
+! Used in SEARCH dialog box when a ParAlias is found.
+! To be concatenated with name of formal parameter.
+ Parameter: 
+!----------------------------------------------------------------------
+!
+! End MODSEARCH.C
+!
+!======================================================================
+!
+! Begin MISMATCH.C
+!
+!----------------------------------------------------------------------
+.MISMATCHBOX
+ dialogbox Warning - Change analysis
+    body
+       group horizontal columns = 2 10
+       end group
+       group horizontal
+          button 1 Rename...
+          button 2 Consequences 
+          button 6 Help
+       end group
+    end body
+
+    commands
+       button                5 Continue 
+       button default cancel 3 Next Mismatch
+       button                4 Next Analysis
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.RENAMEBOX
+ dialogbox Rename 
+    body
+       frame horizontal columns = 2 20
+       end frame
+    end body
+
+    commands
+       button default 1 OK 
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+! Strings for mismatch,rename,mismatch help dialogs
+.MISMATCHSTRS
+!AnalysisStr
+ Analysis
+!KeepStr
+ Retain
+!OpSaveStr
+ ColdRetain
+!SCUScopeStr
+ Source code unit:  
+!ModuleTypeScopeStr
+ Control module type:
+!DiagramTypeScopeStr
+ Diagram Type:
+!DataTypeScopeStr
+ Data Type:
+!ProgramTypeScopeStr
+ Program Type:
+!ApplicationTypeScopeStr
+ Application:
+!FunctionBlockTypeScopeStr
+ Function Block Type:
+!SCUNotReachableStr
+ Library not used by the new application.
+!SCUNotFoundStr
+ Application not found.
+!SCUAlreadyStr
+ Application already used for matching.
+!ModuleTypeNotFoundStr
+ Control module type not found.
+!ModuleTypeAlreadyStr
+ Control module type already used for matching.
+!DiagramTypeNotFoundStr
+ Diagram Type not found.
+!DiagramTypeAlreadyStr
+ Diagram Type already used for matching.
+!ProgramTypeNotFoundStr
+ Program Type not found.
+!ProgramTypeAlreadyStr
+ Program Type already used for matching.
+!FunctionBlockTypeNotFoundStr
+ Function Block  not found.
+!FunctionBlockTypeAlreadyStr
+ Function Block already used for matching.
+!DataTypeNotFoundStr
+ Data Type not found.
+!DataTypeAlreadyStr
+  Data Type already used for matching.
+!DataTypeKindChangedStr
+ Data type changed from Struct to Array or vice versa
+!ModuleNotFoundStr
+ Control Module not found.
+!ModuleDuplicateStr
+ Control Module not matched due to duplicate names.
+!ModuleAlreadyStr
+ Control Module already used for matching.
+!ModuleWrongTypeStr
+ Module has changed module type.
+!ModuleKindChangedStr
+ Module has changed from single to reusable type or vice versa.
+!DiagramNotFoundStr
+ Diagram not found.
+!DiagramDuplicateStr
+ Diagram not matched due to duplicate names.
+!DiagramAlreadyStr
+ Diagram already used for matching.
+!DiagramWrongTypeStr
+ Diagram has changed diagram type.
+!DiagramKindChangedStr
+ Diagram has changed from single to reusable type or vice versa.
+!ProgramNotFoundStr
+ Program not found.
+!ProgramAlreadyStr
+ Program already used for matching.
+!ProgramWrongTypeStr
+ Program has changed program type.
+!ProgramKindChangedStr
+ Program has changed from single to reusable type or vice versa.
+!FunctionBlockNotFoundStr
+ Function Block not found.
+!FunctionBlockAlreadyStr
+ Function Block already used for matching.
+!FunctionBlockWrongTypeStr
+ Function block has changed type.
+!VariableNotFoundStr
+ Variable not found.
+!VariableDuplicateStr
+ Variable not matched due to duplicate names.
+!VariableAlreadyStr
+ Variable already used for matching.
+!VariableWrongTypeStr
+ Variable has changed data type.
+!VariableStateChangedStr
+ Variable's state attribute has changed.
+!StructComponentNotFoundStr
+ Component not found.
+!StructComponentAlreadyStr
+ Component already used for matching.
+!StructComponentWrongTypeStr
+ Component has changed data type.
+!StructComponentStateChangedStr
+ Component's state attribute has changed.
+!ArrayComponentWrongTypeStr
+ Array has changed data type.
+!ParameterNotFoundStr
+ Parameter not found.
+!ParameterAlreadyStr
+ Parameter  already used for matching.
+!ParameterWrongTypeStr
+ Parameter has changed data type.  
+!ParameterKindChangedStr
+ Parameter has changed transfer type.
+!RenameSCUStr
+ Source code unit:
+!RenameModuleTypeStr
+ Control module type:
+!RenameDiagramTypeStr
+ Diagram Type:
+!RenameProgramTypeStr
+ Program Type:
+!RenameFunctionBlockTypeStr
+ Function Block Type:
+!RenameDataTypeStr
+ Data Type:
+!RenameVariableStr
+ Variable:
+!RenameStructComponentStr
+ Component:
+!RenameParameterStr
+ Parameter:
+!RenameModuleStr
+ Control Module:
+!RenameDiagramStr
+ Diagram:
+!RenameFunctionBlockStr
+ Function Block:
+!RenameProgramStr
+ Program:
+!ModuleNameStr
+ Control Module Name:
+!DiagramNameStr
+ Diagram Name:
+!ProgramNameStr
+ Program Name:
+!FunctionBlockNameStr
+ Function Block Name:
+!VariableNameStr
+ Variable Name:
+!StructComponentNameStr
+ Component Name:
+!ArrayComponentNameStr
+ Array data type:
+!ParameterNameStr
+ Parameter Name:
+!OldModuleTypeStr
+ Old Control module type:
+!NewModuleTypeStr
+ New Control module type:
+!OldDiagramTypeStr
+ Old Diagram Type:
+!NewDiagramTypeStr
+ New Diagram Type:
+!OldProgramTypeStr
+ Old Program Type:
+!NewProgramTypeStr
+  New Program Type:
+!OldFunctionBlockTypeStr
+ Old Function Block Type:
+!NewFunctionBlockTypeStr
+ New Function Block Type:
+!OldDataTypeStr
+ Old Data Type:
+!NewDataTypeStr
+ New Data Type:
+!ObjectStr
+ Object Name:
+!Mismatchstr
+ Mismatch:
+!MismatchHelpHeader
+ Mismatch Consequences 
+!AllPULost
+ All variable values in all control modules, programs, function blocks and data types that are declared in the application will be lost.
+!AllModuleLost
+ All variable values in all instances of the type and all its sub-instances will be lost.
+!AllDatatypeLost
+ All variable values in the data type will be lost.
+!SubLost
+ All variable values in the instance and its sub instances will be lost.
+!SubAlreadyLost
+ All variable values in the instance and its sub-instances as well as in the previously matched instances will be lost.
+!VariableLost
+ The variable value will be lost.
+!VariableAlreadyLost
+ The variable value, as well as the value of the previously matched variable, will be lost.
+!ParameterLost
+ The parameter may cause "blindness".
+!ParameterAlreadyLost
+ The parameter, as well as the previously matched parameter, may cause "blindness".
+!----------------------------------------------------------------------
+!
+! End MISMATCH.C
+!
+!======================================================================
+!
+! Begin MODSET.C
+!
+!----------------------------------------------------------------------
+.VISIBLERR
+ Type %1 not visible in application unit %2
+!----------------------------------------------------------------------
+!
+! End MODSET.C
+!
+!======================================================================
+!
+! Begin TYPESHMI.C
+!
+!----------------------------------------------------------------------
+.DELTYPEMSG
+ Are you sure you want to delete the type?
+.DELETE
+ Delete
+.RENAME
+ Rename
+.NEWNAMETEMPL
+ The type is used by %1 instance<s> and the type name will change in those as well
+.ONLYFIRST
+ Only the first 100 instances are shown
+.TYPEOPENED
+ The type %1 is opened in an editor. \nClose the editor before you remove the type.
+.NEWSTR
+ New
+.FBTYPESTR
+ FB type
+!----------------------------------------------------------------------
+.RENAMEBOX
+  dialogbox Rename
+    body horizontal columns = 2
+      label 0 Old name:
+      text 3
+      label 0 New name:
+      edit  maxchars=32 4
+    end body
+    commands horizontal
+      button default  1 OK
+      button cancel   2 Cancel
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+.NEWTYPE
+  dialogbox New %1
+    body horizontal columns = 2
+      label 0 Name:
+      edit width=40 maxchars=32 11
+    end body
+    commands horizontal
+      button default  1 OK
+      button cancel   2 Cancel
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+.POUINFOBOX
+ dialogbox POU Information
+    body horizontal columns=2
+       label 11 Name:
+       text  12
+       label 13 Module path:
+       text  14
+       label 15 POU type:
+       text  16
+       label 17 Executing system:
+       text  18
+       label 19 Task name:
+       text  20
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+!--------------- ISStatus -----------------------------------------------
+.ISSTATUS
+ OK
+!--------------- ISDataPOUStatus ----------------------------------------
+
+.ISDATAPOUSTATUS
+ The POU instance %1 with Init_Val properties could not be found.
+ The POU instance name %1 for the Init_Val properties is syntactically incorrect.
+ The POU instance contains Init_Val properties with errors.
+ The POU instance contains Init_Val-properties with syntactic errors.
+ The POU instance %1 cannot have Init_Val properties since it is in a SIL application.
+
+
+!--------------- ISInitValStatus ----------------------------------------
+
+.ISINITVALSTATUS
+ The variable/parameter %1 with Init_Val property value could not be found in the Control Builder.
+ Init_Val property value for the variable %1 is syntactic incorrect.
+ The Init_Val property value for the variable %1 is of wrong type.
+ The variable %1 is not allowed to have a Init_Val property value.
+ The variable/parameter name %1 for the Init_Val property is syntactically incorrect.
+ The variable/parameter %1 already has an Init_Val property value.
+
+!------------------------------------------------------------------------
+.PROTECTIONANDSCOPEPROPERTIESBOX
+ dialogbox Protection and Scope for %1
+   body
+     group vertical
+       group horizontal columns=2
+         frame 0 Protection
+           checkbox 10 Protected
+           group horizontal
+             label 500
+             checkbox 15 Sub Objects visible in PPA
+           end group 
+           checkbox 20 Hidden
+         end frame
+         frame 0 Scope
+           radiobutton 30 Private
+           radiobutton 40 Public
+         end frame
+       end group
+       frame 100 Reservation
+         label 101 This unit is reserved by '%1'.
+       end frame
+     end group
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Cancel
+     button 102 Remove Reservation
+   end commands
+ end dialogbox
+!------------------------------------------------------------------------
+!
+! End TYPESHMI.C
+!
+!======================================================================
+!------------------------------------------------------------
+.OPID
+ :=
+ IF
+ THEN
+ ELSIF
+ ELSE
+ END_IF
+ WHILE
+ DO
+ END_WHILE
+ REPEAT
+ UNTIL
+ END_REPEAT
+ FOR
+ TO
+ BY
+ END_FOR
+ EXIT
+ RETURN
+ -
+ NOT
+ :=
+ +
+ -
+ *
+ /
+ **
+ MOD
+ =
+ >
+ <
+ <=
+ >=
+ <>
+ SHL
+ SHR
+ ROL
+ ROR
+ AND
+ &
+ XOR
+ OR
+ CASE
+ OF
+ END_CASE
+ ,
+ :
+ ..
+!--------------------------------------------------------------
+.USAGESTR
+ Read and written in: 
+ Read in: 
+ Written in: 
+ Used in: 
+ Variable:
+ Literal value:
+! Scale factors for selecting proper seq and equa drawing.
+.ICONLIMIT
+ 0.0006
+!--------------------------------------------------------------
+.FORKDESTBOX
+ dialogbox
+    body horizontal
+       label 0  Destination
+       combobox dropdown 3
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SETDESTSTR
+ Set Destination
+!--------------------------------------------------------------
+.NOTVALNAMSTR
+ Name is not valid.
+!--------------------------------------------------------------
+.PRSEQELENAME
+ Rename Sequence Element
+!--------------------------------------------------------------
+.FILETRANSMS
+ Local system is out of memory.
+ Local system identifier for remote system identifier %1 is not valid.
+ Remote system identifier %1 is not valid.
+ Remote system %1 does not support MMS file transfer.
+ This file connection to remote system %1 is already busy.
+ Unknown MMS error to remote system %1.
+ The %2 %3 does not exist in %1.
+ Unable to create %2 %3 in %1.
+ The file system in %1 is full.
+ An error occurred during writing %2 %3 in %1.
+ An error occurred during reading %2 %3 in %1.
+ Remote system %1 is out of memory.
+ The identity of the received file from %1 is destroyed.
+ Unknown MMS service error from remote system %1.
+ Unknown MMS reject reason from remote system %1.
+ Communication link error to remote system %1.
+ No local port found for remote system %1.
+!--------------------------------------------------------------
+.LOCALSYSTEM
+ Local system
+!--------------------------------------------------------------
+.FILETYPEMESS
+ Project file
+ Program unit file
+ Distribution data file
+ Program unit and "ColdRetain"-file
+ Official program unit file
+ Official program unit file
+ Reservation file
+ "ColdRetain"-file
+ "Secure" file
+ "Retain" file
+ Journal file
+ "Save variable" file
+ "Domain" file
+ System program file
+ User File
+ File of byte
+ File of block
+!------------------------------------------------------------
+.SYSONNETWBOX
+! Dialog to show systems on network
+ dialogbox Remote system
+    body vertical
+      group horizontal
+       text 0 Remote system:
+       listbox visiblerows = 12 2
+!       button default 1 Information
+      end group
+      frame horizontal
+      label 0 Network address:
+        text minwidth=15 4
+!      label 0 MMS Support:
+        text minwidth=15 5
+      end frame
+     end body
+    commands horizontal
+       button default 3 OK
+       button cancel  6 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FIRMWAREDOWNLOADBOX
+ dialogbox Firmware Download
+    body
+        frame horizontal columns=5 11 Modules to update
+            label minwidth=5 0 Pos
+            label minwidth=10 0 Unit:
+            label minwidth=10 0 Current firmware
+            label minwidth=10 0 Firmware to load
+            label minwidth=15 0 Status:
+        end frame
+        frame horizontal 
+           text minwidth=55 20 These files will be loaded to the controller
+        end frame
+    end body
+    commands
+        button default  1 Continue
+        button  cancel  2 Close
+    end commands
+ end dialogbox 
+!--------------------------------------------------------------
+.NOSYSFOUND
+ No remote systems found.
+!--------------------------------------------------------------
+.RSYSNVARDBOX
+ dialogbox MMS Variables
+    body vertical
+       group horizontal columns=2
+          label 0 Remote system:
+          text  2
+       end group
+       label 0 MMS Variables:
+       listbox visiblerows = 12 3
+    end body
+
+    commands horizontal
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.NOVARFOUND
+ No MMS variables found in remote system %1. 
+!--------------------------------------------------------------
+.RSYSASSIDBOX
+ dialogbox MMS Connections
+    body
+       group horizontal columns=3
+          label 0 System
+          text  10 
+          label 0 has the following MMS connections:
+       end group
+       frame horizontal columns=11 height=8 verticalscroll 20
+          label minwidth=6  0 Function
+          label minwidth=21 0 Destination
+          label minwidth=8  0 Usage
+          label minwidth=10 0 Transactions
+          label minwidth=4  0 Transactions/s
+          label minwidth=4  0 Max Transactions/s
+          label minwidth=4  0 ICR
+          label minwidth=4  0 IR
+          label minwidth=4  0 IW
+          label minwidth=4  0 ER
+          label minwidth=4  0 EW
+       end frame
+       frame horizontal 0 Summary
+          text 30 %1 MMS connection<s>. %2 transactions/s.
+       end frame
+       frame horizontal 0 Sort
+          radiobutton 40 By age
+          radiobutton 41 By transactions/s
+       end frame
+       group horizontal
+          frame horizontal 0 Show Function
+             checkbox 51 Client
+             checkbox 52 Server
+          end frame
+          frame horizontal 0 Show Usage
+             checkbox 53 Variable
+             checkbox 55 Tool
+          end frame
+       end group
+    end body
+    commands horizontal
+       button 1 MMS Variables
+       button default cancel 2 Close
+       button 3 Update
+       button 4 Help
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.CLIENTSTR
+ Client
+.SERVERSTR
+ Server
+.VARIABLESTR
+ Variable
+.TOOLSTR
+ Tool
+.AESTR
+ Variable(AE)
+
+!--------------------------------------------------------------
+! Firmware download messages
+!--------------------------------------------------------------
+.SENDINGFILE
+ Sending file
+!--------------------------------------------------------------
+.DOWNLOADCOMPLETE
+ Firmware Download Complete. Updating Controller
+!--------------------------------------------------------------
+.UPDATEFAILED
+ Firmware update failed
+!--------------------------------------------------------------
+.WARNING
+ Warning
+!--------------------------------------------------------------
+.SEARCHBOX
+ dialogbox Find
+    body horizontal
+       label 0 Search for:
+       edit  3
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SUBSTBOX
+ dialogbox Replace
+    body horizontal columns = 2
+       label 0 Search for:
+       edit  3
+       label 0 Replace with:
+       edit  4
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDBOX
+ dialogbox Find
+    body horizontal columns = 2
+       label 0 Search for:
+       text  4
+    end body
+    commands horizontal
+       button default 1 Find Next
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDBOX2
+ dialogbox Usage
+    body horizontal columns = 2
+       label 0 Search for:
+       text  4
+    end body
+    commands horizontal
+       button default 1 Find Next
+       button         3 Next control module
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDREPBOX
+ dialogbox Replace
+    body horizontal columns = 2
+       label 0 Search for:
+       text  5
+       label 0 Replace with:
+       text  6
+    end body
+    commands horizontal
+       button default 1 Find Next
+       button         3 Replace
+       button         4 Replace All
+       button cancel  2 Close
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INVSEARCHSTR
+ Bad syntax in search string.
+!--------------------------------------------------------------
+.INVREPLACSTR
+ Bad syntax in replace string.
+!--------------------------------------------------------------
+.NOOFFOUNDSTR
+ %1 object<s> found
+!--------------------------------------------------------------
+.FINDSTR
+ Find
+.REPLACESTR
+ Replace
+.NOTFOUNDSTR
+ %1 not found
+.NOOFREPLACEDSTR
+ %1 substitution<s> done.
+!--------------------------------------------------------------
+!===========================================================================
+.SAVEEDITDSTR
+ Stopping local application
+.SAVEERRODSTR
+ Error
+!--------------------------------------------------------------
+.SECURESTRING
+ %1 values for application %2 could not be saved.
+ Error code:
+ ColdRetain
+ "Secure"
+ Do you want to save "ColdRetain"-values for application %1?
+!--------------------------------------------------------------
+.SAVECOLDRETAIN
+ dialogbox Save "ColdRetain"-values
+   body
+     text  0 Save "ColdRetain"-values by pressing the "Save" button.
+     space
+     label 0 Status:
+     listbox visiblerows=6 minwidth=40 3
+   end body
+   commands
+     button default 1 Save
+     button cancel  2 Close
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.STARTVALERR1
+ Error analyzing start values.
+!----------------------------------------------------------------------
+.STARTVALERR2
+ Error setting start values.
+!--------------------------------
+! Strings used in DISTRIBUTION
+!--------------------------------
+.LOCSTATSTR
+ Local station
+!
+!--------------------------------
+.DISTRDOWNSTR
+ Download
+!
+!--------------------------------
+! Remark strings start
+!--------------------------------
+!
+.PRGCAPPLSTR
+ Application has changed and changes will be applied.
+!
+!--------------------------------
+.PRGCNAPPLSTR
+ Application has changed but changes will NOT be applied.
+!
+!--------------------------------
+.PRGNCHANGSTR
+ Application has not changed
+!
+!--------------------------------
+.PRGWIINITSTR
+ Application will be cold restarted
+!
+!--------------------------------
+.STATWICONSTR
+ This station will connect to a common application version.
+!
+!--------------------------------
+.STATWINOCSTR
+ This station will NOT connect to a common application version.
+!
+!--------------------------------
+.STATWICRESTR
+ This station will create a new common application version.
+!
+!--------------------------------
+.NOCONNSTR
+ No connection
+!
+!--------------------------------
+.DOWNNOPOSSTR
+ Download not possible
+!
+!--------------------------------
+.KEPFILMISSTR
+ The application must be selected since needed files (.rrs and/or .cdo) for analysis are missing or have wrong version/SIL-level
+!
+!--------------------------------
+.INTERUPTEDWN
+ Last download was incomplete
+!--------------------------------
+.WRITEKEEPERR
+ Error writing "ColdRetain"-and/or "Retain" files. Continue?
+!
+!--------------------------------
+! Remark strings end
+!--------------------------------
+.SIMANALYSSTR
+ Test Mode Analysis
+!
+!--------------------------------
+.ONLINEANASTR
+ Online Analysis - Online with Download
+!
+!--------------------------------
+.ONLINENODOWN
+ Online Analysis - Online without Download
+!
+!--------------------------------
+.YES
+ Yes
+!
+!--------------------------------
+.NO
+ No
+!
+!--------------------------------
+.INIT
+ Init
+!
+!--------------------------------
+.COLD
+ Cold
+!
+!--------------------------------
+.WARM
+ Warm
+!
+!--------------------------------
+.EVAL
+ Evaluation
+!
+!--------------------------------
+.UPGRADE
+ Upgrade
+!
+!--------------------------------
+.NAMEHDR
+ Name
+!
+!--------------------------------
+.SILHDR
+ SIL
+!
+!--------------------------------
+.CHANGEDHDR
+ Changed
+!
+!--------------------------------
+.APPLYHDR
+ Apply
+!
+!--------------------------------
+.SYSIDHDR
+ SysID
+!
+!--------------------------------
+.APPLICATION
+ Application
+!
+!--------------------------------
+.PROJECT
+ Project
+!
+!--------------------------------
+.DELTEXT     
+ The project to be downloaded differs from the project in the controller.\nThe controller must be reset before download is possible.\n\nReset listed controllers by pressing the reset button for more than 3 seconds. \n\nNote: If a Soft Controller is used, it must be restarted manually.
+!
+!--------------------------------
+.DWLDFRFRSTTM
+ Downloaded for the first time
+!
+!--------------------------------
+.NONE
+ None
+!
+.CHANGED
+ Changed
+!
+.NOTCHANGED
+ Not Changed
+!
+.EMPTYCNTRLLR
+ Controller is empty
+!
+.NAMEOFPRJECT
+ Name of project in controller:
+!
+!--------------------------------
+.ONLINENOTPOS
+ It is not possible to go to online mode.\n
+!
+.ACCESSVAR
+ Access Variables
+!
+.IOCONN
+ I/O connections
+!
+.MISSHWDEF
+ All necessary hardware definition files are not \npresent in the project. To be able to proceed, \nthe missing hardware definition files must be \ninserted into the project. \nAlternatively, the affected controllers could be reset.
+!
+.DLNASIM
+ Different hardware simulation mark on new vs. downloaded configuration.
+!
+!--------------------------------
+!
+! Remarks for DistrWarningDlg
+!
+.NOCONNECTION
+ No connection
+!
+.DIFFVER
+ Online is only possible against equal \nversion of controller configurations.
+!
+.SELREVERTED
+ The selection will be reverted.
+!
+.SELNOTALLOW 
+ The application cannot be selected for online mode since \na different version of the application exists in the controller.
+!
+.VMTCTASETT
+ It is not allowed to change the settings for the CTA/VMT-application.
+!
+.WRONGSYSID
+ There exist controller with wrong system identity in project
+!
+!--------------------------------
+.WILLEXCAVSTR
+ The common application version will execute in the following controllers:
+!
+!--------------------------------
+.DISTNOTOKSTR
+ The common application version will NOT execute in the following controllers:
+!
+!--------------------------------
+.NOCONNECT1
+ No connection with:
+!--------------------------------
+.NOCONNECT2
+ No connection, trying with: 
+!--------------------------------
+.NOCONNECT3
+ No connection, still trying with:
+!--------------------------------
+.CONTACT1
+ Contacting: 
+!--------------------------------
+.CONTACT2
+ Contacting, trying with: 
+!--------------------------------
+.CONTACT3
+ Contacting, still trying with: 
+!--------------------------------
+.ERROR1
+ Unknown error!: 
+! Simple message boxes
+!--------------------------------
+.OKDIALOGHEADER
+ Go Online/Test Mode Message
+.ANOTHSYSMSG
+ Another system is currently downloading to the controller or the controller is stopped. Please try again later.
+.REACHMSG
+ Could not reach the controller (%1). Please check connection to controller.
+.INCOMPATMSG
+ The controller (%1) has an incompatible firmware version. Please update the controller with new firmware.
+.CONTACTBROKEN
+ Contact with the controller (%1) was broken. Please check connection to controller.
+.MEMUNAVAILABAL
+ The project could not be downloaded to the controller (%1) because there is not enough free memory in the controller.
+.SIMPLESTLIMITS 
+ The project is too complex for this product.
+.SIMPLESTLIMIT2 
+ The project is too complex for this product. Exactly one application required.
+.SIMPLESTLIMIT3 
+ The project is too complex for this product. Too many libraries.
+.SIMPLESTLIMIT4 
+ The project is too complex for this product. Exactly one control system required.
+.SIMPLESTLIMIT5 
+ The project is too complex for this product. Only one station allowed.
+.SIMPLESTLIMIT6 
+ The project is too complex for this product. One distribution object required. 
+.STARTLIMIT1
+ The project is too complex for this product.\nThere are too many control systems.
+.STARTLIMIT2
+ The project is too complex for this product.\nThere are too many applications.
+.STARTLIMIT3
+ The project is too complex for this product.\nThere are too many tasks in one controller.
+.STARTLIMIT4
+ The project is too complex for this product.\nThere are too many programs in one application.
+.STARTLIMIT5
+ The project is too complex for this product.\nThere are too many diagrams in one application.
+.STARTLIMIT6
+ The project is too complex for this product.\nThere are too many applications attached to one controller.
+.STARTLIMIT7
+ The project is too complex for this product.\nControl modules are not allowed.
+.STARTLIMIT9
+ Maximum number of SIL3 applications in a controller has been reached!\nNo more SIL3 applications can be added to that controller. 
+.ONLINENOTPOSS
+ Cannot go online because this version of the project is not running in the controller.
+.CTRLISOPCORCB
+ At least one controller configuration in the project has an IP address that belongs to a Control Builder or an OPC server.
+!
+!--------------------------------
+! STRINGS END
+!--------------------------------
+!--------------------------------
+! Old time dialogs used in DISTRIBUTION
+!--------------------------------
+.RESERVERRBOX
+ dialogbox Warning! Reservation of controller failed
+   body
+     text 10 The application/controller configuration (%1) cannot be downloaded.
+     frame horizontal maxheight=13 verticalscroll columns=2
+         11 Download not possible since the following controllers are stopped or occupied.
+       label 0 System:
+       label 12 Occupied by:
+     end frame
+   end body
+   commands
+     button cancel  2 Abort transition to online
+   end commands
+ end dialogbox
+
+!--------------------------------
+! From MachineAdm
+!--------------------------------
+.MACHINEERROR
+! Error texts to operator
+! System Error string
+ System error.
+! Object exists string
+ Download to system from other system in progress.
+! Incompatible string
+ Incompatible version in system.
+! DownloadReject error string
+ MMS services missing: Download not possible to system.
+! ServiceReject error string
+ Internal error: Reject
+! Object not exists string
+ Application does not exist in controller.
+! Remote memory unavailable string
+ Download aborted. See the controller log for further information.
+! PH missing string
+ The communication protocol for a downloaded hardware module is missing in the\ncontroller firmware.
+! Internal error string
+ Internal communication error
+! Link error string
+ Error in communication link to system
+! Connection error string
+ Refers to the same physical controller.
+!NonUniqueControllerWarningStr
+ Unable to establish connection to system
+! Code error string
+ Machine code has not been generated for the following targets:
+! synchronized error string
+ "ScanGroupExtension" not synchronized with "ScanGroupControl" control module.
+! Download warning string
+ NOTE! Application will be downloaded to system.
+! Local memory unavailable string
+ Local memory unavailable.
+! State error string
+ Error occurred during last application download in system
+! Scheduler error string
+ Internal error: Scheduler.
+! Network interface warning string
+ Network Interface not properly set up.
+! InvalidSourceAddress error string
+ No local port found for remote system.
+! Restart warning string
+ NOTE! Application will be restarted in system.
+! Startvaluestring: Keep
+               Variable values will be kept.
+! Startvaluestring: Secure
+               Secured values are used.
+! Startvaluestring: SecureAndOpSave
+               Secured and "ColdRetain"-values will be used.
+! Startvaluestring: OpSave
+               "ColdRetain"-values will be used.
+! Startvaluestring: Init
+               Initial values will be used.
+! Continue string
+ Continue?
+! Download string
+ Download?
+! Cold start string
+ Cold start?
+! Safety rejected string
+ Service denied for safety reasons. Read the system logs!
+! Access denied string
+ Access denied to system
+!
+ Unhandled error during distribution has occurred!
+! BUMDistributionFailed
+ An error during distribution to backup media has occurred!
+ 
+!--------------------------------
+! STATE STRINGS
+!--------------------------------
+.NOTINUSESTR
+ Not in use
+!--------------------------------
+.UNRUNSTR
+ Cannot be run
+!--------------------------------
+.NONEXISTSTR
+ Non-existing
+!--------------------------------
+.IDLESTR
+ Idle
+!--------------------------------
+.RUNNINGSTR
+ Running
+!--------------------------------
+.STOPPEDSTR
+ Stopped
+!--------------------------------
+.STOPPINGSTR
+ Stopping
+!--------------------------------
+.STARTINGSTR
+ Starting
+!--------------------------------
+.RESETTINGSTR
+ Resetting
+!--------------------------------
+.RESUMINGSTR
+ Resuming
+!-------------------------------- 
+.RUNNINGACTIVESTR
+ Running active
+!-------------------------------- 
+.RUNNINGPASSIVESTR
+ Running passive
+!-------------------------------- 
+!-------------------------------- 
+!-------------------------------- 
+.DOWNLOAD
+ Download
+.WARMRESTFAIL
+ Error: Warm restart will fail.
+!
+!-------------------------------- 
+!-------------------------------- 
+.OTHERPROJECT
+ An unknown project has been downloaded to the controller. The new project has to be downloaded before online is possible.
+!
+! Distribution remarks for SattProg and SattLine
+!
+.DISTRREMARKS
+!NoConnectionDistrRemark
+ No connection
+!SomeSysNoConnectionDistrRemark,
+ No connection with some systems
+!MMSServiceErrorDistrRemark
+ MMS Service Error
+!SomeSysMMSServErrorDistrRemark,
+ MMS Service Error with some systems
+!IncompatibleSLDistrRemark
+ Incompatible Control Builder version
+!SomeSysIncompSLDistrRemark,
+ Incompatible version of controllers in some systems
+!ContInBootStateDistrRemark
+ System in boot state
+!SomeContInBootStateDistrRemark,
+ Some systems in boot state
+!CouldNotResolveAlias 
+ Could not resolve alias name
+!
+! OtherCompileStation
+ Object in controller is downloaded from another workstation.
+!ForceDownloadDistrRemark
+ Download forced
+!OldProjectRemark
+ Other project running in controller
+!FirstDwnldCtrlDistrRemark
+ Downloaded for the first time
+! NoAppAfterDwldDistrRemark 
+ Application will not run in any controller after download.
+! NoAppBeforeDwldDistrRemark
+ Application is downloaded for the first time
+!ExecutesCommonVersionDistrRemark
+ Executes common application version
+!WrongVersionWillExecDistrRemark
+ Wrong application version will execute
+!SomeSysWrongVersExecDistrRemark,
+ Wrong application version will execute in some systems
+!SysNotExecProgramDistrRemark
+ No application execution
+!SomeSysNotExecProgramDistrRemark,
+ Application will not execute in some systems
+!NoTaskDistrRemark
+ No task in system
+!SomeSysNoTaskDistrRemark,
+ Some systems without tasks
+!NotDistrVersionLocalDistrRemark
+ Local station will not execute common application version.
+!
+!DownloadDisableDistrRemark
+ Download disabled  
+!ForceNoDownloadDistrRemark
+ No download forced
+!DownloadNotPossibleDistrRemark
+ Download not possible
+!SomeSysDownloadNotPDistrRemark,
+ Download to some systems not possible
+!RedMemDownloadDistrRemark
+ Reduced memory download
+!WrongProgramVersionDistrRemark
+ Wrong application version executes
+!EditModeDistrRemark
+ Station in edit mode
+!SimulateModeDistrRemark
+ Station in test mode
+!AutostartDistrRemark
+ System skipped due to Autostart
+!IllegalDownloadDistrRemark
+ Download not allowed for this product
+!OLUNotAllowedChangedContrConfigRemark
+ Online upgrade is not allowed due to changes in controller configuration.
+!OLUNotPermittedDeviceRemark
+ Online upgrade is not allowed due to illegal device type in controller configuration.
+!IllegalDownloadSimulationRemark
+ Different hardware simulation mark on new vs. downloaded configuration.
+!DownloadSimulationFlagSetRemark
+ Downloaded to a simulated controller
+!SomeSysWrongVersForDeselectDistrRemark
+ All controllers do not contain the common version. \nTo be able to go online, configuration files and \napplications have to be downloaded to all controllers, \nto create a common version.
+!
+!RetainFailDistrRemark
+ Retain will fail
+!ColdRetainFailDistrRemark
+ "ColdRetain" will fail
+!RetainColdReteinFailDistrRemark
+ Retain and "ColdRetain" will fail
+!RetainWrongVersionDistrRemark
+ Wrong application version
+!RetainNoVersionDistrRemark
+ Application does not exist
+!RetainWrongStateDistrRemark
+ Application stopped and incomplete
+!RetainFileMissingDistrRemark
+ Retain file missing
+!ColdRetainFileMissingDistrRemark
+ "ColdRetain"-file missing
+!RetainColdRetainFileMissingDistrRemark
+ Retain and "ColdRetain"-file missing
+!RetainDisabledDistrRemark
+ Retain disabled
+!ColdRetainDisabledDistrRemark
+ "ColdRetain" disabled
+!RetainColdRetainDisabledDistrRemark
+ Retain and "ColdRetain" disabled
+!
+!PartlyInvalidLocalDistrRemark
+ Partly invalid online display in this compile station
+!BlindLocalDistrRemark
+ Invalid online display in this compile station
+!HWConfStopTimeAffectedDistrRemark 
+ WARNING! Applications will be temporarily stopped during download due to changes in the hardware configuration.
+!HWConfMajorChangeDistrRemark 
+ WARNING! Communication with some hardware will temporarily be interrupted due to changes in the hardware configuration.
+!HWConfMinorChangeDistrRemark
+ NOTE! Execution of the application might be affected due to changes in the hardware configuration.
+!NoDistrInfoDistrRemark
+ Application not present in a system
+!HWDefFileMissingDistrRemark
+ Hardware definition file is missing
+!UserAccessDeniedRemark
+ No permission to download
+!SILLevelChangedAppRemark
+ WARNING! SIL level changed, application will be cold restarted
+!MaxNbrOfForcesHasDecreasedRemark
+ Warning! Max number of forces has decreased. Controller will shut down if more forces exist!
+!FilesMissingForDeselectDistrRemark
+ The application must be selected since needed files (.rrs and/or .cdo) for analysis are missing or have wrong version/SIL-level
+!LEGFailDistrAppDistrRemark
+ It is not allowed to evaluate an application that is \ndistributed to several controllers.
+!LEGNotPossibleForAppInCSDistrRemark
+ The application cannot be evaluated due to changes made \nto the controller configuration. Only changes to \nI/O connections and Variable Access belonging to the \napplication that is about to be evaluated are allowed.
+!LEGFailOtherDwnlDistrRemark
+ When "Evaluation" is selected for an application \nno other applications are allowed to be downloaded in \nthe same session i.e. changed applications must be de-selected \nor restart mode has to be changed.
+!LEGSessionInControllerRemark
+ An Application is running in Evaluation in the controller.
+!LEGSessionWarningRemark
+ Evaluation in progress.
+!LEGNoAppWithLEGWarning
+ In Evaluate Environment applications can only be \ndownloaded using evaluation restart. \nDownload will be aborted.
+!LEGRetainFailDistrRemark
+ Start value analysis for Evaluate failed.
+!LEGSIL3AppRemark
+ The Evaluate option is not available for SIL3 applications.
+!LEGInProgressRemark
+ Evaluation in progress
+!LEGNoChangedApplication
+ No changed application
+!LEGNotAllowedRemark
+ Evaluate is not allowed in controller.
+!OLURetainFailDistrRemark
+ Start value analysis for firmware upgrade failed.
+!OLUNotEqualSetOfApplicationsRemark
+ The applications in the project and the controller do not match.
+!OLUEmptyControllerRemark
+ The controller does not contain any applications.
+!CTDFileMissingDistrRemark 
+ Fatal error! Controller must be reset: Files from last download are missing 
+!InterruptedDownloadDistrRemark 
+ Last download was incomplete
+!DiskIsFullDistrRemark
+ Disk is full
+!VMTColdStartRemark
+ Cold/Init start of VMT in non empty controller is not allowed
+!AccessDisabledRemark
+ SM AccessEnable is disabled.
+!AccessDisabledAppChangedRemark
+ SM AccessEnable is disabled. Application changed.
+!SILApplicationFirstDownloadDeselectRemark
+ SIL application must be selected since not already downloaded
+!
+! Distribution Avtivity Reporting
+!
+.DISTRACTREP
+! InitDistributionMsg
+ Initializing distribution sequence
+! ConnectDistributionMsg
+ Establishing remote connection
+! IdentityRemoteMsg
+ Fetching remote identity information
+! CheckRemoteSystemMsg
+ Checking remote identity information
+! FetchRmtPrNamesMsg
+ Fetching remote application names
+! FetchRmtPrStateMsg
+ Fetching remote application information
+! DistributionAnalysisMsg
+ Application distribution analysis
+! DownloadAnalysisMsg
+ Download analysis
+! SetTimeMsg
+ Setting time in empty controllers
+! StopRemotePrMsg
+ Stopping remote applications
+! DeleteRemotePrMsg
+ Deleting remote applications
+! FetchRmtDomainNamesMsg
+ Fetching remote domain names
+! FetchRmtDomainStateMsg
+ Fetching remote domain information
+! DeleteRmtDomainMsg
+ Deleting remote unused domains
+! DomainFormingMsg
+ Forming domains and generating remote code
+! DomainSendingMsg
+ Initializing download sequence
+! WaitRemoteParseMsg
+ Sending domains
+! CreateRemoteProgramMsg
+ Creating remote applications
+! ReconfigureRmtPrMsg
+ Reconfigure remote systems
+! StartRemoteProgramMsg
+ Starting remote applications
+! DisconnectProgramMsg
+ Terminating distribution connection
+! ConcludeMsg
+ Application distributed
+! FetchRemoteSystemDataMsg
+ Talking to remote systems
+! IncrDefAnalysis
+ Incremental definition analysis
+! BuildingDefDomainsMsg
+ Building definition domains
+! SendingDefDomainsMsg
+ Sending definition domains
+! DistributionDoneMsg
+ Distribution to controller(s) done
+!
+!------------------------------------------------------------
+! ProjectView.config
+!------------------------------------------------------------
+.PAGESTRING
+ Page 
+!
+.SYSTEMSTR
+ System
+!
+.CONTSYSTEMS
+ Controllers
+!
+.CONTSYSTEM
+ Controller
+!
+.PROGRAMTYPES
+ Program types
+!
+.HARDWARESTR
+ Hardware 
+!
+.TASKSSTRING
+ Tasks
+!
+.VARACCESSSTR
+ Access Variables
+!
+.PROJECTEXPLO
+ Project Explorer
+!
+.OFFLINESTATU
+ Offline
+!
+.TESTMODESTAT
+ Test Mode 
+!
+.ONLINESTATUS
+ Online
+!-------------------------------------------------------------
+!---------------------------------------------------------------
+.SYSLOGFNAME
+ systemlog
+!---------------------------------------------------------------
+.SYSLOGSEVHDR
+ S
+!---------------------------------------------------------------
+.SYSLOGDATHDR
+ Date
+!---------------------------------------------------------------
+.SYSLOGTIMHDR
+ Time
+!---------------------------------------------------------------
+.SYSLOGCATHDR
+ Category
+!---------------------------------------------------------------
+.SYSLOGUSRHDR
+ User
+!---------------------------------------------------------------
+.SYSLOGDESHDR
+ Event Description
+!---------------------------------------------------------------
+.SYSLOGPRVCAT
+ PRIVILEGE
+!---------------------------------------------------------------
+.SYSLOGLOGCAT
+ LOGON
+!---------------------------------------------------------------
+.SYSLOGVARCAT
+ SYSTEMVAR
+!---------------------------------------------------------------
+.SYSLOGOPCAT
+ SYSTEMOP
+!---------------------------------------------------------------
+.SYSLOGCREENT
+ System log created at station %1
+!---------------------------------------------------------------
+.SYSLOGSTAENT
+ Application is starting
+!---------------------------------------------------------------
+.SYSLOGSTOENT
+ Application is stopping
+!---------------------------------------------------------------
+.SYSLOGSV1ENT
+ Value of system variable %1 changed to %2
+!---------------------------------------------------------------
+.SYSLOGSV2ENT
+ Value of system variable %1 manually changed to %2
+!---------------------------------------------------------------
+
+.APPLYCHSTR
+ Apply change?
+.ILLVALUESTR
+ Illegal value.
+.VALUECHSTR
+ Value changed
+.NOTFORCEABLESTR
+ Variable not forceable.
+.FORCENOTALLSTR
+ No privilege to force I/O.
+.UNFORCENOTALLSTR
+ No privilege to release I/O.
+.FORCEVALNOTALLSTR
+ No privilege to change value of forced I/O.
+.SETVALNOTALL
+ No privilege to change variable values.
+
+!----------------------------------------------------------------------
+.POUINFOBOX
+ dialogbox POU Information
+    body horizontal columns=2
+       label 11 Name:
+       text  12
+       label 13 Path:
+       text  14
+       label 15 POU type:
+       text  16
+       label 17 Executing system:
+       text  18
+       label 19 Task name:
+       text  20
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUVINFODBOX
+ dialogbox Variable Information
+    body vertical
+       frame horizontal columns=2 0 Variable
+          label 10 Name:
+          text  11
+          label 12 Data Type:
+          text  13
+          label 14 Description:
+          text  15
+          label 16 in POU:
+          text  17
+          label 18 POU type:
+          text  19
+          label 30 Application:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attributes
+          label 42 Owned by system:
+          text  43
+          label 44 Exported to:
+          text  45
+          label 46 Other attributes:
+          text  47
+          label 32 Signal:
+          text  33
+          label 48 I/O description:
+          text  49
+          label 50 I/O address:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCOMMVARINFODBOX
+ dialogbox Communication Variable Information
+    body vertical
+       frame horizontal columns=2 0 Communication variable
+          label 10 Name:
+          text  11
+          label 12 Data Type:
+          text  13
+          label 46 Other attributes:
+          text  47
+          label 52 Direction:
+          text  53
+          label 54 Interval Time:
+          text  55
+          label 56 IP Address:
+          text  57
+          label 58 Expected SIL:
+          text  59 
+          label 60 Unique Id:
+          text  61
+          label 14 Description:
+          text  15
+       end frame
+
+       frame horizontal columns=2 0 Current Location
+          label 16 in POU:
+          text  17
+          label 30 Application:
+          text  31
+          label 62 Located in system:
+          text  63
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUPINFODBOX
+ dialogbox Parameter Information
+    body vertical
+       frame horizontal columns=2 0 Parameter
+          label 10 Name:
+          text  11
+          label 12 Data Type:
+          text  13
+          label 14 Description:
+          text  15
+          label 16 in POU:
+          text  17
+          label 18 POU type:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 Variable
+          label 20 Name:
+          text  21
+          label 22 Data Type:
+          text  23
+          label 24 Description:
+          text  25
+          label 26 in POU:
+          text  27
+          label 28 POU type:
+          text  29
+          label 30 Application:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attributes
+          label 42 Owned by system:
+          text  43
+          label 44 Exported to:
+          text  45
+          label 46 Other attributes:
+          text  47
+          label 48 I/O description:
+          text  49
+          label 50 I/O address:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUIOPINDBOX
+ dialogbox Parameter Information
+    body vertical
+       frame horizontal columns=2 0 Parameter
+          label 10 Name:
+          text  11
+          label 12 Data Type:
+          text  13
+          label 14 Description:
+          text  15
+          label 16 in POU:
+          text  17
+          label 18 POU type:
+          text  19
+          label 30 Application:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attributes
+          label 42 Owned by system:
+          text  43
+          label 44 Exported to:
+          text  45
+          label 46 Other attributes:
+          text  47
+          label 48 I/O description:
+          text  49
+          label 50 I/O address:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUEINFODBOX
+ dialogbox Variable Information
+    body vertical
+       frame horizontal columns=2 0 Variable
+          label 10 Name:
+          text  11
+          label 12 Data Type:
+          text  13
+          label 14 Description:
+          text  15
+          label 16 in POU:
+          text  17
+          label 18 POU type:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 Variable
+          label 20 Name:
+          text  21
+          label 22 Data Type:
+          text  23
+          label 24 Description:
+          text  25
+          label 26 in POU:
+          text  27
+          label 28 POU type:
+          text  29
+          label 30 Application:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attributes
+          label 42 Owned by system:
+          text  43
+          label 44 Exported to:
+          text  45
+          label 46 Other attributes:
+          text  47
+          label 32 Signal:
+          text  33
+          label 48 I/O description:
+          text  49
+          label 50 I/O address:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCVINFDBOX
+ dialogbox Component information
+    body vertical
+       frame horizontal columns=2 0 Component
+          label 10 Name:
+          text  11
+          label 12 Data Type:
+          text  13
+          label 14 Description:
+          text  15
+          label 16 in POU:
+          text  17
+          label 18 POU type:
+          text  19
+          label 30 Application:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attributes
+          label 42 Owned by system:
+          text  43
+          label 44 Exported to:
+          text  45
+          label 46 Other attributes:
+          text  47
+          label 32 Signal:
+          text  33
+          label 48 I/O description:
+          text  49
+          label 50 I/O address:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCPINFDBOX
+ dialogbox Component information
+    body vertical
+       frame horizontal columns=2 0 Component
+          label 10 Name:
+          text  11
+          label 12 Data Type:
+          text  13
+          label 14 Description:
+          text  15
+          label 16 in POU:
+          text  17
+          label 18 POU type:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 Variable
+          label 20 Name:
+          text  21
+          label 22 Data Type:
+          text  23
+          label 24 Description:
+          text  25
+          label 26 in POU:
+          text  27
+          label 28 POU type:
+          text  29
+          label 30 Application:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attributes
+          label 42 Owned by system:
+          text  43
+          label 44 Exported to:
+          text  45
+          label 46 Other attributes:
+          text  47
+          label 32 Signal:
+          text  33
+          label 48 I/O description:
+          text  49
+          label 50 I/O address:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUFBINFDBOX
+ dialogbox Function block information
+    body horizontal columns=2
+       label 10 Name:
+       text  11
+       label 12 Function Block Type:
+       text  13
+       label 14 Description:
+       text  15
+       label 16 in POU:
+       text  17
+       label 18 POU type:
+       text  19
+       label 20 Application:
+       text  21
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+!----------------------------------------------------------
+!----------- Taskuserinterface.config ---------------------
+!----------------------------------------------------------
+.SIMPLETEXTEDITDIALOG
+ dialogbox Task name
+    body horizontal columns=2
+       label 0 Name:
+       edit minwidth=30 maxchars=25 3
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Cancel
+    end commands
+ end dialogbox
+!--------------------------------
+.NAME
+ Name:
+!--------------------------------
+.INTERVALTIME
+ Interval Time
+!--------------------------------
+.LATENCYPERCENTAGE
+ Accepted latency
+!--------------------------------
+.OFFSET
+ Offset
+!--------------------------------
+.TASKNAME
+ Task name
+!--------------------------------
+.PRIORITY
+ Priority
+!--------------------------------
+.TASKOVERVIEW
+ Task Overview
+!--------------------------------
+.NEWTASK
+ New Task
+!--------------------------------
+.NOTINUSE
+ Not in use
+!--------------------------------
+.RUNNING 
+ Running 
+!--------------------------------
+.TASKNOTFOUND
+ Not found in the system
+!--------------------------------
+.TASKISNONCYCLIC
+ Noncyclical execution
+!--------------------------------
+.TASKISABORTED
+ Aborted
+!--------------------------------
+.LATENCYEXCEEDED
+ Latency high alarm limit exceeded
+!--------------------------------
+.TASKCOPYFIRST
+ I/O is copied out first in each scan
+!--------------------------------
+.TASKCORRECTED
+ Interval time modified/corrected
+!--------------------------------
+.WARNING
+ Warning 
+!--------------------------------
+.TASKCREATEWARNING
+ You cannot create a new task when the task tree is visible in an editor.
+!--------------------------------
+.NOTRUNPRECTASK
+ Cannot run as time-critical task.
+!--------------------------------
+.MANYPRECTASK
+ More than one time-critical task in this system.
+!--------------------------------
+.ERROR
+ Error
+!--------------------------------
+.PRIORITYCHANGE
+ The requested priority differs from the setting used in the controller.
+!--------------------------------
+.INTERVALTIMECHANGE
+ The requested interval time differs from the setting used in the controller.
+!--------------------------------
+.INVALIDOFFSET
+ Invalid offset
+!--------------------------------
+.INVALIDLATENCY
+ Invalid latency
+!--------------------------------
+.LEGRUNNINGACTIVESTR
+ Evaluation: Running active
+!-------------------------------- 
+.LEGRUNNINGPASSIVESTR
+ Evaluation: Running passive
+!-------------------------------- 
+.RENAMETASKDIALOG
+  dialogbox Rename
+    body horizontal columns = 2
+      label 0 Old name:
+      text 3
+      label 0 New name:
+      edit maxchars=25 4
+    end body
+    commands horizontal
+      button default  1 OK
+      button cancel   2 Cancel
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+!------------------------------------------------------------
+!--- Strings used by MessageConclusion ---
+.CONC_OK
+ -- No Errors and No Warnings
+.CONC_ERR
+ -- %1 Warning<s>
+.CONC_WAR
+ -- %1 Error(s).
+.CONC_ERRWAR
+ -- %1 Error(s) and %2 Warning(s)
+!------------------------------------------------------------
+!----------------------------------------------------------
+!----------- OnlineSystem.config ---------------------
+!----------------------------------------------------------
+
+.CLIENTERROR
+ Client error in online system
+
+.SERVERERROR
+ Server error in online system
+
+.MMSERROR
+ MMS communication error in online system
+
+.TIMESTAMPERROR
+ Wrong application version in controller
+
+.UNKNOWNERROR
+ Unknown error in online system
+!------------------------------------------------------------
+! ProjectAccess.config
+!------------------------------------------------------------
+.DATATYPESSTR
+ Data types
+!
+.CONNECTEDLIBRARIESSTR
+ Connected Libraries
+!
+!-------------------------------------------------------------
+

@@ -1,0 +1,95 @@
+%!PS-Adobe-2.0 EPSF-1.2
+%%Title: SattLine black & white PostScript printer calibration picture
+%%Creator: Peter Lerup, SattControl AB
+%%DocumentFonts: Helvetica Times-BoldItalic
+%%Pages: 1
+%%BoundingBox: 0 0 595 842
+%%CreationDate: 1993-10-20
+%%EndComments
+
+%---------------------------------------------------------------------
+%	Copyright (C) SattControl AB, Malmoe, Sweden, 1993
+%	This file contains Proprietary Information of
+%	SattControl AB and should be treated as Confidential.
+% 
+%	showgrey.ps
+%
+%	This PostScript file can be used to display the greyscales
+%	on PostScript printers.
+%
+%	Author: Peter Lerup
+%	Date: 93-10-20
+%---------------------------------------------------------------------
+
+% Constants
+/radius 230 def
+/anginc 10 def 
+/txfont /Helvetica def
+/txsize 12 def
+
+/left 0 def
+/right 595 def
+/xcenter right left add 2 div def
+
+% Header constants
+/headfont /Times-BoldItalic def
+/headfontsize 15 def
+headfont findfont headfontsize scalefont setfont
+/headstr (SattLine grey scale calibration picture) def
+/headxpos xcenter headstr stringwidth pop 2 div sub def
+/headypos 750 def
+
+% Temporary storage
+/str 25 string def
+
+/black { 0 setgray } def
+
+% Draw one circle with different grey scale values
+/GreyCircle {
+  0 anginc 360 anginc sub {
+    /ang exch def
+    newpath
+    0 0 moveto
+    0 0 radius ang ang anginc add arc
+    closepath
+    ang 360 div setgray
+    fill
+  } for
+} def
+
+% Draw value strings
+/AngleValCirc {
+  black
+  0 anginc 360 anginc sub {
+    360 div 100 mul round 100 div
+    radius 1.05 mul 0 moveto
+    10 str cvrs show
+    anginc rotate
+  } for
+} def
+
+% Draw header
+0 setgray
+headxpos headypos moveto headstr show
+
+% Set font for value display
+txfont findfont txsize scalefont setfont
+
+% Draw the grey scale circle
+save
+xcenter 420 translate
+GreyCircle
+AngleValCirc
+restore
+
+% Show device info
+txfont findfont 7 scalefont setfont
+50 50 moveto
+(Device: ) show statusdict /product get show
+
+% Guess who made this possible
+headfont findfont 5 scalefont setfont
+520 30 moveto (PTL 1993-10-20) show
+
+showpage
+

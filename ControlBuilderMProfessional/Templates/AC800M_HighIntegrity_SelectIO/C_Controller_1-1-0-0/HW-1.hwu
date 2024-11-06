@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="1" TypeID="37750802" TypeDescription="SM812" Guid="C4F58886-4E2B-4956-AEB3-A33A859BC684" TypeGuid="80CF71D3-14E0-4232-B4CE-9697EF20DFB3" TypeTimeStamp="2017-10-02-23:49:01.523" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:04.508" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2015-01-27-15:50:26.191" HWSettingsTS="2006-03-13-10:03:41.051" InstanceName="">
+  <ParameterSettings/>
+  <HWChannels>
+    <HWChannel Address="IW1.1" Name="In dint Steps">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.555" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintSteps</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.2" Name="In dint 1">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.555" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dint1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.3" Name="In dint 2">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.555" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dint2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.4" Name="In RealIO 1" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.556" AnalogAttributesTS="2018-08-23-06:42:20.555">VMT_Controller_1.Program1.realio1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.5" Name="In RealIO 2" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.556" AnalogAttributesTS="2018-08-23-06:42:20.556">VMT_Controller_1.Program1.realio2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.6" Name="In real 1" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.556" AnalogAttributesTS="2018-08-23-06:42:20.556">VMT_Controller_1.Program1.real1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.7" Name="In real 2" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.556" AnalogAttributesTS="2018-08-23-06:42:20.556">VMT_Controller_1.Program1.real2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.8" Name="In real 3" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.557" AnalogAttributesTS="2018-08-23-06:42:20.557">VMT_Controller_1.Program1.real3</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IX1.9" Name="In bool 1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.557" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.bool1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IX1.10" Name="In bool 2" Reversed="1">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.557" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.bool2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IX1.11" Name="In bool 3" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.558" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.bool3</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.12" Name="In dword 1">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.558" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dword1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.13" Name="In dword 2">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.558" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dword2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.14" Name="Out dint 1">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.558" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.15" Name="Out dint 2">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.559" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.16" Name="Out dint 3">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.559" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes3</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.17" Name="Out dint 4">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.559" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes4</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.18" Name="Out dint 5">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.560" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes5</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.19" Name="Out dint 6">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.560" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes6</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.20" Name="Out dint 7">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.560" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes7</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.21" Name="Out dint 8">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.561" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes8</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.22" Name="Out dint 9">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.561" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes9</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.23" Name="Out dint 10">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.561" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes10</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.24" Name="Out dint 11">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.562" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes11</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.25" Name="Out dint 12">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.562" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dintRes12</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.26" Name="Out RealIO 1" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.562" AnalogAttributesTS="2018-08-23-06:42:20.562">VMT_Controller_1.Program1.realioRes1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.27" Name="Out real 1" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.563" AnalogAttributesTS="2018-08-23-06:42:20.563">VMT_Controller_1.Program1.realRes1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.28" Name="Out real 2" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.563" AnalogAttributesTS="2018-08-23-06:42:20.563">VMT_Controller_1.Program1.realRes2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.29" Name="Out real 3" Min="0.0" Max="32767.0" Unit="" Fraction="1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.564" AnalogAttributesTS="2018-08-23-06:42:20.564">VMT_Controller_1.Program1.realRes3</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QX1.30" Name="Out bool 1" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.564" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.boolRes1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QX1.31" Name="Out bool 2" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.564" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.boolRes2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QX1.32" Name="Out bool 3" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.564" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.boolRes3</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QX1.33" Name="Out bool 4" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.565" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.boolRes4</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QX1.34" Name="Out bool 5" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.565" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.boolRes5</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QX1.35" Name="Out bool 6" Reversed="1">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.565" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.boolRes6</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QX1.36" Name="Out bool 7" Reversed="0">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.565" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.boolRes7</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QX1.37" Name="Out bool 8" Reversed="1">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.566" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.boolRes8</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.38" Name="Out dword 1">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.566" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dwordRes1</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.39" Name="Out dword 2">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.566" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dwordRes2</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.40" Name="Out dword 3">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.567" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dwordRes3</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.41" Name="Out dword 4">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.567" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dwordRes4</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.42" Name="Out dword 5">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.567" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dwordRes5</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.43" Name="Out dword 6">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.567" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dwordRes6</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.44" Name="Out dword 7">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.568" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dwordRes7</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="QW1.45" Name="Out dword 8">
+      <ConVariable Signal="0" VarConnTS="2018-08-23-06:42:20.568" AnalogAttributesTS="1979-12-31-00:00:00.000">VMT_Controller_1.Program1.dwordRes8</ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+    <HWChannel Address="IW1.46" Name="UnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits/>
+  <CheckSum Value="41422"/>
+</HWUnit>

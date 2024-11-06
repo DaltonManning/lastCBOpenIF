@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task xmlns="CBSourceCodeSchema3_0" Name="Slow" IntervalTime="1000" Priority="4" Offset="25" OutputUpdate="last" LatencySupervision="0" LatencyPercentage="10" TaskSILLevel="NonSIL" Guid="66BE8002-9EBC-48CE-A4C6-B7708965CB99" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:01.902" ChangeTime="2006-04-20-12:09:01.616" CodePage="1252" Type="Normal">
+  <CheckSum Value="6441"/>
+</Task>

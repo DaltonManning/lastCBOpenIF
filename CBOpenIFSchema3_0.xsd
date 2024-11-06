@@ -1,0 +1,2188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="CBOpenIFSchema3_0" targetNamespace="CBOpenIFSchema3_0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:simpleType name="AuthenticationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None"/>
+      <xs:enumeration value="Reauthenticate"/>
+      <xs:enumeration value="Double authenticate"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attributeGroup name="ObjInstSafetyAttributes">
+    <xs:attribute name="AccessLevel" type="xs:string" default=""/>
+    <xs:attribute name="SafetyType" type="xs:string" default=""/>
+  </xs:attributeGroup>
+  <xs:simpleType name="SILType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NonSIL"/>
+      <xs:enumeration value="SIL2"/>
+      <xs:enumeration value="SIL3"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="DirectionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="in"/>
+      <xs:enumeration value="in_out"/>
+      <xs:enumeration value="out"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CommVarDirectionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="in"/>
+      <xs:enumeration value="out"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CMParDirectionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="in"/>
+      <xs:enumeration value="in_out"/>
+      <xs:enumeration value="out"/>
+      <xs:enumeration value="unspecified"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SignalDirectionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="in"/>
+      <xs:enumeration value="out"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ScopeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="private"/>
+      <xs:enumeration value="public"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="FDPortType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="yes"/>
+      <xs:enumeration value="no"/>
+      <xs:enumeration value="yes left"/>
+      <xs:enumeration value="no left"/>
+      <xs:enumeration value="yes right"/>
+      <xs:enumeration value="no right"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CommVarIntervalTimeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="very fast"/>
+      <xs:enumeration value="fast"/>
+      <xs:enumeration value="normal"/>
+      <xs:enumeration value="slow"/>
+      <xs:enumeration value="very slow"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CommVarPriority">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="high"/>
+      <xs:enumeration value="normal"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CommVarExpectedSIL">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NonSIL"/>
+      <xs:enumeration value="SIL2"/>
+      <xs:enumeration value="SIL3"/>
+      <xs:enumeration value="same"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TreeRedundancyDisplayMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Position"/>
+      <xs:enumeration value="Upper_Lower"/>
+      <xs:enumeration value="A_B"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Application">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ApplicationVariables" minOccurs="0"/>
+        <xs:element ref="DataTypes" minOccurs="0"/>
+        <xs:element ref="FunctionBlockTypes" minOccurs="0"/>
+        <xs:element ref="ControlModuleTypes" minOccurs="0"/>
+        <xs:element ref="DiagramTypes" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="Diagrams" minOccurs="0"/>
+        <xs:element ref="Programs" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="TaskConnection" type="xs:string" default=""/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="FilePath" type="xs:string" default=""/>
+      <xs:attribute name="MajorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="MinorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Revision" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="SimulationMark" type="xs:boolean" default="0"/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+      <xs:attribute name="Folder" type="xs:string" use="optional" default=""/>
+      <xs:attribute name="FolderPath" type="xs:string" use="optional" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApplicationProperties">
+    <xs:complexType>
+      <xs:attribute name="Type" type="xs:string" default="Normal"/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="SimulationMark" type="xs:boolean" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApplicationVariables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="GlobalVariables" minOccurs="0"/>
+        <xs:element ref="Variables" minOccurs="0"/>
+        <xs:element ref="Signals" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Applications">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Folder" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Application" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Folder">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string"  use="optional" default=""/>
+      <xs:attribute name="Parent" type="xs:string"  use="optional" default=""/>
+      <xs:attribute name="ParentPath" type="xs:string" use="optional" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecutionInstance">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecutionGroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ExecutionInstance" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="TaskName" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExecutionOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ExecutionGroup" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CMConnection">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Point" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="ActualParameter" type="xs:string" default=""/>
+      <xs:attribute name="GraphicalConnection" type="xs:boolean" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CMConnections">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CMConnection" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FDConnection">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="ActualParameter" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CodeBlocks">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="STCodeBlock"/>
+        <xs:element ref="FBDCodeBlock"/>
+        <xs:element ref="LDCodeBlock"/>
+        <xs:element ref="SFCCodeBlock"/>
+        <xs:element ref="ILCodeBlock"/>
+        <xs:element ref="FDCodeBlock"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Component">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Attribute" type="xs:string" default="retain"/>
+      <xs:attribute name="InitialValue" type="xs:string" default=""/>
+      <xs:attribute name="ISPValue" type="xs:string" default=""/>
+      <xs:attribute name="ReadPermission" type="xs:string" default=""/>
+      <xs:attribute name="WritePermission" type="xs:string" default=""/>
+      <xs:attribute name="AuthenticationLevel" type="AuthenticationType" default="None"/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Components">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Component" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConVariable">
+    <xs:complexType mixed="true">
+      <xs:attribute name="Signal" type="xs:boolean" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectedHardwareLibrary">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="MajorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="MinorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Revision" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" use="optional" default=""/>
+      <xs:attribute name="FilePath" type="xs:string" use="optional" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectedHardwareLibraries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ConnectedHardwareLibrary" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectedApplication">
+    <xs:complexType mixed="true">
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="MajorVersion" type="xs:unsignedLong" default="1"/>
+      <xs:attribute name="MinorVersion" type="xs:unsignedLong" default="0"/>
+      <xs:attribute name="Revision" type="xs:unsignedLong" default="0"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectedApplications">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ConnectedApplication" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ControlModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CMInstGraphics" minOccurs="0"/>
+        <xs:element ref="CMConnections" minOccurs="0"/>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="GraphPos" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="TaskConnection" type="xs:string" default=""/>
+      <xs:attribute name="VisibilityInGraphics" default="default">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="default"/>
+            <xs:enumeration value="visible"/>
+            <xs:enumeration value="invisible"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attribute name="AspectObject" type="xs:boolean" default="1"/>
+      <xs:attribute name="ExposePropertiesInParent" type="xs:boolean" default="false"/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ControlModuleType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CMTypeGraphics" minOccurs="0"/>
+        <xs:element ref="CMParameters" minOccurs="0"/>
+        <xs:element ref="Variables" minOccurs="0"/>
+        <xs:element ref="ExternalVariables" minOccurs="0"/>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="CodeBlocks" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="GraphSize" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Protected" type="xs:boolean" default="0"/>
+      <xs:attribute name="Hidden" type="xs:boolean" default="0"/>
+      <xs:attribute name="Scope" type="ScopeType" default="public"/>
+      <xs:attribute name="InteractionWindow" type="xs:string" default=""/>
+      <xs:attribute name="AlarmOwner" type="xs:boolean" default="0"/>
+      <xs:attribute name="InstantiateAsAspectObject" type="xs:boolean" default="0"/>
+      <xs:attribute name="BatchObject" type="xs:string" default=""/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="RestrictedSIL" type="xs:boolean" default="0"/>
+      <xs:attribute name="SimulationMark" type="xs:boolean" default="0"/>
+      <xs:attribute name="ProductMask" type="xs:unsignedLong"/>
+      <xs:attribute name="CreateEventAspect" type="xs:boolean"/>
+      <xs:attribute name="SafeP2PObject" type="xs:string" default="None"/>
+      <xs:attribute name="ReservedByFunction" type="xs:string" default=""/>
+      <xs:attribute name="EmbeddedGraphicsVisible" type="xs:boolean" default="0"/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ControlModuleTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ControlModuleType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ControlModules">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="ControlModule"/>
+        <xs:element ref="SingleControlModule"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Diagram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Variables" minOccurs="0"/>
+        <xs:element ref="CommVariables" minOccurs="0"/>
+        <xs:element ref="Signals" minOccurs="0"/>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="DiagramInstances" minOccurs="0"/>
+        <xs:element ref="InitValues" minOccurs="0"/>
+        <xs:element ref="CodeBlocks" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="BatchObject" type="xs:string" default=""/>
+      <xs:attribute name="TaskConnection" type="xs:string" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="InstGuid" type="xs:string" default=""/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="RestrictedSIL" type="xs:boolean" default="0"/>
+      <xs:attribute name="SimulationMark" type="xs:boolean" default="0"/>
+      <xs:attribute name="ReservedByFunction" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Diagrams">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref ="Diagram" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DiagramType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Parameters" minOccurs="0"/>
+        <xs:element ref="Variables" minOccurs="0"/>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="DiagramInstances" minOccurs="0"/>
+        <xs:element ref="CodeBlocks" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Protected" type="xs:boolean" default="0"/>
+      <xs:attribute name="Hidden" type="xs:boolean" default="0"/>
+      <xs:attribute name="Scope" type="ScopeType" default="public"/>
+      <xs:attribute name="AlarmOwner" type="xs:boolean" default="0"/>
+      <xs:attribute name="InstantiateAsAspectObject" type="xs:boolean" default="0"/>
+      <xs:attribute name="BatchObject" type="xs:string" default=""/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="RestrictedSIL" type="xs:boolean" default="0"/>
+      <xs:attribute name="SimulationMark" type="xs:boolean" default="0"/>
+      <xs:attribute name="ReservedByFunction" type="xs:string" default=""/>
+      <xs:attribute name="EmbeddedGraphicsVisible" type="xs:boolean" default="0"/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DiagramTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DiagramType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DiagramInstances">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DiagramInstance" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DiagramInstance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="DiagramInstances" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attribute name="AspectObject" type="xs:boolean" default="1"/>
+      <xs:attribute name="ExposePropertiesInParent" type="xs:boolean" default="false"/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Controller">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWUnits" minOccurs="0"/>
+        <xs:element ref="Tasks" minOccurs="0"/>
+        <xs:element ref="ConnectedApplications" minOccurs="0"/>
+        <xs:element ref="ConnectedHardwareLibraries" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="FilePath" type="xs:string" default=""/>
+      <xs:attribute name="SystemIdentity" type="xs:string" use="required"/>
+      <xs:attribute name="ControllerType" type="xs:string" use="required"/>
+      <xs:attribute name="MajorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="MinorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Revision" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Controllers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Controller" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ControllerProperties">
+    <xs:complexType>
+      <xs:attribute name="HWSimulation" type="xs:boolean" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommonControllerSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FatalOverrun"/>
+        <xs:choice>
+          <xs:element ref="LoadBalancing"/>
+          <xs:element ref="Safety"/>
+        </xs:choice>
+        <xs:element ref="ErrorHandler"/>
+      </xs:sequence>
+      <xs:attribute name="ChangeTime" type="xs:string" default=""/>
+      <xs:attribute name="OLUStopTime" type="xs:unsignedLong" use="optional" default="3000"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FatalOverrun">
+    <xs:complexType>
+      <xs:attribute name="Limit" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Reaction" type="xs:unsignedLong" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoadBalancing">
+    <xs:complexType>
+      <xs:attribute name="OverLoadCompensation" type="xs:boolean" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Safety">
+    <xs:complexType>
+      <xs:attribute name="DemandMode" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="FDRT" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="SafetyWatchdogTimeout" type="xs:unsignedLong" use="optional" default="2000"/>
+      <xs:attribute name="SIL3AppStartValUpdInterval" type="xs:unsignedLong" use="optional" default="86400"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ErrorHandler">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SystemDiagnostics"/>
+        <xs:element ref="Execution"/>
+        <xs:element ref="IO"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:group name="ErrorHandlerGroup">
+    <xs:sequence>
+      <xs:element ref="Log"/>
+      <xs:element ref="Event"/>
+      <xs:element ref="Reset"/>
+      <xs:element ref="SystemAlarmOutput" minOccurs="0"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:element name="SystemDiagnostics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="ErrorHandlerGroup"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Execution">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="ErrorHandlerGroup"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="ErrorHandlerGroup"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="ErrorHandlerAttributeGroup">
+    <xs:attribute name="Low" type="xs:boolean"/>
+    <xs:attribute name="Medium" type="xs:boolean"/>
+    <xs:attribute name="High" type="xs:boolean"/>
+    <xs:attribute name="Critical" type="xs:boolean"/>
+    <xs:attribute name="Fatal" type="xs:boolean"/>
+  </xs:attributeGroup>
+  <xs:element name="Log">
+    <xs:complexType>
+      <xs:attributeGroup ref="ErrorHandlerAttributeGroup"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Event">
+    <xs:complexType>
+      <xs:attributeGroup ref="ErrorHandlerAttributeGroup"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Reset">
+    <xs:complexType>
+      <xs:attributeGroup ref="ErrorHandlerAttributeGroup"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SystemAlarmOutput">
+    <xs:complexType>
+      <xs:attributeGroup ref="ErrorHandlerAttributeGroup"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Components" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Protected" type="xs:boolean" default="0"/>
+      <xs:attribute name="Hidden" type="xs:boolean" default="0"/>
+      <xs:attribute name="Scope" type="ScopeType" default="public"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="ProductMask" type="xs:unsignedLong"/>
+      <xs:attribute name="ReservedByFunction" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DataType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Description" type="xs:string"/>
+  <xs:element name="Error">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PosInfo" minOccurs="0"/>
+        <xs:element ref="ExtraInfo" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="ErrorNo" type="xs:int" default="0"/>
+      <xs:attribute name="Message" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExtensibleParameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Attribute" type="xs:string" default="retain"/>
+      <xs:attribute name="Direction" type="DirectionType" default="in"/>
+      <xs:attribute name="FDPort" type="FDPortType" default="yes"/>
+      <xs:attribute name="InitialValue" type="xs:string" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExtensibleParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ExtensibleParameter" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExternalVariable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="GraphNode" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Attribute" type="xs:string" default="retain"/>
+      <xs:attribute name="ReadPermission" type="xs:string" default=""/>
+      <xs:attribute name="WritePermission" type="xs:string" default=""/>
+      <xs:attribute name="AuthenticationLevel" type="AuthenticationType" default="None"/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExternalVariables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ExternalVariable" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExtraInfo">
+    <xs:complexType>
+      <xs:attribute name="JumpDest" type="xs:string" default=""/>
+      <xs:attribute name="VarName" type="xs:string" default=""/>
+      <xs:attribute name="FunctionName" type="xs:string" default=""/>
+      <xs:attribute name="ExpectedType" type="xs:string" default=""/>
+      <xs:attribute name="TraverseNo" type="xs:int" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FBDCodeBlock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ST_Code"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FDCodeBlock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FunctionDiagram"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FunctionDiagram">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Pages" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Pages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Layout" type="PageLayoutType" minOccurs="0"/>
+        <xs:element ref="Page" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Page">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="Blocks"/>
+        <xs:element ref="DataConnections"/>
+      </xs:sequence>
+      <xs:attribute name="PageNo" type="xs:integer" use="required"/>
+      <xs:attribute name="PageName" type="xs:string" use="optional" default=""/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Blocks">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Invocation"/>
+        <xs:element ref="DataRef"/>
+        <xs:element ref="Split"/>
+        <xs:element ref="Join"/>
+        <xs:element ref="TextBox"/>
+        <xs:element ref="PageConnector"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataRef">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element name="Layout" type="DataRefLayoutType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Invocation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element name="Layout" type="InvocationLayoutType" minOccurs="0"/>
+        <xs:element ref="Negated" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="DataFlowOrder" type="xs:integer" use="required"/>
+      <xs:attribute name="ENPort" type="xs:boolean" default="false"/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Negated">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Split">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element name="Layout" type="SplitJoinLayoutType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="DataFlowOrder" type="xs:integer" use="required"/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Join">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element name="Layout" type="SplitJoinLayoutType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="DataFlowOrder" type="xs:integer" use="required"/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TextBox">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Layout" type="TextBoxLayoutType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Text" type="xs:string" use="required"/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PageConnector">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Layout" type="PageConnectorLayoutType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Direction" type="xs:string" use="required"/>
+      <xs:attribute name="PageNo" type="xs:integer" use="required"/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataConnections">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DataConnection" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataConnection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Layout" type="DataConnectionLayoutType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Link" type="xs:string"/>
+      <xs:attribute name="Src" type="xs:string" use="required"/>
+      <xs:attribute name="Dest" type="xs:string" use="required"/>
+      <xs:attribute name="SrcDirect" type="xs:boolean" default="0"/>
+      <xs:attribute name="DestDirect" type="xs:boolean" default="0"/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LinePos">
+    <xs:complexType>
+      <xs:attribute name="DX" type="xs:double" default="0.00"/>
+      <xs:attribute name="DY" type="xs:double" default="0.00"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Find">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PosInfo" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Message" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Function">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Parameters" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="RestrictedSIL" type="xs:boolean" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FunctionBlock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="TaskConnection" type="xs:string" default=""/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attribute name="AspectObject" type="xs:boolean" default="1"/>
+      <xs:attribute name="ExposePropertiesInParent" type="xs:boolean" default="false"/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FunctionBlockType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Parameters" minOccurs="0"/>
+        <xs:element ref="ExtensibleParameters" minOccurs="0"/>
+        <xs:element ref="Variables" minOccurs="0"/>
+        <xs:element ref="ExternalVariables" minOccurs="0"/>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="CodeBlocks" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Protected" type="xs:boolean" default="0"/>
+      <xs:attribute name="Hidden" type="xs:boolean" default="0"/>
+      <xs:attribute name="Scope" type="ScopeType" default="public"/>
+      <xs:attribute name="InteractionWindow" type="xs:string" default=""/>
+      <xs:attribute name="AlarmOwner" type="xs:boolean" default="0"/>
+      <xs:attribute name="InstantiateAsAspectObject" type="xs:boolean" default="0"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="RestrictedSIL" type="xs:boolean" default="0"/>
+      <xs:attribute name="SimulationMark" type="xs:boolean" default="0"/>
+      <xs:attribute name="ProductMask" type="xs:unsignedLong"/>
+      <xs:attribute name="CreateEventAspect" type="xs:boolean"/>
+      <xs:attribute name="CreateSimpleEventAspect" type="xs:boolean"/>
+      <xs:attribute name="GetBatchObjectData" type="xs:boolean"/>
+      <xs:attribute name="ReservedByFunction" type="xs:string" default=""/>
+      <xs:attribute name="EmbeddedGraphicsVisible" type="xs:boolean" default="0"/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FunctionBlockTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FunctionBlockType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FunctionBlocks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FunctionBlock" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Functions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Function" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GlobalVariable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="GraphNode" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Attribute" type="xs:string" default="retain"/>
+      <xs:attribute name="InitialValue" type="xs:string" default=""/>
+      <xs:attribute name="ReadPermission" type="xs:string" default=""/>
+      <xs:attribute name="WritePermission" type="xs:string" default=""/>
+      <xs:attribute name="AuthenticationLevel" type="AuthenticationType" default="None"/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GlobalVariables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="GlobalVariable" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommVariable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Attribute" type="xs:string" default="retain"/>
+      <xs:attribute name="InitialValue" type="xs:string" default=""/>
+      <xs:attribute name="Direction" type="CommVarDirectionType" use="required"/>
+      <xs:attribute name="IPAddress" type="xs:string" default="auto"/>
+      <xs:attribute name="IntervalTime" type="CommVarIntervalTimeType" default="normal"/>
+      <xs:attribute name="Priority" type="CommVarPriority" default="normal"/>
+      <xs:attribute name="ISPValue" type="xs:string" default=""/>
+      <xs:attribute name="ReadPermission" type="xs:string" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attribute name="ExpectedSIL" type="CommVarExpectedSIL" default="same"/>
+      <xs:attribute name="UniqueID" type="xs:unsignedInt" default="0"/>
+      <xs:attribute name="AcknowledgeGroup" type="xs:string" default="auto"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommVariables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CommVariable" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GraphNode">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="X" type="xs:double" use="required"/>
+      <xs:attribute name="Y" type="xs:double" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWChannel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ConVariable"/>
+        <xs:element ref="IODescription"/>
+      </xs:sequence>
+      <xs:attribute name="Address" type="xs:string" use="required"/>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="ChannelType" type="xs:string" default=""/>
+      <xs:attribute name="Min" type="xs:string" default=""/>
+      <xs:attribute name="Max" type="xs:string" default=""/>
+      <xs:attribute name="Unit" type="xs:string" default=""/>
+      <xs:attribute name="Fraction" type="xs:string" default=""/>
+      <xs:attribute name="Reversed" type="xs:boolean" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWChannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWChannel" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWUnit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ParameterSettings" minOccurs="0"/>
+        <xs:element ref="HWChannels" minOccurs="0"/>
+        <xs:element ref="HWUnits" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Path" type="xs:string" use="required"/>
+      <xs:attribute name="TypeID" type="xs:string"/>
+      <xs:attribute name="TypeDescription" type="xs:string"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="RedundantPos" type="xs:string" default=""/>
+      <xs:attribute name="HWSimulation" type="xs:boolean" default="0"/>
+      <xs:attribute name="HWSimulationSupported" type="xs:boolean" default="0"/>
+      <xs:attribute name="ReservedByFunction" type="xs:string" default=""/>
+      <xs:attribute name="InstanceName" type="xs:string" default=""/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWUnits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWUnit" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWPosition">
+    <xs:complexType>
+      <xs:attribute name="Value" type="xs:unsignedLong" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWPositions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWPosition" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ILCodeBlock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ILRow" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ILRow">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="Label" minOccurs="0"/>
+          <xs:element ref="Instruction" minOccurs="0"/>
+          <xs:element ref="Operand" minOccurs="0"/>
+          <xs:element ref="Description" minOccurs="0"/>
+        </xs:sequence>
+        <xs:element ref="ILRowComment"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ILRowComment" type="xs:string"/>
+  <xs:element name="IODescription" type="xs:string"/>
+  <xs:element name="Info">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PosInfo" minOccurs="0"/>
+        <xs:element ref="ExtraInfo" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Message" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Instruction" type="xs:string"/>
+  <xs:element name="LDCodeBlock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ST_Code"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Label" type="xs:string"/>
+  <xs:element name="Libraries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Library" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ProjectConstants" minOccurs="0"/>
+        <xs:element ref="DataTypes" minOccurs="0"/>
+        <xs:element ref="Functions" minOccurs="0"/>
+        <xs:element ref="FunctionBlockTypes" minOccurs="0"/>
+        <xs:element ref="ControlModuleTypes" minOccurs="0"/>
+        <xs:element ref="DiagramTypes" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="FilePath" type="xs:string" default=""/>
+      <xs:attribute name="MajorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="MinorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Revision" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="State" type="xs:string" default=""/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessageBucket">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Info"/>
+        <xs:element ref="Error"/>
+        <xs:element ref="Warning"/>
+        <xs:element ref="Find"/>
+      </xs:choice>
+      <xs:attribute name="NoOfErrors" type="xs:int"/>
+      <xs:attribute name="NoOfWarnings" type="xs:int"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Operand" type="xs:string"/>
+  <xs:element name="Parameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Attribute" type="xs:string" default="retain"/>
+      <xs:attribute name="Direction" type="DirectionType" default="in"/>
+      <xs:attribute name="FDPort" type="FDPortType" default="yes"/>
+      <xs:attribute name="InitialValue" type="xs:string" default=""/>
+      <xs:attribute name="ReadPermission" type="xs:string" default=""/>
+      <xs:attribute name="WritePermission" type="xs:string" default=""/>
+      <xs:attribute name="AuthenticationLevel" type="AuthenticationType" default="None"/>
+      <xs:attribute name="BatchProperty" type="xs:string" use="optional" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParameterSetting">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Value" type="xs:string" use="required"/>
+      <xs:attribute name="Description" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ParameterSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ParameterSetting" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Parameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Parameter" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PosInfo">
+    <xs:complexType>
+      <xs:attribute name="Row" type="xs:int" default="0"/>
+      <xs:attribute name="Col" type="xs:int" default="0"/>
+      <xs:attribute name="StartPos" type="xs:int" default="0"/>
+      <xs:attribute name="EndPos" type="xs:int" default="0"/>
+      <xs:attribute name="ElementName" type="xs:string" default=""/>
+      <xs:attribute name="FOUName" type="xs:string" default=""/>
+      <xs:attribute name="POUName" type="xs:string" default=""/>
+      <xs:attribute name="TabName" type="xs:string" default=""/>
+      <xs:attribute name="MessageType" type="xs:string" default=""/>
+      <xs:attribute name="PageNo" type="xs:integer" default="0"/>
+      <xs:attribute name="Id" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Program">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Variables" minOccurs="0"/>
+        <xs:element ref="CommVariables" minOccurs="0"/>
+        <xs:element ref="Signals" minOccurs="0"/>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="InitValues" minOccurs="0"/>
+        <xs:element ref="CodeBlocks" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="TaskConnection" type="xs:string" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="InstGuid" type="xs:string" default=""/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="SimulationMark" type="xs:boolean" default="0"/>
+      <xs:attribute name="ReservedByFunction" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Programs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Program" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Project">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ProjectConstants" minOccurs="0"/>
+        <xs:element ref="Libraries" minOccurs="0"/>
+        <xs:element ref="HardwareLibraries" minOccurs="0"/>
+        <xs:element ref="Applications" minOccurs="0"/>
+        <xs:element ref="Controllers" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="EnvironmentName" type="xs:string" default=""/>
+      <xs:attribute name="EnvironmentGuid" type="xs:string" default=""/>
+      <xs:attribute name="FilePath" type="xs:string" default=""/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProjectConstant">
+    <xs:complexType>
+      <xs:choice>
+        <xs:sequence>
+          <xs:element ref="Type"/>
+          <xs:element ref="Value"/>
+        </xs:sequence>
+        <xs:element ref="ProjectConstants" minOccurs="0"/>
+      </xs:choice>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProjectConstants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ProjectConstant" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SFCCodeBlock">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:group ref="SFCElements"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="SeqControl" type="xs:boolean" default="1"/>
+      <xs:attribute name="StepElapsedTime" type="xs:boolean" default="0"/>
+      <xs:attribute name="SFCViewerAspect" type="xs:boolean" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SingleControlModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CMTypeGraphics" minOccurs="0"/>
+        <xs:element ref="CMParameters" minOccurs="0"/>
+        <xs:element ref="Variables" minOccurs="0"/>
+        <xs:element ref="ExternalVariables" minOccurs="0"/>
+        <xs:element ref="CommVariables" minOccurs="0"/>
+        <xs:element ref="Signals" minOccurs="0"/>
+        <xs:element ref="FunctionBlocks" minOccurs="0"/>
+        <xs:element ref="ControlModules" minOccurs="0"/>
+        <xs:element ref="InitValues" minOccurs="0"/>
+        <xs:element ref="CodeBlocks" minOccurs="0"/>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="CMInstGraphics" minOccurs="0"/>
+        <xs:element ref="CMConnections" minOccurs="0"/>
+        <xs:element ref="GraphSize" minOccurs="0"/>
+        <xs:element ref="GraphPos" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="InteractionWindow" type="xs:string" default=""/>
+      <xs:attribute name="AlarmOwner" type="xs:boolean" default="0"/>
+      <xs:attribute name="BatchObject" type="xs:string" default=""/>
+      <xs:attribute name="TaskConnection" type="xs:string" default=""/>
+      <xs:attribute name="VisibilityInGraphics" default="default">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="default"/>
+            <xs:enumeration value="visible"/>
+            <xs:enumeration value="invisible"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="TypeGuid" type="xs:string" use="required"/>
+      <xs:attribute name="InstGuid" type="xs:string" default=""/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="RestrictedSIL" type="xs:boolean" default="0"/>
+      <xs:attribute name="SimulationMark" type="xs:boolean" default="0"/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attribute name="ReservedByFunction" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="STCodeBlock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ST_Code"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ST_Code" type="xs:string">
+    <xs:annotation>
+      <xs:documentation>Contains ST code</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name="Task">
+    <xs:complexType mixed="true">
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="IntervalTime" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Priority" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:unsignedByte">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="5"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Offset" type="xs:unsignedLong" default="0"/>
+      <xs:attribute name="OutputUpdate" default="last">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="first"/>
+            <xs:enumeration value="last"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="LatencySupervision" type="xs:boolean" default="0"/>
+      <xs:attribute name="LatencyPercentage" type="xs:unsignedLong" default="10"/>
+      <xs:attribute name="TaskSILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="Guid" type="xs:string" use="optional" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tasks">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Task" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Type" type="xs:string"/>
+  <xs:element name="VAAddressedProtocol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="VAAddressedVariable" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VAAddressedVariable">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Path" type="xs:string" use="required"/>
+      <xs:attribute name="VAType" type="xs:string" default=""/>
+      <xs:attribute name="VATypePath" type="xs:string" default=""/>
+      <xs:attribute name="Row" type="xs:int" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VANamedProtocol">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="VANamedVariable" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VANamedVariable">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Path" type="xs:string" use="required"/>
+      <xs:attribute name="Attribute" type="xs:string" default=""/>
+      <xs:attribute name="VAType" type="xs:string" default=""/>
+      <xs:attribute name="VATypePath" type="xs:string" default=""/>
+      <xs:attribute name="Row" type="xs:int" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Value" type="xs:string"/>
+  <xs:element name="Varaccess">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element ref="VANamedProtocol" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="VAAddressedProtocol" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:choice>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="GraphNode" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Attribute" type="xs:string" default="retain"/>
+      <xs:attribute name="InitialValue" type="xs:string" default=""/>
+      <xs:attribute name="ReadPermission" type="xs:string" default=""/>
+      <xs:attribute name="WritePermission" type="xs:string" default=""/>
+      <xs:attribute name="AuthenticationLevel" type="AuthenticationType" default="None"/>
+      <xs:attribute name="BatchProperty" type="xs:string" use="optional" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Variables">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Variable" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Warning">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PosInfo" minOccurs="0"/>
+        <xs:element ref="ExtraInfo" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="WarningNo" type="xs:int" default="0"/>
+      <xs:attribute name="Message" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoPoint">
+    <xs:complexType>
+      <xs:attribute name="AutoPos" use="optional" default="Right">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Top"/>
+            <xs:enumeration value="Bottom"/>
+            <xs:enumeration value="Left"/>
+            <xs:enumeration value="Right"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CMParameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="AutoPoint" minOccurs="0"/>
+        <xs:element ref="GraphNode" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Type" type="xs:string" use="required"/>
+      <xs:attribute name="Direction" type="CMParDirectionType" default="unspecified"/>
+      <xs:attribute name="FDPort" type="FDPortType" default="yes"/>
+      <xs:attribute name="InitialValue" type="xs:string" default=""/>
+      <xs:attribute name="ReadPermission" type="xs:string" default=""/>
+      <xs:attribute name="WritePermission" type="xs:string" default=""/>
+      <xs:attribute name="AuthenticationLevel" type="AuthenticationType" default="None"/>
+      <xs:attribute name="BatchProperty" type="xs:string" use="optional" default=""/>
+      <xs:attribute name="TypeGuid" type="xs:string" default=""/>
+      <xs:attribute name="TypePath" type="xs:string" default=""/>
+      <xs:attributeGroup ref="ObjInstSafetyAttributes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CMParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="CMParameter" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Signal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Path" type="xs:string" default=""/>
+      <xs:attribute name="Direction" type="SignalDirectionType" default="in"/>
+      <xs:attribute name="AcknowledgeGroup" type="xs:string" default="auto"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Signals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Signal" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CMTypeGraphics" type="xs:string"/>
+  <xs:element name="CMInstGraphics" type="xs:string"/>
+  <xs:element name="Point">
+    <xs:annotation>
+      <xs:documentation>Graphical Position of nodes</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="X" type="xs:double" use="optional" default="0.00"/>
+      <xs:attribute name="Y" type="xs:double" use="optional" default="0.00"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GraphPos">
+    <xs:annotation>
+      <xs:documentation>Graphical position, size, and rotation of modules</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:attribute name="XPos" type="xs:double" use="optional" default="0.00"/>
+      <xs:attribute name="YPos" type="xs:double" use="optional" default="0.00"/>
+      <xs:attribute name="Rotation" type="xs:double" use="optional" default="0.00"/>
+      <xs:attribute name="XScale" type="xs:double" use="optional" default="1.00"/>
+      <xs:attribute name="YScale" type="xs:double" use="optional" default="1.00"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GraphSize">
+    <xs:annotation>
+      <xs:documentation>Size, lower-left and upper-right point.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Point"/>
+        <xs:element ref="Point"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:group name="SFCElements">
+    <xs:annotation>
+      <xs:documentation>A list of SFC elements</xs:documentation>
+    </xs:annotation>
+    <xs:choice>
+      <xs:element ref="SFCStep"/>
+      <xs:element ref="SFCTransition"/>
+      <xs:element ref="SFCSubSequence"/>
+      <xs:element ref="SFCSelection"/>
+      <xs:element ref="SFCSimultaneous"/>
+    </xs:choice>
+  </xs:group>
+  <xs:element name="SFCBranch">
+    <xs:annotation>
+      <xs:documentation>One branch in a SFCSelection or SFCSimultaneous</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:group ref="SFCElements"/>
+      </xs:sequence>
+      <xs:attribute name="SFCPriority" use="optional" default="default">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="default"/>
+            <xs:enumeration value="lowest"/>
+            <xs:enumeration value="low"/>
+            <xs:enumeration value="medium"/>
+            <xs:enumeration value="high"/>
+            <xs:enumeration value="highest"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SFCStep">
+    <xs:annotation>
+      <xs:documentation>A single step in a SFC Sequence. Contains Action statements</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:annotation>
+        <xs:documentation>Contains actions</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:element ref="P1_Action" minOccurs="0"/>
+        <xs:element ref="N_Action" minOccurs="0"/>
+        <xs:element ref="P0_Action" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="InitialStep" type="xs:boolean" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SFCTransition">
+    <xs:annotation>
+      <xs:documentation>Contains transition statement</xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Dest" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SFCSubSequence">
+    <xs:annotation>
+      <xs:documentation>Contains a SFC SubSequence</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:group ref="SFCElements"/>
+      </xs:sequence>
+      <xs:attribute name="SubSeqName" type="xs:string" use="optional" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SFCSelection">
+    <xs:annotation>
+      <xs:documentation>SFC Sequence selection. Contains 2 or more branches</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SFCBranch"/>
+        <xs:element ref="SFCBranch" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SFCSimultaneous">
+    <xs:annotation>
+      <xs:documentation>SFC Simultaneous sequences. Contains 2 or more branches</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="SFCBranch"/>
+        <xs:element ref="SFCBranch" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="P1_Action">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:documentation>P1 Action</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:element ref="ST_Code"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="N_Action">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:documentation>N Action</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:element ref="ST_Code"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="P0_Action">
+    <xs:complexType>
+      <xs:annotation>
+        <xs:documentation>P0 Action</xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:element ref="ST_Code"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitValues">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="InitValue" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitValue">
+    <xs:complexType>
+      <xs:attribute name="POUPath" type="xs:string" default=""/>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Value" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectedLibrary">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="MajorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="MinorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Revision" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" use="optional" default=""/>
+      <xs:attribute name="VersionKey" type="xs:unsignedLong" use="optional" default="0"/>
+      <xs:attribute name="FilePath" type="xs:string" use="optional" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConnectedLibraries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ConnectedLibrary" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HardwareLibraries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HardwareLibrary" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HardwareLibrary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HardwareTypes" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="FilePath" type="xs:string" default=""/>
+      <xs:attribute name="MajorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="MinorVersion" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="Revision" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="State" type="xs:string" default=""/>
+      <xs:attribute name="ReservationState" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="HardwareTypeFileAttributes">
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+    <xs:attribute name="Version" type="xs:string" use="required"/>
+    <xs:attribute name="TimeStamp" type="xs:string" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="HardwareLibraryFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DIWImportFiles" minOccurs="0"/>
+        <xs:element ref="HardwareHelpFiles" minOccurs="0"/>
+        <xs:element ref="HardwareIconFiles" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DIWImportFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DIWImportFile" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DIWImportFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DIWConfigFile" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="gsd"/>
+      <xs:attribute name="ParserName" type="xs:string" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DIWConfigFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="cfg"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HardwareHelpFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWHelpFile" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HardwareIconFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWIconFile" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWIconFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="ico"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HardwareTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HardwareType" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HardwareType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Description" minOccurs="0"/>
+        <xs:element ref="HWDefinitionFile" minOccurs="0"/>
+        <xs:element ref="FWFile" minOccurs="0"/>
+        <xs:element ref="UpdateFile" minOccurs="0"/>
+        <xs:element ref="FWIdxFile" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="PHControlBuilderFile" minOccurs="0"/>
+        <xs:element ref="PHControllerFile" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="PHIdxFile" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="HWHelpFile" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="HWTypeId" type="xs:string" default=""/>
+      <xs:attribute name="SILLevel" type="SILType" default="NonSIL"/>
+      <xs:attribute name="Icon" type="xs:string" default=""/>
+      <xs:attribute name="RedundantIcon" type="xs:string" default=""/>
+      <xs:attribute name="HardwareUnitAsEntity" type="xs:boolean" default="false"/>
+      <xs:attribute name="RestrictInstantiation" type="xs:boolean" default="false"/>
+      <xs:attribute name="TreeDisplayMode" type="TreeRedundancyDisplayMode" default="Position"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWDefinitionFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="hwd"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FWFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="BuildDate" type="xs:string" default=""/>
+      <xs:attribute name="BuildVersion" type="xs:string" default=""/>
+      <xs:attribute name="FWName" type="xs:string" default=""/>
+      <xs:attribute name="Extension" type="xs:string" default="sbin"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="bin"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FWIdxFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="idx"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PHControlBuilderFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="dll"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PHControllerFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="bin"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PHIdxFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="idx"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWHelpFile">
+    <xs:complexType>
+      <xs:attributeGroup ref="HardwareTypeFileAttributes"/>
+      <xs:attribute name="Extension" type="xs:string" default="hlp"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWDefinitionInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTChannels" minOccurs="0"/>
+        <xs:element ref="HWTParameters" minOccurs="0"/>
+        <xs:element ref="HWTUnitstatusConfig" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Guid" type="xs:string" default=""/>
+      <xs:attribute name="HWTypeId" type="xs:string" default=""/>
+      <xs:attribute name="Icon" type="xs:string" default=""/>
+      <xs:attribute name="MaxNrOfSubUnits" type="xs:unsignedLong" default="0"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTChannels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTChannelInfo" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTParamInfo" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTUnitstatusConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTUnitStatusItem" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTChannelInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTCopyInfo"/>
+      </xs:sequence>
+      <xs:attribute name="Number" type="xs:integer" use="required"/>
+      <xs:attribute name="ChannelName" type="xs:string" use="optional" default="''"/>
+      <xs:attribute name="Hidden" type="xs:boolean" use="optional" default="false"/>
+      <xs:attribute name="Datatype" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Bool_In"/>
+            <xs:enumeration value="Bool_Out"/>
+            <xs:enumeration value="Int_In"/>
+            <xs:enumeration value="Int_Out"/>
+            <xs:enumeration value="Dword_In"/>
+            <xs:enumeration value="Dword_Out"/>
+            <xs:enumeration value="Real_In"/>
+            <xs:enumeration value="Real_Out"/>
+            <xs:enumeration value="Status_In"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="ExcludesChannels" type="xs:string" use="optional"/>
+      <xs:attribute name="TaskRestrictionGroup" type="xs:integer" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTCopyInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTCopyParameters" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="RoutineID" type="xs:integer" use="required"/>
+      <xs:attribute name="ByteOffset" type="xs:integer" use="required"/>
+      <xs:attribute name="BitOffset" type="xs:integer" use="required"/>
+      <xs:attribute name="BitLength" type="xs:integer" use="required"/>
+      <xs:attribute name="ByteSwap" type="xs:boolean" use="optional" default="false"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTCopyParameters" type="xs:string"/>
+  <xs:element name="HWTParamInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTParamCode"/>
+        <xs:element ref="HWTParValInfo" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Description" type="xs:string" use="required"/>
+      <xs:attribute name="Hidden" type="xs:boolean" use="optional" default="false"/>
+      <xs:attribute name="Datatype" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="BOOL"/>
+            <xs:enumeration value="INT"/>
+            <xs:enumeration value="REAL"/>
+            <xs:enumeration value="ENUM"/>
+            <xs:enumeration value="ENUMRANGE"/>
+            <xs:enumeration value="ENUMCONTROL"/>
+            <xs:enumeration value="STRING"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Default" type="xs:string" use="optional" default=""/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTParamCode">
+    <xs:complexType>
+      <xs:attribute name="ParamType" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Numbered"/>
+            <xs:enumeration value="ConfArea"/>
+            <xs:enumeration value="PrmData"/>
+            <xs:enumeration value="UserPrmData"/>
+            <xs:enumeration value="CfgData"/>
+            <xs:enumeration value="BasicIOData"/>
+            <xs:enumeration value="CIGIOData"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Offset" type="xs:integer" use="required"/>
+      <xs:attribute name="BitOffset" type="xs:integer" use="required"/>
+      <xs:attribute name="Index" type="xs:integer" use="optional" default="0"/>
+      <xs:attribute name="Flags" type="xs:integer" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTParValInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTValueLimits" minOccurs="0"/>
+        <xs:element ref="HWTValueList" minOccurs="0"/>
+        <xs:element ref="HWTValueRangeList" minOccurs="0"/>
+        <xs:element ref="HWTValueControlList" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Unit" type="xs:string" use="optional" default="''"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTValueLimits">
+    <xs:complexType>
+      <xs:attribute name="MinValue" type="xs:string" use="required"/>
+      <xs:attribute name="MaxValue" type="xs:string" use="required"/>
+      <xs:attribute name="ConfigMinValue" type="xs:string" use="required"/>
+      <xs:attribute name="ConfigMaxValue" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTValueList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTValueListItem" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTValueListItem">
+    <xs:complexType>
+      <xs:attribute name="Description" type="xs:string" use="required"/>
+      <xs:attribute name="Value" type="xs:integer" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTValueRangeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTValueRangeListItem" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTValueRangeListItem">
+    <xs:complexType>
+      <xs:attribute name="Description" type="xs:string" use="required"/>
+      <xs:attribute name="ConfigValue" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="RangeMax" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="RangeMin" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="OverFlowBound" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="UnderFlowBound" type="xs:unsignedLong" use="required"/>
+      <xs:attribute name="BiPolar" type="xs:boolean" use="optional" default="false"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTValueControlList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTValueControlListItem" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTValueControlListItem">
+    <xs:complexType>
+      <xs:attribute name="Description" type="xs:string" use="required"/>
+      <xs:attribute name="ConfigValue" type="xs:integer" use="required"/>
+      <xs:attribute name="Setting" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="UseSafeValue"/>
+            <xs:enumeration value="HoldLastValue"/>
+            <xs:enumeration value="ResetValue"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTUnitStatusItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="HWTUnitStatusSeverity" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="Code" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="IoError"/>
+            <xs:enumeration value="IoWarning"/>
+            <xs:enumeration value="ModuleMissing"/>
+            <xs:enumeration value="WrongModuleType"/>
+            <xs:enumeration value="GeneralError"/>
+            <xs:enumeration value="GeneralWarning"/>
+            <xs:enumeration value="DeviceSpecific1"/>
+            <xs:enumeration value="DeviceSpecific2"/>
+            <xs:enumeration value="DeviceSpecific3"/>
+            <xs:enumeration value="DeviceSpecific4"/>
+            <xs:enumeration value="DeviceSpecific5"/>
+            <xs:enumeration value="DeviceSpecific6"/>
+            <xs:enumeration value="DeviceSpecific7"/>
+            <xs:enumeration value="DeviceSpecific8"/>
+            <xs:enumeration value="DeviceSpecific9"/>
+            <xs:enumeration value="DeviceSpecific10"/>
+            <xs:enumeration value="ExtendedStatus1"/>
+            <xs:enumeration value="ExtendedStatus2"/>
+            <xs:enumeration value="ExtendedStatus3"/>
+            <xs:enumeration value="ExtendedStatus4"/>
+            <xs:enumeration value="ExtendedStatus5"/>
+            <xs:enumeration value="ExtendedStatus6"/>
+            <xs:enumeration value="ExtendedStatus7"/>
+            <xs:enumeration value="ExtendedStatus8"/>
+            <xs:enumeration value="ExtendedStatus9"/>
+            <xs:enumeration value="ExtendedStatus10"/>
+            <xs:enumeration value="ExtendedStatus11"/>
+            <xs:enumeration value="ExtendedStatus12"/>
+            <xs:enumeration value="ExtendedStatus13"/>
+            <xs:enumeration value="ExtendedStatus14"/>
+            <xs:enumeration value="ExtendedStatus15"/>
+            <xs:enumeration value="ExtendedStatus16"/>
+            <xs:enumeration value="ExtendedStatus17"/>
+            <xs:enumeration value="ExtendedStatus18"/>
+            <xs:enumeration value="ExtendedStatus19"/>
+            <xs:enumeration value="ExtendedStatus20"/>
+            <xs:enumeration value="ExtendedStatus21"/>
+            <xs:enumeration value="ExtendedStatus22"/>
+            <xs:enumeration value="TimeoutOnBackup"/>
+            <xs:enumeration value="DeviceFailureBackup"/>
+            <xs:enumeration value="SwitchoverInProgress"/>
+            <xs:enumeration value="ConfiguredAsRedundant"/>
+            <xs:enumeration value="UnitBPrimary"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Text" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HWTUnitStatusSeverity">
+    <xs:complexType>
+      <xs:attribute name="Type" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Error"/>
+            <xs:enumeration value="Warning"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Action" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Alarm"/>
+            <xs:enumeration value="Event"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="Severity" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="Low"/>
+            <xs:enumeration value="Medium"/>
+            <xs:enumeration value="High"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ports">
+    <xs:complexType>
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element ref="Port"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Port">
+    <xs:complexType>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+      <xs:attribute name="Visible" type="xs:boolean" use="required"/>
+      <xs:attribute name="Placement" use="optional" default="left">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="left"/>
+            <xs:enumeration value="right"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PageLayoutType">
+    <xs:attributeGroup ref="PageLayoutAttribute"/>
+  </xs:complexType>
+  <xs:attributeGroup name="PageLayoutAttribute">
+    <xs:attribute name="FormatName" type="xs:string" default='""'/>
+    <xs:attribute name="Orientation" type="xs:string" default='""'/>
+    <xs:attribute name="Unit" type="xs:string" default='""'/>
+    <xs:attribute name="Width" type="xs:double" default="0.0"/>
+    <xs:attribute name="Height" type="xs:double" default="0.0"/>
+    <xs:attributeGroup ref="MarginGroup"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="MarginGroup">
+    <xs:attribute name="Top" type="xs:double" default="0.0"/>
+    <xs:attribute name="Bottom" type="xs:double" default="0.0"/>
+    <xs:attribute name="Left" type="xs:double" default="0.0"/>
+    <xs:attribute name="Right" type="xs:double" default="0.0"/>
+  </xs:attributeGroup>
+  <xs:attributeGroup name="LayoutGroup">
+    <xs:attribute name="X" type="xs:double" use="required"/>
+    <xs:attribute name="Y" type="xs:double" use="required"/>
+  </xs:attributeGroup>
+  <xs:complexType name="LayoutType">
+    <xs:attributeGroup ref="LayoutGroup"/>
+  </xs:complexType>
+  <xs:complexType name="TextBoxLayoutType">
+    <xs:attributeGroup ref="LayoutGroup"/>
+    <xs:attribute name="Width" type="xs:double"/>
+    <xs:attribute name="Height" type="xs:double"/>
+  </xs:complexType>
+  <xs:complexType name="SplitJoinLayoutType">
+    <xs:sequence>
+      <xs:element ref="Ports" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Ports with visibility that differs from its type</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attributeGroup ref="LayoutGroup"/>
+  </xs:complexType>
+  <xs:complexType name="DataRefLayoutType">
+    <xs:sequence>
+      <xs:element ref="Ports" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="LayoutGroup"/>
+    <xs:attribute name="Width" type="xs:double"/>
+    <xs:attribute name="Height" type="xs:double"/>
+  </xs:complexType>
+  <xs:complexType name="InvocationLayoutType">
+    <xs:sequence>
+      <xs:element ref="Ports" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="LayoutGroup"/>
+    <xs:attribute name="NoOfInputs" type="xs:integer" default="0"/>
+    <xs:attribute name="Width" type="xs:double" default="0.0"/>
+    <xs:attribute name="Height" type="xs:double" default="0.0"/>
+  </xs:complexType>
+  <xs:complexType name="PageConnectorLayoutType">
+    <xs:attributeGroup ref="LayoutGroup"/>
+    <xs:attribute name="DisplayName" type="xs:string" default=""/>
+  </xs:complexType>
+  <xs:complexType name="DataConnectionLayoutType">
+    <xs:sequence>
+      <xs:element name="SrcPos" type="LayoutType"/>
+      <xs:element ref="LinePos" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="DestPos" type="LayoutType"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

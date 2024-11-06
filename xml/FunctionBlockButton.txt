@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<FunctionBlockTypes xmlns="CBOpenIFSchema3_0">
+  <FunctionBlockType Name="ACOFAct" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This function block is used for automatic check of feedback
+signals handling objects with two limit switches and automatic return.
+This object has one stable position.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ACOFAct3P" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This function block is used for automatic check of feedback
+signals handling objects with three limit switches and automatic return.
+This object has one stable position.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ACOFActDeact" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This function block is used for automatic check of feedback
+signals handling objects with two limit switches.
+This object has two stable positions.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ACOFActDeact3P" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This function block is used for automatic check of feedback
+signals handling objects with three limit switches.
+This object has three stable positions.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ACOFUnit" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ApplicationInfo" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="1" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>ApplicationInfo gives information about 
+the application where it executes in e.g. 
+name and state.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="BcToDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This block converts data from an optional number of binary
+coded bool inputs and a sign input into a dint.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CalcUpperRange" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CheckPartner" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CollectAlarmInfo" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="1" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CollectNAlarmInfo" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="1" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CollectNAlarmInfoNS" Protected="1" Hidden="1" Scope="private" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="1" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CTD" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>The down-counter block CTD can be used to signal when a count
+has reached zero, on counting down from a pre-set value.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CTU" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>The up-counter block CTU can be used to signal when a count
+has reached a maximum value.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CTUD" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>The up-down counter block CTUD has two inputs CU and CD. It can be
+used to both count up on one input and down on the other.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CVConnect" Protected="1" Hidden="1" Scope="public" InteractionWindow="Faceplate" AlarmOwner="1" InstantiateAsAspectObject="1" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="1" ReservationState="NotReserved">
+    <Description>Get the application and system where this node is connected.
+It is intended to be executed once only after restart.
+The received strings are presented in the faceplate sub object.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="CVStatus" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This FB Reads the status of the communication variable</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="DeMuxBool" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>DeMuxBool is a demultiplexer with an optional number
+of bool outputs.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="DeMuxDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>DeMuxDint is a demultiplexer with an optional number
+of dint outputs.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="DeMuxReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>DeMuxReal is a demultiplexer with an optional number
+of real outputs.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="DintToBc" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>DintToBc converts data from dint to an optional
+number of bool outputs, using binary coded conversion
+and a sign output.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="DintToFirstOfN" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>DintToFirstOfN converts data from dint to an optional
+number of bool outputs using 1-of-N conversion, and
+a sign output.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="DintToNBcd" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>DintToNBcd converts from dint to an optional number
+of bool (in groups of four coded as BCD) and a sign output.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ErrorHandler" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This object is used to report system errors as event, 
+loggs or to close down the entire controller.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="EvalRestartInhibit" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>EvalRestartInhibit may inhibit restart of 
+application in evaluation mode.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="FifoBool" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>FifoBool is a queue register of
+First-In-First-Out type for bool values.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="FifoDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>FifoDint is a queue register of
+First-In-First-Out type for dint values.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="FifoReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>FifoReal is a queue register of
+First-In-First-Out type for real values.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="FifoRWBool" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>FifoRWBool is a queue register of
+First-In-First-Out type for bool values.
+In addition, data can be changed and
+deleted at any queue place.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="FifoRWDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>FifoRWDint is a queue register of
+First-In-First-Out type for dint values.
+In addition, data can be changed and
+deleted at any queue place.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="FifoRWReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>FifoRWReal is a queue register of
+First-In-First-Out type for real values.
+In addition, data can be changed and
+deleted at any queue place.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="FirstOfNToDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>FirstOfNToDint converts data from
+1-of-N format with an optional number
+of bool inputs and a sign input into a dint.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ForcedSignals" Protected="1" Hidden="0" Scope="public" InteractionWindow="InfoPar" AlarmOwner="0" InstantiateAsAspectObject="1" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This object is used to be able to release all forces in an SILapplication 
+or in all SIL applications the entire controller from the faceplate or 
+the surrounding code. Reset of all controller forces has also the digital 
+input (Reset All Forces) channel 1 on the SM810 safety module.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="F_Trig" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Falling edge trigger detector.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="GetDT" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Retrieves the system time from the controller when current task
+has been started.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="GetTimeZoneInfo" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Retrieves the currently used time-zone settings.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="GrayToDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>GrayToDint converts data from gray code
+with an optional number of bool inputs
+and a sign input into a dint.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="IEEE754Bit32ToReal" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="1" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="IntegerToRealIO" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Converts raw integer to scaled RealIO data type.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="LevelHigh" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>LevelHigh is used to compare a real value
+with an optional number of high limits
+with the possibility to specify hysteresis.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="LevelLow" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>LevelLow is used to compare a real value
+with an optional number of low limits
+with the possibility to specify hysteresis.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="MajorityReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>MajorityReal is used to calculate the mean value
+of an optional number of real numbers</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="MaxDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>MaxDint is used to select the largest value
+of an optional number of dint inputs. It is
+also possible to define a dead zone.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="MaxReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>MaxReal is used to select the largest value
+of an optional number of real inputs. It is
+also possible to define a dead zone.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="MedianDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>MedianDint is used to calculate the median value
+of an optional number of dint input values.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="MedianReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>MedianReal is used to calculate the median value
+of an optional number of real input values.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="MinDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>MinDint is used to select the lowest value of
+an optional number of dint inputs. It is also
+possible to define a dead zone.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="MinReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>MinReal is used to select the lowest value of
+an optional number of real inputs. It is also
+possible to define a dead zone.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="NBcdToDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>NBcdToDint converts data from an optional number
+of bool inputs (in groups of four coded as BCD)
+and a sign input into a dint.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="OutRangeDynamic" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="PowerFailureInfos" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Provides information on power failure status.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="PrefixCondName" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="1" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="PrefixName" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="1" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="PrintLines" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Prints text lines on a printer.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="PulseGenerator" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Generates pulses. The generator is connected to the real time clock.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="PulseGenerator3" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Generates pulses. The generator is connected to the real time clock.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="PulseGeneratorAcc" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Generates the correct number of pulses over time. 
+For a given time period, T, the number of pulses 
+will be T divided by the parameter PeriodTime. 
+The generator is connected to the real time clock.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="PulseGeneratorExt" Protected="1" Hidden="1" Scope="private" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RealIOToInteger" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Converts a scaled RealIO value to a raw integer value.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RealToIEEE754Bit32" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="1" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RedundantIn" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>When the system switches from ordinary to redundant I/O there may be a jump in the
+signal which may not be good for the algorithms used. This FB shall prevent this by
+ramping the signal using a real value as the change of the signal per second.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RedundantInAlg" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>When the system switches from ordinary to redundant I/O there may be a jump in the
+signal which may not be good for the algorithms used. This FB shall prevent this by
+ramping the signal using a real value as the change of the signal per second.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RegisterBool" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>RegisterBool is used as a memory function block
+for bool values with an optional number of positions.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RegisterDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>RegisterDint is used as a memory function block
+for dint values with an optional number of positions.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RegisterReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>RegisterReal is used as a memory function block
+for real values with an optional number of positions.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ResetForcedBoolOverride" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ResetForcedRealOverride" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RS" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>RS flip-flop.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RSD" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>RS flip-flop with Write functionality.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="RTC" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>A IEC 61131 function block, which performs display and date and
+time setting.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="R_Trig" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Rising edge trigger detector.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SampleTime" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>SampleTime is a function block to measure 
+the sampling period and to acquire the 
+requested sampling period.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SaveColdRetain" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This function block copies cold-retain variables
+from RAM to backup media. This is done in order
+to make the cold-retain values survive a restart
+of the controller. The function block processes
+all the applications that are executing in the
+controller.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="Sema" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Sema, the semaphore function block, is designed to allow competing
+tasks to share a particular resource.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SerialConnectCore" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>The SerialConnectCore function block are used by the 
+PrintLines and the SerialConnect function blocks</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SerialOutput" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>This function block is a template for construction of an asynchronous write
+function block.
+
+The function block is thought to supported a free format, supporting
+protocols implemented in the generic variable communication software package..</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SetDT" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Sets the system time on the controller.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SetTimeZoneInfo" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Sets the time-zone information.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ShiftBool" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>ShiftBool is used as a shift register of optional
+length for bool values.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ShiftDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>ShiftDint is used as a shift register of optional
+length for dint values.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ShiftLBool" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>ShiftLBool is used as a shift register of optional
+number of places for bool values.
+All positions can be written and read.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ShiftLDint" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>ShiftLDint is used as a shift register of optional
+number of places for dint values.
+All positions can be written and read.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ShiftLReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>ShiftLReal is used as a shift register of optional
+number of places for real values.
+All positions can be written and read.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="ShiftReal" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>ShiftReal is used as a shift register of optional
+length for real values.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SinGen" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>SinGen is used to generate a sinus signal. 
+The frequency and amplitude are controlled 
+by inputs.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SqGen" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>SqGen is used to generate a square wave 
+with an optional number of amplitudes. 
+Each amplitude is determined by an input 
+and for each amplitude a time during which 
+it is to be maintained is specified.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SR" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>SR flip-flop.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="StringSelector" Protected="1" Hidden="1" Scope="public" InteractionWindow="InfoPar" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="1" ReservationState="NotReserved">
+    <Description>RegisterBool is used as a memory function block
+for bool values with an optional number of positions.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SystemDiagnostics" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="1" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Displays system diagnostic information.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="SystemDiagnosticsSM" Protected="1" Hidden="0" Scope="public" InteractionWindow="InfoPar" AlarmOwner="0" InstantiateAsAspectObject="1" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Displays system diagnostic information for the SM81x unit.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="Threshold" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Threshold is used to determine when more than, or
+equal to, a given number of Boolean values are true.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TimePulses" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Generates pulses synchronized to the real time clock.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TimerD" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>TimerD measures the elapsed time in negative 
+direction and gives indication  when a 
+specified level is past.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TimerOffHold" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Off-delay timer with hold input.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TimerOnHold" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>On-delay timer with hold input.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TimerOnOffHold" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>On/Off-delay timer with hold input.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TimerPulseHold" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Pulse timer with hold input.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TimerPulseHoldDel" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Pulse timer with hold input and delayed start.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TimerU" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>TimerU measures the elapsed time in positive 
+direction and gives indication  when a 
+specified level is past.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TOf" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Off-delay timer.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TOn" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>On-delay timer.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TOnGS" Protected="1" Hidden="1" Scope="private" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>On-delay timer.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="TP" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Pulse timer.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="Trigger" Protected="1" Hidden="0" Scope="public" InteractionWindow="" AlarmOwner="0" InstantiateAsAspectObject="0" SILLevel="SIL2" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description>Provides a combined time and event trigger function.</Description>
+  </FunctionBlockType>
+  <FunctionBlockType Name="VoteCommandHandler" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="0" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+  <FunctionBlockType Name="VotedCommandHandler" Protected="1" Hidden="1" Scope="public" InteractionWindow="" AlarmOwner="1" InstantiateAsAspectObject="1" SILLevel="SIL3" RestrictedSIL="0" SimulationMark="0" EmbeddedGraphicsVisible="0" ReservationState="NotReserved">
+    <Description/>
+  </FunctionBlockType>
+</FunctionBlockTypes>
+

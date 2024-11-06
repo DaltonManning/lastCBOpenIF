@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="" TypeID="260046848" TypeDescription="Loop Check Controller" Guid="70E3DBE1-0F3C-4204-995B-7D068E117BE4" TypeGuid="10A0C659-A227-488B-B7D7-8A920B24B587" TypeTimeStamp="2018-05-31-00:03:51.515" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:13.111" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2018-01-10-08:31:21.865" HWSettingsTS="1979-12-31-00:00:00.000" InstanceName="">
+  <ParameterSettings/>
+  <HWChannels>
+    <HWChannel Address="IW0" Name="AllUnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits>
+    <HWUnitRef Position="0" Guid="2837B6BE-F90F-4834-AA15-0F3105CE667E"/>
+    <HWUnitRef Position="1" Guid="CE7EE00E-83DA-4ACB-8EF0-F38BCBDF99FA"/>
+    <HWUnitRef Position="2" Guid="83D32DD0-2572-4187-BCDB-AC14591A6125"/>
+  </HardwareUnits>
+  <CheckSum Value="43442"/>
+</HWUnit>

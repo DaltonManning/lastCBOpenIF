@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<IED name="" desc="CI868IED" type="CI868">
+	<Services>
+		<DynAssociation/>
+		<SettingGroups/>
+		<GetDirectory/>
+		<GetDataObjectDefinition/>
+		<DataObjectDirectory/>
+		<GetDataSetValue/>
+		<ConfDataSet max="50" maxAttributes="200"/>
+		<ReadWrite/>
+		<GetCBValues/>
+		<GSESettings datSet="Conf" appID="Conf"/>
+		<GOOSE max="120"/>
+	</Services>
+	<AccessPoint name="" desc="Access Point Name">
+		<Server desc="Access Point Name">
+			<Authentication none="true"/>
+		</Server>
+	</AccessPoint>
+</IED>

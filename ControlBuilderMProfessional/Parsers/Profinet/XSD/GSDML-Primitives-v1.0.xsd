@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by Andreas Macher (Siemens AG) -->
+<xsd:schema targetNamespace="http://www.profibus.com/GSDML/2003/11/Primitives" xmlns="http://www.profibus.com/GSDML/2003/11/Primitives" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="1.0">
+	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+	<!--_________________________________________________________-->
+	<!-- *** Base Data Types for GSDML Device Description ***-->
+	<!--_________________________________________________________-->
+	<!-- *** Object definition for GSDML ***-->
+	<xsd:complexType name="ObjectT">
+		<xsd:annotation>
+			<xsd:documentation>Base definition for objects which can be referred.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="ID" type="IdT" use="required"/>
+	</xsd:complexType>
+	<xsd:simpleType name="IdT">
+		<xsd:annotation>
+			<xsd:documentation> Base type for object IDs. Any string without whitespaces at the beginning and end is allowed.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="(\S(.)*\S)|\S"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ValueListT">
+		<xsd:annotation>
+			<xsd:documentation>Base type for a list including ranges of unsigned values</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="((\d+\.\.\d+)|(\d+))(( \d+\.\.\d+)|( \d+))*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="SignedValueListT">
+		<xsd:annotation>
+			<xsd:documentation>Base type for a list including ranges of signed values</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="((\-?\d+\.\.\-?\d+)|(\-?\d+))(( \-?\d+\.\.\-?\d+)|( \-?\d+))*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TokenParameterT">
+		<xsd:annotation>
+			<xsd:documentation/>
+		</xsd:annotation>
+		<xsd:attribute name="Value" type="xsd:token" use="required"/>
+	</xsd:complexType>
+	<!--_________________________________________________________-->
+	<!-- *** Specialized Data Types from Primitives schema ***-->
+	<xsd:complexType name="LocalizableTextParameterT">
+		<xsd:attribute name="TextId" type="xsd:token" use="required"/>
+	</xsd:complexType>
+	<!--_________________________________________________________-->
+	<!-- *** Data Type aliases to map former GSD Datatypes ***-->
+	<xsd:simpleType name="unsigned8T">
+		<xsd:restriction base="xsd:unsignedByte"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="unsigned16T">
+		<xsd:restriction base="xsd:unsignedShort"/>
+	</xsd:simpleType>
+	<xsd:simpleType name="unsigned32T">
+		<xsd:restriction base="xsd:unsignedInt"/>
+	</xsd:simpleType>
+	<!--_________________________________________________________-->
+	<!-- *** Data Type for enumerations ***-->
+	<xsd:complexType name="FamilyT">
+		<xsd:annotation>
+			<xsd:documentation>Sets the Device family for identification purpose.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="MainFamily" type="FamilyEnumT" use="required"/>
+		<xsd:attribute name="ProductFamily" type="xsd:normalizedString" use="optional"/>
+	</xsd:complexType>
+	<xsd:simpleType name="FamilyEnumT">
+		<xsd:annotation>
+			<xsd:documentation>Defines the possible settings for Family/MainFamily.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="General"/>
+			<xsd:enumeration value="Drives"/>
+			<xsd:enumeration value="Switching Devices"/>
+			<xsd:enumeration value="I/O"/>
+			<xsd:enumeration value="Valves"/>
+			<xsd:enumeration value="Controllers"/>
+			<xsd:enumeration value="HMI"/>
+			<xsd:enumeration value="Encoders"/>
+			<xsd:enumeration value="NC/RC"/>
+			<xsd:enumeration value="Gateway"/>
+			<xsd:enumeration value="PLCs"/>
+			<xsd:enumeration value="Ident Systems"/>
+			<xsd:enumeration value="PA Profiles"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="GraphicsTypeEnumT">
+		<xsd:annotation>
+			<xsd:documentation>This is a list of possible types of a graphic representation of a module or submodule.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="DeviceSymbol"/>
+			<xsd:enumeration value="DeviceIcon"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DataItemTypeEnumT">
+		<xsd:annotation>
+			<xsd:documentation>Defines the possible Datatypes for DataItems</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Integer8"/>
+			<xsd:enumeration value="Integer16"/>
+			<xsd:enumeration value="Integer32"/>
+			<xsd:enumeration value="Integer64"/>
+			<xsd:enumeration value="Unsigned8"/>
+			<xsd:enumeration value="Unsigned16"/>
+			<xsd:enumeration value="Unsigned32"/>
+			<xsd:enumeration value="Unsigned64"/>
+			<xsd:enumeration value="Float32"/>
+			<xsd:enumeration value="Float64"/>
+			<xsd:enumeration value="Date"/>
+			<xsd:enumeration value="TimeOfDay with date indication"/>
+			<xsd:enumeration value="TimeOfDay without date indication"/>
+			<xsd:enumeration value="TimeDifference with date indication"/>
+			<xsd:enumeration value="TimeDifference without date indication"/>
+			<xsd:enumeration value="NetworkTime"/>
+			<xsd:enumeration value="NetworkTimeDifference"/>
+			<xsd:enumeration value="VisibleString"/>
+			<xsd:enumeration value="OctetString"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="IODataConsistencyEnumT">
+		<xsd:annotation>
+			<xsd:documentation>Specifies the consistency behaviour </xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Item consistency"/>
+			<xsd:enumeration value="All items consistency"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DataTypeEnumT">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Bit"/>
+			<xsd:enumeration value="BitArea"/>
+			<xsd:enumeration value="Integer8"/>
+			<xsd:enumeration value="Integer16"/>
+			<xsd:enumeration value="Integer32"/>
+			<xsd:enumeration value="Integer64"/>
+			<xsd:enumeration value="Unsigned8"/>
+			<xsd:enumeration value="Unsigned16"/>
+			<xsd:enumeration value="Unsigned32"/>
+			<xsd:enumeration value="Unsigned64"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

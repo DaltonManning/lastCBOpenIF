@@ -1,0 +1,2650 @@
+<?xml version="1.0"?>
+<DataTypeTemplates>
+	<LN0>
+		<LNodeType id="CI868@IEC61850@@@LLN0@" desc="1.0-0" lnClass="LLN0">
+	<Private type="ABB_CBM_TypeDefinition">
+    	<cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+        <cbm:Prefix></cbm:Prefix>
+        <cbm:Name>LLN0</cbm:Name>
+        <cbm:Suffix></cbm:Suffix>
+        <cbm:Version></cbm:Version>
+        <cbm:DeviceType>CI868</cbm:DeviceType>
+        <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+	</Private>
+   	<DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+  	<DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+  	<DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+  	<DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_ln0@"/>
+</LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="HealthKind">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_ln0@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_ln0</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>CI868 Processor Module PM86x</Val>
+      </DA>
+      <DA name="configRev" fc="DC" bType="VisString255"/>
+      <DA name="ldNs" fc="EX" bType="VisString255">
+        <Val>IEC 61850-7-4:2003</Val>
+      </DA>
+    </DOType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="CtlModelKind">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="HealthKind">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+	</LN0>
+	<LPHD>
+		<LNodeType id="CI868@IEC61850@@@Physical Device@" desc="1.0-0" lnClass="LPHD">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix></cbm:Prefix>
+          <cbm:Name>Physical Device</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="PhyHealth" desc="Physical device health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="PhyNam" desc="Physical  device name" type="CI868@IEC61850@@DPL@"/>
+      <DO name="Proxy" desc="Device is proxy" type="CI868@IEC61850@@SPS@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="HealthKind">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@DPL@" cdc="DPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>DPL</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="hwRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPS@" cdc="SPS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPS</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<EnumType id="HealthKind">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+	</LPHD>
+	<VCAVCO>
+		<LNodeType id="CI868@IEC61850@@VC@Busbar Voltage Control@" desc="1.0-0/Bus Bar Voltage Control Function" lnClass="AVCO">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>VC</cbm:Prefix>
+          <cbm:Name>Busbar Voltage Control</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="Loc" desc="Local operation" type="CI868@IEC61850@@SPS@"/>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="Str" desc="Start of Operation" type="CI868@IEC61850@@ACD_simple@"/>
+      <DO name="Op" desc="Operation of Function" type="CI868@IEC61850@@ACT_simple@"/>
+      <DO name="SPCSO1" desc="Voltage Raise Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO2" desc="Voltage Lower Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO3" desc="Stop Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="Vol" desc="Voltage Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Health">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPS@" cdc="SPS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPS</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@ACD_simple@" cdc="ACD">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACD_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="dirGeneral" fc="ST" dchg="true" bType="Enum" type="dir">
+        <Val>unknown</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@ACT_simple@" cdc="ACT">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACT_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPC_simple@" cdc="SPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@MV_simple@" cdc="MV">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>MV_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="mag" fc="MX" dchg="true" bType="Struct" type="CI868@IEC61850@@AnalogueValue@"/>
+      <DA name="q" fc="MX" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="MX" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="ctlModel">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Health">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="dir">
+      <EnumVal ord="0">unknown</EnumVal>
+      <EnumVal ord="1">forward</EnumVal>
+      <EnumVal ord="2">backward</EnumVal>
+      <EnumVal ord="3">both</EnumVal>
+    </EnumType>
+
+
+
+	</VCAVCO>
+	<VC1AVCO>
+		<LNodeType id="CI868@IEC61850@@VC1@Busbar Voltage Control@" desc="Busbar Voltage Control" lnClass="AVCO">
+			<DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+			<DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+			<DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+			<DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+			<DO name="Loc" desc="Local Operation" type="CI868@IEC61850@@SPS@"/>
+			<DO name="Str" desc="Start of Operation" type="CI868@IEC61850@@ACD_simple@"/>
+			<DO name="Op" desc="Operation of Function" type="CI868@IEC61850@@ACT_simple@"/>
+			<DO name="TapChg" desc="Change Reactive Power " type="CI868@IEC61850@@BSC@"/>
+			<DO name="Vol" desc="Voltage Set Point Information" type="CI868@IEC61850@@MV_simple@"/>		
+		</LNodeType>
+		<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+			<DAI name="stval"/>
+			<DAI name="q"/>
+			<DAI name="t"/>
+			<DAI name="ctlModel"/>
+		</DOType>
+		<DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+			<DAI name="stVal"/>
+			<DAI name="q"/>
+			<DAI name="t"/>
+		</DOType>
+		<DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+			<DAI name="stVal"/>
+			<DAI name="q"/>
+			<DAI name="t"/>
+		</DOType>
+		<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+			<DAI name="vendor"/>
+			<DAI name="swRev"/>
+			<DAI name="d"/>
+		</DOType>
+		<DOType id="CI868@IEC61850@@BSC@" cdc="BSC">
+				<DA name="valWTr" fc="ST" dchg="true" bType="Struct" type="CI868@IEC61850@@BSCAnalogueValue@"/>
+				<DA name="q" fc="ST" dchg="true" bType="Quality">
+					<Val>0</Val>
+				</DA>
+				<DA name="t" fc="ST" dchg="true" bType="Timestamp">
+					<Val>0</Val>
+				</DA>
+			</DOType>
+		<DOType id="CI868@IEC61850@@ACD_simple@" cdc="ACD">
+			<DAI name="general"/>
+			<DAI name="dirgeneral"/>
+			<DAI name="q"/>
+			<DAI name="t"/>
+		</DOType>
+		<DOType id="CI868@IEC61850@@ACT_simple@" cdc="ACT">
+			<DAI name="general"/>
+			<DAI name="q"/>
+			<DAI name="t"/>	
+		</DOType>
+		<DOType id="CI868@IEC61850@@SPS@" cdc="SPS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPS</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+		<DOType id="CI868@IEC61850@@MV_simple@" cdc="MV">
+			<DAI name="mag"/>
+			<DAI name="q"/>
+			<DAI name="t"/>
+		</DOType>
+			<DAType id = "CI868@IEC61850@@AnalogueValue@">
+      	  	<BDA name = "f" bType = "FLOAT32"/>
+    	</DAType>
+		<DAType id="CI868@IEC61850@@BSCAnalogueValue@">
+			<BDA name="posVal" bType="INT32"/>
+		</DAType>
+		<EnumType id="Mod">
+		<EnumVal ord="1">on</EnumVal>
+		<EnumVal ord="2">blocked</EnumVal>
+		<EnumVal ord="3">test</EnumVal>
+		<EnumVal ord="4">test/blocked</EnumVal>
+		<EnumVal ord="5">off</EnumVal>
+	</EnumType>
+	<EnumType id="ctlModel">
+		<EnumVal ord="0">status-only</EnumVal>
+		<EnumVal ord="1">direct-with-normal-security</EnumVal>
+		<EnumVal ord="2">sbo-with-normal-security</EnumVal>
+		<EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+		<EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+	</EnumType>
+	<EnumType id="Beh">
+		<EnumVal ord="1">on</EnumVal>
+		<EnumVal ord="2">blocked</EnumVal>
+		<EnumVal ord="3">test</EnumVal>
+		<EnumVal ord="4">test/blocked</EnumVal>
+		<EnumVal ord="5">off</EnumVal>
+	</EnumType>
+	<EnumType id="Health">
+		<EnumVal ord="1">Ok</EnumVal>
+		<EnumVal ord="2">Warning</EnumVal>
+		<EnumVal ord="3">Alarm</EnumVal>
+	</EnumType>
+	<EnumType id="dir">
+		<EnumVal ord="0">unknown</EnumVal>
+		<EnumVal ord="1">forward</EnumVal>
+		<EnumVal ord="2">backward</EnumVal>
+		<EnumVal ord="3">both</EnumVal>
+	</EnumType>
+	</VC1AVCO>
+	<QCARCO>
+		<LNodeType id="CI868@IEC61850@@QC@Generator Reactive Power Control@" desc="1.0-0/Generator Reactive Power Control Function" lnClass="ARCO">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>QC</cbm:Prefix>
+          <cbm:Name>Generator Reactive Power Control</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="Str" desc="Start of Operation" type="CI868@IEC61850@@ACD_simple@"/>
+      <DO name="Op" desc="Operation of Function" type="CI868@IEC61850@@ACT_simple@"/>
+      <DO name="SPCSO1" desc="Voltage Raise Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO2" desc="Voltage Lower Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="Vol" desc="Voltage Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="VolAmpr" desc="Reactive Power Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="PwrFact" desc="Power Factor Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="Loc" desc="Local operation" type="CI868@IEC61850@@SPS@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Health">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACD_simple@" cdc="ACD">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACD_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="dirGeneral" fc="ST" dchg="true" bType="Enum" type="dir">
+        <Val>unknown</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACT_simple@" cdc="ACT">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACT_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPC_simple@" cdc="SPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@MV_simple@" cdc="MV">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>MV_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="mag" fc="MX" dchg="true" bType="Struct" type="CI868@IEC61850@@AnalogueValue@"/>
+      <DA name="q" fc="MX" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="MX" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPS@" cdc="SPS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPS</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DAType id="CI868@IEC61850@@AnalogueValue@">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataAttributeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>AnalogueValue</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataAttributeType>
+      </Private>
+      <BDA name="f" bType="FLOAT32"/>
+    </DAType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="ctlModel">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Health">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="dir">
+      <EnumVal ord="0">unknown</EnumVal>
+      <EnumVal ord="1">forward</EnumVal>
+      <EnumVal ord="2">backward</EnumVal>
+      <EnumVal ord="3">both</EnumVal>
+    </EnumType>
+	</QCARCO>
+	<QC1ARCO>
+		<LNodeType id="CI868@IEC61850@@QC1@Generator Reactive Power Control@" desc="Generator Reactive Power Control" lnClass="ARCO">
+			<DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+			<DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+			<DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+			<DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+			<DO name="Loc" desc="Local Operation" type="CI868@IEC61850@@SPS@"/>
+			<DO name="Str" desc="Start of Operation" type="CI868@IEC61850@@ACD_simple@"/>
+			<DO name="Op" desc="Operation of Function" type="CI868@IEC61850@@ACT_simple@"/>
+			<DO name="TapChg" desc="Change Reactive Power" type="CI868@IEC61850@@BSC@"/>
+			<DO name="Vol" desc="Voltage Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+			<DO name="VolAmpr" desc="Reactive Power Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+			<DO name="PwrFact" desc="Power Factor Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+		</LNodeType>
+		<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+			<DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+				<Val>on</Val>
+			</DA>
+			<DA name="q" fc="ST" qchg="true" bType="Quality">
+				<Val>0</Val>
+			</DA>
+			<DA name="t" fc="ST" bType="Timestamp">
+				<Val>0</Val>
+			</DA>
+			<DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+				<Val>status-only</Val>
+			</DA>
+		</DOType>
+		<DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+			<DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+				<Val>on</Val>
+			</DA>
+			<DA name="q" fc="ST" qchg="true" bType="Quality">
+				<Val>0</Val>
+			</DA>
+			<DA name="t" fc="ST" bType="Timestamp">
+				<Val>0</Val>
+			</DA>
+		</DOType>
+		<DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+			<DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Health">
+				<Val>Ok</Val>
+			</DA>
+			<DA name="q" fc="ST" qchg="true" bType="Quality">
+				<Val>0</Val>
+			</DA>
+			<DA name="t" fc="ST" bType="Timestamp">
+				<Val>0</Val>
+			</DA>
+		</DOType>
+		<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+			<DA name="vendor" fc="DC" bType="VisString255">
+				<Val>ABB</Val>
+			</DA>
+			<DA name="swRev" fc="DC" bType="VisString255">
+				<Val>1.0</Val>
+			</DA>
+			<DA name="d" fc="DC" bType="VisString255">
+				<Val>0</Val>
+			</DA>
+		</DOType>
+		<DOType id = "CI868@IEC61850@@ACD_simple@" cdc = "ACD">
+        	<DA name = "general" fc = "ST" dchg = "true" bType = "BOOLEAN">
+             	<Val>0</Val>
+        	</DA>
+        	<DA name = "dirGeneral" fc = "ST" dchg = "true" bType = "Enum" type = "dir">
+            	<Val>unknown</Val>
+        	</DA>
+        	<DA name = "q" fc = "ST" qchg = "true" bType = "Quality">
+           	 <Val>0</Val>
+        	</DA>
+       	 	<DA name = "t" fc = "ST" bType = "Timestamp">
+            	<Val>0</Val>
+        	</DA>
+    	</DOType>
+		<DOType id="CI868@IEC61850@@ACT_simple@" cdc="ACT">
+			<DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+				<Val>0</Val>
+			</DA>
+			<DA name="q" fc="ST" qchg="true" bType="Quality">
+				<Val>0</Val>
+			</DA>
+			<DA name="t" fc="ST" bType="Timestamp">
+				<Val>0</Val>
+			</DA>
+		</DOType>
+		<DOType id="CI868@IEC61850@@SPS@" cdc="SPS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPS</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+		<DOType id = "CI868@IEC61850@@MV_simple@" cdc = "MV">
+            <DA name = "mag" fc = "MX" dchg = "true" bType = "Struct" type = "CI868@IEC61850@@AnalogueValue@"/>
+            <DA name = "q" fc = "MX" qchg = "true" bType = "Quality">
+                <Val>0</Val>
+            </DA>
+            <DA name = "t" fc = "MX" bType = "Timestamp">
+                <Val>0</Val>
+            </DA>
+        </DOType>
+		<DOType id="CI868@IEC61850@@BSC@" cdc="BSC">
+				<DA name="valWTr" fc="ST" dchg="true" bType="Struct" type="CI868@IEC61850@@BSCAnalogueValue@"/>
+				<DA name="q" fc="ST" dchg="true" bType="Quality">
+					<Val>0</Val>
+				</DA>
+				<DA name="t" fc="ST" dchg="true" bType="Timestamp">
+					<Val>0</Val>
+				</DA>
+			</DOType>
+		<DAType id = "CI868@IEC61850@@AnalogueValue@">
+            <BDA name = "f" bType = "FLOAT32"/>
+        </DAType>		
+		<DAType id="CI868@IEC61850@@BSCAnalogueValue@">
+			<BDA name="posVal" bType="INT32"/>
+		</DAType>		
+		<EnumType id="Mod">
+			<EnumVal ord="1">on</EnumVal>
+			<EnumVal ord="2">blocked</EnumVal>
+			<EnumVal ord="3">test</EnumVal>
+			<EnumVal ord="4">test/blocked</EnumVal>
+			<EnumVal ord="5">off</EnumVal>
+		</EnumType>
+		<EnumType id="ctlModel">
+			<EnumVal ord="0">status-only</EnumVal>
+			<EnumVal ord="1">direct-with-normal-security</EnumVal>
+			<EnumVal ord="2">sbo-with-normal-security</EnumVal>
+			<EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+			<EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+		</EnumType>
+		<EnumType id="Beh">
+			<EnumVal ord="1">on</EnumVal>
+			<EnumVal ord="2">blocked</EnumVal>
+			<EnumVal ord="3">test</EnumVal>
+			<EnumVal ord="4">test/blocked</EnumVal>
+			<EnumVal ord="5">off</EnumVal>
+		</EnumType>
+		<EnumType id="Health">
+			<EnumVal ord="1">Ok</EnumVal>
+			<EnumVal ord="2">Warning</EnumVal>
+			<EnumVal ord="3">Alarm</EnumVal>
+		</EnumType>
+		<EnumType id="dir">
+			<EnumVal ord="0">unknown</EnumVal>
+			<EnumVal ord="1">forward</EnumVal>
+			<EnumVal ord="2">backward</EnumVal>
+			<EnumVal ord="3">both</EnumVal>
+		</EnumType>
+	</QC1ARCO>
+	<PCGAPC>
+		<LNodeType id="CI868@IEC61850@@PC@Generator Real Power Control@" desc="1.0-0/Generator Real Power Control Activation, Operation and Command Information" lnClass="GAPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>PC</cbm:Prefix>
+          <cbm:Name>Generator Real Power Control</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="Str" desc="Start of Operation" type="CI868@IEC61850@@ACD_simple@"/>
+      <DO name="Op" desc="Operation of Function" type="CI868@IEC61850@@ACT_simple@" transient="true"/>
+      <DO name="SPCSO1" desc="Frequency (Speed) Raise Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO2" desc="Frequency (Speed) Lower Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="Watt" desc="Real Power Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="Hz" desc="Frequency Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Health">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACD_simple@" cdc="ACD">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACD_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="dirGeneral" fc="ST" dchg="true" bType="Enum" type="dir">
+        <Val>unknown</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACT_simple@" cdc="ACT">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACT_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPC_simple@" cdc="SPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@MV_simple@" cdc="MV">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>MV_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="mag" fc="MX" dchg="true" bType="Struct" type="CI868@IEC61850@@AnalogueValue@"/>
+      <DA name="q" fc="MX" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="MX" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DAType id="CI868@IEC61850@@AnalogueValue@">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataAttributeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>AnalogueValue</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataAttributeType>
+      </Private>
+      <BDA name="f" bType="FLOAT32"/>
+    </DAType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="ctlModel">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Health">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="dir">
+      <EnumVal ord="0">unknown</EnumVal>
+      <EnumVal ord="1">forward</EnumVal>
+      <EnumVal ord="2">backward</EnumVal>
+      <EnumVal ord="3">both</EnumVal>
+    </EnumType>
+	</PCGAPC>
+	<GFGGIO>
+		<LNodeType id="CI868@IEC61850@@GF@Generic Functions@" desc="1.0-0/General Function Command Information" lnClass="GGIO">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>GF</cbm:Prefix>
+          <cbm:Name>Generic Functions</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="SPCSO1" desc="Single Point Command Information 1" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO2" desc="Single Point Command Information 2" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO3" desc="Single Point Command Information 3" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO4" desc="Single Point Command Information 4" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO5" desc="Single Point Command Information 5" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="DPCSO1" desc="Double Point Command Information 1" type="CI868@IEC61850@@DPC_simple@"/>
+      <DO name="DPCSO2" desc="Double Point Command Information 2" type="CI868@IEC61850@@DPC_simple@"/>
+      <DO name="DPCSO3" desc="Double Point Command Information 3" type="CI868@IEC61850@@DPC_simple@"/>
+      <DO name="DPCSO4" desc="Double Point Command Information 4" type="CI868@IEC61850@@DPC_simple@"/>
+      <DO name="DPCSO5" desc="Double Point Command Information 5" type="CI868@IEC61850@@DPC_simple@"/>
+      <DO name="ISCSO1" desc="Integer Value Set Point Command Information 1" type="CI868@IEC61850@@INC_simple@"/>
+      <DO name="ISCSO2" desc="Integer Value Set Point Command Information 2" type="CI868@IEC61850@@INC_simple@"/>
+      <DO name="ISCSO3" desc="Integer Value Set Point Command Information 3" type="CI868@IEC61850@@INC_simple@"/>
+      <DO name="ISCSO4" desc="Integer Value Set Point Command Information 4" type="CI868@IEC61850@@INC_simple@"/>
+      <DO name="ISCSO5" desc="Integer Value Set Point Command Information 5" type="CI868@IEC61850@@INC_simple@"/>
+      <DO name="AnIn1" desc="Real Value Information 1" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="AnIn2" desc="Real Value Information 2" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="AnIn3" desc="Real Value Information 3" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="AnIn4" desc="Real Value Information 4" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="AnIn5" desc="Real Value Information 5" type="CI868@IEC61850@@MV_simple@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+	  </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="HealthKind">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPC_simple@" cdc="SPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@DPC_simple@" cdc="DPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>DPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Dbpos">
+        <Val></Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INC_simple@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="INT32">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@MV_simple@" cdc="MV">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>MV_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="mag" fc="MX" dchg="true" bType="Struct" type="CI868@IEC61850@@AnalogueValue@"/>
+      <DA name="q" fc="MX" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="MX" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<DAType id="CI868@IEC61850@@AnalogueValue@">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataAttributeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>AnalogueValue</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataAttributeType>
+      </Private>
+      <BDA name="f" bType="FLOAT32"/>
+    </DAType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="CtlModelKind">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="HealthKind">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+	</GFGGIO>
+	<LSGAPC>
+		<LNodeType id="CI868@IEC61850@@LS@Load Shedding@" desc="1.0-0/Load Shedding Initiation and Activation Information" lnClass="GAPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>LS</cbm:Prefix>
+          <cbm:Name>Load Shedding</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="Str" desc="Start of Operation" type="CI868@IEC61850@@ACD_simple@"/>
+      <DO name="Op" desc="Operation of Function" type="CI868@IEC61850@@ACT_simple@" transient="true"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="HealthKind">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACD_simple@" cdc="ACD">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACD_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="dirGeneral" fc="ST" dchg="true" bType="Enum" type="FaultDirectionKind">
+        <Val>unknown</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACT_simple@" cdc="ACT">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACT_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="CtlModelKind">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="HealthKind">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="FaultDirectionKind">
+      <EnumVal ord="0">unknown</EnumVal>
+      <EnumVal ord="1">forward</EnumVal>
+      <EnumVal ord="2">backward</EnumVal>
+      <EnumVal ord="3">both</EnumVal>
+    </EnumType>
+	</LSGAPC>
+	<LSPTRC>
+		<LNodeType id="CI868@IEC61850@@LS@Load Shed Commands@" desc="1.0-0/Load Shedding Operation and Command Information" lnClass="PTRC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>LS</cbm:Prefix>
+          <cbm:Name>Load Shed Commands</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="Str" desc="Dummy" type="CI868@IEC61850@@ACD_simple@"/>
+      <DO name="Op" desc="Operation of Function" type="CI868@IEC61850@@ACT_simple@"/>
+      <DO name="Tr1" desc="Trip Command Command Information - 1" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr2" desc="Trip Command Command Information - 2" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr3" desc="Trip Command Command Information - 3" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr4" desc="Trip Command Command Information - 4" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr5" desc="Trip Command Command Information - 5" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr6" desc="Trip Command Command Information - 6" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr7" desc="Trip Command Command Information - 7" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr8" desc="Trip Command Command Information - 8" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr9" desc="Trip Command Command Information - 9" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+      <DO name="Tr10" desc="Trip Command Command Information - 10" type="CI868@IEC61850@@ACT_simple_TrVariants@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="HealthKind">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACD_simple@" cdc="ACD">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACD_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="dirGeneral" fc="ST" dchg="true" bType="Enum" type="FaultDirectionKind">
+        <Val>unknown</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+	<DOType id="CI868@IEC61850@@ACT_simple@" cdc="ACT">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACT_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACT_simple_TrVariants@" cdc="ACT">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACT_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+	  <DA name="dataNs" bType="VisString255" sAddr="-1,-1,-1" fc="EX">
+        <Val>IEC 61850-7-4:2003A</Val>
+      </DA>
+    </DOType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="CtlModelKind">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="HealthKind">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="FaultDirectionKind">
+      <EnumVal ord="0">unknown</EnumVal>
+      <EnumVal ord="1">forward</EnumVal>
+      <EnumVal ord="2">backward</EnumVal>
+      <EnumVal ord="3">both</EnumVal>
+    </EnumType>
+	</LSPTRC>
+	<TC1ATCC>
+		<LNodeType id="CI868@IEC61850@@TC1@Transformer Tap Control@" desc="1.0-0/Automatic Tap Change Control Function Activation, Operation and Command Information" lnClass="ATCC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>TC1</cbm:Prefix>
+          <cbm:Name>Transformer Tap Control</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="Loc" desc="Local operation" type="CI868@IEC61850@@SPS@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="ParOp" desc="Parallel/Independent operation" type="CI868@IEC61850@@DPC_simple@"/>
+      <DO name="Vol" desc="Voltage Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="SPCSO1" desc="Tap Raise Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO2" desc="Tap Lower Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO3" desc="Stop Command Information" type="CI868@IEC61850@@SPC_simple@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Health">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPS@" cdc="SPS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPS</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@DPC_simple@" cdc="DPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>DPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Dbpos">
+        <Val>bad</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@MV_simple@" cdc="MV">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>MV_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="mag" fc="MX" dchg="true" bType="Struct" type="CI868@IEC61850@@AnalogueValue@"/>
+      <DA name="q" fc="MX" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="MX" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPC_simple@" cdc="SPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DAType id="CI868@IEC61850@@AnalogueValue@">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataAttributeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>AnalogueValue</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataAttributeType>
+      </Private>
+      <BDA name="f" bType="FLOAT32"/>
+    </DAType>
+    <EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="ctlModel">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Health">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="dir">
+      <EnumVal ord="0">unknown</EnumVal>
+      <EnumVal ord="1">forward</EnumVal>
+      <EnumVal ord="2">backward</EnumVal>
+      <EnumVal ord="3">both</EnumVal>
+    </EnumType>
+	</TC1ATCC>
+	<TC2ATCC>
+		<LNodeType id="CI868@IEC61850@@TC2@Transformer Tap Control@" desc="1.0-0/Automatic Tap Change Control Function Activation, Operation and Command Information" lnClass="ATCC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>TC2</cbm:Prefix>
+          <cbm:Name>Transformer Tap Control</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="Loc" desc="Local operation" type="CI868@IEC61850@@SPS@"/>
+      <DO name="ParOp" desc="Parallel/Independent operation" type="CI868@IEC61850@@DPC_simple@"/>
+      <DO name="Vol" desc="Voltage Set Point Information" type="CI868@IEC61850@@MV_simple@"/>
+      <DO name="ISCSO" desc="Tap Position Command Information" type="CI868@IEC61850@@INC_simple@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Health">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPS@" cdc="SPS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPS</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@DPC_simple@" cdc="DPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>DPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Dbpos">
+        <Val>bad</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@MV_simple@" cdc="MV">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>MV_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="mag" fc="MX" dchg="true" bType="Struct" type="CI868@IEC61850@@AnalogueValue@"/>
+      <DA name="q" fc="MX" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="MX" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@INC_simple@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="INT32">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DAType id="CI868@IEC61850@@AnalogueValue@">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataAttributeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>AnalogueValue</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataAttributeType>
+      </Private>
+      <BDA name="f" bType="FLOAT32"/>
+    </DAType>
+    <EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="ctlModel">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Health">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="dir">
+      <EnumVal ord="0">unknown</EnumVal>
+      <EnumVal ord="1">forward</EnumVal>
+      <EnumVal ord="2">backward</EnumVal>
+      <EnumVal ord="3">both</EnumVal>
+    </EnumType>
+	</TC2ATCC>
+	<BBGAPC>
+		<LNodeType id="CI868@IEC61850@@BB@Busbar Change@" desc="1.0-0/BusBar Change Function" lnClass="GAPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Prefix>BB</cbm:Prefix>
+          <cbm:Name>Busbar Change</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+      </Private>
+      <DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+      <DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+      <DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+      <DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+      <DO name="Str" desc="Start of Operation" type="CI868@IEC61850@@ACD_simple@"/>
+      <DO name="Op" desc="Operation of Function" type="CI868@IEC61850@@ACT_simple@" transient="true"/>
+      <DO name="SPCSO1" desc="Bay Command Information - 1" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO2" desc="Bay Command Information - 2" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO3" desc="Bay Command Information - 3" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO4" desc="Bay Command Information - 4" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO5" desc="Bay Command Information - 5" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO6" desc="Bay Command Information - 6" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO7" desc="Bay Command Information - 7" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO8" desc="Bay Command Information - 8" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO9" desc="Bay Command Information - 9" type="CI868@IEC61850@@SPC_simple@"/>
+      <DO name="SPCSO10" desc="Bay Command Information - 10" type="CI868@IEC61850@@SPC_simple@"/>
+    </LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Health">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>LPL_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="vendor" fc="DC" bType="VisString255">
+        <Val>ABB</Val>
+      </DA>
+      <DA name="swRev" fc="DC" bType="VisString255">
+        <Val>1.0</Val>
+      </DA>
+      <DA name="d" fc="DC" bType="VisString255">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@ACD_simple@" cdc="ACD">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACD_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="dirGeneral" fc="ST" dchg="true" bType="Enum" type="dir">
+        <Val>unknown</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+    <DOType id="CI868@IEC61850@@ACT_simple@" cdc="ACT">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>ACT_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="general" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@SPC_simple@" cdc="SPC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>SPC_simple</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="BOOLEAN">
+        <Val>0</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+        <Val>0</Val>
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val>0</Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="ctlModel">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="ctlModel">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="Health">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+    <EnumType id="dir">
+      <EnumVal ord="0">unknown</EnumVal>
+      <EnumVal ord="1">forward</EnumVal>
+      <EnumVal ord="2">backward</EnumVal>
+      <EnumVal ord="3">both</EnumVal>
+    </EnumType>
+	</BBGAPC>
+	<ITCI>
+		<LNodeType id="CI868@IEC61850@@MMS@Load Shedding@" desc="1.0-0" lnClass="ITCI">
+	<Private type="ABB_CBM_TypeDefinition">
+    	<cbm:LogicalNodeType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+        <cbm:Prefix></cbm:Prefix>
+        <cbm:Name>ITCI</cbm:Name>
+        <cbm:Suffix></cbm:Suffix>
+        <cbm:Version></cbm:Version>
+        <cbm:DeviceType>CI868</cbm:DeviceType>
+        <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:LogicalNodeType>
+	</Private>
+   	<DO name="Mod" desc="Mode" type="CI868@IEC61850@@INC_simple_enum@"/>
+  	<DO name="Beh" desc="Behaviour" type="CI868@IEC61850@@INS_beh@"/>
+  	<DO name="Health" desc="Health" type="CI868@IEC61850@@INS_health@"/>
+  	<DO name="NamPlt" desc="Name plate" type="CI868@IEC61850@@LPL_simple@"/>
+</LNodeType>
+<DOType id="CI868@IEC61850@@INC_simple_enum@" cdc="INC">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INC_simple_enum</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Mod">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+      <DA name="ctlModel" fc="CF" bType="Enum" type="CtlModelKind">
+        <Val>status-only</Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INS_beh@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_beh</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="Beh">
+        <Val>on</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+<DOType id="CI868@IEC61850@@INS_health@" cdc="INS">
+      <Private type="ABB_CBM_TypeDefinition">
+        <cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+          <cbm:Name>INS_health</cbm:Name>
+          <cbm:Suffix></cbm:Suffix>
+          <cbm:Version></cbm:Version>
+          <cbm:DeviceType>CI868</cbm:DeviceType>
+          <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+      </Private>
+      <DA name="stVal" fc="ST" dchg="true" bType="Enum" type="HealthKind">
+        <Val>Ok</Val>
+      </DA>
+      <DA name="q" fc="ST" qchg="true" bType="Quality">
+      </DA>
+      <DA name="t" fc="ST" bType="Timestamp">
+        <Val></Val>
+      </DA>
+    </DOType>
+   <DOType id="CI868@IEC61850@@LPL_simple@" cdc="LPL">
+   	<Private type="ABB_CBM_TypeDefinition">
+    	<cbm:DataObjectType xmlns:cbm="http://www.abb.ch/CommunicationConfigurationTool">
+        <cbm:Name>LPL_simple</cbm:Name>
+        <cbm:Suffix></cbm:Suffix>
+        <cbm:Version></cbm:Version>
+        <cbm:DeviceType>CI868</cbm:DeviceType>
+        <cbm:ProtocolType>IEC61850</cbm:ProtocolType>
+        </cbm:DataObjectType>
+  	</Private>
+    <DA name="vendor" fc="DC" bType="VisString255">
+    	<Val>ABB</Val>
+   	</DA>
+   	<DA name="swRev" fc="DC" bType="VisString255">
+      	<Val>1.0</Val>
+  	</DA>
+   	<DA name="d" fc="DC" bType="VisString255">
+      	<Val>0</Val>
+   	</DA>
+   	</DOType>
+<EnumType id="Mod">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="CtlModelKind">
+      <EnumVal ord="0">status-only</EnumVal>
+      <EnumVal ord="1">direct-with-normal-security</EnumVal>
+      <EnumVal ord="2">sbo-with-normal-security</EnumVal>
+      <EnumVal ord="3">direct-with-enhanced-security</EnumVal>
+      <EnumVal ord="4">sbo-with-enhanced-security</EnumVal>
+    </EnumType>
+    <EnumType id="Beh">
+      <EnumVal ord="1">on</EnumVal>
+      <EnumVal ord="2">blocked</EnumVal>
+      <EnumVal ord="3">test</EnumVal>
+      <EnumVal ord="4">test/blocked</EnumVal>
+      <EnumVal ord="5">off</EnumVal>
+    </EnumType>
+    <EnumType id="HealthKind">
+      <EnumVal ord="1">Ok</EnumVal>
+      <EnumVal ord="2">Warning</EnumVal>
+      <EnumVal ord="3">Alarm</EnumVal>
+    </EnumType>
+	</ITCI>
+</DataTypeTemplates>

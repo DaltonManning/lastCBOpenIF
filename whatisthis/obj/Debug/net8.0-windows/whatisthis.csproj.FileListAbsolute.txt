@@ -1,0 +1,16 @@
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\Interop.COMAdmin.dll
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\Interop.COMSVCSLib.dll
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\Interop.CBOpenIFHelper.dll
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\Interop.Microsoft.Vbe.Interop.Forms.dll
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\Interop.CONTROLBUILDERLib.dll
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\Interop.stdole.dll
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\Interop.MSXML2.dll
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\Interop.OLEDBError.dll
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\whatisthis.csproj.ResolveComReference.cache
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\RemoteAnalysis.Form1.resources
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\RemoteAnalysis.RemoteAnalysisView.resources
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\whatisthis.csproj.GenerateResource.cache
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\whatisthis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\whatisthis.AssemblyInfoInputs.cache
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\whatisthis.AssemblyInfo.cs
+C:\Users\DM\source\repos\whatisthis\obj\Debug\net8.0-windows\whatisthis.csproj.CoreCompileInputs.cache

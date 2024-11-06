@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Communication>
+	<SubNetwork name="NETWORK" type="8-MMS">
+		<ConnectedAP iedName="" apName="" desc=" IEC61850 Access Point">
+			<Address>
+				<P type="IP">172.16.0.0</P>
+				<P type="IP-SUBNET">255.255.255.0</P>
+				<P type="IP-GATEWAY">172.16.0.1</P>
+				<P type="OSI-AP-Title">1,3,9999,23</P>
+				<P type="OSI-AE-Qualifier">23</P>
+				<P type="OSI-TSEL">0001</P>
+				<P type="OSI-PSEL">00000001</P>
+				<P type="OSI-SSEL">0001</P>
+			</Address>
+			<GSE ldInst="" cbName="new_gcb1">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-01</P>
+					<P type="APPID">0001</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">001</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb2">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-02</P>
+					<P type="APPID">0002</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">002</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb3">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-03</P>
+					<P type="APPID">0003</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">003</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb4">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-04</P>
+					<P type="APPID">0004</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">004</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb5">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-05</P>
+					<P type="APPID">0005</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">005</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb6">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-06</P>
+					<P type="APPID">0006</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">006</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb7">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-07</P>
+					<P type="APPID">0007</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">007</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb8">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-08</P>
+					<P type="APPID">0008</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">008</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb9">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-09</P>
+					<P type="APPID">0009</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">009</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+			<GSE ldInst="" cbName="new_gcb10">
+				<Address>
+					<P type="MAC-Address">01-0C-CD-01-00-10</P>
+					<P type="APPID">0010</P>
+					<P type="VLAN-PRIORITY">1</P>
+					<P type="VLAN-ID">010</P>
+				</Address>
+				<MinTime unit="s">4</MinTime>
+				<MaxTime unit="s">1000</MaxTime>
+			</GSE>
+		</ConnectedAP>
+	</SubNetwork>
+</Communication>

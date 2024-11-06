@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <ConfigInfo EmptyConfig="false" ModuleKey="1" InAreaSize="0 BYTE" OutAreaSize="0 BYTE">
+    <CIGIOData/>
+    <SyncDataEx>true</SyncDataEx>
+  </ConfigInfo>
+  <ConfigInfo EmptyConfig="true" ModuleKey="16#FFFF" InAreaSize="0 BYTE" OutAreaSize="0 BYTE">
+    <!-- Work around requested by Per C. Juel -->
+  </ConfigInfo>
+</Configuration>

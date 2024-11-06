@@ -1,0 +1,39 @@
+Create and Load XML Document
+
+Set xmlDoc = CreateObject("MSXML2.DOMDocument.6.0")
+xmlDoc.async = False
+If Not xmlDoc.Load("C:\Path\To\Your\A.xml") Then
+    MsgBox "Error loading XML: " & xmlDoc.parseError.reason
+    Exit Sub
+End If
+
+
+
+Recursive Node Traversal
+
+Sub TraverseNodes(node As Object, indent As Integer)
+    Dim childNode As Object
+    Dim attr As Object
+    Dim indentStr As String
+    
+    ' Create indentation string
+    indentStr = String(indent * 2, " ")
+    
+    ' Output node name in Immediate Window
+    Debug.Print indentStr & "Node: " & node.nodeName
+    
+    ' Output attributes if any
+    If node.Attributes.Length > 0 Then
+        For i = 0 To node.Attributes.Length - 1
+            Set attr = node.Attributes(i)
+            Debug.Print indentStr & "  Attribute: " & attr.nodeName & " = " & attr.nodeValue
+        Next i
+    End If
+    
+    ' Traverse child nodes
+    For Each childNode In node.ChildNodes
+        If childNode.nodeType = 1 Then ' 1 = Element node
+            TraverseNodes childNode, indent + 1
+        End If
+    Next childNode
+End Sub

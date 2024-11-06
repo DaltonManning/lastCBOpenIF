@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Controller xmlns="CBSourceCodeSchema3_0" Name="LoopCheck_1" ControllerType="Loop Check Controller" SystemIdentity="127.0.0.1:2" SyntaxVersion="3.1" ProductVersion="6.1.1-0 Integration" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:13.109" CodePage="1252">
+  <ControllerAdminInfo/>
+  <VersionInfo MajorVersion="1" MinorVersion="0" Revision="0"/>
+  <AccessInfo Guid="5E67DA70-4F8E-47BF-BD9D-6ECE879EB5C5" State="Open"/>
+  <ConnectedHardwareLibraries>
+    <ConnectedHardwareLibrary Name="CI871PROFINETHwLib" MajorVersion="2" MinorVersion="0" Revision="78" Guid="A56F649C-C406-4D29-B67D-2C43D41DE999" FilePath="HWLibraries:"/>
+    <ConnectedHardwareLibrary Name="FCICI871HwLib" MajorVersion="1" MinorVersion="0" Revision="51" Guid="77A08F09-0F60-417C-9722-4D6CD1A4913D" FilePath="HWLibraries:"/>
+    <ConnectedHardwareLibrary Name="LoopCheckHwLib" MajorVersion="6" MinorVersion="1" Revision="0" Guid="66C3EEC7-04FB-45A6-B470-6C9DA8F7D729" FilePath="HWLibraries:"/>
+    <ConnectedHardwareLibrary Name="ScmCI871HwLib" MajorVersion="1" MinorVersion="0" Revision="27" Guid="A094129D-816C-42A4-B219-04845E8C66F7" FilePath="HWLibraries:"/>
+  </ConnectedHardwareLibraries>
+  <ConnectedApplications ApplicationListTS="1979-12-31-00:00:00.000"/>
+  <ControllerSourceBlocks>
+    <HardwareUnits>
+      <HWUnitRef Position="" Guid="70E3DBE1-0F3C-4204-995B-7D068E117BE4"/>
+    </HardwareUnits>
+    <Tasks TaskStructureTS="1979-12-31-00:00:00.000"/>
+    <AccessVariablesRef Name="AccessVariables.acv" Guid="D30BD75F-C217-4973-97D4-1466378E11FD"/>
+  </ControllerSourceBlocks>
+  <ControllerProperties HWSimulation="0"/>
+  <DistributedApps DistributedAppsTS="1979-12-31-00:00:00.000"/>
+  <CommonControllerSettings ChangeTime="1979-12-31-00:00:00.000" OLUStopTime="4000">
+    <FatalOverrun Limit="10" Reaction="2"/>
+    <Safety DemandMode="2" FDRT="30000" SafetyWatchdogTimeout="15000" SIL3AppStartValUpdInterval="86400"/>
+    <ErrorHandler>
+      <SystemDiagnostics>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+        <SystemAlarmOutput Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+      </SystemDiagnostics>
+      <Execution>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+        <SystemAlarmOutput Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+      </Execution>
+      <IO>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+        <SystemAlarmOutput Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+      </IO>
+    </ErrorHandler>
+  </CommonControllerSettings>
+  <CheckSum Value="54277"/>
+</Controller>

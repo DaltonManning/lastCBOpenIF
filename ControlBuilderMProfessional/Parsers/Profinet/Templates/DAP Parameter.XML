@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameter>
+  <ParamInfoLength>2</ParamInfoLength>
+  <ParValLength>1</ParValLength>
+
+  <ParamInfo 
+    Name="UpdateTimeInputs" 
+    Description="Update Time Inputs" 
+    CompileType="IOConnect" 
+    DataType="ENUM" 
+    DefaultValue="7" 
+    ParamType="CIGIOData 19 0 2 WordParam ByteOffset" 
+    ParValIndex="13" 
+    Hidden="false"
+  />
+  
+  <ParamInfo 
+    Name="UpdateTimeOutputs" 
+    Description="Update Time Outputs" 
+    CompileType="IOConnect" 
+    DataType="ENUM" 
+    DefaultValue="7" 
+    ParamType="CIGIOData 35 0 2 WordParam ByteOffset" 
+    ParValIndex="13" 
+    Hidden="false"
+  />
+
+  <ParVal DataType="ENUM" Unit="" ParValIndex="13">
+  </ParVal>
+
+</Parameter>

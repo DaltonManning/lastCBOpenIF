@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="IED">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Services" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DynAssociation" type="xs:string" minOccurs="0" />
+              <xs:element name="SettingGroups" type="xs:string" minOccurs="0" />
+              <xs:element name="GetDirectory" type="xs:string" minOccurs="0" />
+              <xs:element name="GetDataObjectDefinition" type="xs:string" minOccurs="0" />
+              <xs:element name="DataObjectDirectory" type="xs:string" minOccurs="0" />
+              <xs:element name="GetDataSetValue" type="xs:string" minOccurs="0" />
+              <xs:element name="ConfDataSet" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+				 <xs:attribute name="max" type="xs:string" />
+                  <xs:attribute name="maxAttributes" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+	          <xs:element name="ReadWrite" type="xs:string" minOccurs="0" />
+              <xs:element name="GetCBValues" type="xs:string" minOccurs="0" />
+              <xs:element name="GSESettings" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="datSet" type="xs:string" />
+                  <xs:attribute name="appID" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GOOSE" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="max" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AccessPoint" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Server" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Authentication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="none" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="desc" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="desc" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="desc" type="xs:string" />
+      <xs:attribute name="type" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="IED" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

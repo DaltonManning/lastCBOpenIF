@@ -1,0 +1,326 @@
+END USER LICENSE AGREEMENT
+
+This end-user license agreement is a legal agreement between 
+you and ABB for the Product identified below. An amendment or addendum to this agreement may accompany the Product.
+
+BY INSTALLING, COPYING, OR OTHERWISE USING THE PRODUCT YOU AGREE 
+TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE, 
+YOU ARE NOT ENTITLED TO INSTALL, COPY, OR USE THE PRODUCT.
+
+1. THE PRODUCT
+
+For the purposes of this agreement, the term “Product”
+shall mean all software and related information provided
+by ABB under this agreement.
+
+The Product includes computer software and a License
+Certificate, and may include a License Key, associated
+media, printed materials, and online or electronic
+documentation. The Product software includes a number
+of functional options and selectable configuration and
+capacity limits, which are specified in the License
+Certificate.
+
+The term “System of Computers” shall mean a system of
+one or more interconnected computers on which the
+Product software is installed and configured such that the
+computers cooperate as a system to perform the
+functions of the Product.
+
+The Product may include software, which is owned by a
+third party. For such software separate license terms and
+conditions may apply.
+
+2. GRANT OF LICENSE
+
+ABB grants you the following non-exclusive and
+restricted rights, provided that you comply with all the
+terms and conditions of this agreement.
+
+2.1 Installation and Use
+
+You may install and run the Product on one System of
+Computers, and use, access, and display the functional
+options that are specified in the License Certificate, for
+their intended use as defined in the product
+documentation, and within the configuration and capacity
+limits that are specified in the License Certificate.
+You may not use, access or display functions that are not
+specified in the License Certificate.
+
+You may not exceed the configuration and capacity limits
+that are specified in the License Certificate.
+A License for the Product may not be shared or used
+concurrently on different Systems of Computers.
+
+2.2 Storage and Network Use
+
+You may copy the Product for safekeeping. All copies
+must carry the same copyright notice as the original
+product.
+
+You may store a copy of the Product on a storage device,
+such as a network server, for use for installing the
+Product over an internal network onto the System of
+Computers.
+
+You may not copy the product for any other purpose.
+
+2.3 Network Connections and Protection from
+Unintended or Unauthorized Access
+
+The Product is intended for use on a system of one or
+more computers that are interconnected by means of a
+computer communication network. The Product contains
+functions that can be configured to help protect the
+system from unintended or unauthorized access. The
+Product also contains functions that can be configured to
+allow network access to/from other computer systems on
+the same or other networks. Further, the Product
+contains functions that can be configured to utilize
+Internet-based services. You acknowledge and agree
+that you are responsible for the safe and secure
+configuration and use of these functions and network
+connections.
+
+2.4 Limitations in Use
+
+You may not use the product for planning, construction,
+maintenance, or operation, directly or indirectly, of
+nuclear facilities, flight navigation, aircraft control, air
+traffic control and ground support equipment, missile
+technology, and facilities for weapons of mass
+destruction, unless this use is explicitly approved by ABB
+in writing in each and every case. Such approval shall be
+granted only if ABB’s liability for damage to property,
+personal injury and death, damage to plant as well as
+property located there or in its vicinity, and all
+consequential and incidental costs and losses connected
+with any of the aforesaid is excluded by law and by
+contract to the satisfaction of ABB.
+
+For the purposes of this agreement the term ”nuclear
+facilities” shall mean any nuclear facility, including, but
+not limited to, nuclear power plants, nuclear fuel
+manufacturing plants, uranium enrichment plants,
+uranium conversion plants, spent nuclear fuel conversion
+plants, spent nuclear fuel storage plants, and research
+reactors. The term “facilities for weapons of mass
+destruction” shall mean any facility for design,
+manufacturing, storage, transportation, controlling,
+dispatching, and destruction of weapons of mass
+destruction, including, but not limited to, nuclear,
+chemical, and biological weapons.
+
+2.5 Reservation of Rights
+
+ABB reserves all rights not expressly granted to you in
+this agreement.
+
+3. UPGRADES
+
+To use a Product identified as an upgrade, you must first
+be licensed for the product identified by ABB as eligible
+for the upgrade. After upgrading, you may no longer use
+the product that formed the basis for your upgrade
+eligibility.
+
+4. ADDITONAL SOFTWARE
+
+This agreement applies to updates or supplements to the
+original Product provided by ABB, unless other terms are
+provided along with the update or supplement.
+
+5. TRANSFER OF RIGHTS
+5.1 Internal
+
+You may move the Product to a different System of
+Computers. This may require that the License Key be
+substituted for a new License Key that is tied to the new
+set of computer hardware.
+
+5.2 Transfer to Third Party
+
+You may not transfer the rights granted through this
+agreement to another end user without prior written
+approval from ABB. Such approval shall not be
+unreasonably withheld. The transfer must include the
+License Certificate, the License Key (if any) and all
+component parts, media, printed materials, and this
+agreement. The transfer may not be an indirect transfer,
+such as a consignment. Prior to the transfer, the end
+user receiving the transferred rights must agree to all the
+terms of this agreement.
+
+5.3 No Rental
+
+You may not rent, lease, lend, or provide commercial
+hosting services with the Product.
+
+6. LIMITATION ON REVERSE ENGINEERING, DECOMPILATION,
+AND DISASSEMBLY
+
+You may not reverse engineer, de-compile, or
+disassemble the Product, except and only to the extent
+that it is expressly permitted by applicable law
+notwithstanding this limitation.
+
+7. DEMONSTRATION AND EVALUATION
+SOFTWARE
+
+If the License is identified as “Temporary” or “Internal
+Use”, the Product must not be transferred or used for any
+purpose other than demonstration, test, or evaluation.
+
+8. EXPORT RESTRICTIONS
+
+You acknowledge that the Product in part is of U.S. origin
+and may be subject to U.S. export restrictions. You
+agree to comply with all applicable international and
+national laws that apply to the Product, including the U.S.
+Export Administration Regulations, as well as end-user,
+end-use, and destination restrictions issued by U.S. and
+other governments. For additional information contact
+your ABB representative.
+
+9. INTELLECTUAL PROPERTY RIGHTS
+
+The Product is protected by copyright and other
+intellectual property rights, including but not limited to
+patents. ABB or its suppliers own the title, copyright, and
+other intellectual property rights in the Product. The
+Product is licensed, not sold. You may not disclose to
+any third party the software or any information of
+commercial or technical nature provided by ABB as part
+of or in association with the Product.
+
+You agree to not disclose benchmark test results related
+to the Product to any third party.
+
+10. ENTIRE AGREEMENT
+
+This agreement, including any addendum or amendment
+to this agreement that is included with the Product, is the
+entire agreement between you and ABB relating to the
+Product and related support services (if any) and they
+supersede all prior or contemporaneous oral or written
+communications, proposals, and representations, with
+respect to the Product or any other subject matter
+covered by this agreement. To the extent the terms of
+any ABB policies or programs for support services
+conflict with the terms of this agreement, the terms of this
+agreement shall control.
+
+11. TERMINATION
+
+Without prejudice to any other rights, ABB may cancel
+this agreement if you do not abide by the terms and
+conditions of this agreement, in which case you must
+return all copies of the Product and all of its component
+parts to ABB.
+
+12. APPLICABLE LAW
+
+This Agreement shall be governed by and construed in
+accordance with the substantive laws of Sweden.
+All disputes, differences or questions between the Parties
+with respect to any matter arising out of or relating to the
+Agreement shall be finally determined by Swedish court.
+First instance shall be the district court of Stockholm.
+
+13. INDEMNIFICATION
+
+ABB will indemnify you against any third party claim that
+the Product infringes upon intellectual property rights of
+any third party, provided that (i) you promptly notify ABB
+in writing of the claim; (ii) ABB shall have the sole control
+of the defense and all related settlement negotiations;
+and (iii) you provide ABB with the assistance, information
+and authority necessary for ABB to perform its
+obligations under this section. ABB shall have no liability
+towards you in respect of an actual or alleged intellectual
+property right infringement if this results from any breach
+by you of (i) your obligations under these license terms or
+(ii) of any other agreement between you and ABB.
+
+If the Product is held to constitute an intellectual property
+rights infringement, or such is considered by ABB to
+constitute such infringement, ABB shall have the option,
+at its own expense, to: (i) modify the Product so that it no
+longer constitutes an infringement; (ii) obtain a license for
+you to continue using the Product notwithstanding such
+infringement; or (iii) replace the Software Product with
+substitutes which do not constitute infringements,
+provided that such substitutes do not entail a material
+diminution in performance or function.
+
+14. WARRANTY
+
+Provided that you have a valid license to use the Product,
+ABB warrants that a) for a period of one year from the
+date of shipment of your license (the “Warranty Period”)
+that it will perform substantially in accordance with the
+written materials that accompany the Product; and b) any
+related support services provided by ABB shall be
+substantially as described in applicable written materials
+provided to you by ABB, and ABB support engineers will
+use commercially reasonable efforts, care and skill to
+remedy by repair or replacement or supply a temporary
+fix, or make an emergency bypass, if the Product yields
+incorrect results. In the event that the Product fails to
+comply within the warranty period, ABB will either a)
+repair or replace the Product or b) return the price you
+paid for the Product. In case the suggested remedy to a
+complaint is a software upgrade, ABB or its suppliers
+shall not be liable towards you or any other party for any
+costs that may occur as a result of upgrading from one
+software version to the next, such as, but not limited to,
+the need for newer or other versions of third party
+software, or the need for higher capacity or performance
+hardware.
+
+This warranty is void if failure of the Product results from
+accident, abuse, misapplication, or virus infection. Any
+replacement Product will be warranted for the remainder
+of the original warranty period or 30 days, whichever
+period is longer. You agree that the above warranty is
+your sole guarantee in relation to the Product and any
+support services.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW AND SUBJECT 
+TO THE WARRANTY ABOVE, ABB DISCLAIMS ALL WARRANTIES, CONDITIONS 
+AND OTHER TERMS, EITHER EXPRESS OR IMPLIED (WHETHER BY STATUTE, 
+COMMON LAW, COLLATERALLY OR OTHERWISE) INCLUDING, BUT NOT 
+LIMITED TO, IMPLIED WARRANTIES OF SATISFACTORY QUALITY AND 
+FITNESS FOR PARTICULAR PURPOSE WITH RESPECT TO THE PRODUCT AND 
+THE WRITTEN MATERIALS THAT ACCOMPANY THE PRODUCT. ANY IMPLIED
+WARRANTIES THAT CANNOT BE EXCLUDED ARE LIMITED TO ONE YEAR OR 
+TO THE SHORTEST PERIOD PERMITTED BY APPLICABLE LAW, WHICHEVER 
+PERIOD IS GREATER.
+
+15. EXCLUSION OF LIABILITY
+
+To the maximum extent permitted by applicable law, ABB
+and its suppliers shall not be liable for any damages
+whatsoever resulting from this agreement, the granted
+license, or the use of the Product. Without limiting the
+applicability of the above exclusion, it is explicitly agreed
+that ABB shall under no circumstance be liable for loss of
+income or profits, business interruption, loss of data, loss
+of business information or other pecuniary loss as well as
+for any special, indirect or consequential losses or
+damages arising out of the use or inability to use the
+Product, even if ABB or any of its suppliers has been
+advised of the possibility of such damages. In any case
+ABB’s entire liability under any provision of this
+Agreement shall be limited to the amount actually paid by
+you for the Product.
+
+ABB or its suppliers shall not be liable towards any party
+for consequential costs as result of upgrading from one
+software version to another, such as, but not limited to,
+the need for newer or other versions of third party
+software, or the need for higher capacity or performance
+hardware.
+
+3BSE040118 Rev. G 2011-06-22

@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Diagram xmlns="CBOpenIFSchema3_0" Name="CopMMixTr4Appl_Comm" TaskConnection="" SILLevel="NonSIL" RestrictedSIL="0" SimulationMark="0" AccessLevel="Read Only" SafetyType="None" ReservationState="NotReserved">
+  <Variables>
+    <Variable Name="CommV110" Type="UnitMMxTkTr4_Comm" TypePath="CopMMixTr4Lib 1.0-0.UnitMMxTkTr4_Comm" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None"/>
+    <Variable Name="CommV120" Type="UnitMonoFdTkTR4_Comm" TypePath="CopMMixTr4Lib 1.0-0.UnitMonoFdTkTr4_Comm" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None"/>
+    <Variable Name="CommE120" Type="UnitMono2RxrsTr4_Comm" TypePath="CopMMixTr4Lib 1.0-0.UnitMono2RxrsTr4_Comm" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None"/>
+    <Variable Name="LSH11033" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0127    MONOMER MIX TANK HIGH LEVEL SWITCH [%]</Description>
+    </Variable>
+    <Variable Name="PT11034" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0128    V-110, MONOMER MIX TANK PRESSURE [PSIG]</Description>
+    </Variable>
+    <Variable Name="WT11053" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0129    BPCS V-110 Monomer Mix Tk WEIGHT [LBS]</Description>
+    </Variable>
+    <Variable Name="TT11036" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0133    V-110 JACKET WATER OUTLET TEMPERATURE [Deg C]</Description>
+    </Variable>
+    <Variable Name="PT11024" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0141    V-110, MONOMER MIX TANK PRESSURE    [PSIG]</Description>
+    </Variable>
+    <Variable Name="FT11036" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0142    BPCS V-110 JACKET WATER FLOW [GPM]</Description>
+    </Variable>
+    <Variable Name="FT11042" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0152    V-110 STYRENE FLOW  [LBS/MIN]</Description>
+    </Variable>
+    <Variable Name="LSL11006" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0175    V-110 AGITATOR SEAL POT LEVEL SWITCH  [%]</Description>
+    </Variable>
+    <Variable Name="PT11008" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0176    V-110 AGITATOR SEAL POT PRESSURE  [psig]</Description>
+    </Variable>
+    <Variable Name="SE11023" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DI_0197    V-110 MMX TANK AGITATOR -(2.00/2) MOD PULSES/REV</Description>
+    </Variable>
+    <Variable Name="CV11044" Type="ControlValvePneumaticStdIO" TypePath="PCDeviceSupportLib 6.1-4.ControlValvePneumaticStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AO_0109    V-110 MONOMER MIX TANK - DVB LOAD VALVE(FAIL CLOSED)  [%]</Description>
+    </Variable>
+    <Variable Name="CV11015" Type="ControlValvePneumaticStdIO" TypePath="PCDeviceSupportLib 6.1-4.ControlValvePneumaticStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AO_0110    MONOMER MIX TANK VENT CONTROL VALVE CTRL VALVE(FAIL CLOSE</Description>
+    </Variable>
+    <Variable Name="CV11046" Type="ControlValvePneumaticStdIO" TypePath="PCDeviceSupportLib 6.1-4.ControlValvePneumaticStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AO_0116    V-110 COOLING WATER CONTROL CONTROL VALVE(FAIL OPEN)</Description>
+    </Variable>
+    <Variable Name="ABV11032" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0120    V-110 MONOMER MIX TANK STYRENE VALVE [OPEN]</Description>
+    </Variable>
+    <Variable Name="ABV11022" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0122    V-110 MONOMER MIX TANK NITROGEN VALVE [OPEN]</Description>
+    </Variable>
+    <Variable Name="ABV11025" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0125    V-110 MONOMER MIX TANK VENT TO HEADER VALVE [OPEN]</Description>
+    </Variable>
+    <Variable Name="P115" Type="MotorOnOffStdIO" TypePath="PCDeviceSupportLib 6.1-4.MotorOnOffStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0126    P-115 VACUUM PUMP [ON]</Description>
+    </Variable>
+    <Variable Name="ABV11028" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0127    V-110 MONOMER MIX TANK VACUUM VALVE [OPEN]</Description>
+    </Variable>
+    <Variable Name="ABV12003" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0136    V-110 Mono Mix Tk Vlv Pressure Equalizing Valve [Open,Closed]</Description>
+    </Variable>
+    <Variable Name="ABV11012" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0141    MMX INITIATOR LOAD VALVE</Description>
+    </Variable>
+    <Variable Name="ABV11545" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0145    P-115 MONOMER VACUUM VENT TO HEADER VALVE [OPEN]</Description>
+    </Variable>
+    <Variable Name="ABV11076" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0153    MONOMER MIX TANK - DVB UPSTREAM LOAD VALVE [1=OPEN]</Description>
+    </Variable>
+    <Variable Name="ABV11075" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0155    V-110 MONOMER MIX TANK STYRENE UPSTREAM VALVE [1=OPEN]</Description>
+    </Variable>
+    <Variable Name="EY11009" Type="BoolIO" TypePath="System.BoolIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0185    POWER TO YELLOW LIGHT(CATALYST ADDITION) - FAIL 'OFF'</Description>
+    </Variable>
+    <Variable Name="ZSC11018" Type="BoolIO" TypePath="System.BoolIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DI_0173    V-110 MONOMER MIX TANK VENT TO ATMOSPHERE VALVE [CLOSED]</Description>
+    </Variable>
+    <Variable Name="HS11011" Type="BoolIO" TypePath="System.BoolIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DI_0181    MMX INITIATOR HAND SWITCH</Description>
+    </Variable>
+    <Variable Name="IB11085" Type="BoolIO" TypePath="System.BoolIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DI_0185    V-110, MONOMER MIX TANK PRD INDICATOR  [GOOD,BLOWN]</Description>
+    </Variable>
+    <Variable Name="WT12006" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0193    V-120 Monomer Feed Tank Weight [Lbs]</Description>
+    </Variable>
+    <Variable Name="LSH12005" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0195    V-120 Monomer Feed Tank Level Switch [%]</Description>
+    </Variable>
+    <Variable Name="PT12022" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0196    V-120 Monomer Feed Tank Pressure [Psig]</Description>
+    </Variable>
+    <Variable Name="FT12020" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0197    V-120 Monomer Feed Tank Jacket Flow [Gpm]</Description>
+    </Variable>
+    <Variable Name="TT12099" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0198    V-120 Monomer Feed Tank Jacket Return Temperature [Deg C]</Description>
+    </Variable>
+    <Variable Name="ABV12016" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0144    V-120 Monomer Feed Tank E.B. Flush Valve(Fail Closed)</Description>
+    </Variable>
+    <Variable Name="ABV12044" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0158    V-120 Monomer Feed Tank Nitrogen Valve(Fail Closed)</Description>
+    </Variable>
+    <Variable Name="ZSC12010" Type="BoolIO" TypePath="System.BoolIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DI_0163    V-120 Mon Fd Tk Man Vlv to V-360/366 Decanters [Closed,Open]</Description>
+    </Variable>
+    <Variable Name="IB12023" Type="BoolIO" TypePath="System.BoolIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DI_0164    V-120 Monomer Feed Tank Burst Detection [#BLOWN,BLOWN]</Description>
+    </Variable>
+    <Variable Name="TT12135" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0138    E-120 SR-1 RETURN TEMPERATURE [DEG C]</Description>
+    </Variable>
+    <Variable Name="TT12125" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0139    BPCS MONOMER FEED TO HDR TEMP *CRITICAL INSTR*[DEG C]</Description>
+    </Variable>
+    <Variable Name="PT12107" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0158    PRESSURE DOWNSTREAM OF MONOMER FILTERS [PSIG]</Description>
+    </Variable>
+    <Variable Name="PT12012" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AI_0191    V-120 Pressure Upstream Of Monomer Filters  [Psig]</Description>
+    </Variable>
+    <Variable Name="CV12104" Type="ControlValvePneumaticStdIO" TypePath="PCDeviceSupportLib 6.1-4.ControlValvePneumaticStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>AO_0115    MIXER MONOMER FEED TEMP CONTROL CTRL VALVE(FAIL CLOSED)</Description>
+    </Variable>
+    <Variable Name="PT12062" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>NEW AI Transmitter E120 Out Press</Description>
+    </Variable>
+    <Variable Name="ieFT11043" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="retain" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None"/>
+    <Variable Name="ABV12008" Type="ValveStdIO" TypePath="PCDeviceSupportLib 6.1-4.ValveStdIO" AccessLevel="Read Only" SafetyType="None" Attribute="" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None">
+      <Description>DO_0129    V-120 Monomer Feed Tank Bottom Valve(Fail Closed)</Description>
+    </Variable>
+    <Variable Name="ieFT12029" Type="RealIO" TypePath="System.RealIO" AccessLevel="Read Only" SafetyType="None" Attribute="retain" InitialValue="" ReadPermission="" WritePermission="" AuthenticationLevel="None"/>
+  </Variables>
+  <CommVariables>
+    <CommVariable Name="iDVBPipe_LdedToMonoIIEx" Type="Real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(1389)   A-&gt;E DVB Loaded To Mono Ii [Lbs]</Description>
+    </CommVariable>
+    <CommVariable Name="iModADVBConcEx" Type="Real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(1390)   A-&gt;E Activity Of DVB [%]</Description>
+    </CommVariable>
+    <CommVariable Name="iDVBPipe_PumpV110StepEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(829) Old DC(821) A-&gt;E MONO II HAS USE OF "A" DVB SYSTEM</Description>
+    </CommVariable>
+    <CommVariable Name="iModADVBFromDTK14Ex" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(823)    A-&gt;E DVB PIPELINE SUPPLY FROM DTK-14 FOR PRINT STATEMENT</Description>
+    </CommVariable>
+    <CommVariable Name="iModADVBFromDTK15Ex" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(824)    A-&gt;E DVB PIPELINE SUPPLY FROM DTK-15 FOR PRINT STATEMENT</Description>
+    </CommVariable>
+    <CommVariable Name="iModADVBSupplyOkEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(825)    A-&gt;E 1130 DVB SUPPLY SYSTEM OKAY/TRANSFER IN PROGRESS</Description>
+    </CommVariable>
+    <CommVariable Name="iAtoE2Heartbeat" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Used For DC(2302) in V110</Description>
+    </CommVariable>
+    <CommVariable Name="iInitVerUnlockV110AddVlvEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(812) A-&gt;E Initiator Verification Unlock V-110 Addition Valve</Description>
+    </CommVariable>
+    <CommVariable Name="iUtil1360TT80259Ex" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AI(659)/AC(2012) B-&gt;E P-802 Huron Water Pump Temperature [deg C]</Description>
+    </CommVariable>
+    <CommVariable Name="iV340_ABV34096FBCEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DI(138)    V-340 Startup Tank Ethylbenzene Flush Valve is Closed</Description>
+    </CommVariable>
+    <CommVariable Name="iV340_ABV34050FBCEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DI(140)    P-184 ETHYLBENZENE TO HEADER VALVE [CLOSED]</Description>
+    </CommVariable>
+    <CommVariable Name="iV180DisperLSAFlushDoneEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(316)    DISPERSER LSA FLUSH IS COMPLETE</Description>
+    </CommVariable>
+    <CommVariable Name="iV120_FlushStepEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(146)  SEQ(14) MONOMER FEED TANK - FLUSH</Description>
+    </CommVariable>
+    <CommVariable Name="iV120_ZSC12010Ex" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DI(163)    V-120 Mon Fd Tk Man Vlv to V-360/366 Decanters [Closed,Open]</Description>
+    </CommVariable>
+    <CommVariable Name="iDisp_TotalMMXFlowSpEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(482)    Total Monomer Mix Flow To Dispersers Setpoint [Lb/min]</Description>
+    </CommVariable>
+    <CommVariable Name="iDisp_AnyMMXFillSwEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Used for DC(426) and DC(477)</Description>
+    </CommVariable>
+    <CommVariable Name="iDisp_AnyMMXRunSwEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Used for DC(426), Term(408), Term(458), and Term(808)</Description>
+    </CommVariable>
+    <CommVariable Name="iDisp_AnyMMXCntlEngEnbEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Any Disperser MMX Cntl Enabled - Used for DO(135)</Description>
+    </CommVariable>
+    <CommVariable Name="iTr4RunMonoContinuousSwEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DK(100) TRUE IF WANT TO RUN MONOSPHERE II CONTINUOUS</Description>
+    </CommVariable>
+    <CommVariable Name="iCT870_TT87023Ex" Type="Real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AI(523)    AMBIENT AIR TEMPERATURE   [DEG C]</Description>
+    </CommVariable>
+    <CommVariable Name="iBPCSP_LEL12002_HHAlmEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>LEL12002 HH LEL Alarm</Description>
+    </CommVariable>
+    <CommVariable Name="iBPCSP_LEL12002_AEOEStatEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>LEL12002 AEOE Stat</Description>
+    </CommVariable>
+    <CommVariable Name="iBPCSP_LEL12002_ForcedStatEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>LEL12002 Forced Stat</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_UnitOverrideSwEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iMMixTr4_BPCS2SIS_01" Type="DupontPackedCV" TypePath="DupontSISLib 1.0-4.DupontPackedCV" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010501" AcknowledgeGroup="auto">
+      <Description>AEClass * 1000 + X.  BPCS to SIS</Description>
+    </CommVariable>
+    <CommVariable Name="iR490PWActiveEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(802) R490 PW</Description>
+    </CommVariable>
+    <CommVariable Name="iR490PresentRecipeEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>RP(49) PRESENT RECIPE FOR R490</Description>
+    </CommVariable>
+    <CommVariable Name="iR490BatchIDEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Present Unit BatchID</Description>
+    </CommVariable>
+    <CommVariable Name="iR490_RequestsMixedMonoMakeUpEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(653)    R-490 REQUESTS MIXED MONOMER MAKE-UP</Description>
+    </CommVariable>
+    <CommVariable Name="iR490_MonoLoadFrmDispsCompltEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(673)    R-490 MONOMER LOAD FROM DISPERSERS COMPLETE</Description>
+    </CommVariable>
+    <CommVariable Name="iR490_MWStepEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(801)  SEQ(49) REACTOR R-490 - MAINTENANCE WAIT</Description>
+    </CommVariable>
+    <CommVariable Name="iR400_MonoLoadFrmDispsCompltEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(308)    R-400 MONOMER LOAD FROM DISPERSERS COMPLETE</Description>
+    </CommVariable>
+    <CommVariable Name="iR400PresentRecipeEx" Type="Real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>RP(40)     PRESENT RECIPE FOR SEQ(40)</Description>
+    </CommVariable>
+    <CommVariable Name="iR400_MWStepEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(401)  SEQ(40) REACTOR R-400 - MAINTENANCE WAIT</Description>
+    </CommVariable>
+    <CommVariable Name="iR400_PWStepEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(402)  SEQ(40) REACTOR R-400 - PROCESS WAIT (seq40)</Description>
+    </CommVariable>
+    <CommVariable Name="iR400_LoadMMXStepEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(420)  SEQ(40) REACTOR R-400 - LOAD MIXED MONOMER</Description>
+    </CommVariable>
+    <CommVariable Name="iR400BatchIDEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Present Unit BatchID</Description>
+    </CommVariable>
+    <CommVariable Name="iR400_RequestsMixedMonoMakeUpEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(408)    R-400 REQUESTS MIXED MONOMER MAKE-UP</Description>
+    </CommVariable>
+    <CommVariable Name="iR400_AddCatalystToMonoEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(596)    R-400 LOADED AQUEOUS.  OK TO LOAD CATALYST TO MONOMER</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_FlowDispStepEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(138)  SEQ(13) V-110, MONOMER MIX TANK FEED DISPERSERS</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_ConvRecipeEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(431)    TRUE IF CONVENTIONAL RECIPE IN SEQUENCE</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_MonoRpActiveEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(362)    TRUE IF MONOSPHERE RECIPE IN SEQUENCE</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_MonoFdTkFullEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(486)    MONOMER FEED TANK IS FULL</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_MonoLdDoneForConvEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(581)    MONOMER LOAD COMPLETE TO REACTOR FOR CONVENTIONAL</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_StyLoadedCalcEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(503)    V-110 Calculated Styrene Charged  [Lbs]</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_DVBLoadedCalcEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(504)    V-110 Calculated DVB Charged [Lbs]</Description>
+    </CommVariable>
+    <CommVariable Name="iV120_FlowDispStepEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(145)  SEQ(14) MONOMER FEED TANK - FLOW TO DISPERSERS</Description>
+    </CommVariable>
+    <CommVariable Name="iV120_LowWtAlmLatchSpEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(134)    Alm(134), Monomer Feed Tank Weight Low Alarm Latch [Lbs]</Description>
+    </CommVariable>
+    <CommVariable Name="iV120WT12006Ex" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AI(193)    V-120 Monomer Feed Tank Weight [Lbs]</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF25_Tripped" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5015001" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF25_FT12029Value" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5015002" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF25_ABV12143StatClsd" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5015004" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF25_ABV12143ObjError" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5015005" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF13_Tripped" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010505" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF13_ABV12017ObjError" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010511" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF13_TT12007_Value" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010513" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF13_TT12011_Value" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010514" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF13_TT12007_Valid" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010515" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF13_TT12011_Valid" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010516" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_Tripped" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000001" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_ABV11074StatClsd" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000003" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_ABV11074ObjError" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000004" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_ABV11045StatClsd" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000007" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_ABV11045ObjError" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000008" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_FT11043Value" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000012" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_FT11043Status" Type="dword" TypePath="System.dword" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000013" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_AR02Verified" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000015" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_V110PermitToPW" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000016" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_Tripped" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000018" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_EY11023ObjError" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000019" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_EY11023StatDeact" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000021" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_TT11055_11063HSel" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000022" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_TT11055_11063DevAlm" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000024" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_TT11055_11063Valid" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000023" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_TT11055_Valid" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000026" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_TT11063_Valid" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000027" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_TT11055_Value" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000028" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF12_TT11063_Value" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000029" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iR450PWStepEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(452)  SEQ(45) REACTOR R-450 - PROCESS WAIT</Description>
+    </CommVariable>
+    <CommVariable Name="iR450MWStepEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(451)  SEQ(45) REACTOR R-450 - MAINTENANCE WAIT</Description>
+    </CommVariable>
+    <CommVariable Name="iR450PresentRecipeEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>RP(45)     PRESENT RECIPE FOR SEQ(45)</Description>
+    </CommVariable>
+    <CommVariable Name="iR450_AddCatalystToMonoEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(597)    R-450 AQUEOUS LOADED.  OK TO ADD CATALYST TO MONOMER</Description>
+    </CommVariable>
+    <CommVariable Name="iR450ReqMixedMonoMakeUpEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(409)    R-450 REQUESTS MIXED MONOMER MAKE-UP</Description>
+    </CommVariable>
+    <CommVariable Name="iR450BatchIDEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Present Unit BatchID</Description>
+    </CommVariable>
+    <CommVariable Name="iR450MonoLoadCompleteEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(309)    R-450 MONOMER LOAD FROM DISPERSERS COMPLETE</Description>
+    </CommVariable>
+    <CommVariable Name="iE120BatchIDEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Present Unit BatchID</Description>
+    </CommVariable>
+    <CommVariable Name="iE120RcMonRunRateEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>E120 AR(18) MONOMER RUN RATE [GPM]</Description>
+    </CommVariable>
+    <CommVariable Name="iE120RcMonoTempSPtoDispEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>E120 AK(139) OPERATOR ENTERED MONOMER FEED TEMP STPT    [DegC]</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_MaxHdrPresToVentEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AP(33)     MAXIMUM ALLOWED HEADER PRESSURE FOR TANKS TO VENT</Description>
+    </CommVariable>
+    <CommVariable Name="iV110BatchIDEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>Present Unit BatchID</Description>
+    </CommVariable>
+    <CommVariable Name="iV110RcMonTotAmntEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>V110 AR(1) TOTAL MONOMER [LBS]</Description>
+    </CommVariable>
+    <CommVariable Name="iV110DVBAmntEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>V110 AR(2) ACTIVE DVB [LBS]</Description>
+    </CommVariable>
+    <CommVariable Name="iV110RcTBPOAmntEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AR(31) RECIPE AMOUNT OF T-BPO INITIATOR</Description>
+    </CommVariable>
+    <CommVariable Name="iV110RcTBPBAmntEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AR(32) RECIPE AMOUNT OF T-BPB INITIATOR</Description>
+    </CommVariable>
+    <CommVariable Name="iV110RcBenzPeroxAmntEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AR(33) RECIPE AMOUNT OF BPO INITIATOR</Description>
+    </CommVariable>
+    <CommVariable Name="iV120BatchIDEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>V120 BatchID for RecE</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_BatchNumEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(1114) Seq(13) Current Monomer Batch Number</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_TotalFlow11043" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000010" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iStyreneLoadedToMonoIIEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(1387)   A-&gt;E STYRENE LOADED TO MONO II [LBS]</Description>
+    </CommVariable>
+    <CommVariable Name="iMonoIIHasUseOfStySysEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(827)    A-&gt;E MONO II HAS USE OF  A  STYRENE SYSTEM</Description>
+    </CommVariable>
+    <CommVariable Name="iModERequestsStyreneEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(828)    A-&gt;E Ok to open E:DO(120)</Description>
+    </CommVariable>
+    <CommVariable Name="iR450LoadDispStepEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(459)  SEQ(45) REACTOR R-450 - LOAD FROM DISPERSER</Description>
+    </CommVariable>
+    <CommVariable Name="iModACycStyrPresRlfEx" Type="Bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(1013), DC(538), DC(808) TRUE TO OPEN STYRENE BOTTOM VLV FOR THERMAL EXPANSION PROT.</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_AR02Accepted" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000017" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_RedLightEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iV110_YellowLightEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iV120_RedLightEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iV120_YellowLightEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iV110_TkReqTX1360HdrEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(187)    V-110 REQUEST TO VENT TO 1360 HEADER</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_P115ReqTX1360HdrEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(188)    P-115 REQUEST TO VENT TO 1360 HEADER</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_ABV11074ManualMode" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000006" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_ABV11045ManualMode" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000009" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+    <CommVariable Name="iMMixTr4_BPCS2SIS_02" Type="DupontPackedCV" TypePath="DupontSISLib 1.0-4.DupontPackedCV" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="5010901" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iV120_ZSC12044Ex" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DI(144)    MONOMER FEED TANK - E.B. FLUSH VALVE [1=CLOSED]</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF13_TT12007_12011HSel" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010506" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iSIF13_TT12007_12011Valid" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5010507" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iV120_EBFlushToDispDoneEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(428)  E.B. FLUSH COMPLETE TO DISPERSERS</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_MWStepEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(131)  SEQ(13) V-110, MONOMER MIX TANK MAINTENANCE HOLD</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_PWStepEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(132)  SEQ(13) V-110, MONOMER MIX TANK PROCESS WAIT</Description>
+    </CommVariable>
+    <CommVariable Name="iV120_MWStepEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(141)  SEQ(14) V-110, MONOMER MIX TANK MAINTENANCE HOLD</Description>
+    </CommVariable>
+    <CommVariable Name="iV120_PWStepEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>STEP(432)  SEQ(14) V-110, MONOMER MIX TANK PROCESS WAIT</Description>
+    </CommVariable>
+    <CommVariable Name="iTOX_Tox1360ProdRdyEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(1233)   TOx and 1360 Prod''n Area Hdr ready to rec''v vents</Description>
+    </CommVariable>
+    <CommVariable Name="iTX1360Hdr_HdrPressCntlSpEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(3)      Communicate 1360 Header Pressure Setpoint</Description>
+    </CommVariable>
+    <CommVariable Name="iTX1360Hdr_PT32426Ex" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AI(713)    1360 PROD AREA HEADER PRESSURE [PSIG]</Description>
+    </CommVariable>
+    <CommVariable Name="iV120_EnEBFlushBVEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DK(50)     TRUE TO OPEN DO(144) FOR EB FLUSH</Description>
+    </CommVariable>
+    <CommVariable Name="iT4RcOvrCntlTablePBOutEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>SIF-XX Override PB pressed (UnitV110Active)</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF29_ActiveDVB" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000030" AcknowledgeGroup="auto"/>
+    <CommVariable Name="iDisp_CurrentRecipeEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>RP(21)     PRESENT RECIPE FOR SEQ(21) [ALL DISP]</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_InitiatorRequestedEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(913) E-&gt;A V-110 Monomer Mix Tank Initiator Requested</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_DoneWithInitVerEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(915) E-&gt;A V-110 Monomer Mix Tank Done With Initiator Verification</Description>
+    </CommVariable>
+    <CommVariable Name="iModEReqStyForV110Ex" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(922) E-&gt;A REQUEST STYRENE FOR V-110 MONOMER MIX TANK</Description>
+    </CommVariable>
+    <CommVariable Name="iModEV110StyVlvsOKEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(923) E-&gt;A V-110 MONOMER MIX TANK STYRENE VALVES OKAY</Description>
+    </CommVariable>
+    <CommVariable Name="iModE_V110DVBVlvsOkayEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(924) E-&gt;A V-110 MONOMER MIX TANK DVB VALVES OKAY</Description>
+    </CommVariable>
+    <CommVariable Name="iModE_RequestDVBForV110Ex" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(927) Old DC(921) E-&gt;A REQUEST DVB FOR V-110 MONOMER MIX TANK</Description>
+    </CommVariable>
+    <CommVariable Name="iModE_MonoIIDoneLoadingDVBEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(928) E-&gt;A TRUE:MONO II DONE LOADING DVB</Description>
+    </CommVariable>
+    <CommVariable Name="iModEMonoIIDoneLoadingStyEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(929) E-&gt;A MONO II IS DONE LOADING STYRENE</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_RecipeAmntTBPOEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>AC(1367) E-&gt;A V-110 Recipe Amount of t-BPO [lbs]</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_RecipeAmntTBPBEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>E_AC(2897)/A_AC(1370) E-&gt;A V-110 Recipe Amount of t-BPB, E:AC(2897)/AC(1370) [lbs]</Description>
+    </CommVariable>
+    <CommVariable Name="iV110_RecipeAmntBPOEx" Type="real" TypePath="System.real" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>E_AC(2898)/A_AC(1371) E-&gt;A V-110 Recipe Amount of BPO, E:AC(2898)/A:AC(1371) [lbs]</Description>
+    </CommVariable>
+    <CommVariable Name="iModEMono2ReqEBEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(80) E-&gt;D Old DC(86)  T = DUPLEX (MONOSPHERE II) REQUESTS ETHYLBENZENE</Description>
+    </CommVariable>
+    <CommVariable Name="iModE_EBXferAndFlushBVClosedEx" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="out" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(98)     E-&gt;D DC(318) Old DC(307)/DC(87)-DO(144) &amp; DO(140) CLOSED 2 HRS</Description>
+    </CommVariable>
+    <CommVariable Name="iTX1360Hdr_OkToVentV110Ex" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(285)    1360 HDR. OK TO VENT V-110</Description>
+    </CommVariable>
+    <CommVariable Name="iTX1360Hdr_OkToVentP115Ex" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="normal" Priority="normal" ISPValue="" ExpectedSIL="same" UniqueID="0" AcknowledgeGroup="auto">
+      <Description>DC(286)    1360 HDR. OK TO VENT P-115</Description>
+    </CommVariable>
+    <CommVariable Name="iSIF25_ManInhibitOn" Type="bool" TypePath="System.bool" Attribute="retain" InitialValue="" ReadPermission="" Direction="in" IPAddress="auto" IntervalTime="fast" Priority="normal" ISPValue="" ExpectedSIL="SIL2" UniqueID="5000101" AcknowledgeGroup="auto">
+      <Description>#IVBreakNO</Description>
+    </CommVariable>
+  </CommVariables>
+  <Signals/>
+  <FunctionBlocks>
+    <FunctionBlock Name="AppInfo" Type="BasicLib.ApplicationInfo" TypePath="BasicLib 1.9-5.ApplicationInfo" AccessLevel="Read Only" SafetyType="None" TaskConnection="" AspectObject="0" ExposePropertiesInParent="0"/>
+  </FunctionBlocks>
+  <ControlModules/>
+  <DiagramInstances>
+    <DiagramInstance Name="UnitV110" Type="CopMMixTr4Lib.UnitMMxTkTr4" TypePath="CopMMixTr4Lib 1.0-0.UnitMMxTkTr4" AccessLevel="Read Only" SafetyType="None" AspectObject="1" ExposePropertiesInParent="0"/>
+    <DiagramInstance Name="UnitV120" Type="CopMMixTr4Lib.UnitMonoFdTkTr4" TypePath="CopMMixTr4Lib 1.0-0.UnitMonoFdTkTr4" AccessLevel="Read Only" SafetyType="None" AspectObject="1" ExposePropertiesInParent="0"/>
+    <DiagramInstance Name="UnitE120" Type="CopMMixTr4Lib.UnitMono2RxrsTr4" TypePath="CopMMixTr4Lib 1.0-0.UnitMono2RxrsTr4" AccessLevel="Read Only" SafetyType="None" AspectObject="1" ExposePropertiesInParent="0"/>
+  </DiagramInstances>
+  <InitValues/>
+  <CodeBlocks>
+    <FDCodeBlock Name="Code"><FunctionDiagram><Pages><Layout FormatName="A4" Orientation="Portrait" Unit="0.01 mm" Width="21000" Height="29700"/><Page PageNo="1" PageName="UnitV110"><Blocks><Invocation Name="AppInfo" DataFlowOrder="1" ENPort="false" Id="20dab2f1-f643-429c-a331-190b76f26930"><Layout X="508" Y="508" Width="1863" Height="508"><Ports><Port Name="ApplicationName" Visible="false"/><Port Name="ApplicationState" Visible="false"/><Port Name="EvaluationMode" Visible="false"/><Port Name="TestMode" Visible="false"/><Port Name="ITSMode" Visible="false"/><Port Name="SimulatedHW" Visible="false"/><Port Name="RestartInhEvalMode" Visible="false"/><Port Name="Status" Visible="false"/></Ports></Layout></Invocation><Invocation Name="UnitV110" DataFlowOrder="2" ENPort="false" Id="51649931-c7b7-438a-9a57-b1b16686c7ec"><Layout X="8297" Y="2371" Width="3048" Height="13716"><Ports><Port Name="Name" Visible="false"/><Port Name="Description" Visible="true"/><Port Name="AEClass" Visible="true"/><Port Name="Unit" Visible="true"/><Port Name="Device" Visible="true"/><Port Name="Comm" Visible="true"/><Port Name="PCCInBatch" Visible="true"/><Port Name="AbortMOPCmd" Visible="true"/><Port Name="AbortStat" Visible="true"/><Port Name="HoldMOPCmd" Visible="true"/><Port Name="HoldStat" Visible="true"/><Port Name="PCCOutBatch" Visible="true"/><Port Name="CommonReset" Visible="true"/><Port Name="V110AgitRPM_IO" Visible="true"/><Port Name="V110AgitSealPotLSL_IO" Visible="true"/><Port Name="V110AgitSealPotPress_IO" Visible="true"/><Port Name="V110BackupPress_IO" Visible="true"/><Port Name="V110JktFlow_IO" Visible="true"/><Port Name="V110Weight_IO" Visible="true"/><Port Name="V110JktOutTemp_IO" Visible="true"/><Port Name="V110LSH_IO" Visible="true"/><Port Name="V110Press_IO" Visible="true"/><Port Name="V110StyUpstrmFlow_IO" Visible="true"/><Port Name="V110AtmVentMV_IO" Visible="true"/><Port Name="V110InitHandSw_IO" Visible="true"/><Port Name="V110PressRptrDisk_IO" Visible="true"/><Port Name="V110DVBUpstrmLdBV_IO" Visible="true"/><Port Name="V110InitLoadBV_IO" Visible="true"/><Port Name="V110InitWarnLite_IO" Visible="true"/><Port Name="V110N2BV_IO" Visible="true"/><Port Name="V110StyreneLdBV_IO" Visible="true"/><Port Name="V110StyUpstrmLdBV_IO" Visible="true"/><Port Name="V110ToTOXHdrBV_IO" Visible="true"/><Port Name="V110V120EqlzBV_IO" Visible="true"/><Port Name="V110VacInletBV_IO" Visible="true"/><Port Name="V110VacOutletBV_IO" Visible="true"/><Port Name="V110VacuumPump_IO" Visible="true"/><Port Name="DVBLoadFlowCV_IO" Visible="true"/><Port Name="VentCV_IO" Visible="true"/><Port Name="V110_MW_Name" Visible="false"/><Port Name="V110_PW_Name" Visible="false"/><Port Name="V110_LoadDVB_Name" Visible="false"/><Port Name="V110_LoadSty_Name" Visible="false"/><Port Name="V110_LoadInit_Name" Visible="false"/><Port Name="V110_Degas_Name" Visible="false"/><Port Name="V110_Press_Name" Visible="false"/><Port Name="V110_FlowDisp_Name" Visible="false"/><Port Name="V110_WaitRxr_Name" Visible="false"/><Port Name="V110_LdRxr_Name" Visible="false"/><Port Name="JktTempCV_IO" Visible="true"/><Port Name="V230DVBFlow_IO" Visible="true"/></Ports></Layout></Invocation></Blocks><DataConnections><DataConnection Src="'UnitV110'" SrcDirect="true" Dest="UnitV110.Name" Id="d6971286-9d91-4eb2-adf1-ffc3d13077f3"/><DataConnection Src="5000" SrcDirect="true" Dest="UnitV110.AEClass" Id="7263fadb-4da2-4100-9144-33470fe8ef09"/><DataConnection Src="CommV110" SrcDirect="true" Dest="UnitV110.Comm" Id="8852f22b-9d89-48bc-b2a5-76b2d0582f4f"/><DataConnection Src="SE11023" SrcDirect="true" Dest="UnitV110.V110AgitRPM_IO" Id="e44b9506-772a-45d6-bdea-4380e3781b9e"/><DataConnection Src="LSL11006" SrcDirect="true" Dest="UnitV110.V110AgitSealPotLSL_IO" Id="13dc6770-0dab-40cc-91fa-0fea4f3311ff"/><DataConnection Src="PT11008" SrcDirect="true" Dest="UnitV110.V110AgitSealPotPress_IO" Id="1f5e795e-d487-4734-9f7a-a90acb2fe1c4"/><DataConnection Src="PT11024" SrcDirect="true" Dest="UnitV110.V110BackupPress_IO" Id="d0269822-5f5a-4bf8-842c-d55b8963f6f4"/><DataConnection Src="FT11036" SrcDirect="true" Dest="UnitV110.V110JktFlow_IO" Id="e49b89cc-15b8-4136-924a-6e9041bcf1ae"/><DataConnection Src="WT11053" SrcDirect="true" Dest="UnitV110.V110Weight_IO" Id="69af385e-dc2b-4e7d-97a2-ecb0b33edab5"/><DataConnection Src="TT11036" SrcDirect="true" Dest="UnitV110.V110JktOutTemp_IO" Id="4ee898ed-7e3c-43c5-81bd-f2e34e6b7a60"/><DataConnection Src="LSH11033" SrcDirect="true" Dest="UnitV110.V110LSH_IO" Id="7b2e81b2-9608-42aa-b591-91bb6fd609fe"/><DataConnection Src="PT11034" SrcDirect="true" Dest="UnitV110.V110Press_IO" Id="9d34bf11-09cd-4a83-85be-3f2486d1ff5c"/><DataConnection Src="FT11042" SrcDirect="true" Dest="UnitV110.V110StyUpstrmFlow_IO" Id="4cfd1b87-fdb8-4162-a700-7be3f7f5636b"/><DataConnection Src="ZSC11018" SrcDirect="true" Dest="UnitV110.V110AtmVentMV_IO" Id="9b7f672c-1f1f-4d0a-bc39-3c4c55f4e1ca"/><DataConnection Src="HS11011" SrcDirect="true" Dest="UnitV110.V110InitHandSw_IO" Id="c2226617-df95-4fa6-ab4b-6d4e44c974d3"/><DataConnection Src="IB11085" SrcDirect="true" Dest="UnitV110.V110PressRptrDisk_IO" Id="8f453ad0-3512-4a45-90c7-d57071c4a14e"/><DataConnection Src="ABV11076" SrcDirect="true" Dest="UnitV110.V110DVBUpstrmLdBV_IO" Id="3ff3c828-a208-4b45-aa06-2fa0dd8ada72"/><DataConnection Src="ABV11012" SrcDirect="true" Dest="UnitV110.V110InitLoadBV_IO" Id="d8b2c72d-cf2c-4bd6-9715-666e95162197"/><DataConnection Src="UnitV110.V110InitWarnLite_IO" Dest="EY11009" DestDirect="true" Id="6a56ece3-ad51-40ed-9dae-bd634bcce792"/><DataConnection Src="ABV11022" SrcDirect="true" Dest="UnitV110.V110N2BV_IO" Id="79241cb3-297b-40ed-a533-8a140f2e9102"/><DataConnection Src="ABV11032" SrcDirect="true" Dest="UnitV110.V110StyreneLdBV_IO" Id="122597dd-d55c-41d6-99d8-ef15a8b44c54"/><DataConnection Src="ABV11075" SrcDirect="true" Dest="UnitV110.V110StyUpstrmLdBV_IO" Id="148cc0b5-37c7-45a0-b84a-66d9b6e11d55"/><DataConnection Src="ABV11025" SrcDirect="true" Dest="UnitV110.V110ToTOXHdrBV_IO" Id="e27ddf62-6b19-4083-9b17-b531280b59f5"/><DataConnection Src="ABV12003" SrcDirect="true" Dest="UnitV110.V110V120EqlzBV_IO" Id="81523dbb-9cfd-4daa-80f6-0f30e034655e"/><DataConnection Src="ABV11028" SrcDirect="true" Dest="UnitV110.V110VacInletBV_IO" Id="2bf57a24-1abd-47f4-9d31-7607af60cd20"/><DataConnection Src="ABV11545" SrcDirect="true" Dest="UnitV110.V110VacOutletBV_IO" Id="862b6601-48bf-4fe3-8075-5a6f7a0029e0"/><DataConnection Src="P115" SrcDirect="true" Dest="UnitV110.V110VacuumPump_IO" Id="be68f1e5-8a3b-421f-a53d-e216f0c730cb"/><DataConnection Src="CV11044" SrcDirect="true" Dest="UnitV110.DVBLoadFlowCV_IO" Id="c865ad58-d1bc-4422-b272-47987ff45fd1"/><DataConnection Src="CV11015" SrcDirect="true" Dest="UnitV110.VentCV_IO" Id="2f62c331-3978-431e-be2c-1673097c9521"/><DataConnection Src="CV11046" SrcDirect="true" Dest="UnitV110.JktTempCV_IO" Id="87daf8d3-f02f-48d2-908f-354aa4fda78a"/><DataConnection Src="ieFT11043" SrcDirect="true" Dest="UnitV110.V230DVBFlow_IO" Id="fbaf8154-c388-4810-b599-307ad82cb2ce"/></DataConnections></Page><Page PageNo="2" PageName="UnitV120"><Blocks><Invocation Name="UnitV120" DataFlowOrder="3" ENPort="false" Id="a782ca0e-d140-4f5e-9933-16ebb13ca21e"><Layout X="9991" Y="3217" Width="2879" Height="7620"><Ports><Port Name="Name" Visible="false"/><Port Name="Description" Visible="true"/><Port Name="AEClass" Visible="true"/><Port Name="Unit" Visible="true"/><Port Name="Device" Visible="true"/><Port Name="Comm" Visible="true"/><Port Name="PCCInBatch" Visible="true"/><Port Name="AbortMOPCmd" Visible="true"/><Port Name="AbortStat" Visible="true"/><Port Name="HoldMOPCmd" Visible="true"/><Port Name="HoldStat" Visible="true"/><Port Name="PCCOutBatch" Visible="true"/><Port Name="CommonReset" Visible="true"/><Port Name="V120JktFlow_IO" Visible="true"/><Port Name="V120JktRtnTemp_IO" Visible="true"/><Port Name="V120LSH_IO" Visible="true"/><Port Name="V120Press_IO" Visible="true"/><Port Name="V120Weight_IO" Visible="true"/><Port Name="V120FrangibleBurst_IO" Visible="true"/><Port Name="V120ToDecantMV_IO" Visible="true"/><Port Name="V120EBFlushBV_IO" Visible="true"/><Port Name="V120N2BV_IO" Visible="true"/><Port Name="V120_MW_Name" Visible="false"/><Port Name="V120_PW_Name" Visible="false"/><Port Name="V120_Fill_Name" Visible="false"/><Port Name="V120_WaitDisp_Name" Visible="false"/><Port Name="V120_FlowDisp_Name" Visible="false"/><Port Name="V120_Flush_Name" Visible="false"/><Port Name="V120BttmBV_IO" Visible="true"/></Ports></Layout></Invocation></Blocks><DataConnections><DataConnection Src="'UnitV120'" SrcDirect="true" Dest="UnitV120.Name" Id="f0bb15fe-ec6e-48b6-9aaa-fef3c7465019"/><DataConnection Src="5010" SrcDirect="true" Dest="UnitV120.AEClass" Id="98eb523e-ea34-4e58-91aa-aaf9af11384b"/><DataConnection Src="CommV120" SrcDirect="true" Dest="UnitV120.Comm" Id="ae05077e-4618-4819-9f20-61ae2646db2c"/><DataConnection Src="FT12020" SrcDirect="true" Dest="UnitV120.V120JktFlow_IO" Id="e1de88d7-73c8-4e99-8b93-5ac83665a2a8"/><DataConnection Src="TT12099" SrcDirect="true" Dest="UnitV120.V120JktRtnTemp_IO" Id="70c3e837-5e4d-401e-be92-7113d964622e"/><DataConnection Src="LSH12005" SrcDirect="true" Dest="UnitV120.V120LSH_IO" Id="1f0a9f10-b482-4c21-99d1-90c8dffad131"/><DataConnection Src="PT12022" SrcDirect="true" Dest="UnitV120.V120Press_IO" Id="be2d6287-d3ed-47b8-8dc5-e39a8cce8830"/><DataConnection Src="WT12006" SrcDirect="true" Dest="UnitV120.V120Weight_IO" Id="80693d4c-3fbe-4fcf-9ef0-3ddfbe1eefd7"/><DataConnection Src="IB12023" SrcDirect="true" Dest="UnitV120.V120FrangibleBurst_IO" Id="ccf60278-8fd6-4846-9b00-0f28cb29c0dd"/><DataConnection Src="ZSC12010" SrcDirect="true" Dest="UnitV120.V120ToDecantMV_IO" Id="2c120e9c-aec6-41e9-86b1-f454eea95709"/><DataConnection Src="ABV12044" SrcDirect="true" Dest="UnitV120.V120EBFlushBV_IO" Id="40f2d867-489b-4609-8a96-5a06c4dfef4b"/><DataConnection Src="ABV12016" SrcDirect="true" Dest="UnitV120.V120N2BV_IO" Id="ec8f9a03-640c-4b0b-8bcf-63781c4cc406"/><DataConnection Src="ABV12008" SrcDirect="true" Dest="UnitV120.V120BttmBV_IO" Id="87cdee90-f830-4376-b47b-1377fc70ba90"/></DataConnections></Page><Page PageNo="3" PageName="UnitE120"><Blocks><Invocation Name="UnitE120" DataFlowOrder="4" ENPort="false" Id="6bc76cdc-d0e0-402a-b2fd-c3306737f02a"><Layout X="8467" Y="3048" Width="3048" Height="6604"><Ports><Port Name="Name" Visible="false"/><Port Name="Description" Visible="true"/><Port Name="AEClass" Visible="true"/><Port Name="Unit" Visible="true"/><Port Name="Device" Visible="true"/><Port Name="Comm" Visible="true"/><Port Name="PCCInBatch" Visible="true"/><Port Name="AbortMOPCmd" Visible="true"/><Port Name="AbortStat" Visible="true"/><Port Name="HoldMOPCmd" Visible="true"/><Port Name="HoldStat" Visible="true"/><Port Name="PCCOutBatch" Visible="true"/><Port Name="ABV12143cmd" Visible="false"/><Port Name="ABV12143sisTrip" Visible="false"/><Port Name="CommonReset" Visible="true"/><Port Name="E120FiltDwnstrmPress_IO" Visible="true"/><Port Name="E120FiltUpstrmPress_IO" Visible="true"/><Port Name="E120Sr1RtnTemp_IO" Visible="true"/><Port Name="E120FeedToHdrTemp_IO" Visible="true"/><Port Name="E120FeedTempCV_IO" Visible="true"/><Port Name="E120_MW_Name" Visible="false"/><Port Name="E120_PW_Name" Visible="false"/><Port Name="E120_Run_Name" Visible="false"/><Port Name="E120HXOutPress_IO" Visible="true"/><Port Name="E120HXOutFlow_IO" Visible="true"/></Ports></Layout></Invocation></Blocks><DataConnections><DataConnection Src="'UnitE120'" SrcDirect="true" Dest="UnitE120.Name" Id="ceb05c07-8252-4869-806b-c059ecd6dfde"/><DataConnection Src="'E120 Monomer To Train 4 Reactors'" SrcDirect="true" Dest="UnitE120.Description" Id="7172c931-d709-4aed-9f02-0d47dc19dfdd"/><DataConnection Src="5015" SrcDirect="true" Dest="UnitE120.AEClass" Id="7f735fa2-f869-4eec-9d38-025724183779"/><DataConnection Src="CommE120" SrcDirect="true" Dest="UnitE120.Comm" Id="c1699401-1d76-4501-8d5b-66dbd5701065"/><DataConnection Src="PT12107" SrcDirect="true" Dest="UnitE120.E120FiltDwnstrmPress_IO" Id="271b6979-72c5-4ba6-a3b7-b0d178b2bd38"/><DataConnection Src="PT12012" SrcDirect="true" Dest="UnitE120.E120FiltUpstrmPress_IO" Id="1aa39bb0-b13a-41db-a5df-0b673fb98d9a"/><DataConnection Src="TT12135" SrcDirect="true" Dest="UnitE120.E120Sr1RtnTemp_IO" Id="c731085f-7029-4fcf-9d3f-3821ed407492"/><DataConnection Src="TT12125" SrcDirect="true" Dest="UnitE120.E120FeedToHdrTemp_IO" Id="f8d5a003-d2cf-4868-90c4-ebacb1a7e7df"/><DataConnection Src="CV12104" SrcDirect="true" Dest="UnitE120.E120FeedTempCV_IO" Id="575e8bc0-0838-4b52-b3db-d96a1431b9a6"/><DataConnection Src="PT12062" SrcDirect="true" Dest="UnitE120.E120HXOutPress_IO" Id="2a2b23d7-bd08-4874-9780-2fd396dbd11e"/><DataConnection Src="ieFT12029" SrcDirect="true" Dest="UnitE120.E120HXOutFlow_IO" Id="800a51e3-01dc-45e0-88fb-24c0b9a66d45"/></DataConnections></Page></Pages></FunctionDiagram></FDCodeBlock>
+    <STCodeBlock Name="V110CommIn">
+      <ST_Code>
+(* From V120 *)
+CommV110.In.V120_LowWtAlmLatchSpEx   := CommV120.Out.V120_LowWtAlmLatchSpEx;
+CommV110.In.V120_WeightEx            := CommV120.Out.V120_WeightEx;
+CommV110.In.V120_TankPressureEx      := CommV120.Out.V120_TankPressureEx;
+CommV110.In.V120_DecantVlvZSCEx      := CommV120.Out.V120_DecantVlvZSCEx;
+CommV110.In.V120_FillStepEx          := CommV120.Out.V120_FillStepEx;
+CommV110.In.V120_WaitDispStepEx      := CommV120.Out.V120_WaitDispStepEx;
+CommV110.In.V120_FlowDispStepEx      := CommV120.Out.V120_FlowDispStepEx;
+CommV110.In.V120_HighWtLvlAlmEx      := CommV120.Out.V120_HighWtLvlAlmEx;
+CommV110.In.V120_ABV12008OpenCmd     := CommV120.Out.V120_ABV12008AutoCmd;
+
+CommV110.In.V120_ABV12008StatClsd := ABV12008.FB0.Value;
+
+
+(* From Dispersers *)
+(* Replace Disperser MMX Fill and Run Switches with combined calcs from common Disperser unit to reduce Comms *)
+CommV110.In.Disp_AnyMMXFillSwEx := iDisp_AnyMMXFillSwEx;
+CommV110.In.Disp_AnyMMXRunSwEx  := iDisp_AnyMMXRunSwEx;
+CommV110.In.RunMono2ContEx := iTr4RunMonoContinuousSwEx;
+
+
+(* From R400 *)
+CommV110.In.R400_BatchIDEx       := iR400BatchIDEx; 
+CommV110.In.R400_MonoMakeupReqEx := iR400_RequestsMixedMonoMakeUpEx;
+CommV110.In.R400_OkToLoadCatEx   := iR400_AddCatalystToMonoEx; 
+CommV110.In.R400_PresentRpEx     := iR400PresentRecipeEx; 
+CommV110.In.R400_MWStepEx        := iR400_MWStepEx;
+CommV110.In.R400_PWStepEx        := iR400_PWStepEx; 
+CommV110.In.R400_LoadMonoStepEx  := iR400_LoadMMXStepEx; 
+
+
+(* From R450 *)
+CommV110.In.R450_BatchIDEx        := iR450BatchIDEx;  (*AC899*)
+CommV110.In.R450_MonoMakeupReqEx  := iR450ReqMixedMonoMakeUpEx;  (*DC409*)
+CommV110.In.R450_OkToLoadCatEx    := iR450_AddCatalystToMonoEx;  (*DC597*)
+CommV110.In.R450_PresentRpEx      := iR450PresentRecipeEx;  (*RP45*)
+CommV110.In.R450_MWStepEx         := iR450MWStepEx;  (*STEP451*)
+CommV110.In.R450_PWStepEx         := iR450PWStepEx;  (*STEP452*)
+CommV110.In.R450_LoadMonoStepEx   := iR450LoadDispStepEx; (*STEP459*)
+
+
+(* From R490 *)
+CommV110.In.R490_MWStepEx        := iR490_MWStepEx;
+CommV110.In.R490_PWStepEx        := iR490PWActiveEx;
+CommV110.In.R490_BatchIDEx       := iR490BatchIDEx;
+CommV110.In.R490_MonoMakeupReqEx := iR490_RequestsMixedMonoMakeUpEx;
+CommV110.In.R490_PresentRpEx     := iR490PresentRecipeEx;
+
+
+(* From RecE *)
+CommV110.In.RcMonTotAmntEx    := iV110RcMonTotAmntEx ;         (* AR1 *)
+CommV110.In.RcDVBAmntEx       := iV110DVBAmntEx ;              (* AR2 *)
+CommV110.In.RcTBPOAmntEx      := iV110RcTBPOAmntEx ;           (* AR31 *) 
+CommV110.In.RcTBPBAmntEx      := iV110RcTBPBAmntEx ;           (* AR32 *) 
+CommV110.In.RcBenzPeroxAmntEx := iV110RcBenzPeroxAmntEx ;      (* AR33 *) 
+CommV110.In.RcpOvrCntlTablePBOutEx := iT4RcOvrCntlTablePBOutEx; (* Rec BatchCntlTable Override PB pressed  (UnitV110Active) AZP 2023.12.06 *)
+
+(* From SIF25 *)
+
+
+(* From Util1360 *)
+CommV110.In.Util1360_P802TempEx := iUtil1360TT80259Ex;
+
+
+(* From TOX *)
+CommV110.In.TOX_ReadyToRecVentsEx    := iTOX_Tox1360ProdRdyEx; (* DC1233 *)
+CommV110.In.TX1360Hdr_PressSpEx          := iTX1360Hdr_HdrPressCntlSpEx; (*AC3*)
+CommV110.In.TX1360Hdr_PressEx            := iTX1360Hdr_PT32426Ex; (*AI713*)
+CommV110.In.TX1360Hdr_OkToVentV110Ex     := iTX1360Hdr_OkToVentV110Ex; (*DC285*)
+CommV110.In.TX1360Hdr_OkToVentPumpEx := iTX1360Hdr_OkToVentP115Ex; (* DC286 *)
+
+
+(* From BPCS-P *)
+CommV110.In.BPCSP_HighLELAlmEx          := iBPCSP_LEL12002_HHAlmEx;
+CommV110.In.BPCSP_LEL12002_AEOEStatEx   := iBPCSP_LEL12002_AEOEStatEx;
+CommV110.In.BPCSP_LEL12002_ForcedStatEx := iBPCSP_LEL12002_ForcedStatEx;
+
+(* From SIF12 *)
+CommV110.In.SIF12_TrippedEx           := iSIF12_Tripped;
+CommV110.In.SIF12_TT11055_11063DevAlm := iSIF12_TT11055_11063DevAlm;
+CommV110.In.SIF12_TT11055_11063HSel   := iSIF12_TT11055_11063HSel;
+CommV110.In.SIF12_TT11055Value        := iSIF12_TT11055_Value;
+CommV110.In.SIF12_TT11063Value        := iSIF12_TT11063_Value;
+CommV110.In.SIF12_TT11055Valid        := iSIF12_TT11055_Valid;
+CommV110.In.SIF12_TT11063Valid        := iSIF12_TT11063_Valid;
+CommV110.In.SIF12_TT11055_63Valid     := iSIF12_TT11055_11063Valid;
+CommV110.In.SIF12_A110Off             := iSIF12_EY11023StatDeact;
+CommV110.In.SIF12_A110ObjError        := iSIF12_EY11023ObjError;
+CommV110.In.SIF12_TT11055_63CommErr   := 
+(iSIF12_TT11055_11063HSel:status AND iSIF12_TT11055_11063Valid:status AND 16#C0) &lt;&gt; 16#C0;
+
+
+(* From SIF29 *)
+CommV110.In.SIF29_TrippedEx        := iSIF29_Tripped;
+CommV110.In.SIF29_ABV11074StatClsd := iSIF29_ABV11074StatClsd;
+CommV110.In.SIF29_ABV11074ObjError := iSIF29_ABV11074ObjError;
+CommV110.In.SIF29_ABV11045StatClsd := iSIF29_ABV11045StatClsd;
+CommV110.In.SIF29_ABV11045ObjError := iSIF29_ABV11045ObjError;
+CommV110.In.SIF29_AR02Verified     := iSIF29_AR02Verified;
+CommV110.In.SIF29_AR02AcceptedEx     := iSIF29_AR02Accepted;
+CommV110.In.SIF29_V110PermitToPW   := iSIF29_V110PermitToPW;
+CommV110.In.SIF29_FT11043Value     := iSIF29_FT11043Value;
+CommV110.In.SIF29_FT11043Status    := iSIF29_FT11043Status;
+CommV110.In.SIF29_FT11043Valid     := (iSIF29_FT11043Status and 16#FF) = 16#C0;
+CommV110.In.SIF29_FT11043TotValEx  := iSIF29_TotalFlow11043;
+CommV110.In.SIF29_ABV11074ManualMode := iSIF29_ABV11074ManualMode;
+CommV110.In.SIF29_ABV11045ManualMode := iSIF29_ABV11045ManualMode;
+CommV110.In.SIF29_ExpectRcDVBAmntEx  := iSIF29_ActiveDVB;
+
+
+
+(* From CopCont_ADiagAppl *)
+CommV110.In.ContADiag_HeartbeatEx := iAtoE2Heartbeat;
+
+
+(* From DVBPipe *)
+CommV110.In.DVBPipe_LdedToMonoIIEx   := iDVBPipe_LdedToMonoIIEx;
+CommV110.In.DVBPipe_DVBActivityEx    := iModADVBConcEx ;
+(*KJA Temporary until startup, Mod_A was always wanting to send 0 - 100 (63.5), 
+(* A startup, D had to be modified to read 0 - 1 but this was wrong,
+what we should have is A sending out 0 - 100, D will need to be re-corrected to read this *)
+CommV110.In.DVBPipe_PumpV110StepEx   := iDVBPipe_PumpV110StepEx;
+CommV110.In.DVBPipe_NorthDVBTankEx   := iModADVBFromDTK14Ex;
+CommV110.In.DVBPipe_SouthDVBTankEx   := iModADVBFromDTK15Ex;
+CommV110.In.DVBPipe_XferInProgressEx := iModADVBSupplyOkEx;
+CommV110.In.Comm_DVBRelievePressEx   := FALSE; (* Check that variable exists *) (*DC810*)
+
+(* From StyPipe *)
+CommV110.In.StyPipe_StyLoadedTotalEx := iStyreneLoadedToMonoIIEx; (* AC1387 *)
+CommV110.In.StyPipe_PumpV110StepEx   := iMonoIIHasUseOfStySysEx; (* DC827 *)
+CommV110.In.StyPipe_V110RequestEx    := iModERequestsStyreneEx; (* DC828 *)
+CommV110.In.Comm_StyRelievePressEx   := iModACycStyrPresRlfEx; (* DC808*)
+
+
+(* From InitVer *)
+CommV110.In.InitVer_UnlockV110VlvEx := iInitVerUnlockV110AddVlvEx;
+
+
+</ST_Code>
+    </STCodeBlock>
+    <STCodeBlock Name="V110CommOut">
+      <ST_Code>
+(* To Disp *)
+iV110_RedLightEx         := CommV110.Out.V110_DK100RedLightEx;
+iV110_YellowLightEx      := CommV110.Out.V110_DK100YellowLightEx;
+
+(* To V340 *)
+iV110_MWStepEx := CommV110.Out.V110_MWStepEx; (*STEP131*)
+iV110_PWStepEx := CommV110.Out.V110_PWStepEx; (*STEP132*)
+
+(* To V387 *)
+iV110_MaxHdrPresToVentEx := CommV110.Out.V110_MaxHdrPresToVentEx;
+
+
+(* To CopRxTr4AAppl *)
+iV110_FlowDispStepEx      := CommV110.Out.V110_FlowDispStepEx ;      (* Step138 *)
+iV110_ConvRecipeEx        := CommV110.Out.V110_ConvRecipeEx;         (* DC431 *)
+iV110_MonoRpActiveEx      := CommV110.Out.V110_MonoRpActiveEx;       (* DC362 *)
+iV110_StyLoadedCalcEx     := CommV110.Out.V110_StyLoadedCalcEx;      (* AC503 *)
+iV110_DVBLoadedCalcEx     := CommV110.Out.V110_DVBLoadedCalcEx;      (* AC504 *)
+iV110_MonoFdTkFullEx      := CommV110.Out.V110_MonoFdTkFullEx;       (* DC486 *)   
+iV110_MonoLdDoneForConvEx := CommV110.Out.V110_MonoLdDoneForConvEx;  (* DC581 *)
+
+
+(* To RecE *)
+iV110BatchIDEx            := CommV110.Out.V110_BatchIDEx ;  
+
+
+(* To V170 *)
+iV110_BatchNumEx            := CommV110.Out.V110_BatchNumEx ;       (* AC1114 *)
+
+
+(* To BPCS-P *)
+iV110_UnitOverrideSwEx := CommV110.Out.V110_UnitOverrideSwEx;
+
+
+(* To SIF12 *)
+iMMixTr4_BPCS2SIS_02.Bool0 := CommV110.Out.V110_A110AutoCmdEx;
+
+
+(* To SIF29 *)
+iMMixTr4_BPCS2SIS_01.Bool3  := CommV110.Out.V110_ABV11074AutoCmdEx;
+iMMixTr4_BPCS2SIS_01.Bool4  := CommV110.Out.V110_ABV11045AutoCmdEx;
+iMMixTr4_BPCS2SIS_01.Bool6  := CommV110.Out.V110_ReqToPWEx;
+iMMixTr4_BPCS2SIS_01.Bool7  := CommV110.Out.V110_MWStepEx;
+iMMixTr4_BPCS2SIS_01.Bool8  := CommV110.Out.V110_PWStepEx;
+iMMixTr4_BPCS2SIS_01.Bool9  := CommV110.Out.V110_LdRxrStepEx;
+iMMixTr4_BPCS2SIS_01.Bool10 := CommV110.Out.V110_FlowDispStepEx;
+iMMixTr4_BPCS2SIS_01.Bool12 := CommV110.Out.V110_LoadDVBEx;
+iMMixTr4_BPCS2SIS_01.Real0  := CommV110.Out.V110_PresentRpEx;
+iMMixTr4_BPCS2SIS_01.Real1  := CommV110.Out.V110_RcDVBAmntEx;
+
+
+
+
+
+(* To TX1360Hdr *)
+
+iV110_TkReqTX1360HdrEx   := CommV110.Out.V110_TkReqTX1360HdrEx;
+iV110_P115ReqTX1360HdrEx := CommV110.Out.V110_P115ReqTX1360HdrEx;
+
+
+
+(* To SysA InitVer *)
+
+iV110_InitiatorRequestedEx := CommV110.Out.V110_InitReqEx;
+iV110_DoneWithInitVerEx    := CommV110.Out.V110_InitVerifyDoneEx;
+iV110_RecipeAmntTBPOEx     := CommV110.Out.V110_TBPOAmntEx;
+iV110_RecipeAmntTBPBEx     := CommV110.Out.V110_TBPBAmntEx;
+iV110_RecipeAmntBPOEx      := CommV110.Out.V110_BenzPeroxAmntEx;
+
+
+(* To SysA DVBPipe *)
+
+iModE_RequestDVBForV110Ex    := CommV110.Out.V110_ReqDVBFromModAEx;
+iModE_V110DVBVlvsOkayEx      := CommV110.Out.V110_DVBVlvsRdyForXferEx;
+iModE_MonoIIDoneLoadingDVBEx := CommV110.Out.V110_DVBChargeDoneEx;
+
+
+(* To SysA StyPipe *)
+
+iModEReqStyForV110Ex        := CommV110.Out.V110_ReqStyFromModAEx;
+iModEV110StyVlvsOKEx        := CommV110.Out.V110_StyVlvsReadyForXferEx;
+iModEMonoIIDoneLoadingStyEx := CommV110.Out.V110_StyChargeDoneEx;
+
+
+</ST_Code>
+    </STCodeBlock>
+    <STCodeBlock Name="V120CommIn">
+      <ST_Code>
+
+
+
+(* From V110 *)
+CommV120.In.V110_BatchNumEx       := CommV110.Out.V110_BatchNumEx;
+CommV120.In.V110_BatchCounterEx   := CommV110.Out.V110_BatchCounterEx;
+CommV120.In.V110_MonoRpActiveEx   := CommV110.Out.V110_MonoRpActiveEx;
+CommV120.In.V110_V120FillDoneEx   := CommV110.Out.V110_V120FillDoneEx;
+CommV120.In.V110_LowWeightEx      := CommV110.Out.V110_LowWeightEx;
+CommV120.In.V110_PressEqlzBVZCSEx := CommV110.Out.V110_PressEqlzBVZCSEx;
+CommV120.In.V110_PresentRpEx      := CommV110.Out.V110_PresentRpEx;
+CommV120.In.V110_MWStepEx         := CommV110.Out.V110_MWStepEx;
+CommV120.In.V110_PressStepEx      := CommV110.Out.V110_PressStepEx;
+CommV120.In.V110_FlowDispStepEx   := CommV110.Out.V110_FlowDispStepEx;
+CommV120.In.V110_UnitEnableSwEx   := CommV110.Out.V110_UnitEnableSwEx;
+CommV120.In.V110_BatchIDEx        := CommV110.Out.V110_BatchIDEx;
+
+
+(* From E120 *)
+CommV120.In.E120_MonoToDispTotEx  := CommE120.Out.E120_MonoToDispTotEx;
+
+
+(* From Dispersers *)
+(* Replace Disperser MMX Fill Switches with combined calc from common Disperser unit to reduce Comms *)
+CommV120.In.Disp_AnyMMXFillSwEx     := iDisp_AnyMMXFillSwEx;
+CommV120.In.Disp_TotalMMXFlowSpEx   := iDisp_TotalMMXFlowSpEx;
+CommV120.In.R400_RunContMono2Ex     := iTr4RunMonoContinuousSwEx; (* DK100 *)
+
+(* From R400 *)
+CommV120.In.R400_MonoLdFmDispDoneEx := iR400_MonoLoadFrmDispsCompltEx; (* DC308 *)
+
+
+(* From R450 *)
+CommV120.In.R450_MonoLdFmDispDoneEx := iR450MonoLoadCompleteEx; (*DC309*)
+
+
+(* From R490 *)
+CommV120.In.R490_MonoLdFmDispDoneEx := iR490_MonoLoadFrmDispsCompltEx;
+
+
+(* From V180 *)
+CommV120.In.V180_DispLSAFlushDoneEx := iV180DisperLSAFlushDoneEx;
+
+
+(* From V340 *)
+CommV120.In.V340_EBFlushBVFBCEx := iV340_ABV34096FBCEx;
+CommV120.In.V340_EBToHdrBVFBCEx := iV340_ABV34050FBCEx;
+
+
+(* From SIF13 *)
+CommV120.In.SIF13_TrippedEx        := iSIF13_Tripped;
+CommV120.In.SIF13_TT12007Value     := iSIF13_TT12007_Value;
+CommV120.In.SIF13_TT12011Value     := iSIF13_TT12011_Value;
+CommV120.In.SIF13_TT12007Valid     := iSIF13_TT12007_Valid;
+CommV120.In.SIF13_TT12011Valid     := iSIF13_TT12011_Valid;
+CommV120.In.SIF13_ABV12017ObjError := iSIF13_ABV12017ObjError;
+CommV120.In.SIF13_TT12007_12011HSel := iSIF13_TT12007_12011HSel;
+CommV120.In.SIF13_TT12007_12011Valid := iSIF13_TT12007_12011Valid;
+
+
+(* From SIF25 *)
+CommV120.In.SIF25_FT12029Value     := iSIF25_FT12029Value;
+
+
+(* From SIF29 *)
+CommV120.In.SIF29_ABV11074StatClsd := iSIF29_ABV11074StatClsd;
+
+
+
+
+
+</ST_Code>
+    </STCodeBlock>
+    <STCodeBlock Name="V120CommOut">
+      <ST_Code>
+(* To Disp *)
+iV120_RedLightEx         := CommV120.Out.V120_DK100RedLightEx;
+iV120_YellowLightEx      := CommV120.Out.V120_DK100YellowLightEx;
+iV120_EnEBFlushBVEx      := CommV120.Out.V120_EnEBFlushBVEx; (*DK50*)
+
+(* To V180 *)
+iV120_FlushStepEx := CommV120.Out.V120_FlushStepEx ;
+
+(* To V230 *)
+iModEMono2ReqEBEx := CommV120.Out.V120_ReqEBEx ; (*DC86*) (*D:DC80*)
+
+(* To V184 *)
+iModE_EBXferAndFlushBVClosedEx := CommV120.Out.ModE_EBXferAndFlushBVClosedEx; (*DC98*) (*DC318D*)
+
+(* To V340 *)
+iV120_ZSC12010Ex  := CommV120.Out.V120_ZSC12010Ex; (*DI163*)
+iV120_MWStepEx := CommV120.Out.V120_MWStepEx; (*STEP141*)
+iV120_PWStepEx := CommV120.Out.V120_PWStepEx; (*STEP142*)
+
+
+(* To V366 *)
+iV120_EBFlushToDispDoneEx    := CommV120.Out.V120_EBFlushToDispDoneEx; (*DC428*)
+
+(* To Reactors *)
+iV120_FlowDispStepEx         := CommV120.Out.V120_FlowDispStepEx;     (* STEP145 *)
+iV120_LowWtAlmLatchSpEx      := CommV120.Out.V120_LowWtAlmLatchSpEx;  (* AC134 *)
+iV120WT12006Ex               := WT12006.Value;                        (* AI193 *)
+
+
+(* To SIF13 *)
+iMMixTr4_BPCS2SIS_02.Bool1:= CommV120.Out.V120_ABV12017AutoCmd ;
+
+
+(* To RecE *)
+iV120BatchIDEx             := CommV120.Out.V120_BatchIDEx ;
+</ST_Code>
+    </STCodeBlock>
+    <STCodeBlock Name="E120CommIn">
+      <ST_Code>
+(* From V110 *)
+CommE120.In.V110_FlowDispStepEx        := CommV110.Out.V110_FlowDispStepEx;
+CommE120.In.V110_WtLowFdDispFromV120Ex := CommV110.Out.V110_LowWeightEx;
+
+
+(* From V120 *)
+CommE120.In.V120_EBFlushBVFBCEx      := CommV120.Out.V120_EBFlushZSCEx;
+CommE120.In.V120_EBFlushToDispDoneEx := CommV120.Out.V120_EBFlushToDispDoneEx;
+CommE120.In.V120_FlowDispStepEx      := CommV120.Out.V120_FlowDispStepEx;
+CommE120.In.V120_FlushStepEx         := CommV120.Out.V120_FlushStepEx;
+CommE120.In.V120_BatchIDEx           := CommV120.Out.V120_BatchIDEx;
+CommE120.In.V120_ABV12008StatClsd   := ABV12008.FB0.Value;
+
+
+(* From Dispersers *)
+CommE120.In.Disp_AnyMMXCntlEngEnbEx := iDisp_AnyMMXCntlEngEnbEx;
+CommE120.In.Disp_PresentRpEx      := iDisp_CurrentRecipeEx;
+
+
+(* From R400 *)
+CommE120.In.R400_MonoLdFmDispDoneEx := iR400_MonoLoadFrmDispsCompltEx; (* DC308 *)
+
+
+(* From R450 *)
+CommE120.In.R450_MonoLdFmDispDoneEx := iR450MonoLoadCompleteEx ;  (* DC309 *)
+
+
+
+(* From R490 *)
+CommE120.In.R490_MonoLdFmDispDoneEx := iR490_MonoLoadFrmDispsCompltEx;
+
+
+(* From Recipe *)
+CommE120.In.RcMonRunRateEx       := iE120RcMonRunRateEx;
+CommE120.In.RcMonoTempSPtoDispEx := iE120RcMonoTempSPtoDispEx ;
+
+
+
+(* From SIF25 *)
+CommE120.In.SIF25_TrippedEx        := iSIF25_Tripped;
+CommE120.In.SIF25_ABV12143StatClsd := iSIF25_ABV12143StatClsd;
+CommE120.In.SIF25_ABV12143ObjError := iSIF25_ABV12143ObjError;
+CommE120.In.SIF25_FT12029Value     := iSIF25_FT12029Value;
+CommE120.In.SIF25_ManInhibitEx     := iSIF25_ManInhibitOn;
+
+
+(* From SIF29 *)
+CommE120.In.SIF29_ABV11074StatClsd := iSIF29_ABV11074StatClsd;
+
+
+(* From CT870 *)
+CommE120.In.CT870_AmbientAirTempEx := iCT870_TT87023Ex;
+
+
+</ST_Code>
+    </STCodeBlock>
+    <STCodeBlock Name="E120CommOut">
+      <ST_Code>
+(* To SIF25 *)
+iMMixTr4_BPCS2SIS_01.Bool0 := CommE120.Out.E120_ABV12144AutoCmdEx ;
+iMMixTr4_BPCS2SIS_01.Bool1 := CommE120.Out.E120_MWStepActiveEx ;
+iMMixTr4_BPCS2SIS_01.Bool2 := CommE120.Out.E120_ABV12143AutoCmdEx ;
+
+(* To RecE *)
+iE120BatchIDEx := CommE120.Out.E120_BatchIDEx ;
+
+
+iV120_ZSC12044Ex := CommV120.Out.V120_EBFlushZSCEx;
+</ST_Code>
+    </STCodeBlock>
+  </CodeBlocks>
+  <Description/>
+</Diagram>
+

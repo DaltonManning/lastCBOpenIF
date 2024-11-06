@@ -1,0 +1,203 @@
+%%BeginProcSet: "(SattGraphDict sgd)" 43 2
+%=================================================
+% SattGraph PostScript procedure set
+% Version 4.3-2
+% Date 1997-12-03
+% Copyright (C) Alfa Laval Automation AB, Malmo, Sweden
+% All rights reserved.
+%=================================================
+
+/sattgraphdict 275 dict def /sgdb { sattgraphdict begin } def /beginsgdict
+{sgdb} def sgdb /bdef { bind def } bind def /ldef { load def } bdef /xdef {
+exch def } bdef /unitsizemm 72 25.4 div def /convunitsize { dup matrix
+defaultmatrix dtransform idtransform pop } def /convmm { unitsizemm mul
+convunitsize } def /realeq { sub abs 0.001 lt } def /eqpoint { exch 4 1 roll
+realeq 3 1 roll realeq and } def /scalefixpt { [ 3 1 roll ] dup {} forall
+translate exch dup scale {neg} forall translate } def /min { 2 copy gt { exch }
+if pop } def /max { 2 copy lt { exch } if pop } def /addto { exch dup cvx exec
+exch 3 1 roll add def } def /tempstr 255 string def /gclevel 0 def /graphcom 0
+def /gc { /graphcom xdef graphcom 0 eq { /gclevel -1 addto } { /gclevel 1 addto
+} ifelse graphcom 7 eq { startpolyline } if graphcom 0 eq { polyline 0 ne {
+endpolyline } if } if } def /currlinepatt [] def /setlinepattern { dup
+linepatternarray length lt { linepatternarray exch get } { pop [] } ifelse
+/currlinepatt xdef currlinepatt 0 setdash } def /setfillpattern { exch dup 1 lt
+{ pop pop } { dup 1 eq { pop 0 max setfillcolor } { simulatepattern } ifelse }
+ifelse } def /colorarray [ 0 1 255 { pop [0 0 0] } for ] def /black { 0.0
+setgray } def /white { 1.0 setgray } def /calcgrey { aload pop /v xdef /s xdef
+/h xdef s 0 eq { v } { h 0.15 add 1 min } ifelse } def /winbackcol -1 def
+/nobackcol { coloroutput { [0 0 1.0] } { 1 } ifelse } def /greyorcolarray {
+coloroutput { colorarray } { greyscale } ifelse } def /popwinbackcol {
+winbackcol 0 ge { greyorcolarray winbackcol savedwincol put } if } def
+/pushwinbackcol { coloroutput savetoner and coloroutput not or { /winbackcol
+xdef greyorcolarray winbackcol get /savedwincol xdef greyorcolarray winbackcol
+nobackcol put } if } def /setwinbackcol { popwinbackcol pushwinbackcol } def
+/inittruecolors { } def /initgreyscale { /greyscale [ colorarray { calcgrey }
+forall ] def } def /changecolorhsb { colorarray 3 1 roll [ exch {} forall 3 -1
+roll 360 mul round 360 div 3 1 roll ] put } def /changegreyscale { greyscale 3
+1 roll put } def /simulatepattern { /pattnorm exch 1 sub 16 div def 0 max
+currfillcol settruecolor currentrgbcolor /b1 xdef /g1 xdef /r1 xdef
+settruecolor currentrgbcolor /b2 xdef /g2 xdef /r2 xdef r2 pattnorm mul r1 1
+pattnorm sub mul add g2 pattnorm mul g1 1 pattnorm sub mul add b2 pattnorm mul
+b1 1 pattnorm sub mul add setrgbcolor } def /settruecolor { colorarray exch get
+{} forall sethsbcolor } def /setgreycolor { greyscale exch get setgray } def
+/BWcolor { greyscale exch get 1.0 eq { white } { black } ifelse } def
+/greylinecolor { checklinedashcol black } def /setlinecolor { coloroutput {
+settruecolor } { greylinecolor } ifelse } def /linedashforcol [] def /dashcol 0
+def /checklinedashcol { linedashforcol length 0 gt { currlinepatt 0 setdash
+/dashcol xdef linedashforcol { dup 0 get dashcol eq { [ exch 1 get { convmm abs
+} forall ] 0 setdash } { pop } ifelse } forall } { pop } ifelse } def
+/greytextcolor { BWcolor } def /textbackcol 0 def /settextcolor { /textbackcol
+xdef coloroutput { settruecolor } { greytextcolor } ifelse } def /greyfillcolor
+{ setgreycolor } def /currfillcol 0 def /setfillcolor { dup /currfillcol xdef
+coloroutput { settruecolor } { greyfillcolor } ifelse graphcom 9 eq coloroutput
+not savetoner or and { white } if } def /changecolors {} def /changegreycolors
+{} def /iscolordevice { statusdict begin /processcolors where { pop
+processcolors } { 1 } ifelse end 1 gt } def /checkcoloroutput { /coloroutput
+statusdict begin /processcolors where { pop processcolors } { 1 } ifelse end 1
+gt def coloroutput not { /prodname statusdict /product get def [ (Display)
+(Colo) (LJ250) (Ghostscript) ] { prodname exch search { pop pop pop
+/coloroutput true def exit } { pop } ifelse } forall } if } def /initcolors {
+coloroption 0 eq { checkcoloroutput } if coloroption 1 eq { /coloroutput false
+def } if coloroption 2 eq { /coloroutput true def } if coloroutput {
+inittruecolors changecolors     } { initgreyscale changegreycolors } ifelse 90
+setwinbackcol } def /thinline { 2 setlinewidth } def /defaultgraphics {
+thinline 0 setlinecap 2 setlinejoin } def /polyline 0 def /startpolyline {
+/polyline 1 def } def /endpolyline { stroke thinline /polyline 0 def } def
+/drawline { 5 4 roll 4 mul 2 sub setlinewidth 4 2 roll polyline 0 eq { newpath
+moveto lineto stroke thinline } { polyline 1 eq { newpath moveto /polyline 2
+def } { 2 copy currentpoint eqpoint { pop pop } { stroke moveto } ifelse }
+ifelse lineto } ifelse } def /ovmtrx matrix def /oval{ newpath /endangle xdef
+/startangle xdef /yrad xdef /xrad xdef /y xdef /x xdef /savematrix ovmtrx
+currentmatrix def x y translate xrad yrad scale 0 0 1 startangle endangle arc
+savematrix setmatrix } def /rectangle { /y1 xdef /x1 xdef /y0 xdef /x0 xdef
+newpath x0 y0 moveto x1 y0 lineto x1 y1 lineto x0 y1 lineto x0 y0 lineto
+closepath } def /beginpoly { newpath moveto } def /polypoint { lineto } def
+/nofrpolypoint { lineto } def /endpoly { closepath } def /fillarea { gsave fill
+grestore } def /eofillarea { gsave eofill grestore } def /framearea { pop
+stroke } def /filloval { gsave lineto fill grestore } def /getclipwindow {
+newpath clippath pathbbox } def /setclip { rectangle clip newpath } def
+/clipwindow { initclip setclip } def /mf { pop /y1 xdef /x1 xdef /y0 xdef /x0
+xdef 1 x0 y0 x1 y1 ld 1 x1 y0 x0 y1 ld } def /SGencodingvector /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /space /exclam
+/quotedbl /numbersign /dollar /percent /ampersand /quoteright /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one /two
+/three /four /five /six /seven /eight /nine /colon /semicolon /less /equal
+/greater /question /at /A /B /C /D /E /F /G /H /I /J /K /L /M /N /O /P /Q /R /S
+/T /U /V /W /X /Y /Z /bracketleft /backslash /bracketright /asciicircum
+/underscore /quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m /n /o /p /q /r /s
+/t /u /v /w /x /y /z /braceleft /bar /braceright /asciitilde /.notdef /.notdef
+/.notdef /quotesinglbase /florin /quotedblbase /ellipsis /dagger /daggerdbl
+/circumflex /perthousand /Scaron /guilsinglleft /OE /.notdef /.notdef /.notdef
+/space /quoteleft /quoteright /quotedblleft /quotedblright /bullet /endash
+/emdash /tilde /trademark /scaron /guilsinglright /oe /space /space /Ydieresis
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section /dieresis
+/copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph
+/periodcentered /cedilla /onesuperior /ordmasculine /guillemotright /onequarter
+/onehalf /threequarters /questiondown /Agrave /Aacute /Acircumflex /Atilde
+/Adieresis /Aring /AE /Ccedilla /Egrave /Eacute /Ecircumflex /Edieresis /Igrave
+/Iacute /Icircumflex /Idieresis /Eth /Ntilde /Ograve /Oacute /Ocircumflex
+/Otilde /Odieresis /multiply /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis
+/Yacute /Thorn /germandbls /agrave /aacute /acircumflex /atilde /adieresis
+/aring /ae /ccedilla /egrave /eacute /ecircumflex /edieresis /igrave /iacute
+/icircumflex /idieresis /eth /ntilde /ograve /oacute /ocircumflex /otilde
+/odieresis /divide /oslash /ugrave /uacute /ucircumflex /udieresis /yacute
+/thorn /ydieresis 256 array astore def /reencodedict 5 dict def /ReEncode {
+reencodedict begin /newencoding exch def /newfontname exch def /basefontname
+exch def /basefontdict basefontname findfont def /newfont basefontdict
+maxlength dict def basefontdict { exch dup /FID ne dup /Encoding ne and { exch
+newfont 3 1 roll put } { pop pop } ifelse } forall newfont /FontName
+newfontname put newfont /Encoding newencoding put newfontname newfont
+definefont pop 0 1 FontList length 1 sub { dup FontList exch get basefontname
+eq { FontList exch newfontname put } { pop } ifelse } for end } def
+/getnewfontname { tempstr cvs length dup tempstr exch (-SG) putinterval tempstr
+exch 3 add 0 exch getinterval cvn } def /getfontvect { SGencodingvector } def
+/reencodefont { dup getnewfontname getfontvect ReEncode } def /reencodeupdate {
+dup cvx exec dup reencodefont getnewfontname def } def /to { pop pop pop } def
+/tu { pop pop pop } def /FontList [ /Helvetica /Helvetica-Oblique
+/Helvetica-Bold /Helvetica-BoldOblique /Courier /Courier-Oblique /Courier-Bold
+/Courier-BoldOblique /Times-Roman /Times-Italic /Times-Bold /Times-BoldItalic
+/Symbol ] def /setnewfont { /fontheight xdef /fontno xdef FontList fontno get
+findfont fontheight scalefont setfont newpath 0 0 moveto (j) true charpath
+flattenpath pathbbox pop pop /descent xdef pop (X) true charpath flattenpath
+pathbbox /ascent xdef pop pop pop } def /drawtext { /thestring xdef moveto [ {
+0 descent neg rmoveto } {} { 0 fontheight 2 div descent add neg rmoveto } { 0
+fontheight descent add neg rmoveto } ] exch get cvx exec [ {} { thestring
+stringwidth pop 2 div neg 0 rmoveto } { thestring stringwidth pop neg 0 rmoveto
+} ] exch get cvx exec textbackcol 0 gt { gsave 0 descent rmoveto currentpoint
+thestring stringwidth pop fontheight rmoveto currentpoint rectangle textbackcol
+setfillcolor fillarea grestore } if thestring show } def /pgcount 0 def
+/pageaction {} def /beginpage { /pgcount 1 addto /VM save def } def /newpage {
+pageaction showpage outputtype 0 gt { VM restore beginpage } if } def /xyratio
+0.7 def /reduction 1.0 def /minreduc { reduction min /reduction xdef } def
+/getboundingbox { getclipwindow } def /bboxEPSF { /bboxh xdef /getboundingbox {
+0 0 bboxh dup xyratio div exch } def } def /initEPSF { /showpage {} bdef } def
+/getdrawarea { getboundingbox /yur xdef /xur xdef /yll xdef /xll xdef /xsize
+xur yll sub def /ysize yur yll sub def encapsulated not { reduction xur xll add
+2 div yur yll add 2 div scalefixpt } if } def /inithardcopy { encapsulated {
+initEPSF } if getdrawarea xll yll translate /dorotate ysize xsize gt def
+dorotate { xsize 0 translate 90 rotate } if dorotate { xsize ysize /xsize xdef
+/ysize xdef } if ysize xyratio div scalefact div dup scale 1 ysize xsize div
+scratio div sub scalefact mul 2 div 0 max 0 translate FontList 0 get
+reencodefont FontList 4 get reencodefont newpath clippath pathbbox /yurclip
+xdef /xurclip xdef /yllclip xdef /xllclip xdef /initclip { initclip xllclip
+yllclip xurclip yurclip setclip } bdef } def /initdocument { 0.35 0.35 80 0
+translate scale /Helvetica reencodefont /Helvetica-Bold reencodefont /Courier
+reencodefont beginpage } def /initreport { } def /setupreport { /txeotmark xdef
+cvn /headfont xdef /pagenostart xdef /headpos xdef /headstr xdef cvn /txfont
+xdef /txlines xdef /leftmarg xdef /landscape xdef landscape { getclipwindow pop
+exch pop exch sub 0 translate 90 rotate } if leftmarg convmm 0 translate
+getclipwindow /pageheight xdef /rightmarg xdef /botmarg xdef  pop /topmarg 0.02
+pageheight mul def /botmarg botmarg topmarg add def /doheader headpos 0 gt
+headpos 6 le and def doheader { /headfontsize 12 def /headheight headfontsize
+1.2 mul def /headxoffset 10 def /headxpos [ { headxoffset } { rightmarg 2 div }
+{ rightmarg headxoffset sub } ] headpos 1 sub 3 mod get exec def /headypos
+headpos 4 lt { pageheight topmarg sub headfontsize sub /topmarg headheight
+addto } { botmarg /botmarg headheight addto } ifelse def } if /txlineinc
+pageheight topmarg sub botmarg sub txlines div def /txfontsize txlineinc 1.1
+div def /toppos pageheight topmarg sub def /ycurrpos toppos def /txfont
+reencodeupdate doheader headfont txfont ne and{ /headfont reencodeupdate } if
+FontList 0 get reencodefont txfont findfont txfontsize scalefont setfont
+/pageaction { reportpageaction } def beginpage } def /appendreport { {
+reportnewpage } if } def /reportnewpage { ycurrpos toppos ne { newpage } if }
+def /reportpageaction { doheader { headfont findfont headfontsize scalefont
+setfont pagenostart 0 gt { pagenostart 1 sub pgcount add 10 tempstr cvrs } { ()
+} ifelse dup stringwidth pop headstr stringwidth pop add /headwid xdef [ {
+headxpos } { headxpos headwid 2 div sub } { headxpos headwid sub } ] headpos 1
+sub 3 mod get exec headypos moveto headstr show show } if } def /beginpict {
+/center xdef /relative xdef /normheight xdef convmm /ysize xdef convmm /xsize
+xdef convmm /ypos xdef convmm /xpos xdef relative { /maxheight pageheight
+topmarg sub botmarg sub def ysize maxheight gt { /xsize xsize maxheight ysize
+div mul def /ysize maxheight def } if ycurrpos ypos sub ysize sub botmarg 0.5
+sub lt { /ypos 0 def center relative normheight ysize xsize ypos xpos newpage
+/xpos xdef /ypos xdef /xsize xdef /ysize xdef /normheight xdef /relative xdef
+/center xdef } if } if center { rightmarg xsize sub 2 div } { xpos } ifelse
+relative { ycurrpos ypos sub } { ypos } ifelse ysize sub dup /ycurrpos xdef
+save 3 1 roll translate ysize scalefact normheight mul div dup scale } def
+/endpict { exch restore { reportnewpage } if } def /begintext { { convmm neg
+/ycurrpos exch addto } { convmm /ycurrpos xdef } ifelse ycurrpos txlineinc sub
+botmarg sub 1 lt { newpage } if convmm /xcurrpos xdef { currentfile tempstr
+readline not { exit } if txeotmark search { pop pop pop exit } if dup (\f)
+search { pop pop pop true } { pop false } ifelse ignoreFF not and /FF xdef
+xcurrpos ycurrpos txfontsize sub moveto show /ycurrpos txlineinc neg addto
+ycurrpos botmarg sub 1 lt FF or { xcurrpos newpage /xcurrpos xdef } if } loop }
+def /endtext { { reportnewpage } if } def /printtext { /endstr xdef false 20.00
+66 (Courier) () 0 0 (Courier) endstr setupreport 0 0 true begintext true
+endtext end } def (PSprint/LA324 Color) cvn { 0.8 minreduc } def (LaserWriter)
+cvn { 0.87 minreduc } def (LJ250) cvn { 14 [ 0.0 0.0 0.9 ] cc } def (PaintJet
+XL300) cvn {} def /checkspecinit { statusdict /product get cvn dup where { pop
+cvx exec } { pop } ifelse } def /initsgd { /encapsulated xdef pop /outputtype
+xdef /scratio xdef /scalefact xdef checkspecinit initcolors defaultgraphics [ {
+inithardcopy } { initdocument } { initreport } ] outputtype get exec } def /ip  
+/initsgd         ldef /wc   /setwinbackcol   ldef /c    /clipwindow      ldef
+/cc   /changecolorhsb  ldef /cg   /changegreyscale ldef /ld   /drawline       
+ldef /lp   /setlinepattern  ldef /lc   /setlinecolor    ldef /rd   /rectangle      
+ldef /rf   /fillarea        ldef /rl   /framearea       ldef /pb   /beginpoly      
+ldef /pp   /polypoint       ldef /pn   /nofrpolypoint   ldef /pe   /endpoly        
+ldef /pf   /eofillarea      ldef /po   /eofillarea      ldef /pl   /framearea      
+ldef /od   /oval            ldef /of   /filloval        ldef /ol   /framearea      
+ldef /fp   /setfillpattern  ldef /fc   /setfillcolor    ldef /td   /drawtext       
+ldef /tc   /settextcolor    ldef /tf   /setnewfont      ldef

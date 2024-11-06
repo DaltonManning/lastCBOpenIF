@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="0" TypeID="35661568" TypeDescription="CPU PA" Guid="C42B11AD-183A-4740-AA9D-E2D8952FE64E" TypeGuid="D269E5AC-0DFE-454F-B7FC-5524674A83DE" TypeTimeStamp="2016-02-09-02:23:40.620" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:14.554" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2015-12-16-07:32:42.026" HWSettingsTS="2006-03-13-10:07:44.266" InstanceName="">
+  <ParameterSettings>
+    <ParameterSetting Name="EnableSattbusTCPIP" Value="0" Description="Enable SattBus on TCP/IP"/>
+    <ParameterSetting Name="SYSTEMAECLASS" Value="9950" Description="AE System AE class"/>
+    <ParameterSetting Name="SYSTEMAELOWSEVERITY" Value="200" Description="AE System AE low severity"/>
+    <ParameterSetting Name="SYSTEMAEMEDIUMSEVERITY" Value="400" Description="AE System AE medium severity"/>
+    <ParameterSetting Name="SYSTEMAEHIGHSEVERITY" Value="600" Description="AE System AE high severity"/>
+    <ParameterSetting Name="SYSTEMAECRITICALSEVERITY" Value="800" Description="AE System AE critical severity"/>
+    <ParameterSetting Name="SYSTEMAEFATALSEVERITY" Value="1000" Description="AE System AE fatal severity"/>
+    <ParameterSetting Name="SYSTEMEVENTSTOSESSIONLOG" Value="Medium Severity" Description="AE System events to controller log"/>
+    <ParameterSetting Name="EVENTQUEUESIZE" Value="300" Description="AE Local printer event queue size"/>
+    <ParameterSetting Name="MAXNOOFEVENTQUEUES" Value="0" Description="AE Max no of local printer event queues"/>
+    <ParameterSetting Name="EVENTENROLLMENTQUEUESIZE" Value="300" Description="AE Event subscription queue size"/>
+    <ParameterSetting Name="MAXNOOFENROLLMENTS" Value="1" Description="AE Max number of event subscriptions"/>
+    <ParameterSetting Name="EVENTENROLLMENTTIMEOUT" Value="360" Description="AE Event subscription time out"/>
+    <ParameterSetting Name="MAXNOOFNAMEDVALUEITEMS" Value="0" Description="AE Max no of Named Value items"/>
+    <ParameterSetting Name="MAXPERCOFLOGSTRINGS" Value="10" Description="AE Max percent of log strings"/>
+    <ParameterSetting Name="ALARMAUTODISABLELIMIT" Value="3" Description="AE Limit auto disable"/>
+  </ParameterSettings>
+  <HWChannels>
+    <HWChannel Address="IW0.0" Name="UnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits>
+    <HWUnitRef Position="5" Guid="96305A98-98BC-42E7-842D-2785C880C7BE"/>
+  </HardwareUnits>
+  <CheckSum Value="27587"/>
+</HWUnit>

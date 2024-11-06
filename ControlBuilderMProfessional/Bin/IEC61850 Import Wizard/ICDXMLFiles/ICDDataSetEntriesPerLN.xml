@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<DataSetEntries>
+<GFGGIO>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="SPCSO1" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="SPCSO1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="SPCSO1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="SPCSO2" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="SPCSO2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="SPCSO2" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="DPCSO1" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="DPCSO1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="DPCSO1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="DPCSO2" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="DPCSO2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="DPCSO2" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="ISCSO1" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="ISCSO1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="ISCSO1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="ISCSO2" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="ISCSO2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="ISCSO2" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn1" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn1" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn1" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn2" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn2" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn2" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn3" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn3" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn3" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn4" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn4" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="GF" lnClass="GGIO" lnInst="1" doName="AnIn4" daName="t" fc="MX"/>	
+</GFGGIO>
+<LSPTRC>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Str" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Str" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Str" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Op" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Op" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Op" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr1" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr2" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr2" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr3" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr3" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr3" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr4" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr4" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr4" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr5" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr5" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr5" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr6" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr6" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr6" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr7" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr7" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr7" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr8" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr8" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="PTRC" lnInst="1" doName="Tr8" daName="t" fc="ST"/>	
+</LSPTRC>
+<BBGAPC>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="Str" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="Str" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="Str" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="Op" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="Op" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="Op" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO1" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO2" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO2" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO3" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO3" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO3" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO4" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO4" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO4" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO5" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO5" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO5" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO6" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO6" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO6" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO7" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO7" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO7" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO8" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO8" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="BB" lnClass="GAPC" lnInst="1" doName="SPCSO8" daName="t" fc="ST"/>	
+</BBGAPC>
+<LSGAPC>
+	<FCDA ldInst="" prefix="LS" lnClass="GAPC" lnInst="1" doName="Str" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="GAPC" lnInst="1" doName="Str" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="GAPC" lnInst="1" doName="Str" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="GAPC" lnInst="1" doName="Op" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="GAPC" lnInst="1" doName="Op" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="LS" lnClass="GAPC" lnInst="1" doName="Op" daName="t" fc="ST"/>	
+</LSGAPC>
+<PCGAPC>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Str" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Str" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Str" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Op" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Op" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Op" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="SPCSO1" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="SPCSO1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="SPCSO1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="SPCSO2" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="SPCSO2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="SPCSO2" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Watt" daName="mag" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Watt" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Watt" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Hz" daName="mag" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Hz" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="PC" lnClass="GAPC" lnInst="1" doName="Hz" daName="t" fc="ST"/>	
+</PCGAPC>
+<TC1ATCC>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="Loc" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="Loc" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="Loc" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="ParOp" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="ParOp" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="ParOp" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="CtlV" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="CtlV" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="CtlV" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO1" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO2" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO2" daName="t" fc="ST"/>		
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO3" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO3" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="TC1" lnClass="ATCC" lnInst="1" doName="SPCSO3" daName="t" fc="ST"/>	
+</TC1ATCC>
+<TC2ATCC>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="Loc" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="Loc" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="Loc" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="ParOp" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="ParOp" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="ParOp" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="CtlV" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="CtlV" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="CtlV" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="ISCSO" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="ISCSO" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="TC2" lnClass="ATCC" lnInst="1" doName="ISCSO" daName="t" fc="ST"/>
+</TC2ATCC>
+<QC1ARCO>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Str" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Str" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Str" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Op" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Op" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Op" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="TapChg" daName="valWTr.posVal" fc="CF"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="TapChg" daName="q" fc="CF"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="TapChg" daName="t" fc="CF"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Vol" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Vol" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Vol" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="VolAmpr" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="VolAmpr" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="VolAmpr" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="PwrFact" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="PwrFact" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="PwrFact" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Loc" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Loc" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="QC1" lnClass="ARCO" lnInst="1" doName="Loc" daName="t" fc="ST"/>	
+</QC1ARCO>
+<VC1AVCO>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Loc" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Loc" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Loc" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Str" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Str" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Str" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Op" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Op" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Op" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="TapChg" daName="valWTr.posVal" fc="CF"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="TapChg" daName="q" fc="CF"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="TapChg" daName="t" fc="CF"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Vol" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Vol" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="VC1" lnClass="AVCO" lnInst="1" doName="Vol" daName="t" fc="MX"/>
+</VC1AVCO>
+<QCARCO>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Str" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Str" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Str" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Op" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Op" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Op" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="SPCSO1" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="SPCSO1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="SPCSO1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="SPCSO2" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="SPCSO2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="SPCSO2" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Vol" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Vol" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Vol" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="VolAmpr" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="VolAmpr" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="VolAmpr" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="PwrFact" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="PwrFact" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="PwrFact" daName="t" fc="MX"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Loc" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Loc" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="QC" lnClass="ARCO" lnInst="1" doName="Loc" daName="t" fc="ST"/>	
+</QCARCO>
+<VCAVCO>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Loc" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Loc" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Loc" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Str" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Str" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Str" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Op" daName="general" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Op" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Op" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO1" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO1" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO1" daName="t" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO2" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO2" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO2" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO3" daName="stVal" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO3" daName="q" fc="ST"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="SPCSO3" daName="t" fc="ST"/>	
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Vol" daName="mag" fc="MX"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Vol" daName="q" fc="MX"/>
+	<FCDA ldInst="" prefix="VC" lnClass="AVCO" lnInst="1" doName="Vol" daName="t" fc="MX"/>
+</VCAVCO>
+</DataSetEntries>

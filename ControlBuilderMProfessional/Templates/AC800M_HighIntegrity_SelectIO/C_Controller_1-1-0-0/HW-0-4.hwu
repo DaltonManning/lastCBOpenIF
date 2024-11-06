@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="4" TypeID="50331660" TypeDescription="Com" Guid="5AE1D63A-343D-42BC-963D-7DE930F4C995" TypeGuid="57414C7B-FC7C-49E5-81B5-E13108B2F3C3" TypeTimeStamp="2016-02-09-02:23:58.102" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:04.499" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2015-12-16-07:32:17.096" HWSettingsTS="2006-03-13-10:03:41.051" InstanceName="">
+  <ParameterSettings/>
+  <HWChannels/>
+  <HardwareUnits>
+    <HWUnitRef Position="0" Guid="D2339A41-BA2D-440F-AF66-283DF043900B"/>
+  </HardwareUnits>
+  <CheckSum Value="15132"/>
+</HWUnit>

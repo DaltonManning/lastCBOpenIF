@@ -1,0 +1,10 @@
+0x2060/ppc  FW851             6.1.1000.77  2021-03-03   File=FW860-603ef67420.sbin   Update=up860.bin       Zip=
+0x2070/ppc  FW856/860         6.1.1000.77  2021-03-03   File=FW860-603ef67420.sbin   Update=up860.bin       Zip=
+0x2080/ppc  FW856/860         6.1.1000.77  2021-03-03   File=FW860-603ef67420.sbin   Update=up860.bin       Zip=
+0x20bc/ppc  FW858             6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=up860.bin       Zip=
+0x2090/ppc  FW861             6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=up860.bin       Zip=
+0x20a0/ppc  FW862             6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=up860.bin       Zip=
+0x20b0/ppc  FW864             6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=up860.bin       Zip=
+0x20d0/ppc  FW866             6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=up860.bin       Zip=
+0x20c0/ppc  FW865PA           6.1.1000.77  2021-03-03   File=FW861-603ef777bc.sbin   Update=up860.bin       Zip=
+0x2190/ppc  FW891             6.1.1000.77  2021-03-03   File=FW891-603ef07361.cbin   Update=up89x.bin       Zip=

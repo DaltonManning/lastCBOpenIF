@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LNs" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="LN0">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DataSet" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="DOI" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="GSEControl" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" />
+            <xs:attribute name="datSet" type="xs:string" />
+            <xs:attribute name="confRev" type="xs:string" />
+            <xs:attribute name="appID" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="LN0" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="inst" type="xs:string" />
+      <xs:attribute name="lnClass" type="xs:string" />
+      <xs:attribute name="lnType" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DOI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SDI" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="DAI" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+		<xs:element ref="DAI" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="desc" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DAI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Val" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="sAddr" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DOI" minOccurs="0" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="inst" type="xs:string" />
+      <xs:attribute name="lnClass" type="xs:string" />
+      <xs:attribute name="lnType" type="xs:string" />
+      <xs:attribute name="prefix" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LNs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="LN0" />
+        <xs:element ref="DOI" />
+        <xs:element ref="DAI" />
+        <xs:element ref="LN" />
+        <xs:element name="LPHD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BBGAPC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GFGGIO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ITCI">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LSGAPC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LSPTRC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCGAPC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QC1ARCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="QCARCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TC1ATCC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TC2ATCC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VC1AVCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VCAVCO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="LN" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

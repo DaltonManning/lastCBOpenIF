@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Controller xmlns="CBSourceCodeSchema3_0" Name="Controller_1" ControllerType="Soft Controller" SystemIdentity="127.0.0.1:2" SyntaxVersion="3.1" ProductVersion="6.1.1-0 Integration" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:14.550" CodePage="1252">
+  <ControllerAdminInfo/>
+  <VersionInfo MajorVersion="1" MinorVersion="0" Revision="0"/>
+  <AccessInfo Guid="29D791FA-A55D-42E7-8576-03E21E552F76" State="Open"/>
+  <ConnectedHardwareLibraries>
+    <ConnectedHardwareLibrary Name="BasicHwLib" MajorVersion="6" MinorVersion="1" Revision="0" Guid="93F29730-592F-4526-8274-919C6660EDF9" FilePath="HWLibraries:"/>
+  </ConnectedHardwareLibraries>
+  <ConnectedApplications ApplicationListTS="1979-12-31-00:00:00.000">
+    <ConnectedApplication Name="Application_1" MajorVersion="1" MinorVersion="0" Revision="0" Guid="F5B93C7D-AD8A-4D75-A22D-7EA6BE52936A" VarConnTS="1979-12-31-00:00:00.000" AnalogAttributesTS="1979-12-31-00:00:00.000"/>
+  </ConnectedApplications>
+  <ControllerSourceBlocks>
+    <HardwareUnits>
+      <HWUnitRef Position="" Guid="D5195C2B-B85D-496B-87D5-BE5F4B94E28B"/>
+    </HardwareUnits>
+    <Tasks TaskStructureTS="1979-12-31-00:00:00.000">
+      <TaskRef Name="Fast" Guid="B90359DA-D2D1-4481-8C05-8D4B240A8501"/>
+      <TaskRef Name="Normal" Guid="0A4FB13A-EDDA-4A75-8E0D-F7283F69A59D"/>
+      <TaskRef Name="Slow" Guid="376E92DB-863C-4CFB-9685-CAE24D55F9F7"/>
+    </Tasks>
+    <AccessVariablesRef Name="AccessVariables.acv" Guid="1FDB8856-AF71-4035-98D4-21B8670DAB78"/>
+  </ControllerSourceBlocks>
+  <ControllerProperties HWSimulation="0"/>
+  <DistributedApps DistributedAppsTS="1979-12-31-00:00:00.000"/>
+  <CommonControllerSettings ChangeTime="2017-04-19-14:18:25.167" OLUStopTime="4000">
+    <FatalOverrun Limit="10" Reaction="1"/>
+    <LoadBalancing OverLoadCompensation="1"/>
+    <ErrorHandler>
+      <SystemDiagnostics>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="0" Critical="1" Fatal="1"/>
+      </SystemDiagnostics>
+      <Execution>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="0" Critical="1" Fatal="1"/>
+      </Execution>
+      <IO>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="0" Critical="1" Fatal="1"/>
+      </IO>
+    </ErrorHandler>
+  </CommonControllerSettings>
+  <CheckSum Value="27368"/>
+</Controller>

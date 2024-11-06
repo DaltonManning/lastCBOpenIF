@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameter>
+  <ParamInfoLength>4</ParamInfoLength>
+  <ParValLength>0</ParValLength>
+  
+  <ParamInfo 
+    Name="StationName" 
+    Description="Station Name" 
+    CompileType="HWConfig" 
+    DataType="STRING" 
+    DefaultValue="&quot;&quot; 240" 
+    ParamType="Numbered 2" 
+    Hidden="False"
+  />
+
+ <ParamInfo 
+    Name="IpAddress" 
+    Description="IP Address" 
+    CompileType="HWConfig" 
+    DataType="STRING" 
+    DefaultValue="&quot;&quot; 15" 
+    ParamType="Numbered 3" 
+    Hidden="False"
+  />
+
+  <ParamInfo 
+    Name="SubnetMask" 
+    Description="Subnet Mask" 
+    CompileType="HWConfig" 
+    DataType="STRING" 
+    DefaultValue="&quot;&quot; 15" 
+    ParamType="Numbered 4" 
+    Hidden="False"
+  />
+
+  <ParamInfo 
+    Name="StandardGateway" 
+    Description="Standard Gateway" 
+    CompileType="HWConfig" 
+    DataType="STRING" 
+    DefaultValue="&quot;&quot; 15"
+    ParamType="Numbered 5" 
+    Hidden="False"
+  />
+
+</Parameter>

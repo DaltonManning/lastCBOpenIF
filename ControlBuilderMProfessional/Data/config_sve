@@ -1,0 +1,5432 @@
+!------------------------------------------------------------
+.COLORS
+ 100
+ 0  0.0     0.0    0.0        
+ 1  0.0     0.20   0.0        
+ 2  0.0     0.37   0.0        
+ 3  0.0     0.52   0.0        
+ 4  0.0     0.65   0.0        
+ 5  0.0     0.76   0.0        
+ 6  0.0     0.85   0.0        
+ 7  0.0     0.92   0.0        
+ 8  0.0     0.97   0.0        
+ 9  0.0     1.0    0.0        
+ 10 0.0     0.3    1.0       
+ 11 0.0     0.4    1.0 
+ 12 0.0     0.5    1.0        
+ 13 0.0     0.7    1.0        
+ 14 0.0     0.8    1.0        
+ 15 0.0     0.42   0.18        
+ 16 0.0     0.54   0.16        
+ 17 0.0     0.67   0.23        
+ 18 0.0     0.80   0.37       
+ 19 0.0     0.90   0.75
+ 20 35.0    0.3    1.0        
+ 21 35.0    0.4    1.0        
+ 22 35.0    0.5    1.0        
+ 23 35.0    0.7    1.0       
+ 24 35.0    0.8    1.0       
+ 25 30.0    0.42   0.18        
+ 26 30.0    0.54   0.16        
+ 27 30.0    0.67   0.23        
+ 28 30.0    0.80   0.37       
+ 29 30.0    0.90   0.75       
+ 30 60.0    0.3    1.0        
+ 31 60.0    0.4    1.0        
+ 32 60.0    0.5    1.0        
+ 33 60.0    0.7    1.0       
+ 34 60.0    0.8    1.0       
+ 35 60.0    0.42   0.18        
+ 36 60.0    0.54   0.16        
+ 37 60.0    0.67   0.23        
+ 38 60.0    0.80   0.37       
+ 39 60.0    0.90   0.75       
+ 40 120.0   0.35   1.0        
+ 41 120.0   0.5    0.8        
+ 42 120.0   0.5    1.0        
+ 43 120.0   0.7    1.0       
+ 44 120.0   0.8    1.0       
+ 45 120.0   0.42   0.18        
+ 46 120.0   0.54   0.16        
+ 47 120.0   0.67   0.23        
+ 48 120.0   0.80   0.37       
+ 49 120.0   0.90   0.75       
+ 50 150.0   0.26   1.0        
+ 51 150.0   0.34   1.0        
+ 52 140.0   0.5    0.8        
+ 53 140.0   0.7    0.8       
+ 54 140.0   0.8    0.8       
+ 55 140.0   0.42   0.18        
+ 56 140.0   0.54   0.16        
+ 57 140.0   0.67   0.23        
+ 58 140.0   0.80   0.37       
+ 59 140.0   0.90   0.75       
+ 60 200.0   0.35   1.0        
+ 61 200.0   0.45   1.0        
+ 62 200.0   0.5    1.0        
+ 63 200.0   0.7    1.0       
+ 64 200.0   0.8    1.0       
+ 65 190.0   0.42   0.18        
+ 66 190.0   0.54   0.16        
+ 67 190.0   0.67   0.23        
+ 68 190.0   0.80   0.37       
+ 69 190.0   0.90   0.75       
+ 70 230.0   0.32   1.0        
+ 71 230.0   0.42   1.0        
+ 72 230.0   0.5    1.0        
+ 73 230.0   0.7    1.0       
+ 74 230.0   0.8    1.0       
+ 75 240.0   0.42   0.18        
+ 76 240.0   0.54   0.16        
+ 77 240.0   0.67   0.23        
+ 78 240.0   0.80   0.37       
+ 79 240.0   0.85   0.5
+ 80 300.0   0.3    1.0        
+ 81 300.0   0.4    1.0        
+ 82 300.0   0.5    0.8        
+ 83 300.0   0.7    1.0      
+ 84 300.0   0.8    1.0       
+ 85 300.0   0.42   0.18        
+ 86 300.0   0.54   0.16        
+ 87 300.0   0.67   0.23        
+ 88 300.0   0.80   0.37       
+ 89 300.0   0.90   0.75       
+ 90 60.0    0.96   0.65        
+ 91 30.0    0.95   0.80        
+ 92 60.0    0.95   0.80        
+ 93 120.0   0.95   0.80       
+ 94 200.0   0.95   0.80
+ 95 60.0    0.865  0.20        
+ 96 30.0    0.865  0.35        
+ 97 60.0    0.865  0.35        
+ 98 120.0   0.865  0.35       
+ 99 200.0   0.865  0.35
+!                
+!----------------------------------------------------------
+! Names of simple types, possibly followed by ';' and GUID
+.SIMPLENAMES
+ bool;          fcc571cc-3a50-4ec6-9241-0726a148299b
+ word;          8061d655-bc22-484e-ade6-85ed4be9c605
+ dword;         4211fe12-bfb8-4d1e-bb5a-c815e8f1b103
+ int;           9ada5277-002e-4cbc-8b34-c6fdda5091c3
+ dint;          d59be854-1395-4e4f-9cf6-6a4ba4ccdc98
+ uint;          c6ede554-4916-4c6c-a174-48b41cbf6d00
+ real;          d8f54d4b-661f-407a-ace8-721d1581061b
+ string;        49d3a1c9-a834-46c6-9f71-88a69e045a5d
+ task
+ tObject;       d07ca5b9-7c97-4b0c-abcf-699a0d8aa2d6
+ ArrayObject;   bf87963b-69f3-4130-b368-c5fefc5ea679
+ QueueObject;   ef2c6b06-ec0b-4eb5-9ea3-542ff993b68f
+ time;          20e24ed4-5954-4aa1-9a01-10874693f4a4
+ date_and_time; 2ea20529-63c4-4df0-a3ac-9eff5971977a
+ AnyType;       94d92390-9492-4e73-8023-b3040c7d6591
+ AnyBitType
+ AnyIntType
+ AnyRealType
+ AnyNumType
+!----------------------------------------------------------
+! Value out of range in Alert
+.VALOUTOFRANG
+ Värdet skall vara mellan %1 och %2.
+!------------------------------
+.LOOPMESSTR2
+ Alla loopar visas inte.
+.SORTLITERR
+ Literal skrivs i POU %1 via parameter %2 i underliggande control-modul %3
+.SORTCONSTERR
+ Konstant eller IN-variabel skrevs i POU %1 via parameter %2 i underliggande control-modul %3
+.LOCCONSTERR
+ Konstant eller IN-variabel %1 skrevs i POU %2 via systemprocedur
+!-------------------------------------------------------------------------
+.PROMPTSAVECHANGESBOX
+ dialogbox Spara ändringar i editor
+   body
+      text  0 Innehållet i minst en editor har blivit ändrat.\nVill du spara ändringarna i denna editor?
+      space
+      group horizontal columns=2
+         label  0 Editor:
+         text   20
+      end group
+      space
+   end body
+
+   commands
+      button default 4 Ja
+      button         8 Ja till alla
+      button         5 Nej
+      button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!-------------------------------------------------------------------------
+!-------------------------------------------------------------------------
+.WINDOWATRBOX
+ dialogbox Fönsteregenskaper
+   body vertical
+     group horizontal
+       frame vertical 0 Funktionella egenskaper
+         checkbox 12 Zoombar
+         checkbox 21 Flyttbar
+         checkbox 22 Möjligt att ändra storlek
+         checkbox 23 Behåll form
+         checkbox 16 Alltid överst
+         checkbox 20 Ägare till interaktionsfönster
+       end frame
+       frame vertical 0 Komponentegenskaper
+         checkbox 10 Namnlist
+         checkbox 13 Rullningslister
+         checkbox 14 Statusfält
+         checkbox 15 Koordinater
+       end frame
+       frame vertical 0 Verktygsfält
+         checkbox 25 Redigera
+         checkbox 28 Zooma
+         checkbox 29 Grafik
+       end frame
+     end group
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+     button         3 Verkställ
+     button         4 Hjälp
+   end commands
+ end dialogbox
+!-------------------------------------------------------------------------
+.RESOLVEIDENT
+ Kontrollerar variabler och control-moduler
+!--------------------------------------------------------------
+.CHGNAMECCWRN
+ Varning! Strukturer för applikationen existerar redan för någon enhet i styrsystemet. Fortsätt innebär att dessa adderas till applikationen.
+!--------------------------------------------------------------
+.READINGCONFM
+! Activity message
+ Läser projekt %1
+!--------------------------------------------------------------
+.READSCUMSG
+! Activity messages
+ Läser applikation %1
+ Läser bibliotek %1
+ Läser styrsystem %1
+!--------------------------------------------------------------
+.VERSIONDATE
+! Syntax version number and file date. (Not translated - used in s-file)
+ Syntax version %1, date: ####-##-##-##:##:##.### C
+!--------------------------------------------------------------
+.PASSWORDEDITBOX
+ dialogbox Ange lösenord
+   body vertical
+     label     0 Ett lösenord måste vara minst 8 tecken långt och skall bestå av tecken från tre av följande grupper:\n  - Gemena tecken\n  - Versaler\n  - Siffror\n  - Andra skrivbara tecken:
+     label     0  
+     group horizontal columns = 2
+       label     0 Nuvarande lösenord:
+       edit      minwidth=25 maxchars=100 5
+       label     0 Nytt lösenord:
+       edit      minwidth=25 maxchars=100 3
+       label     0 Verifiera nytt lösenord:
+       edit      minwidth=25 maxchars=100 4
+     end group
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROMPTFORPASSWORDBOX
+ dialogbox PROTECTED_1
+   body
+     text maxwidth=55 4
+     space
+     group horizontal columns=2
+       label     0 Lösenord:
+       edit      minwidth=25 maxchars=100 5
+     end group
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROTECTIONPROPERTIESBOX
+ dialogbox Skyddsegenskaper
+   body
+     frame 0 Skydd 
+       group horizontal columns=2
+       button   20 Ange lösenord
+       button   10 Radera lösenord
+       end group
+       space
+       checkbox maxwidth=50 30 Ignorera skydd för %1, dvs gör skyddade objekt oskyddade, gömda objekt synliga och tillåt ändringar i denna lösenordsskyddade enhet.
+     end frame
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PASWDERRSHORT
+ Lösenordet är för kort. Skall bestå av minst %1 tecken.
+.PASWDERRVERIFY
+ Verifikationen misslyckades. Lösenordet har ej ändrats.
+.PASWDERRNOTCORRECT
+ Felaktigt lösenord.
+.PASWDERRNOTCORRECTLOCKED
+ Felaktigt lösenord. Du har gjort för många försök med fel lösenord. Biblioteket/Applikationen är nu låst.
+.PASWDERRMUSTENTERPASSWORD
+ Du måste mata in ett lösenord.
+.INVALIDCHARACTERINSTRING
+ Otillåtet tecken i textsträng
+.PROTAPP
+ Skyddad applikation
+.PROTLIB
+ Skyddat bibliotek
+.THEAPPISPROT
+ Applikationen %1 är lösenordsskyddad. Du måste mata in rätt lösenord för att få lov att fortsätta operationen.
+.THELIBISPROT
+ Biblioteket %1 är lösenordsskyddat. Du måste ange rätt lösenord för att fortsätta operationen.
+!--------------------------------------------------------------
+.PROCONNAMSTR
+ Namn
+.PROCONVALSTR
+ Värde
+.PROCONTYPSTR
+ Datatyp
+.PROCONDEFVALSTR
+ Standardvärde
+.PROCONTABNAM
+ Projektkonstanter
+!--------------------------------------------------------------
+.SELPROGUNBOX
+ dialogbox
+    body horizontal
+       listbox visiblerows=12 3
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SELPRGHEADER
+ Välj en programenhet
+ Välj en applikation
+ Kompilera om applikationen
+!--------------------------------------------------------------
+.ILLPATH
+ Ogiltig sökväg
+!--------------------------------------------------------------
+.FAILCRPRJPTH
+! Error message when new project couldn't be created on specified path.
+ Kunde inte skapa projektet på den angivna sökvägen. Enheten eller sökvägen är ogiltig, eller så är katalogen lösenordsskyddad.
+!--------------------------------------------------------------
+.NODISCSPACE
+ För lite diskutrymme kvar eller oåtkomlig disk.
+!--------------------------------------------------------------
+.FILNOTFNDSTR
+! String for error message
+ Filen finns inte
+!--------------------------------------------------------------
+.FILNOTFNDPAR
+! String for error message
+ Filen %1 finns inte
+!--------------------------------------------------------------
+.APLNOTFNDPAR
+! String for error message
+ Applikation %1 finns inte
+!--------------------------------------------------------------
+.LIBNOTFNDPAR
+! String for error message
+ Biblioteket %1 finns inte
+!--------------------------------------------------------------
+.SAVEFOUASBOX
+ dialogbox Spara %1 som
+   body
+      group horizontal columns=3
+         label    0 Namn:
+         edit minwidth=30 maxchars=20 10
+         space
+         label    0 Filkatalog:
+         edit minwidth=30 maxwidth=40 11
+         button   4 Bläddra...
+      end group
+   end body
+   commands
+      button default 1 OK
+      button cancel  2 Avbryt      
+   end commands
+ end dialogbox
+!---------------------------------------------------------------
+.ADDAPPLICBOX
+ dialogbox Anslut applikation
+    body
+       listbox extendedselection 3
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SETSYSIDDBOX
+ dialogbox Systemidentitet
+    body horizontal columns=2
+       label 0  Systemidentitet:
+       edit minwidth=30 maxchars=35 3
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROBOXLTAPP
+ dialogbox Källkodsegenskaper
+    body 
+      frame vertical 0 Öppen fil:
+        group horizontal columns=2
+          label 0  Namn:
+          text 4
+          label 0 Typ:
+          text 5
+          label 0 Filkatalog:
+          text 6
+        end group
+        space
+        group horizontal columns=2
+          label 0 Skapad:
+          text 9
+          label 0 Ändrad:
+          text 10
+        end group
+      end frame
+      space
+      frame vertical 0 Sparad fil:
+        group horizontal columns=2
+          label 0 Datum:
+          text 11
+          label 0 Storlek:
+          text 12
+          text 13 
+        end group
+      end frame
+    end body
+    commands
+      button default cancel 1 Stäng
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.READONLYSTR 
+ Filen är skrivskyddad.
+!--------------------------------------------------------------
+! Strings used in PROMPTSAVBOX:
+.SAVEAPPTEMPL
+ Spara applikation %1
+.SAVELIBTEMPL
+ Spara bibliotek %1
+.SAVECOSTEMPL
+ Spara styrsystem %1
+.SAVECONTEMPL
+ Spara projekt %1
+.INSAPPSTR
+ Infoga applikation
+.INSCONSTR
+ Infoga styrsystem
+!--------------------------------------------------------------
+.NAMESTR
+ Namn:
+!--------------------------------------------------------------
+.LIBALREADYOP
+ Biblioteket är redan öppet.
+!--------------------------------------------------------------
+.APPLICATISTR
+ Applikation 
+!--------------------------------------------------------------
+.LIBRARYSTR
+ Bibliotek 
+!--------------------------------------------------------------
+.CONTROLSYSTR
+ Styrsystem
+!--------------------------------------------------------------
+.PROJECEXISTS
+ Det finns redan ett projekt med detta namn.
+!--------------------------------------------------------------
+.APPLICEXISTS
+ Det finns redan en applikation med detta namn.
+!--------------------------------------------------------------
+.LIBRAREXISTS
+ Det finns redan ett bibliotek med detta namn.
+!--------------------------------------------------------------
+.HWLIBEXISTS
+ Det finns redan ett bibliotek med detta namn.
+!--------------------------------------------------------------
+.STDLIBEXISTS
+ Det finns redan ett standarbibliotek med detta namn.
+!--------------------------------------------------------------
+.CONTSYEXISTS
+ Det finns redan ett styrsystem med detta namn.
+!--------------------------------------------------------------
+.PRJFILEXISTS
+ Det finns redan en projektfil med detta namn i den föreslagna katalogen.
+!--------------------------------------------------------------
+.APPFILEXISTS
+ Det finns redan en applikationsfil med detta namn i den föreslagna katalogen.
+!--------------------------------------------------------------
+.LBRFILEXISTS
+ Det finns redan en biblioteksfil med detta namn i den föreslagna katalogen.
+!--------------------------------------------------------------
+.HWLIBFILEXTS
+ Det finns redan en biblioteksfil med detta namn i den föreslagna katalogen.
+!--------------------------------------------------------------
+.CONFILEXISTS
+ Det finns redan en styrsystemsfil med detta namn i den föreslagna katalogen.
+!--------------------------------------------------------------
+.COMMENTEMPTY
+ Kommentaren kan inte lämnas tom.
+!--------------------------------------------------------------
+.COMERRSTR
+ Teckenkombinationerna (* resp. *) är inte tillåtna.
+!--------------------------------------------------------------
+.CLOSINGCONFM
+! Activity message
+ Stänger projekt %1
+!--------------------------------------------------------------
+.SAVEASSTR
+ Spara %1 som
+.SAVECOPYSTR
+ Spara kopia av %1 som
+.INVALNAMSTR
+ Namnet är inte giltigt.
+.NAMETOLONG
+ Namnet är för långt.
+.NOAPPLINPROJ
+ Det finns inte fler applikationer öppnade i projektet.
+.MESSAGE
+ Meddelande
+!--------------------------------------------------------------
+.CURRFOLDER
+ Aktuell projektkatalog
+!---------------------------------------------------------------
+.APPFILES
+ Applikationsfiler
+!---------------------------------------------------------------
+.RESBYMEINF
+ Användare %1 för klienten %2 (denna arbetsplats)
+.RESBYOTHINF
+ Användare %1 för klienten %2 (en annan arbetsplats)
+.NOTRESINF
+ Ej reserverad
+!---------------------------------------------------------------
+.NEWAPPLICBOX
+ dialogbox  Ny applikation
+   body
+     group horizontal columns=2
+       group vertical
+         label    0 Mallar:
+         listbox visiblerows = 6 12
+       end group
+       group vertical
+         label    0 Namn:
+         edit minwidth=30 maxchars=20 10
+         space
+         label    15 Filkatalog:
+         group horizontal columns=2
+           edit minwidth=30 11
+           button 4 Bläddra...
+         end group
+         space
+       end group
+     end group
+   end body
+
+   commands
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.NEWFOUBROWSEBOX
+ dialogbox  Ny applikation
+   body
+     group horizontal columns=2
+       label    0 Namn:
+       edit minwidth=30 maxchars=20 10
+       label   15 Filkatalog:
+       group horizontal columns=2
+         edit minwidth=30 maxwidth=40 11
+         button 4 Bläddra...
+       end group
+     end group
+   end body
+
+   commands
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.RENAMEFOUBOX
+ dialogbox Byt namn på %1
+   body
+      group horizontal columns=3
+         label    0 Namn:
+         edit minwidth=30 maxchars=20 11
+         space
+         label    15 Filkatalog:
+         edit minwidth=30 maxwidth=200 12
+!        button   4 Bläddra...
+      end group
+   end body
+
+   commands
+      button default 1 OK
+      button cancel  2 Avbryt      
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INSPRCEXIST
+ Angiven projektkonstant existerar redan. Ange en ny projektkonstant.
+.INVPRCSTR
+ Ogiltigt projektkonstantnamn. Ange en ny projektkonstant.
+.INVPRCSTRLEN
+ Projektkonstantens namn måste ha 1-%1 tecken.\nAnge en ny projektkonstant.
+.INVPRCSTRPATH
+ Projektkonstantens namn kommer att utgöra en del av en sökväg som\nbestår av %1 tecken. En sökväg får högst bestå av %2 tecken. Ange\nen ny projektkonstant med kortare namn eller ändra till kortare\nnamn på andra konstanter i sökvägen. Observera att punkter som\nseparerar konstanterna i en sökväg inkluderas i dess längd.
+.PRCNAMESTR
+ Namn
+.RENPRCSTR
+ Byt namn projektkonstant
+.INSPRCSTR
+ Infoga projektkonstant
+.VALTYPMISSTR
+ Värde och typ stämmer inte överens
+.OVRVALSTR
+ Överskrivning av värde
+.OVRVALMESSTR
+ Nytt standardvärde kommer att skriva över nuvarande värde
+.PRCDEFTXTSTR
+ Standardvärde :
+.STRTABLEDBOX
+ dialogbox Tabell
+    body vertical
+       group horizontal columns=2
+          label 6 Indexvariabel
+          edithelp 7
+       end group
+       frame 
+          frame horizontal columns=2 maxheight=13 verticalscroll 8
+             label 0 Indexvärde
+             label 9 Sträng
+          end frame
+          group horizontal columns=3
+             button 3 Ny rad
+             button 4 Upp
+             button 5 Ner
+          end group
+       end frame
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.OTHERWISE
+ Annars
+.INDMULTIPLE
+ Index används redan i tabellen.
+.ILLEGALINDEX
+ Otillåtet index.
+.GRIDPATTERN
+ 8      ! Line style for axis grid.
+.LIMITPATTERN
+ 7      ! Line style for LimitRulers.
+.READABLEFONT
+ 11     ! Height in pixels for smallest easilly readable system font.
+.NOFONT
+ 3      ! If textheight < NOFONT then draw no text.
+!--------------------------------------------------------------
+.PICTDISPDBOX
+ dialogbox Bildväljare
+    body vertical
+       group horizontal columns=3
+          label                 0 Sökväg/Filnamn
+          edithelp minwidth=32  9
+          button                10 Bläddra
+       end group
+       checkbox 11 Behåll bildens form
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+       button         3 Avancerat >>
+       button         4 Hjälp
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PICDISP2DBOX
+ dialogbox Bildväljare
+    body vertical
+       group horizontal columns=3
+          label maxheight=10    0 Sökväg/Filnamn\n(Standardvärde)
+          edithelp minwidth=32  9
+          button               10 Bläddra
+       end group
+       checkbox 11 Behåll bildens form
+       frame 
+          group horizontal columns=2
+             label     0 Indexvariabel
+             edithelp 12
+          end group
+          frame horizontal columns=2 maxheight=13 verticalscroll 13
+             label  0 Indexvärde
+             label 14 Sökväg/Filnamn
+          end frame
+          group horizontal columns=5
+             button 5 Ny rad
+             button 6 Upp
+             button 7 Ner
+             space minwidth=12
+             button 8 Bläddra
+          end group
+       end frame
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+       button 3 Avancerat <<
+       button 4 Hjälp
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INDMULTIPLE
+ Index används redan i tabellen.
+.ILLEGALINDEX
+ Otillåtet index.
+.MORETHAN1000
+ Tabellen innehåller fler än 1000 element.\nDialogboxen kan inte visa mer än 1000 tabell-element.\nInformation angående resten av elementen kommer att förloras om tabellen sparas.
+!--------------------------------------------------------------
+.PICTINFOBOX
+ dialogbox Information för bildväljare
+    body vertical
+      group horizontal columns=2
+        label 0 Minne upptaget av bilder i vy:
+        text  2 %1 kByte
+        label 0 Minne upptaget av bilder som inte är vy:
+        text  3 %2 kByte
+      end group
+      button 4 Uppdatera bilder
+    end body
+    commands horizontal
+      button default cancel 1 OK
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.CHOOSEPICSTR
+ Välj bildfil
+!--------------------------------------------------------------
+.RANGEBOX
+ dialogbox Område
+    body horizontal columns = 2
+       label    0 Nedre skalgräns
+       edithelp 3
+       label    0 Övre skalgräns
+       edithelp 4
+       space
+       checkbox 5 Fixerad
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OPRANGEBOX
+ dialogbox Område
+    body horizontal columns = 2
+       label 0 Nedre skalgräns
+       edit  3
+       label 0 Övre skalgräns
+       edit  4
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.COMMONSTRING
+ Övre gränsen skall vara högre än den undre.
+ Position
+!------------------------------------------------------------
+!                     Default string in Otherwise entry
+!--------------------------------------------------------------
+.OTHERSTRING
+ Index finns inte i tabell.
+.ZOOMINSTRING
+ Zoombar
+.ENABLESTRING
+ Aktivera
+!-----------------------------------------------------------
+!           Image selector information boxes
+!------------------------------------------------------------
+.PICTDISPINFO
+ dialogbox Information för bildväljare
+   body
+      text 10 
+      text 11
+   end body
+   commands
+      button default cancel 1 OK
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+.PICDISINFOWC
+ dialogbox Information för bildväljare
+   body
+      text 10 
+      text 11
+      text 0 Sökväg med tolkade "Wildcards":
+      text 12
+   end body
+   commands
+      button default cancel 1 OK
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PDERRINFOBOX
+ dialogbox Information för bildväljare
+   body
+      text 10
+   end body
+   commands
+      button default cancel 1 OK
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+!              Image selector information strings
+!--------------------------------------------------------------
+.CURRPATHSTR
+ Aktuell sökväg:
+!--------------------------------------------------------------
+.CURMODPATSTR
+ Aktuell sökväg:
+!--------------------------------------------------------------
+.MODPATERRSTR
+ Aktuell sökväg kan inte följas. ### markerar var sökvägen inte stämmer.
+!--------------------------------------------------------------
+.MEMERRORDSTR
+ Filen %1 kan inte visas, eftersom tillgängligt minne är fullt.
+!--------------------------------------------------------------
+.FNOTEXISTSTR
+ Filen '%1' finns inte.
+!--------------------------------------------------------------
+.SYNTAXERRSTR
+ Filen kan inte läsas.
+!--------------------------------------------------------------
+.VARINEDITSTR
+ ### Kan inte utvärdera variabler i editeringsläge ###
+!--------------------------------------------------------------
+.VARINRUNSTR
+ Variablerna är för tillfället ej giltiga.
+.TIMERANGEBOX
+ dialogbox Område
+    body vertical
+       group horizontal columns=2 0
+          label    11 Grundområde:
+          edithelp 12
+          label    21 Alternativt område 1:
+          edithelp 22
+          label    31 Alternativt område 2:
+          edithelp 32
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.CURVEBOX
+ dialogbox Kurvdata
+    body vertical
+       frame horizontal columns=2 0
+          label    11 Antal sampel
+          edithelp 12
+          label    21 Decimaler
+          edithelp 22
+          label    31 Varaktighet
+          edithelp 32
+       end frame
+
+       frame horizontal columns=2 3 Variabelinkoppling
+          label    41 Variabelnamn
+          edithelp 42
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.RANGESTRING
+ Välj tidsskala
+!------------------------------------------------------------
+.ACTRANGEBOX
+ dialogbox Tidsskala
+    body horizontal
+       frame horizontal columns=9 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 Område:
+          edit  width=10 12
+          label 21 d
+          edit  width=10 22
+          label 31 h
+          edit  width=10 32
+          label 41 m
+          edit  width=10 42
+          label 51 s
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+.HOPRANGEBOX
+ dialogbox Område
+    body vertical
+       frame horizontal columns=2 0 Hämta mätområde
+          label 6 Övre skalgräns
+          text  4
+          label 5 Nedre skalgräns
+          text  3
+       end frame
+
+       frame vertical 0 Styr mätområde
+          radiobutton 101 Aktivera
+          group horizontal columns=2
+             label 16 Övre skalgräns
+             edit  14
+             label 15 Nedre skalgräns
+             edit  13
+          end group
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.HRANGEBOX
+ dialogbox Område
+    body vertical
+       frame vertical 0 Mätområde från variabler
+          frame horizontal columns=2 0 Hämta mätområde
+             label    31 Övre skalgräns
+             edithelp 32
+             label    21 Nedre skalgräns
+             edithelp 22
+          end frame
+
+          frame horizontal columns=2 0 Styr mätområde
+             label    61 Aktivera
+             edithelp 62
+             label    81 Övre skalgräns
+             edithelp 82
+             label    71 Nedre skalgräns
+             edithelp 72
+          end frame
+
+          group horizontal columns=2
+             label    41 Enhet
+             edithelp 42
+          end group
+       end frame
+
+       checkbox    51 Fixerad
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OPTIMEBOX
+ dialogbox Starttid
+    body horizontal
+       frame horizontal columns=12 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 Starttidpunkt:
+          edit  width=10 12
+          label 21 -
+          edit  width=10 22
+          label 31 -
+          edit  width=10 32
+          label 41 -
+          edit  width=10 42
+          label 51 :
+          edit  width=10 52
+          label 61 :
+          edit  width=10 62
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+.OPOFFSETBOX
+ dialogbox Tidsförskjutning
+    body horizontal
+       frame horizontal columns=11 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 Tidsförskjutning:
+          edit  width=10 12
+          label 21  
+          edit  width=10 22
+          label 31 d
+          edit  width=10 32
+          label 41 h
+          edit  width=10 42
+          label 51 m
+          edit  width=10 52
+          label 61 s
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+! Header strings for calls to EditGenVariable
+!------------------------------------------------------------
+.GENEDITHEAD
+ Relativ tid
+ Normalt med stödlinjer
+ Återställ diagram
+ Övre gränsen skall vara högre än den undre.
+!------------------------------------------------------------
+! History strings for "no access allowed"
+!------------------------------------------------------------
+.HISTNOACCESS
+ Åtkomst ej tillåten.
+.VARNAME
+ dialogbox
+    body vertical
+       group horizontal columns=2 0
+          label    11 Variabel
+          edithelp 12
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.RESERRORDBOX
+ dialogbox
+   body vertical columns = 1
+   end body
+   commands horizontal
+     button default 1 Acceptera fel
+     button cancel  2 Redigera
+   end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.CONVDISERRST
+ Konverteringen av attributet blockera resulterar i en sträng som är för lång. Följande data kommer att förloras:
+!------------------------------------------------------------
+.DISABLEATTR
+ Blockera:
+!------------------------------------------------------------
+! Header when attribute of graphical object etc found.
+.ATTRHEADSTR
+ Används som: 
+!------------------------------------------------------------
+! Names for attributes of graphical objects etc when searching.
+.ATTRNAMESTR
+! vNoGraphAttr
+ ?
+! vPosXAttr
+ Position X
+! vMaxPosXAttr
+ Max Position X
+! vMinPosXAttr
+ Min Position X
+! vPosYAttr
+ Position Y
+! vMaxPosYAttr
+ Max Position Y
+! vMinPosYAttr
+ Min Position Y
+! vScaleXAttr
+ Skala X
+! vMaxScaleXAttr
+ Max Skala X
+! vMinScaleXAttr
+ Min Skala X
+! vScaleYAttr
+ Skala Y
+! vMaxScaleYAttr
+ Max 4_SCALE Y
+! vMinScaleYAttr
+ Min Skala Y
+! vAngleAttr
+ Rotation
+! vEnableAttr
+ Aktivera
+! vZoomInAttr
+ Zooma in
+! vAreaCol1Attr
+ Ytfärg
+! vAreaCol2Attr
+ Alternativ ytfärg
+! vAreaStyleAttr
+ Färgblandning
+! vLineCol1Attr
+ Linjefärg
+! vLineCol2Attr
+ Alternativ linjefärg
+! vLineStyleAttr
+ Färgblandning
+! vLineThicknessAttr
+ Linjebredd
+! vOpSelectedAttr
+ Markerad
+! vVariableAttr
+ Variabel
+! vStepAttr
+ Steg
+! vOpMaxAttr
+ Maximivärde
+! vOpMinAttr
+ Minimivärde
+! vRealVarAttr
+ Real variable
+! vDefaultRangeAttr
+ Grundområde
+! vAltRange1Attr
+ Alternativt område 1
+! vAltRange2Attr
+ Alternativt område 2
+! vRangeLowerLimitAttr
+ Område Nedre gräns
+! vRangeUpperLimitAttr
+ Område Övre gräns
+! vLimitValueAttr
+ Presentationsgräns Position
+! vIndexVarAttr
+ Index
+! vRefPosAttr
+ Referensposition
+! vWidthAttr
+ Bredd
+! vFractionAttr
+ Decimaler
+! vFormatAttr
+ Format
+! vHaxisStartTimeAttr
+ Starttid
+! vHaxisTimeOffsetAttr
+ Tidsförskjutning
+! vInViewAttr
+ I vy
+! vValueChangedAttr
+ Ändrad
+! vTableItemAttr
+ Sökväg
+! vInteractLoggingAttr
+ Händelseattribut
+! vDisableAttr
+ Blockera
+! vCurveSamplesAttr
+ Antal sampel i kurva
+! vCurveFractionAttr
+ Antal decimaler i kurvvärde
+! vSampleDurationAttr
+ Varaktighet för kurva
+! vVaxisUnitAttr
+ Enhet för skala
+! vResetToDefaultAttr
+ Återställ diagram
+! vRelTimeAttr
+ Relativ tid för tidsaxel
+! vEnableGridAttr
+ Aktivera stödlinjer
+! vCurveModeAttr
+ Kurvmod
+! vConRangeUpperLimitAttr
+ Område Övre gräns
+! vConRangeLowerLimitAttr
+ Område Nedre gräns
+! vEnableControlRangeAttr
+ Aktivera Styr mätområde
+! vVisibleAttr
+ Synlig
+! vTextAttr
+ Text
+! vAltTextAttr
+ Alternativ text
+! vEnableDelayAttr
+ Aktivera OK/Avbryt
+! vOKVariableAttr
+ OK-variabel
+! vCancelVariableAttr
+ Avbryt-variabel
+! vComButSetValueAttr
+ Värde
+! vValueAttr
+ Värde
+! vNoOfDigitsAttr
+ Signifikanta siffror
+! vDimAttr
+ Tona ned
+! vWindowTitleAttr
+ Text i namnlist
+! vWindowWidthAttr
+ Bredd
+! vWindowHeightAttr
+ Höjd
+! vWindowClassAttr
+ Fönsterklass
+! vWindowTimeoutAttr
+ Fördröjning vid auto-stäng
+! vWindowDisplayedAttr
+ Visas fönstret?
+! vWindowHRootAttr
+ Ägare till interaktionsfönster
+! vWindowVisibleTitleAttr
+ Synlig namnlist
+! vWindowResizableAttr
+ Möjligt att ändra storlek
+! vWindowMaintainRatioAttr
+ Behåll form
+! vWindowZoomableAttr
+ Zoombar
+! vWindowVisibleScrollBarsAttr
+ Synliga rullningslister
+! vPathAttr
+ Sökväg
+! vFileNameAttr
+ Filnamn
+! vRelativePosAttr
+ Relativ position
+! vLastGraphAttr
+ ???
+! Dummy strings if application reads to many items...
+ ???
+ ???
+ ???
+ ???
+ ???
+!------------------------------------------------------------
+! Used as header when graphical expressions is shown in search dialog
+.EXPRHEADSTR
+ Uttryck:
+!--------------------------------------------------------------
+! Used when replace has result in a too long expression
+.EXPRLONGWARN
+ Kan inte ersätta Uttrycket är för långt.
+!--------------------------------------------------------------
+.INTOBJTYPEDB
+ dialogbox Interaktionsobjekt
+   body
+      listbox visiblerows=6 3
+         listitem bool
+         listitem integer
+         listitem real
+         listitem string
+         listitem date_and_time
+         listitem time
+         listitem Window
+      end listbox
+   end body
+
+   commands
+      button default 1 OK
+      button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+.FASTFACTOR
+! Factor between increment and fast increment for real interaction objects
+ 10.0
+.INTFASTFACT
+! Factor between increment and fast increment for integer interaction objects
+ 10
+!--------------------------------------------------------------
+.NOTEXECUTED
+ Manöver kan ej utföras på grund av ogiltiga variabler.
+.NOTCHANGED
+ Manöver utförd. "Ändrad" kan ej skrivas eftersom variabeln är ogiltig.
+.NOTSELECTED
+ Manöver utförd. "Markerad" kan ej skrivas eftersom variabeln är ogiltig.
+.INVALFORMAT
+ Ogiltigt omvandlingsformat.
+!--------------------------------------------------------------
+! Interaction dialog box for bool simple
+.BOOLINTDBOX
+ dialogbox Interaktionsobjekt: bool
+    body vertical
+       frame horizontal
+          label    11 Variabel
+          edithelp 12 
+       end frame
+
+       frame horizontal
+          radiobutton 21 Till
+          radiobutton 22 Från
+          radiobutton 23 Växla
+          radiobutton 24 Meny
+       end frame
+
+       frame horizontal columns=2
+          label    31 Aktivera
+          edithelp minwidth=30 32
+          label    39 Markerad
+          edithelp 40
+          label    41 Ändrad
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for integer
+.INTINTDBOX
+ dialogbox Interaktionsobjekt: integer
+    body vertical
+       frame horizontal columns=2
+          label    11 Variabel
+          edithelp 12 
+          label    13 Minimivärde
+          edithelp 14 
+          label    15 Maximivärde
+          edithelp 16 
+          label    17 Steg
+          edithelp 18 
+       end frame
+
+       frame horizontal
+          radiobutton 21 Enkel
+          radiobutton 24 Meny
+       end frame
+
+       frame horizontal columns=2
+          label    31 Aktivera
+          edithelp minwidth=30 32
+          label    39 Markerad
+          edithelp 40
+          label    41 Ändrad
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for real
+.REALINTDBOX
+ dialogbox Interaktionsobjekt: real
+    body vertical
+       frame horizontal columns=2
+          label    11 Variabel
+          edithelp 12 
+          label    13 Minimivärde
+          edithelp 14 
+          label    15 Maximivärde
+          edithelp 16 
+          label    17 Relativt steg
+          edithelp 18 
+       end frame
+
+       frame horizontal
+          radiobutton 21 Enkel
+          radiobutton 24 Meny
+       end frame
+
+       frame horizontal columns=2
+          label    31 Aktivera
+          edithelp minwidth=30 32
+          label    39 Markerad
+          edithelp 40
+          label    41 Ändrad
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for string
+.STRINTDBOX
+ dialogbox Interaktionsobjekt: string
+    body vertical
+       frame horizontal
+          label    11 Variabel
+          edithelp 12 
+       end frame
+
+       frame horizontal columns=2
+          label    31 Aktivera
+          edithelp minwidth=30 32
+          label    39 Markerad
+          edithelp 40
+          label    41 Ändrad
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for date_and_time
+.TIMEINTDBOX
+ dialogbox Interaktionsobjekt: date_and_time
+    body vertical
+       frame horizontal columns=2
+          label    11 Variabel
+          edithelp 12 
+          label    13 Format
+          edithelp 14 
+       end frame
+
+       frame horizontal columns=2
+          label    31 Aktivera
+          edithelp minwidth=30 32
+          label    39 Markerad
+          edithelp 40
+          label    41 Ändrad
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for time
+.DURAINTDBOX
+ dialogbox Interaktionsobjekt: time
+    body vertical
+       frame horizontal columns=2
+          label    11 Variabel
+          edithelp 12 
+          label    13 Format
+          edithelp 14 
+       end frame
+
+       frame horizontal columns=2
+          label    31 Aktivera
+          edithelp minwidth=30 32
+          label    39 Markerad
+          edithelp 40
+          label    41 Ändrad
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for procedure interaction
+.PROCINTDBOX
+ dialogbox Interaktionsobjekt: Fönster
+    body horizontal
+       frame vertical
+         radiobutton 201 Skapa ett nytt fönster
+         radiobutton 202 Skapa/ta bort ett fönster
+         radiobutton 203 Ta bort ett fönster
+         radiobutton 204 Redigera en fil
+         group horizontal columns=2
+         label    205 Sökväg
+         edithelp 206
+         label    0   Relativ position
+         edithelp 207
+         label    0   X-position
+         edithelp 208
+         label    0   Y-position
+         edithelp 209
+         label    0   Fönsterklass
+         edithelp 210
+         end group
+       end frame
+
+       frame horizontal columns=2
+          label    31 Aktivera
+          edithelp minwidth=30 32
+          label    39 Markerad
+          edithelp 40
+          label    41 Ändrad
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.INTSTR
+ Interaktionsobjekt 
+!--------------------------------------------------------------
+! Interaction dialog box for command button
+.COMBUTDBOX
+ dialogbox Interaktionsobjekt: Tryckknapp
+    body horizontal columns=2
+
+       group vertical
+
+          frame horizontal
+             radiobutton 11 Boolean
+             radiobutton 12 Integer
+             radiobutton 13 Real
+          end frame
+
+          frame horizontal
+             radiobutton 21 Till
+             radiobutton 22 Från
+             radiobutton 23 Växla
+          end frame
+
+          frame horizontal
+             radiobutton 31 Steg
+             radiobutton 32 Värde
+          end frame
+
+          frame horizontal
+             checkbox 41 Indikera valt värde
+          end frame
+
+          frame horizontal columns=2
+             label    51 Variabel
+             edithelp 52 
+             label    53 Värde
+             edithelp 54 
+             label    55 Minimivärde
+             edithelp 56
+             label    57 Maximivärde
+             edithelp 58
+          end frame
+
+       end group
+
+       group vertical
+
+          frame horizontal columns=2
+             radiobutton 61 Absolut steg
+             edithelp    62
+             radiobutton 63 Relativt steg
+             edithelp    64
+          end frame
+
+          frame horizontal columns=2
+             label    71 Text
+             edithelp 72
+             label    73 Alternativ text
+             edithelp 74
+          end frame
+
+          frame vertical
+             checkbox 102 Aktivera OK/Avbryt
+             group horizontal columns=2
+                label    103 OK-variabel
+                edithelp 104
+                label    105 Avbryt-variabel
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 Synlig
+             edithelp 82
+             label    83 Aktivera
+             edithelp 84
+             label    89 Ändrad
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for procedure command button
+.COMBUTPDBOX
+ dialogbox Interaktionsobjekt: Fönster
+    body vertical
+
+       frame vertical
+         radiobutton 201 Skapa ett nytt fönster
+         radiobutton 202 Skapa/ta bort ett fönster
+         radiobutton 203 Ta bort ett fönster
+         radiobutton 204 Redigera en fil
+         group horizontal columns=2
+           label    205 Sökväg
+           edithelp 206
+           label    0   Relativ position
+           edithelp 207
+           label    0   X-position
+           edithelp 208
+           label    0   Y-position
+           edithelp 209
+           label    0   Fönsterklass
+           edithelp 210
+           space
+           space
+           label    11 Knapptext
+           edithelp 12
+         end group
+       end frame
+
+      frame horizontal columns=2
+         label    81 Synlig
+         edithelp 82
+         label    83 Aktivera
+         edithelp 84
+         label    89 Ändrad
+         edithelp 90
+       end frame
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for option button
+.OPTBUTDBOX
+ dialogbox Interaktionsobjekt: Alternativknapp
+    body vertical
+
+       frame horizontal columns=2
+          label    11 Variabel
+          edithelp 12
+          label    13 Värde
+          edithelp 14
+       end frame
+
+       group vertical
+
+          frame horizontal columns=2
+             label    21 Text
+             edithelp 22
+          end frame
+
+          frame vertical
+             checkbox 102 Aktivera OK/Avbryt
+             group horizontal columns=2
+                label    103 OK-variabel
+                edithelp 104
+                label    105 Avbryt-variabel
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 Synlig
+             edithelp 82
+             label    83 Aktivera
+             edithelp 84
+             label    89 Ändrad
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for check box
+.CHECKBOXDBOX
+ dialogbox Interaktionsobjekt: Kryssruta
+    body vertical
+
+       frame horizontal columns=2
+          label    11 Variabel
+          edithelp 12 
+       end frame
+
+       group vertical
+
+          frame horizontal columns=2
+             label    21 Text
+             edithelp 22
+          end frame
+
+          frame vertical
+             checkbox 102 Aktivera OK/Avbryt
+             group horizontal columns=2
+                label    103 OK-variabel
+                edithelp 104
+                label    105 Avbryt-variabel
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 Synlig
+             edithelp 82
+             label    83 Aktivera
+             edithelp 84
+             label    89 Ändrad
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for Text box
+.TEXTBOXDBOX
+ dialogbox Interaktionsobjekt: Inmatningsfält
+    body horizontal columns=2
+
+       group vertical
+
+          frame vertical
+             radiobutton 11 integer
+             radiobutton 12 real
+             radiobutton 13 string
+             radiobutton 14 date_and_time
+             radiobutton 15 time
+          end frame
+
+          frame horizontal columns=2
+                label    21 Variabel
+                edithelp 22 
+          end frame
+
+          frame horizontal
+             radiobutton 31 Vänster
+             radiobutton 32 Centrerad
+             radiobutton 33 Höger
+          end frame
+
+          frame horizontal columns=2
+             label    41 Minimivärde
+             edithelp 42 
+             label    43 Maximivärde
+             edithelp 44 
+             label    45 Format
+             edithelp 46 
+          end frame
+
+       end group
+
+       group vertical
+
+          frame horizontal columns=2
+             radiobutton 51 Absolut steg
+             edithelp    52
+             radiobutton 53 Relativt steg
+             edithelp    54
+          end frame
+
+          frame horizontal columns=2
+             radiobutton 61 Decimaler
+             edithelp    62 
+             radiobutton 63 Signifikanta siffror
+             edithelp    64 
+          end frame
+
+          frame vertical
+             checkbox 102 Aktivera OK/Avbryt
+             group horizontal columns=2
+                label    103 OK-variabel
+                edithelp 104
+                label    105 Avbryt-variabel
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 Synlig
+             edithelp 82
+             label    83 Aktivera
+             edithelp 84
+             label    89 Ändrad
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Grid for open picture.
+.PICTUREGRID
+ 8
+!------------------------------------------------------------
+.OBJECTNAMES
+ Punkt
+ Flera objekt
+ Control-modulstyp
+ Control-modul
+ Interaktionsobjekt
+ Trenddiagram
+ Tidsaxel
+ Värdeaxel
+ Kurva
+ Presentationsgräns
+ Tidslinjal
+ Stapeldiagram
+ Värdeaxel
+ Stapel
+ Presentationsgräns
+ Strängväljare
+ Bildväljare
+ Linje
+ Rektangel
+ Oval
+ Segment
+ Polygon
+ Grafisk koppling
+ Textobjekt
+ Nod
+!
+!-------------------------------------------------
+.INPARSTRING
+ %1 i %2
+!-------------------------------------------------
+.LIBPICTSTR
+! String for error message
+ Control-modulstyp 
+!------------------------------------------------------------
+.LIBPICTNAME
+! String for creating new module type
+ Control-modulstypens namn:
+!------------------------------------------------------------
+.MODTITLESTR
+ Skapa en control-modul
+!-------------------------------------------------------------
+.OPENMODSTR
+ Öppna control-modul
+!-------------------------------------------------------------
+.CLOSEMODSTR
+ Stäng control-modul
+!-------------------------------------------------------------
+.MAXMINERRSTR
+ Maximistorleken måste vara minst %1% större än minimistorleken.
+!-------------------------------------------------------------
+! Titles for Zooming and Size dialog boxes
+.ZOOMTYPETIT
+ Zoomning och synlighet för control-modulstyp %1
+.ZOOMSINGLTIT
+ Zoomning och synlighet för singel control-modul %1
+.ZOOMINSTTIT
+ Zoomning och synlighet för control-modul %1
+!-------------------------------------------------------------
+.PICTZOOMBOX
+ dialogbox Zoomning och synlighet för control-modulstyp %1
+   body vertical
+     group horizontal columns = 2
+       checkbox 11 Synlig i grafiken för den omgivande control-modulen
+       checkbox 10 Zoombar
+
+       frame horizontal columns=2 0 Synlighetsgränser
+         label 0 Maximistorlek
+         combobox dropdown 21
+           listitem 1000.0 (Standardvärde)
+           listitem 0.0 (Ingen gräns)
+         end combobox
+         label 0 Minimistorlek
+         combobox dropdown 22
+           listitem 0.01 (Standardvärde)
+         end combobox
+       end frame
+
+       frame horizontal columns=2 0 Lager
+         checkbox 30 Två lager
+         space
+         label 31 Omslagsstorlek
+         combobox dropdown 32
+           listitem 0.95 (Standardvärde)
+         end combobox
+       end frame
+
+     end group
+
+     space
+
+     frame
+       text 40 Storleken 1.0 motsvarar att en icke-roterad control-modul fyller ut hela fönstret.\nControl-modulens nuvarande storlek är %1.
+     end frame
+   end body
+
+   commands horizontal
+      button default 1 OK
+      button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.ZOOMABLESTR
+ Zoombar
+.NONZOOMSTR
+ Ej zoombar
+.VISIBLESTR
+ Synlig
+.INVISIBLESTR
+ Osynlig
+!-------------------------------------------------------------
+.IGNOREMAXSTR
+ Ignorera maximistorlek
+.SYMBOLSTR
+ Följ maximistorlek
+!-------------------------------------------------------------
+.PROMMODUNAME
+ Byt namn
+!-------------------------------------------------------------
+.REPLHEADSTR
+ Ersätt control-modulstyp
+!-------------------------------------------------------------
+.PINVATTR1BOX
+ dialogbox Attribut
+    body horizontal
+       frame vertical columns=2 0
+          label 0 Aktivera
+          label 0 Tona ned
+          edithelp minwidth=30 7
+          edithelp minwidth=30 8
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+       button         3 Mer >>
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Attributes dialog box
+.PINVATTR2BOX
+ dialogbox Attribut
+    body vertical
+       group horizontal 
+          frame vertical columns=2 0
+             label 0 Aktivera
+             label 0 Tona ned
+             edithelp minwidth=30 7
+             edithelp minwidth=30 8
+          end frame
+          space
+       end group
+       frame horizontal columns=5 0
+          space
+          space
+          label 0 Variabel
+          label 0 Min
+          label 0 Max
+
+          label 0 Position:
+          label 0 X:
+          edithelp maxwidth=20 20
+          edithelp maxwidth=20 21
+          edithelp maxwidth=20 22
+
+          space
+          label 0 Y:
+          edithelp maxwidth=20 23
+          edithelp maxwidth=20 24                   
+          edithelp maxwidth=20 25
+
+          label 0 Rotation:
+          space
+          edithelp maxwidth=20 26
+          edithelp maxwidth=20 27
+          edithelp maxwidth=20 28
+
+          space
+          space
+          space
+          label 0 Storlek 0%
+          label 0 Storlek 100%
+
+          label 0 Skala:
+          label 0 X:
+          edithelp maxwidth=20 29
+          edithelp maxwidth=20 30
+          edithelp maxwidth=20 31
+
+          space
+          label 0 Y:
+          edithelp maxwidth=20 32
+          edithelp maxwidth=20 33
+          edithelp maxwidth=20 34
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+       button         3 Mer >>
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.NEWMODTYPBOX
+ dialogbox Ny control-modulstyp
+    body
+       frame horizontal columns = 2
+          radiobutton 11 Control-modulstyp
+          edit        12
+          radiobutton 13 Singel control-modul
+       end frame
+       space
+       frame horizontal columns = 2          
+         label        0 Individnamn:
+         edithelp     15
+       end frame    
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.NAMEINUSE
+ Namnet %1 är upptaget eller inte giltigt.   
+!-------------------------------------------------------------
+.PICTINVZOOMB
+ dialogbox Zoomning och synlighet för control-modul %1
+   body vertical
+     group horizontal
+       frame vertical 0 Synlig i grafiken för den omgivande control-modulen
+         radiobutton 10 Typens standardvärde (%1)
+         radiobutton 11 Synlig
+         radiobutton 12 Osynlig
+       end frame
+
+       frame vertical 0 Zoombar
+         radiobutton 20 Typens standardvärde (%1)
+         radiobutton 21 Zoombar
+         radiobutton 22 Ej zoombar
+       end frame
+     end group
+
+     frame vertical 0 Synlighetsgränser
+       group horizontal
+         group vertical
+           checkbox long 30 Använd typens synlighetsgränser
+           space
+           label 0 Maximistorlek
+           combobox dropdown 31
+             listitem 1000.0 (Standardvärde)
+             listitem 0.0 (Ingen gräns)
+           end combobox
+           label 0 Minimistorlek
+           combobox dropdown 32
+             listitem 0.01 (Standardvärde)
+           end combobox
+         end group
+
+         frame vertical 0 Relation till den omgivande control-modulen
+           radiobutton 40 Typens standardvärde (%1)
+           radiobutton 42 Följ maximistorlek
+           radiobutton 41 Ignorera maximistorlek
+           radiobutton 43 Omvänt synlighetsförhållande
+         end frame
+       end group
+
+       frame
+         text 50 Storleken 1.0 motsvarar att en icke-roterad control-modul fyller ut hela fönstret.\nControl-modulens nuvarande storlek är %1.
+       end frame
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.SINGLEZOOMB
+ dialogbox Zoomning och synlighet för singel control-modul %1
+   body vertical
+     group horizontal
+       frame vertical 0 Synlig i grafiken för den omgivande control-modulen
+         radiobutton 11 Synlig
+         radiobutton 12 Osynlig
+       end frame
+
+       frame vertical 0 Zoombar
+         radiobutton 21 Zoombar
+         radiobutton 22 Ej zoombar
+       end frame
+     end group
+
+     frame vertical 0 Synlighetsgränser
+       group horizontal
+         group vertical
+           checkbox long 30 Använd typens synlighetsgränser
+           space
+           label 0 Maximistorlek
+           combobox dropdown 31
+             listitem 1000.0 (Standardvärde)
+             listitem 0.0 (Ingen gräns)
+           end combobox
+           label 0 Minimistorlek
+           combobox dropdown 32
+             listitem 0.01 (Standardvärde)
+           end combobox
+         end group
+
+         frame vertical 0 Relation till den omgivande control-modulen
+           radiobutton 42 Följ maximistorlek
+           radiobutton 41 Ignorera maximistorlek
+           radiobutton 43 Omvänt synlighetsförhållande
+         end frame
+       end group
+
+       frame
+         text 50 Storleken 1.0 motsvarar att en icke-roterad control-modul fyller ut hela fönstret.\nControl-modulens nuvarande storlek är %1.
+       end frame
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.PICTINVVISB
+ dialogbox Zoomning och synlighet för control-modul %1
+   body horizontal
+     frame vertical 0 Synlig i grafiken för den omgivande control-modulen
+       radiobutton 10 Typens standardvärde (%1)
+       radiobutton 11 Synlig
+       radiobutton 12 Osynlig
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.SINGLEVISB
+ dialogbox Zoomning och synlighet för singel control-modul %1
+   body vertical
+     frame vertical 0 Synlig i grafiken för den omgivande control-modulen
+       radiobutton 11 Synlig
+       radiobutton 12 Osynlig
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.LINEWIDTHBOX
+ dialogbox Linjebredd
+   body vertical
+      group horizontal
+         listbox dropdown visiblerows=10 minwidth=10 10
+            listitem 1
+            listitem 2
+            listitem 3
+            listitem 4
+            listitem 5
+            listitem 7
+            listitem 9
+            listitem 11
+            listitem 13
+            listitem 15
+         end listbox
+
+         edithelp 11
+      end group
+
+      checkbox 12 Spara som grundinställning
+   end body
+
+   commands
+       button default 1 OK
+       button cancel  2 Avbryt
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Attributes of graph objects
+.GRAPHATTRBOX
+ dialogbox Attribut
+    body horizontal columns=2
+       label    3 Aktivera
+       edithelp minwidth=30 4
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! TextDialogBox
+!-------------------------------------------------------------
+.TEXTALIGNBOX
+ dialogbox Text
+    body
+       frame vertical  0 Justering
+          radiobutton 31 Vänster
+          radiobutton 32 Centrerad
+          radiobutton 33 Höger
+       end frame
+       checkbox 21 Spara som grundinställning
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.TEXTVARDBOX
+ dialogbox Text
+    body
+       group horizontal
+          frame vertical  0 Justering
+             radiobutton 31 Vänster
+             radiobutton 32 Centrerad
+             radiobutton 33 Höger
+          end frame
+
+          frame vertical 0 Mod
+             checkbox  5 Variabel
+             group horizontal columns=2
+                label    41 Bredd
+                edithelp 42
+                label    51 Decimaler
+                edithelp 52
+                label    61 Format
+                edithelp 62
+             end group
+          end frame
+       end group
+       checkbox 21 Spara som grundinställning
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Point position dialog box
+.POINTPOSBOX
+ dialogbox Position
+    body horizontal
+       frame horizontal columns=2 0 X
+          label    11 Variabel
+          edithelp maxwidth=30 12 
+          label    21 Min
+          edithelp maxwidth=30 22 
+          label    31 Max
+          edithelp maxwidth=30 32 
+       end frame
+
+       frame horizontal columns=2 0 Y
+          label    41 Variabel
+          edithelp maxwidth=30 42 
+          label    51 Min
+          edithelp maxwidth=30 52 
+          label    61 Max
+          edithelp maxwidth=30 62 
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.MODIFYTEXT
+ dialogbox Ändra text
+    body vertical
+       group horizontal columns=2 0
+          label    11 Text
+          edithelp 12
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.MODULETYPSTR
+ Control-modulstyp 
+!-------------------------------------------------
+! Change grid dialog box
+.CHGRIDBOX
+ dialogbox Stödraster
+    body vertical
+       frame vertical  0 Systemets rasterattribut
+          checkbox    11 Visa stödraster
+          checkbox    12 Visa raster i underliggande control-modul
+          group horizontal
+             label    13 Stödrasterfaktor:
+             edit minwidth=3 maxchars=2  14
+          end group
+       end frame
+
+       frame vertical columns=2   0 Control-modulens rasterstorlek
+          label 0 Grövre
+          space
+          label 0 Normal
+          space
+          label 0 Finare
+          space
+          radiobutton 21 0.2
+          radiobutton 22 0.04
+          radiobutton 23 0.02
+          radiobutton 24 0.01
+          radiobutton 25 0.005
+          radiobutton 26 Från
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.SMALLCOLBOX
+ dialogbox Färg
+    body vertical
+       frame horizontal columns=2
+          label                  10 Linjefärg
+          colorbutton minwidth=8 11
+          label                   1 Ytfärg
+          colorbutton minwidth=8  2 
+       end frame
+
+       checkbox 19 Spara som grundinställning
+    end body
+    commands horizontal
+       button default 20 OK
+       button cancel  21 Avbryt
+       button         22 Mer >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.MEDIUMCOLBOX
+ dialogbox Färg
+    body vertical
+       frame horizontal columns=3
+          label                  10 Linjefärg
+          colorbutton minwidth=8 11
+          edithelp               12
+          label                   1 Ytfärg
+          colorbutton minwidth=8  2 
+          edithelp                3
+       end frame
+
+       checkbox 19 Spara som grundinställning
+    end body
+    commands horizontal
+       button default 20 OK
+       button cancel  21 Avbryt
+       button         22 Mer >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.LARGECOLBOX
+ dialogbox Färg
+    body vertical
+       frame horizontal columns=3
+          label                        10 
+          colorbutton       minwidth=8 11
+          edithelp                     12
+          label                        13 
+          colorbutton       minwidth=8 14 
+          edithelp                     15
+          label                        16
+          combobox dropdown minwidth=8 17
+          edithelp                     18
+
+          space
+          space
+          space
+
+          label                        1 Ytfärg
+          colorbutton       minwidth=8 2 
+          edithelp                     3
+          label                        4 Alternativ ytfärg
+          colorbutton       minwidth=8 5
+          edithelp                     6
+          label                        7
+          combobox dropdown minwidth=8 8
+          edithelp                     9
+       end frame
+
+       checkbox 19 Spara som grundinställning
+    end body
+    commands horizontal
+       button default 20 OK
+       button cancel  21 Avbryt
+       button         22 Mer >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.LINCOLSTR
+ Linjefärg
+.ALTLINCOLSTR
+ Alternativ linjefärg
+.ARECOLSTR
+ Ytfärg
+.ALTARECOLSTR
+ Alternativ ytfärg
+.TEXCOLSTR
+ Textfärg
+.ALTTEXCOLSTR
+ Alternativ textfärg
+.BGRCOLSTR
+ Bakgrundsfärg
+.ALTBGRCOLSTR
+ Alternativ bakgrundsfärg
+.COLMIXSTR
+ Färgblandning
+.COLCHOICESTR
+ Färgval
+!-------------------------------------------------
+.INTWINDSMALL
+ dialogbox Egenskaper för interaktionsfönster för %1
+    body horizontal columns=3
+      text minwidth = 20 0 Egenskaper
+      text      0 Variabel/Värde
+      text      0 Standardvärde
+
+      label     0 Text i namnlist:
+      edithelp 10
+      text      0
+
+      label     0 Bredd:
+      edithelp 11
+      text      0 0.24
+
+      label     0 Höjd:
+      edithelp 12
+      text      0 0.0
+
+      label     0 Fönsterklass:
+      edithelp 13
+      text      0 0
+    end body
+    commands horizontal
+      button default 1 OK
+      button         2 Verkställ
+      button cancel  3 Stäng
+      button         4 Mer >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.INTWINDLARGE
+ dialogbox Egenskaper för interaktionsfönster för %1
+    body horizontal columns=3
+      text minwidth = 20 0 Egenskaper
+      text      0 Variabel/Värde
+      text      0 Standardvärde
+
+      label     0 Text i namnlist:
+      edithelp 10
+      text      0
+
+      label     0 Bredd:
+      edithelp 11
+      text      0 0.24
+
+      label     0 Höjd:
+      edithelp 12
+      text      0 0.0
+
+      label     0 Fönsterklass:
+      edithelp 13
+      text      0 0
+
+      label     0 Fördröjning vid auto-stäng:
+      edithelp 14
+      text      0 0 (sekunder)
+
+      label     0 Visas fönstret?:
+      edithelp 15
+      text      0 <Utparameter>
+
+      label     0 Ägare till interaktionsfönster:
+      edithelp 16
+      text      0 false
+
+      label     0 Synlig namnlist:
+      edithelp 17
+      text      0 true
+
+      label     0 Möjligt att ändra storlek:
+      edithelp 18
+      text      0 false
+
+      label     0 Behåll form:
+      edithelp 19
+      text      0 true
+
+      label     0 Alltid överst:
+      edithelp 20
+      text      0 false
+
+      label     0 Zoombar:
+      edithelp 21
+      text      0 false
+
+      label     0 Synliga rullningslister:
+      edithelp 22
+      text      0 false
+    end body
+    commands horizontal
+      button default 1 OK
+      button         2 Verkställ
+      button cancel  3 Stäng
+      button         4 Mer >>
+    end commands
+ end dialogbox
+.WINDOWCOLBOX
+ dialogbox Fönsterbakgrund
+    body horizontal columns = 2
+       label                  0 Applikationsfönster:
+       colorbutton minwidth=8 3
+       label                  0 Interaktionsfönster:
+       colorbutton minwidth=8 4
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+!--------------------------------------------------------------
+.OKBOX
+ dialogbox
+    body
+       text minwidth=20 10
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKTITLE
+ Meddelande
+!------------------------------------------------------------
+.OKCANCELBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKCANCLTITLE
+ Meddelande
+!------------------------------------------------------------
+.OKMOREBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default cancel 1 OK
+       button                7 Mer information
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKMORETITLE
+ Meddelande
+!------------------------------------------------------------
+.YESNOBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 4 Ja
+       button cancel  5 Nej
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.YESNOTITLE
+ Meddelande
+!------------------------------------------------------------
+.YESNOCANCBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 4 Ja
+       button         5 Nej
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.YESNOCATITLE
+ Meddelande
+!------------------------------------------------------------
+.CONTCANCEBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 3 Fortsätt
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.CONTCANTITLE
+ Meddelande
+!------------------------------------------------------------
+.INSCONCANBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button         6 Inspektera
+       button default 3 Fortsätt
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCOCANTITLE
+ Meddelande
+!------------------------------------------------------------
+.INSCANBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 6 Inspektera
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCANTITLE
+ Meddelande
+!------------------------------------------------------------
+.PROMPTBOX
+ dialogbox
+    body horizontal
+       text 1
+       edit 2
+    end body
+
+    commands
+       button default 3 OK
+       button cancel  4 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.EDITNAMEBOX
+ dialogbox
+    body horizontal
+       label    0 Namn: 
+       edithelp maxchars=32 3 
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROMPTTITLE
+ Ange värde
+.PROMPTTEXT
+ Värde
+.DEFEDITSTR
+ Redigera sträng
+.DEFPROMPTSTR
+ Sträng
+!------------------------------------------------------------
+! General strings
+.GENERALSTRS
+ <Namnlös>
+ Strängen klipptes efter %1 tecken.
+  finns inte.
+  ej giltig.
+ Ogiltigt värde.
+ Ogiltigt namn
+!------------------------------------------------------------
+.ERRCOUNTSTR
+ %1 fel under kompileringen.
+ %1 varning<ar> under kompileringen.
+ %1 fel och %2 varning<ar> under kompileringen.
+ Applikation:
+ Styrsystem:
+!--------------------------------------------------------------
+!                    Heap full error message
+!--------------------------------------------------------------
+.HEAPFULLMSG
+ Minne fullt. Projektet är för stort. Öka heapstorleken i Setup Wizard.
+!--------------------------------------------------------------
+.CHNGRUNTSTR
+ Ny applikationsversion har inkommit. Operationen avbröts.
+!--------------------------------------------------------------
+.PROGRESSSTAT
+ dialogbox Meddelande
+   body vertical
+     frame horizontal 0
+       text width=100 height=2 2
+     end frame
+   end body
+   commands horizontal
+   button default cancel 1 Avbryt
+   end commands
+ end dialogbox
+!-----------------------------------------------
+!-------------------------------------------------------------
+.STARTPROGREP
+!$$$ Move to dict later /jml
+!GoingSimulateStartProgress,
+ Går till testmod
+!GoingOnlineWithDownloadStartProgress,
+ Går online med nerladdning
+!GoingOnlineStartProgress,
+ Går online
+!GoingOfflineStartProgress,
+ Går offline
+!CancelGoingSimulateStartProgress,
+ Avbyter övergång till testmod
+!CancelGoingOnlineWithDownloadStartProgress,
+ Avbryter övergång till online med nerladdning
+!CancelGoingOnlineStartProgress,
+ Avbryter övergång till online
+!CompileProjectStartProgress
+ Kompilerar applikation
+!CompileTypeStartProgress
+ Kompilerar POU-typ %1
+!CompileInstancesStartProgress
+ Kompilerar individer för %1
+!RestoreDeselectedApplicationsStartProgress
+ Återskapar avselekterade applikationer
+!RestoreApplicationStartProgress
+ Återskapar applikation %1
+!DownloadProjectStartProgress
+ Laddar projektet till styrsystemet %1
+!DownloadFinishStartProgress
+ Nerladdning till styrsystemet %1 klar
+!DownloadAbortStartProgress
+ Nerladdning till styrsystemet %1 avbruten
+!SimulateStartedStartProgress
+ Testmod startad
+!SimulateStoppedStartProgress
+ Testmod stoppad
+!OnlineStartedStartProgress
+ Du är nu online!
+!OfflineStartedStartProgress
+ Du är nu offline!
+!CreateConfImageStartProgress
+ Skapar konfiguration för backup media
+!End
+!---------------------------------------------------------------
+.OWNERRORSTR
+   - Vissa control-moduler är inte kopplade till någon "ScanGroup".
+   - Ofullständig inkoppling av "GroupData"-variabler.
+   - Vissa "GroupData"-variabler är kopplade till mer än en "ScanGroup".
+   - Variabler skrivs av flera system.
+   - Variabler exporteras av PROG.
+ Följande control-moduler är inte kopplade till någon "GroupData"-variabel:
+ Följande "GroupData"-variabler är inte kopplade till någon "ScanGroup" control-modul:
+ Följande "GroupData"-variabler är kopplade till flera "ScanGroup" control-moduler:
+ Följande variabler skrivs av flera system:
+ Följande variabler exporteras av PROG:
+   - Systemnamnen i vissa scangrupper har ändrats.. \
+ Systemnamnen bör deklareras som konstanter eller applikationen måste initialiseras..
+ Följande systemnamn i scangrupper har ändrats.. \
+ Systemnamnen bör deklareras som konstanter eller applikationen måste initialiseras.:
+   - Systemnamnen i vissa scangrupper är ogiltiga..
+ Följande systemnamn i scangrupper är ogiltiga.:
+ Programexekvering
+ Det finns applikationsfel av följande slag.:
+ Det finns inga applikationsfel..
+ Det finns applikationsvarningar av följande slag.:
+ Det finns inga applikationsvarningar..
+!==============================================================================
+!                          KONFIGURATIONSF?????NSTER 
+!==============================================================================
+!-------------------------------------------------------------
+.ABOUTMENUSTR
+ Om %1
+!-------------------------------------------------------------
+.PRINTCODEMSG
+ Skriver applikationsinformation till fil
+.PRINTMEMMSG
+ Skriver applikations-"memory" till fil
+.PRINTEXEDATAMSG
+ Skriver exekveringsdata till fil
+.PRINTIOMSG
+ Skriver I/O-listor till fil
+.PRINTRUNTIMEMSG
+ Skriver "runtime"-struktur till fil
+
+!-------------------------------------------------------------
+.SETUPVARERR
+ Variabeln finns inte.
+!---------------------------------------------------------------
+.SETUPVALERR
+ Ogiltigt värde.
+!---------------------------------------------------------------
+.SETUPRANERR
+ Värdet skall vara mellan %1 och %2.
+!---------------------------------------------------------------
+.NOWRSYSSETUP
+ Varning! System setup kan inte sparas till fil.
+!---------------------------------------------------------------
+.GENERALBOX
+ dialogbox Inställningar - Allmänt
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Namn
+          text 7 Värde
+          text 8 Standardvärde
+          text 9 Beskrivning
+
+          text 101 AlphabeticPresentationOfObjects
+          text 0 Visa objekt i Projektutforskaren i alfabetisk ordning.\nFalse innebär att de visas i deklarationsordning istället.
+          text 102 PromptSaveEditorChanges
+          text 0 Fråga om ändringar i editorer skall sparas vid t.ex. övergång till online-mod.\nFalse innebär att ändringar sparas automatiskt.
+          text 103 ShowWarningOnInstanceEdit
+          text 0 Varning om ett kommando påverkar en individ inuti en bibliotekstypdeklaration.
+          text 104 LibraryFilePath
+          text 0 Sökväg för bibliotekens filkataloger
+          text 105 CpuTimeQuota
+          text 0 Antal procent av den totala CPU-tiden som Control Builder använder. (5-100)
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.GRAPHICSBOX
+ dialogbox Inställningar - Grafik
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Namn
+          text 7 Värde
+          text 8 Standardvärde
+          text 9 Beskrivning
+
+          text 0 HistoryDrawPeriod
+          text 0 Tid mellan uppdateringar i sekunder. (0-60)
+          text 0 UserInteractTimeout
+          text 0 Maximal tid för att avsluta en påbörjad operation, t.ex. en inzoomning. (0-3600)
+          text 0 InteractionWindowScaleFactor
+          text 0 Faktor för att modifiera storleken för ett interaktionsfönster. (0.1-10.0)
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROGRAMBOX
+ dialogbox Inställningar - Applikation
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Namn
+          text 7 Värde
+          text 8 Standardvärde
+          text 9 Beskrivning
+
+          text 0 EnableColdRetain
+          text 0 Aktivera "ColdRetain"-funktionen.
+          text 0 SaveColdRetainOnOfflineTransfer
+          text 0 Spara "ColdRetain"-värden vid övergång från "online" till "offline".
+          text 0 PromptBeforeSaveOnOfflineTrans
+          text 0 Dialog innan "ColdRetain"-värden sparas vid övergång från "online" till "offline".
+          text 0 MaxNoOfLoopsShown
+          text 0 Största antalet presenterade programloopar.
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROGRAMDLBOX
+ dialogbox Inställningar - Nerladdning av applikation
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 40 5
+          text 6 Namn
+          text 7 Värde
+          text 8 Standardvärde
+          text 9 Beskrivning
+
+          text 0 DisableDownLoad
+          text 0 Förhindra nerladdning från denna station.
+          text 0 ReauthenticateDL
+          text 0 Användaren tvingas logga in på nytt vid nedladdning.
+          text 0 SuppressOnlineSelectionDialog
+          text 0 Ladda alltid ner till alla styrsystem i projektet.
+          text 0 HWSimulationAllowed
+          text 0 Hårdvaru simulering tillåten. Varning: Får enbart användas i utvecklings miljöer.
+          text 0 EnableTaskAnalysisTool
+          text 0 Aktivera verktyget för task-analys.
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.FILESBOX
+ dialogbox Inställningar - Filer
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Namn
+          text 7 Värde
+          text 8 Standardvärde
+          text 9 Beskrivning
+
+          text 0 RemoteWriteProtected
+          text 0 Filsystemet är skyddat för skrivning av filer från fjärrsystem via MMS
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.TESTINSIMBOX
+ dialogbox Inställningar - Testmodsinställningar
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Namn
+          text 7 Värde
+          text 8 Standardvärde
+          text 9 Beskrivning
+
+          text 0 FiletransClientInTestMode
+          text 0 Aktivera "file transfer client"-funktioner i testmod.
+          text 0 MMSVarClientInTestMode
+          text 0 Aktivera "MMS variable client"-funktioner i testmod.
+          text 0 OpenCommClientInTestMode
+          text 0 Aktivera "OpenComm variable client"-funktioner i testmod. MMSVarClientInTestMode måste vara aktiverad.
+          text 0 COMLIMasterInTestMode
+          text 0 Aktivera COMLI-Master-funktioner i testmod.
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCABOX
+ dialogbox Inställningar - Control Network
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 Namn
+          text 7 Värde
+          text 8 Standardvärde
+          text 9 Beskrivning
+
+          text 0 MMSProcessNumber
+          text 0 MMS-processnummer för denna applikation.
+       end frame
+    end body
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.DOCCMDERR
+ Dokumentläsare kunde ej hittas.\n Kontrollera installationen av Acrobat Reader.
+.MANUALSDONOTEXIST
+ Manualerna kunde ej hittas.\n Installera om Control Builder-manualerna.
+!------------------------------------------------------------
+.SELVMHEADER
+ Variabelminne
+!--------------------------------------------------------------
+.SELVCHEADER
+ Skriv exporterade variabler
+!--------------------------------------------------------------
+.SELPINFHEAD
+ Applikationsinformation
+!--------------------------------------------------------------
+! Edit colours dialog box
+.EDITCOLDBOX
+ dialogbox Redigera färger
+    body horizontal columns=2
+       frame horizontal columns=6 verticalscroll height=11
+             1000 Färger
+          label 0 Färg
+          label 0 Nummer
+          label 0 Hue
+          label 0 Lum
+          label 0 Sat
+          space
+       end frame
+
+       group vertical
+          space
+          space
+          button 10 Ny rad
+       end group
+
+       space
+       space
+
+       frame horizontal columns=7 verticalscroll height=4
+             2000 Blinkfärger
+          label 0 Färg
+          label 0 Nummer
+          label 0 Tändfärg
+          label 0 Släckfärg
+          label 0 Period
+          label 0 Förhållande
+          label 0 Fas
+       end frame
+
+       group vertical
+          space
+          space
+          button 20 Ny rad
+       end group
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+       button         3 Uppdatera färger
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.DUPLCOLNRSTR
+ Detta färgnummer har redan blivit definierat.
+!-------------------------------------------------------------
+.SELECTCOLBOX
+ dialogbox Färger
+    body vertical
+       frame vertical 80 Systemfärger
+          label 70 Grundfärger
+          group horizontal columns=10 20 
+          end group
+
+          space
+
+          label 60 Bakgrundsfärger
+          group horizontal columns=10 30
+          end group
+
+          space
+
+          label 50 Specialfärger
+          group horizontal 
+             colorbutton 99 -1
+             label 51 Genomskinlig
+             space
+             colorbutton 98 -2
+             label 52 Fönsterbakgrund
+             space
+             colorbutton 97 -3
+             label 53 Förgrundsfärg
+          end group
+       end frame
+
+       frame horizontal columns=10 40 Användarfärger
+       end frame
+
+       checkbox 5 Visa färgindex
+    end body
+
+    commands
+       button cancel   1 Avbryt
+       button default 10 Redigera färger
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+!======================================================================
+!
+! Begin COMMONSTRINGS.C
+!
+!----------------------------------------------------------------------
+.TYPESTRS
+ Control-modulstyp
+ Diagramtyp
+ Datatyp
+ Funktionsblockstyp
+ Programtyp
+ Funktion
+!----------------------------------------------------------------------
+.TYPECSTRS
+ Control-modulstyp:
+ Diagramtyp:
+ Datatyp:
+ Funktionsblockstyp:
+ Programtyp:
+ Funktion:
+!----------------------------------------------------------------------
+.TYPESSTRS
+ Control-modulstyper
+ Diagramtyper
+ Datatyper
+ Funktionsblockstyper
+ Programtyper
+ Funktioner
+!----------------------------------------------------------------------
+.TYPENOTFSTRS
+ Control-modulstypen %1 finns inte i de inkopplade biblioteken.
+ Diagrammet %1 finns inte i de inkopplade biblioteken.
+ Datatypen %1 finns inte i de inkopplade biblioteken.
+ Funktionsblockstypen %1 finns inte i de inkopplade biblioteken.
+ Programtypen %1 finns inte i de inkopplade biblioteken.
+ Funktionen %1 finns inte.
+!----------------------------------------------------------------------
+.INSTCSTRS
+ Variabel:
+ Parameter:
+ Komponent:
+ Control-modul:
+ Diagram:
+ Funktionsblock:
+ Program:
+!----------------------------------------------------------------------
+.INST1CSTRS
+ Variabel %1:
+ Parameter %1:
+ Komponent %1:
+ Control-modul %1:
+ Diagram %1:
+ Funktionsblock %1:
+ Program %1:
+!----------------------------------------------------------------------
+!
+! End COMMONSTRINGS.C
+!
+!======================================================================
+!
+! Begin UNDEFTYPE.C
+!
+!----------------------------------------------------------------------
+! 
+.UNDEFMODTYPE
+ Odefinierad typ
+ !----------------------------------------------------------------------
+.RECURMODTYPE
+ Rekursiv typ
+!----------------------------------------------------------------------
+!
+! End UNDEFTYPE.C
+!
+!======================================================================
+!
+! Begin SCANGROUP.C
+!
+!----------------------------------------------------------------------
+.SCANGRPPARID
+! Formal name for scan group parameter.
+ Scan_group
+!----------------------------------------------------------------------
+!
+! End SCANGROUP.C
+!
+!======================================================================
+!
+! Begin MODDIALOG.C
+!
+!----------------------------------------------------------------------
+.MODDIAERRMES
+ Ogiltigt variabelnamn eller reserverat ord.
+ Variabeln är redan deklarerad.
+ Typen används och kan därför inte tas bort:
+ Detta typnamn är deklarerat i ett bibliotek.
+ Typen är redan deklarerad.
+ Fel funna i sekvensblock.
+!----------------------------------------------------------------------
+!
+! End MODDIALOG.C
+!
+!======================================================================
+.INVALIDTASK
+ Ogiltigt task-namn.
+!======================================================================
+!
+! Begin SELECTTYPEDIALOG.C
+!
+!----------------------------------------------------------------------
+.SELTYPENBOX
+ dialogbox
+    body
+       group horizontal columns=2
+          label 3
+          label 0 Bibliotek/Applikation:
+          combobox sorted visiblerows=11 width=34 4 
+          listbox sorted visiblerows=13 5
+       end group
+       group horizontal columns=3
+          label 7 Individnamn:
+          edithelp 6
+       end group
+       checkbox 8 Koppla in parametrar
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INVALNAMSTR
+ Namnet %1 är inte giltigt.
+!----------------------------------------------------------------------
+.SYSLIBNAMSTR
+ <System>
+! The <> are necesary in order to get it sorted correctly
+.NAMEERRTEMPL
+ Namnet %1 är upptaget eller inte giltigt.
+.NAMEERRSTR
+ Ogiltigt namn
+!----------------------------------------------------------------------
+!
+! End SELECTTYPEDIALOG.C
+!
+!======================================================================
+!
+! Begin SELECTDIALOG.C
+!
+!----------------------------------------------------------------------
+! Variable access dialog boxes
+.VARACCDBOX
+ dialogbox
+    body vertical
+       frame horizontal
+          label 0 Datatyp:
+          listbox dropdown  40
+       end frame
+
+       listbox visiblerows=12 width=40 21
+
+       frame horizontal
+         button 4 Expandera
+         button 5 Komprimera
+         space width=5
+         checkbox 6 Expandera allt
+       end frame
+
+       frame horizontal columns=2 verticalscroll height=3 30 
+          label 31 Namn:
+          text  width=45 32
+          label 33 Datatyp:
+          text  width=45 34
+          label 35 Beskrivning:
+          text  width=45 36
+       end frame
+    end body
+
+    commands
+       button default 1 Ersätt
+       button         3 Infoga   
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.TOOLONGNASTR
+ Namnet är för långt.
+.ALLTYPESSTR
+ Alla typer
+.VARIABLESTR
+ Information om variabel
+!----------------------------------------------------------------------
+! Headers for variable access dialog boxes
+.VARACCHEADER
+ Tillgängliga variabler i %1
+ Det finns inga variabler av denna datatyp tillgängliga.
+!----------------------------------------------------------------------
+!
+! End SELECTDIALOG.C
+!
+!======================================================================
+!
+! Begin RESOLVEDIALOG.C
+!
+!----------------------------------------------------------------------
+.RESERRORHDR
+! vNoError
+ Kontroll
+! vWarning
+ Varning
+! vError
+ Fel
+!----------------------------------------------------------------------
+.RESERRORBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 2 Inspektera
+       button         3 Nästa
+       button         4 Fortsätt
+       button cancel  7 Avbryt
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.CHKERRORBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 3 Nästa
+       button cancel  7 Avbryt
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.CHKERRORBDCL
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 5 Deklarera
+       button         3 Nästa
+       button cancel  7 Avbryt
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INTRESERRBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 1 Fortsätt
+       button cancel  6 Redigera
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INTRESERRDCL
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 5 Deklarera
+       button         1 OK
+       button cancel  6 Redigera
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+!
+! End RESOLVEDIALOG.C
+!
+!======================================================================
+!
+! Begin MODSEARCH.C
+!
+!----------------------------------------------------------------------
+.FOUNDPARSTR
+! Used in SEARCH dialog box when a ParAlias is found.
+! To be concatenated with name of formal parameter.
+ Parameter: 
+!----------------------------------------------------------------------
+!
+! End MODSEARCH.C
+!
+!======================================================================
+!
+! Begin MISMATCH.C
+!
+!----------------------------------------------------------------------
+.MISMATCHBOX
+ dialogbox Varning - Ändringsanalys
+    body
+       group horizontal columns = 2 10
+       end group
+       group horizontal
+          button 1 Byt namn...
+          button 2 Konsekvenser 
+          button 6 Hjälp
+       end group
+    end body
+
+    commands
+       button                5 Fortsätt 
+       button default cancel 3 Nästa felmatchning
+       button                4 Nästa analys
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.RENAMEBOX
+ dialogbox Byt namn 
+    body
+       frame horizontal columns = 2 20
+       end frame
+    end body
+
+    commands
+       button default 1 OK 
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+! Strings for mismatch,rename,mismatch help dialogs
+.MISMATCHSTRS
+!AnalysisStr
+ Analys
+!KeepStr
+ Retain
+!OpSaveStr
+ "ColdRetain"
+!SCUScopeStr
+ Källkodsenhet:  
+!ModuleTypeScopeStr
+ Control-modulstyp:
+!DiagramTypeScopeStr
+ Diagramtyp:
+!DataTypeScopeStr
+ Datatyp:
+!ProgramTypeScopeStr
+ Programtyp:
+!ApplicationTypeScopeStr
+ Applikation:
+!FunctionBlockTypeScopeStr
+ Funktionsblockstyp:
+!SCUNotReachableStr
+ Biblioteket används inte av den nya applikationen.
+!SCUNotFoundStr
+ Applikation finns inte.
+!SCUAlreadyStr
+ Applikation används redan för matchning.
+!ModuleTypeNotFoundStr
+ Control-modulstyp finns inte.
+!ModuleTypeAlreadyStr
+ Control-modulstyp används redan för matchning.
+!DiagramTypeNotFoundStr
+ Diagramtyp finns inte.
+!DiagramTypeAlreadyStr
+ Diagramtyp används redan för matchning.
+!ProgramTypeNotFoundStr
+ Programtyp finns inte.
+!ProgramTypeAlreadyStr
+ Programtyp används redan för matchning.
+!FunctionBlockTypeNotFoundStr
+ Funktionsblock  finns inte.
+!FunctionBlockTypeAlreadyStr
+ Funktionsblock används redan för matchning.
+!DataTypeNotFoundStr
+ Datatyp finns inte.
+!DataTypeAlreadyStr
+  Datatyp används redan för matchning.
+!DataTypeKindChangedStr
+ Datatyp har ändrats från Struct till Array, eller tvärtom.
+!ModuleNotFoundStr
+ Control-modul finns inte.
+!ModuleDuplicateStr
+ Control-modul matchar ej pga. samma namn.
+!ModuleAlreadyStr
+ Control-modul används redan för matchning.
+!ModuleWrongTypeStr
+ Moduls typ har förändrats.
+!ModuleKindChangedStr
+ Modul har bytt typ från singel till återanvändbar eller vice versa.
+!DiagramNotFoundStr
+ Diagram finns inte.
+!DiagramDuplicateStr
+ Diagram matchar ej pga. samma namn.
+!DiagramAlreadyStr
+ Diagram används redan för matchning.
+!DiagramWrongTypeStr
+ Diagramtypen har ändrats.
+!DiagramKindChangedStr
+ Diagram har bytt typ från singel till återanvändbar, eller tvärtom.
+!ProgramNotFoundStr
+ Program finns inte.
+!ProgramAlreadyStr
+ Program används redan för matchning.
+!ProgramWrongTypeStr
+ Programtypen har ändrats.
+!ProgramKindChangedStr
+ Program har bytt typ från singel till återanvändbar, eller tvärtom.
+!FunctionBlockNotFoundStr
+ Funktionsblock finns inte.
+!FunctionBlockAlreadyStr
+ Funktionsblock används redan för matchning.
+!FunctionBlockWrongTypeStr
+ Funktionsblockets typ har ändrats.
+!VariableNotFoundStr
+ Variabel finns inte.
+!VariableDuplicateStr
+ Variabel matchar ej pga. samma namn.
+!VariableAlreadyStr
+ Variabel används redan för matchning.
+!VariableWrongTypeStr
+ Variabelns datatyp har förändrats.
+!VariableStateChangedStr
+ Variabelns tillståndsattribut (State) har förändrats.
+!StructComponentNotFoundStr
+ Komponent finns inte.
+!StructComponentAlreadyStr
+ Komponent används redan för matchning.
+!StructComponentWrongTypeStr
+ Komponentens datatyp har förändrats.
+!StructComponentStateChangedStr
+ Komponentens tillståndsattribut (State) har förändrats.
+!ArrayComponentWrongTypeStr
+ Vektorn har ändrat datatyp.
+!ParameterNotFoundStr
+ Parameter finns inte.
+!ParameterAlreadyStr
+ Parameter  används redan för matchning.
+!ParameterWrongTypeStr
+ Parameterns datatyp har förändrats.  
+!ParameterKindChangedStr
+ Parameter har ändrat passnings typ.
+!RenameSCUStr
+ Källkodsenhet:
+!RenameModuleTypeStr
+ Control-modulstyp:
+!RenameDiagramTypeStr
+ Diagramtyp:
+!RenameProgramTypeStr
+ Programtyp:
+!RenameFunctionBlockTypeStr
+ Funktionsblockstyp:
+!RenameDataTypeStr
+ Datatyp:
+!RenameVariableStr
+ Variabel:
+!RenameStructComponentStr
+ Komponent:
+!RenameParameterStr
+ Parameter:
+!RenameModuleStr
+ Control-modul:
+!RenameDiagramStr
+ Diagram:
+!RenameFunctionBlockStr
+ Funktionsblock:
+!RenameProgramStr
+ Program:
+!ModuleNameStr
+ Control-modul Namn:
+!DiagramNameStr
+ Diagram Namn:
+!ProgramNameStr
+ Program Namn:
+!FunctionBlockNameStr
+ Funktionsblock Namn:
+!VariableNameStr
+ Variabel Namn:
+!StructComponentNameStr
+ Komponent Namn:
+!ArrayComponentNameStr
+ Data typ Array:
+!ParameterNameStr
+ Parameter Namn:
+!OldModuleTypeStr
+ Gammal Control-modulstyp:
+!NewModuleTypeStr
+ Ny Control-modulstyp:
+!OldDiagramTypeStr
+ Gammal Diagramtyp:
+!NewDiagramTypeStr
+ Ny Diagramtyp:
+!OldProgramTypeStr
+ Gammal Programtyp:
+!NewProgramTypeStr
+  Ny Programtyp:
+!OldFunctionBlockTypeStr
+ Gammal Funktionsblockstyp:
+!NewFunctionBlockTypeStr
+ Ny Funktionsblockstyp:
+!OldDataTypeStr
+ Gammal Datatyp:
+!NewDataTypeStr
+ Ny Datatyp:
+!ObjectStr
+ Objekt Namn:
+!Mismatchstr
+ Felmatchning:
+!MismatchHelpHeader
+ Felets konsekvenser 
+!AllPULost
+ Alla variabelvärden i samtliga control-moduler, program, funktions block och datatyper som är definierade i applikationen kommer att förloras.
+!AllModuleLost
+ Alla variabelvärden i alla typens individer, inklusive underindivider, kommer att förloras.
+!AllDatatypeLost
+ Alla variabelvärden i datatypen kommer att förloras.
+!SubLost
+ Alla variablers värden i individen och dess underindivider kommer att förloras.
+!SubAlreadyLost
+ Alla variablers värden i individen och dess underindivider, samt i tidigare matchade individer, kommer att förloras.
+!VariableLost
+ Variabelns värde kommer att förloras.
+!VariableAlreadyLost
+ Variabelns värde samt den tidigare matchade variabelns värde kommer att förloras.
+!ParameterLost
+ Parametern kan ge upphov till "blindhet".
+!ParameterAlreadyLost
+ Parametern, så väl som den tidigare matchade parametern, kan ge upphov till "blindhet".
+!----------------------------------------------------------------------
+!
+! End MISMATCH.C
+!
+!======================================================================
+!
+! Begin MODSET.C
+!
+!----------------------------------------------------------------------
+.VISIBLERR
+ Datatypen %1 är inte synlig i applikation %2
+!----------------------------------------------------------------------
+!
+! End MODSET.C
+!
+!======================================================================
+!
+! Begin TYPESHMI.C
+!
+!----------------------------------------------------------------------
+.DELTYPEMSG
+ Är du säker på att du vill ta bort typen?
+.DELETE
+ Ta bort
+.RENAME
+ Byt namn
+.NEWNAMETEMPL
+ Typen används av %1 individ<er> och typnamnet kommer även att ändras där
+.ONLYFIRST
+ Endast de 100 första individerna visas
+.TYPEOPENED
+ Typen %1 är öppnad i en editor. \nStäng editorn innan du tar bort typen.
+.NEWSTR
+ Ny
+.FBTYPESTR
+ FBtyp
+!----------------------------------------------------------------------
+.RENAMEBOX
+  dialogbox Byt namn
+    body horizontal columns = 2
+      label 0 Gammalt namn:
+      text 3
+      label 0 Nytt namn:
+      edit  maxchars=32 4
+    end body
+    commands horizontal
+      button default  1 OK
+      button cancel   2 Avbryt
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+.NEWTYPE
+  dialogbox Ny %1
+    body horizontal columns = 2
+      label 0 Namn:
+      edit width=40 maxchars=32 11
+    end body
+    commands horizontal
+      button default  1 OK
+      button cancel   2 Avbryt
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+.POUINFOBOX
+ dialogbox POU information
+    body horizontal columns=2
+       label 11 Namn:
+       text  12
+       label 13 Sökväg:
+       text  14
+       label 15 POU typ:
+       text  16
+       label 17 Exekverande system:
+       text  18
+       label 19 Task-namn:
+       text  20
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+!--------------- ISStatus -----------------------------------------------
+.ISSTATUS
+ OK
+!--------------- ISDataPOUStatus ----------------------------------------
+
+.ISDATAPOUSTATUS
+ POU-individen %1 med Init_Val-egenskaper kunde inte hittas.
+ POU-individnamnet %1 för Init_Val-egenskaper är syntaktiskt felaktigt.
+ POU-individen innehåller felaktiga Init_Val-egenskaper.
+ POU individen innehåller syntaktiskt felaktiga Init_Val-properties.
+ POU-individen %1 kan inte ha Init_Val-egenskaper eftersom den används i en SIL-applikation.
+
+
+!--------------- ISInitValStatus ----------------------------------------
+
+.ISINITVALSTATUS
+ Variabeln/parametern %1 med Init_Val-värde kunde inte hittas i Control Builder:n.
+ Init_Val-värdet för variabeln %1 är syntaktiskt felaktigt.
+ Init_Val-värdet för variabeln %1 är av fel typ.
+ Variabeln %1 får inte ha ett Init_Val-värde.
+ Variabel/parameter namnet %1 för Init_Val-egenskaper är syntaktiskt felaktigt.
+ Variabeln/parametern %1 har redan ett Init_Val-värde.
+
+!------------------------------------------------------------------------
+.PROTECTIONANDSCOPEPROPERTIESBOX
+ dialogbox Skydd och omfattning för %1
+   body
+     group vertical
+       group horizontal columns=2
+         frame 0 Skydd
+           checkbox 10 Skyddad
+           group horizontal
+             label 500
+             checkbox 15 Underobjekt synliga i PPA
+           end group 
+           checkbox 20 Gömd
+         end frame
+         frame 0 Omfattning
+           radiobutton 30 Privat
+           radiobutton 40 Publik
+         end frame
+       end group
+       frame 100 Reservation
+         label 101 Denna enhet är reserverad av '%1'.
+       end frame
+     end group
+   end body
+   commands horizontal
+     button default 1 OK
+     button cancel  2 Avbryt
+     button 102 Ta bort Reservation
+   end commands
+ end dialogbox
+!------------------------------------------------------------------------
+!
+! End TYPESHMI.C
+!
+!======================================================================
+!------------------------------------------------------------
+.OPID
+ :=
+ IF
+ THEN
+ ELSIF
+ ELSE
+ END_IF
+ WHILE
+ DO
+ END_WHILE
+ REPEAT
+ UNTIL
+ END_REPEAT
+ FOR
+ TO
+ BY
+ END_FOR
+ EXIT
+ RETURN
+ -
+ NOT
+ :=
+ +
+ -
+ *
+ /
+ **
+ MOD
+ =
+ >
+ <
+ <=
+ >=
+ <>
+ SHL
+ SHR
+ ROL
+ ROR
+ AND
+ &
+ XOR
+ OR
+ CASE
+ OF
+ END_CASE
+ ,
+ :
+ ..
+!--------------------------------------------------------------
+.USAGESTR
+ Läses och skrivs i: 
+ Läses i: 
+ Skrivs i: 
+ Används i: 
+ Variabel:
+ Konstant värde:
+! Scale factors for selecting proper seq and equa drawing.
+.ICONLIMIT
+ 0.0006
+!--------------------------------------------------------------
+.FORKDESTBOX
+ dialogbox
+    body horizontal
+       label 0  Destination
+       combobox dropdown 3
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SETDESTSTR
+ Ange destination
+!--------------------------------------------------------------
+.NOTVALNAMSTR
+ Namnet är inte giltigt.
+!--------------------------------------------------------------
+.PRSEQELENAME
+ Byt namn på sekvenselement
+!--------------------------------------------------------------
+.FILETRANSMS
+ Minne fullt i lokalsystemet.
+ Ogiltig identitet på lokalsystemet för fjärrsystem %1.
+ %1 är en ogiltig identitet på ett fjärrsystem.
+ Fjärrsystem %1 klarar ej MMS-filöverföring.
+ Filöverföring pågår redan till fjärrsystem %1.
+ Okänt MMS-fel till fjärrsystem %1.
+ %2 %3 finns inte i %1.
+ Kan ej skapa %2 %3 i %1.
+ Filsystemet i %1 är fullt.
+ Fel uppstod under skrivning av %2 %3 i %1.
+ Fel uppstod under läsning av %2 %3 i %1.
+ Fjärrsystem %1 har slut på minne.
+ Mottagen fils identitet från %1 har förstörts.
+ Okänt "MMS service"-fel från fjärrsystem %1.
+ Okänt "MMS reject reason" från fjärrsystem %1.
+ Kommunikationsfel har uppstått till fjärrsystem %1.
+ Det finns ingen lokal port för fjärrsystem %1.
+!--------------------------------------------------------------
+.LOCALSYSTEM
+ Lokalt system
+!--------------------------------------------------------------
+.FILETYPEMESS
+ Projektfil
+ Programenhetsfil
+ Distributionsdatafil
+ Programenhets- och "ColdRetain"-fil
+ Officiell programenhetsfil
+ Officiell programenhetsfil
+ Reservationsfil
+ "ColdRetain"-fil
+ "Secure"-fil
+ "Retain"-fil
+ Journalfil
+ "Save variable"-fil
+ "Domain"-fil
+ Systemprogramfil
+ Användarfil
+ "Byte"-fil
+ Block-fil
+!------------------------------------------------------------
+.SYSONNETWBOX
+! Dialog to show systems on network
+ dialogbox Fjärrsystem
+    body vertical
+      group horizontal
+       text 0 Fjärrsystem:
+       listbox visiblerows = 12 2
+!       button default 1 Information
+      end group
+      frame horizontal
+      label 0 Nätverksadress:
+        text minwidth=15 4
+!      label 0 MMS Support:
+        text minwidth=15 5
+      end frame
+     end body
+    commands horizontal
+       button default 3 OK
+       button cancel  6 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FIRMWAREDOWNLOADBOX
+ dialogbox Nedladdning av firmware
+    body
+        frame horizontal columns=5 11 Moduler som skall uppdateras
+            label minwidth=5 0 Pos
+            label minwidth=10 0 Enhet:
+            label minwidth=10 0 Aktuell firmware
+            label minwidth=10 0 Firmware för nedladdning
+            label minwidth=15 0 Status:
+        end frame
+        frame horizontal 
+           text minwidth=55 20 Dessa filer kommer laddas till styrsystem
+        end frame
+    end body
+    commands
+        button default  1 Fortsätt
+        button  cancel  2 Stäng
+    end commands
+ end dialogbox 
+!--------------------------------------------------------------
+.NOSYSFOUND
+ Inga fjärrsystem funna.
+!--------------------------------------------------------------
+.RSYSNVARDBOX
+ dialogbox MMS-variabler
+    body vertical
+       group horizontal columns=2
+          label 0 Fjärrsystem:
+          text  2
+       end group
+       label 0 MMS-variabler:
+       listbox visiblerows = 12 3
+    end body
+
+    commands horizontal
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.NOVARFOUND
+ Inga MMS-variabler funna i fjärrsystemet %1. 
+!--------------------------------------------------------------
+.RSYSASSIDBOX
+ dialogbox MMS-uppkopplingar
+    body
+       group horizontal columns=3
+          label 0 System
+          text  10 
+          label 0 har följande MMS-uppkopplingar:
+       end group
+       frame horizontal columns=11 height=8 verticalscroll 20
+          label minwidth=6  0 Funktion
+          label minwidth=21 0 Destination
+          label minwidth=8  0 Användning
+          label minwidth=10 0 Transaktioner
+          label minwidth=4  0 Transaktioner/s
+          label minwidth=4  0 Max Transaktioner/s
+          label minwidth=4  0 ICR
+          label minwidth=4  0 IR
+          label minwidth=4  0 IW
+          label minwidth=4  0 ER
+          label minwidth=4  0 EW
+       end frame
+       frame horizontal 0 Summering
+          text 30 %1 MMS-uppkoppling<ar>. %2 transaktioner/s.
+       end frame
+       frame horizontal 0 Sortera
+          radiobutton 40 Enligt ålder
+          radiobutton 41 Enligt transaktioner/s
+       end frame
+       group horizontal
+          frame horizontal 0 Visa funktion
+             checkbox 51 Client
+             checkbox 52 Server
+          end frame
+          frame horizontal 0 Visa användning
+             checkbox 53 Variabel
+             checkbox 55 Verktyg
+          end frame
+       end group
+    end body
+    commands horizontal
+       button 1 MMS-variabler
+       button default cancel 2 Stäng
+       button 3 Uppdatera
+       button 4 Hjälp
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.CLIENTSTR
+ Client
+.SERVERSTR
+ Server
+.VARIABLESTR
+ Variabel
+.TOOLSTR
+ Verktyg
+.AESTR
+ Variabel(AE)
+
+!--------------------------------------------------------------
+! Firmware download messages
+!--------------------------------------------------------------
+.SENDINGFILE
+ Skickar filen
+!--------------------------------------------------------------
+.DOWNLOADCOMPLETE
+ Nedladdning av firmware klar. Uppdaterar styrsystemet
+!--------------------------------------------------------------
+.UPDATEFAILED
+ Firmware-uppdatering misslyckades
+!--------------------------------------------------------------
+.WARNING
+ Varning
+!--------------------------------------------------------------
+.SEARCHBOX
+ dialogbox Sök
+    body horizontal
+       label 0 Sök efter:
+       edit  3
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SUBSTBOX
+ dialogbox Ersätt
+    body horizontal columns = 2
+       label 0 Sök efter:
+       edit  3
+       label 0 Ersätt med:
+       edit  4
+    end body
+    commands horizontal
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDBOX
+ dialogbox Sök
+    body horizontal columns = 2
+       label 0 Sök efter:
+       text  4
+    end body
+    commands horizontal
+       button default 1 Sök nästa
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDBOX2
+ dialogbox Användning
+    body horizontal columns = 2
+       label 0 Sök efter:
+       text  4
+    end body
+    commands horizontal
+       button default 1 Sök nästa
+       button         3 Nästa control-modul
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDREPBOX
+ dialogbox Ersätt
+    body horizontal columns = 2
+       label 0 Sök efter:
+       text  5
+       label 0 Ersätt med:
+       text  6
+    end body
+    commands horizontal
+       button default 1 Sök nästa
+       button         3 Ersätt
+       button         4 Ersätt allt
+       button cancel  2 Stäng
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INVSEARCHSTR
+ Felaktig syntax i söksträngen.
+!--------------------------------------------------------------
+.INVREPLACSTR
+ Felaktig syntax i ersättningssträngen.
+!--------------------------------------------------------------
+.NOOFFOUNDSTR
+ %1 objekt <funnet/funna>
+!--------------------------------------------------------------
+.FINDSTR
+ Sök
+.REPLACESTR
+ Ersätt
+.NOTFOUNDSTR
+ %1 ej funnen
+.NOOFREPLACEDSTR
+ %1 ersättning<ar> gjord<a>.
+!--------------------------------------------------------------
+!===========================================================================
+.SAVEEDITDSTR
+ Stoppar lokal applikation
+.SAVEERRODSTR
+ Fel
+!--------------------------------------------------------------
+.SECURESTRING
+ %1-värden för applikation %2 kunde inte sparas.
+ Felkod:
+ "ColdRetain"
+ "Secure"
+ Vill du spara "ColdRetain"-värden för applikation %1?
+!--------------------------------------------------------------
+.SAVECOLDRETAIN
+ dialogbox Spara "ColdRetain"-värden
+   body
+     text  0 Spara "ColdRetain"-värden genom att trycka på "Spara"-knappen.
+     space
+     label 0 Status:
+     listbox visiblerows=6 minwidth=40 3
+   end body
+   commands
+     button default 1 Spara
+     button cancel  2 Stäng
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.STARTVALERR1
+ Fel vid analys av startvärden.
+!----------------------------------------------------------------------
+.STARTVALERR2
+ Fel vid sättning av startvärden.
+!--------------------------------
+! Strings used in DISTRIBUTION
+!--------------------------------
+.LOCSTATSTR
+ Lokal station
+!
+!--------------------------------
+.DISTRDOWNSTR
+ Nerladdning
+!
+!--------------------------------
+! Remark strings start
+!--------------------------------
+!
+.PRGCAPPLSTR
+ Applikationen är ändrad och ändringarna kommer att tillämpas.
+!
+!--------------------------------
+.PRGCNAPPLSTR
+ Applikationen är ändrad men ändringarna kommer INTE att tillämpas.
+!
+!--------------------------------
+.PRGNCHANGSTR
+ Applikationen är inte ändrad
+!
+!--------------------------------
+.PRGWIINITSTR
+ Applikationen kommer att kallstartas
+!
+!--------------------------------
+.STATWICONSTR
+ Denna station kommer att ansluta till gemensam applikationsversion.
+!
+!--------------------------------
+.STATWINOCSTR
+ Denna station kommer inte att ansluta till gemensam applikationsversion.
+!
+!--------------------------------
+.STATWICRESTR
+ Denna station kommer att skapa ny gemensam applikationsversion.
+!
+!--------------------------------
+.NOCONNSTR
+ Ingen förbindelse
+!
+!--------------------------------
+.DOWNNOPOSSTR
+ Nerladdning ej möjlig
+!
+!--------------------------------
+.KEPFILMISSTR
+ Applikationen måste vara vald eftersom nödvändiga filer (.rrs och/eller .cdo) för analys saknas eller har fel version/SIL-nivå
+!
+!--------------------------------
+.INTERUPTEDWN
+ Senaste nedladdningen blev avbruten
+!--------------------------------
+.WRITEKEEPERR
+ Fel vid skrivning av "ColdRetain"- och/eller "retain"-filer. Fortsätt?
+!
+!--------------------------------
+! Remark strings end
+!--------------------------------
+.SIMANALYSSTR
+ Testmodanalys
+!
+!--------------------------------
+.ONLINEANASTR
+ Online-analys - Online med nerladdning
+!
+!--------------------------------
+.ONLINENODOWN
+ Online-analys - Online utan nerladdning
+!
+!--------------------------------
+.YES
+ Ja
+!
+!--------------------------------
+.NO
+ Nej
+!
+!--------------------------------
+.INIT
+ Init
+!
+!--------------------------------
+.COLD
+ Kall
+!
+!--------------------------------
+.WARM
+ Varm
+!
+!--------------------------------
+.EVAL
+ Evaluering
+!
+!--------------------------------
+.UPGRADE
+ Uppgradera
+!
+!--------------------------------
+.NAMEHDR
+ Namn
+!
+!--------------------------------
+.SILHDR
+ SIL
+!
+!--------------------------------
+.CHANGEDHDR
+ Ändrad
+!
+!--------------------------------
+.APPLYHDR
+ Verkställ
+!
+!--------------------------------
+.SYSIDHDR
+ SysID
+!
+!--------------------------------
+.APPLICATION
+ Applikation
+!
+!--------------------------------
+.PROJECT
+ Projekt
+!
+!--------------------------------
+.DELTEXT     
+ Projektet som ska laddas ner skiljer sig från projektet i styrsystemet.\nStyrsystemet måste startas om innan nedladdningen av ett annat project kan göras.\n\nGör reset på listade styrsystem genom trycka på resetknappen i mer är 3 sekunder.\n\nObservera: Om en Soft Controller används så måste den startas om manuellt.
+!
+!--------------------------------
+.DWLDFRFRSTTM
+ Nerladdad för första gången
+!
+!--------------------------------
+.NONE
+ Inga
+!
+.CHANGED
+ Ändrad
+!
+.NOTCHANGED
+ Oförändrat
+!
+.EMPTYCNTRLLR
+ Styrsystemet är tomt.
+!
+.NAMEOFPRJECT
+ Namn på projekt i styrsystem:
+!
+!--------------------------------
+.ONLINENOTPOS
+ Det är inte möjligt att gå till onlinemod.\n
+!
+.ACCESSVAR
+ Åtkomstvariabler
+!
+.IOCONN
+ I/O-knytningar
+!
+.MISSHWDEF
+ \nAlla för projektet nödvändiga hårdvarudefinitionsfiler \när inte tillgängliga. Saknade hårdvarudefinitionsfiler \nmåste infogas i projektet. Alternativt kan de berörda \nstyrsystemen återställas ("reset").
+!
+.DLNASIM
+ Simuleringsmarkeringen skiljer sig på ny jämfört med nerladdad konfiguration.
+!
+!--------------------------------
+!
+! Remarks for DistrWarningDlg
+!
+.NOCONNECTION
+ Ingen förbindelse
+!
+.DIFFVER
+ Online är bara möjligt mot samma versioner \nav styrsystemskonfigurationer.
+!
+.SELREVERTED
+ Valet kommer att återställas.
+!
+.SELNOTALLOW 
+ Applikationen kan inte väljas för Onlinemod eftersom en annan \nversion av applikationen finns i styrsystemet.
+!
+.VMTCTASETT
+ Det är inte tillåtet att ändra inställningarna för CTA/VMT-applikationen.
+!
+.WRONGSYSID
+ Det finns styrsystem med fel systemidentitet i projektet
+!
+!--------------------------------
+.WILLEXCAVSTR
+ Den gemensamma applikationsversionen kommer att exekvera i följande styrsystem:
+!
+!--------------------------------
+.DISTNOTOKSTR
+ Den gemensamma applikationsversionen kommer INTE att exekvera i följande styrsystem:
+!
+!--------------------------------
+.NOCONNECT1
+ Ingen kontakt med:
+!--------------------------------
+.NOCONNECT2
+ Ingen kontakt, försöker med: 
+!--------------------------------
+.NOCONNECT3
+ Ingen kontakt, försöker fortfarande med:
+!--------------------------------
+.CONTACT1
+ Kontaktar: 
+!--------------------------------
+.CONTACT2
+ Kontaktar, försöker med: 
+!--------------------------------
+.CONTACT3
+ Kontaktar, försöker fortfarande med: 
+!--------------------------------
+.ERROR1
+ Okänt fel!: 
+! Simple message boxes
+!--------------------------------
+.OKDIALOGHEADER
+ Meddelande om online/testmod
+.ANOTHSYSMSG
+ Ett annat system försöker samtidigt att ladda till styrsystemet eller så är systemet stoppat. Var god försök igen lite senare.
+.REACHMSG
+ Kan inte få kontakt med styrsystemet (%1). Var god kontrollera förbindelsen med styrsystemet.
+.INCOMPATMSG
+ Styrsystemet (%1) har en icke-kompatibel mjukvara. Var god uppdatera styrsystemet med ny mjukvara.
+.CONTACTBROKEN
+ Kontakten med styrsystemet (%1) bröts. Var god kontrollera förbindelsen med styrsystemet.
+.MEMUNAVAILABAL
+ Projektet kunde inte laddas till styrsystemet (%1) pga. att ledigt minne saknas i styrsystemet.
+.SIMPLESTLIMITS 
+ Detta projekt är för komplicerat för denna produkt.
+.SIMPLESTLIMIT2 
+ Detta projekt är för komplicerat för denna produkt. Exakt en applikation krävs.
+.SIMPLESTLIMIT3 
+ Detta projekt är för komplicerat för denna produkt. För många bibliotek.
+.SIMPLESTLIMIT4 
+ Detta projekt är för komplicerat för denna produkt. Exakt ett styrsystem krävs.
+.SIMPLESTLIMIT5 
+ Detta projekt är för komplicerat för denna produkt. Endast en station tillåten.
+.SIMPLESTLIMIT6 
+ Detta projekt är för komplicerat för denna produkt. Ett distributionsobjekt krävs. 
+.STARTLIMIT1
+ Detta projekt är för komplicerat för denna produkt.\nDet finns för många styrsystem.
+.STARTLIMIT2
+ Detta projekt är för komplicerat för denna produkt.\nDet finns för många applikationer.
+.STARTLIMIT3
+ Detta projekt är för komplicerat för denna produkt.\nDet finns för många tasks i ett styrsystem.
+.STARTLIMIT4
+ Detta projekt är för komplicerat för denna produkt.\nDet finns för många program i en applikation.
+.STARTLIMIT5
+ Detta projekt är för komplicerat för denna produkt.\nDet finns för många diagram i en applikation.
+.STARTLIMIT6
+ Detta projekt är för komplicerat för denna produkt.\nFör många applikationer är knutna till ett styrsystem.
+.STARTLIMIT7
+ Detta projekt är för komplicerat för denna produkt.\nControl-moduler är inte tillåtna.
+.STARTLIMIT9
+ Maximalt antal SIL3 applikationer i ett styrsystem har uppnåtts!\nInga fler SIL3 applikationer kan läggas till det styrsystemet. 
+.ONLINENOTPOSS
+ Kan inte gå online eftersom denna versionen av projektet inte kör i styrsystemet.
+.CTRLISOPCORCB
+ Det finns minst en styrsystemskonfiguration i projektet vars IP-adress tillhör en Control Builder eller en OPC-server.
+!
+!--------------------------------
+! STRINGS END
+!--------------------------------
+!--------------------------------
+! Old time dialogs used in DISTRIBUTION
+!--------------------------------
+.RESERVERRBOX
+ dialogbox Varning! Reservation av styrsystem misslyckades
+   body
+     text 10 Applikationen/styrsystemskonfigurationen (%1) kan inte laddas ner.
+     frame horizontal maxheight=13 verticalscroll columns=2
+         11 Nerladdning inte möjlig eftersom följande styrsystem är stoppade eller upptagna.
+       label 0 System:
+       label 12 Upptagen av:
+     end frame
+   end body
+   commands
+     button cancel  2 Avbryt övergång till online
+   end commands
+ end dialogbox
+
+!--------------------------------
+! From MachineAdm
+!--------------------------------
+.MACHINEERROR
+! Error texts to operator
+! System Error string
+ Systemfel.
+! Object exists string
+ Nerladdning från annat system till systemet pågår.
+! Incompatible string
+ Inkompatibel version i system.
+! DownloadReject error string
+ MMS-tjänster saknas: Nerladdning ej möjligt till system.
+! ServiceReject error string
+ Internt fel: Avvisa
+! Object not exists string
+ Applikationen finns inte i styrsystemet.
+! Remote memory unavailable string
+ Nedladdning avbruten. Se controllerloggen för mer information.
+! PH missing string
+ Kommunikationsprotokollet för en nedladdad hårdvarumodul saknas i styrsystemets\nfirmware.
+! Internal error string
+ Internt kommunikationsfel
+! Link error string
+ Kommunikationsfel med system
+! Connection error string
+ Refererar till samma fysiska styrsystem.
+!NonUniqueControllerWarningStr
+ Ej möjligt att upprätta förbindelse med system
+! Code error string
+ Maskinkod har ej genererats för följande målsystem:
+! synchronized error string
+ "ScanGroupExtension" ej synkroniserad med "ScanGroupControl" control-modul.
+! Download warning string
+ OBS! Applikationen kommer att laddas ner till system.
+! Local memory unavailable string
+ Otillräckligt med lokalt minne.
+! State error string
+ Fel uppstod under föregående nerladdning av applikation i system
+! Scheduler error string
+ Internt fel: "Scheduler".
+! Network interface warning string
+ Nätverksfel: Lokala porten felaktigt inställd.
+! InvalidSourceAddress error string
+ Ingen port tillgänglig för fjärrsystem.
+! Restart warning string
+ OBS! Applikation kommer att återstartas i system.
+! Startvaluestring: Keep
+               Variabelvärden bibehålls.
+! Startvaluestring: Secure
+               "Secure"-värden kommer att användas.
+! Startvaluestring: SecureAndOpSave
+               "Secure"- och "ColdRetain"-värden kommer att användas.
+! Startvaluestring: OpSave
+               "ColdRetain"-värden kommer att användas.
+! Startvaluestring: Init
+               Initialvärden kommer att användas.
+! Continue string
+ Fortsätt?
+! Download string
+ Nerladdning?
+! Cold start string
+ Kallstart?
+! Safety rejected string
+ Tjänsten nekad av safety-skäl. Läs systemloggarna!
+! Access denied string
+ Åtkomst ej tillåten till system
+!
+ Fel som ej hanteras har uppstått under distribution!
+! BUMDistributionFailed
+ Ett fel under distribution till backup media har uppstått!
+ 
+!--------------------------------
+! STATE STRINGS
+!--------------------------------
+.NOTINUSESTR
+ Används ej
+!--------------------------------
+.UNRUNSTR
+ Ej körbart
+!--------------------------------
+.NONEXISTSTR
+ Saknas
+!--------------------------------
+.IDLESTR
+ Vilande
+!--------------------------------
+.RUNNINGSTR
+ Exekverar
+!--------------------------------
+.STOPPEDSTR
+ Stoppad
+!--------------------------------
+.STOPPINGSTR
+ Stoppar
+!--------------------------------
+.STARTINGSTR
+ Startar
+!--------------------------------
+.RESETTINGSTR
+ Återställes
+!--------------------------------
+.RESUMINGSTR
+ Återgår
+!-------------------------------- 
+.RUNNINGACTIVESTR
+ Exekverar aktiv
+!-------------------------------- 
+.RUNNINGPASSIVESTR
+ Exekverar passiv
+!-------------------------------- 
+!-------------------------------- 
+!-------------------------------- 
+.DOWNLOAD
+ Nerladdning
+.WARMRESTFAIL
+ Fel: Varmstart kommer att misslyckas.
+!
+!-------------------------------- 
+!-------------------------------- 
+.OTHERPROJECT
+ Ett okänt projekt har laddats ner till styrsystemet. Det nya projektet måste laddas ner innan du kan gå online.
+!
+! Distribution remarks for SattProg and SattLine
+!
+.DISTRREMARKS
+!NoConnectionDistrRemark
+ Ingen förbindelse
+!SomeSysNoConnectionDistrRemark,
+ Ingen förbindelse med vissa system
+!MMSServiceErrorDistrRemark
+ Fel i MMS-service
+!SomeSysMMSServErrorDistrRemark,
+ "MMS service"-fel med vissa system
+!IncompatibleSLDistrRemark
+ Inkompatibel Control Builder version
+!SomeSysIncompSLDistrRemark,
+ Inkompatibel styrsystems version i vissa system
+!ContInBootStateDistrRemark
+ System i bootläge
+!SomeContInBootStateDistrRemark,
+ Vissa system i bootläge
+!CouldNotResolveAlias 
+ Kan inte översätta alias namnet
+!
+! OtherCompileStation
+ Objekt i styrsystemet är nerladdat från en annan arbetsstation.
+!ForceDownloadDistrRemark
+ Nerladdning forcerad
+!OldProjectRemark
+ Annat projekt körs i styrsystemet
+!FirstDwnldCtrlDistrRemark
+ Nerladdad för första gången
+! NoAppAfterDwldDistrRemark 
+ Applikationen kommer inte att köras i något styrsystem efter nedladdning.
+! NoAppBeforeDwldDistrRemark
+ Applikationen nerladdas för första gången
+!ExecutesCommonVersionDistrRemark
+ Exekverar gemensam applikationsversion
+!WrongVersionWillExecDistrRemark
+ Fel applikationsversion kommer att exekvera
+!SomeSysWrongVersExecDistrRemark,
+ Fel applikationsversion kommer att exekvera i vissa system
+!SysNotExecProgramDistrRemark
+ Applikationen kommer inte att exekvera
+!SomeSysNotExecProgramDistrRemark,
+ Applikationen kommer inte att exekvera i vissa system
+!NoTaskDistrRemark
+ Ingen task i systemet
+!SomeSysNoTaskDistrRemark,
+ Vissa system saknar task
+!NotDistrVersionLocalDistrRemark
+ Den lokala stationen kommer inte att exekvera gemensam applikationsversion.
+!
+!DownloadDisableDistrRemark
+ Nerladdning avstängd  
+!ForceNoDownloadDistrRemark
+ Ingen nerladdning forcerad
+!DownloadNotPossibleDistrRemark
+ Nerladdning ej möjlig
+!SomeSysDownloadNotPDistrRemark,
+ Nerladdning till vissa system ej möjlig
+!RedMemDownloadDistrRemark
+ Reducerad minnesnerladdning
+!WrongProgramVersionDistrRemark
+ Fel applikationsversion exekverar
+!EditModeDistrRemark
+ Station i programmeringsläge
+!SimulateModeDistrRemark
+ Station i testmodsläge
+!AutostartDistrRemark
+ Systemet ej beaktat pga. Autostart
+!IllegalDownloadDistrRemark
+ Nerladdning ej tillåten för denna produkt
+!OLUNotAllowedChangedContrConfigRemark
+ Online upgrade är inte tillåten beroende på otillåtna ändringar av styrsystemskonfigurationen.
+!OLUNotPermittedDeviceRemark
+ Online upgrade är inte möjlig beroende på otillåten enhetstyp i styrsystemskonfigurationen.
+!IllegalDownloadSimulationRemark
+ Simuleringsmarkeringen skiljer sig på ny jämfört med nerladdad konfiguration.
+!DownloadSimulationFlagSetRemark
+ Nerladdad till ett simulerat styrsystem
+!SomeSysWrongVersForDeselectDistrRemark
+ Alla styrsystem kör inte den gemensamma versionen. \nFör att kunna gå online måste \nstyrsystemskonfigurationerna och applikationerna \nladdas ner till alla styrsystem, så att alla \styrsystem kör samma version.
+!
+!RetainFailDistrRemark
+ Retain kommer att misslyckas
+!ColdRetainFailDistrRemark
+ "ColdRetain" kommer att misslyckas
+!RetainColdReteinFailDistrRemark
+ Retain och "ColdRetain" kommer att misslyckas
+!RetainWrongVersionDistrRemark
+ Fel applikationsversion
+!RetainNoVersionDistrRemark
+ Applikationen finns inte
+!RetainWrongStateDistrRemark
+ Applikationen stoppad och ofullständig
+!RetainFileMissingDistrRemark
+ Retain-fil finns inte
+!ColdRetainFileMissingDistrRemark
+ "ColdRetain"-fil finns inte
+!RetainColdRetainFileMissingDistrRemark
+ "Retain"- och "ColdRetain"-fil finns inte
+!RetainDisabledDistrRemark
+ Retain avstängt
+!ColdRetainDisabledDistrRemark
+ "ColdRetain" avstängt
+!RetainColdRetainDisabledDistrRemark
+ Retain och "ColdRetain" avstängt
+!
+!PartlyInvalidLocalDistrRemark
+ Delvis inaktuell online-visning erhålles i denna kompileringsstation
+!BlindLocalDistrRemark
+ Inaktuell online-visning erhålles i denna kompileringsstation
+!HWConfStopTimeAffectedDistrRemark 
+ VARNING! Applikationer kommer att stoppas tillfälligt under nerladdning på grund av ändringar som gjorts i hårdvarukonfigurationen.
+!HWConfMajorChangeDistrRemark 
+ VARNING! Kommunikationen med viss hårdvara kommer att stoppas tillfälligt på grund av ändringar som gjorts i hårdvarukonfigurationen.
+!HWConfMinorChangeDistrRemark
+ OBS! Applikationsexekvering kan komma att påverkas på grund av ändringar som gjorts i hårdvarukonfigurationen.
+!NoDistrInfoDistrRemark
+ Applikationen finns inte i något system
+!HWDefFileMissingDistrRemark
+ Hårdvarudefinitionsfil saknas
+!UserAccessDeniedRemark
+ Ingen rättighet att ladda ner
+!SILLevelChangedAppRemark
+ VARNING! SIL nivå ändrad, applikationen kommer att kallstartas
+!MaxNbrOfForcesHasDecreasedRemark
+ Varning! Max antal forceringar har minskats. Styrsystemet stängs ner om fler forceringar finns!
+!FilesMissingForDeselectDistrRemark
+ Applikationen måste vara vald eftersom nödvändiga filer (.rrs och/eller .cdo) för analys saknas eller har fel version/SIL-nivå
+!LEGFailDistrAppDistrRemark
+ Det är inte tillåtet att evaluera en applikation som \när distribuerad till flera styrsystem.
+!LEGNotPossibleForAppInCSDistrRemark
+ Applikationen kan inte evalueras p.g.a. ändringar \ngjorda i styrsystemskonfigurationen. \nEndast ändringar av I/O-knytningar och åtkomstvariabler \nför applikationen som ska evalueras är tillåtna.
+!LEGFailOtherDwnlDistrRemark
+ När "Evaluering" är valt för en applikation så får \ninga andra applikationer laddas ner i samma session \ndvs ändrade applikationer måste avmarkeras eller \nstartmetod ändras.
+!LEGSessionInControllerRemark
+ Evaluering pågår för en applikation i styrsystemet.
+!LEGSessionWarningRemark
+ Evaluering pågår.
+!LEGNoAppWithLEGWarning
+ I Evaluate Environment kan applikationer endast \nladdas ner med Evalueringsstart. \nNedladdningen avbryts.
+!LEGRetainFailDistrRemark
+ Startvärdes-analys för Evaluate misslyckades.
+!LEGSIL3AppRemark
+ Alternativet Evaluering är ej tillgängligt för SIL3 applikationer.
+!LEGInProgressRemark
+ Pågående evaluering
+!LEGNoChangedApplication
+ Ingen applikation är ändrad
+!LEGNotAllowedRemark
+ Evaluate är inte tillåtet i styrsystemet
+!OLURetainFailDistrRemark
+ Startvärdes-analys för uppgradering av firmware misslyckades.
+!OLUNotEqualSetOfApplicationsRemark
+ Applikationerna i projektet och i styrsystemet är ej samma.
+!OLUEmptyControllerRemark
+ Styrsystemet innehåller inga applikationer.
+!CTDFileMissingDistrRemark 
+ Fatalt fel! Styrsystemet måste återställas ("reset"): Filer från senaste nedladdningen saknas 
+!InterruptedDownloadDistrRemark 
+ Senaste nedladdningen blev avbruten
+!DiskIsFullDistrRemark
+ Lokal disk är full.
+!VMTColdStartRemark
+ Kall/Init start av VMT i styrsystem som inte är tomt är ej tillåtet
+!AccessDisabledRemark
+ SM AccessEnable inaktiverad.
+!AccessDisabledAppChangedRemark
+ SM AccessEnable inaktiverad. Applikation ändrad.
+!SILApplicationFirstDownloadDeselectRemark
+ SIL applikationen måste vara vald eftersom den inte redan är nerladdad.
+!
+! Distribution Avtivity Reporting
+!
+.DISTRACTREP
+! InitDistributionMsg
+ Initialiserar distributionsföljd
+! ConnectDistributionMsg
+ Uppkoppling till fjärrsystem
+! IdentityRemoteMsg
+ Hämtar information från fjärrsystem
+! CheckRemoteSystemMsg
+ Kontrollerar information från fjärrsystem
+! FetchRmtPrNamesMsg
+ Hämtar applikationsnamn
+! FetchRmtPrStateMsg
+ Hämtar applikationsinformation
+! DistributionAnalysisMsg
+ Analys av applikationsdistribution
+! DownloadAnalysisMsg
+ Analys av nerladdning
+! SetTimeMsg
+ Ställer tiden i tomma styrsystem
+! StopRemotePrMsg
+ Stoppar applikationer i fjärrsystem
+! DeleteRemotePrMsg
+ Tar bort applikationer i fjärrsystem
+! FetchRmtDomainNamesMsg
+ Hämtar namn på fjärrdomäner
+! FetchRmtDomainStateMsg
+ Hämtar information om fjärrdomäner
+! DeleteRmtDomainMsg
+ Tar bort oanvända fjärrdomäner
+! DomainFormingMsg
+ Formar domäner och skapar fjärrprogram
+! DomainSendingMsg
+ Initialiserar nerladdningsföljden
+! WaitRemoteParseMsg
+ Sänder domäner
+! CreateRemoteProgramMsg
+ Skapar applikationer i fjärrsystem
+! ReconfigureRmtPrMsg
+ Konfigurerar om fjärrsystem
+! StartRemoteProgramMsg
+ Startar applikationer i fjärrsystem
+! DisconnectProgramMsg
+ Avslutar distributionskoppling
+! ConcludeMsg
+ Applikationen distribuerad
+! FetchRemoteSystemDataMsg
+ Kommunicerar med andra system
+! IncrDefAnalysis
+ Inkrementell definitionsanalys
+! BuildingDefDomainsMsg
+ Bygger definitionsdomäner
+! SendingDefDomainsMsg
+ Sänder definitionsdomäner
+! DistributionDoneMsg
+ Distribution till styrsystem(en) klar
+!
+!------------------------------------------------------------
+! ProjectView.config
+!------------------------------------------------------------
+.PAGESTRING
+ Sida 
+!
+.SYSTEMSTR
+ System
+!
+.CONTSYSTEMS
+ Styrsystem
+!
+.CONTSYSTEM
+ Styrsystem
+!
+.PROGRAMTYPES
+ Programtyper
+!
+.HARDWARESTR
+ Hårdvara 
+!
+.TASKSSTRING
+ Tasks
+!
+.VARACCESSSTR
+ Åtkomstvariabler
+!
+.PROJECTEXPLO
+ Projektutforskaren
+!
+.OFFLINESTATU
+ Offline
+!
+.TESTMODESTAT
+ Testmod 
+!
+.ONLINESTATUS
+ Online
+!-------------------------------------------------------------
+!---------------------------------------------------------------
+.SYSLOGFNAME
+ systemlog
+!---------------------------------------------------------------
+.SYSLOGSEVHDR
+ S
+!---------------------------------------------------------------
+.SYSLOGDATHDR
+ Datum
+!---------------------------------------------------------------
+.SYSLOGTIMHDR
+ Tid
+!---------------------------------------------------------------
+.SYSLOGCATHDR
+ Kategori
+!---------------------------------------------------------------
+.SYSLOGUSRHDR
+ Användare
+!---------------------------------------------------------------
+.SYSLOGDESHDR
+ Händelsebeskrivning
+!---------------------------------------------------------------
+.SYSLOGPRVCAT
+ PRIVILEGE
+!---------------------------------------------------------------
+.SYSLOGLOGCAT
+ LOGON
+!---------------------------------------------------------------
+.SYSLOGVARCAT
+ SYSTEMVAR
+!---------------------------------------------------------------
+.SYSLOGOPCAT
+ SYSTEMOP
+!---------------------------------------------------------------
+.SYSLOGCREENT
+ Systemloggen skapad vid station %1
+!---------------------------------------------------------------
+.SYSLOGSTAENT
+ Applikationen startar
+!---------------------------------------------------------------
+.SYSLOGSTOENT
+ Applikationen avslutas
+!---------------------------------------------------------------
+.SYSLOGSV1ENT
+ Värdet på systemvariabel %1 ändrat till %2
+!---------------------------------------------------------------
+.SYSLOGSV2ENT
+ Värdet på systemvariabel %1 manuellt ändrat till %2
+!---------------------------------------------------------------
+
+.APPLYCHSTR
+ Tillämpa ändring?
+.ILLVALUESTR
+ Ogiltigt värde.
+.VALUECHSTR
+ Värde ändrat
+.NOTFORCEABLESTR
+ Variabeln kan ej tvångsstyras.
+.FORCENOTALLSTR
+ Privilegium saknas för tvångsstyrning av I/O.
+.UNFORCENOTALLSTR
+ Privilegium saknas för borttagning av tvångsstyrning av I/O.
+.FORCEVALNOTALLSTR
+ Privilegium saknas för att förändra den tvångsstyrda variabelns värde.
+.SETVALNOTALL
+ Privilegium saknas för att förändra variablers värden.
+
+!----------------------------------------------------------------------
+.POUINFOBOX
+ dialogbox POU information
+    body horizontal columns=2
+       label 11 Namn:
+       text  12
+       label 13 Sökväg:
+       text  14
+       label 15 POU typ:
+       text  16
+       label 17 Exekverande system:
+       text  18
+       label 19 Task-namn:
+       text  20
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUVINFODBOX
+ dialogbox Information om variabel
+    body vertical
+       frame horizontal columns=2 0 Variabel
+          label 10 Namn:
+          text  11
+          label 12 Datatyp:
+          text  13
+          label 14 Beskrivning:
+          text  15
+          label 16 i POU:
+          text  17
+          label 18 POU typ:
+          text  19
+          label 30 Applikation:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attribut
+          label 42 Ägarsystem:
+          text  43
+          label 44 Exporterad till:
+          text  45
+          label 46 Övriga attribut:
+          text  47
+          label 32 Signal:
+          text  33
+          label 48 I/O-beskrivning:
+          text  49
+          label 50 I/O-adress:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCOMMVARINFODBOX
+ dialogbox Information om kommunikationsvariabel
+    body vertical
+       frame horizontal columns=2 0 Kommunikationsvariabel
+          label 10 Namn:
+          text  11
+          label 12 Datatyp:
+          text  13
+          label 46 Övriga attribut:
+          text  47
+          label 52 Riktning:
+          text  53
+          label 54 Intervalltid:
+          text  55
+          label 56 IP-adress:
+          text  57
+          label 58 Förväntad SIL:
+          text  59 
+          label 60 Unikt id:
+          text  61
+          label 14 Beskrivning:
+          text  15
+       end frame
+
+       frame horizontal columns=2 0 Aktuell plats
+          label 16 i POU:
+          text  17
+          label 30 Applikation:
+          text  31
+          label 62 Finns i system:
+          text  63
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUPINFODBOX
+ dialogbox Information om parameter
+    body vertical
+       frame horizontal columns=2 0 Parameter
+          label 10 Namn:
+          text  11
+          label 12 Datatyp:
+          text  13
+          label 14 Beskrivning:
+          text  15
+          label 16 i POU:
+          text  17
+          label 18 POU typ:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 Variabel
+          label 20 Namn:
+          text  21
+          label 22 Datatyp:
+          text  23
+          label 24 Beskrivning:
+          text  25
+          label 26 i POU:
+          text  27
+          label 28 POU typ:
+          text  29
+          label 30 Applikation:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attribut
+          label 42 Ägarsystem:
+          text  43
+          label 44 Exporterad till:
+          text  45
+          label 46 Övriga attribut:
+          text  47
+          label 48 I/O-beskrivning:
+          text  49
+          label 50 I/O-adress:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUIOPINDBOX
+ dialogbox Information om parameter
+    body vertical
+       frame horizontal columns=2 0 Parameter
+          label 10 Namn:
+          text  11
+          label 12 Datatyp:
+          text  13
+          label 14 Beskrivning:
+          text  15
+          label 16 i POU:
+          text  17
+          label 18 POU typ:
+          text  19
+          label 30 Applikation:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attribut
+          label 42 Ägarsystem:
+          text  43
+          label 44 Exporterad till:
+          text  45
+          label 46 Övriga attribut:
+          text  47
+          label 48 I/O-beskrivning:
+          text  49
+          label 50 I/O-adress:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUEINFODBOX
+ dialogbox Information om variabel
+    body vertical
+       frame horizontal columns=2 0 Variabel
+          label 10 Namn:
+          text  11
+          label 12 Datatyp:
+          text  13
+          label 14 Beskrivning:
+          text  15
+          label 16 i POU:
+          text  17
+          label 18 POU typ:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 Variabel
+          label 20 Namn:
+          text  21
+          label 22 Datatyp:
+          text  23
+          label 24 Beskrivning:
+          text  25
+          label 26 i POU:
+          text  27
+          label 28 POU typ:
+          text  29
+          label 30 Applikation:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attribut
+          label 42 Ägarsystem:
+          text  43
+          label 44 Exporterad till:
+          text  45
+          label 46 Övriga attribut:
+          text  47
+          label 32 Signal:
+          text  33
+          label 48 I/O-beskrivning:
+          text  49
+          label 50 I/O-adress:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCVINFDBOX
+ dialogbox Information om komponent
+    body vertical
+       frame horizontal columns=2 0 Komponent
+          label 10 Namn:
+          text  11
+          label 12 Datatyp:
+          text  13
+          label 14 Beskrivning:
+          text  15
+          label 16 i POU:
+          text  17
+          label 18 POU typ:
+          text  19
+          label 30 Applikation:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attribut
+          label 42 Ägarsystem:
+          text  43
+          label 44 Exporterad till:
+          text  45
+          label 46 Övriga attribut:
+          text  47
+          label 32 Signal:
+          text  33
+          label 48 I/O-beskrivning:
+          text  49
+          label 50 I/O-adress:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCPINFDBOX
+ dialogbox Information om komponent
+    body vertical
+       frame horizontal columns=2 0 Komponent
+          label 10 Namn:
+          text  11
+          label 12 Datatyp:
+          text  13
+          label 14 Beskrivning:
+          text  15
+          label 16 i POU:
+          text  17
+          label 18 POU typ:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 Variabel
+          label 20 Namn:
+          text  21
+          label 22 Datatyp:
+          text  23
+          label 24 Beskrivning:
+          text  25
+          label 26 i POU:
+          text  27
+          label 28 POU typ:
+          text  29
+          label 30 Applikation:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 Attribut
+          label 42 Ägarsystem:
+          text  43
+          label 44 Exporterad till:
+          text  45
+          label 46 Övriga attribut:
+          text  47
+          label 32 Signal:
+          text  33
+          label 48 I/O-beskrivning:
+          text  49
+          label 50 I/O-adress:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUFBINFDBOX
+ dialogbox Funktionsblocksinformation
+    body horizontal columns=2
+       label 10 Namn:
+       text  11
+       label 12 Funktionsblockstyp:
+       text  13
+       label 14 Beskrivning:
+       text  15
+       label 16 i POU:
+       text  17
+       label 18 POU typ:
+       text  19
+       label 20 Applikation:
+       text  21
+    end body
+
+    commands
+       button default cancel 1 OK
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+!----------------------------------------------------------
+!----------- Taskuserinterface.config ---------------------
+!----------------------------------------------------------
+.SIMPLETEXTEDITDIALOG
+ dialogbox Task-namn
+    body horizontal columns=2
+       label 0 Namn:
+       edit minwidth=30 maxchars=25 3
+    end body
+
+    commands
+       button default 1 OK
+       button cancel  2 Avbryt
+    end commands
+ end dialogbox
+!--------------------------------
+.NAME
+ Namn:
+!--------------------------------
+.INTERVALTIME
+ Intervalltid
+!--------------------------------
+.LATENCYPERCENTAGE
+ Tillåten "Latency"
+!--------------------------------
+.OFFSET
+ Offset
+!--------------------------------
+.TASKNAME
+ Task-namn
+!--------------------------------
+.PRIORITY
+ Prioritet
+!--------------------------------
+.TASKOVERVIEW
+ Task-översikt
+!--------------------------------
+.NEWTASK
+ Ny task
+!--------------------------------
+.NOTINUSE
+ Används ej
+!--------------------------------
+.RUNNING 
+ Uppdaterande 
+!--------------------------------
+.TASKNOTFOUND
+ Ej funnen i systemet
+!--------------------------------
+.TASKISNONCYCLIC
+ Icke-cyklisk exekvering
+!--------------------------------
+.TASKISABORTED
+ Avbruten
+!--------------------------------
+.LATENCYEXCEEDED
+ Latency larmgräns överskriden
+!--------------------------------
+.TASKCOPYFIRST
+ I/O kopieras ut först i varje scan
+!--------------------------------
+.TASKCORRECTED
+ Intervalltiden ändrad/rättad
+!--------------------------------
+.WARNING
+ Varning 
+!--------------------------------
+.TASKCREATEWARNING
+ Man kan inte skapa en ny task då task-trädet visas i en editor.
+!--------------------------------
+.NOTRUNPRECTASK
+ Kan inte köra som time-critical task.
+!--------------------------------
+.MANYPRECTASK
+ Mer än en time-critical task i detta system.
+!--------------------------------
+.ERROR
+ Fel
+!--------------------------------
+.PRIORITYCHANGE
+ Den begärda prioriteten skiljer sig från den som används i styrsystemet.
+!--------------------------------
+.INTERVALTIMECHANGE
+ Den begärda intervalltiden skiljer sig från den som används i styrsystemet.
+!--------------------------------
+.INVALIDOFFSET
+ Felaktig offset
+!--------------------------------
+.INVALIDLATENCY
+ Felaktig "Latency"
+!--------------------------------
+.LEGRUNNINGACTIVESTR
+ Utvärdering: Exekverar aktiv
+!-------------------------------- 
+.LEGRUNNINGPASSIVESTR
+ Utvärdering: Exekverar passiv
+!-------------------------------- 
+.RENAMETASKDIALOG
+  dialogbox Byt namn
+    body horizontal columns = 2
+      label 0 Gammalt namn:
+      text 3
+      label 0 Nytt namn:
+      edit maxchars=25 4
+    end body
+    commands horizontal
+      button default  1 OK
+      button cancel   2 Avbryt
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+!------------------------------------------------------------
+!--- Strings used by MessageConclusion ---
+.CONC_OK
+ -- Inga fel eller varningar
+.CONC_ERR
+ -- %1 varning<ar>
+.CONC_WAR
+ -- %1 fel.
+.CONC_ERRWAR
+ -- %1 fel och %2 varning(ar)
+!------------------------------------------------------------
+!----------------------------------------------------------
+!----------- OnlineSystem.config ---------------------
+!----------------------------------------------------------
+
+.CLIENTERROR
+ Klientfel i online-systemet
+
+.SERVERERROR
+ Serverfel i online-systemet
+
+.MMSERROR
+ MMS-kommunikationsfel i online-systemet
+
+.TIMESTAMPERROR
+ Fel applikationsversion i styrsystemet
+
+.UNKNOWNERROR
+ Okänt fel i online-systemet
+!------------------------------------------------------------
+! ProjectAccess.config
+!------------------------------------------------------------
+.DATATYPESSTR
+ Datatyper
+!
+.CONNECTEDLIBRARIESSTR
+ Anslutna bibliotek
+!
+!-------------------------------------------------------------
+

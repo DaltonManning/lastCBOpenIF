@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="" TypeID="256901120" TypeDescription="AC 800M HI" Guid="C58D2D37-6388-497E-8AEB-E17C3E93DB76" TypeGuid="4CAF6D63-8863-4108-AC3C-243677484F33" TypeTimeStamp="2017-07-04-05:33:34.428" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:06.063" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2015-01-27-15:45:35.178" HWSettingsTS="2016-09-08-08:46:07.784" InstanceName="">
+  <ParameterSettings>
+    <ParameterSetting Name="BACKGROUNDCOPY" Value="None" Description="Copy unconnected channels"/>
+    <ParameterSetting Name="LATCHEDHWSTATE" Value="Disabled" Description="Latched hardware state"/>
+    <ParameterSetting Name="ENABLESYSTEMALARMS" Value="Enabled" Description="System alarms on hardware units"/>
+    <ParameterSetting Name="ENABLESIMPLEEVENTS" Value="Enabled" Description="Simple events on hardware units"/>
+    <ParameterSetting Name="ALARMFILTER" Value="Off" Description="Filter out system alarms from hardware units"/>
+    <ParameterSetting Name="HWBACKGROUNDCYCLETIME" Value="1000" Description="HwStatus update cycle time"/>
+    <ParameterSetting Name="CLAMPANALOGINVALUES" Value="1" Description="Clamp Analog in values"/>
+    <ParameterSetting Name="CLAMPANALOGOUTVALUES" Value="1" Description="Clamp Analog out values"/>
+  </ParameterSettings>
+  <HWChannels>
+    <HWChannel Address="IW0" Name="AllUnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits>
+    <HWUnitRef Position="0" Guid="F5AEFB6B-4F2B-4860-AFC5-B59E149922D7"/>
+    <HWUnitRef Position="1" Guid="78966C36-56D7-42A8-A6BC-528560477176"/>
+  </HardwareUnits>
+  <CheckSum Value="53811"/>
+</HWUnit>

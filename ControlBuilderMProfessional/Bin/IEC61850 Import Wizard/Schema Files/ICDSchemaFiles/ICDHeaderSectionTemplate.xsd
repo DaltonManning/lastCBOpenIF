@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SCL" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="SCL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Header">
+          <xs:complexType>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="toolID" type="xs:string" />
+            <xs:attribute name="nameStructure" type="xs:string" />
+            <xs:attribute name="version" type="xs:string" />
+            <xs:attribute name="revision" type="xs:string" />
+            <xs:attribute name="when" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

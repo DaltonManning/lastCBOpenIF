@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="0" TypeID="A66B660D-0CE6-4D70-A09F-E3AFA7EDE950" TypeDescription="CF Reader" Guid="050187B6-8BE0-42C0-BFBB-AC49B1643BB1" TypeGuid="A2A7CCA7-42EC-4394-82C9-3BEF7E2EC970" TypeTimeStamp="2016-02-09-02:23:40.306" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:10.433" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2018-08-23-06:34:22.294" HWSettingsTS="1979-12-31-00:00:00.000" InstanceName="">
+  <ParameterSettings/>
+  <HWChannels/>
+  <HardwareUnits/>
+  <CheckSum Value="57467"/>
+</HWUnit>

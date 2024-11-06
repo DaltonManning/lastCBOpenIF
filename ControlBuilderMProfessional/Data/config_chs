@@ -1,0 +1,5432 @@
+!------------------------------------------------------------
+.COLORS
+ 100
+ 0  0.0     0.0    0.0        
+ 1  0.0     0.20   0.0        
+ 2  0.0     0.37   0.0        
+ 3  0.0     0.52   0.0        
+ 4  0.0     0.65   0.0        
+ 5  0.0     0.76   0.0        
+ 6  0.0     0.85   0.0        
+ 7  0.0     0.92   0.0        
+ 8  0.0     0.97   0.0        
+ 9  0.0     1.0    0.0        
+ 10 0.0     0.3    1.0       
+ 11 0.0     0.4    1.0 
+ 12 0.0     0.5    1.0        
+ 13 0.0     0.7    1.0        
+ 14 0.0     0.8    1.0        
+ 15 0.0     0.42   0.18        
+ 16 0.0     0.54   0.16        
+ 17 0.0     0.67   0.23        
+ 18 0.0     0.80   0.37       
+ 19 0.0     0.90   0.75
+ 20 35.0    0.3    1.0        
+ 21 35.0    0.4    1.0        
+ 22 35.0    0.5    1.0        
+ 23 35.0    0.7    1.0       
+ 24 35.0    0.8    1.0       
+ 25 30.0    0.42   0.18        
+ 26 30.0    0.54   0.16        
+ 27 30.0    0.67   0.23        
+ 28 30.0    0.80   0.37       
+ 29 30.0    0.90   0.75       
+ 30 60.0    0.3    1.0        
+ 31 60.0    0.4    1.0        
+ 32 60.0    0.5    1.0        
+ 33 60.0    0.7    1.0       
+ 34 60.0    0.8    1.0       
+ 35 60.0    0.42   0.18        
+ 36 60.0    0.54   0.16        
+ 37 60.0    0.67   0.23        
+ 38 60.0    0.80   0.37       
+ 39 60.0    0.90   0.75       
+ 40 120.0   0.35   1.0        
+ 41 120.0   0.5    0.8        
+ 42 120.0   0.5    1.0        
+ 43 120.0   0.7    1.0       
+ 44 120.0   0.8    1.0       
+ 45 120.0   0.42   0.18        
+ 46 120.0   0.54   0.16        
+ 47 120.0   0.67   0.23        
+ 48 120.0   0.80   0.37       
+ 49 120.0   0.90   0.75       
+ 50 150.0   0.26   1.0        
+ 51 150.0   0.34   1.0        
+ 52 140.0   0.5    0.8        
+ 53 140.0   0.7    0.8       
+ 54 140.0   0.8    0.8       
+ 55 140.0   0.42   0.18        
+ 56 140.0   0.54   0.16        
+ 57 140.0   0.67   0.23        
+ 58 140.0   0.80   0.37       
+ 59 140.0   0.90   0.75       
+ 60 200.0   0.35   1.0        
+ 61 200.0   0.45   1.0        
+ 62 200.0   0.5    1.0        
+ 63 200.0   0.7    1.0       
+ 64 200.0   0.8    1.0       
+ 65 190.0   0.42   0.18        
+ 66 190.0   0.54   0.16        
+ 67 190.0   0.67   0.23        
+ 68 190.0   0.80   0.37       
+ 69 190.0   0.90   0.75       
+ 70 230.0   0.32   1.0        
+ 71 230.0   0.42   1.0        
+ 72 230.0   0.5    1.0        
+ 73 230.0   0.7    1.0       
+ 74 230.0   0.8    1.0       
+ 75 240.0   0.42   0.18        
+ 76 240.0   0.54   0.16        
+ 77 240.0   0.67   0.23        
+ 78 240.0   0.80   0.37       
+ 79 240.0   0.85   0.5
+ 80 300.0   0.3    1.0        
+ 81 300.0   0.4    1.0        
+ 82 300.0   0.5    0.8        
+ 83 300.0   0.7    1.0      
+ 84 300.0   0.8    1.0       
+ 85 300.0   0.42   0.18        
+ 86 300.0   0.54   0.16        
+ 87 300.0   0.67   0.23        
+ 88 300.0   0.80   0.37       
+ 89 300.0   0.90   0.75       
+ 90 60.0    0.96   0.65        
+ 91 30.0    0.95   0.80        
+ 92 60.0    0.95   0.80        
+ 93 120.0   0.95   0.80       
+ 94 200.0   0.95   0.80
+ 95 60.0    0.865  0.20        
+ 96 30.0    0.865  0.35        
+ 97 60.0    0.865  0.35        
+ 98 120.0   0.865  0.35       
+ 99 200.0   0.865  0.35
+!                
+!----------------------------------------------------------
+! Names of simple types, possibly followed by ';' and GUID
+.SIMPLENAMES
+ bool;          fcc571cc-3a50-4ec6-9241-0726a148299b
+ word;          8061d655-bc22-484e-ade6-85ed4be9c605
+ dword;         4211fe12-bfb8-4d1e-bb5a-c815e8f1b103
+ int;           9ada5277-002e-4cbc-8b34-c6fdda5091c3
+ dint;          d59be854-1395-4e4f-9cf6-6a4ba4ccdc98
+ uint;          c6ede554-4916-4c6c-a174-48b41cbf6d00
+ real;          d8f54d4b-661f-407a-ace8-721d1581061b
+ string;        49d3a1c9-a834-46c6-9f71-88a69e045a5d
+ task
+ tObject;       d07ca5b9-7c97-4b0c-abcf-699a0d8aa2d6
+ ArrayObject;   bf87963b-69f3-4130-b368-c5fefc5ea679
+ QueueObject;   ef2c6b06-ec0b-4eb5-9ea3-542ff993b68f
+ time;          20e24ed4-5954-4aa1-9a01-10874693f4a4
+ date_and_time; 2ea20529-63c4-4df0-a3ac-9eff5971977a
+ AnyType;       94d92390-9492-4e73-8023-b3040c7d6591
+ AnyBitType
+ AnyIntType
+ AnyRealType
+ AnyNumType
+!----------------------------------------------------------
+! Value out of range in Alert
+.VALOUTOFRANG
+ 值必须在%1和%2之间
+!------------------------------
+.LOOPMESSTR2
+ 不是所有的循环都存在
+.SORTLITERR
+ 通过子控制模块 %3 里的参数 %2在 POU %1中写入文字
+.SORTCONSTERR
+ 通过子控制模块%3里的参数%2在POU %1中写入常数或 IN 变量
+.LOCCONSTERR
+ 通过系统程序在POU %2中写入常数或 IN 变量%1
+!-------------------------------------------------------------------------
+.PROMPTSAVECHANGESBOX
+ dialogbox 保存编辑器修正
+   body
+      text  0 至少一个编辑器的内容被改变 您是否要保存编辑器的更改?
+      space
+      group horizontal columns=2
+         label  0 编辑器:
+         text   20
+      end group
+      space
+   end body
+
+   commands
+      button default 4 是
+      button         8 全部都是
+      button         5 否
+      button cancel  2 取消
+   end commands
+ end dialogbox
+!-------------------------------------------------------------------------
+!-------------------------------------------------------------------------
+.WINDOWATRBOX
+ dialogbox 窗口特性
+   body vertical
+     group horizontal
+       frame vertical 0 功能特性
+         checkbox 12 可缩放的
+         checkbox 21 移动的
+         checkbox 22 可调大小的
+         checkbox 23 维持属性比率
+         checkbox 16 永远在上面
+         checkbox 20 交互窗口持有者
+       end frame
+       frame vertical 0 窗口组件特性
+         checkbox 10 标题栏
+         checkbox 13 滚动条
+         checkbox 14 状态栏
+         checkbox 15 坐标
+       end frame
+       frame vertical 0 工具条
+         checkbox 25 编辑
+         checkbox 28 缩放
+         checkbox 29 图形
+       end frame
+     end group
+   end body
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+     button         3 应用
+     button         4 帮助(H)
+   end commands
+ end dialogbox
+!-------------------------------------------------------------------------
+.RESOLVEIDENT
+ 分解变量和控制模块标识符
+!--------------------------------------------------------------
+.CHGNAMECCWRN
+ 警告！应用程序结构亦存在于控制器组态单元中 继续将附加到此项应用程序。
+!--------------------------------------------------------------
+.READINGCONFM
+! Activity message
+ 正在读入项目 %1
+!--------------------------------------------------------------
+.READSCUMSG
+! Activity messages
+ 正在读入应用程序 %1
+ 正在读入库 %1
+ 正在读入控制器 %1
+!--------------------------------------------------------------
+.VERSIONDATE
+! Syntax version number and file date. (Not translated - used in s-file)
+ Syntax version %1, date: ####-##-##-##:##:##.### C
+!--------------------------------------------------------------
+.PASSWORDEDITBOX
+ dialogbox 设置密码
+   body vertical
+     label     0 密码必须至少8个字符长,应当包含以下类别中的至少三组：\n  -小写字符\n  -大写字符\n  -数字\n  -其他可打印字符:
+     label     0  
+     group horizontal columns = 2
+       label     0 输入旧密码:
+       edit      minwidth=25 maxchars=100 5
+       label     0 输入新密码:
+       edit      minwidth=25 maxchars=100 3
+       label     0 校验新密码:
+       edit      minwidth=25 maxchars=100 4
+     end group
+   end body
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROMPTFORPASSWORDBOX
+ dialogbox PROTECTED_1
+   body
+     text maxwidth=55 4
+     space
+     group horizontal columns=2
+       label     0 口令:
+       edit      minwidth=25 maxchars=100 5
+     end group
+   end body
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROTECTIONPROPERTIESBOX
+ dialogbox 保护特性
+   body
+     frame 0 保护 
+       group horizontal columns=2
+       button   20 设置密码
+       button   10 清除密码
+       end group
+       space
+       checkbox maxwidth=50 30 覆盖%1保护，就是不再保护受保护对象，显示原隐藏对象，并允许修改受密码保护的该单元。
+     end frame
+   end body
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PASWDERRSHORT
+ 密码太短，至少由%1个字符组成。
+.PASWDERRVERIFY
+ 校验失败。密码没有改变。
+.PASWDERRNOTCORRECT
+ 不正确密码
+.PASWDERRNOTCORRECTLOCKED
+ 不正确密码。 您用不正确密码尝试了太多次。 库/应用程序已锁定。
+.PASWDERRMUSTENTERPASSWORD
+ 你必须输入密码
+.INVALIDCHARACTERINSTRING
+ 字符串里有无效字符
+.PROTAPP
+ 被保护的应用程序
+.PROTLIB
+ 被保护的库
+.THEAPPISPROT
+ 应用程序%1有密码保护 你必须输入正确密码才能继续操作
+.THELIBISPROT
+ 库%1被密码保护 你必须输入正确密码才能继续操作
+!--------------------------------------------------------------
+.PROCONNAMSTR
+ 名称
+.PROCONVALSTR
+ 值
+.PROCONTYPSTR
+ 数据类型
+.PROCONDEFVALSTR
+ 默认值
+.PROCONTABNAM
+ 项目常数
+!--------------------------------------------------------------
+.SELPROGUNBOX
+ dialogbox
+    body horizontal
+       listbox visiblerows=12 3
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SELPRGHEADER
+ 选择一个程序单元
+ 选择一个应用程序
+ 重新编译应用程序
+!--------------------------------------------------------------
+.ILLPATH
+ 无效路径
+!--------------------------------------------------------------
+.FAILCRPRJPTH
+! Error message when new project couldn't be created on specified path.
+ 不能在指定位置创建项目。 驱动盘或路径无效，或者文件夹受密码保护。
+!--------------------------------------------------------------
+.NODISCSPACE
+ 没有足够的磁盘空间或者磁盘不可用
+!--------------------------------------------------------------
+.FILNOTFNDSTR
+! String for error message
+ 找不到文件
+!--------------------------------------------------------------
+.FILNOTFNDPAR
+! String for error message
+ 文件 %1 未找到
+!--------------------------------------------------------------
+.APLNOTFNDPAR
+! String for error message
+ 找不到应用程序 %1
+!--------------------------------------------------------------
+.LIBNOTFNDPAR
+! String for error message
+ 库 %1 未找到
+!--------------------------------------------------------------
+.SAVEFOUASBOX
+ dialogbox 保存%1为
+   body
+      group horizontal columns=3
+         label    0 名称:
+         edit minwidth=30 maxchars=20 10
+         space
+         label    0 位置:
+         edit minwidth=30 maxwidth=40 11
+         button   4 浏览...
+      end group
+   end body
+   commands
+      button default 1 确定
+      button cancel  2 取消      
+   end commands
+ end dialogbox
+!---------------------------------------------------------------
+.ADDAPPLICBOX
+ dialogbox 连接应用程序
+    body
+       listbox extendedselection 3
+    end body
+
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SETSYSIDDBOX
+ dialogbox 系统标识
+    body horizontal columns=2
+       label 0  系统标识:
+       edit minwidth=30 maxchars=35 3
+    end body
+
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PROBOXLTAPP
+ dialogbox 源代码特性
+    body 
+      frame vertical 0 打开文件:
+        group horizontal columns=2
+          label 0  名称:
+          text 4
+          label 0 类型:
+          text 5
+          label 0 位置:
+          text 6
+        end group
+        space
+        group horizontal columns=2
+          label 0 已创建:
+          text 9
+          label 0 已更改:
+          text 10
+        end group
+      end frame
+      space
+      frame vertical 0 已保存的文件:
+        group horizontal columns=2
+          label 0 日期:
+          text 11
+          label 0 大小:
+          text 12
+          text 13 
+        end group
+      end frame
+    end body
+    commands
+      button default cancel 1 关闭
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.READONLYSTR 
+ 只读文件。
+!--------------------------------------------------------------
+! Strings used in PROMPTSAVBOX:
+.SAVEAPPTEMPL
+ 保存应用程序%1
+.SAVELIBTEMPL
+ 保存库%1
+.SAVECOSTEMPL
+ 保存控制器%1
+.SAVECONTEMPL
+ 保存项目%1
+.INSAPPSTR
+ 插入应用程序
+.INSCONSTR
+ 插入控制器
+!--------------------------------------------------------------
+.NAMESTR
+ 名称:
+!--------------------------------------------------------------
+.LIBALREADYOP
+ 库已经打开。
+!--------------------------------------------------------------
+.APPLICATISTR
+ 应用程序 
+!--------------------------------------------------------------
+.LIBRARYSTR
+ 库 
+!--------------------------------------------------------------
+.CONTROLSYSTR
+ 控制器
+!--------------------------------------------------------------
+.PROJECEXISTS
+ 已有同名项目
+!--------------------------------------------------------------
+.APPLICEXISTS
+ 已有同名应用程序
+!--------------------------------------------------------------
+.LIBRAREXISTS
+ 已有同名库
+!--------------------------------------------------------------
+.HWLIBEXISTS
+ 已有同名库
+!--------------------------------------------------------------
+.STDLIBEXISTS
+ 已有一个标准库使用此名称.
+!--------------------------------------------------------------
+.CONTSYEXISTS
+ 已有同名控件器
+!--------------------------------------------------------------
+.PRJFILEXISTS
+ 在指定位置已有同名项目文件
+!--------------------------------------------------------------
+.APPFILEXISTS
+ 在指定位置已有同名应用文件
+!--------------------------------------------------------------
+.LBRFILEXISTS
+ 在指定位置已有同名库文件。
+!--------------------------------------------------------------
+.HWLIBFILEXTS
+ 在指定位置已有同名库文件。
+!--------------------------------------------------------------
+.CONFILEXISTS
+ 在指定位置已有同名控制系统文件
+!--------------------------------------------------------------
+.COMMENTEMPTY
+ 注释不可为空的。
+!--------------------------------------------------------------
+.COMERRSTR
+ 符号（*和*）的组合是不允许的
+!--------------------------------------------------------------
+.CLOSINGCONFM
+! Activity message
+ 正在关闭项目%1
+!--------------------------------------------------------------
+.SAVEASSTR
+ 保存%1为
+.SAVECOPYSTR
+ 保存%1的副本为
+.INVALNAMSTR
+ 名称无效
+.NAMETOLONG
+ 名称过长。
+.NOAPPLINPROJ
+ 该项目中没有可被打开的其它应用程序
+.MESSAGE
+ 消息
+!--------------------------------------------------------------
+.CURRFOLDER
+ 当前项目文件夹
+!---------------------------------------------------------------
+.APPFILES
+ 应用程序文件
+!---------------------------------------------------------------
+.RESBYMEINF
+ 客户端%2（本工作区）的用户%1
+.RESBYOTHINF
+ 客户端%2（另一个工作区）的用户%1
+.NOTRESINF
+ 不保留
+!---------------------------------------------------------------
+.NEWAPPLICBOX
+ dialogbox  新建应用程序
+   body
+     group horizontal columns=2
+       group vertical
+         label    0 模版:
+         listbox visiblerows = 6 12
+       end group
+       group vertical
+         label    0 名称:
+         edit minwidth=30 maxchars=20 10
+         space
+         label    15 位置:
+         group horizontal columns=2
+           edit minwidth=30 11
+           button 4 浏览...
+         end group
+         space
+       end group
+     end group
+   end body
+
+   commands
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.NEWFOUBROWSEBOX
+ dialogbox  新建应用程序
+   body
+     group horizontal columns=2
+       label    0 名称:
+       edit minwidth=30 maxchars=20 10
+       label   15 位置:
+       group horizontal columns=2
+         edit minwidth=30 maxwidth=40 11
+         button 4 浏览...
+       end group
+     end group
+   end body
+
+   commands
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.RENAMEFOUBOX
+ dialogbox 重命名 %1
+   body
+      group horizontal columns=3
+         label    0 名称:
+         edit minwidth=30 maxchars=20 11
+         space
+         label    15 位置:
+         edit minwidth=30 maxwidth=200 12
+!        button   4 浏览...
+      end group
+   end body
+
+   commands
+      button default 1 确定
+      button cancel  2 取消      
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INSPRCEXIST
+ 该项目常数已存在。创建一个新项目常数
+.INVPRCSTR
+ 无效项目常数名。设定新项目常数。
+.INVPRCSTRLEN
+ 项目常数名必须包含1-%1个字符 设置一个新的项目常数
+.INVPRCSTRPATH
+ 工程常数名将成为路径的一部分，该路径由%1个字符组成。 路径可最多由%2个字符组成。用短名 a\n设置新项目常数，或者在短名的路径中给出其它常数。 注意分隔常数的圆点\n包括在路径的长度中。
+.PRCNAMESTR
+ 名称
+.RENPRCSTR
+ 重命名项目常数
+.INSPRCSTR
+ 插入项目常数
+.VALTYPMISSTR
+ 值与类型不匹配
+.OVRVALSTR
+ 覆盖值
+.OVRVALMESSTR
+ 新建的默认值将覆盖现有的实际值
+.PRCDEFTXTSTR
+ 默认值 :
+.STRTABLEDBOX
+ dialogbox 表格
+    body vertical
+       group horizontal columns=2
+          label 6 索引变量
+          edithelp 7
+       end group
+       frame 
+          frame horizontal columns=2 maxheight=13 verticalscroll 8
+             label 0 索引值
+             label 9 字符串
+          end frame
+          group horizontal columns=3
+             button 3 新建行
+             button 4 向上
+             button 5 向下
+          end group
+       end frame
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.OTHERWISE
+ 不同的
+.INDMULTIPLE
+ 多索引声明
+.ILLEGALINDEX
+ 无效索引。
+.GRIDPATTERN
+ 8      ! Line style for axis grid.
+.LIMITPATTERN
+ 7      ! Line style for LimitRulers.
+.READABLEFONT
+ 11     ! Height in pixels for smallest easilly readable system font.
+.NOFONT
+ 3      ! If textheight < NOFONT then draw no text.
+!--------------------------------------------------------------
+.PICTDISPDBOX
+ dialogbox 图像选择器
+    body vertical
+       group horizontal columns=3
+          label                 0 路径/文件名
+          edithelp minwidth=32  9
+          button                10 浏览
+       end group
+       checkbox 11 保持图象形状
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+       button         3 高级的 >>
+       button         4 帮助(H)
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PICDISP2DBOX
+ dialogbox 图像选择器
+    body vertical
+       group horizontal columns=3
+          label maxheight=10    0 路径/文件名\n(默认值)
+          edithelp minwidth=32  9
+          button               10 浏览
+       end group
+       checkbox 11 保持图象形状
+       frame 
+          group horizontal columns=2
+             label     0 索引变量
+             edithelp 12
+          end group
+          frame horizontal columns=2 maxheight=13 verticalscroll 13
+             label  0 索引值
+             label 14 路径/文件名
+          end frame
+          group horizontal columns=5
+             button 5 新建行
+             button 6 向上
+             button 7 向下
+             space minwidth=12
+             button 8 浏览
+          end group
+       end frame
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+       button 3 高级的 <<
+       button 4 帮助(H)
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INDMULTIPLE
+ 多索引声明
+.ILLEGALINDEX
+ 无效索引。
+.MORETHAN1000
+ 表格包含超过1000条.\n此对话框只能显示前1000个表格项目 如果保存表格其余条目信息将丢失。
+!--------------------------------------------------------------
+.PICTINFOBOX
+ dialogbox 图形选择器信息
+    body vertical
+      group horizontal columns=2
+        label 0 内存被显示的图象占用:
+        text  2 %1 kByte
+        label 0 内存被未显示的图像占用:
+        text  3 %2 kByte
+      end group
+      button 4 更新图象
+    end body
+    commands horizontal
+      button default cancel 1 确定
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.CHOOSEPICSTR
+ 选择图像文件
+!--------------------------------------------------------------
+.RANGEBOX
+ dialogbox 范围
+    body horizontal columns = 2
+       label    0 范围的下限
+       edithelp 3
+       label    0 范围的上限
+       edithelp 4
+       space
+       checkbox 5 固定的
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OPRANGEBOX
+ dialogbox 范围
+    body horizontal columns = 2
+       label 0 范围的下限
+       edit  3
+       label 0 范围的上限
+       edit  4
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.COMMONSTRING
+ 上限必须高于下限
+ 位置
+!------------------------------------------------------------
+!                     Default string in Otherwise entry
+!--------------------------------------------------------------
+.OTHERSTRING
+ 表格中无索引。
+.ZOOMINSTRING
+ 可缩放的
+.ENABLESTRING
+ 启动
+!-----------------------------------------------------------
+!           Image selector information boxes
+!------------------------------------------------------------
+.PICTDISPINFO
+ dialogbox 图形选择器信息
+   body
+      text 10 
+      text 11
+   end body
+   commands
+      button default cancel 1 确定
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+.PICDISINFOWC
+ dialogbox 图形选择器信息
+   body
+      text 10 
+      text 11
+      text 0 模块已赋值通配符的路径:
+      text 12
+   end body
+   commands
+      button default cancel 1 确定
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.PDERRINFOBOX
+ dialogbox 图形选择器信息
+   body
+      text 10
+   end body
+   commands
+      button default cancel 1 确定
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+!              Image selector information strings
+!--------------------------------------------------------------
+.CURRPATHSTR
+ 当前路径:
+!--------------------------------------------------------------
+.CURMODPATSTR
+ 当前模块路径:
+!--------------------------------------------------------------
+.MODPATERRSTR
+ 当前模块路径不可继续。 ### 指出路径丢失处。
+!--------------------------------------------------------------
+.MEMERRORDSTR
+ 由于变量存储器已满，文件%1不能显示
+!--------------------------------------------------------------
+.FNOTEXISTSTR
+ 文件%1不存在
+!--------------------------------------------------------------
+.SYNTAXERRSTR
+ 文件不可阅读。
+!--------------------------------------------------------------
+.VARINEDITSTR
+ ### 不可在 Edit 模式里评估变量 ###
+!--------------------------------------------------------------
+.VARINRUNSTR
+ 变量当前不正确
+.TIMERANGEBOX
+ dialogbox 范围
+    body vertical
+       group horizontal columns=2 0
+          label    11 默认范围:
+          edithelp 12
+          label    21 选用范围 1:
+          edithelp 22
+          label    31 选用范围 2:
+          edithelp 32
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.CURVEBOX
+ dialogbox 曲线数据
+    body vertical
+       frame horizontal columns=2 0
+          label    11 采样数目
+          edithelp 12
+          label    21 小数部分
+          edithelp 22
+          label    31 采样间隙
+          edithelp 32
+       end frame
+
+       frame horizontal columns=2 3 变量连接
+          label    41 变量名
+          edithelp 42
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.RANGESTRING
+ 选择范围
+!------------------------------------------------------------
+.ACTRANGEBOX
+ dialogbox 时间范围
+    body horizontal
+       frame horizontal columns=9 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 范围:
+          edit  width=10 12
+          label 21 d
+          edit  width=10 22
+          label 31 h
+          edit  width=10 32
+          label 41 m
+          edit  width=10 42
+          label 51 s
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+.HOPRANGEBOX
+ dialogbox 范围
+    body vertical
+       frame horizontal columns=2 0 引出范围
+          label 6 范围的上限
+          text  4
+          label 5 范围的下限
+          text  3
+       end frame
+
+       frame vertical 0 操作范围
+          radiobutton 101 启动
+          group horizontal columns=2
+             label 16 范围的上限
+             edit  14
+             label 15 范围的下限
+             edit  13
+          end group
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.HRANGEBOX
+ dialogbox 范围
+    body vertical
+       frame vertical 0 变量的范围
+          frame horizontal columns=2 0 引出范围
+             label    31 范围的上限
+             edithelp 32
+             label    21 范围的下限
+             edithelp 22
+          end frame
+
+          frame horizontal columns=2 0 操作范围
+             label    61 启动
+             edithelp 62
+             label    81 范围的上限
+             edithelp 82
+             label    71 范围的下限
+             edithelp 72
+          end frame
+
+          group horizontal columns=2
+             label    41 单位
+             edithelp 42
+          end group
+       end frame
+
+       checkbox    51 固定的
+    end body
+    
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OPTIMEBOX
+ dialogbox 开始时间
+    body horizontal
+       frame horizontal columns=12 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 启动:
+          edit  width=10 12
+          label 21 -
+          edit  width=10 22
+          label 31 -
+          edit  width=10 32
+          label 41 -
+          edit  width=10 42
+          label 51 :
+          edit  width=10 52
+          label 61 :
+          edit  width=10 62
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+.OPOFFSETBOX
+ dialogbox 时间偏移
+    body horizontal
+       frame horizontal columns=11 horizontalscroll
+       maxwidth=100 maxheight=20
+          label 11 时间偏移:
+          edit  width=10 12
+          label 21  
+          edit  width=10 22
+          label 31 d
+          edit  width=10 32
+          label 41 h
+          edit  width=10 42
+          label 51 m
+          edit  width=10 52
+          label 61 s
+       end frame
+    end body
+    
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox    
+!------------------------------------------------------------
+! Header strings for calls to EditGenVariable
+!------------------------------------------------------------
+.GENEDITHEAD
+ 相对时间
+ 缺省网格线
+ 重设图形
+ 上限必须高于下限
+!------------------------------------------------------------
+! History strings for "no access allowed"
+!------------------------------------------------------------
+.HISTNOACCESS
+ 拒绝访问。
+.VARNAME
+ dialogbox
+    body vertical
+       group horizontal columns=2 0
+          label    11 变量
+          edithelp 12
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.RESERRORDBOX
+ dialogbox
+   body vertical columns = 1
+   end body
+   commands horizontal
+     button default 1 接受错误
+     button cancel  2 编辑
+   end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.CONVDISERRST
+ 属性转换使太长的字符串结果停用。 以下数据将丢失:
+!------------------------------------------------------------
+.DISABLEATTR
+ 停用:
+!------------------------------------------------------------
+! Header when attribute of graphical object etc found.
+.ATTRHEADSTR
+ 用作: 
+!------------------------------------------------------------
+! Names for attributes of graphical objects etc when searching.
+.ATTRNAMESTR
+! vNoGraphAttr
+ ?
+! vPosXAttr
+ 位置 X
+! vMaxPosXAttr
+ 最大 位置 X
+! vMinPosXAttr
+ 最小 位置 X
+! vPosYAttr
+ 位置 Y
+! vMaxPosYAttr
+ 最大 位置 Y
+! vMinPosYAttr
+ 最小 位置 Y
+! vScaleXAttr
+ 比例 X
+! vMaxScaleXAttr
+ 最大 比例 X
+! vMinScaleXAttr
+ 最小 比例 X
+! vScaleYAttr
+ 比例 Y
+! vMaxScaleYAttr
+ 最大 4_SCALE Y
+! vMinScaleYAttr
+ 最小 比例 Y
+! vAngleAttr
+ 旋转
+! vEnableAttr
+ 启动
+! vZoomInAttr
+ 放大
+! vAreaCol1Attr
+ 区域颜色
+! vAreaCol2Attr
+ 选择性区域颜色
+! vAreaStyleAttr
+ 颜色混合
+! vLineCol1Attr
+ 线颜色
+! vLineCol2Attr
+ 选择性线颜色
+! vLineStyleAttr
+ 颜色混合
+! vLineThicknessAttr
+ 线宽
+! vOpSelectedAttr
+ 选择的
+! vVariableAttr
+ 变量
+! vStepAttr
+ 步
+! vOpMaxAttr
+ 操作数 MAX
+! vOpMinAttr
+ 操作数 MIN
+! vRealVarAttr
+ Real variable
+! vDefaultRangeAttr
+ 默认范围
+! vAltRange1Attr
+ 选用范围 1
+! vAltRange2Attr
+ 选用范围 2
+! vRangeLowerLimitAttr
+ 范围 下限
+! vRangeUpperLimitAttr
+ 范围 上限
+! vLimitValueAttr
+ 表现限制器 位置
+! vIndexVarAttr
+ 索引
+! vRefPosAttr
+ 原始位置
+! vWidthAttr
+ 宽度
+! vFractionAttr
+ 小数部分
+! vFormatAttr
+ 格式
+! vHaxisStartTimeAttr
+ 开始时间
+! vHaxisTimeOffsetAttr
+ 时间偏移
+! vInViewAttr
+ 视图里
+! vValueChangedAttr
+ 已更改
+! vTableItemAttr
+ 模块路径
+! vInteractLoggingAttr
+ 事件属性
+! vDisableAttr
+ 停用
+! vCurveSamplesAttr
+ 曲线中的采样数目
+! vCurveFractionAttr
+ 曲线值中的小数个数
+! vSampleDurationAttr
+ 曲线的采样间隙
+! vVaxisUnitAttr
+ 量程单位
+! vResetToDefaultAttr
+ 重设趋势图
+! vRelTimeAttr
+ 时间轴中的相对时间
+! vEnableGridAttr
+ 启用网格线
+! vCurveModeAttr
+ 曲线表现模式
+! vConRangeUpperLimitAttr
+ 范围 上限
+! vConRangeLowerLimitAttr
+ 范围 下限
+! vEnableControlRangeAttr
+ 启动 操作范围
+! vVisibleAttr
+ 可见的
+! vTextAttr
+ 文本
+! vAltTextAttr
+ 选用文本
+! vEnableDelayAttr
+ 激活确定/取消
+! vOKVariableAttr
+ 确定变量
+! vCancelVariableAttr
+ 取消变量
+! vComButSetValueAttr
+ 值
+! vValueAttr
+ 值
+! vNoOfDigitsAttr
+ 有效数字
+! vDimAttr
+ 暗淡的
+! vWindowTitleAttr
+ 标题文本
+! vWindowWidthAttr
+ 宽度
+! vWindowHeightAttr
+ 高度
+! vWindowClassAttr
+ 窗口类型
+! vWindowTimeoutAttr
+ 自动关闭超时
+! vWindowDisplayedAttr
+ 是否显示窗口?
+! vWindowHRootAttr
+ 交互窗口持有者
+! vWindowVisibleTitleAttr
+ 可见的标题条
+! vWindowResizableAttr
+ 可调大小的
+! vWindowMaintainRatioAttr
+ 维持属性比率
+! vWindowZoomableAttr
+ 可缩放的
+! vWindowVisibleScrollBarsAttr
+ 可见的滚动条
+! vPathAttr
+ 路径
+! vFileNameAttr
+ 文件名
+! vRelativePosAttr
+ 相对位置
+! vLastGraphAttr
+ ???
+! Dummy strings if application reads to many items...
+ ???
+ ???
+ ???
+ ???
+ ???
+!------------------------------------------------------------
+! Used as header when graphical expressions is shown in search dialog
+.EXPRHEADSTR
+ 表达式:
+!--------------------------------------------------------------
+! Used when replace has result in a too long expression
+.EXPRLONGWARN
+ 无法替换 表达式太长。
+!--------------------------------------------------------------
+.INTOBJTYPEDB
+ dialogbox 交互对象
+   body
+      listbox visiblerows=6 3
+         listitem bool
+         listitem integer
+         listitem real
+         listitem string
+         listitem date_and_time
+         listitem time
+         listitem Window
+      end listbox
+   end body
+
+   commands
+      button default 1 确定
+      button cancel  2 取消
+   end commands
+ end dialogbox
+!------------------------------------------------------------
+.FASTFACTOR
+! Factor between increment and fast increment for real interaction objects
+ 10.0
+.INTFASTFACT
+! Factor between increment and fast increment for integer interaction objects
+ 10
+!--------------------------------------------------------------
+.NOTEXECUTED
+ 因无效变量不可执行交互。
+.NOTCHANGED
+ 交互已执行。 因为变量无效，"Changed" 未写入。
+.NOTSELECTED
+ 交互已执行。 因为变量无效，"Selected" 未写入。
+.INVALFORMAT
+ 无效转换格式。
+!--------------------------------------------------------------
+! Interaction dialog box for bool simple
+.BOOLINTDBOX
+ dialogbox 交互对象: bool
+    body vertical
+       frame horizontal
+          label    11 变量
+          edithelp 12 
+       end frame
+
+       frame horizontal
+          radiobutton 21 开
+          radiobutton 22 关
+          radiobutton 23 切换
+          radiobutton 24 菜单
+       end frame
+
+       frame horizontal columns=2
+          label    31 启动
+          edithelp minwidth=30 32
+          label    39 选择的
+          edithelp 40
+          label    41 已更改
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for integer
+.INTINTDBOX
+ dialogbox 交互对象: integer
+    body vertical
+       frame horizontal columns=2
+          label    11 变量
+          edithelp 12 
+          label    13 操作数 MIN
+          edithelp 14 
+          label    15 操作数 MAX
+          edithelp 16 
+          label    17 步
+          edithelp 18 
+       end frame
+
+       frame horizontal
+          radiobutton 21 简单的
+          radiobutton 24 菜单
+       end frame
+
+       frame horizontal columns=2
+          label    31 启动
+          edithelp minwidth=30 32
+          label    39 选择的
+          edithelp 40
+          label    41 已更改
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for real
+.REALINTDBOX
+ dialogbox 交互对象: real
+    body vertical
+       frame horizontal columns=2
+          label    11 变量
+          edithelp 12 
+          label    13 操作数 MIN
+          edithelp 14 
+          label    15 操作数 MAX
+          edithelp 16 
+          label    17 相对步
+          edithelp 18 
+       end frame
+
+       frame horizontal
+          radiobutton 21 简单的
+          radiobutton 24 菜单
+       end frame
+
+       frame horizontal columns=2
+          label    31 启动
+          edithelp minwidth=30 32
+          label    39 选择的
+          edithelp 40
+          label    41 已更改
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for string
+.STRINTDBOX
+ dialogbox 交互对象: string
+    body vertical
+       frame horizontal
+          label    11 变量
+          edithelp 12 
+       end frame
+
+       frame horizontal columns=2
+          label    31 启动
+          edithelp minwidth=30 32
+          label    39 选择的
+          edithelp 40
+          label    41 已更改
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for date_and_time
+.TIMEINTDBOX
+ dialogbox 交互对象: date_and_time
+    body vertical
+       frame horizontal columns=2
+          label    11 变量
+          edithelp 12 
+          label    13 格式
+          edithelp 14 
+       end frame
+
+       frame horizontal columns=2
+          label    31 启动
+          edithelp minwidth=30 32
+          label    39 选择的
+          edithelp 40
+          label    41 已更改
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for time
+.DURAINTDBOX
+ dialogbox 交互对象: time
+    body vertical
+       frame horizontal columns=2
+          label    11 变量
+          edithelp 12 
+          label    13 格式
+          edithelp 14 
+       end frame
+
+       frame horizontal columns=2
+          label    31 启动
+          edithelp minwidth=30 32
+          label    39 选择的
+          edithelp 40
+          label    41 已更改
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for procedure interaction
+.PROCINTDBOX
+ dialogbox 交互对象: 窗口
+    body horizontal
+       frame vertical
+         radiobutton 201 创建新的窗口
+         radiobutton 202 创建/删除窗口
+         radiobutton 203 删除窗口
+         radiobutton 204 编辑文件
+         group horizontal columns=2
+         label    205 路径
+         edithelp 206
+         label    0   相对位置
+         edithelp 207
+         label    0   X坐标
+         edithelp 208
+         label    0   Y坐标
+         edithelp 209
+         label    0   窗口类型
+         edithelp 210
+         end group
+       end frame
+
+       frame horizontal columns=2
+          label    31 启动
+          edithelp minwidth=30 32
+          label    39 选择的
+          edithelp 40
+          label    41 已更改
+          edithelp 42
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.INTSTR
+ 交互对象 
+!--------------------------------------------------------------
+! Interaction dialog box for command button
+.COMBUTDBOX
+ dialogbox 交互对象: 命令按钮
+    body horizontal columns=2
+
+       group vertical
+
+          frame horizontal
+             radiobutton 11 Boolean
+             radiobutton 12 Integer
+             radiobutton 13 Real
+          end frame
+
+          frame horizontal
+             radiobutton 21 开
+             radiobutton 22 关
+             radiobutton 23 切换
+          end frame
+
+          frame horizontal
+             radiobutton 31 步
+             radiobutton 32 值
+          end frame
+
+          frame horizontal
+             checkbox 41 指示设置值
+          end frame
+
+          frame horizontal columns=2
+             label    51 变量
+             edithelp 52 
+             label    53 值
+             edithelp 54 
+             label    55 操作数 MIN
+             edithelp 56
+             label    57 操作数 MAX
+             edithelp 58
+          end frame
+
+       end group
+
+       group vertical
+
+          frame horizontal columns=2
+             radiobutton 61 绝对步
+             edithelp    62
+             radiobutton 63 相对步
+             edithelp    64
+          end frame
+
+          frame horizontal columns=2
+             label    71 文本
+             edithelp 72
+             label    73 选用文本
+             edithelp 74
+          end frame
+
+          frame vertical
+             checkbox 102 激活确定/取消
+             group horizontal columns=2
+                label    103 确定变量
+                edithelp 104
+                label    105 取消变量
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 可见的
+             edithelp 82
+             label    83 启动
+             edithelp 84
+             label    89 已更改
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for procedure command button
+.COMBUTPDBOX
+ dialogbox 交互对象: 窗口
+    body vertical
+
+       frame vertical
+         radiobutton 201 创建新的窗口
+         radiobutton 202 创建/删除窗口
+         radiobutton 203 删除窗口
+         radiobutton 204 编辑文件
+         group horizontal columns=2
+           label    205 路径
+           edithelp 206
+           label    0   相对位置
+           edithelp 207
+           label    0   X坐标
+           edithelp 208
+           label    0   Y坐标
+           edithelp 209
+           label    0   窗口类型
+           edithelp 210
+           space
+           space
+           label    11 按钮文本
+           edithelp 12
+         end group
+       end frame
+
+      frame horizontal columns=2
+         label    81 可见的
+         edithelp 82
+         label    83 启动
+         edithelp 84
+         label    89 已更改
+         edithelp 90
+       end frame
+
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for option button
+.OPTBUTDBOX
+ dialogbox 交互对象: 可选按钮
+    body vertical
+
+       frame horizontal columns=2
+          label    11 变量
+          edithelp 12
+          label    13 值
+          edithelp 14
+       end frame
+
+       group vertical
+
+          frame horizontal columns=2
+             label    21 文本
+             edithelp 22
+          end frame
+
+          frame vertical
+             checkbox 102 激活确定/取消
+             group horizontal columns=2
+                label    103 确定变量
+                edithelp 104
+                label    105 取消变量
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 可见的
+             edithelp 82
+             label    83 启动
+             edithelp 84
+             label    89 已更改
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for check box
+.CHECKBOXDBOX
+ dialogbox 交互对象: 复选框
+    body vertical
+
+       frame horizontal columns=2
+          label    11 变量
+          edithelp 12 
+       end frame
+
+       group vertical
+
+          frame horizontal columns=2
+             label    21 文本
+             edithelp 22
+          end frame
+
+          frame vertical
+             checkbox 102 激活确定/取消
+             group horizontal columns=2
+                label    103 确定变量
+                edithelp 104
+                label    105 取消变量
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 可见的
+             edithelp 82
+             label    83 启动
+             edithelp 84
+             label    89 已更改
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Interaction dialog box for Text box
+.TEXTBOXDBOX
+ dialogbox 交互对象: 输入域
+    body horizontal columns=2
+
+       group vertical
+
+          frame vertical
+             radiobutton 11 integer
+             radiobutton 12 real
+             radiobutton 13 string
+             radiobutton 14 date_and_time
+             radiobutton 15 time
+          end frame
+
+          frame horizontal columns=2
+                label    21 变量
+                edithelp 22 
+          end frame
+
+          frame horizontal
+             radiobutton 31 左
+             radiobutton 32 居中
+             radiobutton 33 右
+          end frame
+
+          frame horizontal columns=2
+             label    41 操作数 MIN
+             edithelp 42 
+             label    43 操作数 MAX
+             edithelp 44 
+             label    45 格式
+             edithelp 46 
+          end frame
+
+       end group
+
+       group vertical
+
+          frame horizontal columns=2
+             radiobutton 51 绝对步
+             edithelp    52
+             radiobutton 53 相对步
+             edithelp    54
+          end frame
+
+          frame horizontal columns=2
+             radiobutton 61 小数部分
+             edithelp    62 
+             radiobutton 63 有效数字
+             edithelp    64 
+          end frame
+
+          frame vertical
+             checkbox 102 激活确定/取消
+             group horizontal columns=2
+                label    103 确定变量
+                edithelp 104
+                label    105 取消变量
+                edithelp 106
+             end group
+          end frame
+
+          frame horizontal columns=2
+             label    81 可见的
+             edithelp 82
+             label    83 启动
+             edithelp 84
+             label    89 已更改
+             edithelp 90
+          end frame
+
+       end group
+
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Grid for open picture.
+.PICTUREGRID
+ 8
+!------------------------------------------------------------
+.OBJECTNAMES
+ 点
+ 多目标
+ 控制模块类型
+ 控制模块
+ 交互对象
+ 趋势图
+ 时间轴
+ 值坐标
+ 曲线
+ 表现限制器
+ 时间标尺
+ 棒图
+ 值坐标
+ 棒图
+ 表现限制器
+ 字串选择器
+ 图像选择器
+ 线
+ 矩形
+ 椭圆
+ 片段
+ 多边形
+ 图形连接
+ 文本对象
+ 节点
+!
+!-------------------------------------------------
+.INPARSTRING
+ %2里的%1
+!-------------------------------------------------
+.LIBPICTSTR
+! String for error message
+ 控制模块类型 
+!------------------------------------------------------------
+.LIBPICTNAME
+! String for creating new module type
+ 控制模块类型名:
+!------------------------------------------------------------
+.MODTITLESTR
+ 创建控制模块
+!-------------------------------------------------------------
+.OPENMODSTR
+ 打开控制模块
+!-------------------------------------------------------------
+.CLOSEMODSTR
+ 关闭控件模块
+!-------------------------------------------------------------
+.MAXMINERRSTR
+ 最大尺寸必须至少比最小尺寸大%1%
+!-------------------------------------------------------------
+! Titles for Zooming and Size dialog boxes
+.ZOOMTYPETIT
+ 控制模块类型%1的缩放以及可见性
+.ZOOMSINGLTIT
+ 单个控制模块类型%1的缩放以及可见性
+.ZOOMINSTTIT
+ 控制模块%1的缩放以及可见性
+!-------------------------------------------------------------
+.PICTZOOMBOX
+ dialogbox 控制模块类型%1的缩放以及可见性
+   body vertical
+     group horizontal columns = 2
+       checkbox 11 在环境控制模块的图形中可见
+       checkbox 10 可缩放的
+
+       frame horizontal columns=2 0 可见性限制
+         label 0 最大尺寸
+         combobox dropdown 21
+           listitem 1000.0 (默认值)
+           listitem 0.0 (没有限制)
+         end combobox
+         label 0 最小尺寸
+         combobox dropdown 22
+           listitem 0.01 (默认值)
+         end combobox
+       end frame
+
+       frame horizontal columns=2 0 层面
+         checkbox 30 两层
+         space
+         label 31 层移动尺度
+         combobox dropdown 32
+           listitem 0.95 (默认值)
+         end combobox
+       end frame
+
+     end group
+
+     space
+
+     frame
+       text 40 1.0 尺寸符合无旋转的控制模块 填充至整个窗口 控制模块的当前大小是%1
+     end frame
+   end body
+
+   commands horizontal
+      button default 1 确定
+      button cancel  2 取消
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.ZOOMABLESTR
+ 可缩放的
+.NONZOOMSTR
+ 不可缩放
+.VISIBLESTR
+ 可见的
+.INVISIBLESTR
+ 透明
+!-------------------------------------------------------------
+.IGNOREMAXSTR
+ 忽略最大尺寸
+.SYMBOLSTR
+ 顺从最大尺寸
+!-------------------------------------------------------------
+.PROMMODUNAME
+ 重命名
+!-------------------------------------------------------------
+.REPLHEADSTR
+ 替换控制模块类型
+!-------------------------------------------------------------
+.PINVATTR1BOX
+ dialogbox 特性
+    body horizontal
+       frame vertical columns=2 0
+          label 0 启动
+          label 0 暗淡的
+          edithelp minwidth=30 7
+          edithelp minwidth=30 8
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+       button         3 更多 >>
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Attributes dialog box
+.PINVATTR2BOX
+ dialogbox 特性
+    body vertical
+       group horizontal 
+          frame vertical columns=2 0
+             label 0 启动
+             label 0 暗淡的
+             edithelp minwidth=30 7
+             edithelp minwidth=30 8
+          end frame
+          space
+       end group
+       frame horizontal columns=5 0
+          space
+          space
+          label 0 变量
+          label 0 最小
+          label 0 最大
+
+          label 0 位置:
+          label 0 X:
+          edithelp maxwidth=20 20
+          edithelp maxwidth=20 21
+          edithelp maxwidth=20 22
+
+          space
+          label 0 Y:
+          edithelp maxwidth=20 23
+          edithelp maxwidth=20 24                   
+          edithelp maxwidth=20 25
+
+          label 0 旋转:
+          space
+          edithelp maxwidth=20 26
+          edithelp maxwidth=20 27
+          edithelp maxwidth=20 28
+
+          space
+          space
+          space
+          label 0 大小 0%
+          label 0 大小 100%
+
+          label 0 比例:
+          label 0 X:
+          edithelp maxwidth=20 29
+          edithelp maxwidth=20 30
+          edithelp maxwidth=20 31
+
+          space
+          label 0 Y:
+          edithelp maxwidth=20 32
+          edithelp maxwidth=20 33
+          edithelp maxwidth=20 34
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+       button         3 更多 >>
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.NEWMODTYPBOX
+ dialogbox 新建控制模块的类型
+    body
+       frame horizontal columns = 2
+          radiobutton 11 控制模块类型
+          edit        12
+          radiobutton 13 单个控制模块
+       end frame
+       space
+       frame horizontal columns = 2          
+         label        0 实例名:
+         edithelp     15
+       end frame    
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.NAMEINUSE
+ 名字%1已在使用或者不合法   
+!-------------------------------------------------------------
+.PICTINVZOOMB
+ dialogbox 控制模块%1的缩放以及可见性
+   body vertical
+     group horizontal
+       frame vertical 0 在环境控制模块的图形中可见
+         radiobutton 10 默认类型数值 (%1)
+         radiobutton 11 可见的
+         radiobutton 12 透明
+       end frame
+
+       frame vertical 0 可缩放的
+         radiobutton 20 默认类型数值 (%1)
+         radiobutton 21 可缩放的
+         radiobutton 22 不可缩放
+       end frame
+     end group
+
+     frame vertical 0 可见性限制
+       group horizontal
+         group vertical
+           checkbox long 30 使用这个类型的可见性限制
+           space
+           label 0 最大尺寸
+           combobox dropdown 31
+             listitem 1000.0 (默认值)
+             listitem 0.0 (没有限制)
+           end combobox
+           label 0 最小尺寸
+           combobox dropdown 32
+             listitem 0.01 (默认值)
+           end combobox
+         end group
+
+         frame vertical 0 与周围控制模块的关系
+           radiobutton 40 默认类型数值 (%1)
+           radiobutton 42 顺从最大尺寸
+           radiobutton 41 忽略最大尺寸
+           radiobutton 43 反转可视度关系
+         end frame
+       end group
+
+       frame
+         text 50 1.0 尺寸符合无旋转的控制模块 填充至整个窗口 控制模块的当前大小是%1
+       end frame
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.SINGLEZOOMB
+ dialogbox 单个控制模块类型%1的缩放以及可见性
+   body vertical
+     group horizontal
+       frame vertical 0 在环境控制模块的图形中可见
+         radiobutton 11 可见的
+         radiobutton 12 透明
+       end frame
+
+       frame vertical 0 可缩放的
+         radiobutton 21 可缩放的
+         radiobutton 22 不可缩放
+       end frame
+     end group
+
+     frame vertical 0 可见性限制
+       group horizontal
+         group vertical
+           checkbox long 30 使用这个类型的可见性限制
+           space
+           label 0 最大尺寸
+           combobox dropdown 31
+             listitem 1000.0 (默认值)
+             listitem 0.0 (没有限制)
+           end combobox
+           label 0 最小尺寸
+           combobox dropdown 32
+             listitem 0.01 (默认值)
+           end combobox
+         end group
+
+         frame vertical 0 与周围控制模块的关系
+           radiobutton 42 顺从最大尺寸
+           radiobutton 41 忽略最大尺寸
+           radiobutton 43 反转可视度关系
+         end frame
+       end group
+
+       frame
+         text 50 1.0 尺寸符合无旋转的控制模块 填充至整个窗口 控制模块的当前大小是%1
+       end frame
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.PICTINVVISB
+ dialogbox 控制模块%1的缩放以及可见性
+   body horizontal
+     frame vertical 0 在环境控制模块的图形中可见
+       radiobutton 10 默认类型数值 (%1)
+       radiobutton 11 可见的
+       radiobutton 12 透明
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.SINGLEVISB
+ dialogbox 单个控制模块类型%1的缩放以及可见性
+   body vertical
+     frame vertical 0 在环境控制模块的图形中可见
+       radiobutton 11 可见的
+       radiobutton 12 透明
+     end frame
+   end body
+
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+.LINEWIDTHBOX
+ dialogbox 线宽
+   body vertical
+      group horizontal
+         listbox dropdown visiblerows=10 minwidth=10 10
+            listitem 1
+            listitem 2
+            listitem 3
+            listitem 4
+            listitem 5
+            listitem 7
+            listitem 9
+            listitem 11
+            listitem 13
+            listitem 15
+         end listbox
+
+         edithelp 11
+      end group
+
+      checkbox 12 保存为默认设置
+   end body
+
+   commands
+       button default 1 确定
+       button cancel  2 取消
+   end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Attributes of graph objects
+.GRAPHATTRBOX
+ dialogbox 特性
+    body horizontal columns=2
+       label    3 启动
+       edithelp minwidth=30 4
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! TextDialogBox
+!-------------------------------------------------------------
+.TEXTALIGNBOX
+ dialogbox 文本
+    body
+       frame vertical  0 对齐方式
+          radiobutton 31 左
+          radiobutton 32 居中
+          radiobutton 33 右
+       end frame
+       checkbox 21 保存为默认设置
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.TEXTVARDBOX
+ dialogbox 文本
+    body
+       group horizontal
+          frame vertical  0 对齐方式
+             radiobutton 31 左
+             radiobutton 32 居中
+             radiobutton 33 右
+          end frame
+
+          frame vertical 0 模式
+             checkbox  5 变量
+             group horizontal columns=2
+                label    41 宽度
+                edithelp 42
+                label    51 小数部分
+                edithelp 52
+                label    61 格式
+                edithelp 62
+             end group
+          end frame
+       end group
+       checkbox 21 保存为默认设置
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+! Point position dialog box
+.POINTPOSBOX
+ dialogbox 位置
+    body horizontal
+       frame horizontal columns=2 0 X
+          label    11 变量
+          edithelp maxwidth=30 12 
+          label    21 最小
+          edithelp maxwidth=30 22 
+          label    31 最大
+          edithelp maxwidth=30 32 
+       end frame
+
+       frame horizontal columns=2 0 Y
+          label    41 变量
+          edithelp maxwidth=30 42 
+          label    51 最小
+          edithelp maxwidth=30 52 
+          label    61 最大
+          edithelp maxwidth=30 62 
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.MODIFYTEXT
+ dialogbox 更改文字
+    body vertical
+       group horizontal columns=2 0
+          label    11 文本
+          edithelp 12
+       end group
+    end body
+    
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------ 
+.MODULETYPSTR
+ 控制模块类型 
+!-------------------------------------------------
+! Change grid dialog box
+.CHGRIDBOX
+ dialogbox 网格
+    body vertical
+       frame vertical  0 系统栅格属性
+          checkbox    11 显示网格
+          checkbox    12 显示子控制模块栅格
+          group horizontal
+             label    13 可见的栅格线:
+             edit minwidth=3 maxchars=2  14
+          end group
+       end frame
+
+       frame vertical columns=2   0 控制模块栅格大小
+          label 0 较粗糙的
+          space
+          label 0 正常
+          space
+          label 0 较细
+          space
+          radiobutton 21 0.2
+          radiobutton 22 0.04
+          radiobutton 23 0.02
+          radiobutton 24 0.01
+          radiobutton 25 0.005
+          radiobutton 26 关
+       end frame
+    end body
+
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.SMALLCOLBOX
+ dialogbox 颜色
+    body vertical
+       frame horizontal columns=2
+          label                  10 线颜色
+          colorbutton minwidth=8 11
+          label                   1 区域颜色
+          colorbutton minwidth=8  2 
+       end frame
+
+       checkbox 19 保存为默认设置
+    end body
+    commands horizontal
+       button default 20 确定
+       button cancel  21 取消
+       button         22 更多 >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.MEDIUMCOLBOX
+ dialogbox 颜色
+    body vertical
+       frame horizontal columns=3
+          label                  10 线颜色
+          colorbutton minwidth=8 11
+          edithelp               12
+          label                   1 区域颜色
+          colorbutton minwidth=8  2 
+          edithelp                3
+       end frame
+
+       checkbox 19 保存为默认设置
+    end body
+    commands horizontal
+       button default 20 确定
+       button cancel  21 取消
+       button         22 更多 >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.LARGECOLBOX
+ dialogbox 颜色
+    body vertical
+       frame horizontal columns=3
+          label                        10 
+          colorbutton       minwidth=8 11
+          edithelp                     12
+          label                        13 
+          colorbutton       minwidth=8 14 
+          edithelp                     15
+          label                        16
+          combobox dropdown minwidth=8 17
+          edithelp                     18
+
+          space
+          space
+          space
+
+          label                        1 区域颜色
+          colorbutton       minwidth=8 2 
+          edithelp                     3
+          label                        4 选择性区域颜色
+          colorbutton       minwidth=8 5
+          edithelp                     6
+          label                        7
+          combobox dropdown minwidth=8 8
+          edithelp                     9
+       end frame
+
+       checkbox 19 保存为默认设置
+    end body
+    commands horizontal
+       button default 20 确定
+       button cancel  21 取消
+       button         22 更多 >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.LINCOLSTR
+ 线颜色
+.ALTLINCOLSTR
+ 选择性线颜色
+.ARECOLSTR
+ 区域颜色
+.ALTARECOLSTR
+ 选择性区域颜色
+.TEXCOLSTR
+ 文本颜色
+.ALTTEXCOLSTR
+ 选择性文本颜色
+.BGRCOLSTR
+ 背景颜色
+.ALTBGRCOLSTR
+ 选择性背景颜色
+.COLMIXSTR
+ 颜色混合
+.COLCHOICESTR
+ 颜色选项
+!-------------------------------------------------
+.INTWINDSMALL
+ dialogbox %1 的交互窗口特性
+    body horizontal columns=3
+      text minwidth = 20 0 特性
+      text      0 变量/值
+      text      0 默认值
+
+      label     0 标题文本:
+      edithelp 10
+      text      0
+
+      label     0 宽度:
+      edithelp 11
+      text      0 0.24
+
+      label     0 高度:
+      edithelp 12
+      text      0 0.0
+
+      label     0 窗口类型:
+      edithelp 13
+      text      0 0
+    end body
+    commands horizontal
+      button default 1 确定
+      button         2 应用
+      button cancel  3 关闭
+      button         4 更多 >>
+    end commands
+ end dialogbox
+!-------------------------------------------------
+.INTWINDLARGE
+ dialogbox %1 的交互窗口特性
+    body horizontal columns=3
+      text minwidth = 20 0 特性
+      text      0 变量/值
+      text      0 默认值
+
+      label     0 标题文本:
+      edithelp 10
+      text      0
+
+      label     0 宽度:
+      edithelp 11
+      text      0 0.24
+
+      label     0 高度:
+      edithelp 12
+      text      0 0.0
+
+      label     0 窗口类型:
+      edithelp 13
+      text      0 0
+
+      label     0 自动关闭超时:
+      edithelp 14
+      text      0 0 (秒)
+
+      label     0 是否显示窗口?:
+      edithelp 15
+      text      0 <外部参数>
+
+      label     0 交互窗口持有者:
+      edithelp 16
+      text      0 false
+
+      label     0 可见的标题条:
+      edithelp 17
+      text      0 true
+
+      label     0 可调大小的:
+      edithelp 18
+      text      0 false
+
+      label     0 维持属性比率:
+      edithelp 19
+      text      0 true
+
+      label     0 永远在上面:
+      edithelp 20
+      text      0 false
+
+      label     0 可缩放的:
+      edithelp 21
+      text      0 false
+
+      label     0 可见的滚动条:
+      edithelp 22
+      text      0 false
+    end body
+    commands horizontal
+      button default 1 确定
+      button         2 应用
+      button cancel  3 关闭
+      button         4 更多 >>
+    end commands
+ end dialogbox
+.WINDOWCOLBOX
+ dialogbox 窗口背景
+    body horizontal columns = 2
+       label                  0 程序窗户:
+       colorbutton minwidth=8 3
+       label                  0 交互窗户:
+       colorbutton minwidth=8 4
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+!--------------------------------------------------------------
+.OKBOX
+ dialogbox
+    body
+       text minwidth=20 10
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKTITLE
+ 消息
+!------------------------------------------------------------
+.OKCANCELBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKCANCLTITLE
+ 消息
+!------------------------------------------------------------
+.OKMOREBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default cancel 1 确定
+       button                7 更多信息
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.OKMORETITLE
+ 消息
+!------------------------------------------------------------
+.YESNOBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 4 是
+       button cancel  5 否
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.YESNOTITLE
+ 消息
+!------------------------------------------------------------
+.YESNOCANCBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 4 是
+       button         5 否
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.YESNOCATITLE
+ 消息
+!------------------------------------------------------------
+.CONTCANCEBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 3 继续
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.CONTCANTITLE
+ 消息
+!------------------------------------------------------------
+.INSCONCANBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button         6 检查
+       button default 3 继续
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCOCANTITLE
+ 消息
+!------------------------------------------------------------
+.INSCANBOX
+ dialogbox
+    body
+       text 10
+    end body
+
+    commands
+       button default 6 检查
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCANTITLE
+ 消息
+!------------------------------------------------------------
+.PROMPTBOX
+ dialogbox
+    body horizontal
+       text 1
+       edit 2
+    end body
+
+    commands
+       button default 3 确定
+       button cancel  4 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.EDITNAMEBOX
+ dialogbox
+    body horizontal
+       label    0 名称: 
+       edithelp maxchars=32 3 
+    end body
+
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROMPTTITLE
+ 设置值
+.PROMPTTEXT
+ 值
+.DEFEDITSTR
+ 编辑字符串
+.DEFPROMPTSTR
+ 字符串
+!------------------------------------------------------------
+! General strings
+.GENERALSTRS
+ <未命名>
+ 字串被缩短了%1个字符
+  没有发现
+  无效
+ 非法值。
+ 非法名称
+!------------------------------------------------------------
+.ERRCOUNTSTR
+ 编译中遇到%1处错误。
+ 编译中有%1个警告。
+ 编译中遇到%1处错误和%2个警告。
+ 应用程序:
+ 控制器:
+!--------------------------------------------------------------
+!                    Heap full error message
+!--------------------------------------------------------------
+.HEAPFULLMSG
+ 内存满，项目太大。请在建立向导里增大容量
+!--------------------------------------------------------------
+.CHNGRUNTSTR
+ 新建程序的版本已接收 操作失败
+!--------------------------------------------------------------
+.PROGRESSSTAT
+ dialogbox 消息
+   body vertical
+     frame horizontal 0
+       text width=100 height=2 2
+     end frame
+   end body
+   commands horizontal
+   button default cancel 1 取消
+   end commands
+ end dialogbox
+!-----------------------------------------------
+!-------------------------------------------------------------
+.STARTPROGREP
+!$$$ Move to dict later /jml
+!GoingSimulateStartProgress,
+ 正在进入测试模式
+!GoingOnlineWithDownloadStartProgress,
+ 正在下装并进入在线
+!GoingOnlineStartProgress,
+ 正在进入在线
+!GoingOfflineStartProgress,
+ 正在离线
+!CancelGoingSimulateStartProgress,
+ 取消进入测试模式
+!CancelGoingOnlineWithDownloadStartProgress,
+ 取消在线和下装
+!CancelGoingOnlineStartProgress,
+ 取消在线
+!CompileProjectStartProgress
+ 编译应用程序
+!CompileTypeStartProgress
+ 编译 POU 类型%1
+!CompileInstancesStartProgress
+ 为%1编译实例
+!RestoreDeselectedApplicationsStartProgress
+ 正在恢复被取消选定的应用程序
+!RestoreApplicationStartProgress
+ 还原程序 %1
+!DownloadProjectStartProgress
+ 下装项目到控制器%1
+!DownloadFinishStartProgress
+ 下装控制器%1已完成
+!DownloadAbortStartProgress
+ 下装控制器%1已中断
+!SimulateStartedStartProgress
+ 测试模式被启动
+!SimulateStoppedStartProgress
+ 测试模式被停止
+!OnlineStartedStartProgress
+ 你已进入在线模式!
+!OfflineStartedStartProgress
+ 你已离线!
+!CreateConfImageStartProgress
+ 给备份介质创建配置镜像
+!End
+!---------------------------------------------------------------
+.OWNERRORSTR
+   - 某些控制模块没有连接到任何"ScanGroup"
+   - 不完整的 "GroupData" 变量连接。
+   - 某些GroupData变量连接到多个"ScanGroup"
+   - 变量被几个系统改写
+   - 变量被程序导出
+ 以下控制模块没有连接到任何“群数据”变量
+ 以下“群数据”变量没有被连接到 任何“扫描组”控制模块：
+ 以下“群数据”变量连接到 多个“扫描组”控制模块：
+ 以下变量被多个系统写：
+ 以下变量将被PROG输出：
+   - 某些扫描组中的系统名称已被改变. \
+ 系统名字应声明为常数或 须初始化应用程序。.
+ 以下系统名称在扫描组中以改变：. \
+ 系统名字应声明为常数或 须初始化应用程序。:
+   - 某些扫描组中的系统名称不合法.
+ 下面扫描组中的系统名称无效：:
+ 程序执行
+ 以下分类有应用错误:
+ 无应用错误.
+ 以下分类有应用警告:
+ 无应用警告.
+!==============================================================================
+!                          KONFIGURATIONSF?????NSTER 
+!==============================================================================
+!-------------------------------------------------------------
+.ABOUTMENUSTR
+ 关于 %1
+!-------------------------------------------------------------
+.PRINTCODEMSG
+ 正在将应用程序信息写入文件
+.PRINTMEMMSG
+ 正在将应用程序内存写入文件
+.PRINTEXEDATAMSG
+ 正在将执行数据写入文件
+.PRINTIOMSG
+ 正在将I/O列表写入文件
+.PRINTRUNTIMEMSG
+ 正在将运行时间结构写入文件
+
+!-------------------------------------------------------------
+.SETUPVARERR
+ 未找到变量
+!---------------------------------------------------------------
+.SETUPVALERR
+ 非法值。
+!---------------------------------------------------------------
+.SETUPRANERR
+ 值必须在%1和%2之间
+!---------------------------------------------------------------
+.NOWRSYSSETUP
+ 警告！系统设置无法保存至文件
+!---------------------------------------------------------------
+.GENERALBOX
+ dialogbox 安装 - 常规
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 名称
+          text 7 值
+          text 8 默认值
+          text 9 描述
+
+          text 101 AlphabeticPresentationOfObjects
+          text 0 项目浏览器中的当前对象以字母排序. 假表明该对象以用户声明顺序排序.
+          text 102 PromptSaveEditorChanges
+          text 0 保存编辑器中的修改（例如转化到在线模式）前进行提示。　\n假值表示自动保存更改。
+          text 103 ShowWarningOnInstanceEdit
+          text 0 如果一条命令作用于库类型声明中的一个实例将会产生警告
+          text 104 LibraryFilePath
+          text 0 库的目录名。
+          text 105 CpuTimeQuota
+          text 0 Control Builder总共占用的CPU时间百分比。 (5-100)
+       end frame
+    end body
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.GRAPHICSBOX
+ dialogbox 安装 - 图形
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 名称
+          text 7 值
+          text 8 默认值
+          text 9 描述
+
+          text 0 HistoryDrawPeriod
+          text 0 几秒钟的更新过程 (0-60)
+          text 0 UserInteractTimeout
+          text 0 完成一个操作的最大时间，比如说放大操作 (0-3600)
+          text 0 InteractionWindowScaleFactor
+          text 0 可更改互对窗口大小的因素。 (0.1-10.0)
+       end frame
+    end body
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROGRAMBOX
+ dialogbox 安装 - 应用程序
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 名称
+          text 7 值
+          text 8 默认值
+          text 9 描述
+
+          text 0 EnableColdRetain
+          text 0 启用 "ColdRetain" 功能。
+          text 0 SaveColdRetainOnOfflineTransfer
+          text 0 从在线切换到离线时保存“ColdRetain”值
+          text 0 PromptBeforeSaveOnOfflineTrans
+          text 0 从在线切换到离线时，保存 "ColdRetain" 值的对话框。
+          text 0 MaxNoOfLoopsShown
+          text 0 正文中显示的循环的最大数。
+       end frame
+    end body
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.PROGRAMDLBOX
+ dialogbox 安装 - 应用程序下载
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 40 5
+          text 6 名称
+          text 7 值
+          text 8 默认值
+          text 9 描述
+
+          text 0 DisableDownLoad
+          text 0 禁止从此站下装。
+          text 0 ReauthenticateDL
+          text 0 用户在下载时必须获得一个新的证明
+          text 0 SuppressOnlineSelectionDialog
+          text 0 永远下装到项目里的所有控制器。
+          text 0 HWSimulationAllowed
+          text 0 允许硬件仿真.报警:仅允许用于发展系统中
+          text 0 EnableTaskAnalysisTool
+          text 0 启用任务分析工具.
+       end frame
+    end body
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.FILESBOX
+ dialogbox 安装 - 文件
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 名称
+          text 7 值
+          text 8 默认值
+          text 9 描述
+
+          text 0 RemoteWriteProtected
+          text 0 磁盘被禁止从远程系统通过 MMS 来写入文件
+       end frame
+    end body
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.TESTINSIMBOX
+ dialogbox 安装 - 测试模式转换
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 名称
+          text 7 值
+          text 8 默认值
+          text 9 描述
+
+          text 0 FiletransClientInTestMode
+          text 0 在测试模式里启用文件迁移客户端功能。
+          text 0 MMSVarClientInTestMode
+          text 0 在测试模式里启用 MMS 变量客户端功能。
+          text 0 OpenCommClientInTestMode
+          text 0 在测试模式里启用 OpenComm 变量客户端功能。 MMSVarClientInTestMode必须被激活
+          text 0 COMLIMasterInTestMode
+          text 0 在测试模式里启用 COMLI master 功能。
+       end frame
+    end body
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.INCABOX
+ dialogbox 安装 - Control Network
+    body vertical
+       frame horizontal columns = 4 verticalscroll horizontalscroll
+             maxwidth = 120 maxheight = 20 5
+          text 6 名称
+          text 7 值
+          text 8 默认值
+          text 9 描述
+
+          text 0 MMSProcessNumber
+          text 0 此应用程序中的MMS进程数
+       end frame
+    end body
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!------------------------------------------------------------
+.DOCCMDERR
+ 未找到文档阅读器。\n 请检查 Acrobat Reader 安装程序。
+.MANUALSDONOTEXIST
+ 未找到手册。\n 请重新安装 Control Builder 手册。
+!------------------------------------------------------------
+.SELVMHEADER
+ 变量内存
+!--------------------------------------------------------------
+.SELVCHEADER
+ 写导出变量
+!--------------------------------------------------------------
+.SELPINFHEAD
+ 应用程序信息
+!--------------------------------------------------------------
+! Edit colours dialog box
+.EDITCOLDBOX
+ dialogbox 编辑颜色
+    body horizontal columns=2
+       frame horizontal columns=6 verticalscroll height=11
+             1000 颜色
+          label 0 颜色
+          label 0 数目
+          label 0 Hue
+          label 0 Lum
+          label 0 Sat
+          space
+       end frame
+
+       group vertical
+          space
+          space
+          button 10 新建行
+       end group
+
+       space
+       space
+
+       frame horizontal columns=7 verticalscroll height=4
+             2000 闪烁颜色
+          label 0 颜色
+          label 0 数目
+          label 0 开-颜色
+          label 0 关-颜色
+          label 0 周期
+          label 0 比例
+          label 0 相位
+       end frame
+
+       group vertical
+          space
+          space
+          button 20 新建行
+       end group
+    end body
+
+    commands
+       button default 1 确定
+       button cancel  2 取消
+       button         3 更新颜色
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+.DUPLCOLNRSTR
+ 该颜色值已定义
+!-------------------------------------------------------------
+.SELECTCOLBOX
+ dialogbox 颜色
+    body vertical
+       frame vertical 80 系统颜色
+          label 70 基本颜色
+          group horizontal columns=10 20 
+          end group
+
+          space
+
+          label 60 背景颜色
+          group horizontal columns=10 30
+          end group
+
+          space
+
+          label 50 特殊颜色
+          group horizontal 
+             colorbutton 99 -1
+             label 51 透明的
+             space
+             colorbutton 98 -2
+             label 52 窗口背景
+             space
+             colorbutton 97 -3
+             label 53 前景色
+          end group
+       end frame
+
+       frame horizontal columns=10 40 用户颜色
+       end frame
+
+       checkbox 5 显示颜色索引
+    end body
+
+    commands
+       button cancel   1 取消
+       button default 10 编辑颜色
+    end commands
+ end dialogbox
+!-------------------------------------------------------------
+!======================================================================
+!
+! Begin COMMONSTRINGS.C
+!
+!----------------------------------------------------------------------
+.TYPESTRS
+ 控制模块类型
+ 图表类型
+ 数据类型
+ 功能块类型
+ 程序类型
+ 功能
+!----------------------------------------------------------------------
+.TYPECSTRS
+ 控制模块类型:
+ 图表类型:
+ 数据类型:
+ 功能块类型:
+ 程序类型:
+ 功能:
+!----------------------------------------------------------------------
+.TYPESSTRS
+ 控制模块类型
+ 图表类型
+ 数据类型
+ 功能块类型
+ 程序类型
+ 功能
+!----------------------------------------------------------------------
+.TYPENOTFSTRS
+ 控制模块类型%1未在连接的库中找到。
+ 在所连接的库中未发现图表%1.
+ %1数据类型未在连接库中找到。
+ 功能块类型 %1 未在已连接库中找到。
+ 链接库中找不到程序类型 %1
+ 功能 %1 未被找到。
+!----------------------------------------------------------------------
+.INSTCSTRS
+ 变量:
+ 参数:
+ 组件:
+ 控制模块:
+ 图表:
+ 功能块:
+ 程序:
+!----------------------------------------------------------------------
+.INST1CSTRS
+ 变量 %1:
+ 参数 %1:
+ 组件 %1:
+ 控制模块 %1:
+ 图表 %1:
+ 功能块 %1:
+ 程序 %1:
+!----------------------------------------------------------------------
+!
+! End COMMONSTRINGS.C
+!
+!======================================================================
+!
+! Begin UNDEFTYPE.C
+!
+!----------------------------------------------------------------------
+! 
+.UNDEFMODTYPE
+ 未定义的类型
+ !----------------------------------------------------------------------
+.RECURMODTYPE
+ 递归类型
+!----------------------------------------------------------------------
+!
+! End UNDEFTYPE.C
+!
+!======================================================================
+!
+! Begin SCANGROUP.C
+!
+!----------------------------------------------------------------------
+.SCANGRPPARID
+! Formal name for scan group parameter.
+ Scan_group
+!----------------------------------------------------------------------
+!
+! End SCANGROUP.C
+!
+!======================================================================
+!
+! Begin MODDIALOG.C
+!
+!----------------------------------------------------------------------
+.MODDIAERRMES
+ 无效的变量标识符或保留字。
+ 变量已经声明
+ 该类型在使用中，无法删除
+ 库中已声明类型名
+ 类型已经声明
+ 序列块发现错误。
+!----------------------------------------------------------------------
+!
+! End MODDIALOG.C
+!
+!======================================================================
+.INVALIDTASK
+ 无效任务名。
+!======================================================================
+!
+! Begin SELECTTYPEDIALOG.C
+!
+!----------------------------------------------------------------------
+.SELTYPENBOX
+ dialogbox
+    body
+       group horizontal columns=2
+          label 3
+          label 0 库/应用程序:
+          combobox sorted visiblerows=11 width=34 4 
+          listbox sorted visiblerows=13 5
+       end group
+       group horizontal columns=3
+          label 7 实例名:
+          edithelp 6
+       end group
+       checkbox 8 连接参数
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INVALNAMSTR
+ 名称%1无效
+!----------------------------------------------------------------------
+.SYSLIBNAMSTR
+ <系统>
+! The <> are necesary in order to get it sorted correctly
+.NAMEERRTEMPL
+ 名字%1已在使用或者不合法
+.NAMEERRSTR
+ 非法名称
+!----------------------------------------------------------------------
+!
+! End SELECTTYPEDIALOG.C
+!
+!======================================================================
+!
+! Begin SELECTDIALOG.C
+!
+!----------------------------------------------------------------------
+! Variable access dialog boxes
+.VARACCDBOX
+ dialogbox
+    body vertical
+       frame horizontal
+          label 0 数据类型:
+          listbox dropdown  40
+       end frame
+
+       listbox visiblerows=12 width=40 21
+
+       frame horizontal
+         button 4 扩展
+         button 5 折叠
+         space width=5
+         checkbox 6 全部展开
+       end frame
+
+       frame horizontal columns=2 verticalscroll height=3 30 
+          label 31 名称:
+          text  width=45 32
+          label 33 数据类型:
+          text  width=45 34
+          label 35 描述:
+          text  width=45 36
+       end frame
+    end body
+
+    commands
+       button default 1 替换
+       button         3 插入   
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.TOOLONGNASTR
+ 名称过长。
+.ALLTYPESSTR
+ 所有类型
+.VARIABLESTR
+ 变量信息
+!----------------------------------------------------------------------
+! Headers for variable access dialog boxes
+.VARACCHEADER
+ %1里的可用变量
+ 没有可用的此数据类型的变量
+!----------------------------------------------------------------------
+!
+! End SELECTDIALOG.C
+!
+!======================================================================
+!
+! Begin RESOLVEDIALOG.C
+!
+!----------------------------------------------------------------------
+.RESERRORHDR
+! vNoError
+ 检查
+! vWarning
+ 警告
+! vError
+ 错误
+!----------------------------------------------------------------------
+.RESERRORBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 2 检查
+       button         3 下一个
+       button         4 继续
+       button cancel  7 取消
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.CHKERRORBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 3 下一个
+       button cancel  7 取消
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.CHKERRORBDCL
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 5 声明
+       button         3 下一个
+       button cancel  7 取消
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INTRESERRBOX
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 1 继续
+       button cancel  6 编辑
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.INTRESERRDCL
+ dialogbox
+    body
+       text  11
+    end body
+
+    commands
+       button default 5 声明
+       button         1 确定
+       button cancel  6 编辑
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+!
+! End RESOLVEDIALOG.C
+!
+!======================================================================
+!
+! Begin MODSEARCH.C
+!
+!----------------------------------------------------------------------
+.FOUNDPARSTR
+! Used in SEARCH dialog box when a ParAlias is found.
+! To be concatenated with name of formal parameter.
+ 参数: 
+!----------------------------------------------------------------------
+!
+! End MODSEARCH.C
+!
+!======================================================================
+!
+! Begin MISMATCH.C
+!
+!----------------------------------------------------------------------
+.MISMATCHBOX
+ dialogbox 警告 - 更改分析
+    body
+       group horizontal columns = 2 10
+       end group
+       group horizontal
+          button 1 重命名...
+          button 2 结果 
+          button 6 帮助(H)
+       end group
+    end body
+
+    commands
+       button                5 继续 
+       button default cancel 3 下一个不匹配
+       button                4 下一个分析
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+.RENAMEBOX
+ dialogbox 重命名 
+    body
+       frame horizontal columns = 2 20
+       end frame
+    end body
+
+    commands
+       button default 1 确定 
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!----------------------------------------------------------------------
+! Strings for mismatch,rename,mismatch help dialogs
+.MISMATCHSTRS
+!AnalysisStr
+ 分析
+!KeepStr
+ 保留
+!OpSaveStr
+ ColdRetain
+!SCUScopeStr
+ 源代码单元:  
+!ModuleTypeScopeStr
+ 控制模块类型:
+!DiagramTypeScopeStr
+ 图表类型:
+!DataTypeScopeStr
+ 数据类型:
+!ProgramTypeScopeStr
+ 程序类型:
+!ApplicationTypeScopeStr
+ 应用程序:
+!FunctionBlockTypeScopeStr
+ 功能块类型:
+!SCUNotReachableStr
+ 库未被新应用程序使用。
+!SCUNotFoundStr
+ 应用程序 没有发现
+!SCUAlreadyStr
+ 应用程序 已被用于对比
+!ModuleTypeNotFoundStr
+ 控制模块类型 没有发现
+!ModuleTypeAlreadyStr
+ 控制模块类型 已被用于对比
+!DiagramTypeNotFoundStr
+ 图表类型 没有发现
+!DiagramTypeAlreadyStr
+ 图表类型 已被用于对比
+!ProgramTypeNotFoundStr
+ 程序类型 没有发现
+!ProgramTypeAlreadyStr
+ 程序类型 已被用于对比
+!FunctionBlockTypeNotFoundStr
+ 功能块  没有发现
+!FunctionBlockTypeAlreadyStr
+ 功能块 已被用于对比
+!DataTypeNotFoundStr
+ 数据类型 没有发现
+!DataTypeAlreadyStr
+  数据类型 已被用于对比
+!DataTypeKindChangedStr
+ 数据类型从 Struct 更改成 Array 或反之
+!ModuleNotFoundStr
+ 控制模块 没有发现
+!ModuleDuplicateStr
+ 控制模块 有重名所以无法匹配
+!ModuleAlreadyStr
+ 控制模块 已被用于对比
+!ModuleWrongTypeStr
+ 模块已经改变了模块类型
+!ModuleKindChangedStr
+ 模块从单次模式变为可重复模式，或者相反操作
+!DiagramNotFoundStr
+ 图表 没有发现
+!DiagramDuplicateStr
+ 图表 有重名所以无法匹配
+!DiagramAlreadyStr
+ 图表 已被用于对比
+!DiagramWrongTypeStr
+ 已更改图表类型.
+!DiagramKindChangedStr
+ 图表已从单一类型改成重复使用类型,反之亦然.
+!ProgramNotFoundStr
+ 程序 没有发现
+!ProgramAlreadyStr
+ 程序 已被用于对比
+!ProgramWrongTypeStr
+ 程序类型已改变
+!ProgramKindChangedStr
+ 程序已从单次型转为复用型或反之
+!FunctionBlockNotFoundStr
+ 功能块 没有发现
+!FunctionBlockAlreadyStr
+ 功能块 已被用于对比
+!FunctionBlockWrongTypeStr
+ 功能块已更改类型。
+!VariableNotFoundStr
+ 变量 没有发现
+!VariableDuplicateStr
+ 变量 有重名所以无法匹配
+!VariableAlreadyStr
+ 变量 已被用于对比
+!VariableWrongTypeStr
+ 变量已经更改数据类型
+!VariableStateChangedStr
+ 变量状态属性被改变
+!StructComponentNotFoundStr
+ 组件 没有发现
+!StructComponentAlreadyStr
+ 组件 已被用于对比
+!StructComponentWrongTypeStr
+ 组件已更改数据类型。
+!StructComponentStateChangedStr
+ 组件状态属性已更改。
+!ArrayComponentWrongTypeStr
+ 数组已更换数据类型
+!ParameterNotFoundStr
+ 参数 没有发现
+!ParameterAlreadyStr
+ 参数  已被用于对比
+!ParameterWrongTypeStr
+ 参数数据类型已改变。  
+!ParameterKindChangedStr
+ 参数已改变转移类型
+!RenameSCUStr
+ 源代码单元:
+!RenameModuleTypeStr
+ 控制模块类型:
+!RenameDiagramTypeStr
+ 图表类型:
+!RenameProgramTypeStr
+ 程序类型:
+!RenameFunctionBlockTypeStr
+ 功能块类型:
+!RenameDataTypeStr
+ 数据类型:
+!RenameVariableStr
+ 变量:
+!RenameStructComponentStr
+ 组件:
+!RenameParameterStr
+ 参数:
+!RenameModuleStr
+ 控制模块:
+!RenameDiagramStr
+ 图表:
+!RenameFunctionBlockStr
+ 功能块:
+!RenameProgramStr
+ 程序:
+!ModuleNameStr
+ 控制模块 名称:
+!DiagramNameStr
+ 图表 名称:
+!ProgramNameStr
+ 程序 名称:
+!FunctionBlockNameStr
+ 功能块 名称:
+!VariableNameStr
+ 变量 名称:
+!StructComponentNameStr
+ 组件 名称:
+!ArrayComponentNameStr
+ 数组数据类型:
+!ParameterNameStr
+ 参数 名称:
+!OldModuleTypeStr
+ 旧的 控制模块类型:
+!NewModuleTypeStr
+ 新 控制模块类型:
+!OldDiagramTypeStr
+ 旧的 图表类型:
+!NewDiagramTypeStr
+ 新 图表类型:
+!OldProgramTypeStr
+ 旧的 程序类型:
+!NewProgramTypeStr
+  新 程序类型:
+!OldFunctionBlockTypeStr
+ 旧的 功能块类型:
+!NewFunctionBlockTypeStr
+ 新 功能块类型:
+!OldDataTypeStr
+ 旧的 数据类型:
+!NewDataTypeStr
+ 新 数据类型:
+!ObjectStr
+ 对象 名称:
+!Mismatchstr
+ 不匹配:
+!MismatchHelpHeader
+ 不匹配的结果 
+!AllPULost
+ 所有控制模块，程序，功能块里的所有变量 程序里声明的数据类型将丢失。
+!AllModuleLost
+ 所有实例里的所有变量 及其所有子实例将丢失。
+!AllDatatypeLost
+ 数据类里的所有变量将丢失。
+!SubLost
+ 实例及其子实例里的所有变量将丢失。
+!SubAlreadyLost
+ 实例及其子实例里的所有变量 以及以前匹配的实例将丢失。
+!VariableLost
+ 变量值丢失
+!VariableAlreadyLost
+ 变量值和以前匹配的变量值 将会丢失
+!ParameterLost
+ 参数可能导致“盲”
+!ParameterAlreadyLost
+ 此参数与以前匹配的参数 可能导致"盲"
+!----------------------------------------------------------------------
+!
+! End MISMATCH.C
+!
+!======================================================================
+!
+! Begin MODSET.C
+!
+!----------------------------------------------------------------------
+.VISIBLERR
+ 类型%1在应用单元%2中不可观
+!----------------------------------------------------------------------
+!
+! End MODSET.C
+!
+!======================================================================
+!
+! Begin TYPESHMI.C
+!
+!----------------------------------------------------------------------
+.DELTYPEMSG
+ 您确认要删除类型？
+.DELETE
+ 删除
+.RENAME
+ 重命名
+.NEWNAMETEMPL
+ 此类型被实例%1使用，类型名也将在实例中更改
+.ONLYFIRST
+ 仅显示了前100例
+.TYPEOPENED
+ 类型%1在一个编辑器中被打开。删除类型前关闭编辑器
+.NEWSTR
+ 新
+.FBTYPESTR
+ FB 类型
+!----------------------------------------------------------------------
+.RENAMEBOX
+  dialogbox 重命名
+    body horizontal columns = 2
+      label 0 旧名称:
+      text 3
+      label 0 新名称:
+      edit  maxchars=32 4
+    end body
+    commands horizontal
+      button default  1 确定
+      button cancel   2 取消
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+.NEWTYPE
+  dialogbox 新建%1
+    body horizontal columns = 2
+      label 0 名称:
+      edit width=40 maxchars=32 11
+    end body
+    commands horizontal
+      button default  1 确定
+      button cancel   2 取消
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+.POUINFOBOX
+ dialogbox POU 信息
+    body horizontal columns=2
+       label 11 名称:
+       text  12
+       label 13 模块路径:
+       text  14
+       label 15 POU类型:
+       text  16
+       label 17 执行系统:
+       text  18
+       label 19 任务名:
+       text  20
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+!--------------- ISStatus -----------------------------------------------
+.ISSTATUS
+ 确定
+!--------------- ISDataPOUStatus ----------------------------------------
+
+.ISDATAPOUSTATUS
+ 找不到具有Init_Val属性的POU实例%1
+ POU实例%1具有语法错误的Init_Val属性
+ POU实例含有错误的Init_Val属性
+ POU实例含有语法错误的Init_Val属性
+ POU 实例 %1 不可有 Init_Val 性能应为它在 SIL 应用程序中。
+
+
+!--------------- ISInitValStatus ----------------------------------------
+
+.ISINITVALSTATUS
+ 在Control Builder中找不到具有Init_Val属性值的变量/参数%1
+ 变量 %1 的 Init_Val 属性值有语法错误。
+ 变量%1的Init_Val属性值是错误的类型
+ 变量%1不允许具有Init_Val属性值
+ Init_Val属性的变量/参数名%1语法错误
+ 变量/参数%1已具有一个Init_Val属性值
+
+!------------------------------------------------------------------------
+.PROTECTIONANDSCOPEPROPERTIESBOX
+ dialogbox %1 的保护和范围
+   body
+     group vertical
+       group horizontal columns=2
+         frame 0 保护
+           checkbox 10 保护的
+           group horizontal
+             label 500
+             checkbox 15 子对象在PPA中可见
+           end group 
+           checkbox 20 隐藏
+         end frame
+         frame 0 范围
+           radiobutton 30 私有的
+           radiobutton 40 公共的
+         end frame
+       end group
+       frame 100 保留
+         label 101 本单元已保留'%1'
+       end frame
+     end group
+   end body
+   commands horizontal
+     button default 1 确定
+     button cancel  2 取消
+     button 102 删除保留
+   end commands
+ end dialogbox
+!------------------------------------------------------------------------
+!
+! End TYPESHMI.C
+!
+!======================================================================
+!------------------------------------------------------------
+.OPID
+ :=
+ IF
+ THEN
+ ELSIF
+ ELSE
+ END_IF
+ WHILE
+ DO
+ END_WHILE
+ REPEAT
+ UNTIL
+ END_REPEAT
+ FOR
+ TO
+ BY
+ END_FOR
+ EXIT
+ RETURN
+ -
+ NOT
+ :=
+ +
+ -
+ *
+ /
+ **
+ MOD
+ =
+ >
+ <
+ <=
+ >=
+ <>
+ SHL
+ SHR
+ ROL
+ ROR
+ AND
+ &
+ XOR
+ OR
+ CASE
+ OF
+ END_CASE
+ ,
+ :
+ ..
+!--------------------------------------------------------------
+.USAGESTR
+ 读写: 
+ 读入: 
+ 写入: 
+ 用在: 
+ 变量:
+ 文字值:
+! Scale factors for selecting proper seq and equa drawing.
+.ICONLIMIT
+ 0.0006
+!--------------------------------------------------------------
+.FORKDESTBOX
+ dialogbox
+    body horizontal
+       label 0  目的
+       combobox dropdown 3
+    end body
+
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SETDESTSTR
+ 设置目标
+!--------------------------------------------------------------
+.NOTVALNAMSTR
+ 名称无效
+!--------------------------------------------------------------
+.PRSEQELENAME
+ 重命名序列元素
+!--------------------------------------------------------------
+.FILETRANSMS
+ 本地系统无存储空间。
+ %1 远程系统标识符的本地系统标识符无效。
+ 远程系统标识符 %1 不正确。
+ 远程系统 %1 不支持MMS文件传输
+ 该文件与远程系统%1的连接忙
+ 发往远程系统%1时，未知的MMS错误
+ %1中不存在%2，%3
+ 无法在%1中创建%2和%3
+ %1中的文件系统已满
+ 写入 %1 里的 %2 %3 时出现错误。
+ 阅读 %1 里的 %2 %3 时出现错误。
+ 远程系统 %1 内存不足
+ 从%1接收到的文件标识已被破坏
+ 来自远程系统%1的未知MMS服务错误
+ 来自远程系统%1的未知的MMS拒绝原因
+ 连接%1远程系统通讯连接错误。
+ 无本地端口对应远程系统%1
+!--------------------------------------------------------------
+.LOCALSYSTEM
+ 本地系统
+!--------------------------------------------------------------
+.FILETYPEMESS
+ 项目文件
+ 程序单元文件
+ 分布数据文件
+ 程序单元和"冷保留"文件
+ 正式程序单元文件
+ 正式程序单元文件
+ 保留文件
+ "ColdRetain" 文件
+ "安全" 文件
+ "Retain" 文件
+ 日志文件
+ "保存变量" 文件
+ "域" 文件
+ 系统程序文件
+ 用户文件
+ 字节文件
+ 块文件
+!------------------------------------------------------------
+.SYSONNETWBOX
+! Dialog to show systems on network
+ dialogbox 远程系统
+    body vertical
+      group horizontal
+       text 0 远程系统:
+       listbox visiblerows = 12 2
+!       button default 1 信息
+      end group
+      frame horizontal
+      label 0 网络地址:
+        text minwidth=15 4
+!      label 0 MMS Support:
+        text minwidth=15 5
+      end frame
+     end body
+    commands horizontal
+       button default 3 确定
+       button cancel  6 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FIRMWAREDOWNLOADBOX
+ dialogbox 固件下装
+    body
+        frame horizontal columns=5 11 模块更新
+            label minwidth=5 0 位置
+            label minwidth=10 0 单位:
+            label minwidth=10 0 当前固件
+            label minwidth=10 0 装载固件
+            label minwidth=15 0 状态:
+        end frame
+        frame horizontal 
+           text minwidth=55 20 这些文件将加载到控制器
+        end frame
+    end body
+    commands
+        button default  1 继续
+        button  cancel  2 关闭
+    end commands
+ end dialogbox 
+!--------------------------------------------------------------
+.NOSYSFOUND
+ 没有找到远程系统
+!--------------------------------------------------------------
+.RSYSNVARDBOX
+ dialogbox MMS变量
+    body vertical
+       group horizontal columns=2
+          label 0 远程系统:
+          text  2
+       end group
+       label 0 MMS变量:
+       listbox visiblerows = 12 3
+    end body
+
+    commands horizontal
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.NOVARFOUND
+ 在远程系统%1中没有发现MMS变量 
+!--------------------------------------------------------------
+.RSYSASSIDBOX
+ dialogbox MMS连接
+    body
+       group horizontal columns=3
+          label 0 系统
+          text  10 
+          label 0 有以下 MMS 连接:
+       end group
+       frame horizontal columns=11 height=8 verticalscroll 20
+          label minwidth=6  0 功能
+          label minwidth=21 0 目的
+          label minwidth=8  0 使用方法
+          label minwidth=10 0 事务处理
+          label minwidth=4  0 事务处理
+          label minwidth=4  0 最大 事务处理
+          label minwidth=4  0 ICR
+          label minwidth=4  0 IR
+          label minwidth=4  0 IW
+          label minwidth=4  0 ER
+          label minwidth=4  0 EW
+       end frame
+       frame horizontal 0 摘要
+          text 30 %1 MMS 连接。%2处理。
+       end frame
+       frame horizontal 0 种类
+          radiobutton 40 按年龄
+          radiobutton 41 按交易
+       end frame
+       group horizontal
+          frame horizontal 0 显示功能
+             checkbox 51 客户端
+             checkbox 52 服务器
+          end frame
+          frame horizontal 0 显示用法
+             checkbox 53 变量
+             checkbox 55 工具
+          end frame
+       end group
+    end body
+    commands horizontal
+       button 1 MMS变量
+       button default cancel 2 关闭
+       button 3 更新
+       button 4 帮助(H)
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.CLIENTSTR
+ 客户端
+.SERVERSTR
+ 服务器
+.VARIABLESTR
+ 变量
+.TOOLSTR
+ 工具
+.AESTR
+ 变量（AE）
+
+!--------------------------------------------------------------
+! Firmware download messages
+!--------------------------------------------------------------
+.SENDINGFILE
+ 正在发送文件
+!--------------------------------------------------------------
+.DOWNLOADCOMPLETE
+ 固件下装完成。正在更新控制器
+!--------------------------------------------------------------
+.UPDATEFAILED
+ 固件更新失败
+!--------------------------------------------------------------
+.WARNING
+ 警告
+!--------------------------------------------------------------
+.SEARCHBOX
+ dialogbox 查找
+    body horizontal
+       label 0 搜索:
+       edit  3
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.SUBSTBOX
+ dialogbox 替换
+    body horizontal columns = 2
+       label 0 搜索:
+       edit  3
+       label 0 替换用:
+       edit  4
+    end body
+    commands horizontal
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDBOX
+ dialogbox 查找
+    body horizontal columns = 2
+       label 0 搜索:
+       text  4
+    end body
+    commands horizontal
+       button default 1 查找下一个
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDBOX2
+ dialogbox 使用方法
+    body horizontal columns = 2
+       label 0 搜索:
+       text  4
+    end body
+    commands horizontal
+       button default 1 查找下一个
+       button         3 下一个控制模块
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.FOUNDREPBOX
+ dialogbox 替换
+    body horizontal columns = 2
+       label 0 搜索:
+       text  5
+       label 0 替换用:
+       text  6
+    end body
+    commands horizontal
+       button default 1 查找下一个
+       button         3 替换
+       button         4 替换所有
+       button cancel  2 关闭
+    end commands
+ end dialogbox
+!--------------------------------------------------------------
+.INVSEARCHSTR
+ 搜索字符串中有错误语法。
+!--------------------------------------------------------------
+.INVREPLACSTR
+ 替换字符串中有错误语法。
+!--------------------------------------------------------------
+.NOOFFOUNDSTR
+ %1目标找到
+!--------------------------------------------------------------
+.FINDSTR
+ 查找
+.REPLACESTR
+ 替换
+.NOTFOUNDSTR
+ %1未被发现
+.NOOFREPLACEDSTR
+ %1替换已完成。
+!--------------------------------------------------------------
+!===========================================================================
+.SAVEEDITDSTR
+ 正在停止本地应用程序
+.SAVEERRODSTR
+ 错误
+!--------------------------------------------------------------
+.SECURESTRING
+ %2应用程序里的%1未能被保存。
+ 错误代码:
+ ColdRetain
+ "安全"
+ 您是否要为应用程序%1保存 "ColdRetain" 数值?
+!--------------------------------------------------------------
+.SAVECOLDRETAIN
+ dialogbox 保存 "ColdRetain" 值"
+   body
+     text  0 按下“save”按钮保存“ColdRetain”值
+     space
+     label 0 状态:
+     listbox visiblerows=6 minwidth=40 3
+   end body
+   commands
+     button default 1 保存
+     button cancel  2 关闭
+   end commands
+ end dialogbox
+!--------------------------------------------------------------
+.STARTVALERR1
+ 分析初始数值错误。
+!----------------------------------------------------------------------
+.STARTVALERR2
+ 设置初始数值错误。
+!--------------------------------
+! Strings used in DISTRIBUTION
+!--------------------------------
+.LOCSTATSTR
+ 本地站
+!
+!--------------------------------
+.DISTRDOWNSTR
+ 下载
+!
+!--------------------------------
+! Remark strings start
+!--------------------------------
+!
+.PRGCAPPLSTR
+ 应用程序已改变并将执行改变。
+!
+!--------------------------------
+.PRGCNAPPLSTR
+ 应用程序已更改但并不会执行。
+!
+!--------------------------------
+.PRGNCHANGSTR
+ 应用程序未被更改
+!
+!--------------------------------
+.PRGWIINITSTR
+ 程序将会冷启动
+!
+!--------------------------------
+.STATWICONSTR
+ 该站将与公共应用程序版本相连
+!
+!--------------------------------
+.STATWINOCSTR
+ 该站无法与公共应用程序版本相连
+!
+!--------------------------------
+.STATWICRESTR
+ 该站将创建新的公共应用程序版本
+!
+!--------------------------------
+.NOCONNSTR
+ 没有连接
+!
+!--------------------------------
+.DOWNNOPOSSTR
+ 不可下装
+!
+!--------------------------------
+.KEPFILMISSTR
+ 程序需被选中,因为用于分析需要的文件(.rrs和/或.cdo)丢失或者版本/SIL级别出错.
+!
+!--------------------------------
+.INTERUPTEDWN
+ 上次程序下装未能完成
+!--------------------------------
+.WRITEKEEPERR
+ 错误写入 "ColdRetain" 和/或 "Retain" 文件。 继续?
+!
+!--------------------------------
+! Remark strings end
+!--------------------------------
+.SIMANALYSSTR
+ 测试模式分析
+!
+!--------------------------------
+.ONLINEANASTR
+ 在线分析-下载并在线
+!
+!--------------------------------
+.ONLINENODOWN
+ 在线分析-不下载并在线
+!
+!--------------------------------
+.YES
+ 是
+!
+!--------------------------------
+.NO
+ 否
+!
+!--------------------------------
+.INIT
+ 初始化
+!
+!--------------------------------
+.COLD
+ 冷
+!
+!--------------------------------
+.WARM
+ 热的
+!
+!--------------------------------
+.EVAL
+ 评估
+!
+!--------------------------------
+.UPGRADE
+ 升级
+!
+!--------------------------------
+.NAMEHDR
+ 名称
+!
+!--------------------------------
+.SILHDR
+ SIL
+!
+!--------------------------------
+.CHANGEDHDR
+ 已更改
+!
+!--------------------------------
+.APPLYHDR
+ 应用
+!
+!--------------------------------
+.SYSIDHDR
+ SysID
+!
+!--------------------------------
+.APPLICATION
+ 应用程序
+!
+!--------------------------------
+.PROJECT
+ 项目
+!
+!--------------------------------
+.DELTEXT     
+ 要下载的项目与控制器中的项目不同。\n必须先重置控制器，然后才能下载。\n\n通过按下重置按钮超过3秒钟，重置列出的控制器。 \n\n注意：如果使用软控制器，则必须手动重启。
+!
+!--------------------------------
+.DWLDFRFRSTTM
+ 首次下装
+!
+!--------------------------------
+.NONE
+ 无
+!
+.CHANGED
+ 已更改
+!
+.NOTCHANGED
+ 没有改变
+!
+.EMPTYCNTRLLR
+ 控制器是空的
+!
+.NAMEOFPRJECT
+ 控制器中的工程名
+!
+!--------------------------------
+.ONLINENOTPOS
+ 不可进入在线。
+!
+.ACCESSVAR
+ 访问变量
+!
+.IOCONN
+ I/O 连接
+!
+.MISSHWDEF
+ 项目中所有必需的硬件定义文件都不存在。要想继续， 请插入丢失的硬件定义文件。 或者将受影响的控制器复位。
+!
+.DLNASIM
+ 不兼容的仿真标记
+!
+!--------------------------------
+!
+! Remarks for DistrWarningDlg
+!
+.NOCONNECTION
+ 没有连接
+!
+.DIFFVER
+ 仅当与控制器配置版本相同时，\n才能在线。
+!
+.SELREVERTED
+ 恢复选择。
+!
+.SELNOTALLOW 
+ 应用程序程序不能选择在线模式，因为控制器中有不同版本该应用程序程序。
+!
+.VMTCTASETT
+ 不允许更改CTA/VMT应用程序的设置。
+!
+.WRONGSYSID
+ 项目中控制器的系统属性不正确。
+!
+!--------------------------------
+.WILLEXCAVSTR
+ 公共应用程序版本将不在以下控制器上运行：
+!
+!--------------------------------
+.DISTNOTOKSTR
+ 公共应用程序版本将不在以下控制器上运行：
+!
+!--------------------------------
+.NOCONNECT1
+ 没有和..连接:
+!--------------------------------
+.NOCONNECT2
+ 没有连接，正在尝试连接: 
+!--------------------------------
+.NOCONNECT3
+ 没有连接，还在尝试连接:
+!--------------------------------
+.CONTACT1
+ 联系: 
+!--------------------------------
+.CONTACT2
+ 联系，尝试: 
+!--------------------------------
+.CONTACT3
+ 联系, 继续尝试: 
+!--------------------------------
+.ERROR1
+ 未知错误: 
+! Simple message boxes
+!--------------------------------
+.OKDIALOGHEADER
+ 在线/测试模式消息
+.ANOTHSYSMSG
+ 其它系统正在下装或控制器已停止。请稍后再试。
+.REACHMSG
+ 不能达到控制器 (%1)。请检查控制器连接。
+.INCOMPATMSG
+ 控制器(%1)有不相容固件版本。请用新固件更新 控制器。
+.CONTACTBROKEN
+ 和控制器 (%1) 的连接已断开。请检查和控制器的连接。
+.MEMUNAVAILABAL
+ 工程不可被下装到控制器(%1)因为 控制器里没有足够内存。
+.SIMPLESTLIMITS 
+ 此产品的工程太复杂
+.SIMPLESTLIMIT2 
+ 此产品的工程太复杂。要求一个应用程序
+.SIMPLESTLIMIT3 
+ 此产品的工程太复杂。库太多
+.SIMPLESTLIMIT4 
+ 此产品的工程太复杂。要求一个控制系统
+.SIMPLESTLIMIT5 
+ 此产品的工程太复杂。只允许一个站
+.SIMPLESTLIMIT6 
+ 此产品的工程太复杂。要求一个发布对象 
+.STARTLIMIT1
+ 此产品的工程太复杂 控制系统太多
+.STARTLIMIT2
+ 此产品的工程太复杂 应用程序太多
+.STARTLIMIT3
+ 此产品的工程太复杂 一个控制器连接了太多任务
+.STARTLIMIT4
+ 此产品的工程太复杂 一个应用中有太多程序
+.STARTLIMIT5
+ 该产品的项目太复杂. 在一个程序中包含过多图表.
+.STARTLIMIT6
+ 此产品的工程太复杂 一个控制器连接了太多应用
+.STARTLIMIT7
+ 此产品的工程太复杂 不允许控制模块。
+.STARTLIMIT9
+ 已达到控制器中 SIL3 应用程序的最大数量！\n无法将更多 SIL3 应用程序添加到该控制器。 
+.ONLINENOTPOSS
+ 不可在线，因为控制器里没运行此版本的项目。
+.CTRLISOPCORCB
+ 项目中至少一个控制器配置要有 IP 地址 属于一个Control Builder 或者OPC服务器
+!
+!--------------------------------
+! STRINGS END
+!--------------------------------
+!--------------------------------
+! Old time dialogs used in DISTRIBUTION
+!--------------------------------
+.RESERVERRBOX
+ dialogbox 警告！控制器预留失败
+   body
+     text 10 应用程序/控制器配置（%1）无法下载
+     frame horizontal maxheight=13 verticalscroll columns=2
+         11 由于以下控制器已停止或被占用，不能下载程序
+       label 0 系统:
+       label 12 占用:
+     end frame
+   end body
+   commands
+     button cancel  2 中断在线操作
+   end commands
+ end dialogbox
+
+!--------------------------------
+! From MachineAdm
+!--------------------------------
+.MACHINEERROR
+! Error texts to operator
+! System Error string
+ 系统错误.
+! Object exists string
+ 正在从其它系统下装系统。
+! Incompatible string
+ 系统里不兼容版本。
+! DownloadReject error string
+ MMS服务丢失：对系统无法下载
+! ServiceReject error string
+ 内部错误: 拒绝
+! Object not exists string
+ 应用程序不在控制器里。
+! Remote memory unavailable string
+ 下装已中断。查看控制器记录信息。
+! PH missing string
+ 下载硬件模块的通讯协议在控制器固件中丢失
+! Internal error string
+ 内部通讯错误
+! Link error string
+ 链接系统通讯错误
+! Connection error string
+ 引用同一个物理控制器。
+!NonUniqueControllerWarningStr
+ 无法与系统建立连接
+! Code error string
+ 对以下目标未生成机器码:
+! synchronized error string
+ "ScanGroupExtension" 未同步到 "ScanGroupControl" 控制模块。
+! Download warning string
+ 注意！应用程系将被下载到系统中
+! Local memory unavailable string
+ 无本地内存可用。
+! State error string
+ 系统中最后下装应用程序时出现错误
+! Scheduler error string
+ 内部错误: 调度程序
+! Network interface warning string
+ 网络接口没有正确建立
+! InvalidSourceAddress error string
+ 无本地端口对应远程系统
+! Restart warning string
+ 注意！应用程系将在系统中重启。
+! Startvaluestring: Keep
+               变量值将被保留
+! Startvaluestring: Secure
+               Secure值被使用
+! Startvaluestring: SecureAndOpSave
+               Secure和“ColdRetain”值将被使用
+! Startvaluestring: OpSave
+               "ColdRetain" 数值将被使用
+! Startvaluestring: Init
+               初始值将被使用。
+! Continue string
+ 继续?
+! Download string
+ 下载?
+! Cold start string
+ 冷启动?
+! Safety rejected string
+ 由于安全原因拒绝服务。请阅读系统日志！
+! Access denied string
+ 被拒绝访问系统
+!
+ 分配过程中发生无法处理的错误
+! BUMDistributionFailed
+ 分发到备份介质时出错！
+ 
+!--------------------------------
+! STATE STRINGS
+!--------------------------------
+.NOTINUSESTR
+ 没有使用
+!--------------------------------
+.UNRUNSTR
+ 不可运行
+!--------------------------------
+.NONEXISTSTR
+ 不存在
+!--------------------------------
+.IDLESTR
+ 空闲的
+!--------------------------------
+.RUNNINGSTR
+ 运行
+!--------------------------------
+.STOPPEDSTR
+ 停止
+!--------------------------------
+.STOPPINGSTR
+ 正在停止
+!--------------------------------
+.STARTINGSTR
+ 正在启动
+!--------------------------------
+.RESETTINGSTR
+ 正在复位
+!--------------------------------
+.RESUMINGSTR
+ 正在恢复
+!-------------------------------- 
+.RUNNINGACTIVESTR
+ 正在运行主动
+!-------------------------------- 
+.RUNNINGPASSIVESTR
+ 正在运行被动
+!-------------------------------- 
+!-------------------------------- 
+!-------------------------------- 
+.DOWNLOAD
+ 下载
+.WARMRESTFAIL
+ 警告：热启动将失败。
+!
+!-------------------------------- 
+!-------------------------------- 
+.OTHERPROJECT
+ 一个未知项目被下装到控制器。在线前 必须下装新项目。
+!
+! Distribution remarks for SattProg and SattLine
+!
+.DISTRREMARKS
+!NoConnectionDistrRemark
+ 没有连接
+!SomeSysNoConnectionDistrRemark,
+ 与一些系统没有连接
+!MMSServiceErrorDistrRemark
+ MMS服务出错
+!SomeSysMMSServErrorDistrRemark,
+ 和一些系统的MMS服务出错
+!IncompatibleSLDistrRemark
+ 不兼容 Control Builder 版本
+!SomeSysIncompSLDistrRemark,
+ 部分系统里不兼容控制器版本
+!ContInBootStateDistrRemark
+ 系统在引导状态
+!SomeContInBootStateDistrRemark,
+ 某些系统处在引导状态
+!CouldNotResolveAlias 
+ 不能解决别名
+!
+! OtherCompileStation
+ 控制器中的目标已经从另一个工作站中下载
+!ForceDownloadDistrRemark
+ 下装强制
+!OldProjectRemark
+ 控制器中有其他项目正在运行
+!FirstDwnldCtrlDistrRemark
+ 首次下装
+! NoAppAfterDwldDistrRemark 
+ 程序在下装后将不在任何控制器运行。
+! NoAppBeforeDwldDistrRemark
+ 程序第一次被下装
+!ExecutesCommonVersionDistrRemark
+ 执行公用应用程序版本
+!WrongVersionWillExecDistrRemark
+ 将执行错误的应用程序版本
+!SomeSysWrongVersExecDistrRemark,
+ 将在某些系统中执行错误的应用程序版本
+!SysNotExecProgramDistrRemark
+ 没有应用程序执行
+!SomeSysNotExecProgramDistrRemark,
+ 程序将在某些系统里不能运行
+!NoTaskDistrRemark
+ 系统中没有任务
+!SomeSysNoTaskDistrRemark,
+ 某些系统没有任务
+!NotDistrVersionLocalDistrRemark
+ 本地站将不执行公用应用程序版本。
+!
+!DownloadDisableDistrRemark
+ 下装停用  
+!ForceNoDownloadDistrRemark
+ 没有强制下载
+!DownloadNotPossibleDistrRemark
+ 不可下装
+!SomeSysDownloadNotPDistrRemark,
+ 不可下装部分系统
+!RedMemDownloadDistrRemark
+ 减少内存下载
+!WrongProgramVersionDistrRemark
+ 执行错误的应用程序版本
+!EditModeDistrRemark
+ 在编辑模式下的站
+!SimulateModeDistrRemark
+ 在测试模式下的站
+!AutostartDistrRemark
+ 由于自动启动，系统跳过
+!IllegalDownloadDistrRemark
+ 此产品不允许下装
+!OLUNotAllowedChangedContrConfigRemark
+ 由于控制器配置的更改了，不允许进行在线升级。
+!OLUNotPermittedDeviceRemark
+ 由于控制器配置中的设备类型非法，不允许进行在线升级。
+!IllegalDownloadSimulationRemark
+ 不兼容的仿真标记
+!DownloadSimulationFlagSetRemark
+ 下载到一个仿真控制器
+!SomeSysWrongVersForDeselectDistrRemark
+ 所有控制器不包含公用版本。为使能够在线， 组态文件和应用程序需要下装到所有 控制器, 以便创建一个公用版本。
+!
+!RetainFailDistrRemark
+ 保留将失败
+!ColdRetainFailDistrRemark
+ "ColdRetain" 将失败
+!RetainColdReteinFailDistrRemark
+ 保留和冷保留将失败
+!RetainWrongVersionDistrRemark
+ 错误的应用程序版本
+!RetainNoVersionDistrRemark
+ 应用程序不存在
+!RetainWrongStateDistrRemark
+ 程序已停止且并不完整
+!RetainFileMissingDistrRemark
+ 保留文件丢失
+!ColdRetainFileMissingDistrRemark
+ 缺少 "ColdRetain" 文件
+!RetainColdRetainFileMissingDistrRemark
+ 保留和冷保留文件丢失
+!RetainDisabledDistrRemark
+ 保留停用
+!ColdRetainDisabledDistrRemark
+ "ColdRetain" 停用
+!RetainColdRetainDisabledDistrRemark
+ 保留和冷保留停用
+!
+!PartlyInvalidLocalDistrRemark
+ 该编译站的部分非法在线显示
+!BlindLocalDistrRemark
+ 此编译站里有无效在线显示
+!HWConfStopTimeAffectedDistrRemark 
+ 警告！由于硬件组态的更改，在下装过程中应用程序将会暂时停止。 。
+!HWConfMajorChangeDistrRemark 
+ 警告！由于硬件组态的更改，与某些硬件的通讯将会暂时中断。
+!HWConfMinorChangeDistrRemark
+ 注意！由于硬件组态的更改，应用程序的执行可能受到影响。
+!NoDistrInfoDistrRemark
+ 应用程序不在系统中
+!HWDefFileMissingDistrRemark
+ 缺少硬件定义文件
+!UserAccessDeniedRemark
+ 不允许下载
+!SILLevelChangedAppRemark
+ 警告! SIL 级别已更改, 应用程序将会冷启动
+!MaxNbrOfForcesHasDecreasedRemark
+ 警告!已减少强制的最大数量.若再有其他强制信号控制器将关断!
+!FilesMissingForDeselectDistrRemark
+ 程序需被选中,因为用于分析需要的文件(.rrs和/或.cdo)丢失或者版本/SIL级别出错.
+!LEGFailDistrAppDistrRemark
+ 不允许评估分配给几个控制器的应用程序。
+!LEGNotPossibleForAppInCSDistrRemark
+ 因为控制器配置更改了，无法评估应用程序。只允许更改I/O连接，以及要评估的应用程序的变量访问。
+!LEGFailOtherDwnlDistrRemark
+ 当给一个应用程序选择“评估”时，\n不允许在同一会话中下载其它应用程序，\n即必须取消已更改的应用程序，\n否则必须改变重启动模式。
+!LEGSessionInControllerRemark
+ 在该控制器中，一个应用程序按评估模式运行。
+!LEGSessionWarningRemark
+ 正在评估。
+!LEGNoAppWithLEGWarning
+ 在评估环境中，应用程序只能以运用评估重启的方式下载 。 \n下载将中断.
+!LEGRetainFailDistrRemark
+ 起始值评估分析失败。
+!LEGSIL3AppRemark
+ 该评估选项对安全综合等级(SIL3)的应用程序不适用
+!LEGInProgressRemark
+ 评估正在处理
+!LEGNoChangedApplication
+ 未更改的程序
+!LEGNotAllowedRemark
+ 禁止在控制器中评估
+!OLURetainFailDistrRemark
+ 固件升级初始值分析失败。
+!OLUNotEqualSetOfApplicationsRemark
+ 项目中的应用程序与控制器不匹配。
+!OLUEmptyControllerRemark
+ 控制器不包含任何应用程序。
+!CTDFileMissingDistrRemark 
+ 致命错误！控制器必须复位: 上次的下装程序丢失 
+!InterruptedDownloadDistrRemark 
+ 上次程序下装未能完成
+!DiskIsFullDistrRemark
+ 磁盘已满
+!VMTColdStartRemark
+ 不允许在非空控制器内冷启VMT
+!AccessDisabledRemark
+ SM AccessEnable被禁用。
+!AccessDisabledAppChangedRemark
+ SM AccessEnable被禁用。已更改申请。
+!SILApplicationFirstDownloadDeselectRemark
+ 必须选择SIL应用程序，因为尚未下载
+!
+! Distribution Avtivity Reporting
+!
+.DISTRACTREP
+! InitDistributionMsg
+ 正在初始化分布序列
+! ConnectDistributionMsg
+ 正在建立远程连接
+! IdentityRemoteMsg
+ 正在引出远程身份信息
+! CheckRemoteSystemMsg
+ 正在检查远程标识信息
+! FetchRmtPrNamesMsg
+ 正在引出远程应用程序名
+! FetchRmtPrStateMsg
+ 正在引出远程应用程序信息
+! DistributionAnalysisMsg
+ 应用分配分析
+! DownloadAnalysisMsg
+ 下装分析
+! SetTimeMsg
+ 在空的控制器内设置时间
+! StopRemotePrMsg
+ 正在停止远程应用程序
+! DeleteRemotePrMsg
+ 正在删除远程应用程序
+! FetchRmtDomainNamesMsg
+ 正在引出远程域名
+! FetchRmtDomainStateMsg
+ 正在引出远程域信息
+! DeleteRmtDomainMsg
+ 正在删除远程未用域
+! DomainFormingMsg
+ 正在建立域并生成远程代码
+! DomainSendingMsg
+ 正在初始化下装序列
+! WaitRemoteParseMsg
+ 正在发送域
+! CreateRemoteProgramMsg
+ 正在创建远程应用程序
+! ReconfigureRmtPrMsg
+ 正在重新配置远程系统
+! StartRemoteProgramMsg
+ 正在启动远程应用程序
+! DisconnectProgramMsg
+ 正在断开分布连接
+! ConcludeMsg
+ 分配应用
+! FetchRemoteSystemDataMsg
+ 正在与远程系统会话
+! IncrDefAnalysis
+ 增量定义分析
+! BuildingDefDomainsMsg
+ 正在构造定义域
+! SendingDefDomainsMsg
+ 正在发送定义域
+! DistributionDoneMsg
+ 向控制器分配完成
+!
+!------------------------------------------------------------
+! ProjectView.config
+!------------------------------------------------------------
+.PAGESTRING
+ 页 
+!
+.SYSTEMSTR
+ 系统
+!
+.CONTSYSTEMS
+ 控制器
+!
+.CONTSYSTEM
+ 控制器
+!
+.PROGRAMTYPES
+ 程序类型
+!
+.HARDWARESTR
+ 硬件 
+!
+.TASKSSTRING
+ 任务
+!
+.VARACCESSSTR
+ 访问变量
+!
+.PROJECTEXPLO
+ 项目资源管理器
+!
+.OFFLINESTATU
+ 脱机
+!
+.TESTMODESTAT
+ 测试模式 
+!
+.ONLINESTATUS
+ 联机
+!-------------------------------------------------------------
+!---------------------------------------------------------------
+.SYSLOGFNAME
+ systemlog
+!---------------------------------------------------------------
+.SYSLOGSEVHDR
+ S
+!---------------------------------------------------------------
+.SYSLOGDATHDR
+ 日期
+!---------------------------------------------------------------
+.SYSLOGTIMHDR
+ 时间
+!---------------------------------------------------------------
+.SYSLOGCATHDR
+ 种类
+!---------------------------------------------------------------
+.SYSLOGUSRHDR
+ 用户
+!---------------------------------------------------------------
+.SYSLOGDESHDR
+ 事件描述
+!---------------------------------------------------------------
+.SYSLOGPRVCAT
+ 权限
+!---------------------------------------------------------------
+.SYSLOGLOGCAT
+ 登录
+!---------------------------------------------------------------
+.SYSLOGVARCAT
+ SYSTEMVAR
+!---------------------------------------------------------------
+.SYSLOGOPCAT
+ SYSTEMOP
+!---------------------------------------------------------------
+.SYSLOGCREENT
+ 系统日志在%1站中创建
+!---------------------------------------------------------------
+.SYSLOGSTAENT
+ 程序正在启动
+!---------------------------------------------------------------
+.SYSLOGSTOENT
+ 程序正在停止
+!---------------------------------------------------------------
+.SYSLOGSV1ENT
+ 系统变量%1的值修改为%2
+!---------------------------------------------------------------
+.SYSLOGSV2ENT
+ 系统变量%1的值手动修改为%2
+!---------------------------------------------------------------
+
+.APPLYCHSTR
+ 应用变更？
+.ILLVALUESTR
+ 非法值。
+.VALUECHSTR
+ 值已改变
+.NOTFORCEABLESTR
+ 变量不是强制性的
+.FORCENOTALLSTR
+ 无权强制I/O
+.UNFORCENOTALLSTR
+ 没有释放I/O的权限
+.FORCEVALNOTALLSTR
+ 没有强制改变I/O值的权限
+.SETVALNOTALL
+ 没有改变变量值的权限
+
+!----------------------------------------------------------------------
+.POUINFOBOX
+ dialogbox POU 信息
+    body horizontal columns=2
+       label 11 名称:
+       text  12
+       label 13 路径:
+       text  14
+       label 15 POU类型:
+       text  16
+       label 17 执行系统:
+       text  18
+       label 19 任务名:
+       text  20
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUVINFODBOX
+ dialogbox 变量信息
+    body vertical
+       frame horizontal columns=2 0 变量
+          label 10 名称:
+          text  11
+          label 12 数据类型:
+          text  13
+          label 14 描述:
+          text  15
+          label 16 在 POU 中:
+          text  17
+          label 18 POU类型:
+          text  19
+          label 30 应用程序:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 特性
+          label 42 系统持有:
+          text  43
+          label 44 导出到:
+          text  45
+          label 46 其他属性:
+          text  47
+          label 32 信号:
+          text  33
+          label 48 I/O 描述:
+          text  49
+          label 50 I/O 地址:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCOMMVARINFODBOX
+ dialogbox 通讯变量信息
+    body vertical
+       frame horizontal columns=2 0 通讯变量
+          label 10 名称:
+          text  11
+          label 12 数据类型:
+          text  13
+          label 46 其他属性:
+          text  47
+          label 52 方向:
+          text  53
+          label 54 间隔时间:
+          text  55
+          label 56 IP地址:
+          text  57
+          label 58 预期 SIL:
+          text  59 
+          label 60 唯一 Id:
+          text  61
+          label 14 描述:
+          text  15
+       end frame
+
+       frame horizontal columns=2 0 当前位置
+          label 16 在 POU 中:
+          text  17
+          label 30 应用程序:
+          text  31
+          label 62 位于系统中:
+          text  63
+       end frame
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUPINFODBOX
+ dialogbox 参数信息
+    body vertical
+       frame horizontal columns=2 0 参数
+          label 10 名称:
+          text  11
+          label 12 数据类型:
+          text  13
+          label 14 描述:
+          text  15
+          label 16 在 POU 中:
+          text  17
+          label 18 POU类型:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 变量
+          label 20 名称:
+          text  21
+          label 22 数据类型:
+          text  23
+          label 24 描述:
+          text  25
+          label 26 在 POU 中:
+          text  27
+          label 28 POU类型:
+          text  29
+          label 30 应用程序:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 特性
+          label 42 系统持有:
+          text  43
+          label 44 导出到:
+          text  45
+          label 46 其他属性:
+          text  47
+          label 48 I/O 描述:
+          text  49
+          label 50 I/O 地址:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUIOPINDBOX
+ dialogbox 参数信息
+    body vertical
+       frame horizontal columns=2 0 参数
+          label 10 名称:
+          text  11
+          label 12 数据类型:
+          text  13
+          label 14 描述:
+          text  15
+          label 16 在 POU 中:
+          text  17
+          label 18 POU类型:
+          text  19
+          label 30 应用程序:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 特性
+          label 42 系统持有:
+          text  43
+          label 44 导出到:
+          text  45
+          label 46 其他属性:
+          text  47
+          label 48 I/O 描述:
+          text  49
+          label 50 I/O 地址:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUEINFODBOX
+ dialogbox 变量信息
+    body vertical
+       frame horizontal columns=2 0 变量
+          label 10 名称:
+          text  11
+          label 12 数据类型:
+          text  13
+          label 14 描述:
+          text  15
+          label 16 在 POU 中:
+          text  17
+          label 18 POU类型:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 变量
+          label 20 名称:
+          text  21
+          label 22 数据类型:
+          text  23
+          label 24 描述:
+          text  25
+          label 26 在 POU 中:
+          text  27
+          label 28 POU类型:
+          text  29
+          label 30 应用程序:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 特性
+          label 42 系统持有:
+          text  43
+          label 44 导出到:
+          text  45
+          label 46 其他属性:
+          text  47
+          label 32 信号:
+          text  33
+          label 48 I/O 描述:
+          text  49
+          label 50 I/O 地址:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCVINFDBOX
+ dialogbox 成分信息
+    body vertical
+       frame horizontal columns=2 0 组件
+          label 10 名称:
+          text  11
+          label 12 数据类型:
+          text  13
+          label 14 描述:
+          text  15
+          label 16 在 POU 中:
+          text  17
+          label 18 POU类型:
+          text  19
+          label 30 应用程序:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 特性
+          label 42 系统持有:
+          text  43
+          label 44 导出到:
+          text  45
+          label 46 其他属性:
+          text  47
+          label 32 信号:
+          text  33
+          label 48 I/O 描述:
+          text  49
+          label 50 I/O 地址:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUCPINFDBOX
+ dialogbox 成分信息
+    body vertical
+       frame horizontal columns=2 0 组件
+          label 10 名称:
+          text  11
+          label 12 数据类型:
+          text  13
+          label 14 描述:
+          text  15
+          label 16 在 POU 中:
+          text  17
+          label 18 POU类型:
+          text  19
+       end frame
+
+       frame horizontal columns=2 0 变量
+          label 20 名称:
+          text  21
+          label 22 数据类型:
+          text  23
+          label 24 描述:
+          text  25
+          label 26 在 POU 中:
+          text  27
+          label 28 POU类型:
+          text  29
+          label 30 应用程序:
+          text  31
+       end frame
+
+       frame horizontal columns=2 0 特性
+          label 42 系统持有:
+          text  43
+          label 44 导出到:
+          text  45
+          label 46 其他属性:
+          text  47
+          label 32 信号:
+          text  33
+          label 48 I/O 描述:
+          text  49
+          label 50 I/O 地址:
+          text  51
+       end frame
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+.POUFBINFDBOX
+ dialogbox 功能块信息
+    body horizontal columns=2
+       label 10 名称:
+       text  11
+       label 12 功能块类型:
+       text  13
+       label 14 描述:
+       text  15
+       label 16 在 POU 中:
+       text  17
+       label 18 POU类型:
+       text  19
+       label 20 应用程序:
+       text  21
+    end body
+
+    commands
+       button default cancel 1 确定
+    end commands
+ end dialogbox
+!------------------------------------------------------------------------
+!----------------------------------------------------------
+!----------- Taskuserinterface.config ---------------------
+!----------------------------------------------------------
+.SIMPLETEXTEDITDIALOG
+ dialogbox 任务名
+    body horizontal columns=2
+       label 0 名称:
+       edit minwidth=30 maxchars=25 3
+    end body
+
+    commands
+       button default 1 确定
+       button cancel  2 取消
+    end commands
+ end dialogbox
+!--------------------------------
+.NAME
+ 名称:
+!--------------------------------
+.INTERVALTIME
+ 间隔时间
+!--------------------------------
+.LATENCYPERCENTAGE
+ 接受的延迟
+!--------------------------------
+.OFFSET
+ 偏移
+!--------------------------------
+.TASKNAME
+ 任务名
+!--------------------------------
+.PRIORITY
+ 优先级
+!--------------------------------
+.TASKOVERVIEW
+ 任务概貌
+!--------------------------------
+.NEWTASK
+ 新任务
+!--------------------------------
+.NOTINUSE
+ 没有使用
+!--------------------------------
+.RUNNING 
+ 运行 
+!--------------------------------
+.TASKNOTFOUND
+ 系统中没有发现
+!--------------------------------
+.TASKISNONCYCLIC
+ 不定期执行
+!--------------------------------
+.TASKISABORTED
+ 已中断
+!--------------------------------
+.LATENCYEXCEEDED
+ 超出延迟高报限制
+!--------------------------------
+.TASKCOPYFIRST
+ 每次扫描首先复制出 I/O
+!--------------------------------
+.TASKCORRECTED
+ 间隔时间已更改/纠正
+!--------------------------------
+.WARNING
+ 警告 
+!--------------------------------
+.TASKCREATEWARNING
+ 当任务还在编辑器中可见的时候，不能建立新任务。
+!--------------------------------
+.NOTRUNPRECTASK
+ 不能作为time-critical任务运行。
+!--------------------------------
+.MANYPRECTASK
+ 系统中有多个time-critical任务运行。
+!--------------------------------
+.ERROR
+ 错误
+!--------------------------------
+.PRIORITYCHANGE
+ 被请求的优先级与控制器内的设定不同
+!--------------------------------
+.INTERVALTIMECHANGE
+ 被请求的间隔时间与控制器内的设定时间不同
+!--------------------------------
+.INVALIDOFFSET
+ 无效偏移
+!--------------------------------
+.INVALIDLATENCY
+ 无效延迟
+!--------------------------------
+.LEGRUNNINGACTIVESTR
+ 评估：运行主动
+!-------------------------------- 
+.LEGRUNNINGPASSIVESTR
+ 评估：运行被动
+!-------------------------------- 
+.RENAMETASKDIALOG
+  dialogbox 重命名
+    body horizontal columns = 2
+      label 0 旧名称:
+      text 3
+      label 0 新名称:
+      edit maxchars=25 4
+    end body
+    commands horizontal
+      button default  1 确定
+      button cancel   2 取消
+    end commands
+  end dialogbox
+!----------------------------------------------------------------------
+!------------------------------------------------------------
+!--- Strings used by MessageConclusion ---
+.CONC_OK
+ - 无错误或警告
+.CONC_ERR
+ -- %1警告
+.CONC_WAR
+ -- %1错误
+.CONC_ERRWAR
+ -- %1错误和%2警告
+!------------------------------------------------------------
+!----------------------------------------------------------
+!----------- OnlineSystem.config ---------------------
+!----------------------------------------------------------
+
+.CLIENTERROR
+ 在线系统里有客户端错误
+
+.SERVERERROR
+ 在线系统中的服务器错误
+
+.MMSERROR
+ 在联机系统中MMS通讯出错
+
+.TIMESTAMPERROR
+ 控制器中的应用程序版本错误
+
+.UNKNOWNERROR
+ 在线系统的未知错误
+!------------------------------------------------------------
+! ProjectAccess.config
+!------------------------------------------------------------
+.DATATYPESSTR
+ 数据类型
+!
+.CONNECTEDLIBRARIESSTR
+ 已连接的图库
+!
+!-------------------------------------------------------------
+

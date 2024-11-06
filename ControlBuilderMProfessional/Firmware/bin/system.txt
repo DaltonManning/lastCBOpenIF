@@ -1,0 +1,12 @@
+0x2060/ppc PM851     serup860.bin 8288 115200
+0x2080/ppc PM856/860 serup860.bin 8320 115200
+0x2090/ppc PM861     serup860.bin 8336 115200
+0x20a0/ppc PM862     serup860.bin 8352 115200
+0x20a8/ppc PM863     serup860.bin 8360 115200
+0x20b0/ppc PM864     serup860.bin 8368 115200
+0x20b8/ppc PM855     serup860.bin 8376 115200
+0x20ba/ppc PM857     serup860.bin 8378 115200
+0x20bc/ppc PM858     serup860.bin 8380 115200
+0x20c0/ppc PM865     serup860.bin 8384 115200
+0x20d0/ppc PM866     serup860.bin 8400 115200
+0x20e0/ppc PM867     serup860.bin 8416 115200

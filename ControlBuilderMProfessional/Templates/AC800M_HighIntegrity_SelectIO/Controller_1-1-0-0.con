@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Controller xmlns="CBSourceCodeSchema3_0" Name="Controller_1" ControllerType="AC 800M HI" SystemIdentity="172.16.0.0" SyntaxVersion="3.1" ProductVersion="6.1.1-0 Integration" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:04.488" CodePage="1252">
+  <ControllerAdminInfo/>
+  <VersionInfo MajorVersion="1" MinorVersion="0" Revision="0"/>
+  <AccessInfo Guid="A4B550A0-9274-4069-A081-1E30FC1F81C1" State="Open"/>
+  <ConnectedHardwareLibraries>
+    <ConnectedHardwareLibrary Name="BasicHIHwLib" MajorVersion="6" MinorVersion="1" Revision="0" Guid="D74147CC-FC73-481F-B936-1B7423E8B821" FilePath="HWLibraries:"/>
+  </ConnectedHardwareLibraries>
+  <ConnectedApplications ApplicationListTS="1979-12-31-00:00:00.000">
+    <ConnectedApplication Name="Application_1" MajorVersion="1" MinorVersion="0" Revision="0" Guid="56AA9006-C0A0-4C3D-9689-658F6F1B1D09" VarConnTS="1979-12-31-00:00:00.000" AnalogAttributesTS="1979-12-31-00:00:00.000"/>
+    <ConnectedApplication Name="Application_2" MajorVersion="1" MinorVersion="0" Revision="0" Guid="431174AF-9E4B-4872-8994-5509523FCD5A" VarConnTS="1979-12-31-00:00:00.000" AnalogAttributesTS="1979-12-31-00:00:00.000"/>
+  </ConnectedApplications>
+  <ControllerSourceBlocks>
+    <HardwareUnits>
+      <HWUnitRef Position="" Guid="E2DA4769-B823-4916-B734-B237348574BD"/>
+    </HardwareUnits>
+    <Tasks TaskStructureTS="1979-12-31-00:00:00.000">
+      <TaskRef Name="SIL" Guid="8834A124-EC72-44AD-BE16-1730EE1A518E"/>
+      <TaskRef Name="Fast" Guid="EC589A88-6EF5-4409-86EC-2CECBCAD2442"/>
+      <TaskRef Name="Normal" Guid="918D5424-FE0A-4AF9-B0AA-7F4DA750004B"/>
+      <TaskRef Name="Slow" Guid="D86CB875-7B00-4777-84E7-6667A12703E9"/>
+    </Tasks>
+    <AccessVariablesRef Name="AccessVariables.acv" Guid="0351643B-9AF1-48BF-8F90-2BEB2AA91F9C"/>
+  </ControllerSourceBlocks>
+  <ControllerProperties HWSimulation="0"/>
+  <DistributedApps DistributedAppsTS="1979-12-31-00:00:00.000"/>
+  <CommonControllerSettings ChangeTime="2017-04-19-13:40:02.327" OLUStopTime="4000">
+    <FatalOverrun Limit="10" Reaction="2"/>
+    <Safety DemandMode="2" FDRT="4000" SafetyWatchdogTimeout="2000" SIL3AppStartValUpdInterval="86400"/>
+    <ErrorHandler>
+      <SystemDiagnostics>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+        <SystemAlarmOutput Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+      </SystemDiagnostics>
+      <Execution>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+        <SystemAlarmOutput Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+      </Execution>
+      <IO>
+        <Log Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Event Low="0" Medium="1" High="1" Critical="1" Fatal="1"/>
+        <Reset Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+        <SystemAlarmOutput Low="0" Medium="0" High="1" Critical="1" Fatal="1"/>
+      </IO>
+    </ErrorHandler>
+  </CommonControllerSettings>
+  <CheckSum Value="50228"/>
+</Controller>

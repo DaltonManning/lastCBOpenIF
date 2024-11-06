@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://www.abb.ch/CommunicationConfigurationTool" xmlns:mstns="http://www.iec.ch/61850/2003/SCL" xmlns="http://www.abb.ch/CommunicationConfigurationTool" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://www.abb.ch/CommunicationConfigurationTool">
+<xs:import namespace="http://www.iec.ch/61850/2003/SCL" schemaLocation="ICDDataTypeTemplates.xsd" />
+  <xs:element name="LogicalNodeType" msdata:Prefix="cbm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Prefix" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="Name" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="Suffix" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="Version" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="DeviceType" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="ProtocolType" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataObjectType" msdata:Prefix="cbm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="Suffix" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="Version" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="DeviceType" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="ProtocolType" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataAttributeType" msdata:Prefix="cbm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="Suffix" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="Version" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="DeviceType" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+        <xs:element name="ProtocolType" msdata:Prefix="cbm" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

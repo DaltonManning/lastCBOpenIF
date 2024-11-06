@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Project xmlns="CBSourceCodeSchema3_0" Name="AC800M_HighIntegrity_SM812" SyntaxVersion="3.1" ProductVersion="6.1.1-0 Integration" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:07.517" CodePage="1252">
+  <ProjectAdminInfo>
+    <SIL>
+      <Constraint Name="SimultaneousExecSFC">
+        <NonSIL Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="LoopsInST">
+        <NonSIL Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="NestedIfCase">
+        <NonSIL Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="ImplicitCast">
+        <NonSIL Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Error" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="NoIL">
+        <NonSIL Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="NoLD">
+        <NonSIL Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="NoSFC">
+        <NonSIL Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="NoLoops">
+        <NonSIL Level="Error" Mandatory="0" WarningMandatory="1" ExclLibAllowed="0"/>
+        <SIL2 Level="Error" Mandatory="0" WarningMandatory="1" ExclLibAllowed="0"/>
+        <SIL3 Level="Error" Mandatory="0" WarningMandatory="1" ExclLibAllowed="0"/>
+      </Constraint>
+      <Constraint Name="NoForcedIO">
+        <NonSIL Level="Allowed" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="MultipleFBCalls">
+        <NonSIL Level="Warning" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Warning" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="ExecuteControlModulesOnce">
+        <NonSIL Level="Warning" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Warning" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+      <Constraint Name="NoFwdFlowBetweenBlocksInFD">
+        <NonSIL Level="Warning" Mandatory="0" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL2 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+        <SIL3 Level="Error" Mandatory="1" WarningMandatory="0" ExclLibAllowed="1"/>
+      </Constraint>
+    </SIL>
+    <CompilerSettings>
+      <CompilerSetting Name="CheckTaskCollisions" Value="Warning"/>
+      <CompilerSetting Name="CheckMaxNumberCVsInDiagram" Value="Warning"/>
+      <CompilerSetting Name="CheckMaxNumberCVsInApplication" Value="Warning"/>
+      <CompilerSetting Name="CheckMaxNumberCVOutsInSIL3Application" Value="Warning"/>
+      <CompilerSetting Name="CheckMaxNumberCVOutsInSIL2Application" Value="Warning"/>
+      <CompilerSetting Name="CheckMaxNumberCVInsInSIL3Application" Value="Warning"/>
+      <CompilerSetting Name="CheckMaxNumberCVInsInSIL2Application" Value="Warning"/>
+      <CompilerSetting Name="CheckUnresolvedCVs" Value="Warning"/>
+      <CompilerSetting Name="CheckUnresolvedSignals" Value="Warning"/>
+    </CompilerSettings>
+  </ProjectAdminInfo>
+  <AccessInfo Guid="2E082B55-1482-4363-8FA2-88FF679ACEC4" State="Open"/>
+  <ColorTable>
+    <ColorModel Value="HLS"/>
+  </ColorTable>
+  <Applications>
+    <ApplicationRef Name="Application_1" MajorVersion="1" MinorVersion="0" Revision="0" Guid="1BFA50C0-A2D1-4C02-8125-FA54A6212FD6" FilePath="" Folder=""/>
+    <ApplicationRef Name="Application_2" MajorVersion="1" MinorVersion="0" Revision="0" Guid="12E5B986-88FB-434B-82B2-91082469FB5B" FilePath="" Folder=""/>
+  </Applications>
+  <Libraries>
+    <LibraryRef Name="BasicLib" MajorVersion="1" MinorVersion="9" Revision="5" Guid="B19AFC97-D36E-4262-9B2F-87EAB843CC58" FilePath="Libraries:\"/>
+    <LibraryRef Name="IconLib" MajorVersion="1" MinorVersion="6" Revision="2" Guid="10EFF4C8-DA47-11D3-A2A0-00C04F5CD876" FilePath="Libraries:\"/>
+  </Libraries>
+  <HardwareLibraries>
+    <HardwareLibraryRef Name="BasicHIHwLib" MajorVersion="6" MinorVersion="1" Revision="0" Guid="D74147CC-FC73-481F-B936-1B7423E8B821" FilePath="HWLibraries:\"/>
+    <HardwareLibraryRef Name="CI853SerialComHwLib" MajorVersion="1" MinorVersion="0" Revision="2" Guid="E8BE722E-79CC-4069-BE02-1CF4E743CC32" FilePath="HWLibraries:\"/>
+    <HardwareLibraryRef Name="CI854PROFIBUSHwLib" MajorVersion="2" MinorVersion="21" Revision="15" Guid="E45CB38F-BDB8-4B94-B45F-BE7B242D96DE" FilePath="HWLibraries:\"/>
+    <HardwareLibraryRef Name="S800CI801CI854HwLib" MajorVersion="1" MinorVersion="5" Revision="1" Guid="06CBFFE8-ACA5-49D1-90E1-C3056E3F4282" FilePath="HWLibraries:\"/>
+    <HardwareLibraryRef Name="S800CI840CI854HwLib" MajorVersion="1" MinorVersion="5" Revision="1" Guid="372B3337-A748-49DC-8A7F-32C8E0CB3F09" FilePath="HWLibraries:\"/>
+    <HardwareLibraryRef Name="S800IoModulebusHwLib" MajorVersion="1" MinorVersion="5" Revision="2" Guid="C4E28BC4-80A2-41A3-B0C0-AC66AAD6E218" FilePath="HWLibraries:\"/>
+    <HardwareLibraryRef Name="SerialHwLib" MajorVersion="2" MinorVersion="10" Revision="2" Guid="F9B706B9-EDB5-4D42-8301-0171D71D6CB9" FilePath="HWLibraries:\"/>
+  </HardwareLibraries>
+  <Controllers>
+    <ControllerRef Name="Controller_1" MajorVersion="1" MinorVersion="0" Revision="0" Guid="A816E24E-4710-477A-9DF0-27852136979E" FilePath=""/>
+  </Controllers>
+  <ProjectSourceBlocks>
+    <PRCRef>
+      <ProjectConstantsRef Name="ProjectConstants.prc" Guid="F9C799E3-7DAD-4E19-8611-7FABB083A78D"/>
+    </PRCRef>
+  </ProjectSourceBlocks>
+  <DifferenceReportSettings Enabled="1" StartValuesEnabled="1" PostponeAllowed="1"/>
+  <CheckSum Value="49839"/>
+</Project>

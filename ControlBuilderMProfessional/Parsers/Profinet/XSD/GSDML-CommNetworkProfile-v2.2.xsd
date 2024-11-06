@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:comm="http://www.profibus.com/GSDML/2003/11/CommNetworkProfile" targetNamespace="http://www.profibus.com/GSDML/2003/11/CommNetworkProfile" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:annotation>
+		<xsd:documentation>This schema contains the communication network profile for the General Station Description Markup Language (GSDML).</xsd:documentation>
+		<xsd:appinfo>
+			<schemainfo versiondate="20080603"/>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<!--_________________________________________________________-->
+	<!--*** ISO 15745 Profile definition ***-->
+	<xsd:element name="ISO15745Profile">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="ProfileHeader" type="comm:ProfileHeaderT"/>
+				<xsd:element name="ProfileBody" type="comm:ProfileBodyT"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<!--_________________________________________________________-->
+	<!--*** ProfileHeader ***-->
+	<xsd:complexType name="ProfileHeaderT">
+		<xsd:sequence>
+			<xsd:element name="ProfileIdentification" type="xsd:string"/>
+			<xsd:element name="ProfileRevision" type="xsd:string"/>
+			<xsd:element name="ProfileName" type="xsd:string"/>
+			<xsd:element name="ProfileSource" type="xsd:string"/>
+			<xsd:element name="ProfileClassID" type="comm:ProfileClassID_DataType"/>
+			<xsd:element name="ProfileDate" type="xsd:date" minOccurs="0"/>
+			<xsd:element name="AdditionalInformation" type="xsd:anyURI" minOccurs="0"/>
+			<xsd:element name="ISO15745Reference" type="comm:ISO15745Reference_DataType"/>
+			<xsd:element name="IASInterfaceType" type="comm:IASInterface_DataType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--_________________________________________________________-->
+	<!--*** ProfileBody ***-->
+	<xsd:complexType name="ProfileBodyT">
+		<xsd:sequence>
+			<xsd:element name="ApplicationLayers"/>
+			<xsd:element name="TransportLayers"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!--*** Profile Header Data Types ***-->
+	<xsd:simpleType name="ProfileClassID_DataType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="AIP"/>
+			<xsd:enumeration value="Process"/>
+			<xsd:enumeration value="InformationExchange"/>
+			<xsd:enumeration value="Resource"/>
+			<xsd:enumeration value="Device"/>
+			<xsd:enumeration value="CommunicationNetwork"/>
+			<xsd:enumeration value="Equipment"/>
+			<xsd:enumeration value="Human"/>
+			<xsd:enumeration value="Material"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="ISO15745Reference_DataType">
+		<xsd:sequence>
+			<xsd:element name="ISO15745Part" type="xsd:positiveInteger"/>
+			<xsd:element name="ISO15745Edition" type="xsd:positiveInteger"/>
+			<xsd:element name="ProfileTechnology" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="IASInterface_DataType">
+		<xsd:union>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="CSI"/>
+					<xsd:enumeration value="HCI"/>
+					<xsd:enumeration value="ISI"/>
+					<xsd:enumeration value="API"/>
+					<xsd:enumeration value="CMI"/>
+					<xsd:enumeration value="ESI"/>
+					<xsd:enumeration value="FSI"/>
+					<xsd:enumeration value="MTI"/>
+					<xsd:enumeration value="SEI"/>
+					<xsd:enumeration value="USI"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:length value="4"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:union>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<Task xmlns="CBSourceCodeSchema3_0" Name="Fast" IntervalTime="50" Priority="3" Offset="20" OutputUpdate="last" LatencySupervision="0" LatencyPercentage="10" TaskSILLevel="NonSIL" Guid="EC589A88-6EF5-4409-86EC-2CECBCAD2442" BuildVersion="6.1.1000.1" SaveDate="2019-03-12-08:53:04.513" ChangeTime="2008-02-01-11:05:32.005" CodePage="1252" Type="Normal">
+  <CheckSum Value="57616"/>
+</Task>

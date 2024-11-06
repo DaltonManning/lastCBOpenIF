@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="0" TypeID="50331661" TypeDescription="PPP" Guid="5E6E6708-6E9B-4AFD-A163-06C42EE2864A" TypeGuid="F4AC882E-497F-4907-818C-97034B5898AE" TypeTimeStamp="2016-06-23-02:02:31.251" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:01.893" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2014-10-09-07:05:52.561" HWSettingsTS="2006-08-14-11:47:18.231" InstanceName="">
+  <ParameterSettings>
+    <ParameterSetting Name="IPADDRESS" Value="192.168.255.254" Description="IP address"/>
+    <ParameterSetting Name="IPSUBNETMASK" Value="255.255.255.0" Description="IP subnet mask"/>
+    <ParameterSetting Name="NETAREA" Value="0" Description="Network Area"/>
+    <ParameterSetting Name="PATHNO" Value="0" Description="Path Number"/>
+    <ParameterSetting Name="NODENO" Value="0" Description="Node Number"/>
+    <ParameterSetting Name="LOCAL" Value="0" Description="Network Area Local"/>
+    <ParameterSetting Name="SENDPERIOD" Value="5" Description="Send Period"/>
+    <ParameterSetting Name="MAXLOSTMSG" Value="3" Description="Max Lost Messages"/>
+    <ParameterSetting Name="PROXYROUTER" Value="0.0.0.0" Description="Proxy router"/>
+    <ParameterSetting Name="TARGETADDRESS" Value="0.0.0.0" Description="Target address"/>
+    <ParameterSetting Name="PTPIPADDRESS" Value="192.168.255.253" Description="Remote IP address"/>
+  </ParameterSettings>
+  <HWChannels>
+    <HWChannel Address="IW0.4.0.0" Name="UnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits/>
+  <CheckSum Value="24455"/>
+</HWUnit>

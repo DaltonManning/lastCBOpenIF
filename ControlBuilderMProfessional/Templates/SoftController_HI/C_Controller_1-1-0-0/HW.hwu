@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<HWUnit xmlns="CBSourceCodeSchema3_0" Position="" TypeID="258998272" TypeDescription="Soft Controller HI" Guid="70E3DBE1-0F3C-4204-995B-7D068E117BE4" TypeGuid="10F31500-E22A-4D85-B480-DABC07EDFABF" TypeTimeStamp="2017-07-04-05:33:34.958" HWSimulation="0" HWSimulationSupported="1" SaveDate="2019-03-12-08:53:15.962" BuildVersion="6.1.1000.1" CodePage="1252" HWStructureTS="2015-01-27-15:52:25.382" HWSettingsTS="2016-09-08-08:45:21.131" InstanceName="">
+  <ParameterSettings>
+    <ParameterSetting Name="BACKGROUNDCOPY" Value="None" Description="Copy unconnected channels"/>
+    <ParameterSetting Name="LATCHEDHWSTATE" Value="Disabled" Description="Latched hardware state"/>
+    <ParameterSetting Name="ENABLESYSTEMALARMS" Value="Enabled" Description="System alarms on hardware units"/>
+    <ParameterSetting Name="ENABLESIMPLEEVENTS" Value="Enabled" Description="Simple events on hardware units"/>
+    <ParameterSetting Name="HWBACKGROUNDCYCLETIME" Value="1000" Description="HwStatus update cycle time"/>
+  </ParameterSettings>
+  <HWChannels>
+    <HWChannel Address="IW0" Name="AllUnitStatus">
+      <ConVariable></ConVariable>
+      <IODescription></IODescription>
+    </HWChannel>
+  </HWChannels>
+  <HardwareUnits>
+    <HWUnitRef Position="0" Guid="6D5894F9-16FD-4A1D-A3CC-535FA1BFD7AD"/>
+    <HWUnitRef Position="1" Guid="D2A52288-403E-43F6-B432-C17BE3E1D48B"/>
+  </HardwareUnits>
+  <CheckSum Value="47197"/>
+</HWUnit>

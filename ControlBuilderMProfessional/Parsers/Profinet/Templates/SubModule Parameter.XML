@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameter>
+  <ParamInfoLength>0</ParamInfoLength>
+  <ParValLength>8</ParValLength>
+  <ParVal DataType="INT" Unit="" ParValIndex="1">
+    <DTypAttrib>-128 127 -128 127</DTypAttrib>
+  </ParVal>
+  <ParVal DataType="INT" Unit="" ParValIndex="2">
+    <DTypAttrib>-32768 32767 -32768 32767</DTypAttrib>
+  </ParVal>
+  <ParVal DataType="INT" Unit="" ParValIndex="3">
+    <DTypAttrib>-2147483648 2147483647 -2147483648 2147483647</DTypAttrib>
+  </ParVal>
+  <ParVal DataType="INT" Unit="" ParValIndex="4">
+    <DTypAttrib>0 255 0 255</DTypAttrib>
+  </ParVal>
+  <ParVal DataType="INT" Unit="" ParValIndex="5">
+    <DTypAttrib>0 65535 0 65535</DTypAttrib>
+  </ParVal>
+  <ParVal DataType="INT" Unit="" ParValIndex="6">
+    <DTypAttrib>0 2147483647 0 2147483647</DTypAttrib>
+  </ParVal>
+  <ParVal DataType="REAL" Unit="" ParValIndex="7">
+    <DTypAttrib>-214748000.0 214748000.0 -214748000.0 214748000.0</DTypAttrib>
+  </ParVal>
+  <ParVal DataType="ENUM" Unit="" ParValIndex="8">
+    <DTypAttrib>"0" 0</DTypAttrib>
+    <DTypAttrib>"1" 1</DTypAttrib>
+  </ParVal>  
+</Parameter>
